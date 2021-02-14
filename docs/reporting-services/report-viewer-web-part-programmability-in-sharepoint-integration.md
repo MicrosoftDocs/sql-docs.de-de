@@ -9,12 +9,12 @@ ms.topic: reference
 ms.assetid: 714017b7-1bd6-4950-a3c6-d0df8450a877
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: ee3b85d50225a8c3b7b74e111a152128e4af0d4a
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: d7054e2af081bd76505f3adebbae4cc7541f8a44
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87245717"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100023274"
 ---
 # <a name="report-viewer-web-part-programmability-in-sharepoint-integration"></a>Berichts-Viewer-Webpart-Programmierbarkeit in SharePoint-Integration
   Das Berichts-Viewer-Webpart ist ein Serversteuerelement, das mehrere öffentliche Anwendungsprogrammierschnittstellen (API) enthält, die es Entwicklern ermöglichen, benutzerdefinierte SharePoint-Anwendungen zu erstellen. Sie können benutzerdefinierte Webparts erstellen, die Berichtspfad und Parameter mit Webpartverbindungen zu Berichts-Viewer-Webparts angeben. Sie können auch das Webpart in eine benutzerdefinierte SharePoint-Webpartseite einbetten und es mit der öffentlichen API anpassen.  

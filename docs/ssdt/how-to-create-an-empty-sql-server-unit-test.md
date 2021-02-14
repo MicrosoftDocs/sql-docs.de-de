@@ -12,12 +12,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 30869fbd4c9a57c068b56d638495cce76ac23789
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 510d669d780a7f7b6f71f5a84eab87e9b70bf4b2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988694"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018320"
 ---
 # <a name="how-to-create-an-empty-sql-server-unit-test"></a>Gewusst wie: Erstellen eines leeren SQL Server-Komponententests
 

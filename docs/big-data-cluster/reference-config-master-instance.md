@@ -9,12 +9,12 @@ ms.date: 08/04/2020
 ms.topic: reference
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 60888246623796d9b4d17c498da47ab4b6557cf2
-ms.sourcegitcommit: 6ab28d954f3a63168463321a8bc6ecced099b247
+ms.openlocfilehash: 2f251357c818577b0ecd761c4a5ca2f030eeca58
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87790449"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100043970"
 ---
 # <a name="sql-server-master-instance-configuration-properties"></a>Konfigurationseigenschaften der SQL Server-Masterinstanz
 

@@ -28,12 +28,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 6ae9da5c98d625843bc01bba5d12276098e3e3f1
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 28bb933ec92a6f96045a1f316c2757fbf3a9d564
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98594454"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100082433"
 ---
 # <a name="transact-sql-editor-options"></a>Optionen des Transact-SQL-Editors
 

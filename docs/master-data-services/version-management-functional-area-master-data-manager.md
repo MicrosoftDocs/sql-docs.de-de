@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: dc23d80e-9778-44a8-a54e-e81c2ab6e96a
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 1b4188672c484b8894b37e713d5907ccb9e3736e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 44b511bd1dbf60eef8276b92e7c3bb61155e6fa8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471882"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350925"
 ---
 # <a name="version-management-functional-area-master-data-manager"></a>Funktionsbereich "Versionsverwaltung" (Master Data Manager)
 

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e6658e9c-5b08-4b8d-b556-17ec2dd041d2
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 129cfe3eec5b99bc486e5a47cd7f90ac0733d13e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 621aa0093affb93167703655686b9ee1ec631d53
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500675"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272661"
 ---
 # <a name="create-a-link-attribute-master-data-services"></a>Erstellen eines Linkattributs (Master Data Services)
 
@@ -42,7 +42,7 @@ ms.locfileid: "88500675"
 ## <a name="attribute-information"></a>Attributinformationen  
  Für jedes erstellte Attribut wird dem Raster eine Zeile mit sieben Spalten hinzugefügt. In der folgenden Tabelle werden diese Spalten beschrieben.  
   
-|Column|Beschreibung|  
+|Spalte|BESCHREIBUNG|  
 |------------|-----------------|  
 |Status|Der Attributstatus.<br /><br /> Wenn Sie auf Speichern klicken, wird das Bild ![Symbol zum Aktualisieren des Status](../master-data-services/media/mds-statusicon-updating.png "Symbol für Aktualisierungs Status") angezeigt, das angibt, dass das Attribut aktualisiert wird.<br /><br /> Wenn beim Erstellen oder Bearbeiten eines Attributs Fehler auftreten, wird das Bild ![Symbol für den Fehlerstatus](../master-data-services/media/mds-statusicon-error.png "Symbol für Fehlerstatus") angezeigt.<br /><br /> Andernfalls lautet der Status "OK", und das Bild ![Symbol für den Status OK](../master-data-services/media/mds-statusicon-ok.png "Symbol für Status OK") wird angezeigt.|  
 |Name|Der Attributname.|  
@@ -86,9 +86,9 @@ ms.locfileid: "88500675"
   
 8.  Geben Sie im Feld **Pixelbreite anzeigen** die Breite der Attributspalte ein, die im **Explorerraster** angezeigt werden soll.  
   
-9. Wählen Sie in der Liste **Attributtyp** die Option **Freiform**aus.  
+9. Wählen Sie in der Liste **Attributtyp** die Option **Freiform** aus.  
   
-10. Wählen Sie **Link** in der Liste **Datentyp**aus.  
+10. Wählen Sie **Link** in der Liste **Datentyp** aus.  
   
 11. Geben Sie im Feld **Länge** die maximal zulässige Anzahl von Zeichen ein.  
   
@@ -99,7 +99,7 @@ ms.locfileid: "88500675"
 ## <a name="see-also"></a>Weitere Informationen  
  [Attribute &#40;Master Data Services&#41;](../master-data-services/attributes-master-data-services.md)   
  [Ändern eines Attribut namens und Datentyps &#40;Master Data Services&#41;](../master-data-services/change-an-attribute-name-and-data-type-master-data-services.md)   
- [Erstellen eines domänenbasierten Attributs &#40;Master Data Services&#41;](../master-data-services/create-a-domain-based-attribute-master-data-services.md)   
+ [Erstellen Sie ein Domain-Based-Attribut &#40;Master Data Services&#41;](../master-data-services/create-a-domain-based-attribute-master-data-services.md)   
  [Erstellen eines Dateiattributs &#40;Master Data Services&#41;](../master-data-services/create-a-file-attribute-master-data-services.md)  
   
   

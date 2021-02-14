@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: b628548b-982b-4e45-abf4-c8e83e3ab1c2
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 14ebf23101358677f0c9f0afdf4ed069199614ec
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ab060952626699683379dbbbca848f3af36c68e1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92257630"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348874"
 ---
 # <a name="overview-exporting-data-to-excel-mds-add-in-for-excel"></a>Übersicht: Exportieren von Daten nach Excel (MDS-Add-in für Excel)
 
@@ -26,7 +26,7 @@ ms.locfileid: "92257630"
   
  Die Datenmenge, die Sie exportieren können, sind auf die Daten beschränkt, für die Sie über eine Zugriffsberechtigung verfügen. Die Berechtigung, auf Daten zuzugreifen, wird in der [!INCLUDE[ssMDSmdm](../../includes/ssmdsmdm-md.md)] -Webanwendung oder programmgesteuert festgelegt.  
   
- Wenn Sie große Datenmengen exportieren, können Sie Warnungen festlegen, die angezeigt werden, wenn das Laden der Daten lange dauert. Klicken Sie hierzu in der Gruppe **Optionen** auf **Einstellungen**. Wählen Sie auf der Registerkarte **Daten** die Option **Filterwarnung für große Datasets anzeigen**aus.  
+ Wenn Sie große Datenmengen exportieren, können Sie Warnungen festlegen, die angezeigt werden, wenn das Laden der Daten lange dauert. Klicken Sie hierzu in der Gruppe **Optionen** auf **Einstellungen**. Wählen Sie auf der Registerkarte **Daten** die Option **Filterwarnung für große Datasets anzeigen** aus.  
   
 > [!WARNING]  
 >  Eine MDS-aktivierte Arbeitsmappe darf nur in Excel mit dem MDS-Add-In für Excel geöffnet und aktualisiert werden. Das Öffnen der MDS-aktivierten Arbeitsmappe in Excel auf einem Computer, auf dem das MDS-Excel-Add-In nicht installiert ist, wird nicht unterstützt. Außerdem könnte dies die Arbeitsmappendatei beschädigen. Wenn Sie Daten für andere Personen freigeben möchten, empfiehlt es sich, ihnen eine Shortcutabfragedatei per E-Mail zu senden. Demgegenüber ist es nicht empfehlenswert die Arbeitsmappe nur zu speichern und sie per E-Mail zu versenden. Weitere Informationen über die Abfrage finden Sie unter [Senden einer Shortcutabfragedatei &#40;MDS-Add-In für Excel&#41;](../../master-data-services/microsoft-excel-add-in/email-a-shortcut-query-file-mds-add-in-for-excel.md).  

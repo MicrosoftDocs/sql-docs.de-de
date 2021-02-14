@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ed08dd2d-248e-4b68-91d4-e9961cb50eed
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 0136c2fe08e59169eda2b41a0557b7fd66c3e437
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 580b4f7f098f65391f88cb2e39b57642cbc0eafa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "92258054"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336200"
 ---
 # <a name="users-and-groups-master-data-services"></a>Benutzer und Gruppen (Master Data Services)
 

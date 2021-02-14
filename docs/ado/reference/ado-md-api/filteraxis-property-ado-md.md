@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 9c656963-531e-4cd1-b698-d5f42a9b7ba3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 002c7940d192a2a41437818c9708e71bf8f0c5cb
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e53967bf577bfc69c07d7c1e5e49e42a3ca613d7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164570"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054715"
 ---
 # <a name="filteraxis-property-ado-md"></a>FilterAxis-Eigenschaft (ADO MD)
 Gibt Filter Informationen zum aktuellen [Cellset](./cellset-object-ado-md.md)an.  

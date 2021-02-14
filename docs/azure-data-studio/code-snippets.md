@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, sstein
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.openlocfilehash: bd86afbe288be3b92b15b6702ec46903f56a2ad5
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: e2ea3a950a548cae6ad23f40055acc09b2e9534f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637803"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048690"
 ---
 # <a name="create-and-use-code-snippets-to-quickly-create-transact-sql-t-sql-scripts-in-azure-data-studio"></a>Erstellen und Verwenden von Codeausschnitten zum schnellen Erstellen von Transact-SQL-Skripts in Azure Data Studio
 

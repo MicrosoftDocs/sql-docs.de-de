@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan, sstein
 ms.custom: ''
 ms.date: 09/22/2020
-ms.openlocfilehash: 3bcdd76cf143c94dc1e200a21972d00419f26b96
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 195404df404c6fec7ef98f41a9921d937c16eab7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91725211"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048590"
 ---
 # <a name="azure-arc-extension-for-azure-data-studio-preview"></a>Azure Arc-Erweiterung für Azure Data Studio (Vorschauversion)
 

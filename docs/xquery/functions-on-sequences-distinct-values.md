@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: f4c2bb53-2bec-4f1a-9c00-cf997fb7ae5b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 39b5db61e3709d8d9f1d9859f15d9e6c271b5e05
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: b9a3561c25ca0c64e01c2603b64656320d499518
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86917976"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341907"
 ---
 # <a name="functions-on-sequences---distinct-values"></a>Funktionen für Sequenzen – distinct-values
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
 
-  Entfernt doppelte Werte aus der durch *$arg*angegebenen Sequenz. Wenn *$arg* eine leere Sequenz ist, gibt die Funktion die leere Sequenz zurück.  
+  Entfernt doppelte Werte aus der durch *$arg* angegebenen Sequenz. Wenn *$arg* eine leere Sequenz ist, gibt die Funktion die leere Sequenz zurück.  
   
 ## <a name="syntax"></a>Syntax  
   

@@ -9,12 +9,12 @@ ms.date: 10/20/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 5d469d1b8d89b07748485c9df3f7f7905af52099
-ms.sourcegitcommit: 29a2be59c56f8a4b630af47760ef38d2bf56a3eb
+ms.openlocfilehash: 194f74fa175ad3f1c08ceab542b6db7812987157
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92358178"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045639"
 ---
 # <a name="administration-resources-for-big-data-clusters-bdc"></a>Verwaltungsressourcen für Big Data-Cluster (BDC) 
 

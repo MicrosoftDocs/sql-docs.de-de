@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 5aa1d1e0-b4e5-4897-8e74-01dcf418df73
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 75036d4713000b05052c2094e7d8ba8d23c65f25
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 574a99b245764a504297829ba3c037186d88672d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500698"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272791"
 ---
 # <a name="collections-master-data-services"></a>Auflistungen (Master Data Services)
 

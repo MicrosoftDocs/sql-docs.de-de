@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: e2763613-79ef-414a-8dbf-837a0331ebf8
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 4682f9f982776bca890968b7bbe0889783845c0b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e86f430254b2632f83179772ea602daaf62ab07f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88388966"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344807"
 ---
 # <a name="explorer-functional-area-master-data-manager"></a>Funktionsbereich "Explorer" (Master Data Manager)
 

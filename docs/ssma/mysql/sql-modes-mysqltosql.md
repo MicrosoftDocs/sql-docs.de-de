@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: d840ee51-b863-4e77-84aa-37d3f094bfed
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 8d0631b35d2631e04cfad5c509d6084ba0a30aaf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e09a38ce70b4f144f6da324525a7fee925d586a9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88497717"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074471"
 ---
 # <a name="sql-modes-mysqltosql"></a>SQL-Modi (MySqlToSql)
 SSMA für MySQL kann in verschiedenen SQL-Modi betrieben werden und kann diese Modi für verschiedene Clients unterschiedlich anwenden.  
@@ -24,11 +24,11 @@ Modi definieren die SQL-Syntax, die von MySQL unterstützt wird, sowie die Art d
   
 ## <a name="sql-modes-grid"></a>Raster für SQL-Modi:  
   
--   Das Raster SQL-Modi auf Stamm Ebene enthält die folgenden Spalten: **SQL-Modusname**, **geladene SQL-Modi**und **effektive SQL-Modi**.  
+-   Das Raster SQL-Modi auf Stamm Ebene enthält die folgenden Spalten: **SQL-Modusname**, **geladene SQL-Modi** und **effektive SQL-Modi**.  
   
--   Das Raster SQL-Modi in der Kategorie Datenbanken, Datenbank, Tabellen Kategorie, Anweisungs Kategorie, Ansichts Kategorie, Tabelle, Sicht, Funktionen, Prozeduren, UDF und Ereignis Objektebene enthält die folgenden Spalten: **SQL-Modusname**, **geerbte SQL-Modi**und **effektive SQL-Modi**.  
+-   Das Raster SQL-Modi in der Kategorie Datenbanken, Datenbank, Tabellen Kategorie, Anweisungs Kategorie, Ansichts Kategorie, Tabelle, Sicht, Funktionen, Prozeduren, UDF und Ereignis Objektebene enthält die folgenden Spalten: **SQL-Modusname**, **geerbte SQL-Modi** und **effektive SQL-Modi**.  
   
--   Das Raster mit den SQL-Modi in gespeicherter Prozedur, gespeicherter Funktion und triggerebene enthält die folgenden Spalten: **SQL-Modusname**,  **ursprüngliche SQL-Modi**und **effektive SQL-Modi**.  
+-   Das Raster mit den SQL-Modi in gespeicherter Prozedur, gespeicherter Funktion und triggerebene enthält die folgenden Spalten: **SQL-Modusname**,  **ursprüngliche SQL-Modi** und **effektive SQL-Modi**.  
   
 > [!NOTE]  
 > Die Gruppen Modi werden in der Spalte "SQL Mode Name" in Fett Schrift angezeigt.  

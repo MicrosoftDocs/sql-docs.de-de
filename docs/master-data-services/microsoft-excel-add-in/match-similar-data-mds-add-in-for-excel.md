@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: f6fd6fc1-3569-42a5-b6cb-87a921c88f3b
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 650c85f68003bda41e19e6f765898a23290480b6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 33fd27e1c2a60d3e895ed7068224e30866d95779
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92255186"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344740"
 ---
 # <a name="match-similar-data-mds-add-in-for-excel"></a>Abgleichen ähnlicher Daten (MDS-Add-In für Excel)
 

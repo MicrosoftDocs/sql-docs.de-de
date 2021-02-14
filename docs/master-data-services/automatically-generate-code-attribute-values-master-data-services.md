@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 19b354ee-2906-4cc7-ba2f-32b4543bddcf
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: a2028a0cc9911308bfe8462be4b826e53e328103
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 82d501f5d7c5a4a5b79e55571a7351225833680b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461947"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341488"
 ---
 # <a name="automatically-generate-code-attribute-values-master-data-services"></a>Automatisches Generieren von Codeattributwerten (Master Data Services)
 

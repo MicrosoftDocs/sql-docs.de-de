@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 79510fcf-4c83-4426-bdd4-15b4170ecfbd
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: d7fab1a8f16c51d52e32c0147a85ab6ef08cd821
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1ef8ddfdf5444683ebef8ffd82042cd6e83951cf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461932"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272861"
 ---
 # <a name="change-an-attribute-group-name-master-data-services"></a>Ändern des Namens einer Attributgruppe (Master Data Services)
 
@@ -43,7 +43,7 @@ ms.locfileid: "88461932"
   
 4.  Klicken Sie auf **Attributgruppen**.  
   
-5.  Wählen Sie auf der Seite **Attributgruppen verwalten** den Elementtyp in der Dropdownliste **Member Types** (Elementtypen) aus, um **Blatt**, **Konsolidiert**oder **Sammlung**abhängig vom Typ der Gruppe, die Sie aktualisieren möchten, zu erweitern.  
+5.  Wählen Sie auf der Seite **Attributgruppen verwalten** den Elementtyp in der Dropdownliste **Member Types** (Elementtypen) aus, um **Blatt**, **Konsolidiert** oder **Sammlung** abhängig vom Typ der Gruppe, die Sie aktualisieren möchten, zu erweitern.  
   
 6.  Klicken Sie auf den Namen der Attributgruppe, die Sie aktualisieren möchten, und klicken Sie anschließend auf **Bearbeiten**.  
   

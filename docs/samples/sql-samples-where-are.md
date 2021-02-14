@@ -9,12 +9,12 @@ ms.technology: samples
 ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: ccdd4b40fa378d74784f9bdc3f020f1ff87f981a
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: 40eccff4d47158b3d237e22637e450e5082ae6d6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92006082"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077361"
 ---
 # <a name="sql-samples"></a>SQL-Beispiele
 

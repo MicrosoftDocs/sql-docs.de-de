@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: f915e89b-629d-4725-aea6-a7f051978244
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 91abdbbec357c5d5b7b629c5619b221c14bc0d15
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c1331d00c0c39cbe3a82f4372aaed38a315dc3c3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500589"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338984"
 ---
 # <a name="delete-an-attribute-group-master-data-services"></a>Löschen einer Attributgruppe (Master Data Services)
 
@@ -27,7 +27,7 @@ ms.locfileid: "88500589"
 
   In [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)]können Sie eine Attributgruppe löschen, wenn die Registerkarte nicht länger im Funktionsbereich **Explorer** von [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)]angezeigt werden muss.  
   
--   **Hinweis** Wenn Attributgruppen vorhanden sind, werden Attribute, die keiner Attributgruppe angehören, in **Explorer**nicht angezeigt. Wenn keine Attributgruppen vorhanden sind, werden alle Attribute angezeigt.  
+-   **Hinweis** Wenn Attributgruppen vorhanden sind, werden Attribute, die keiner Attributgruppe angehören, in **Explorer** nicht angezeigt. Wenn keine Attributgruppen vorhanden sind, werden alle Attribute angezeigt.  
   
 ## <a name="prerequisites"></a>Voraussetzungen  
  So führen Sie diese Prozedur aus  
@@ -46,7 +46,7 @@ ms.locfileid: "88500589"
   
 4.  Klicken Sie auf **Attributgruppen**.  
   
-5.  Wählen Sie auf der Seite **Attributgruppen verwalten** den Elementtyp in der Dropdownliste **Elementtypen** aus, um **Blatt**, **Konsolidiert**oder **Sammlung**abhängig vom Typ der Gruppe, die Sie löschen möchten, zu erweitern.  
+5.  Wählen Sie auf der Seite **Attributgruppen verwalten** den Elementtyp in der Dropdownliste **Elementtypen** aus, um **Blatt**, **Konsolidiert** oder **Sammlung** abhängig vom Typ der Gruppe, die Sie löschen möchten, zu erweitern.  
   
 6.  Klicken Sie auf die Attributgruppe, die Sie löschen möchten.  
   

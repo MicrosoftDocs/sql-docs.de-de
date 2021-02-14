@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cd0db27a-1080-40af-a491-3893e7bef9cd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ca76137d4ea04b96f23d518a17ec7cc60ef89240
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ff118c1a634f93e63a089660333578186600d408
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164248"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054385"
 ---
 # <a name="columnattributesenum"></a>ColumnAttributesEnum
 Gibt die Eigenschaften einer [Spalte](./column-object-adox.md)an.  

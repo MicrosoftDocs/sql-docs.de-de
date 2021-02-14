@@ -12,12 +12,12 @@ ms.assetid: c1bbb24e-47e3-46aa-b786-fcadf9fb65ce
 author: rothja
 ms.author: jroth
 ms.custom: seo-dt-2019
-ms.openlocfilehash: ed34730c85a8d492bb40e3013ea5a9a05fc01d90
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 315cfed40b1ccdadf349d9b371d6baac5928d3af
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88454374"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081025"
 ---
 # <a name="disable-stretch-database-and-bring-back-remote-data"></a>Deaktivieren von Stretch Database und Zurückbringen von Remotedaten
 [!INCLUDE [sqlserver2016-windows-only](../../includes/applies-to-version/sqlserver2016-windows-only.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "88454374"
   
 1.  Wählen Sie in SQL Server Management Studio im Objekt-Explorer die Datenbank aus, für die Stretch Database deaktiviert werden soll.  
   
-2.  Klicken Sie mit der rechten Maustaste auf **Aufgaben**, **Stretch**und anschließend auf **Deaktivieren**.  
+2.  Klicken Sie mit der rechten Maustaste auf **Aufgaben**, **Stretch** und anschließend auf **Deaktivieren**.  
   
 > [!NOTE]
 > Durch das Deaktivieren von Stretch Database für eine Datenbank wird die Remotedatenbank nicht gelöscht. Wenn Sie die Remotedatenbank löschen möchten, müssen Sie sie mithilfe des Azure-Verwaltungsportals entfernen. Die Remotedatenbank erzeugt weiterhin Kosten in Azure, bis Sie sie löschen. Weitere Informationen finden Sie unter [SQL Server Stretch Database – Preise](https://azure.microsoft.com/pricing/details/sql-server-stretch-database/).  

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d9a6a51e-7b53-4785-a118-3baeb7ca2d48
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 8618b0dfc4488f3862366ac873e8cd38e1086e51
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 8d47a78e4a7e706e91312ee2eb4686121c2b2532
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813366"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341429"
 ---
 # <a name="create-an-entity-master-data-services"></a>Erstellen einer Entität (Master Data Services)
 
@@ -70,11 +70,11 @@ ms.locfileid: "85813366"
 ## <a name="grid-columns"></a>Rasterspalten  
  Für jede erstellte Entität wird dem Raster eine Zeile mit dreizehn Spalten hinzugefügt. Das sind die Spalten.  
   
-|name|BESCHREIBUNG|  
+|Name|BESCHREIBUNG|  
 |----------|-----------------|  
 |Status|Der Status der Entität. Wenn Sie auf **Speichern** klicken, wird das folgende Bild angezeigt, das angibt, dass die Entität aktualisiert wird.<br /><br /> ![Symbol für Aktualisierungs Status](../master-data-services/media/mds-statusicon-updating.png "Symbol für Aktualisierungs Status")<br /><br /> Wenn beim Erstellen oder Bearbeiten einer Entität Fehler auftreten, wird das folgende Bild angezeigt.<br /><br /> ![Symbol für Fehlerstatus](../master-data-services/media/mds-statusicon-error.png "Symbol für Fehlerstatus")<br /><br /> Falls der Status „OK“ lautet, wird das folgende Bild angezeigt.<br /><br /> ![Symbol für Status OK](../master-data-services/media/mds-statusicon-ok.png "Symbol für Status OK")|  
-|name|Der Name der Entität.|  
-|BESCHREIBUNG|Die Entitätsbeschreibung.|  
+|Name|Der Name der Entität.|  
+|Beschreibung|Die Entitätsbeschreibung.|  
 |Stagingtabelle|Der Präfixname der Tabelle, die zum Speichern von Daten verwendet wird.|  
 |Transaktionsprotokolltyp|Der Transaktionsprotokolltyp der Entität.|  
 |Automatische Codeerstellung|Gibt an, ob die automatische Codeerstellung aktiviert ist.|  

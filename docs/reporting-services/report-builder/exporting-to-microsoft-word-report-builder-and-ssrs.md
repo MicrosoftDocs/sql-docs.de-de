@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 0cd8ae26-4682-4473-8f15-af084951defd
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: afcafeeb554e60c84c3d5e5051db354721371416
-ms.sourcegitcommit: 205de8fa4845c491914902432791bddf11002945
+ms.openlocfilehash: e1a9fd855d1b0bc8defd0e4355f490a2824fead6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86972128"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100015260"
 ---
 # <a name="exporting-to-microsoft-word-report-builder-and-ssrs"></a>Exportieren nach Microsoft Word (Berichts-Generator und SSRS)
 
@@ -132,7 +132,7 @@ ms.locfileid: "86972128"
   
 -   Nachdem der Bericht exportiert wurde, paginiert Word den Bericht erneut. Dadurch werden dem gerenderten Bericht möglicherweise zusätzliche Seitenumbrüche hinzugefügt.  
   
--   Word wiederholt keine Kopfzeilen ab der zweiten Seite, auch nicht, wenn Sie die RepeatOnNewPage-Eigenschaft der statischen Kopfzeile in einem Tablix (Tabelle, Matrix oder Liste) auf **TRUE**festgelegt haben. Sie können explizite Seitenumbrüche im Bericht definieren, um die Anzeige von Kopfzeilen auf neuen Seiten zu erzwingen. Da Word jedoch eine eigene Paginierung auf den nach Word exportierten, gerenderten Bericht anwendet, können die Ergebnisse abweichen, und die Kopfzeile wird möglicherweise nicht erwartungsgemäß wiederholt. Die statische Kopfzeile ist die Zeile, die die Spaltenüberschriften enthält.  
+-   Word wiederholt keine Kopfzeilen ab der zweiten Seite, auch nicht, wenn Sie die RepeatOnNewPage-Eigenschaft der statischen Kopfzeile in einem Tablix (Tabelle, Matrix oder Liste) auf **TRUE** festgelegt haben. Sie können explizite Seitenumbrüche im Bericht definieren, um die Anzeige von Kopfzeilen auf neuen Seiten zu erzwingen. Da Word jedoch eine eigene Paginierung auf den nach Word exportierten, gerenderten Bericht anwendet, können die Ergebnisse abweichen, und die Kopfzeile wird möglicherweise nicht erwartungsgemäß wiederholt. Die statische Kopfzeile ist die Zeile, die die Spaltenüberschriften enthält.  
   
 -   Textfelder werden größer, wenn sie geschützte Leerzeichen enthalten.  
   

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 31bad04f-7c74-4773-9f83-612704fdd21c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4c8ce28b47fddca3a9c948cf913759e9a07d4419
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 53ce941c88e2ab551ac0787126e2cf981d353819
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85753661"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351070"
 ---
 # <a name="data-accessor-functions"></a>Data Accessor-Funktionen
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]

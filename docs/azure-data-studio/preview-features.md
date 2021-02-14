@@ -9,12 +9,12 @@ ms.author: hanqin
 ms.reviewer: maghan
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: 4054917071578fb0b3ddcf5c22d5950075a2b0fe
-ms.sourcegitcommit: 985e2e8e494badeac6d6b652cd35765fd9c12d80
+ms.openlocfilehash: bccf25686c397266a4cee3c44819b08ee301569b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93328487"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040126"
 ---
 # <a name="preview-features-in-azure-data-studio"></a>Previewfunktionen in Azure Data Studio
 

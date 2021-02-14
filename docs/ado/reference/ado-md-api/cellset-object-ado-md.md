@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5e2452c0-cac0-49b2-8099-836c35794d50
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5c9324c76a515a4b6ca300cdf15d23174ff8935c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: dc64756d2b2ac679e185c4dff8888352a7865f83
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99174312"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100055725"
 ---
 # <a name="cellset-object-ado-md"></a>Cellset-Objekt (ADO MD)
 Stellt die Ergebnisse einer mehrdimensionalen Abfrage dar. Es handelt sich um eine Sammlung von Zellen, die aus Cubes oder anderen Cellsets ausgewählt wurden.  

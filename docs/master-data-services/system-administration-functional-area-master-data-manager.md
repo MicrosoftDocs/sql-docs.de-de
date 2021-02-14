@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 4254e825-d76a-4daf-961f-087b961644a7
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 7a9061ad704647aeb94282ab18e0fcb18377a4cc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7ac57ad0afca89d47140269d448d2afd85c1b979
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456722"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336232"
 ---
 # <a name="system-administration-functional-area-master-data-manager"></a>Funktionsbereich "Systemverwaltung" (Master Data Manager)
 

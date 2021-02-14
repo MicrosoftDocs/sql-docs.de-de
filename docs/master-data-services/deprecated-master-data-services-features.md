@@ -12,12 +12,12 @@ ms.assetid: d8506bda-66dd-45a4-bfc9-3a10fa665acc
 author: lrtoyou1223
 ms.author: lle
 manager: erikre
-ms.openlocfilehash: dbbe6d602472a62e6d94c747a8856c507d8b2e06
-ms.sourcegitcommit: 827ad02375793090fa8fee63cc372d130f11393f
+ms.openlocfilehash: d8cded1c88278ca67426eaf40df7bdd87474312c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89480555"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350182"
 ---
 # <a name="deprecated-master-data-services-features"></a>Veraltete Funktionen von Master Data Services
 
@@ -34,7 +34,7 @@ ms.locfileid: "89480555"
   
 -   Die Seite „Abgeleitete Hierarchie“ im Explorer zeigt nun die nicht zugewiesenen (nicht verwendeten) Elemente für jede Ebene der Hierarchie. Nicht verwendete Knoten sind nach Hierarchieebene gruppiert. Elemente können per Drag & Drop oder Ausschneiden und Einfügen zwischen den nicht verwendeten Knoten und den Stammknoten verschoben werden.  
   
-     In der Systemverwaltung werden nicht verwendete Knoten im Bereich **Vorschau** angezeigt. Im Bereich „Sicherheit“ werden die nicht verwendeten Knoten in den **Hierarchieelementberechtigungen** angezeigt. Jedem Element unter dem **Stammknoten** oder dem Knoten **Nicht verwendet** kann eine Berechtigung zugewiesen werden. Sowohl den **Stammelementen**, als auch den **nicht verwendeten**Elementen und den **nicht verwendeten** Pseudoelementen können ebenfalls Berechtigungen zugewiesen werden.  
+     In der Systemverwaltung werden nicht verwendete Knoten im Bereich **Vorschau** angezeigt. Im Bereich „Sicherheit“ werden die nicht verwendeten Knoten in den **Hierarchieelementberechtigungen** angezeigt. Jedem Element unter dem **Stammknoten** oder dem Knoten **Nicht verwendet** kann eine Berechtigung zugewiesen werden. Sowohl den **Stammelementen**, als auch den **nicht verwendeten** Elementen und den **nicht verwendeten** Pseudoelementen können ebenfalls Berechtigungen zugewiesen werden.  
   
 -   Die gespeicherte Prozedur „mdm.udpConvertCollectionAndConsolidatedMembersToLeaf“ konvertiert explizite Hierarchien in abgeleitete rekursive Hierarchien. Außerdem konvertiert sie konsolidierte Elemente und Sammlungselemente in Blattelemente.  
   

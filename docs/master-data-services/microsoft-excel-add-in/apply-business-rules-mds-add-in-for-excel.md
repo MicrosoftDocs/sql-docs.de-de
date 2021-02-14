@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: cd106345-f561-4966-88d3-a69139b2bd78
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 582c3245d69d1a2bc92b3a4ab3442797116571d9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6ac9299f7d1b8b436a1ccbbe06eef16df9ea3e7c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92257597"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341444"
 ---
 # <a name="apply-business-rules-mds-add-in-for-excel"></a>Anwenden von Geschäftsregeln (MDS-Add-In für Excel)
 

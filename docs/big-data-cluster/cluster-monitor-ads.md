@@ -10,12 +10,12 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: b05864804e8f3f7cbcd67291b61d2099c4d18915
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: d03dc9c26f33fd512e035ab3cc9e167e1d9ef7cc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98595625"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100047740"
 ---
 # <a name="monitor-cluster-status-with-azure-data-studio"></a>Überwachen des Clusterstatus mit Azure Data Studio
 

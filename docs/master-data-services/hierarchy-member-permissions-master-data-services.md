@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: b3880eed-1bf6-4f65-ab23-b08c194cc858
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: e80ec1e7ffaa4f3bbce87363de109aa85132f74d
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 58c354eae5dadcc34d160b756e936dd82c3844e6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92194045"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347738"
 ---
 # <a name="hierarchy-member-permissions-master-data-services"></a>Berechtigungen für Hierarchieelemente (Master Data Services)
 
@@ -34,13 +34,13 @@ ms.locfileid: "92194045"
 > [!NOTE]  
 >  Wenn Sie einem Hierarchieknoten eine Berechtigung zuweisen, werden alle Elemente in den anderen Knoten auf gleicher oder höherer Ebene implizit verweigert.  
   
- Im **Explorer**werden die Elementberechtigungen überall dort angewendet, wo das Element angezeigt wird. Ein Element mit **Leseberechtigung** kann beispielsweise alle Entitäten, Hierarchien und Sammlungen lesen, denen es angehört.  
+ Im **Explorer** werden die Elementberechtigungen überall dort angewendet, wo das Element angezeigt wird. Ein Element mit **Leseberechtigung** kann beispielsweise alle Entitäten, Hierarchien und Sammlungen lesen, denen es angehört.  
   
  Berechtigungen für Hierarchieelemente gelten für die Modellversion, denen sie zugewiesen werden, sowie für alle zukünftigen Kopien der Version. Sie gelten nicht für Vorgängerversionen der Version, der sie zugewiesen wurden.  
   
 |Berechtigung|BESCHREIBUNG|  
 |----------------|-----------------|  
-|**Lesen**|Die Elemente werden angezeigt.<br /><br /> <br /><br /> Hinweis: Wenn Sie nur dem **Stamm** die **Leseberechtigung**zuweisen, sind die Elemente unter **Stamm** schreibgeschützt. In expliziten Hierarchien und Sammlungen kann der Benutzer jedoch Elemente in den **Stamm** verschieben und dem **Stamm**neue Elemente hinzufügen.|  
+|**Lesen**|Die Elemente werden angezeigt.<br /><br /> <br /><br /> Hinweis: Wenn Sie nur dem **Stamm** die **Leseberechtigung** zuweisen, sind die Elemente unter **Stamm** schreibgeschützt. In expliziten Hierarchien und Sammlungen kann der Benutzer jedoch Elemente in den **Stamm** verschieben und dem **Stamm** neue Elemente hinzufügen.|  
 |**Erstellen**|Die Hierarchieelementberechtigung enthält keine Berechtigung zum Erstellen.|  
 |**Aktualisieren**|Die Elemente werden angezeigt und können vom Benutzer geändert werden. Der Benutzer kann die Elemente außerdem in beliebigen expliziten Hierarchien oder Auflistungen verschieben, denen die Elemente angehören.|  
 |**Löschen**|Die Elemente werden angezeigt und können vom Benutzer gelöscht werden.|  
@@ -57,7 +57,7 @@ ms.locfileid: "92194045"
 ### <a name="when-a-member-belongs-to-multiple-hierarchies"></a>Wenn ein Element mehreren Hierarchien angehört  
  Das gleiche Element kann in zwei oder mehr Hierarchien enthalten sein.  
   
--   Wenn einem Hierarchieknoten die Berechtigung **Aktualisieren** und einem anderen die **Leseberechtigung**zugewiesen wird, sind die Elemente im Knoten **leseberechtigt**.  
+-   Wenn einem Hierarchieknoten die Berechtigung **Aktualisieren** und einem anderen die **Leseberechtigung** zugewiesen wird, sind die Elemente im Knoten **leseberechtigt**.  
   
 -   Wenn einem Hierarchieknoten die Berechtigungen **Aktualisieren** und **Erstellen** und einem anderen die Berechtigungen **Aktualisieren** und **Löschen** zugewiesen sind, können die Elemente im Knoten aktualisiert werden.  
   

@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.assetid: 9d485fd0-ab5d-402a-a59a-e9982a61b7de
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: c590a76696f2729bf5d1c6c5d4ca5b0242a63df6
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 24ffef4775339baf182b01062f2a06136a04abf1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596728"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081571"
 ---
 # <a name="connect-to-db2-db2tosql"></a>Herstellen einer Verbindung mit DB2 (DB2ToSQL)
 Verwenden Sie das Dialogfeld **mit DB2 verbinden** , um eine Verbindung mit der DB2-Datenbank herzustellen, die Sie migrieren möchten.  
   
 Um auf dieses Dialogfeld zuzugreifen, wählen Sie im Menü **Datei** die Option **mit DB2 verbinden** aus. Wenn Sie bereits eine Verbindung hergestellt haben, stellt der Befehl die **Verbindung mit DB2 wieder** her.  
   
-## <a name="options"></a>Optionen  
+## <a name="options"></a>Tastatur  
 **Anbieter**  
 Wählen Sie den Datenzugriffs Anbieter für die Verbindung mit der DB2-Datenbank aus. Verfügbare Anbieter sind der DB2-Client Anbieter und der OLE DB-Anbieter. Der Standardwert ist der DB2-Client Anbieter.  
   

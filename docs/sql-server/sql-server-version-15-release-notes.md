@@ -10,12 +10,12 @@ ms.assetid: 13942af8-5a40-4cef-80f5-918386767a47
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: = sql-server-ver15
-ms.openlocfilehash: bcd105fac1dcb534d6c287c0daa8b0fa0e692db2
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: e8a9f06dc33acab6862027cd2fdb55bb4aca4dfc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237841"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080431"
 ---
 # <a name="sql-server-2019-release-notes"></a>Versionshinweise zu [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)]
 [!INCLUDE[SQL Server 2019](../includes/applies-to-version/sqlserver2019.md)]

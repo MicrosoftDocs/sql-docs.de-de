@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan
 ms.custom: ''
 ms.date: 08/28/2020
-ms.openlocfilehash: 0fc56805427b820dc8ccb8cafedb0c04eb34ab6d
-ms.sourcegitcommit: fa63019cbde76dd981b0c5a97c8e4d57e8d5ca4e
+ms.openlocfilehash: ef9938d87de3963ab7757e0d4ec3af0e01d6f33a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99495731"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048360"
 ---
 # <a name="create-an-azure-data-studio-wizard-extension"></a>Entwickeln einer Azure Data Studio-Erweiterung für einen Assistenten
 

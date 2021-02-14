@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 05544ca6-1e07-486c-bf03-e8c2c25b3024
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e781200d74fcd0b34d42a69417546a0aeaf95a9e
-ms.sourcegitcommit: d1051f05a7db81ec62d9785bb6af572408f3d4e0
+ms.openlocfilehash: 4dc9177ed83e349b4cdd3d38da34285ee90a1f1f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88680789"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045390"
 ---
 # <a name="direct-statement-execution-and-prepared-statement-execution-in-the-pdo_sqlsrv-driver"></a>Direkte Anweisungsausführung und vorbereitete Anweisungsausführung im PDO_SQLSRV-Treiber.
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

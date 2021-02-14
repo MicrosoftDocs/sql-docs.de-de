@@ -1,7 +1,7 @@
 ---
 description: Verwalten der schnelleren Datenbankwiederherstellung
 title: Verwalten der beschleunigten Datenbankwiederherstellung | Microsoft-Dokumentation
-ms.date: 08/12/2019
+ms.date: 02/02/2021
 ms.prod: sql
 ms.prod_service: backup-restore
 ms.technology: backup-restore
@@ -13,12 +13,12 @@ author: mashamsft
 ms.author: mathoma
 ms.reviewer: kfarlee
 monikerRange: '>=sql-server-ver15'
-ms.openlocfilehash: cfd5a901f38dacf9e17baff4d65363796ab3cd73
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: ca11bbae7f1bcc86c0891cc22d8a7a02b26fd46e
+ms.sourcegitcommit: fa63019cbde76dd981b0c5a97c8e4d57e8d5ca4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236106"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99495778"
 ---
 # <a name="manage-accelerated-database-recovery"></a>Verwalten der schnelleren Datenbankwiederherstellung
 
@@ -118,7 +118,30 @@ Der PVS gilt als groß, wenn er deutlich größer als die Baseline ist oder ann�
 
    Aktive Transaktionen verhindern das Cleanup des PVS.
 
-1. Wenn die Datenbank Teil einer Verfügbarkeitsgruppe ist, überprüfen Sie die `secondary_low_water_mark`. Diese ist identisch mit dem `low_water_mark_for_ghosts`, das von `sys.dm_hadr_database_replica_states` gemeldet wird. Führen Sie die `sys.dm_hadr_database_replica_states`-Abfrage durch, um festzustellen, ob eines der Replikate diesen Wert zurückhält, da dadurch auch das PVS-Cleanup verhindert wird.
-1. Überprüfen Sie `min_transaction_timestamp` (oder `online_index_min_transaction_timestamp`, wenn der Online-PVS den Vorgang aufhält), und überprüfen Sie auf dieser Grundlage `sys.dm_tran_active_snapshot_database_transactions` für die Spalte `transaction_sequence_num`, um die Sitzung mit der alten Momentaufnahmetransaktion zu suchen, die das PVS-Cleanup aufhält.
-1. Wenn nichts davon zutrifft, bedeutet dies, dass das Cleanup von abgebrochenen Transaktionen aufgehalten wird. Überprüfen Sie ein letztes Mal `aborted_version_cleaner_last_start_time` und `aborted_version_cleaner_last_end_time`, um festzustellen, ob das Cleanup abgebrochener Transaktionen durchgeführt wurde. Die `oldest_aborted_transaction_id` sollte nach Durchführen des Cleanups abgebrochener Transaktionen nach oben verschoben werden.
-1. Wenn die abgebrochene Transaktion zuletzt nicht erfolgreich abgeschlossen wurde, überprüfen Sie das Fehlerprotokoll auf `VersionCleaner`-Probleme.
+2. Wenn die Datenbank Teil einer Verfügbarkeitsgruppe ist, überprüfen Sie die `secondary_low_water_mark`. Diese ist identisch mit dem `low_water_mark_for_ghosts`, das von `sys.dm_hadr_database_replica_states` gemeldet wird. Führen Sie die `sys.dm_hadr_database_replica_states`-Abfrage durch, um festzustellen, ob eines der Replikate diesen Wert zurückhält, da dadurch auch das PVS-Cleanup verhindert wird.
+3. Überprüfen Sie `min_transaction_timestamp` (oder `online_index_min_transaction_timestamp`, wenn der Online-PVS den Vorgang aufhält), und überprüfen Sie auf dieser Grundlage `sys.dm_tran_active_snapshot_database_transactions` für die Spalte `transaction_sequence_num`, um die Sitzung mit der alten Momentaufnahmetransaktion zu suchen, die das PVS-Cleanup aufhält.
+4. Wenn nichts davon zutrifft, bedeutet dies, dass das Cleanup von abgebrochenen Transaktionen aufgehalten wird. Überprüfen Sie ein letztes Mal `aborted_version_cleaner_last_start_time` und `aborted_version_cleaner_last_end_time`, um festzustellen, ob das Cleanup abgebrochener Transaktionen durchgeführt wurde. Die `oldest_aborted_transaction_id` sollte nach Durchführen des Cleanups abgebrochener Transaktionen nach oben verschoben werden.
+5. Wenn die abgebrochene Transaktion zuletzt nicht erfolgreich abgeschlossen wurde, überprüfen Sie das Fehlerprotokoll auf `VersionCleaner`-Probleme.
+
+Verwenden Sie die folgende Beispielabfrage als Hilfe zur Problembehandlung:
+
+```sql
+SELECT pvss.persistent_version_store_size_kb / 1024. / 1024 AS persistent_version_store_size_gb,
+       pvss.online_index_version_store_size_kb / 1024. / 1024 AS online_index_version_store_size_gb,
+       pvss.current_aborted_transaction_count,
+       pvss.aborted_version_cleaner_start_time,
+       pvss.aborted_version_cleaner_end_time,
+       dt.database_transaction_begin_time AS oldest_transaction_begin_time,
+       asdt.session_id AS active_transaction_session_id,
+       asdt.elapsed_time_seconds AS active_transaction_elapsed_time_seconds
+FROM sys.dm_tran_persistent_version_store_stats AS pvss
+LEFT JOIN sys.dm_tran_database_transactions AS dt
+ON pvss.oldest_active_transaction_id = dt.transaction_id
+   AND
+   pvss.database_id = dt.database_id
+LEFT JOIN sys.dm_tran_active_snapshot_database_transactions AS asdt
+ON pvss.min_transaction_timestamp = asdt.transaction_sequence_num
+   OR
+   pvss.online_index_min_transaction_timestamp = asdt.transaction_sequence_num
+WHERE pvss.database_id = DB_ID();
+```

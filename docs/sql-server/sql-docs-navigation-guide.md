@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || >= sql-server-linux-2017'
-ms.openlocfilehash: 4c8852c9b2ce3f7bce027632b741511a008cb646
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: fc749f636a4d1b7b2e737e54d9ecd9418321c548
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98595882"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100082554"
 ---
 # <a name="sql-server-docs-navigation-guide"></a>Navigationsleitfaden zur SQL Server-Dokumentation
 

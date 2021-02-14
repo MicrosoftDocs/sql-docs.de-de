@@ -22,12 +22,12 @@ ms.assetid: ced484ae-7c17-4613-a3f9-6d8aba65a110
 author: jovanpop-msft
 ms.author: jovanpop
 monikerRange: =azuresqldb-current||>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b9037aaefe27cd50deb9b61af423a8074ab86f65
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 332e035a12de891bde8324a55f08a2baf59a9edc
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99204812"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343039"
 ---
 # <a name="sysdm_db_tuning_recommendations-transact-sql"></a>Empfehlungen für die sys.DM-Datenbankoptimierung \_ \_ \_ (Transact-SQL)
 [!INCLUDE[sqlserver2017-asdb](../../includes/applies-to-version/sqlserver2017-asdb.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "99204812"
 
  `currentValue` das Feld in der `state` Spalte kann die folgenden Werte aufweisen:
  
- | Status | BESCHREIBUNG |
+ | Status | Beschreibung |
  |--------|-------------|
  | `Active` | Die Empfehlung ist aktiv und wurde noch nicht angewendet. Der Benutzer kann ein Empfehlungs Skript erstellen und manuell ausführen. |
  | `Verifying` | Die Empfehlung wird von angewendet, [!INCLUDE[ssde_md](../../includes/ssde_md.md)] und der interne Überprüfungsprozess vergleicht die Leistung des erzwungenen Plans mit dem zurück gestellten Plan. |
@@ -85,6 +85,8 @@ Das JSON-Dokument in der `state` Spalte enthält den Grund, warum die Empfehlung
 | `VerificationForcedQueryRecompile`| Die Abfrage wird neu kompiliert, weil keine signifikante Leistungsverbesserung vorliegt. |
 | `PlanForcedByUser`| Der Benutzer hat den Plan mithilfe [sp_query_store_force_plan &#40;Transact-SQL-&#41;](../../relational-databases/system-stored-procedures/sp-query-store-force-plan-transact-sql.md) Prozedur manuell erzwungen. Das Datenbankmodul wendet die Empfehlung nicht an, wenn sich der Benutzer explizit für das Erzwingen eines Plans entschieden hat. |
 | `PlanUnforcedByUser` | Der Benutzer hat den Plan mithilfe [sp_query_store_unforce_plan &#40;Transact-SQL-&#41;Prozedur manuell enterzwingt ](../../relational-databases/system-stored-procedures/sp-query-store-unforce-plan-transact-sql.md) . Da der Benutzer den empfohlenen Plan explizit wieder hergestellt hat, verwendet die Datenbank-Engine weiterhin den aktuellen Plan und generiert eine neue Empfehlung, wenn eine Plan Regression in Zukunft erfolgt. |
+| `UserForcedDifferentPlan` | Der Benutzer hat einen anderen Plan mithilfe [sp_query_store_force_plan &#40;Transact-SQL-&#41;](../../relational-databases/system-stored-procedures/sp-query-store-force-plan-transact-sql.md) Prozedur manuell erzwungen. Das Datenbankmodul wendet die Empfehlung nicht an, wenn sich der Benutzer explizit für das Erzwingen eines Plans entschieden hat. |
+| `TempTableChanged` | Eine temporäre Tabelle, die im Plan verwendet wurde, wird geändert. |
 
  Die Statistik in der Spalte "Details" zeigt keine Statistiken für den Lauf Zeit Plan an (z. b. aktuelle CPU-Zeit). Die Empfehlungs Details werden zum Zeitpunkt der Regressions Erkennung verwendet, und es wird beschrieben, warum die [!INCLUDE[ssde_md](../../includes/ssde_md.md)] Leistungs Regression erkannt wurde. Verwenden `regressedPlanId` `recommendedPlanId` Sie und, um [Abfragespeicher Katalog Sichten](../../relational-databases/performance/how-query-store-collects-data.md) abzufragen, um genaue Lauf Zeit Plan Statistiken zu ermitteln.
 

@@ -9,12 +9,12 @@ ms.date: 09/30/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 6c25038680d71257e609d99460841d63b8e87d33
-ms.sourcegitcommit: 783b35f6478006d654491cb52f6edf108acf2482
+ms.openlocfilehash: 3424863924338a0d3f02102609052d6c159e1043
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91898682"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048010"
 ---
 # <a name="deploy-big-data-clusters-2019-in-active-directory-mode-prerequisites"></a>Bereitstellen von [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] im Active Directory-Modus: Voraussetzungen
 

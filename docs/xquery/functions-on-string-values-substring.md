@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 2b3b8651-de51-46dc-af82-c86c45eac871
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4a4881fc4710ba56439eb98b5b196af93247c11f
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 7457341a5489485973869e46c2ba721b86352217
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85768152"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345008"
 ---
 # <a name="functions-on-string-values---substring"></a>Funktionen für Zeichenfolgenwerte – substring
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
 
-  Gibt einen Teil des Werts *$sourceString*zurück, beginnend an der durch den Wert von $startingLoc gekennzeichneten Position und setzt die Anzahl der Zeichen fort, die durch den Wert von *$length*angegeben *werden* .  
+  Gibt einen Teil des Werts *$sourceString* zurück, beginnend an der durch den Wert von $startingLoc gekennzeichneten Position und setzt die Anzahl der Zeichen fort, die durch den Wert von *$length* angegeben *werden* .  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,17 +45,17 @@ fn:substring($sourceString as xs:string?,
  Quellzeichenfolge.  
   
  *$startingLoc*  
- Ausgangspunkt in der Quellzeichenfolge, an dem die Unterzeichenfolge beginnt. Wenn dieser Wert negativ oder 0 ist, werden nur die Zeichen an Positionen größer null zurückgegeben. Wenn Sie größer als die Länge des *$sourceString*ist, wird die Zeichenfolge der Länge 0 (null) zurückgegeben.  
+ Ausgangspunkt in der Quellzeichenfolge, an dem die Unterzeichenfolge beginnt. Wenn dieser Wert negativ oder 0 ist, werden nur die Zeichen an Positionen größer null zurückgegeben. Wenn Sie größer als die Länge des *$sourceString* ist, wird die Zeichenfolge der Länge 0 (null) zurückgegeben.  
   
  *$length*  
  [optional] Anzahl der abzurufenden Zeichen. Wenn kein Wert angegeben wird, werden alle Zeichen von der in *$startingLoc* bis zum Ende der Zeichenfolge angegebenen Position zurückgegeben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  Die Version der Funktion mit drei Argumenten gibt die Zeichen in `$sourceString` zurück, deren Position `$p` genügt:  
   
  `fn:round($startingLoc) <= $p < fn:round($startingLoc) + fn:round($length)`  
   
- Der Wert von *$length* kann größer als die Anzahl der Zeichen im Wert *$sourceString* nach der Startposition sein. In diesem Fall gibt die Teil Zeichenfolge die Zeichen bis zum Ende der *$sourceString*zurück.  
+ Der Wert von *$length* kann größer als die Anzahl der Zeichen im Wert *$sourceString* nach der Startposition sein. In diesem Fall gibt die Teil Zeichenfolge die Zeichen bis zum Ende der *$sourceString* zurück.  
   
  Das erste Zeichen einer Zeichenfolge befindet sich an Position 1.  
   

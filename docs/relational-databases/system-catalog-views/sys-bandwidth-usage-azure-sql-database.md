@@ -20,12 +20,12 @@ ms.assetid: 43ed8435-f059-4907-b5c0-193a258b394a
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: 9af11212533337e575976261995161b222e73efa
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: fcf2ac0f0336a7567987d056d0a568d6892b5d1e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99198567"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338907"
 ---
 # <a name="sysbandwidth_usage-azure-sql-database"></a>sys.bandwidth_usage (Azure SQL Database)
 
@@ -40,7 +40,7 @@ ms.locfileid: "99198567"
   
  Die **sys.bandwidth_usage** Sicht enthält die folgenden Spalten.  
   
-|Spaltenname|BESCHREIBUNG|  
+|Spaltenname|Beschreibung|  
 |-----------------|-----------------|  
 |**time**|Die Stunde, als die Bandbreite verwendet wurde. Die Zeilen in dieser Sicht enthalten stündliche Angaben. Beispielsweise bedeutet 2009-09-19 02:00:00.000, dass die Bandbreite am 19. September 2009 zwischen 2:00 Uhr und 3:00 Uhr verwendet wurde.|  
 |**database_name**|Der Name der Datenbank, die Bandbreite verwendet hat.|  

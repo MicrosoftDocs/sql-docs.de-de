@@ -15,12 +15,12 @@ ms.assetid: 68dbdf81-032c-4a73-99f6-41420e053980
 author: MikeRayMSFT
 ms.author: mikeray
 manager: erikre
-ms.openlocfilehash: 7353d02985194024c24319df5c6eca1100607d29
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 35b7d58a37e5f343380af6ef26e1f8e9bdb11102
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835879"
 ---
 # <a name="upgrade-integration-services-packages"></a>Aktualisieren von Integration Services-Paketen
 
@@ -48,7 +48,7 @@ ms.locfileid: "92195871"
 ## <a name="custom-applications-and-custom-components"></a>Benutzerdefinierte Anwendungen und benutzerdefinierte Komponenten  
  [!INCLUDE[ssISversion2005](../../includes/ssisversion2005-md.md)] -Komponenten können nicht mit der aktuellen Version von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)].  
   
- Sie können die aktuelle Version der [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Tools verwenden, um Pakete auszuführen und zu verwalten, die benutzerdefinierte [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)]-, [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)]-, [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]- oder [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)][!INCLUDE[ssIS](../../includes/ssis-md.md)] -Komponenten enthalten. Den folgenden Dateien wurden vier Bindungsumleitungsregeln hinzugefügt, um die Umleitung der Laufzeitassemblys von Version 10.0.0.0 ([!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)]), Version 11.0.0.0 ([!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]) oder Version 12.0.0.0 ([!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]) an Version 13.0.0.0 ([!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]) zu erleichtern.  
+ Sie können die aktuelle Version der [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Tools verwenden, um Pakete auszuführen und zu verwalten, die benutzerdefinierte [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)]-, [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)]-, [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]- oder [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)][!INCLUDE[ssIS](../../includes/ssis-md.md)] -Komponenten enthalten. Den folgenden Dateien wurden vier Bindungsumleitungsregeln hinzugefügt, um die Umleitung der Laufzeitassemblys von Version 10.0.0.0 ([!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)]), Version 11.0.0.0 ([!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]) oder Version 12.0.0.0 ([!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]) an Version 15.0.0.0 ([!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]) zu erleichtern.  
   
 -   DTExec.exe.config  
   
@@ -62,10 +62,10 @@ ms.locfileid: "92195871"
   
  Um mit [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)] Pakete zu entwerfen, die benutzerdefinierte [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)]-, [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)]-, [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]- oder [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]-Komponenten enthalten, müssen Sie die Datei „devenv.exe.config“ im Verzeichnis „ *\<drive>* :\Programme\Microsoft Visual Studio 10.0\Common7\IDE“ ändern.  
   
- Zur Verwendung dieser Pakete mit Kundenanwendungen, die mit der Laufzeit für [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]erstellt werden, schließen Sie die Umleitungsregeln in den Konfigurationsabschnitt der Datei *.exe.config für die ausführbare Datei ein. Die Laufzeitassemblys werden durch die Regeln zu Version 13.0.0.0 ([!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]) umgeleitet. Weitere Informationen zur Umleitung von Assemblyversionen finden Sie unter [\<assemblyBinding>-Element für \<runtime>](/dotnet/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime).  
+ Zur Verwendung dieser Pakete mit Kundenanwendungen, die mit der Laufzeit für [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]erstellt werden, schließen Sie die Umleitungsregeln in den Konfigurationsabschnitt der Datei *.exe.config für die ausführbare Datei ein. Die Laufzeitassemblys werden durch die Regeln zu Version 15.0.0.0 ([!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]) umgeleitet. Weitere Informationen zur Umleitung von Assemblyversionen finden Sie unter [\<assemblyBinding>-Element für \<runtime>](/dotnet/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime).  
   
 ### <a name="locating-the-assemblies"></a>Suchen der Assemblys  
- In [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]wurden die [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Assemblys auf .NET 4.0 aktualisiert. Es ist ein separater globaler Assemblycache für .NET 4 unter „ *\<drive>* :\Windows\Microsoft.NET\assembly“ verfügbar. Normalerweise befinden sich alle [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Assemblys unter diesem Pfad im Ordner GAC_MSIL.  
+ In [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]wurden die [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Assemblys auf .NET 4.0 aktualisiert. Es ist ein separater globaler Assemblycache für .NET 4 unter „ *\<drive>* :\Windows\Microsoft.NET\assembly“ verfügbar. Normalerweise befinden sich alle [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Assemblys unter diesem Pfad im Ordner GAC_MSIL.  
   
  Wie in früheren Versionen von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] befinden sich die zentralen DLL-Dateien für die [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]-Erweiterbarkeit unter „ *\<drive>* :\Programme\Microsoft SQL Server\130\SDK\Assemblies“.  
   

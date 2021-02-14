@@ -21,12 +21,12 @@ ms.assetid: f0d3b95a-8a00-471b-9da4-14cb8f5b045f
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ec5ad1373336d3cc3873e0a0b81c2ad6c27291fa
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 00783bffefd33038d079280c50983b9dfe03393f
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250412"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100340064"
 ---
 # <a name="sysdm_tran_locks-transact-sql"></a>sys.dm_tran_locks (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "99250412"
 > [!NOTE]  
 > Um dies von oder aus aufzurufen [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] , verwenden Sie den Namen **sys.dm_pdw_nodes_tran_locks**.  
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**resource_type**|**nvarchar(60)**|Stellt den Ressourcentyp dar. Die folgenden Werte sind möglich: DATABASE, FILE, OBJECT, PAGE, KEY, EXTENT, RID, APPLICATION, METADATA, HOBT oder ALLOCATION_UNIT.|  
 |**resource_subtype**|**nvarchar(60)**|Stellt einen Untertyp von **resource_type** dar. Es ist technisch zulässig, eine Untertypsperre abzurufen, ohne dass eine Nicht-Untertypsperre des übergeordneten Typs vorhanden ist. Unterschiedliche Untertypen führen nicht zu Konflikten untereinander oder mit dem übergeordneten Typ des Nicht-Untertyps. Nicht alle Ressourcentypen weisen Untertypen auf.|  
@@ -63,7 +63,7 @@ ms.locfileid: "99250412"
   
 ## <a name="permissions"></a>Berechtigungen
 In [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] ist die- `VIEW SERVER STATE` Berechtigung erforderlich.   
-Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken `Server admin` oder ein `Azure Active Directory admin` Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
+Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken das [Server Administrator](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
  
 ## <a name="remarks"></a>Bemerkungen  
  Der Anforderungsstatus GRANTED gibt an, dass dem Anforderer für eine Ressource eine Sperre erteilt wurde. Der Anforderungsstatus WAITING gibt an, dass die Anforderung noch nicht erteilt wurde. Die folgenden Anforderungstypen für WAITING werden von der **request_status**-Spalte zurückgegeben:  
@@ -98,15 +98,15 @@ Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbank
   
 |Ressourcentyp|Ressourcenbeschreibung|Resource_associated_entity_id|  
 |-------------------|--------------------------|--------------------------------------|  
-|DATABASE|Stellt eine Datenbank dar.|Nicht verfügbar|  
-|FILE|Stellt eine Datenbankdatei dar. Bei dieser Datei kann es sich entweder um eine Datendatei oder eine Protokolldatei handeln.|Nicht verfügbar|  
+|DATABASE|Stellt eine Datenbank dar.|Nicht zutreffend|  
+|FILE|Stellt eine Datenbankdatei dar. Bei dieser Datei kann es sich entweder um eine Datendatei oder eine Protokolldatei handeln.|Nicht zutreffend|  
 |OBJECT|Stellt ein Datenbankobjekt dar. Bei diesem Objekt kann es sich um eine Datentabelle, eine Sicht, eine gespeicherte Prozedur, eine erweiterte gespeicherte Prozedur oder ein beliebiges Objekt mit einer Objekt-ID handeln.|Objekt-ID|  
 |PAGE|Stellt eine einzelne Seite in einer Datendatei dar.|HoBt-ID. Dieser Wert entspricht **sys.partitions.hobt_id**. Die HoBt-ID ist nicht immer für PAGE-Ressourcen verfügbar, weil es sich bei der HoBt-ID um zusätzliche Informationen handelt, die vom Aufrufer bereitgestellt werden können. Dabei sind nicht alle Aufrufer in der Lage, diese Informationen bereitzustellen.|  
 |KEY|Stellt eine Zeile in einem Index dar.|HoBt-ID. Dieser Wert entspricht **sys.partitions.hobt_id**.|  
-|EXTENT|Stellt einen Datendateiblock dar. Ein Block ist eine Gruppe von acht fortlaufenden Seiten.|Nicht verfügbar|  
+|EXTENT|Stellt einen Datendateiblock dar. Ein Block ist eine Gruppe von acht fortlaufenden Seiten.|Nicht zutreffend|  
 |RID|Stellt eine physische Zeile in einem Heap dar.|HoBt-ID. Dieser Wert entspricht **sys.partitions.hobt_id**. Die HoBt-ID ist nicht immer für RID-Ressourcen verfügbar, weil es sich bei der HoBt-ID um zusätzliche Informationen handelt, die vom Aufrufer bereitgestellt werden können. Dabei sind nicht alle Aufrufer in der Lage, diese Informationen bereitzustellen.|  
-|APPLICATION|Stellt eine in einer Anwendung angegebene Ressource dar.|Nicht verfügbar|  
-|METADATA|Stellt Metadateninformationen dar.|Nicht verfügbar|  
+|APPLICATION|Stellt eine in einer Anwendung angegebene Ressource dar.|Nicht zutreffend|  
+|METADATA|Stellt Metadateninformationen dar.|Nicht zutreffend|  
 |HOBT|Stellt einen Heap oder eine B-Struktur dar. Dies sind die grundlegenden Zugriffspfadstrukturen.|HoBt-ID. Dieser Wert entspricht **sys.partitions.hobt_id**.|  
 |ALLOCATION_UNIT|Stellt zusammenhängende Seiten dar, wie z. B. eine Indexpartition. Jede Zuordnungseinheit deckt eine einzelne IAM-Kette (Index Allocation Map) ab.|Zuordnungseinheit-ID. Dieser Wert entspricht **sys.allocation_units.allocation_unit_id**.|  
   
@@ -198,9 +198,9 @@ Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbank
   
  In der folgenden Tabelle ist das Format der **resource_description**-Spalte für die einzelnen Ressourcentypen angegeben.  
   
-|Resource|Format|BESCHREIBUNG|  
+|Resource|Format|Beschreibung|  
 |--------------|------------|-----------------|  
-|DATABASE|Nicht verfügbar|Datenbank-ID ist bereits in der **resource_database_id**-Spalte verfügbar.|  
+|DATABASE|Nicht zutreffend|Datenbank-ID ist bereits in der **resource_database_id**-Spalte verfügbar.|  
 |FILE|<file_id>|ID der Datei, die durch diese Ressource dargestellt wird.|  
 |OBJECT|<object_id>|ID des Objekts, das durch diese Ressource dargestellt wird. Bei dem Objekt kann es sich nicht nur um eine Tabelle handeln, sondern um ein beliebiges in **sys.objects** aufgelistetes Objekt.|  
 |PAGE|<file_id>:<page_in_file>|Stellt die Datei-ID und die Seiten-ID der Seite dar, die durch diese Ressource dargestellt wird.|  
@@ -208,8 +208,8 @@ Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbank
 |EXTENT|<file_id>:<page_in_files>|Stellt die Datei und die Seiten-ID des Blocks dar, der durch diese Ressource dargestellt wird. Die Block-ID ist mit der Seiten-ID der ersten Seiten des Blocks identisch.|  
 |RID|<file_id>:<page_in_file>:<row_on_page>|Stellt die Seiten-ID und die Zeilen-ID der Zeile dar, die durch diese Ressource dargestellt wird. Wenn die zugeordnete Objekt-ID 99 lautet, stellt diese Ressource eine der acht gemischten Seitenslots auf der ersten IAM-Seite einer IAM-Kette dar.|  
 |APPLICATION|\<DbPrincipalId>: \<upto 32 characters> :(<hash_value>)|Stellt die ID des Datenbankprinzipals dar, der für die Bereichsauswahl dieser Anwendungssperrenressource verwendet wird. Außerdem sind bis zu 32 Zeichen aus der Ressourcenzeichenfolge enthalten, die dieser Anwendungssperrenressource entsprechen. In bestimmten Fällen können nur 2 Zeichen angezeigt werden, da die vollständige Zeichenfolge nicht mehr verfügbar ist. Dies tritt nur beim Wiederherstellen der Datenbank für Anwendungssperren auf, die im Rahmen des Wiederherstellungsprozesses erneut abgerufen werden. Der Hashwert stellt einen Hash der vollständigen Ressourcenzeichenfolge dar, die dieser Anwendungssperrenressource entspricht.|  
-|HOBT|Nicht verfügbar|Die HoBt-ID ist als **resource_associated_entity_id** enthalten.|  
-|ALLOCATION_UNIT|Nicht verfügbar|Die Zuordnungseinheit-ID, die als **resource_associated_entity_id** enthalten ist.|  
+|HOBT|Nicht zutreffend|Die HoBt-ID ist als **resource_associated_entity_id** enthalten.|  
+|ALLOCATION_UNIT|Nicht zutreffend|Die Zuordnungseinheit-ID, die als **resource_associated_entity_id** enthalten ist.|  
 |METADATA.ASSEMBLY|assembly_id = A|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |METADATA.ASSEMBLY_CLR_NAME|$qname_id = Q|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |METADATA.ASSEMBLY_TOKEN|assembly_id = A, $token_id|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  

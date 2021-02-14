@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 84387746-aa3e-44fd-ad6c-a8214a6966dc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0589b1fe5ca6da29f088e26b2236cfc5205bfe0c
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 33ae3c1ca1cb8f89378b4f2ea468b41d6d3a4ac5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978571"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036620"
 ---
 # <a name="working-with-multidimensional-data"></a>Arbeiten mit mehrdimensionalen Daten
 Ein *Cellset* ist das Ergebnis einer Abfrage für mehrdimensionale Daten. Sie besteht aus einer Auflistung von Achsen, in der Regel nicht mehr als vier Achsen und in der Regel nur zwei oder drei Achsen. Eine *Achse* ist eine Auflistung von Membern aus einer oder mehreren Dimensionen, die zum Suchen oder Filtern bestimmter Werte in einem Cube verwendet wird.  
@@ -37,7 +37,7 @@ Ein *Cellset* ist das Ergebnis einer Abfrage für mehrdimensionale Daten. Sie be
   
 -   Quartale, Monate, Tage  
   
--   Years  
+-   Jahre  
   
 -   Measures-Sales, Prozentänderung, BudgetedSales  
   

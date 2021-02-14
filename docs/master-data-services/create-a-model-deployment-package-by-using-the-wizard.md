@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b24ec4c2-1378-4c72-ac69-4ec2647030f0
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 7c776d67ebf49e39ae3593d9ac570fe251abb728
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d0c122440543cc511d78b2c38b688fde672ec6ef
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88477074"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272631"
 ---
 # <a name="create-a-model-deployment-package-by-using-the-wizard"></a>Erstellen eines Modellbereitstellungspakets mithilfe des Assistenten
 
@@ -43,7 +43,7 @@ ms.locfileid: "88477074"
   
 2.  Zeigen Sie auf der Seite **Modellansicht** auf der Menüleiste auf **System** , und klicken Sie auf **Bereitstellung**.  
   
-3.  Klicken Sie auf **Erstellen**im **Modellbereitstellungs-Assistenten**.  
+3.  Klicken Sie auf **Erstellen** im **Modellbereitstellungs-Assistenten**.  
   
 4.  Wählen Sie auf der Seite **Paket erstellen** ein Modell aus der Liste **Modell** aus.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "88477074"
   
 6.  Klicken Sie auf **Download**.  
   
-7.  Speichern Sie die Datei.  
+7.  Speichern Sie die Datei .  
   
 8.  Klicken Sie auf **Schließen** , um den Assistenten zu schließen.  
   

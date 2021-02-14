@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2ddf19e4-312e-4d21-8053-a6fc4b738ad4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 85f6cb74b25d7664bdf7b87c4290edd19a49dcd3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ab663c6a6a0cad3b6093c8bc6eefb5bb98d7ed16
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164325"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050581"
 ---
 # <a name="adox-properties"></a>ADOX-Eigenschaften
 
@@ -29,7 +29,7 @@ ms.locfileid: "99164325"
 |[Attribute](./attributes-property-adox.md)|Beschreibt Spalten Eigenschaften.|  
 |[Cluster](./clustered-property-adox.md)|Gibt an, ob der Index gruppiert ist.|  
 |[Befehl](./command-property-adox.md)|Gibt ein ADO- **Befehls** Objekt an, das verwendet werden kann, um die Prozedur zu erstellen oder auszuführen.|  
-|[Anzahl](../ado-api/count-property-ado.md)|Gibt die Anzahl der-Objekte in einer Auflistung an.|  
+|[Count](../ado-api/count-property-ado.md)|Gibt die Anzahl der-Objekte in einer Auflistung an.|  
 |[DateCreated](./datecreated-property-adox.md)|Gibt das Datum an, an dem das Objekt erstellt wurde.|  
 |[DateModified](./datemodified-property-adox.md)|Gibt das Datum an, an dem das Objekt zuletzt geändert wurde.|  
 |[DefinedSize](./definedsize-property-adox.md)|Gibt die angegebene maximale Größe der Spalte an.|  
