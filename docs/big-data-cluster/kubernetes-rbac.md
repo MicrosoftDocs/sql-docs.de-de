@@ -9,12 +9,12 @@ ms.date: 08/04/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 315752ffc775aa1db1970e3fef5c807e0f8e1708
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: a379b2bd1bb0e1992d70e1c86ae93163f6c02201
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257131"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046440"
 ---
 # <a name="kubernetes-rbac-model--impact-on-users-and-service-accounts-managing-bdc"></a>RBAC-Modell in Kubernetes und Auswirkungen auf Benutzer und Dienstkonten, die Big Data-Cluster verwalten
 
@@ -33,7 +33,7 @@ Der Big Data-Cluster verwendet Dienstkonten (z. B. `sa-mssql-controller` oder `
 4. azdata erstellt eine `<namespaced>-admin`-Rolle mit vollständigen Berechtigungen für den Namespace oder das Projekt, jedoch ohne Berechtigungen auf Clusterebene.
 5. azdata erstellt eine Rollenzuweisung dieses Dienstkontos zu der Rolle.
 
-Sobald diese Schritte abgeschlossen sind, werden die Pods der Steuerungsebene bereitgestellt, und das Dienstkonto stellt den Rest des Big Data-Clusters bereit.  
+Sobald diese Schritte abgeschlossen sind, werden die Pods der Steuerungsebene bereitgestellt, und das Dienstkonto stellt den Rest des Big Data-Clusters bereit.  
 
 Als Konsequenz benötigt der bereitstellende Benutzer Berechtigungen für die folgenden Aufgaben:
 
@@ -93,11 +93,11 @@ Das Dienstkonto, die Clusterrolle und die Clusterrollenbindung können entweder 
 Sie können diese Einstellungen im Sicherheitsabschnitt in der Bereitstellungskonfigurationsdatei `control.json` anpassen:
 
 ```json
-  "security": {
-    …
-    "allowNodeMetricsCollection": false,
-    "allowPodMetricsCollection": false
-  }
+  "security": {
+    …
+    "allowNodeMetricsCollection": false,
+    "allowPodMetricsCollection": false
+  }
 ```
 
 Wenn diese Einstellungen auf `false` festgelegt werden, wird im Workflow für die Bereitstellung des Big Data-Clusters nicht versucht, das Dienstkonto, die Clusterrolle und die Bindung für Telegraf zu erstellen.

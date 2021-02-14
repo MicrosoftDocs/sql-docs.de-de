@@ -11,12 +11,12 @@ ms.assetid: 2793bc33-38d3-46ed-8277-b8580cf78ced
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 5947ea6dad4a87258476b9b98d2bc4bc1a10a73d
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 7ace5a492c17de5a2994c566b1a9928d20cbf0ab
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596813"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074569"
 ---
 # <a name="sql-server-migration-assistant-for-mysql-mysqltosql"></a>SQL Server Migration Assistant für MySQL (mysqlto SQL)
 

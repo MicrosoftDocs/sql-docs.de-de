@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: f551cf6e-1575-4206-9cca-975b5b43a6b8
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 1652913173dcd7427515db8c74d15afc75077820
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 42f7d0f36f0e0adfcf067ad0bbe55c5e2c169e9e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988636"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068859"
 ---
 # <a name="conversion-settings-mysqltosql"></a>Konvertierungseinstellungen (MySqlToSql)
 Auf der Registerkarte **"Einstellungen"** können Benutzereinstellungen auf Knotenebene festlegen. Die Registerkarte wird auf den folgenden Metabasisknoten verfügbar sein:  
@@ -30,7 +30,7 @@ Auf der Registerkarte **"Einstellungen"** können Benutzereinstellungen auf Knot
   
 -   Tabellen Knoten  
   
-## <a name="specifications"></a>Spezifikationen  
+## <a name="specifications"></a>Spezifikationen:  
 Die Registerkarte **Einstellungen** verfügt über zwei Benutzereinstellungen:  
   
 1.  Funktions Konvertierung  
@@ -41,7 +41,7 @@ Diese Einstellungen werden basierend auf dem Typ der Metabasisknoten verfügbar.
   
 > [!NOTE]  
 > -   Die vom Benutzer vorgenommenen Änderungen werden im Projekt Arbeitsbereich als separate Einstellungsdatei gespeichert.  
-> -   Die Erweiterung dieser Datei wird **ccprefs**sein.  
+> -   Die Erweiterung dieser Datei wird **ccprefs** sein.  
   
 1.  **Einstellung für Funktions Konvertierung:**  
   

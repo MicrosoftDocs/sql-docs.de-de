@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: c17996d6-56a6-482f-80d8-086a3423eecc
 author: XiaoyuMSFT
 ms.author: XiaoyuL
-ms.openlocfilehash: cbc1286bbbced3a546c1057433dba5bbc4289281
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 6b6610293bb78ef34ae5ca8b88f762c9ab4948e9
+ms.sourcegitcommit: 0b400bb99033f4b836549cb11124a1f1630850a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99199387"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "99978862"
 ---
 # <a name="merge-transact-sql"></a>MERGE (Transact-SQL)
 
@@ -236,14 +236,14 @@ Gibt das Graph-Vergleichsmuster an. Weitere Informationen zu den Argumenten für
 >[!NOTE]
 > In Azure Synapse Analytics weist der MERGE-Befehl (Vorschau) die folgenden Unterschiede im Vergleich mit SQL-Server und Azure SQL-Datenbank auf.  
 > - Ein MERGE-Update ist als Paar aus Delete und Insert implementiert. Die betroffene Zeilenanzahl für ein MERGE-Update schließt die gelöschten und eingefügten Zeilen ein. 
-> - Der MERGE-Befehl funktioniert während der Vorschau nicht mit Tabellen mit UNIQUE-Einschränkungen.  Dieses Problem wird bald in einer künftigen Version behoben werden.
+> - Während der Vorschau wird MERGE…WHEN NOT MATCHED INSERT nicht für Tabellen mit IDENTITY-Spalten unterstützt.  
 > - Die Unterstützung für Tabellen mit verschiedenen Verteilungstypen ist in dieser Tabelle beschrieben:
 
 >|MERGE-KLAUSEL in Azure Synapse Analytics|Unterstützte ZIEL-Verteilungstabelle| Unterstützte QUELL-Verteilungstabelle|Comment|  
 >|-----------------|---------------|-----------------|-----------|  
->|**WHEN MATCHED**| HASH, ROUND_ROBIN, REPLICATE |Alle Verteilungstypen||  
+>|**WHEN MATCHED**| Alle Verteilungstypen |Alle Verteilungstypen||  
 >|**NOT MATCHED BY TARGET**|HASH |Alle Verteilungstypen|Verwenden Sie UPDATE/DELETE FROM…JOIN, um zwei Tabellen zu synchronisieren. |
->|**NOT MATCHED BY SOURCE**|Alle Verteilungstypen|Alle Verteilungstypen|Verwenden Sie UPDATE/DELETE FROM…JOIN, um zwei Tabellen zu synchronisieren.||  
+>|**NOT MATCHED BY SOURCE**|Alle Verteilungstypen|Alle Verteilungstypen|||  
 
 Mindestens eine der drei MATCHED-Klauseln muss angegeben werden, dies kann jedoch in beliebiger Reihenfolge erfolgen. Eine Variable in derselben MATCHED-Klausel kann nicht mehr als einmal aktualisiert werden.  
   

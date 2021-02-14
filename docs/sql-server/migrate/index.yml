@@ -10,12 +10,12 @@ metadata:
   ms.author: mathoma
   ms.date: 12/09/2019
   ms.reviewer: rajpo
-  ms.openlocfilehash: 6c4efc78db4f7966053c3314a17777d22d6e40cd
-  ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+  ms.openlocfilehash: b9e8d290eb4f10598fb9160c4c0a28ae5d0ade8c
+  ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 08/07/2020
-  ms.locfileid: "87934121"
+  ms.lasthandoff: 02/10/2021
+  ms.locfileid: "100080331"
 landingContent:
 - title: SQL in SQL Server
   linkLists:

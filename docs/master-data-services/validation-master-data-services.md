@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 98eb49e7-b190-4a21-8316-08c07cde14ed
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: cf834f59c907fd852bd69dfd72c83ee2ea95df1a
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: ecd7fcde67c20c416c7eb3eb0d781f714328a64c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "92258042"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336209"
 ---
 # <a name="validation-master-data-services"></a>Überprüfung (Master Data Services)
 

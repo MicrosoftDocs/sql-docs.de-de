@@ -11,12 +11,12 @@ ms.topic: reference
 ms.assetid: e267e5f4-38bb-466d-82e8-871eabeec07e
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: c12348fc830a187a8d88841c15e25ba726bef968
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 416670f703ba40a54650a2dfc28b2f508c202439
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88389786"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350138"
 ---
 # <a name="create-a-custom-workflow---xml-description"></a>Erstellen eines benutzerdefinierten Workflows – XML-Beschreibung
 

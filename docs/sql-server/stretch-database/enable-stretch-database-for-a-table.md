@@ -12,12 +12,12 @@ ms.assetid: de4ac0c5-46ef-4593-a11e-9dd9bcd3ccdc
 author: rothja
 ms.author: jroth
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 10f267dc42c7626ad89b576b00e2b80a07dae427
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 29d4e1d6e2de7c575b9549f13dc325add4f5ca88
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88454383"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081106"
 ---
 # <a name="enable-stretch-database-for-a-table"></a>Aktivieren von Stretch Database für eine Tabelle
 [!INCLUDE [sqlserver2016-windows-only](../../includes/applies-to-version/sqlserver2016-windows-only.md)]

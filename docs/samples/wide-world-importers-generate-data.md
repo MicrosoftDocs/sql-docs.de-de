@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: f60ad250ea68f58a98fb93da9f3c5853ad68bd47
-ms.sourcegitcommit: 67befbf7435f256e766bbce6c1de57799e1db9ad
+ms.openlocfilehash: f54370d9aa54602964817fc17704a324134c0757
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92523935"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354102"
 ---
 # <a name="wideworldimporters-data-generation"></a>Datengenerierung von wideworldimporters
 [!INCLUDE [SQL Server Azure SQL Database](../includes/applies-to-version/sql-asdb.md)]

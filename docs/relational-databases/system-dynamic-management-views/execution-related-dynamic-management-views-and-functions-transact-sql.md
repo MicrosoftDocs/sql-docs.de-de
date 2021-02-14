@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aea07b33-f715-4b61-9d1e-8c77b03e9578
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 28d8866057cbaf48bca38c95d82f117eebd4dfba
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 7980f346fe8371aff15d419e21f78313c8973f68
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99145905"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344377"
 ---
 # <a name="execution-related-dynamic-management-views-and-functions-transact-sql"></a>Dynamische Verwaltungssichten und -funktionen im Zusammenhang mit der Ausführung (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

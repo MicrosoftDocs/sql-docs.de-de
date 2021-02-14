@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8e17a7bc-b8a3-4ae2-b6c9-ce088ad31fdf
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 780e61f5aabea993f3af4d36b9547cca75377d99
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 7f01e97bea7d7e066d39898c7d76eb33ddbf710d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167200"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041910"
 ---
 # <a name="isolationlevelenum"></a>IsolationLevelEnum
 Gibt die Ebene der Transaktions Isolation für ein [Verbindungs](./connection-object-ado.md) Objekt an.  

@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: b5e7d1fb-3ffb-4767-8135-604c575016b1
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 1ac2f8bfae139393707c0ff1359de0aca92f2ffe
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: fbc07c0323f8efb1032555ba83d7758ef99bc6d0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99207498"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338931"
 ---
 # <a name="sysavailability_group_listeners-transact-sql"></a>sys.availability_group_listeners (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "99207498"
 > [!NOTE]  
 >  In dieser Katalogsicht werden nicht die Details einer IP-Konfiguration beschrieben, die im WSFC-Cluster definiert wurde.  
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**group_id**|**uniqueidentifier**|Verfügbarkeits Gruppen-ID (**group_id**) aus [sys.availability_groups](../../relational-databases/system-catalog-views/sys-availability-groups-transact-sql.md).|  
 |**listener_id**|**nvarchar (36)**|Die GUID der Clusterressourcen-ID.|  

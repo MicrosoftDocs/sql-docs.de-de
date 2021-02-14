@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 084c7020-f729-4f91-90e0-143f85fa68d1
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 0246bd83bb7ca75d464452b5b430fbef1bbf128b
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: d7f3f46a58fccafa68164d9335c66df10c5b7487
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87935836"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068895"
 ---
 # <a name="connecting-to-mysql-mysqltosql"></a>Herstellen einer Verbindung mit MySQL (MySqlToSql)
 Um MySQL-Datenbanken zu SQL Server oder SQL Azure zu migrieren, müssen Sie eine Verbindung mit der MySQL-Datenbank herstellen, die Sie migrieren möchten. Wenn Sie eine Verbindung herstellen, werden von SSMA Metadaten zu allen MySQL-Schemas abgerufen und anschließend im Bereich MySQL-metadatenexplorer angezeigt. SSMA speichert Informationen über den Datenbankserver, speichert aber keine Kenn Wörter.  
@@ -46,15 +46,15 @@ Wenn Sie eine Verbindung mit einer Datenbank herstellen, liest SSMA die Metadate
   
 1.  Wählen Sie im Menü **Datei** die Option **mit MySQL verbinden** aus. (diese Option wird nach der Projekt Erstellung aktiviert.)  
   
-    Wenn Sie zuvor eine Verbindung mit MySQL hergestellt haben, wird der Befehls Name **erneut mit MySQL**verbunden.  
+    Wenn Sie zuvor eine Verbindung mit MySQL hergestellt haben, wird der Befehls Name **erneut mit MySQL** verbunden.  
   
 2.  Wählen Sie im Feld **Anbieter** die Option MySQL ODBC 5,1-Treiber (vertrauenswürdig) aus. Dies ist der Standardanbieter im Standardmodus.  
   
-3.  Wählen Sie im Feld **Modus** die Option **Standard Modus**aus. Es handelt sich hierbei um den Standardmodus.  
+3.  Wählen Sie im Feld **Modus** die Option **Standard Modus** aus. Es handelt sich hierbei um den Standardmodus.  
   
     Verwenden Sie den Standardmodus, um den Servernamen und den Port anzugeben.  
   
-4.  Geben Sie im **Standard Modus**die folgenden Werte an:  
+4.  Geben Sie im **Standard Modus** die folgenden Werte an:  
   
     1.  Geben Sie im Feld **Server Name** den Namen des MySQL-Servers ein. Geben Sie im Feld **Serverport** die Portnummer 3306 ein. Dies ist der Standardport.  
   
@@ -67,7 +67,7 @@ Wenn Sie eine Verbindung mit einer Datenbank herstellen, liest SSMA die Metadate
 6.  **Konfigurieren:** Es bietet eine Option zum Konfigurieren der Verbindung mit MySQL über Secure Socket Layer (SSL).  
   
     > [!NOTE]  
-    > Zum Aktivieren von **configure**muss SSL auf **true**festgelegt werden.  
+    > Zum Aktivieren von **configure** muss SSL auf **true** festgelegt werden.  
   
     Wenn Sie auf die Schaltfläche "Konfigurieren" klicken, wird ein Dialogfeld angezeigt. Wenn Sie beim Herstellen einer Verbindung mit einer MySQL-Datenbank die Verschlüsselung verwenden möchten, müssen Sie den Pfad zu den drei folgenden im Dialogfeld vorhandenen Zertifikat Dateien definieren [Privacy Enhanced Mail Zertifikate (PEM)]:  
   
@@ -95,7 +95,7 @@ Metadaten über die MySQL-Datenbank werden nicht automatisch aktualisiert. Bei d
   
 2.  Aktivieren Sie im MySQL-metadatenexplorer das Kontrollkästchen neben jedem Schema oder Datenbankobjekt, das Sie aktualisieren möchten.  
   
-3.  Klicken Sie mit der rechten Maustaste auf **Schemas**oder das einzelne Schema oder Datenbankobjekt, und wählen Sie dann **aus Datenbank aktualisieren aus**.  
+3.  Klicken Sie mit der rechten Maustaste auf **Schemas** oder das einzelne Schema oder Datenbankobjekt, und wählen Sie dann **aus Datenbank aktualisieren aus**.  
   
     Wenn Sie nicht über eine aktive Verbindung verfügen, wird das Dialogfeld **mit MySQL Verbinden von** SSMA angezeigt, sodass Sie eine Verbindung herstellen können.  
   

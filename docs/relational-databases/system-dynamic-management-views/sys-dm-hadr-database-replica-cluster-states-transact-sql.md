@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 6f719071-ebce-470d-aebd-1f55ee8cd70a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 9b96476a0b9b089fa82b3291f783782359e60636
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d7628e4c93f648fd2bbb48dedb2e9cd84bd45003
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99182068"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339401"
 ---
 # <a name="sysdm_hadr_database_replica_cluster_states-transact-sql"></a>sys.dm_hadr_database_replica_cluster_states (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "99182068"
   
 -   Wenn der Wert der Spalte [sys. Database](~/relational-databases/system-catalog-views/sys-databases-transact-sql.md)   **log_reuse_wait_desc** "AVAILABILITY_REPLICA" ist, wird das sekundäre Replikat in einer Verfügbarkeits Gruppe die Protokoll Verkürzung für eine bestimmte primäre Datenbank beibehalten?  
    
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**replica_id**|**uniqueidentifier**|Der Bezeichner des Verfügbarkeitsreplikats in der Verfügbarkeitsgruppe.|  
 |**group_database_id**|**uniqueidentifier**|Der Bezeichner der Datenbank in der Verfügbarkeitsgruppe. Dieser Bezeichner ist auf jedem Replikat, mit dem diese Datenbank verknüpft ist, identisch.|  

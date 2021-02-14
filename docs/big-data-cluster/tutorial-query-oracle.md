@@ -9,12 +9,12 @@ ms.date: 10/01/2020
 ms.topic: tutorial
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 48d7fb0f41446fa54f1376a9a84f7dbff7017960
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 670ab5046c1904fee16f6c0271c49e2a4ecd72fe
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92196084"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045633"
 ---
 # <a name="tutorial-query-oracle-from-sql-server-big-data-cluster"></a>Tutorial: Abfragen von Oracle in einem SQL Server Big Data-Cluster
 
@@ -71,7 +71,7 @@ Der erste Schritt besteht darin, eine externe Datenquelle zu erstellen, die auf 
 
    ![Abfrage der SQL Server-Masterinstanz](./media/tutorial-query-oracle/sql-server-master-instance-query.png)
 
-1. Führen Sie den folgenden Transact-SQL-Befehl aus, um den Kontext in der Masterinstanz in die **Sales** -Datenbank zu ändern.
+1. Führen Sie den folgenden Transact-SQL-Befehl aus, um den Kontext in der Masterinstanz in die **Sales**-Datenbank zu ändern.
 
    ```sql
    USE Sales
@@ -98,7 +98,7 @@ Oracle unterstützt die Proxyauthentifizierung, um eine fein abgestimmte Zugriff
 
 Ein Proxybenutzer kann so konfiguriert werden, dass er im Vergleich zu dem Benutzer, dessen Identität angenommen wird, eingeschränkten Zugriff hat. Beispielsweise kann einem Proxybenutzer das Herstellen eine Verbindung mithilfe einer bestimmten Datenbankrolle des Benutzers, dessen Identität angenommen wird, gestattet werden. Die Identität des Benutzers, der über einen Proxybenutzer eine Verbindung mit der Oracle-Datenbank herstellt, bleibt in der Verbindung erhalten, auch wenn mehrere Benutzer mithilfe der Proxyauthentifizierung eine Verbindung herstellen. Dadurch kann Oracle die Zugriffssteuerung erzwingen und Aktionen überwachen, die im Auftrag des tatsächlichen Benutzers ausgeführt wurden.
 
-Wenn für Ihr Szenario die Verwendung eines Oracle-Proxybenutzers erforderlich ist, __ersetzen Sie die vorherigen Schritte 4 und 5 durch folgende__ .
+Wenn für Ihr Szenario die Verwendung eines Oracle-Proxybenutzers erforderlich ist, __ersetzen Sie die vorherigen Schritte 4 und 5 durch folgende__.
 
 4. Erstellen Sie datenbankweit gültige Anmeldeinformationen zum Herstellen einer Verbindung mit dem Oracle-Server. Geben Sie in der folgenden Anweisung die entsprechenden Anmeldeinformationen des Oracle-Proxybenutzers für Ihren Oracle-Server an.
 

@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, maghan, sstein
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.openlocfilehash: 051e3afcd5f76624a1978c5ef3ef0f6a264fe07d
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 881b913e3d36c98650b46445eeee7d2e99313a11
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637730"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048610"
 ---
 # <a name="azure-data-studio-extensibility"></a>Erweiterbarkeit für Azure Data Studio
 

@@ -19,12 +19,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: sstein
 ms.date: 03/13/2018
-ms.openlocfilehash: 2607b029389d0a0d3f4b59e55e031b768baf4aac
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 92f2d7c06116ef9c97fbf03c7849dd8ffef9dbf6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597249"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100075871"
 ---
 # <a name="script-objects-in-sql-server-management-studio"></a>Erstellen von Skripts für Objekte in SQL Server Management Studio
 

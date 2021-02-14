@@ -14,22 +14,22 @@ ms.assetid: df79664c-972e-4bef-865a-ce609789fee7
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 7ee753bd032cb8ad69f472888a99cc53cc5760d9
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: ce9d4908113daddf51707b4b7a80c4085defc228
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87934901"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100076711"
 ---
 # <a name="getting-started-with-ssma-for-oracle-oracletosql"></a>Erste Schritte mit SSMA für Oracle (OracleToSQL)
-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Mit Migration Assistant (SSMA) für Oracle können Sie schnell Oracle-Datenbankschemas in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Schemas konvertieren, die resultierenden Schemas in hochladen [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] und Daten von Oracle zu migrieren [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
+[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Mit Migration Assistant (SSMA) für Oracle können Sie schnell Oracle-Datenbankschemas in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Schemas konvertieren, die resultierenden Schemas in hochladen [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] und Daten von Oracle zu migrieren [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
 Dieses Thema enthält eine Einführung in den Installationsvorgang und hilft Ihnen dabei, Sie mit der SSMA-Benutzeroberfläche vertraut zu machen.  
   
 ## <a name="installing-ssma"></a>Installieren von SSMA  
 Zum Verwenden von SSMA müssen Sie zuerst das SSMA-Client Programm auf einem Computer installieren, der auf die Oracle-Quelldatenbank und die-Ziel Instanz zugreifen kann [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Sie müssen dann ein Erweiterungspaket und mindestens einen der Oracle-Anbieter (OLE DB oder [!INCLUDE[vstecado](../../includes/vstecado_md.md)] ) auf dem Computer installieren, auf dem ausgeführt wird [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Diese Komponenten unterstützen die Datenmigration und die Emulation von Oracle-Systemfunktionen. Installationsanweisungen finden Sie unter [Installieren von SSMA für Oracle &#40;oracleto SQL&#41;](../../ssma/oracle/installing-ssma-for-oracle-oracletosql.md).  
   
-Klicken Sie zum Starten von SSMA auf **Start**, zeigen Sie auf **Alle Programme**, zeigen Sie auf ** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Migration Assistant für Oracle**, und klicken Sie dann auf ** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Migration Assistant für Oracle**.  
+Klicken Sie zum Starten von SSMA auf **Start**, zeigen Sie auf **Alle Programme**, zeigen Sie auf **[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Migration Assistant für Oracle**, und klicken Sie dann auf **[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Migration Assistant für Oracle**.  
   
 ## <a name="ssma-for-oracle-user-interface"></a>SSMA für Oracle-Benutzeroberfläche  
 Nach der Installation von SSMA können Sie SSMA zum Migrieren von Oracle-Datenbanken zu verwenden [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Es hilft Ihnen, sich mit der SSMA-Benutzeroberfläche vertraut zu machen, bevor Sie beginnen. Das folgende Diagramm zeigt die Benutzeroberfläche für SSMA, einschließlich der Metadaten-Explorer, Metadaten, Symbolleisten, Ausgabebereich und Fehlerlisten Bereich:  
@@ -59,14 +59,14 @@ Oracle Metadata Explorer zeigt Informationen zu Oracle-Schemas an. Mit dem Oracl
 -   Wählen Sie Tabellen für die Datenmigration aus, und migrieren Sie dann die Daten aus diesen Tabellen zu [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Weitere Informationen finden Sie unter [Migrieren von Oracle-Daten in SQL Server &#40;oracleto SQL&#41;](../../ssma/oracle/migrating-oracle-data-into-sql-server-oracletosql.md).  
   
 #### <a name="sql-server-metadata-explorer"></a>Metadatenexplorer SQL Server  
-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Im metadatenexplorer werden Informationen zu einer Instanz von angezeigt [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Wenn Sie eine Verbindung mit einer Instanz von herstellen [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , ruft SSMA Metadaten zu dieser Instanz ab und speichert Sie in der Projektdatei.  
+[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Im metadatenexplorer werden Informationen zu einer Instanz von angezeigt [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Wenn Sie eine Verbindung mit einer Instanz von herstellen [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , ruft SSMA Metadaten zu dieser Instanz ab und speichert Sie in der Projektdatei.  
   
 Sie können den [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] metadatenexplorer verwenden, um konvertierte Oracle-Datenbankobjekte auszuwählen und diese Objekte dann mit der Instanz von zu synchronisieren [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
 Weitere Informationen finden Sie unter [Laden von konvertierten Datenbankobjekten in SQL Server &#40;oracleto SQL&#41;](../../ssma/oracle/loading-converted-database-objects-into-sql-server-oracletosql.md).  
   
 ### <a name="metadata"></a>Metadaten  
-Auf der rechten Seite jedes metadatenexplorers sind Registerkarten, die das ausgewählte Objekt beschreiben. Wenn Sie z. b. eine Tabelle im Oracle-metadatenexplorer auswählen, werden sechs Registerkarten angezeigt: **Table**, **SQL**, **Type Mapping, Report**, **Properties**und **Data**. Die Registerkarte **Bericht** enthält nur Informationen, nachdem Sie einen Bericht erstellt haben, der das ausgewählte Objekt enthält. Wenn Sie eine Tabelle im [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] metadatenexplorer auswählen, werden drei Registerkarten angezeigt: **Table**, **SQL**und **Data**.  
+Auf der rechten Seite jedes metadatenexplorers sind Registerkarten, die das ausgewählte Objekt beschreiben. Wenn Sie z. b. eine Tabelle im Oracle-metadatenexplorer auswählen, werden sechs Registerkarten angezeigt: **Table**, **SQL**, **Type Mapping, Report**, **Properties** und **Data**. Die Registerkarte **Bericht** enthält nur Informationen, nachdem Sie einen Bericht erstellt haben, der das ausgewählte Objekt enthält. Wenn Sie eine Tabelle im [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] metadatenexplorer auswählen, werden drei Registerkarten angezeigt: **Table**, **SQL** und **Data**.  
   
 Die meisten metadateneinstellungen sind schreibgeschützt. Sie können jedoch die folgenden Metadaten ändern:  
   
@@ -85,7 +85,7 @@ Die Projektsymbol Leiste enthält Schaltflächen zum Arbeiten mit Projekten, zum
 #### <a name="migration-toolbar"></a>Migrations Symbolleiste  
 In der folgenden Tabelle werden die Befehle für die Migrations Symbolleiste angezeigt:  
   
-|Schaltfläche|Funktion|  
+|Taste|Funktion|  
 |------|--------|  
 |**Erstellen von Berichten**|Konvertiert die ausgewählten Oracle-Objekte in die [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Syntax und erstellt dann einen Bericht, der die erfolgreiche Konvertierung der Konvertierung anzeigt.<br /><br />Dieser Befehl ist deaktiviert, es sei denn, Objekte werden im Oracle-metadatenexplorer ausgewählt.|  
 |**Schema konvertieren**|Konvertiert die ausgewählten Oracle-Objekte in- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Objekte.<br /><br />Dieser Befehl ist deaktiviert, es sei denn, Objekte werden im Oracle-metadatenexplorer ausgewählt.|  

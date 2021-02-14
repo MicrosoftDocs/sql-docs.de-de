@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9812b71a-52ec-48a0-92f3-016a93660229
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6ac32119090ba7973ad628c35f6b5b994eb03561
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: cadad1b4db6a0f0a6284ecb4beb6eadba9e59adc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172352"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344954"
 ---
 # <a name="xqueries-handling-relational-data"></a>Behandlung relationaler Daten mit XQuery-Abfragen
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]

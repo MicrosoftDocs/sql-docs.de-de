@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: c44fb843-0626-4496-bde0-52ca0bac0a9e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 96240f605762be382065268fa39198baeeaaa53f
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 2207dcce2787fb6f51668e777b01ce345d1f33ba
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85717172"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344662"
 ---
 # <a name="path-expressions---specifying-axis"></a>Pfadausdrücke – Angeben der Achse
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "85717172"
   
  Die XQuery-Implementierung in [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] unterstützt folgende Achsenschritte:  
   
-|Achse|BESCHREIBUNG|  
+|Achse|Beschreibung|  
 |----------|-----------------|  
-|**Untergeordnetes Element**|Gibt die untergeordneten Elemente des Kontextknotens zurück.|  
+|**Idee**|Gibt die untergeordneten Elemente des Kontextknotens zurück.|  
 |**descendant**|Gibt alle nachfolgenden Elemente des Kontextknotens zurück.|  
-|**übergeordneten**|Gibt das übergeordnete Element des Kontextknotens zurück.|  
+|**parent**|Gibt das übergeordnete Element des Kontextknotens zurück.|  
 |**attribute**|Gibt die Attribute des Kontextknotens zurück.|  
 |**Selbstbedienungs**|Gibt den Kontextknoten selbst zurück.|  
 |**descendant-or-self**|Gibt den Kontextknoten und alle nachfolgenden Elemente des Kontextknotens zurück.|  

@@ -11,12 +11,12 @@ author: MashaMSFT
 ms.author: mathoma
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||>=aps-pdw-2016||=azuresqldb-mi-current'
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 5096ecd27f6ba9d5d06dd4efd322a42e3218a0bd
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 70128430c6ea0943605bd29f00597d51dee71d86
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466601"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077751"
 ---
 # <a name="wideworldimportersdw-installation-and-configuration"></a>Installation und Konfiguration von wideworldimportersdw
 [!INCLUDE[appliesto-ss-xxxx-asdw-pdw-md](../includes/appliesto-ss-xxxx-asdw-pdw-md.md)]
@@ -25,7 +25,7 @@ Installations-und Konfigurations Anweisungen für die wideworldimportersdw-Daten
 - [SQL Server 2016](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016) (oder höher) oder [Azure SQL-Datenbank](https://azure.microsoft.com/services/sql-database/). Um die vollständige Version des Beispiels zu verwenden, verwenden Sie SQL Server Evaluation/Developer/Enterprise Edition.
 - [SQL Server Management Studio](../ssms/download-sql-server-management-studio-ssms.md): Um die besten Ergebnisse zu erzielen, verwenden Sie die Version vom Juni 2016 oder höher.
 
-## <a name="download"></a>Herunterladen
+## <a name="download"></a>Download
 
 Die neueste Version des Beispiels:
 

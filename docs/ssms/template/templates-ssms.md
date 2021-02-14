@@ -19,12 +19,12 @@ helpviewer_keywords:
 - scripts [SQL Server], SQL Server Management Studio
 ms.custom: seo-lt-2019
 ms.date: 03/13/2018
-ms.openlocfilehash: ee33e30ef69b0c4a464e91576dc33e6d15ca4890
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: b3c5c26ddf8e343b2cf63bc0dde337056eb2fe74
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596975"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017230"
 ---
 # <a name="use-templates-in-sql-server-management-studio"></a>Verwenden von Vorlagen in SQL Server Management Studio
 

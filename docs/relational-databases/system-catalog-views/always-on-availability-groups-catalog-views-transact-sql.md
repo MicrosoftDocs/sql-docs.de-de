@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ff53e873-8ff6-4628-af84-4ec52fa4951c
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d52e974018434325459d1e798d247f61926ca0dc
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d341425b680fc6baa233a20d2be57988b2c9b85d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99176522"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068190"
 ---
 # <a name="always-on-availability-groups-catalog-views-transact-sql"></a>Katalog Sichten für Always on-Verfügbarkeits Gruppen (Transact-SQL)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

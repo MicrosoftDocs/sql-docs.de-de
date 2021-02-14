@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 9d3001d9-8d0f-4e4a-8e04-4f666bf0df69
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 1fd0e7f0acbe6792a5d303d50ef66014ebc5c1cf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a8aef33776c7aea98abd870bbf46d6e369ec4b84
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92257558"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272461"
 ---
 # <a name="change-the-attribute-type-mds-add-in-for-excel"></a>Ändern des Attributtyps (MDS-Add-in für Excel)
 

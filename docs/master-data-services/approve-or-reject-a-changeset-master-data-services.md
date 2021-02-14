@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 45bd01f9-ae15-4fc5-a2ba-eee565a26ef8
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 42b3b6ae849313a00111ceda1fb19eda334c0278
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 47ea1da154b6e27be84888361867e370945e7438
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456810"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339560"
 ---
 # <a name="approve-or-reject-a-changeset-master-data-services"></a>Genehmigen oder Ablehnen eines Changesets (Master Data Services)
 

@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, maghan, sstein
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.openlocfilehash: fa4b5bc766b6d9bf269f08a1f00e2ef4d8c52b0e
-ms.sourcegitcommit: 63aef5a96905f0b026322abc9ccb862ee497eebe
+ms.openlocfilehash: 26d16927004a9a34e0b0d50ca5ebe28abac599a6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91363968"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040160"
 ---
 # <a name="keyboard-shortcuts-in-azure-data-studio"></a>Tastenkombinationen im Azure Data Studio
 

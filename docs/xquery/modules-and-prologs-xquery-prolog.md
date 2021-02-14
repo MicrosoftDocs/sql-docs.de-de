@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 03924684-c5fd-44dc-8d73-c6ab90f5e069
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8098ddebb61a33c017f22598bec16041f112097a
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 2b460f6da448e45d688ebcc08f418a9acbae85b8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86918471"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341847"
 ---
 # <a name="modules-and-prologs---xquery-prolog"></a>Module und Prologe – XQuery-Prolog
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 72fecf28-f02e-4338-b50f-0b21f520302d
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 06337dde035804436989c392724c85a7b72b78dc
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: c8a14ab341e3d55cb60e13e0c4d4a2a29baeb457
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80216399"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100023639"
 ---
 # <a name="best-practices-for-reporting-services-exception-handling"></a>Bewährte Methoden für die Ausnahmebehandlung in Reporting Services
   Wenn Sie [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)]-Anwendungen entwickeln, können Sie verschiedene Methoden verwenden, um das Auftreten von Ausnahmezuständen zu verhindern oder zu reduzieren. Wenn Ausnahmen auftreten, sorgen Sie für klare und prägnante Fehlermeldungen, und fügen Sie eine adäquate Behandlung der Ausnahme hinzu, um unerwartete Abbrüche Ihrer Anwendungen zu verhindern.  

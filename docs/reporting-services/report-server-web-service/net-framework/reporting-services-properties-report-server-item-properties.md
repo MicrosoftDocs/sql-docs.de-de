@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 21edec6d-9897-48fb-8c75-182305b1dbdb
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: b368b02ebfe37e63b4d02e6e69d6eed2bdb831ea
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: 4d4db0c4bdef91630cd2bf20b215f7a6b26d714b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91934595"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063658"
 ---
 # <a name="reporting-services-properties---report-server-item-properties"></a>Berichtsserver-Eigenschaften: Berichtsserver-Elementeigenschaften
   Elementeigenschaften sind Eigenschaften, die für Elemente in der Berichtsserver-Datenbank spezifisch sind. Zu diesen Elementen gehören Berichte, verlinkte Berichte, Ordner, Ressourcen, Modelle und Datenquellen.  

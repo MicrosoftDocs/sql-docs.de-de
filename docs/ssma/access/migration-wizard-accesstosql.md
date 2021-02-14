@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 5bab5914-b2ae-4795-8cf5-83e42d64bef2
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: c8f03fa27bf8c49cfeef06246c47996860c932ba
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 2f5f97b55b4d357c2caa2314c993806c61f51e07
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988646"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066665"
 ---
 # <a name="migration-wizard-accesstosql"></a>Migrations-Assistent (accesstosql)
 Der-Migrations-Assistent führt Sie durch die Migration von einer oder mehreren Datenbanken von Access zu [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] oder SQL Azure. Mit dem Assistenten erstellen Sie ein Projekt, fügen dem Projektdaten Banken hinzu, wählen zu migrierende Objekte aus und stellen eine Verbindung mit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] oder SQL Azure her. Außerdem werden Zugriffs Schemas und Daten konvertiert, geladen und migriert. Optional können Sie Zugriffs Tabellen mit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] oder SQL Azure Tabellen verknüpfen.  
@@ -32,7 +32,7 @@ Der-Migrations-Assistent führt Sie durch die Migration von einer oder mehreren 
 Die meisten Migrations-Assistenten Seiten enthalten dieselben Optionen wie vorhandene SSMA-Dialogfelder. Daher werden die Seiten des Assistenten hier beschrieben, und es werden Links bereitgestellt, damit Sie mehr über einzelne Optionen erfahren können. Wenn eine Seite eindeutige Optionen enthält, werden Sie hier dokumentiert.  
   
 ## <a name="starting-the-migration-wizard"></a>Starten des Migrations-Assistenten  
-Der-Migrations-Assistent wird standardmäßig angezeigt, wenn Sie SSMA starten. Sie können den Assistenten auch im Menü **Datei** starten, indem Sie den **Migrations-Assistenten**auswählen.  
+Der-Migrations-Assistent wird standardmäßig angezeigt, wenn Sie SSMA starten. Sie können den Assistenten auch im Menü **Datei** starten, indem Sie den **Migrations-Assistenten** auswählen.  
   
 ## <a name="welcome-page"></a>Startseite  
 Die Willkommensseite führt den Migrations-Assistenten ein und bietet die folgende Option zum Starten des Assistenten.  
@@ -44,7 +44,7 @@ Standardmäßig startet SSMA den Migrations-Assistenten, wenn Sie SSMA starten. 
 Auf der Seite Neues Projekt erstellen können Sie den Projekt Dateinamen, den Speicherort und den Migrations Projekttyp (die Version des Ziel SQL Server für die Migration verwenden) eingeben. Weitere Informationen finden Sie unter [New Project (SSMA)](./new-project-ssma-accesstosql.md)  
   
 ## <a name="add-access-databases-page"></a>Seite "Zugriffs Datenbanken hinzufügen"  
-Auf der Seite Access-Datenbanken hinzufügen Fügen Sie dem Projekt eine oder mehrere Zugriffs Datenbanken hinzu. Sie können einzelne Datenbanken hinzufügen, indem Sie auf **Datenbanken hinzufügen**klicken und dann die Datenbanken im Fenster **Öffnen** auswählen. Sie können Datenbanken auch mithilfe der Schaltfläche **Datenbanken suchen** suchen. Weitere Informationen finden Sie unter den folgenden Themen:  
+Auf der Seite Access-Datenbanken hinzufügen Fügen Sie dem Projekt eine oder mehrere Zugriffs Datenbanken hinzu. Sie können einzelne Datenbanken hinzufügen, indem Sie auf **Datenbanken hinzufügen** klicken und dann die Datenbanken im Fenster **Öffnen** auswählen. Sie können Datenbanken auch mithilfe der Schaltfläche **Datenbanken suchen** suchen. Weitere Informationen finden Sie in den folgenden Themen:  
   
 -   [Hinzufügen und Entfernen von Access-Datenbankdateien](adding-and-removing-access-database-files-accesstosql.md)  
   

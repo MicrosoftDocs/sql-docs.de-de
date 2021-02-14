@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 318e370d-0444-4812-afe4-307df7ef9f3b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8dc3582cb34c80f488005f5a2eaf1c6022c5e1be
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 779e3fa093d851e99e2869053f155fb70570f67c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92035793"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340505"
 ---
 # <a name="boolean-constructor-functions---true-xquery"></a>Boolesche Konstruktorfunktionen – true (XQuery)
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

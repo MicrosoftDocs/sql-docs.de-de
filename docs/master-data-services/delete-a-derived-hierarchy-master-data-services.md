@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: f46d660e-47f2-47ca-9372-1b5931540beb
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: b86680615b5c823d5e1db08860ddbdd5ff52bd80
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 37d13c58a96d24732d75dc82b4c95527a733c847
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88495044"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339010"
 ---
 # <a name="delete-a-derived-hierarchy-master-data-services"></a>Löschen einer abgeleiteten Hierarchie (Master Data Services)
 

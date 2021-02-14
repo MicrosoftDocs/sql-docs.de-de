@@ -9,12 +9,12 @@ ms.reviewer: alayu, maghan, sstein
 ms.topic: quickstart
 author: sunilagarwal
 ms.author: sunila
-ms.openlocfilehash: 389c8b745a3768f63e2f702a7f48e8c110262fb7
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: dad9f6348b3df9d7589be739af5ba7c748d37b6e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637707"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040082"
 ---
 # <a name="quickstart-use-azure-data-studio-to-connect-and-query-postgresql"></a>Schnellstart: Verwenden von Azure Data Studio zum Verbinden mit und Abfragen von PostgreSQL
 

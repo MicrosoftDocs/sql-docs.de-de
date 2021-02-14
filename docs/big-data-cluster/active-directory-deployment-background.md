@@ -9,12 +9,12 @@ ms.date: 09/30/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 144b769ce42b192099678cda4cfe6fb2935c1c2f
-ms.sourcegitcommit: af663bdca0df8a1f34a14667390662f6f0e17766
+ms.openlocfilehash: a8b82b4a5802467841ca345ac24c83e1356a79f8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94924167"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040110"
 ---
 # <a name="deploy-multiple-big-data-clusters-2019-in-the-same-active-directory-domain"></a>Bereitstellen mehrerer [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] in derselben Active Directory-Domäne
 

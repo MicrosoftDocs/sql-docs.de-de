@@ -8,12 +8,12 @@ ms.topic: how-to
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-ver15'
-ms.openlocfilehash: 53f339b871022e68e367c91797c3beed2212505a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ace298ff0e69ef3e3ee964c15d894280d6ef1b99
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471081"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100082387"
 ---
 # <a name="sql-server-2019-on-windows-isolation-changes-for-machine-learning-services"></a>SQL Server 2019 unter Windows: Isolationsänderungen für Machine Learning Services
 [!INCLUDE [SQL Server 2019 - Windows only](../../includes/applies-to-version/sqlserver2019-windows-only.md)]

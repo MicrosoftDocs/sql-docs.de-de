@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: jukoesma
 ms.custom: ''
 ms.date: 09/22/2020
-ms.openlocfilehash: a8379e10e8c3e3af64381e9a4536b253e203964e
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 1362e6a5ccd6152a1cb2597076d25c2da4149fd0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91725124"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048230"
 ---
 # <a name="create-and-run-a-kusto-kql-notebook-preview"></a>Erstellen und Ausführen eines Kusto-Notebooks (KQL) (Vorschau)
 
@@ -44,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um eine Notebook-Datei in Azure Data Stu
 
 3. Wählen Sie für den **Kernel** *Kusto* aus. Vergewissern Sie sich, dass im Menü **Attach to** (Anfügen an) der Clustername und die Datenbank festgelegt sind. In diesem Artikel werden der Cluster „help.kusto.windows.net“ und Daten aus der Datenbank „Samples“ verwendet.
 
-   :::image type="content" source="media/notebooks-kusto-kernel/set-kusto-kernel.png" alt-text="Notebook öffnen":::
+   :::image type="content" source="media/notebooks-kusto-kernel/set-kusto-kernel.png" alt-text="„Kernel“ und „Anfügen an“ festlegen":::
 
 Sie können das Notebook mit dem Befehl **Speichern** oder **Speichern unter...** im Menü **Datei** speichern.
 
@@ -56,14 +56,14 @@ So ändern Sie die Kusto-Verbindung für ein Notebook
 
 1. Klicken Sie in der Symbolleiste des Notebooks auf das Menü **Anfügen an**, und wählen Sie anschließend die Option **Verbindung ändern** aus.
 
-   :::image type="content" source="media/notebooks-kusto-kernel/kusto-select-attach-to-change-connections.png" alt-text="Notebook öffnen":::
+   :::image type="content" source="media/notebooks-kusto-kernel/kusto-select-attach-to-change-connections.png" alt-text="Ändern von Verbindungen":::
 
    > [!Note]
    > Stellen Sie sicher, dass ein Wert für die Datenbank angegeben ist. Bei Kusto-Notebooks ist die Angabe einer Datenbank erforderlich.
 
 2. Hier können Sie entweder einen zuletzt verwendeten Verbindungsserver auswählen oder neue Verbindungsdetails für die Verbindung eingeben.
 
-   :::image type="content" source="media/notebooks-kusto-kernel/kusto-change-connection-cluster.png" alt-text="Notebook öffnen":::
+   :::image type="content" source="media/notebooks-kusto-kernel/kusto-change-connection-cluster.png" alt-text="Auswählen eines anderen Clusters":::
 
    > [!Note]
    > Geben Sie den Clusternamen ohne `https://` an.
@@ -76,7 +76,7 @@ Beispiel:
 
 1. Klicken Sie auf der Symbolleiste auf den Befehl **+ Code**, um eine neue Codezelle hinzuzufügen.
 
-   :::image type="content" source="media/notebooks-kusto-kernel/kusto-kernel-code.png" alt-text="Notebook öffnen":::
+   :::image type="content" source="media/notebooks-kusto-kernel/kusto-kernel-code.png" alt-text="Kusto-Kernelcodeblock":::
 
 2. Kopieren Sie das folgende Beispiel, fügen Sie es in die Zelle ein, und klicken Sie auf **Run cell** (Zelle ausführen). In diesem Beispiel werden die StormEvent-Daten für einen bestimmten Ereignistyp abgefragt.
 
@@ -85,7 +85,7 @@ Beispiel:
     | where EventType == "Waterspout"
    ```
 
-   :::image type="content" source="media/notebooks-kusto-kernel/run-kusto-notebook-cell.png" alt-text="Notebook öffnen":::
+   :::image type="content" source="media/notebooks-kusto-kernel/run-kusto-notebook-cell.png" alt-text="Run cell (Zelle ausführen)":::
 
 ## <a name="save-the-result-or-show-chart"></a>Speichern des Ergebnisses oder Anzeigen eines Diagramms
 
@@ -102,7 +102,7 @@ Wenn Sie ein Skript ausführen, das ein Ergebnis zurückgibt, können Sie dieses
     | limit 10
 ```
 
-:::image type="content" source="media/notebooks-kusto-kernel/run-notebook-save-results.png" alt-text="Notebook öffnen":::
+:::image type="content" source="media/notebooks-kusto-kernel/run-notebook-save-results.png" alt-text="Speichern des Ergebnisses":::
 
 ## <a name="known-issues"></a>Bekannte Probleme
 

@@ -9,12 +9,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 04/25/2019
-ms.openlocfilehash: 7637c21ce048c4ffc0277a73c4403c5d16484a21
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 8a70ef94e5491a807414abbd69b1f8ef71b9ca7d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597180"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100064895"
 ---
 # <a name="install-non-english-language-versions-of-sql-server-management-studio-ssms"></a>Installieren von nicht englischsprachigen Versionen von SQL Server Management Studio (SSMS)
 

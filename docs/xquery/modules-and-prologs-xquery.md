@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0f17b4a4-6234-41d4-a996-6db4e27bff7e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c7d982e8c944ff1c596dfa4178ce613ec3be709e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 841ed55566b9da0c8abd5c3c84c963ba2a70b6c9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85759489"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341860"
 ---
 # <a name="modules-and-prologs-xquery"></a>Module und Prologe (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]

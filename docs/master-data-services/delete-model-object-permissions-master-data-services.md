@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 859c5952-f600-4940-8064-1afd13f7f6dc
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: abe02163deac7a26e0301e5e7b9a34abadecf3cb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 71a4735fc0637f81e147abfbf07c06f11130c70b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88344776"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350228"
 ---
 # <a name="delete-model-object-permissions-master-data-services"></a>Löschen von Berechtigungen für Modellobjekte (Master Data Services)
 

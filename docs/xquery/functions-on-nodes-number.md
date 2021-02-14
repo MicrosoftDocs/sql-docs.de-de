@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: dff6d19b-765c-4df9-afff-9a0e7be9b91b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c1a4d3014286618639b045f5028935368321a3a0
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6aa035be000fbbda12a7205c33925daf656c3da0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85753585"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345018"
 ---
 # <a name="functions-on-nodes---number"></a>Funktionen für Knoten – number
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
 
-  Gibt den numerischen Wert des Knotens zurück, der durch *$arg*angegeben wird.  
+  Gibt den numerischen Wert des Knotens zurück, der durch *$arg* angegeben wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,7 +40,7 @@ fn:number($arg as node()?) as xs:double?
  *$arg*  
  Knoten, dessen Wert als Zahl zurückgegeben wird.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  Wenn *$arg* nicht angegeben wird, wird der numerische Wert des Kontext Knotens zurückgegeben, der in einen Double-Wert konvertiert wird. In SQL Server kann **FN: Number ()** ohne Argument nur im Kontext eines kontextabhängigen Prädikats verwendet werden. Insbesondere kann die Funktion nur innerhalb von Klammern ([ ]) verwendet werden. Der folgende Ausdruck gibt beispielsweise den <`ROOT`>-Element zurück.  
   
 ```  
@@ -49,7 +49,7 @@ set @x='<ROOT>111</ROOT>'
 select @x.query('/ROOT[number()=111]')  
 ```  
   
- Wenn der Wert des Knotens keine gültige lexikalische Darstellung eines numerischen einfachen Typs ist, wie in **XML Schema Part 2: Datatypes, W3C-Empfehlung**definiert, gibt die Funktion eine leere Sequenz zurück. NaN wird nicht unterstützt.  
+ Wenn der Wert des Knotens keine gültige lexikalische Darstellung eines numerischen einfachen Typs ist, wie in **XML Schema Part 2: Datatypes, W3C-Empfehlung** definiert, gibt die Funktion eine leere Sequenz zurück. NaN wird nicht unterstützt.  
   
 ## <a name="examples"></a>Beispiele  
  Dieses Thema stellt XQuery-Beispiele für XML-Instanzen bereit, die in verschiedenen Spalten vom Typ **XML** in der AdventureWorks-Datenbank gespeichert sind.  

@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 506682b1-b6c9-45e2-aa54-7abd5844c3f1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 748042147b2e776c096296a98ce27dbc645e2d49
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: c9e390546feb848f965df2bfd60a2cc68c8fb3ac
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85753655"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341554"
 ---
 # <a name="effective-boolean-value-xquery"></a>Effektiver boolescher Wert (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]

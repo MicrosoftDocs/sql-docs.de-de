@@ -10,12 +10,12 @@ ms.reviewer: ''
 ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: d9dc40928fddda2708a23a7fc927627cf0e9450d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 991f001ea8fd43298cefe1f9ba542472de6935ef
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85718576"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354089"
 ---
 # <a name="wideworldimporters-database-catalog"></a>Wideworldimporters-Daten Bank Katalog
 [!INCLUDE [SQL Server Azure SQL Database](../includes/applies-to-version/sql-asdb.md)]
@@ -29,9 +29,9 @@ Wideworldimporters verwendet Schemas für verschiedene Zwecke, z. b. das Speiche
 
 Diese Schemas enthalten die Daten. Eine Reihe von Tabellen werden von allen anderen Schemas benötigt und befinden sich im Anwendungsschema.
 
-|Schema|Beschreibung|
+|Schema|BESCHREIBUNG|
 |-----------------------------|---------------------|
-|Anwendung|Anwendungs weite Benutzer, Kontakte und Parameter. Dies enthält auch Verweis Tabellen mit Daten, die von mehreren Schemas verwendet werden.|
+|Application|Anwendungs weite Benutzer, Kontakte und Parameter. Dies enthält auch Verweis Tabellen mit Daten, die von mehreren Schemas verwendet werden.|
 |Erwerb|Bestands Artikel Käufe von Lieferanten und Details zu Zulieferern.|  
 |Sales|Bestands Element Verkäufe bei Einzelhandelskunden und Details zu Kunden und Vertriebsmitarbeitern. |  
 |Warehouse|Inventur und Transaktionen von Aktien Elementen.|  
@@ -161,7 +161,7 @@ Die `Reports` `PowerBI` Schemas und sind für Reporting Services und Power BI vo
 
 Dies sind die Verfahren, die von einer Client Anwendung verwendet werden, z. b. ein Web-Front-End.
 
-|Vorgehensweise|Zweck|
+|Prozedur|Zweck|
 |-----------------------------|---------------------|
 |Activatewebsitelogon|Ermöglicht es einer Person (von `Application.People` ), Zugriff auf die Website zu haben.|
 |ChangePassword|Ändert das Kennwort eines Benutzers (für Benutzer, die keine externen Authentifizierungsmechanismen verwenden).|
@@ -183,7 +183,7 @@ Die gespeicherten Prozeduren in diesem Schema werden vom ETL-Prozess verwendet. 
 
 Simuliert eine Arbeitsauslastung, die Verkäufe und Einkäufe einfügt. Die Haupt gespeicherte Prozedur ist `PopulateDataToCurrentDate` , mit der Beispiel Daten bis zum aktuellen Datum eingefügt werden.
 
-|Vorgehensweise|Zweck|
+|Prozedur|Zweck|
 |-----------------------------|---------------------|
 |Configuration_ApplyDataLoadSimulationProcedures|Erstellt die für die Daten Lade Simulation erforderlichen Prozeduren neu. Dies ist erforderlich, um Daten bis zum aktuellen Datum zu verschieben.|
 |Configuration_RemoveDataLoadSimulationProcedures|Dadurch werden die Prozeduren nach Abschluss der Daten Simulation wieder entfernt.|
@@ -196,7 +196,7 @@ Simuliert eine Arbeitsauslastung, die Verkäufe und Einkäufe einfügt. Die Haup
 
 Diese Prozeduren werden verwendet, um das Beispiel zu konfigurieren. Sie dienen zum Anwenden von Enterprise Edition-Features auf die Standard Edition-Version des Beispiels sowie zum Hinzufügen von Überwachungen und Volltextindizierung.
 
-|Vorgehensweise|Zweck|
+|Prozedur|Zweck|
 |-----------------------------|---------------------|
 |Addrolememberibernonstant|Fügt einer Rolle ein Mitglied hinzu, wenn der Member nicht bereits in der Rolle vorhanden ist.|
 |Configuration_ApplyAuditing|Fügt eine Überwachung hinzu. Die Server Überwachung wird für Standard Edition-Datenbanken angewendet. für Enterprise Edition wird eine zusätzliche Daten Bank Überwachung hinzugefügt.|
@@ -215,7 +215,7 @@ Diese Prozeduren werden verwendet, um das Beispiel zu konfigurieren. Sie dienen 
 
 Prozeduren zum Konfigurieren der Sequenzen in der Datenbank.
 
-|Vorgehensweise|Zweck|
+|Prozedur|Zweck|
 |-----------------------------|---------------------|
 |Reseedallsequenzen|Ruft die Prozedur reseedsequencebeyondtablevalue für alle Sequenzen auf.|
 |Reseedsequencebeyondtablevalue|Wird verwendet, um den nächsten Sequenzwert hinter dem Wert in einer Tabelle, die dieselbe Sequenz verwendet, neu zu positionieren. (Z. b. eine DBCC CHECKIDENT für Identitäts Spalten, die für Sequenzen gleichwertig sind, aber über potenziell mehrere Tabellen hinweg|

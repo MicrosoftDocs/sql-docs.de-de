@@ -11,12 +11,12 @@ ms.topic: reference
 ms.assetid: 067b1f69-84eb-4a13-b220-120cd63704b4
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 3c1772c12889da4200553a7f303e2b6c9c26b894
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4062f365552fbbb2076c68f5bf6d3d912b81a490
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461771"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350100"
 ---
 # <a name="master-data-services-developer-documentation"></a>Master Data Services Developer Documentation
 

@@ -9,12 +9,12 @@ ms.author: sunila
 ms.reviewer: alayu, maghan
 ms.custom: ''
 ms.date: 03/19/2019
-ms.openlocfilehash: c673b1e1e9f5c24b8e874037e3a74f234bb0d83d
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: 98dc93d48af86ea44099b33ca979283840cfddd5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91784951"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048510"
 ---
 # <a name="postgresql-extension-preview"></a>PostgreSQL-Erweiterung (Vorschau)
 

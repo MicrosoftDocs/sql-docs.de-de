@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e6f44e37-e1f0-4c38-a816-1935a856d5a4
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 0405a41aa415edc1da47b177403d4126964b5bbc
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 772e93a87f041193d7511a17c73209d4e8086402
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813973"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272551"
 ---
 # <a name="explicit-hierarchies-master-data-services"></a>Explizite Hierarchien (Master Data Services)
 

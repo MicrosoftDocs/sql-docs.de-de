@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: ec23d188-b890-49b8-9a88-446df96269e4
 author: F
 ms.author: alexiva
-ms.openlocfilehash: 3df3cd8297dbf4f6be480f183b8b0f3acdcb8fe6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 70422b0fad55ec209f23c0f5bdfd971f5e64738a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88372726"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081511"
 ---
 # <a name="creating-script-files-db2tosql"></a>Erstellen von Skriptdateien (DB2ToSQL)
 Der erste Schritt vor dem Starten der SSMA-Konsolenanwendung besteht darin, die Skriptdatei zu erstellen und bei Bedarf die Variablen Wert Datei und die Server Verbindungs Datei zu erstellen.  
@@ -320,9 +320,9 @@ Die vom benutzerkonfigurierbaren Optionen umfassen:
   
     Es treten zwei Fälle auf:  
   
-    1.  Wenn die Außerkraftsetzungs Option auf **false**gesetzt ist, wird die Such Reihenfolge durch den &gt; Benutzer geschützt &gt; &gt; .  
+    1.  Wenn die Außerkraftsetzungs Option auf **false** gesetzt ist, wird die Such Reihenfolge durch den &gt; Benutzer geschützt &gt; &gt; .  
   
-    2.  Wenn die Überschreibungs Option **true**ist, ist die Reihenfolge der Suche ein Skript für die Datei- &gt; Server-Verbindungs Datei &gt; .  
+    2.  Wenn die Überschreibungs Option **true** ist, ist die Reihenfolge der Suche ein Skript für die Datei- &gt; Server-Verbindungs Datei &gt; .  
   
     **Beispiel:**  
   

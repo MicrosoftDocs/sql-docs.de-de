@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: ed4241fb1aeac7faaceadc250f0c2e61f10179fc
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 2b87720ba7a4cbdb531cd19fe23be7d48d9a07ed
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987536"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018130"
 ---
 # <a name="how-to-run-sql-server-unit-tests-from-team-foundation-build"></a>Gewusst wie: Ausführen von SQL Server-Komponententests aus Team Foundation Build
 

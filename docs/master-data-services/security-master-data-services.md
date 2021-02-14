@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 56bc41ea-de28-4184-aa7e-99111ae55af5
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 9501014be6fdd311c37fd8f446ae01f0f2939f90
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 97209bd6d906a73f6199f06a09e14e1ab4d0ac22
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "92257827"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352989"
 ---
 # <a name="security-master-data-services"></a>Sicherheit (Master Data Services)
 
@@ -35,7 +35,7 @@ ms.locfileid: "92257827"
   
 -   Benutzer, die auf Daten in den Funktionsbereich **Explorer** zugreifen.  
   
--   Benutzer, die die Fähigkeit haben, administrative Tasks in anderen Bereichen als **Explorer**auszuführen. Diese Benutzer heißen [Administratoren &#40;Master Data Services&#41;](../master-data-services/administrators-master-data-services.md).  
+-   Benutzer, die die Fähigkeit haben, administrative Tasks in anderen Bereichen als **Explorer** auszuführen. Diese Benutzer heißen [Administratoren &#40;Master Data Services&#41;](../master-data-services/administrators-master-data-services.md).  
   
 ## <a name="how-to-set-security"></a>Festlegen der Sicherheit  
  Sie müssen Folgendes zuweisen, um einem Benutzer oder einer Gruppe die Berechtigung für den Zugriff zu erteilen:  

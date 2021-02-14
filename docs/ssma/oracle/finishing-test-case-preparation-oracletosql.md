@@ -11,12 +11,12 @@ ms.assetid: 32f38713-7ae4-48d3-980d-74cadc8545a0
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 4707c68c0b744e092844d57bd6f235a69dbec9ce
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: f1d0f99987a58a8d942c9d7601124c3cfc39b09d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92038043"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100014621"
 ---
 # <a name="finishing-test-case-preparation-oracletosql"></a>Beenden der Vorbereitung für Testfälle (OracleToSQL)
 Auf der letzten Seite des Assistenten werden die Test Fallbeschreibung und Informationen zu den am Test beteiligten Objekten angezeigt. Außerdem können Sie auf dieser Seite die Test Ausführungs Optionen festlegen.  
@@ -33,27 +33,27 @@ Im Abschnitt **Test Fall Einstellungen** können Sie die folgenden Ausführungs 
 ### <a name="stop-test-execution-after-first-failure"></a>Testausführung nach dem ersten Fehler beendet  
 Gibt an, dass der Test unterbricht, wenn während der Testausführung ein Fehler auftritt.  
   
--   Wenn Sie **Ja**auswählen, wird die Testausführung unterbrochen, wenn ein Fehler auftritt.  
+-   Wenn Sie **Ja** auswählen, wird die Testausführung unterbrochen, wenn ein Fehler auftritt.  
   
--   Wenn Sie **Nein**auswählen, wird die Testausführung nach einem Fehler fortgesetzt.  
+-   Wenn Sie **Nein** auswählen, wird die Testausführung nach einem Fehler fortgesetzt.  
   
 ### <a name="perform-data-rollback"></a>Ausführen eines Daten Rollbacks  
 Aktiviert das automatische Zurücksetzen von Daten nach der Testausführung.  
   
--   Wenn Sie **Ja**auswählen, gehen Datenänderungen nach der Ausführung des Tests verloren.  
+-   Wenn Sie **Ja** auswählen, gehen Datenänderungen nach der Ausführung des Tests verloren.  
   
--   Wenn Sie **Nein**auswählen, werden alle Änderungen an der Test Ausführungsdaten gespeichert.  
+-   Wenn Sie **Nein** auswählen, werden alle Änderungen an der Test Ausführungsdaten gespeichert.  
   
 ### <a name="auxiliary-tables-saving-mode"></a>Speicher Modus für Hilfstabellen  
 Definiert den Speicher Modus für die während der Testausführung erstellten Hilfstabellen. Weitere Informationen finden Sie in der Beschreibung der Erweiterungs Tabellen im Thema [Ausführen von Test Fällen &#40;oracleto SQL&#41;](../../ssma/oracle/running-test-cases-oracletosql.md) .  
   
--   Wenn Sie **immer speichern**auswählen, werden die Daten der zusätzlichen Tabelle immer zur späteren Verwendung gespeichert.  
+-   Wenn Sie **immer speichern** auswählen, werden die Daten der zusätzlichen Tabelle immer zur späteren Verwendung gespeichert.  
   
--   Wenn Sie speichern auswählen, **Wenn beim Tabellenvergleich**ein Fehler aufgetreten ist, werden die Daten der zusätzlichen Tabelle nur dann gespeichert, wenn ein Fehler auftritt.  
+-   Wenn Sie speichern auswählen, **Wenn beim Tabellenvergleich** ein Fehler aufgetreten ist, werden die Daten der zusätzlichen Tabelle nur dann gespeichert, wenn ein Fehler auftritt.  
   
--   Wenn Sie **immer löschen**auswählen, werden zusätzliche Tabellen nach der Ausführung des Tests immer gelöscht.  
+-   Wenn Sie **immer löschen** auswählen, werden zusätzliche Tabellen nach der Ausführung des Tests immer gelöscht.  
   
--   Wenn Sie bei **fehlgeschlagenen Tabellen vergleichen die Option Benutzer anfordern**auswählen, kann der Benutzer die erforderliche Aktion auswählen, wenn ein Fehler auftritt.  
+-   Wenn Sie bei **fehlgeschlagenen Tabellen vergleichen die Option Benutzer anfordern** auswählen, kann der Benutzer die erforderliche Aktion auswählen, wenn ein Fehler auftritt.  
   
 Klicken Sie auf die Schaltfläche **Fertig** stellen, um den vorbereiteten Testfall in [mithilfe von Test Depots (oracleto SQL)](./using-test-repositories-oracletosql.md)zu speichern.  
   

@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: dbd7e416-badd-4332-a45c-438aa0145a99
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: c2e52bb798ac51c622c213a28a854d20f21a2442
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 053b2f9778b6da8765690ccd91a00c9d3ea57a44
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99193207"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354149"
 ---
 # <a name="sysdm_hadr_availability_replica_cluster_nodes-transact-sql"></a>sys.dm_hadr_availability_replica_cluster_nodes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

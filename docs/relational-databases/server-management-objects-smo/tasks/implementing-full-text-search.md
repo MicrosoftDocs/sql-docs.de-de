@@ -14,12 +14,12 @@ ms.assetid: 9ce9ad9c-f671-4760-90b5-e0c8ca051473
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 7abb309d4abba88f947205db6a8d58eabdcb1188
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 828b677210b00dae3a09d4f73b67fb73f0470edd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475491"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352505"
 ---
 # <a name="implementing-full-text-search"></a>Einbinden einer Volltextsuche
 [!INCLUDE [SQL Server ASDB, ASDBMI, ASDW ](../../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

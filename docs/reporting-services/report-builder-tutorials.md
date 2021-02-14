@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: c99495c3-899b-4c84-af87-76e96d4afa23
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 096823a659f8b0e1e75cbde0635a4715068f8392
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: 127fd6bbfc78589a1858534f11f140fe705b08f0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87242940"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031022"
 ---
 # <a name="report-builder-tutorials"></a>Lernprogramme für den Berichts-Generator
 

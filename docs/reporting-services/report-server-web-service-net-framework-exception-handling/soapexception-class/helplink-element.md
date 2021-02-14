@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: a4489103-a874-44c2-8f75-95cb238928ed
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 5a03f514b2305676d93ada0119326c101595f9c3
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: cfbf38148868f3f95a861e04227272db9c46692a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "80215670"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100021820"
 ---
 # <a name="helplink-element"></a>HelpLink-Element
   Das **HelpLink** -Element der **Detail** -Eigenschaft ist eine URL-Zeichenfolge, die vom Berichtsserver generiert wird. Die URL steuert eine Webseite an, die von [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Hilfe und Support verwaltet wird. Sie liefert zusätzliche Hilfestellungen und Artikel der Kowledge Base zu bestimmten Fehlern, die in [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)]auftreten. Die URL hat folgende Syntax:  

@@ -9,12 +9,12 @@ ms.date: 01/07/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 688031d9301710ada0ba5952ab45dba02bf46de0
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 4d7d8bd2251a646b5c419b80b2067f8a25fa4d7c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774537"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046937"
 ---
 # <a name="deploy-hdfs-name-node-and-shared-spark-services-in-a-highly-available-configuration"></a>Bereitstellen des HDFS-Namenknotens und gemeinsamer Spark-Dienste in einer Hochverfügbarkeitskonfiguration
 
