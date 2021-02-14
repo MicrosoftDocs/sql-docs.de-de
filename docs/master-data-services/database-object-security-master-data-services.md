@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: dd5ba503-7607-45d9-ad0d-909faaade179
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: f9b2089b72f11872df0dc0c0b2758fb8272a4c06
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: dd693c0f1bdbb7651375f6cba1e68a60b889db04
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88344906"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339067"
 ---
 # <a name="database-object-security-master-data-services"></a>Sicherheit von Datenbankobjekten (Master Data Services)
 

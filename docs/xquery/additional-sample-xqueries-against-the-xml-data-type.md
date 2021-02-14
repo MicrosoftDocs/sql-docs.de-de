@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2af66304-c021-427c-b3b3-e000ec0896cd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 09748289c5f40950b35588bee197088c7b31de9c
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6706244858e3fb72848a326e4926ca160a41d6cf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85643900"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340516"
 ---
 # <a name="additional-sample-xqueries-against-the-xml-data-type"></a>Zusätzliches Beispiel für XQuery-Abfragen für den XML-Datentyp
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a80b87b3-b904-4cda-8582-0761c2617c57
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 0f3f863a6c08de5a4194c9fd6a08e4ee3e207e50
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 45386aaa746522c18f7e3de293ecced923cfa807
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88388326"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272521"
 ---
 # <a name="functional-area-permissions-master-data-services"></a>Berechtigungen für Funktionsbereiche (Master Data Services)
 
@@ -34,7 +34,7 @@ ms.locfileid: "88388326"
   
 -   **Integrationsmanagement**  
   
--   **System Administration (Systemverwaltung)**  
+-   **Systemverwaltung**  
   
 -   **Benutzer- und Gruppenberechtigungen**  
   

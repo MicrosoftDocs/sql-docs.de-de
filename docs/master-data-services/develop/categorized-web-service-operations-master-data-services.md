@@ -11,12 +11,12 @@ ms.topic: reference
 ms.assetid: e3f346b5-7e26-481d-9821-1846e2e91289
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: bd6c3db52323385712bb946c63254e11c45cd5f3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 65656aa902b5500d1dcc57dde914b3a0b2265008
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88495033"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350128"
 ---
 # <a name="categorized-web-service-operations-master-data-services"></a>Kategorisierte Webdienstvorgänge (Master Data Services)
 

@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: d2e678bb-51e8-4a61-b223-5c0b8d08b8b1
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: ab171b0adfe6497520ba55d94ec6a1435cc6678a
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2c725e1758b1ff0197d6b4498cef6f5f54809d89
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99179317"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354138"
 ---
 # <a name="sysdm_hadr_availability_replica_states-transact-sql"></a>sys.dm_hadr_availability_replica_states (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

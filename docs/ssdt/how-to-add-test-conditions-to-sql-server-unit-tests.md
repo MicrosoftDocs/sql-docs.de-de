@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: e78a045c3dd7127df8c692120ff140892594fb0c
-ms.sourcegitcommit: b860fe41b873977649dca8c1fd5619f294c37a58
+ms.openlocfilehash: 9920430615d8391ef069078272ed8abbfcef6a00
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85518930"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063595"
 ---
 # <a name="how-to-add-test-conditions-to-sql-server-unit-tests"></a>Gewusst wie: Hinzufügen von Testbedingungen zu SQL Server-Komponententests
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 320d417e-a370-48fc-a05b-444d85fd24c0
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: b487861c462052a20b61bb98ff9579e823396da3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 81b5a9fa33049a07359429a55e32c9283b2b4945
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88342226"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336219"
 ---
 # <a name="user-and-group-permissions-functional-area-master-data-manager"></a>Funktionsbereich "Benutzer- und Gruppenberechtigungen" (Master Data Manager)
 

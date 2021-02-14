@@ -11,12 +11,12 @@ ms.topic: reference
 ms.assetid: a8b16fdc-c748-49be-acf2-a6ac7432d16b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f05ecd9241b97fa4864451e79674b9a57bca2a6e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e5e8a42aa2728ea8136c2889c18f26bafeea36ac
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99206190"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039110"
 ---
 # <a name="pdoprepare"></a>PDO::prepare
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

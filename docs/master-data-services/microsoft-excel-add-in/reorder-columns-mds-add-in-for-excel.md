@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: ac00462e-c0f7-4b8d-86f2-d9eda2598a15
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 7fba50da832a2c09ac576862804ef96bd57a3943
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 93d59286f93f890540f39a6e974dee4a2b5ecf31
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92258107"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355349"
 ---
 # <a name="reorder-columns-mds-add-in-for-excel"></a>Neuanordnen von Spalten (MDS-Add-In für Excel)
 

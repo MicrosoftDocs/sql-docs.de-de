@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 44a9854d-e333-44f6-bdc7-8837b9f34416
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: c8d602417a7423655ef5800d081432499d2761aa
-ms.sourcegitcommit: 783b35f6478006d654491cb52f6edf108acf2482
+ms.openlocfilehash: 58d7a46df8eb6580961d54e02f3ee6b0c57ee32f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91891690"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100059325"
 ---
 # <a name="moving-report-server-databases-to-another-computer-ssrs-native-mode"></a>Verschieben von Berichtsserver-Datenbanken auf einen anderen Computer (einheitlicher SSRS-Modus)
 
@@ -203,7 +203,7 @@ GO
   
 2.  Doppelklicken Sie auf der Seite Datenbank auf **Datenbank ändern**. Klicken Sie auf **Weiter**.  
   
-3.  Sie können auch auf **Wählen Sie eine vorhandene Berichtsserver-Datenbank aus**klicken. Klicken Sie auf **Weiter**.  
+3.  Sie können auch auf **Wählen Sie eine vorhandene Berichtsserver-Datenbank aus** klicken. Klicken Sie auf **Weiter**.  
   
 4.  Wählen Sie die [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , die nun als Host für die Berichtsserver-Datenbank fungiert, und klicken Sie auf **Verbindung testen**. Klicken Sie auf **Weiter**.  
   

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: b8cc9a35-97ab-4fe0-ab4b-c07f13d9793a
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 7f4baf9f3ef626f5e2dcdc62092afaf1e586df33
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: f277ecb0d3f0cc3a2e4cc62d3feff954e7c22327
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92196094"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348878"
 ---
 # <a name="web-configuration-reference-master-data-services"></a>Webkonfigurationsreferenz (Master Data Services)
 
@@ -29,7 +29,7 @@ ms.locfileid: "92196094"
 ## <a name="webconfig-elements"></a>Web.Config-Elemente  
  Die Web.config Datei enthält [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] **\<masterDataServices>** zusätzlich zu den Konfigurationselementen Standard-IIS, .NET Framework, ASP.net und Windows Communication Foundation (WCF) ein benutzerdefiniertes Element. Die folgende Tabelle beschreibt die Elemente mit den enthaltenen Web.config-Dateien.  
   
-|Konfigurationselement|Beschreibung|  
+|Konfigurationselement|BESCHREIBUNG|  
 |---------------------------|-----------------|  
 |**masterDataServices**|Benutzerdefiniertes Element. Verbindet den [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] -Web-Service mit einer [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] -Datenbank.|  
 |**connectionStrings**|ASP.NET-Element. Weitere Informationen finden Sie unter [connectionStrings-Element (ASP.NET-Einstellungsschema)](/previous-versions/dotnet/netframework-4.0/bf7sd233(v=vs.100)) in der MSDN Library.|  
@@ -56,7 +56,7 @@ ms.locfileid: "92196094"
   
 ### <a name="elements-and-attributes"></a>Elemente und Attribute  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |----------|-----------------|  
 |**instance**|Untergeordnetes Element. Enthält Attribute, die Informationen für den Webdienst und Datenbankverbindungszeichenfolge angeben.|  
 |**virtualPath**|Attribute. Gibt den virtuellen Pfad der [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] -Webanwendung und des entsprechenden Diensts an. Dies entspricht dem **path** -Attribut des- **\<application>** Elements unter dem- **\<site>** Element in der IIS-ApplicationHost.config Datei.|  

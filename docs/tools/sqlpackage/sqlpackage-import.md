@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 12/11/2020
-ms.openlocfilehash: 0e9acab737de04b002debf9d8c1b230a5cb01b14
-ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
+ms.openlocfilehash: cecc6de89a9e8f82a64942acb08af7ddee48c5be
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97577847"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081461"
 ---
 # <a name="sqlpackage-import-parameters-and-properties"></a>Parameter und Eigenschaften für die Import-Aktion von SqlPackage
 Durch die Import-Aktion von „SqlPackage.exe“ werden das Schema und die Tabellendaten aus einem BACPAC-Paket (BACPAC-Datei) in eine neue oder leere Datenbank in SQL Server oder Azure SQL-Datenbank importiert. Zum Zeitpunkt des Imports in eine bestehende Datenbank darf die Zieldatenbank keine benutzerdefinierten Schemaobjekte enthalten.  

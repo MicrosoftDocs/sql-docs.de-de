@@ -9,12 +9,12 @@ ms.author: drskwier
 ms.reviewer: alayu, maghan
 ms.custom: seodec18
 ms.date: 10/28/2020
-ms.openlocfilehash: 33a7470f3b80d74201c127823db938b11df068e6
-ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
+ms.openlocfilehash: 56d3f751fdae52fa0ff94aafe94d8ba955b418ec
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97559032"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040190"
 ---
 # <a name="azure-data-studio-faq"></a>FAQ zu Azure Data Studio
 

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9f862a3d-25ab-41e9-b833-1db99959e825
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 072228f2a0538915b8ad1a657a205a676b159ca2
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 93542a994aacb3d82be79c5a0b18daf5ea61fd09
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813230"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340347"
 ---
 # <a name="models-master-data-services"></a>Modelle (Master Data Services)
 

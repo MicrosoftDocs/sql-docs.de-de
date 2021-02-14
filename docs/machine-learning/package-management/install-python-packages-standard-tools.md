@@ -8,12 +8,12 @@ ms.topic: how-to
 author: garyericson
 ms.author: garye
 monikerRange: =sql-server-2017
-ms.openlocfilehash: f9c5d221c2deec5506b8d6b80f1000f315e6a352
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 37d7f95f4140e0cab778ac4864757fbe75b1ff0c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471071"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100082631"
 ---
 # <a name="install-packages-with-python-tools-on-sql-server"></a>Installieren von Paketen mit Python-Tools in SQL Server
 [!INCLUDE [SQL Server 2017 only](../../includes/applies-to-version/sqlserver2017-only.md)]

@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: cc9f8c0c87922a54df0bcd3d2ee4fa730ecfaff7
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 0bd87bb75255ca50ceaed8e46c356555cdedf799
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85883413"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066865"
 ---
 # <a name="troubleshooting-sql-server-database-unit-testing-issues"></a>Behandeln von Problemen bei SQL Server-Datenbankkomponententests
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 19519697-c219-44a8-9339-ee1b02545445
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 483b3e5f6b819660cbbc3314cf675858f41c8958
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1898fec49c4e75deb9fcb0730a24a2d6859f9dda
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471906"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353005"
 ---
 # <a name="master-data-services-features-and-tasks"></a>Master Data Services - Features und Tasks
 

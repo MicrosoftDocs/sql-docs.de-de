@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: ab32938d-a80e-4106-80d4-94b2de3d67dc
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 27c374ff84a33ed750c9b425dae9a75c6b33f8e0
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 9d1bf623e4684dfcb459d4e73d533abe35d71090
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "92257857"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344761"
 ---
 # <a name="enable-data-quality-services-integration-with-master-data-services"></a>Aktivieren der Data Quality Services-Integration in Master Data Services
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 909356a0-4709-43e5-b597-33bd9bb22882
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: c14237adcb3cd45e62db0915004f51ed547c9f30
-ms.sourcegitcommit: dc858552f0c9314b3411e630bbd9bbce65f85913
+ms.openlocfilehash: b3d3dc5fac6915faafb48b045b70c5b57f6e6ad8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96788305"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100071120"
 ---
 # <a name="rendering-extensions-overview"></a>Übersicht über Renderingerweiterungen
   Eine Renderingerweiterung stellt eine Komponente oder ein Modul eines Berichtsservers dar, mit dem Daten- und Layoutinformationen in ein gerätespezifisches Format umgewandelt werden. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] umfasst sieben Renderingerweiterungen: HTML, Excel, Word, CSV oder Text, XML, Image und PDF. Sie können zusätzliche Renderingerweiterungen erstellen, um Berichte in anderen Formaten zu generieren.  

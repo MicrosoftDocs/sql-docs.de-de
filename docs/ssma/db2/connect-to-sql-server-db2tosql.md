@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: bc14a072-8949-4ee0-a4b4-ada55fe8df5c
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 8b9d2fc6610ad7a0af9518bd91b270d914e9e622
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1956417b11757c690fc1e9357f20a35f2e2b568a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88373006"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081635"
 ---
 # <a name="connect-to-sql-server-db2tosql"></a>Herstellen einer Verbindung mit SQL Server (DB2ToSQL)
 Verwenden Sie das Dialogfeld **mit SQL Server verbinden** , um eine Verbindung mit der Instanz von herzustellen [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , zu der Sie migrieren möchten. Um auf das Dialogfeld **Verbindung mit SQL Server herstellen** zuzugreifen, klicken Sie im Menü **Datei** auf **Verbinden mit SQL Server**.  
@@ -52,5 +52,5 @@ Wenn Sie eine sichere Verbindung mit SQL Server herstellen möchten, verwenden S
 Wenn Sie diese Option verwenden möchten, aktivieren Sie das Kontrollkästchen **Server Zertifikat vertrauen** .  
   
 > [!NOTE]  
-> Zum Aktivieren des **Trust Server-Zertifikats**muss "verschlüsseln" auf " **true**" festgelegt sein.  
+> Zum Aktivieren des **Trust Server-Zertifikats** muss "verschlüsseln" auf " **true**" festgelegt sein.  
   

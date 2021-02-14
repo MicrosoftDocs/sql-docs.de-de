@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 2abb12c7df083de7e19148729cb64e16b96d528d
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 5f8d17fa156cd144a87b2dc387564cd93556d8da
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988236"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077191"
 ---
 # <a name="analyze-script-performance"></a>Analysieren der Skriptleistung
 
@@ -41,7 +41,7 @@ Nachdem das Skript analysiert oder ausgeführt wurde, klicken Sie auf die Regist
   
 Die Ausgabe des grafischen Ausführungsplans wird von rechts nach links und von oben nach unten gelesen. Jede Abfrage im Batch, die analysiert wird, wird einschließlich des prozentualen Kostenanteils der Abfrage an den Batchgesamtkosten angezeigt. Um weitere Informationen wie Kosten und Operation für die einzelnen Schritte anzuzeigen, platzieren Sie den Mauszeiger über den [Symbolen der logischen und physischen Operatoren](/previous-versions/sql/sql-server-2008-r2/ms175913(v=sql.105)) im grafischen Plan.  
   
-Um die Anzeige des Ausführungsplans zu ändern, klicken Sie mit der rechten Maustaste auf den **Ausführungsplan**, und klicken Sie auf **Vergrößern**, **Verkleinern**, **Vergrößern/Verkleinern** oder **Mit Zoom anpassen**. Mit**Vergrößern** und **Verkleinern** können Sie den Ausführungsplan in festgelegten Schritten vergrößern oder verkleinern. **Vergrößern/Verkleinern** ermöglicht Ihnen, die Anzeigevergrößerung nach Wunsch festzulegen, etwa auf 80 Prozent.  **Mit Zoom anpassen** passt den Ausführungsplan an den Ergebnisbereich an.  
+Um die Anzeige des Ausführungsplans zu ändern, klicken Sie mit der rechten Maustaste auf den **Ausführungsplan**, und klicken Sie auf **Vergrößern**, **Verkleinern**, **Vergrößern/Verkleinern** oder **Mit Zoom anpassen**. Mit **Vergrößern** und **Verkleinern** können Sie den Ausführungsplan in festgelegten Schritten vergrößern oder verkleinern. **Vergrößern/Verkleinern** ermöglicht Ihnen, die Anzeigevergrößerung nach Wunsch festzulegen, etwa auf 80 Prozent.  **Mit Zoom anpassen** passt den Ausführungsplan an den Ergebnisbereich an.  
   
 Ausführungspläne können gespeichert und für eine spätere Untersuchung erneut geöffnet werden. Klicken Sie hierzu mit der rechten Maustaste auf den **Ausführungsplan**, und wählen Sie **Ausführungsplan speichern unter** aus. Anschließend können Sie den Plan in Visual Studio wie jede andere Datei öffnen.  
   

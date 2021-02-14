@@ -13,12 +13,12 @@ ms.assetid: 05da1495-63b9-47b7-86e2-6746394a2d8a
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 656132dafce39e6007601b75956fd73714638716
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 8058123020571ad43e3142fccb920aa22a4b5af5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87934785"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080781"
 ---
 # <a name="mapping-oracle-and-sql-server-data-types-oracletosql"></a>Zuordnen von Oracle- und SQL Server-Datentypen (OracleToSQL)
 Oracle-Datenbanktypen unterscheiden sich von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Datenbanktypen Beim Konvertieren von Oracle-Datenbankobjekten in- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Objekte müssen Sie angeben, wie Datentypen aus Oracle zugeordnet werden sollen [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Sie können die standardmäßigen Datentyp Zuordnungen akzeptieren, oder Sie können die Zuordnungen anpassen, wie in den folgenden Abschnitten dargestellt.  
@@ -38,9 +38,9 @@ Im folgenden Verfahren wird gezeigt, wie Datentypen auf Projekt-, Datenbank-oder
   
 1.  Um die Datentyp Zuordnung für das gesamte Projekt anzupassen, öffnen Sie das Dialogfeld **Projekteinstellungen** :  
   
-    1.  Wählen Sie **im Menü Extras** die Option **Projekteinstellungen**aus.  
+    1.  Wählen Sie **im Menü Extras** die Option **Projekteinstellungen** aus.  
   
-    2.  Wählen Sie im linken Bereich **Typzuordnung**aus.  
+    2.  Wählen Sie im linken Bereich **Typzuordnung** aus.  
   
         Das Typmapping-Diagramm und die Schaltflächen werden im rechten Bereich angezeigt.  
   
@@ -54,13 +54,13 @@ Im folgenden Verfahren wird gezeigt, wie Datentypen auf Projekt-, Datenbank-oder
   
     1.  Klicken Sie auf **Hinzufügen**.  
   
-    2.  Wählen Sie unter **Quelltyp**den Oracle-Datentyp aus, der zugeordnet werden soll.  
+    2.  Wählen Sie unter **Quelltyp** den Oracle-Datentyp aus, der zugeordnet werden soll.  
   
     3.  Wenn der Typ eine Länge erfordert, geben Sie die minimale Daten Länge für die Zuordnung im Feld **von** und die maximale Daten Länge im Feld **an an** .  
   
         Auf diese Weise können Sie die Datenzuordnung für kleinere und größere Werte desselben Datentyps anpassen.  
   
-    4.  Wählen Sie unter **Zieltyp**den Ziel [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Datentyp aus.  
+    4.  Wählen Sie unter **Zieltyp** den Ziel [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Datentyp aus.  
   
         Einige Typen erfordern eine Länge des Ziel Datentyps. Wenn dies erforderlich ist, geben Sie die neue Daten Länge in das Feld **Ersetzen durch** ein.  
   
@@ -70,15 +70,15 @@ Im folgenden Verfahren wird gezeigt, wie Datentypen auf Projekt-, Datenbank-oder
   
     1.  Klicken Sie auf **Bearbeiten**.  
   
-    2.  Wählen Sie unter **Quelltyp**den Oracle-Datentyp aus, der zugeordnet werden soll.  
+    2.  Wählen Sie unter **Quelltyp** den Oracle-Datentyp aus, der zugeordnet werden soll.  
   
     3.  Wenn der Typ eine Länge erfordert, geben Sie die minimale Daten Länge für die Zuordnung im Feld **von** und die maximale Daten Länge im Feld **an an** .  
   
         Auf diese Weise können Sie die Datenzuordnung für kleinere und größere Werte desselben Datentyps anpassen.  
   
-    4.  Wählen Sie unter **Zieltyp**den Ziel [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Datentyp aus.  
+    4.  Wählen Sie unter **Zieltyp** den Ziel [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Datentyp aus.  
   
-        Einige Typen erfordern eine Länge des Ziel Datentyps. Wenn dies erforderlich ist, geben Sie die neue Daten Länge im Feld **Ersetzen durch** ein, und klicken Sie dann auf[!INCLUDE[clickOK](../../includes/clickok-md.md)]  
+        Einige Typen erfordern eine Länge des Ziel Datentyps. Wenn dies erforderlich ist, geben Sie die neue Daten Länge im Feld **Ersetzen durch** ein, und klicken Sie dann auf [!INCLUDE[clickOK](../../includes/clickok-md.md)]  
   
 4.  Gehen Sie folgendermaßen vor, um eine benutzerdefinierte Datentyp Zuordnung zu entfernen:  
   

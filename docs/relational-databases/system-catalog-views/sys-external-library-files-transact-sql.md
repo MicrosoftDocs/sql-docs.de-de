@@ -19,12 +19,12 @@ author: dphansen
 ms.author: davidph
 manager: cgronlun
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 139843ab9a4c4c6a398c96cc3bcc3f7b50b297f8
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b716b8a3264152c3f03a454f22613f56241279d1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99191545"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351745"
 ---
 # <a name="sysexternal_library_files-transact-sql"></a>sys.external_library_files (Transact-SQL)  
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]
@@ -38,7 +38,7 @@ Listet eine Zeile für jede Datei auf, die eine externe Bibliothek bildet.
 |platform |TINYINT |ID der Host Plattform, auf der SQL Server installiert ist. |
 |platform_desc | nvarchar(60) |Der Name der Host Plattform. Gültige Werte sind "Windows", "Linux". |
 
-### <a name="see-also"></a>Siehe auch  
+### <a name="see-also"></a>Weitere Informationen  
 
 [sys.external_libraries](sys-external-libraries-transact-sql.md)  
 [externe Bibliothek erstellen](../../t-sql/statements/create-external-library-transact-sql.md)  

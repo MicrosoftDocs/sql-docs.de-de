@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 9868b414d627c7ea98504120432c0c3a662d463b
-ms.sourcegitcommit: afb02c275b7c79fbd90fac4bfcfd92b00a399019
+ms.openlocfilehash: 588597398c11b9b374bdecd272162fe82053cd8f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91956551"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354082"
 ---
 # <a name="installation-and-configuration"></a>Installation und Konfiguration
 [!INCLUDE [SQL Server Azure SQL Database](../includes/applies-to-version/sql-asdb.md)]
@@ -26,7 +26,7 @@ Anweisungen zur Installation und Konfiguration der OLTP-Datenbank für Wide Worl
 - [SQL Server 2016](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016) (oder höher) oder [Azure SQL-Datenbank](https://azure.microsoft.com/services/sql-database/). Verwenden Sie für die vollständige Version des Beispiels SQL Server Evaluation/Developer/Enterprise Edition.
 - [SQL Server Management Studio](../ssms/download-sql-server-management-studio-ssms.md): Um die besten Ergebnisse zu erzielen, verwenden Sie die Version vom Juni 2016 oder höher.
 
-## <a name="download"></a>Download
+## <a name="download"></a>Herunterladen
 
 Die neueste Version des Beispiels:
 
@@ -48,7 +48,7 @@ Zum Wiederherstellen einer Sicherung in einer SQL Server Instanz können Sie Man
 1. Öffnen Sie SQL Server Management Studio und stellen Sie eine Verbindung mit der Ziel SQL Server Instanz her.
 2. Klicken Sie mit der rechten Maustaste auf den Knoten **Datenbanken** , und wählen Sie **Datenbank wiederherstellen**.
 3. Wählen Sie **Gerät** aus, und klicken Sie auf die Schaltfläche **...**
-4. Wählen Sie im Dialogfeld **Sicherungs**Medien aus, klicken Sie auf **Hinzufügen**, navigieren Sie im Dateisystem des Servers zu der Datenbanksicherung, und wählen Sie die Sicherung aus. Klicken Sie auf **OK**.
+4. Wählen Sie im Dialogfeld **Sicherungs** Medien aus, klicken Sie auf **Hinzufügen**, navigieren Sie im Dateisystem des Servers zu der Datenbanksicherung, und wählen Sie die Sicherung aus. Klicken Sie auf **OK**.
 5. Ändern Sie ggf. den Zielort für die Daten-und Protokolldateien im Bereich " **Dateien** ". Beachten Sie, dass es eine bewährte Vorgehensweise ist, Daten-und Protokolldateien auf verschiedenen Laufwerken zu platzieren.
 6. Klicken Sie auf **OK**. Dadurch wird die Daten Bank Wiederherstellung initiiert. Nachdem der Vorgang abgeschlossen ist, wird die Datenbank "wideworldimporters" auf der SQL Server-Instanz installiert.
 
@@ -59,7 +59,7 @@ Zum Importieren einer BacPac-Datenbank in eine neue SQL-Datenbank können Sie Ma
 1. optionale Wenn Sie noch keine SQL Server in Azure haben, navigieren Sie zum [Azure-Portal](https://portal.azure.com/) , und erstellen Sie eine neue SQL-Datenbank. Beim Erstellen einer Datenbank erstellen Sie einen Server. Notieren Sie sich den Server.
    - In [diesem Tutorial](/azure/azure-sql/database/single-database-create-quickstart) finden Sie Informationen zum Erstellen einer Datenbank in wenigen Minuten.
 2. Öffnen Sie SQL Server Management Studio, und stellen Sie in Azure eine Verbindung mit Ihrem Server her
-3. Klicken Sie mit der rechten Maustaste auf den Knoten **Datenbanken** , und wählen Sie **Data-Tier Anwendung importieren**aus.
+3. Klicken Sie mit der rechten Maustaste auf den Knoten **Datenbanken** , und wählen Sie **Data-Tier Anwendung importieren** aus.
 4. Wählen Sie unter **Import Einstellungen** die Option **aus lokalem Datenträger importieren aus** , und wählen Sie die BacPac-Datei der Beispieldatenbank aus dem Dateisystem aus.
 5. Ändern Sie unter **Datenbankeinstellungen** den Datenbanknamen in *wideworldimporters* , und wählen Sie die zu verwendende Ziel Edition und das Dienst Ziel aus.
 6. Klicken Sie auf **weiter** und **Beenden** , um die Bereitstellung zu starten. Es dauert einige Minuten, bis ein P1-Vorgang abgeschlossen ist. Wenn ein niedrigerer Tarif erwünscht ist, empfiehlt es sich, in eine neue P1-Datenbank zu importieren und dann den Tarif auf die gewünschte Stufe zu ändern.

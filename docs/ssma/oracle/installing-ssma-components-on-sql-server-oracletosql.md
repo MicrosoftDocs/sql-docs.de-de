@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 33070e5f-4e39-4b70-ae81-b8af6e4983c5
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 64850d1a701491f0dc5817576a568fdc3ebc2483
-ms.sourcegitcommit: 82b92f73ca32fc28e1948aab70f37f0efdb54e39
+ms.openlocfilehash: 81d3f542e64030dbf6a0bf70067307222bef5a8b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94870100"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344213"
 ---
 # <a name="installing-ssma-components-on-sql-server-oracletosql"></a>Installieren von SSMA-Komponenten auf SQL Server (oracleto SQL)
 
@@ -110,7 +110,7 @@ Außerdem werden der **Master** -Datenbank die folgenden erweiterten gespeichert
 - `xp_ora2ms_exec2_ex`
 - `xp_ora2ms_versioninfo2`
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Installieren von SSMA für den Oracle-Client](../../ssma/oracle/installing-ssma-for-oracle-client-oracletosql.md)
 - [Migrieren von Oracle-Datenbanken zu SQL Server](../../ssma/oracle/migrating-oracle-databases-to-sql-server-oracletosql.md)

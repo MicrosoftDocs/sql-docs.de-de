@@ -12,12 +12,12 @@ ms.assetid: 069ac476-6336-44a9-a0e7-db1c4888948f
 author: maggiesMSFT
 ms.author: maggies
 monikerRange: '>=sql-server-2016 <=sql-server-2016'
-ms.openlocfilehash: 6f0795c8a0404aa5096e357478209fbb259d8e13
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 5fc553da9608bbba649be9993d3f0d9884ad84d9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236194"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070995"
 ---
 # <a name="where-to-find-the-reporting-services-add-in-for-sharepoint-products"></a>Verfügbarkeit des Reporting Services-Add-Ins für SharePoint-Produkte
 

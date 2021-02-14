@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 2e27489e-cf69-4a89-9036-77723ac3de66
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 07855299c41457c066f878125ca289f66a87e2a9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0f6989a0b79ce409489c120d1fdfbe70a9ccbeb6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99184903"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338834"
 ---
 # <a name="sysdm_os_enumerate_fixed_drives-transact-sql"></a>sys.dm_os_enumerate_fixed_drives (Transact-SQL)
 
@@ -32,7 +32,7 @@ Eingeführt in SQL Server 2019.
 
 Listet Volumes auf, die auf Laufwerk Buchstaben wie bereitgestellt werden `C:\` .
 
-|Spaltenname|Datentyp|BESCHREIBUNG|
+|Spaltenname|Datentyp|Beschreibung|
 |-----------------|---------------|-----------------|  
 |`fixed_drive_path`|`nvarchar(512)`|Der Pfad zum Volume, wie z `C:\` . b..|  
 |`drive_type`|`int`|Code für den Laufwerkstyp. Siehe [ `GetDriveTypeW` Function](/windows/win32/api/fileapi/nf-fileapi-getdrivetypew).|

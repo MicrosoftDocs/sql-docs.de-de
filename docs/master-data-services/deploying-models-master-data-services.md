@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 30085c08-034f-4efe-80fe-408f9091ff5c
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 2d2acff8ff89202427a78de0aaee7e1f02c13a96
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 263de1026f5d63c240259852ca4acce1ed8f77d0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85811551"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350192"
 ---
 # <a name="deploying-models-master-data-services"></a>Bereitstellen von Modellen (Master Data Services)
 

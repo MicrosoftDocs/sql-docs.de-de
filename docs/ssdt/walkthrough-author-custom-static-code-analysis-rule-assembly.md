@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: c734a2907ec4ad2d312385976013f8c1c39effcc
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 3cae3183bef3d6bd40a9d30805f3923df8d70679
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987726"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100082341"
 ---
 # <a name="walkthrough-authoring-a-custom-static-code-analysis-rule-assembly-for-sql-server"></a>Exemplarische Vorgehensweise – Erstellen einer Assembly für eine benutzerdefinierte statische Codeanalyseregel für SQL Server
 

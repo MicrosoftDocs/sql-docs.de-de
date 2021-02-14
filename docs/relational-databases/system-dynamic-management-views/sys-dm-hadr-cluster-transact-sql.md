@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 13ce70e4-9d43-4a80-a826-099e6213bf85
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 0648f9c281c59789f3ae9d4f97cc3d277303abd1
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c8a4a8a968432fa37489f579d36c53c32b5d31db
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171799"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339435"
 ---
 # <a name="sysdm_hadr_cluster-transact-sql"></a>sys.dm_hadr_cluster (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "99171799"
  > [!TIP]
  > Ab [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] unterstützt diese dynamische Verwaltungs Sicht Always on-Failoverclusterinstanzen zusätzlich zu Always on Verfügbarkeits Gruppen.
 
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**cluster_name**|**nvarchar(128)**|Der Name des WSFC-Clusters, der die [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -fähigen Instanzen von [!INCLUDE[ssHADR](../../includes/sshadr-md.md)]hostet.|  
 |**quorum_type**|**tinyint**|Der Typ des Quorums, der von diesem WSFC-Cluster verwendet wird. Folgende Werte sind möglich:<br /><br /> 0 = Knotenmehrheit Diese Quorumkonfiguration kann Fehler bei der Hälfte der Knoten (aufgerundet) minus einem tolerieren. In einem Cluster mit sieben Knoten kann diese Quorumkonfiguration z. B. drei Knotenfehler tolerieren.<br /><br /> 1 = Knoten- und Datenträgermehrheit Wenn der Datenträgerzeuge online bleibt, kann diese Quorumkonfiguration Fehler bei der Hälfte der Knoten (aufgerundet) tolerieren. So kann ein Cluster mit sechs Knoten, in dem der Datenträgerzeuge online ist, beispielsweise drei Knotenfehler tolerieren. Wenn der Datenträgerzeuge offline geht oder ein Datenträgerzeugenfehler auftritt, kann diese Quorumkonfiguration Fehler bei der Hälfte der Knoten (aufgerundet) minus einem Knoten tolerieren. Ein Cluster mit sechs Knoten, in dem ein Datenträgerzeugenfehler aufgetreten ist, kann beispielsweise zwei (3 minus 1 = 2) Knotenfehler tolerieren.<br /><br /> 2 = Knoten- und Dateifreigabemehrheit Diese Quorumkonfiguration funktioniert auf eine ähnliche Weise wie die Knoten- und Datenträgermehrheit, verwendet aber einen Dateifreigabenzeugen statt eines Datenträgerzeugen.<br /><br /> 3 = Keine Mehrheit: Nur Datenträger Wenn der Quorumdatenträger online ist, kann diese Quorumkonfiguration Fehler bei allen Knoten außer einem tolerieren.<br /><br /> 4 = unbekanntes Quorum. Unbekanntes Quorum für den Cluster.<br /><br /> 5 = cloudzeuge. Der Cluster nutzt Microsoft Azure für die Quorum-Schiedsgerichtsbarkeit. Wenn der cloudzeuge verfügbar ist, kann der Cluster den Ausfall der Hälfte der Knoten (aufgerundet) aufrechterhalten.|  

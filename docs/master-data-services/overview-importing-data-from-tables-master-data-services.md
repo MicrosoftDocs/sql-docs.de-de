@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 181d1e22-379c-45d1-b03c-e1e22ff14164
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: b5290d2e9650acc8ee540e572109b51b377e5235
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: ca89907d14bdac1667a84be98a6cff53a44b4034
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236580"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340268"
 ---
 # <a name="overview-importing-data-from-tables-master-data-services"></a>Übersicht: Importieren von Daten aus Tabellen (Master Data Services)
 

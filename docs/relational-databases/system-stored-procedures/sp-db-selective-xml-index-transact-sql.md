@@ -1,8 +1,8 @@
 ---
 description: sp_db_selective_xml_index (Transact-SQL)
-title: sp_db_selective_xml_index (Transact-SQL) | Microsoft-Dokumentation
+title: sp_db_selective_xml_index (Transact-SQL)
 ms.custom: ''
-ms.date: 03/14/2017
+ms.date: 02/11/2021
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
@@ -15,15 +15,14 @@ dev_langs:
 - TSQL
 helpviewer_keywords:
 - sp_db_selective_xml_index procedure
-ms.assetid: 017301a2-4a23-4e68-82af-134f3d4892b3
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 17942cc1e4c68c844e78a2f25398a7e175035d01
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 5df370a674026b4c6ebc7eb59985505821e3b028
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99201313"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489444"
 ---
 # <a name="sp_db_selective_xml_index-transact-sql"></a>sp_db_selective_xml_index (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -37,74 +36,70 @@ ms.locfileid: "99201313"
   
 ## <a name="syntax"></a>Syntax  
   
-```sql  
+```syntaxsql
   
-      sys.sp_db_selective_xml_index[[ @db_name = ] 'db_name'],   
-[[ @action = ] 'action']  
+      sys.sp_db_selective_xml_index[[ @dbname = ] 'dbname'],   
+[[ @selective_xml_index = ] 'selective_xml_index']  
 ```  
   
 ## <a name="arguments"></a>Argumente  
-`[ @ db_name = ] 'db_name'` Der Name der Datenbank, für die der selektive XML-Index aktiviert oder deaktiviert werden soll. Wenn *db_name* NULL ist, wird die aktuelle Datenbank angenommen.  
-  
-`[ @action = ] 'action'` Bestimmt, ob der Index aktiviert oder deaktiviert werden soll. Wenn ein anderer Wert mit Ausnahme von ' on ', ' true ', ' off ' oder ' false ' überschritten wird, wird ein Fehler ausgelöst.  
-  
-```  
-  
-Allowed values: 'on', 'off', 'true', 'false'  
-```  
+`[ @ dbname = ] 'dbname'` Der Name der Datenbank, für die der selektive XML-Index aktiviert oder deaktiviert werden soll. Wenn *dbname* NULL ist, wird die aktuelle Datenbank angenommen. *@dbname* ist vom **Datentyp vom Datentyp sysname**.
+
+
+`[ @selective_xml_index = ] 'selective_xml_index'` Bestimmt, ob der Index aktiviert oder deaktiviert werden soll. Zulässige Werte: ' on ', ' off ', ' true ', ' false '. Wenn ein anderer Wert mit Ausnahme von ' on ', ' true ', ' off ' oder ' false ' überschritten wird, wird ein Fehler ausgelöst. *@selective_xml_index* ist vom Datentyp **varchar (6)**.
+
   
 ## <a name="return-code-values"></a>Rückgabecodewerte  
- **1** , wenn der selektive XML-Index für eine bestimmte Datenbank aktiviert ist.  
+ **1** , wenn der selektive XML-Index für eine bestimmte Datenbank aktiviert ist, **0** , wenn er deaktiviert ist.  
   
 ## <a name="examples"></a>Beispiele  
   
 ### <a name="a-enable-selective-xml-index-functionality"></a>A. Aktivieren der Funktion für den selektiven XML-Index  
  Im folgenden Beispiel wird der selektive XML-Index in der aktuellen Datenbank aktiviert.  
   
-```  
+```sql
 EXECUTE sys.sp_db_selective_xml_index  
-    @db_name = NULL  
-  , @action = N'on';  
+    @dbname = NULL  
+  , @selective_xml_index = N'on';  
 GO  
 ```  
   
  Im folgenden Beispiel wird der selektive XML-Index in der AdventureWorks2012-Datenbank aktiviert.  
   
-```  
+```sql
 EXECUTE sys.sp_db_selective_xml_index  
-    @db_name = N'AdventureWorks2012'  
-  , @action = N'true';  
+    @dbname = N'AdventureWorks2012'  
+  , @selective_xml_index = N'true';  
 GO  
 ```  
   
 ### <a name="b-disable-selective-xml-index-functionality"></a>B. Deaktivieren der Funktion für den selektiven XML-Index  
  Im folgenden Beispiel wird der selektive XML-Index in der aktuellen Datenbank deaktiviert.  
   
-```  
+```sql
 EXECUTE sys.sp_db_selective_xml_index  
-    @db_name = NULL  
-  , @action = N'off';  
+    @dbname = NULL  
+  , @selective_xml_index = N'off';  
 GO  
 ```  
   
  Im folgenden Beispiel wird der selektive XML-Index in der der AdventureWorks2012-Datenbank deaktiviert.  
   
-```  
+```sql
 EXECUTE sys.sp_db_selective_xml_index  
-    @db_name = N'AdventureWorks2012'  
-  , @action = N'false';  
+    @dbname = N'AdventureWorks2012'  
+  , @selective_xml_index = N'false';  
 GO  
 ```  
   
 ### <a name="c-detect-if-selective-xml-index-is-enabled"></a>C. Ermitteln, ob der selektive XML-Index aktiviert ist  
  Im folgenden Beispiel wird ermittelt, ob der selektive XML-Index aktiviert ist. Gibt 1 zurück, wenn der selektive XML-Index aktiviert ist.  
   
-```  
+```sql
 EXECUTE sys.sp_db_selective_xml_index;  
 GO  
 ```  
   
 ## <a name="see-also"></a>Weitere Informationen  
  [Selektive XML-Indizes &#40;SXI&#41;](../../relational-databases/xml/selective-xml-indexes-sxi.md)  
-  
-  
+   

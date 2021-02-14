@@ -8,12 +8,12 @@ ms.topic: how-to
 author: garyericson
 ms.author: garye
 monikerRange: =sql-server-2016||=sql-server-2017
-ms.openlocfilehash: 5943de8bcc6588572bc3acebed5b3ba4104b7a96
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e54df6240cf1bf4dcaee7813eaf614a84c31a0f6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471061"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100082621"
 ---
 # <a name="install-packages-with-r-tools"></a>Installieren von Paketen mit R-Tools
 

@@ -22,12 +22,12 @@ ms.assetid: 855dd9fc-f80c-4dbc-bf46-55a9736bfe15
 author: rothja
 ms.author: jroth
 ms.custom: seo-dt-2019
-ms.openlocfilehash: b9356ae3c4783df003233c4db7ab4bbaf9501a2d
-ms.sourcegitcommit: 67befbf7435f256e766bbce6c1de57799e1db9ad
+ms.openlocfilehash: 74435746bc2ef72741cf25a610cb37d4ac1893b4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92523950"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080991"
 ---
 # <a name="get-started-by-running-the-enable-database-for-stretch-wizard"></a>Erste Schritte durch Ausführen des Assistenten zum Aktivieren von Stretch für eine Datenbank
 [!INCLUDE [sqlserver2016-windows-only](../../includes/applies-to-version/sqlserver2016-windows-only.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "92523950"
   
 1.  Wählen Sie in SQL Server Management Studio im Objekt-Explorer die Datenbank, für die Sie Stretch aktivieren möchten.  
   
-2.  Klicken Sie mit der rechten Maustaste, wählen Sie **Aufgaben** , **Stretch** und dann **Aktivieren** aus, um den Assistenten zu starten.  
+2.  Klicken Sie mit der rechten Maustaste, wählen Sie **Aufgaben**, **Stretch** und dann **Aktivieren** aus, um den Assistenten zu starten.  
   
 ##  <a name="introduction"></a><a name="Intro"></a> Einführung  
  Überprüfen Sie den Zweck des Assistenten und die Voraussetzungen.  
@@ -69,14 +69,14 @@ Oben in der sortierten Liste werden Tabellen mit einer Vielzahl von Zeilen angez
 |**Name**|Gibt den Namen der Tabelle in der Datenbank an.|  
 |(kein Titel)|Ein Symbol in dieser Spalte kann auf eine Warnung hinweisen, die Sie nicht daran hindert, die ausgewählte Tabelle für Stretch zu aktivieren. Es kann auch auf ein blockierendes Problem hinweisen, die verhindert, dass Sie die ausgewählte Tabelle für Stretch aktivieren können – z.B. weil die Tabelle einen nicht unterstützten Datentyp verwendet. Zeigen Sie auf das Symbol, um weitere Informationen in einer QuickInfo anzuzeigen. Weitere Informationen finden Sie unter [Einschränkungen für Stretch Database](../../sql-server/stretch-database/limitations-for-stretch-database.md).|  
 |**Durchgeführtes Stretching**|Gibt an, ob die Tabelle bereits für Stretch aktiviert ist.|  
-|**Migrieren**|Sie können eine vollständige Tabelle migrieren ( **Gesamte Tabelle** ) oder einen Filter für eine vorhandene Spalte in der Tabelle angeben. Wenn Sie eine andere Filterfunktion verwenden möchten, um zu migrierende Zeilen auszuwählen, führen Sie nach dem Schließen des Assistenten die Anweisung ALTER TABLE aus, um die Filterfunktion anzugeben. Weitere Informationen zur Filterfunktion finden Sie unter [Auswählen zu migrierender Zeilen mithilfe einer Filterfunktion (Stretch-Datenbank)](../../sql-server/stretch-database/select-rows-to-migrate-by-using-a-filter-function-stretch-database.md). Informationen zum Anwenden der Funktion finden Sie unter [Aktivieren von Stretch Database für eine Tabelle](../../sql-server/stretch-database/enable-stretch-database-for-a-table.md) oder [ALTER TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-table-transact-sql.md).|  
+|**Migrieren**|Sie können eine vollständige Tabelle migrieren (**Gesamte Tabelle**) oder einen Filter für eine vorhandene Spalte in der Tabelle angeben. Wenn Sie eine andere Filterfunktion verwenden möchten, um zu migrierende Zeilen auszuwählen, führen Sie nach dem Schließen des Assistenten die Anweisung ALTER TABLE aus, um die Filterfunktion anzugeben. Weitere Informationen zur Filterfunktion finden Sie unter [Auswählen zu migrierender Zeilen mithilfe einer Filterfunktion (Stretch-Datenbank)](../../sql-server/stretch-database/select-rows-to-migrate-by-using-a-filter-function-stretch-database.md). Informationen zum Anwenden der Funktion finden Sie unter [Aktivieren von Stretch Database für eine Tabelle](../../sql-server/stretch-database/enable-stretch-database-for-a-table.md) oder [ALTER TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-table-transact-sql.md).|  
 |**Zeilen**|Gibt die Anzahl der Zeilen in der Tabelle an.|  
 |**Größe (KB)**|Gibt die Größe der Tabelle in KB an.|  
   
 ## <a name="optionally-provide-a-row-filter"></a>Optionales Angeben eines Zeilenfilters  
  Wenn Sie zum Auswählen zu migrierender Zeilen eine Filterfunktion verwenden möchten, führen Sie auf der Seite **Tabellen auswählen** die folgenden Schritte aus.  
   
-1.  Klicken Sie in der Liste **Wählen Sie die Tabellen aus, für die Sie Stretching durchführen möchten.** , in der Spalte für die Tabelle auf **Ganze Tabelle**. Das Dialogfeld **Wählen Sie die Zeilen aus, für die Stretching durchgeführt werden soll.** wird geöffnet.  
+1.  Klicken Sie in der Liste **Wählen Sie die Tabellen aus, für die Sie Stretching durchführen möchten.**, in der Spalte für die Tabelle auf **Ganze Tabelle**. Das Dialogfeld **Wählen Sie die Zeilen aus, für die Stretching durchgeführt werden soll.** wird geöffnet.  
   
      ![Definieren eines datumsbasierten Filterprädikats](../../sql-server/stretch-database/media/stretch-wizard-2a.png "Definieren eines datumsbasierten Filterprädikats")  
   

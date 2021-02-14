@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 39ca3d2e-e928-4333-872b-75c4ccde8e79
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d3fc0fece7f57957f38344a557c88fbedb908090
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: c340049fd9655febfe3974a895b9f93e8cf1e2fb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85730946"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352364"
 ---
 # <a name="xquery-operators-against-the-xml-data-type"></a>XQuery-Operatoren für den xml-Datentyp
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -96,7 +96,7 @@ where ProductModelID=19
   
 ## <a name="see-also"></a>Weitere Informationen  
  [XQuery-Funktionen für den XML-Datentyp](../xquery/xquery-functions-against-the-xml-data-type.md)   
- [SQL Server der XML-Daten &#40;&#41;](../relational-databases/xml/xml-data-sql-server.md)   
+ [XML-Daten &#40;SQL Server&#41;](../relational-databases/xml/xml-data-sql-server.md)   
  [XQuery-Sprachreferenz &#40;SQL Server&#41;](../xquery/xquery-language-reference-sql-server.md)  
   
   

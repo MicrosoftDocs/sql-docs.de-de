@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: d7cd0ec9-334a-4564-bda9-83487b6865cb
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f47068324f13fe3cd03f0fc798090378a5f5ad6e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: daca777a2994813a6df131d1fa756edf4f753f6e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85753620"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353315"
 ---
 # <a name="flwor-statement-and-iteration-xquery"></a>FLWOR-Anweisung und -Iteration (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "85753620"
   
 -   Einer optionalen `order by`-Klausel.  
   
--   Einem `return`-Ausdruck. Der Ausdruck in der `return`-Klausel erstellt das Ergebnis der FLWOR-Anweisung.  
+-   Ein `return`-Ausdruck. Der Ausdruck in der `return`-Klausel erstellt das Ergebnis der FLWOR-Anweisung.  
   
  Die folgende Abfrage durchläuft z. b. die <`Step`> Elemente am ersten Produktions Speicherort und gibt den Zeichen folgen Wert der <`Step`> Knoten zurück:  
   

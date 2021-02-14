@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: f2e91306-2b1b-4e1c-b6d8-a34fb9980057
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e7de4ccd0a7bba950767d9d9028e4635a10ee25d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 0cd4a68b21ae23b60c2bea5618308c0d13300cab
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85759465"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353276"
 ---
 # <a name="type-casting-rules-in-xquery"></a>Typumwandlungsregeln in XQuery
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -47,19 +47,19 @@ ms.locfileid: "85759465"
   
 -   Ein integrierter Grundtyp kann basierend auf den in der Tabelle aufgeführten Regeln in einen anderen integrierten Grundtyp umgewandelt werden.  
   
--   Ein Grundtyp kann in jeden beliebigen Typ umgewandelt werden, der von diesem betreffenden Grundtyp abgeleitet ist. Sie können z. b. von **xs: Decimal** in **xs: Integer**oder von **xs: Decimal** in **xs: Long**umwandeln.  
+-   Ein Grundtyp kann in jeden beliebigen Typ umgewandelt werden, der von diesem betreffenden Grundtyp abgeleitet ist. Sie können z. b. von **xs: Decimal** in **xs: Integer** oder von **xs: Decimal** in **xs: Long** umwandeln.  
   
--   Ein abgeleiteter Typ kann in einen beliebigen Typ umgewandelt werden, der sein Vorgänger in der Typhierarchie ist (bis hinauf zu seinem integrierten Grundtyp). Sie können z. b. eine Umwandlung von **xs: Token** in **xs: normalizedString** oder **xs: String**durchsetzen.  
+-   Ein abgeleiteter Typ kann in einen beliebigen Typ umgewandelt werden, der sein Vorgänger in der Typhierarchie ist (bis hinauf zu seinem integrierten Grundtyp). Sie können z. b. eine Umwandlung von **xs: Token** in **xs: normalizedString** oder **xs: String** durchsetzen.  
   
--   Ein abgeleiteter Typ kann in einen Grundtyp umgewandelt werden, wenn sein primitiver Vorgänger in den Zieltyp umgewandelt werden kann. Beispielsweise können Sie **xs: Integer**, einen abgeleiteten Typ, in einen primitiven **xs: String**-Typ umwandeln, da der primitive Vorgänger von **xs: Decimal**, **xs: Integer**in **xs: String**umgewandelt werden kann.  
+-   Ein abgeleiteter Typ kann in einen Grundtyp umgewandelt werden, wenn sein primitiver Vorgänger in den Zieltyp umgewandelt werden kann. Beispielsweise können Sie **xs: Integer**, einen abgeleiteten Typ, in einen primitiven **xs: String**-Typ umwandeln, da der primitive Vorgänger von **xs: Decimal**, **xs: Integer** in **xs: String** umgewandelt werden kann.  
   
--   Ein abgeleiteter Typ kann in einen anderen abgeleiteten Typ umgewandelt werden, wenn der primitive Vorgänger des Quelltyps in den primitiven Vorgänger des Zieltyps umgewandelt werden kann. Sie können z. b. von **xs: Integer** in **xs: Token**umwandeln, da Sie von **xs: Decimal** in **xs: String**umwandeln können.  
+-   Ein abgeleiteter Typ kann in einen anderen abgeleiteten Typ umgewandelt werden, wenn der primitive Vorgänger des Quelltyps in den primitiven Vorgänger des Zieltyps umgewandelt werden kann. Sie können z. b. von **xs: Integer** in **xs: Token** umwandeln, da Sie von **xs: Decimal** in **xs: String** umwandeln können.  
   
--   Die Regeln zum Umwandeln benutzerdefinierter Typen in integrierte Typen sind die gleichen wie für die integrierten Datentypen. Beispielsweise können Sie einen **myInteger** -Typ definieren, der vom **xs: Integer** -Typ abgeleitet wird. Anschließend kann **myInteger** in **xs: Token**umgewandelt werden, da **xs: Decimal** in **xs: String**umgewandelt werden kann.  
+-   Die Regeln zum Umwandeln benutzerdefinierter Typen in integrierte Typen sind die gleichen wie für die integrierten Datentypen. Beispielsweise können Sie einen **myInteger** -Typ definieren, der vom **xs: Integer** -Typ abgeleitet wird. Anschließend kann **myInteger** in **xs: Token** umgewandelt werden, da **xs: Decimal** in **xs: String** umgewandelt werden kann.  
   
  Die folgenden Datentypumwandlungsarten werden nicht unterstützt:  
   
--   Die Typumwandlung in oder aus Listentypen ist nicht zulässig. Dies schließt sowohl benutzerdefinierte Listen Typen als auch integrierte Listen Typen wie **xs: IDREFS**, **xs: Entities**und **xs: NMTOKENS**ein.  
+-   Die Typumwandlung in oder aus Listentypen ist nicht zulässig. Dies schließt sowohl benutzerdefinierte Listen Typen als auch integrierte Listen Typen wie **xs: IDREFS**, **xs: Entities** und **xs: NMTOKENS** ein.  
   
 -   Das Umwandeln in oder aus **xs: QName** wird nicht unterstützt.  
   
@@ -145,13 +145,13 @@ min(xs:integer("1"), xs:double("1.1"))
   
  Die Typhöherstufung, die in diesem Beispiel gezeigt wurde, unterliegt den folgenden Regeln:  
   
--   Ein integrierter abgeleiteter numerischer Datentyp kann auf seinen Basistyp heraufgestuft werden. Beispielsweise kann **Integer** zu **Decimal**herauf gestuft werden.  
+-   Ein integrierter abgeleiteter numerischer Datentyp kann auf seinen Basistyp heraufgestuft werden. Beispielsweise kann **Integer** zu **Decimal** herauf gestuft werden.  
   
--   Ein **Dezimal** Trennzeichen kann auf **float** herauf gestuft werden, und ein **float** -Wert kann auf **Double**herauf gestuft werden.  
+-   Ein **Dezimal** Trennzeichen kann auf **float** herauf gestuft werden, und ein **float** -Wert kann auf **Double** herauf gestuft werden.  
   
  Da implizite Typumwandlung nur für numerische Datentypen zulässig ist, sind die folgenden Vorgänge nicht zulässig.  
   
--   Die implizite Typumwandlung für Zeichenfolgen-Datentypen ist nicht zulässig. Wenn z. b. zwei **Zeichen** folgen Typen erwartet werden und Sie eine **Zeichenfolge** und ein **Token**übergeben, erfolgt keine implizite Umwandlung, und es wird ein Fehler zurückgegeben.  
+-   Die implizite Typumwandlung für Zeichenfolgen-Datentypen ist nicht zulässig. Wenn z. b. zwei **Zeichen** folgen Typen erwartet werden und Sie eine **Zeichenfolge** und ein **Token** übergeben, erfolgt keine implizite Umwandlung, und es wird ein Fehler zurückgegeben.  
   
 -   Die implizite Typumwandlung aus numerischen Datentypen in Zeichenfolgen-Datentypen ist nicht zulässig. Wenn Sie z. B. einen Wert vom Typ integer an eine Funktion übergeben, die einen Parameter vom string-Typ erwartet, tritt keine implizite Typumwandlung auf, und es wird ein Fehler zurückgegeben.  
   
@@ -198,7 +198,7 @@ min(xs:integer("1"), xs:double("1.1"))
   
 -   Der Gleitkommawert NaN wird nicht unterstützt.  
   
--   Umwandelbare Werte werden durch die Implementierungsbeschränkungen der Zieltypen eingeschränkt. Beispielsweise ist es nicht möglich, eine Datums Zeichenfolge mit einem negativen Jahr in **xs: Date**umzuwandeln. Solche Umwandlungen führen zu einer leeren Sequenz, wenn der Wert zur Laufzeit bereitgestellt wird (statt einen Laufzeitfehler auszulösen).  
+-   Umwandelbare Werte werden durch die Implementierungsbeschränkungen der Zieltypen eingeschränkt. Beispielsweise ist es nicht möglich, eine Datums Zeichenfolge mit einem negativen Jahr in **xs: Date** umzuwandeln. Solche Umwandlungen führen zu einer leeren Sequenz, wenn der Wert zur Laufzeit bereitgestellt wird (statt einen Laufzeitfehler auszulösen).  
   
 ## <a name="see-also"></a>Weitere Informationen  
  [Definieren der Serialisierung von XML-Daten](../relational-databases/xml/define-the-serialization-of-xml-data.md)  

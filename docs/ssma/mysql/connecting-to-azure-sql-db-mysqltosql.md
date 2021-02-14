@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: d0b6f16a-1880-459d-a0c7-28b7ef15c56a
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 6604d35058c9e8876638beee3ec6d73a9cd7a491
-ms.sourcegitcommit: 82b92f73ca32fc28e1948aab70f37f0efdb54e39
+ms.openlocfilehash: ad03f4f1dda77ddae21138af8581dfba4c8f8bf9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94870088"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068936"
 ---
 # <a name="connecting-to-azure-sql-database-mysqltosql"></a>Herstellen einer Verbindung mit Azure SQL-Datenbank (mysqlto SQL)
 

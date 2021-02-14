@@ -19,15 +19,16 @@ helpviewer_keywords:
 author: shkale-msft
 ms.author: shkale
 monikerRange: =azuresqldb-current||>=sql-server-ver15||=azuresqldb-mi-current
-ms.openlocfilehash: c916466f6a105a2b10508e23f1739bba0d192970
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9e5a6f6506e4ce40b3b89f32dd58329eb4667760
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480181"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100351397"
 ---
 # <a name="shortest_path-transact-sql"></a>SHORTEST_PATH (Transact-SQL)
-[!INCLUDE[tsql-appliesto-SQL 19-SQL DB-SQL MI](../../includes/applies-to-version/sqlserver2019-asdb-asdbmi.md)]
+
+[!INCLUDE[sqlserver2017-asdb](../../includes/applies-to-version/sqlserver2017-asdb-asdbmi.md)]
 
   Gibt eine Such Bedingung für ein Diagramm an, das rekursiv oder wiederholt durchsucht wird. SHORTEST_PATH können in der SELECT-Anweisung innerhalb der Übereinstimmung mit Diagramm Knoten und Edge-Tabellen verwendet werden. 
   
@@ -109,7 +110,7 @@ Gibt den minimalen Wert aus den angegebenen Knoten-/edgeattributwerten oder dem 
 ### <a name="max"></a>MAX
 Gibt den maximalen Wert aus den angegebenen Knoten-/edgeattributwerten oder dem Ausdruck zurück, der im durchsuchten Pfad aufgetreten ist.
 
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
 shortest_path Funktion kann nur innerhalb von Match verwendet werden.     
 LAST_NODE wird nur in shortest_path unterstützt.     
 Das Auffinden von gewichtetem kürzesten Pfad wird nicht unterstützt.         

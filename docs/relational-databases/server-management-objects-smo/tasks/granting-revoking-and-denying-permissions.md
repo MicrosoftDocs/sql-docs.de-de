@@ -17,12 +17,12 @@ ms.assetid: b0eb0f60-3e56-4880-b645-138832b38a1e
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 091c25373106e44b944a7e3a255458debfde4822
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 968a165b686d6ea9c49109348f76e5df282854c4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475551"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352482"
 ---
 # <a name="granting-revoking-and-denying-permissions"></a>Gewährung, Widerrufen und Verweigern von Berechtigungen
 [!INCLUDE [SQL Server ASDB, ASDBMI, ASDW ](../../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

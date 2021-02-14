@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 2a56a003-3b0f-453a-963c-00c9e40933ec
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 5512d7230b1b59add11e0d72efba232bb3770099
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 61e8cd99640b45cfdfd74de60beb2fcbd9393308
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320796"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100069195"
 ---
 # <a name="assessing-mysql-databases-for-conversion-mysqltosql"></a>Bewerten von MySQL-Datenbanken für die Konvertierung (MySqlToSql)
 Bevor Sie Objekte laden und Daten zu [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] oder SQL Azure migrieren, sollten Sie bestimmen, wie komplex die Migration ist und wie viel Zeit die Migration dauern wird. SSMA kann einen Bewertungsbericht erstellen, in dem der Prozentsatz der Objekte angezeigt wird, die erfolgreich konvertiert werden. Mit SSMA können Sie auch die spezifischen Probleme anzeigen, die Konvertierungs Fehler verursachen.  
@@ -31,7 +31,7 @@ Beim Erstellen dieses Bewertungsberichts konvertiert SSMA die ausgewählten MySQ
   
 2.  Deaktivieren Sie die Kontrollkästchen neben den Kontrollkästchen, um einzelne Objekte auszulassen.  
   
-3.  Klicken Sie mit der rechten Maustaste auf **Schemas**, und wählen Sie dann **Bericht erstellen**aus.  
+3.  Klicken Sie mit der rechten Maustaste auf **Schemas**, und wählen Sie dann **Bericht erstellen** aus.  
   
     Klicken Sie mit der rechten Maustaste auf ein Objekt, um einzelne Objekte zu analysieren Klicken Sie dann auf **Bericht erstellen**.  
   
@@ -56,7 +56,7 @@ Das Fenster "Bewertungsbericht" enthält drei Bereiche:
   
     -   Der Zielbereich zeigt den konvertierten Code. Roter Text zeigt problematische Code und Fehlermeldungen an.  
   
--   Der untere Bereich zeigt Konvertierungs Meldungen nach Nachrichtennummer gruppiert an. Sie können auf **Fehler**, **Warnungen**oder **Informationen** klicken, um Kategorien von Nachrichten anzuzeigen und dann eine Gruppe von Nachrichten zu erweitern. Klicken Sie auf eine einzelne Nachricht, um das Objekt im linken Bereich auszuwählen, und zeigen Sie die Details im rechten Bereich an.  
+-   Der untere Bereich zeigt Konvertierungs Meldungen nach Nachrichtennummer gruppiert an. Sie können auf **Fehler**, **Warnungen** oder **Informationen** klicken, um Kategorien von Nachrichten anzuzeigen und dann eine Gruppe von Nachrichten zu erweitern. Klicken Sie auf eine einzelne Nachricht, um das Objekt im linken Bereich auszuwählen, und zeigen Sie die Details im rechten Bereich an.  
   
 ## <a name="analyzing-conversion-problems-by-using-the-assessment-report"></a>Analysieren von Konvertierungs Problemen mithilfe des Bewertungsberichts  
 Im Bereich Konvertierungs Statistik werden die Konvertierungsstatistiken angezeigt. Wenn der Prozentsatz für eine Kategorie weniger als 100 Prozent beträgt, sollten Sie bestimmen, warum die Konvertierung nicht erfolgreich war.  

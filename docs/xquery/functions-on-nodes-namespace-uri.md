@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9b48d216-26c8-431d-9ab4-20ab187917f4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ed19a835b6df605a6ec735a8063a192ea32148fd
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 4a9734dd4efd2f4dcedd539218a0a7d989211749
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92034833"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353285"
 ---
 # <a name="functions-on-nodes---namespace-uri"></a>Funktionen für Knoten – namespace-uri
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

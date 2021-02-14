@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: df6f33ff-97f6-466c-af74-9780b2247473
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: c247802d21f0377e62fa42d30e25cf1bd1e7f1ee
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 8362789d3de498a2dba4ed83885ba1abb9dd09c2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813317"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355315"
 ---
 # <a name="domain-based-attributes-master-data-services"></a>Domänenbasierte Attribute (Master Data Services)
 

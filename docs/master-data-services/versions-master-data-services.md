@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 752ec96d-53d7-4160-8ed2-92e0324645f3
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 985714657ef87050b6273599013f0dbc5db83196
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 54c250aa3b6a6e803f90522218b1eef854af7903
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85811709"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348847"
 ---
 # <a name="versions-master-data-services"></a>Versionen (Master Data Services)
 
@@ -62,7 +62,7 @@ ms.locfileid: "85811709"
 ## <a name="sequential-or-simultaneous-versions"></a>Sequenzielle oder gleichzeitige Versionen  
  Sie können sequenzielle oder gleichzeitige Versionen des Modells erstellen.  
   
--   **Sequenzielle Versionen.** Jedes Mal, wenn Sie ein Commit für eine Version ausführen, erstellen Sie eine neue Kopie und weisen der Version die nächste laufende Nummer zu. Beispielsweise können Sie **Version 7** des Modells kopieren und die Kopie **Version 8**nennen.  
+-   **Sequenzielle Versionen.** Jedes Mal, wenn Sie ein Commit für eine Version ausführen, erstellen Sie eine neue Kopie und weisen der Version die nächste laufende Nummer zu. Beispielsweise können Sie **Version 7** des Modells kopieren und die Kopie **Version 8** nennen.  
   
 -   **Gleichzeitige Versionen.** Erstellen Sie gleichzeitige Versionen des Modells, wenn Sie mit mindestens zwei Versionen der Daten gleichzeitig arbeiten möchten. Dies ist hilfreich bei Umstrukturierungen oder Fusionen des Unternehmens, die mit dem normalen Geschäftsgang zusammenfallen, und Sie feststellen möchten, wie sich die neuen Masterdaten in vorhandene Strukturen einfügen.  
   

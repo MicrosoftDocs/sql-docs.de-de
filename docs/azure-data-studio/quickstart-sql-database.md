@@ -9,12 +9,12 @@ author: yualan
 ms.author: alayu
 ms.custom: seodec18; sqlfreshmay19; seo-lt-2019
 ms.date: 05/14/2019
-ms.openlocfilehash: c168ceb916ac1b65f4e6d45c9ee1054b15b0cb75
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c372b09d9dd3c96fb34f75e16a27a5a6aa3238b9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637657"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048250"
 ---
 # <a name="quickstart-use-azure-data-studio-to-connect-and-query-azure-sql-database"></a>Schnellstart: Verwenden von Azure Data Studio, um eine Verbindung mit einer Azure SQL-Datenbank-Instanz herzustellen und sie abzufragen
 

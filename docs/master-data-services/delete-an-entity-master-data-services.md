@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 71fffb03-38fd-46f0-9e10-6ec75da19ab2
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 47ca39e2b4f89cbe834881463784270c195a9ae4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: beadacf67a921ca2c29287aae258b0940eedd5f3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88345196"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350299"
 ---
 # <a name="delete-an-entity-master-data-services"></a>Löschen einer Entität (Master Data Services)
 

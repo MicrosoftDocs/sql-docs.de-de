@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 89fce454-a816-4b33-a26a-d1b9741d269b
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: a06d8338f334074ede68f34c8145f0d8fecb529f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 22d69fafa852007c9642fe641205185115b42175
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92257747"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352754"
 ---
 # <a name="import-data-from-excel-to-master-data-services-mds-add-in-for-excel"></a>Importieren von Daten aus Excel in Master Data Services (MDS-Add-In für Excel)
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 9adbd5e1-f28c-4fb5-afa7-082de2831f3e
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: db07c385c9bf82c39cea3c3dc834f0dcad2faf68
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ccd738b1ff39138db4d3e6017a041a383aa72511
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461944"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339526"
 ---
 # <a name="automatic-code-creation-master-data-services"></a>Automatische Codeerstellung (Master Data Services)
 

@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 2660ceca-b8b4-4a1f-98a0-719ad5f89f81
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a0945ffa8845c901662acb29c3ed04826870d0ae
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: ef2625be70c2af44f4a45ba00302b3d26afc101d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85722603"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339945"
 ---
 # <a name="path-expressions---specifying-predicates"></a>Pfadausdrücke – Angeben von Prädikaten
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "85722603"
   
 -   Einen Knotentest. Weitere Informationen finden Sie unter [Angeben eines Knoten Tests in einem Pfad Ausdrucks Schritt](../xquery/path-expressions-specifying-node-test.md).  
   
--   Null oder mehr Prädikate. Diese Eingabe ist optional.  
+-   Null oder mehr Prädikate. Dies ist optional.  
   
  Das optionale Prädikat ist der dritte Teil des Achsenschritts in einem Pfadausdruck.  
   
@@ -161,7 +161,7 @@ WHERE ProductModelID=7
   
 3.  Wenn der Wert des Prädikatausdrucks ein einfacher Werttyp des booleschen Datentyps ist, entspricht der Prädikatwahrheitswert dem Wert des Prädikatausdrucks.  
   
-     Beispielsweise wird die folgende Abfrage für eine Variable vom Typ **XML**angegeben, die eine XML-Instanz enthält, die XML-Instanz der Kundenumfrage. Die Abfrage ruft solche Kunden ab, die über untergeordnete Elemente verfügen. In dieser Abfrage lautet der Wert \<HasChildren> 1 \</HasChildren> .  
+     Beispielsweise wird die folgende Abfrage für eine Variable vom Typ **XML** angegeben, die eine XML-Instanz enthält, die XML-Instanz der Kundenumfrage. Die Abfrage ruft solche Kunden ab, die über untergeordnete Elemente verfügen. In dieser Abfrage lautet der Wert \<HasChildren> 1 \</HasChildren> .  
   
     ```  
     declare @x xml  
