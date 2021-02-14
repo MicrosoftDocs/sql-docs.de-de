@@ -10,12 +10,12 @@ ms.date: 12/13/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 8e91315b5ec79c136b4d84a7fbc36a707cc3d82f
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: 9d475edb720d329d5fb52f7bd75c055fc3a8494a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257300"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100047930"
 ---
 # <a name="how-to-deploy-an-app-on-sql-server-big-data-clusters"></a>Bereitstellen einer App in einem Big Data-Cluster in SQL Server
 
@@ -36,10 +36,10 @@ Anwendungen werden mit [!INCLUDE [azure-data-cli-azdata](../includes/azure-data-
 
 Die folgenden Typen von Apps werden unterstützt:
 
-- **Python** : Eine der beliebtesten allgemeinen Programmiersprachen für verschiedene Personas (wie z. B. Datentechniker, Datenanalysten oder DevOps-Techniker) unterstützt zahlreiche Szenarien wie Data Wrangling, Automatisierung, Prototypenerstellung. In gewissem Umfang wird sie auch zunehmend für die Programmierung von Anwendungen auf Unternehmensebene verwendet, die mit Webentwicklungsframeworks wie Flask und Django zusammenarbeiten, um unterschiedlichen Unternehmensanforderungen gerecht zu werden.  
-- **R** : Eine weitere beliebte Programmiersprache für Datentechniker und Datenanalysten. Im Vergleich zu Python ist R eine Programmiersprache, deren Schwerpunkt auf statistischem Computing und Grafiken liegt.  
+- **Python**: Eine der beliebtesten allgemeinen Programmiersprachen für verschiedene Personas (wie z. B. Datentechniker, Datenanalysten oder DevOps-Techniker) unterstützt zahlreiche Szenarien wie Data Wrangling, Automatisierung, Prototypenerstellung. In gewissem Umfang wird sie auch zunehmend für die Programmierung von Anwendungen auf Unternehmensebene verwendet, die mit Webentwicklungsframeworks wie Flask und Django zusammenarbeiten, um unterschiedlichen Unternehmensanforderungen gerecht zu werden.  
+- **R**: Eine weitere beliebte Programmiersprache für Datentechniker und Datenanalysten. Im Vergleich zu Python ist R eine Programmiersprache, deren Schwerpunkt auf statistischem Computing und Grafiken liegt.  
 - **SQL Server Integration Services (SSIS)** : Hochleistungsfähige Datenintegrationslösungen für das Erstellen und Debuggen von ETL-Paketen. Das Feature verwendet das Data Transformation Services-Paketdateiformat (DTSX), ein XML-basiertes Dateiformat, in dem die Anweisungen für die Verarbeitung der Datenmigration zwischen Datenbanken und die Integration externer Datenquellen gespeichert werden.   
-- **MLeap** : Ein gängiges Serialisierungsformat, das alles bietet, was zum Ausführen und Serialisieren von SparkML- und anderen Pipelines erforderlich ist, die dann zur Laufzeit geladen werden können, um ML-Bewertungsaufgaben nahezu in Echtzeit und in der Nähe der Daten zu verarbeiten.  
+- **MLeap**: Ein gängiges Serialisierungsformat, das alles bietet, was zum Ausführen und Serialisieren von SparkML- und anderen Pipelines erforderlich ist, die dann zur Laufzeit geladen werden können, um ML-Bewertungsaufgaben nahezu in Echtzeit und in der Nähe der Daten zu verarbeiten.  
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

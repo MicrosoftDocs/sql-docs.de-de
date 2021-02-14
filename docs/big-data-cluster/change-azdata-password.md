@@ -8,12 +8,12 @@ ms.date: 12/19/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: a3121351fce1ef6c86575789cee5dbb2860ce3c9
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 7fe856ae92c198d44ed0b11d1d2ce808e87fb4eb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85728813"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039680"
 ---
 # <a name="manually-update-azdata_password"></a>Manuelles Aktualisieren von `AZDATA_PASSWORD`
 

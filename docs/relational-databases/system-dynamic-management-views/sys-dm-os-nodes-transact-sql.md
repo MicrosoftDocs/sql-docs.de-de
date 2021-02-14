@@ -21,12 +21,12 @@ ms.assetid: c768b67c-82a4-47f5-850b-0ea282358d50
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: e0b0252dc739f688e88575f11715594a3972e256
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 38707e178005049f4afe5cb7aaac806e486fc196
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99235848"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100344353"
 ---
 # <a name="sysdm_os_nodes-transact-sql"></a>sys.dm_os_nodes (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -41,7 +41,7 @@ Die folgende Tabelle enthält Informationen zu diesen Knoten.
 > [!NOTE]
 > Um diese DMV von oder aus aufzurufen [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] , verwenden Sie den Namen **sys.dm_pdw_nodes_os_nodes**.  
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |node_id|**smallint**|ID des Knotens.|  
 |node_state_desc|**nvarchar(256)**|Beschreibung des Knotenzustands. Die Werte werden zuerst mit den sich gegenseitig ausschließenden Werten angezeigt, gefolgt von den kombinierbaren Werten. Beispiel:<br /> Online, Thread Resources Low, Lazy Preemptive<br /><br />Es gibt vier sich gegenseitig ausschließende node_state_desc-Werte. Sie sind unten mit ihren Beschreibungen aufgeführt.<br /><ul><li>Online: Knoten ist online.<li>Offline: Knoten ist offline.<li>Im Leerlauf: der Knoten verfügt über keine ausstehenden Arbeitsanforderungen und befindet sich in einem Leerlaufzustand.<li>IDLE_READY: der Knoten verfügt über keine ausstehenden Arbeitsanforderungen und kann in den Leerlauf versetzt werden.</li></ul><br />Es gibt drei kombinierbare node_state_desc Werte, die unten mit ihren Beschreibungen aufgeführt sind.<br /><ul><li>DAC: dieser Knoten ist für die [dedizierte administrative Verbindung](../../database-engine/configure-windows/diagnostic-connection-for-database-administrators.md)reserviert.<li>THREAD_RESOURCES_LOW: auf diesem Knoten können keine neuen Threads erstellt werden, weil nicht genügend Arbeitsspeicher verfügbar ist.<li>Hot Added: gibt an, dass die Knoten als Reaktion auf ein Hot Add CPU-Ereignis hinzugefügt wurden.</li></ul>|  
@@ -65,7 +65,7 @@ Die folgende Tabelle enthält Informationen zu diesen Knoten.
 ## <a name="permissions"></a>Berechtigungen
 
 In [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] ist die- `VIEW SERVER STATE` Berechtigung erforderlich.   
-Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken `Server admin` oder ein `Azure Active Directory admin` Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
+Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken das [Server Administrator](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
 
 ## <a name="see-also"></a>Weitere Informationen    
  [SQL Server dynamischen Verwaltungs Sichten im Zusammenhang mit dem Betriebs System &#40;Transact-SQL-&#41;](../../relational-databases/system-dynamic-management-views/sql-server-operating-system-related-dynamic-management-views-transact-sql.md)   

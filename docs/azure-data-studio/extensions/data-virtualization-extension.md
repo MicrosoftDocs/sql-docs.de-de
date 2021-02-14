@@ -9,12 +9,12 @@ ms.author: raajmera
 ms.reviewer: alayu, sstein, maghan
 ms.custom: ''
 ms.date: 11/04/2019
-ms.openlocfilehash: 2d0e508cc509f0c2e8d758684545e189c71dd928
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: a428322867df8585160a3363d174b2cd92bd1f17
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91725179"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052051"
 ---
 # <a name="data-virtualization-extension-for-azure-data-studio"></a>Datenvirtualisierungserweiterung für Azure Data Studio
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: c57bf8b8-55a6-4b6c-9adb-91b5f4f1ee3c
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 2c602263c1069953a96eac92f18240afa4e2cdb5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4431155c44db9a76f8ebf94f9a6be228e9fd358a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500629"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339085"
 ---
 # <a name="custom-index-master-data-services"></a>Benutzerdefinierter Index (Master Data Services)
 

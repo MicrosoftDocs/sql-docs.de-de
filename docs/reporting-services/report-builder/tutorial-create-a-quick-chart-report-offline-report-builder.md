@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 6b1db67a-cf75-494c-b70c-09f1e6a8d414
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 41e26cbdeaa794ebae01371207d7ff7847619dc2
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 2f7fb9781583a56a2765f066462e62717c1d32d6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80290745"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070550"
 ---
 # <a name="tutorial-create-a-quick-chart-report-offline-report-builder"></a>Tutorial: Erstellen eines Quick-Diagrammberichts offline (Berichts-Generator)
 
@@ -59,25 +59,25 @@ Dieses Lernprogramm kann auf zwei unterschiedliche Arten absolviert werden. Beid
   
      ![Erste Schritte mit dem Berichts-Generator](../../reporting-services/media/rb-getstarted.png "Erste Schritte mit dem Berichts-Generator")  
   
-     Falls das Dialogfeld **Erste Schritte** nicht angezeigt wird, klicken Sie auf **Datei** >**Neu**zu erstellen. Das Dialogfeld **Neuer Bericht oder neues Dataset** verfügt größtenteils über den gleichen Inhalt wie das Dialogfeld **Erste Schritte** .  
+     Falls das Dialogfeld **Erste Schritte** nicht angezeigt wird, klicken Sie auf **Datei** >**Neu** zu erstellen. Das Dialogfeld **Neuer Bericht oder neues Dataset** verfügt größtenteils über den gleichen Inhalt wie das Dialogfeld **Erste Schritte** .  
   
 2.  Vergewissern Sie sich, dass im linken Bereich **Neuer Bericht** ausgewählt ist.  
   
-3.  Klicken Sie im rechten Bereich auf **Diagramm-Assistent**und anschließend auf **Erstellen**.  
+3.  Klicken Sie im rechten Bereich auf **Diagramm-Assistent** und anschließend auf **Erstellen**.  
   
-4.  Klicken Sie auf der Seite **Dataset auswählen** auf **Dataset erstellen**und anschließend auf **Weiter**.  
+4.  Klicken Sie auf der Seite **Dataset auswählen** auf **Dataset erstellen** und anschließend auf **Weiter**.  
   
 5.  Klicken Sie auf der Seite **Verbindung mit einer Datenquelle auswählen** auf **Neu**.  
   
      Das Dialogfeld **Datenquelleneigenschaften** wird angezeigt.  
   
-6.  Sie können jedes gewünschte Element als Datenquelle bezeichnen. Geben Sie im Feld **Name** den Namen **MyPieChart**ein.  
+6.  Sie können jedes gewünschte Element als Datenquelle bezeichnen. Geben Sie im Feld **Name** den Namen **MyPieChart** ein.  
   
 7.  Klicken Sie im Dialogfeld **Verbindungstyp auswählen** auf **XML**.  
   
 8.  Klicken Sie zunächst auf die Registerkarte **Anmeldeinformationen** und anschließend auf **Aktuellen Windows-Benutzer verwenden. Möglicherweise ist eine Kerberos-Delegierung erforderlich**. Klicken Sie anschließend auf **OK**.  
   
-9. Klicken Sie auf der Seite **Verbindung mit einer Datenquelle auswählen** auf **MyPieChart**und anschließend auf **Weiter**.  
+9. Klicken Sie auf der Seite **Verbindung mit einer Datenquelle auswählen** auf **MyPieChart** und anschließend auf **Weiter**.  
   
 10. Kopieren Sie den folgenden Text, und fügen Sie ihn in das große Feld im oberen Bereich der Seite **Abfrage entwerfen** ein.  
   
@@ -145,13 +145,13 @@ Dieses Lernprogramm kann auf zwei unterschiedliche Arten absolviert werden. Beid
      Das Dialogfeld **Erste Schritte** wird angezeigt.  
   
     > [!NOTE]  
-    >  Falls das Dialogfeld **Erste Schritte** nicht angezeigt wird, klicken Sie auf **Datei** >**Neu**zu erstellen. Das Dialogfeld **Neuer Bericht oder neues Dataset** verfügt größtenteils über den gleichen Inhalt wie das Dialogfeld **Erste Schritte** .  
+    >  Falls das Dialogfeld **Erste Schritte** nicht angezeigt wird, klicken Sie auf **Datei** >**Neu** zu erstellen. Das Dialogfeld **Neuer Bericht oder neues Dataset** verfügt größtenteils über den gleichen Inhalt wie das Dialogfeld **Erste Schritte** .  
   
 2.  Vergewissern Sie sich, dass im linken Bereich **Neuer Bericht** ausgewählt ist.  
   
-3.  Klicken Sie im rechten Bereich auf **Diagramm-Assistent**und anschließend auf **Erstellen**.  
+3.  Klicken Sie im rechten Bereich auf **Diagramm-Assistent** und anschließend auf **Erstellen**.  
   
-4.  Klicken Sie auf der Seite **Dataset auswählen** auf **Dataset erstellen**und anschließend auf **Weiter**.  
+4.  Klicken Sie auf der Seite **Dataset auswählen** auf **Dataset erstellen** und anschließend auf **Weiter**.  
   
 5.  Wählen Sie auf der Seite **Verbindung mit einer Datenquelle auswählen** eine vorhandene Datenquelle aus, oder navigieren Sie zum Berichtsserver, und wählen Sie eine Datenquelle aus. Klicken Sie anschließend auf **Weiter**. Möglicherweise müssen Benutzername und Kennwort eingegeben werden.  
   
@@ -212,7 +212,7 @@ Beachten Sie, dass sich die Entwurfsoberfläche beim Ziehen vergrößert.
   
      Wenn Sie **{P0}** eingeben, erhalten Sie den Prozentsatz ohne Dezimalstellen. Wenn Sie nur **#PERCENT** eingeben, haben die Zahlen zwei Dezimalstellen. **#PERCENT** ist ein Schlüsselwort, das eine Berechnung oder eine Funktion für Sie ausführt. Dies ist nur ein Beispiel unter vielen.  
      
-4. Klicken Sie auf **Ja** , um zu bestätigen, dass **UseValueAsLabel** auf **False**festgelegt werden soll.
+4. Klicken Sie auf **Ja** , um zu bestätigen, dass **UseValueAsLabel** auf **False** festgelegt werden soll.
 
 5. Wählen Sie auf der Registerkarte **Schriftgrad** die Option **Fett** , und ändern Sie den Wert von **Farbe** in **Weiß**.
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||>=aps-pdw-2016||=azuresqldb-mi-current'
-ms.openlocfilehash: e246d516d3c05b9a2c6725f7fd3e3f787066b8aa
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4481a0c96a8f4a7f2f82e8babc5d8dce5ea97e92
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461401"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077812"
 ---
 # <a name="wideworldimportersdw-database-catalog"></a>Wideworldimportersdw-Daten Bank Katalog
 [!INCLUDE[appliesto-ss-xxxx-asdw-pdw-md](../includes/appliesto-ss-xxxx-asdw-pdw-md.md)]
@@ -61,9 +61,9 @@ Wideworldimportersdw verfügt über die folgenden Fakten Tabellen. Die Beschreib
 
 |Tabelle|Quell Tabellen|Beispiel Analyse|
 |-----------------------------|---------------------|---------------------|
-|Auftrag|`Sales.Orders` und `Sales.OrderLines`|Sales People, Picker-und Packer-Produktivität und Zeit für die Auswahl von Aufträgen. Außerdem sind niedrige Aktien Situationen, die zu Aufträgen führen.|
+|Order|`Sales.Orders` und `Sales.OrderLines`|Sales People, Picker-und Packer-Produktivität und Zeit für die Auswahl von Aufträgen. Außerdem sind niedrige Aktien Situationen, die zu Aufträgen führen.|
 |Sale|`Sales.Invoices` und `Sales.InvoiceLines`|Verkaufsdaten, Übermittlungs Daten, Rentabilität im Zeitverlauf, Rentabilität durch Vertriebsmitarbeiter.|
-|Purchase|`Purchasing.PurchaseOrderLines`|Vs tatsächliche Vorlaufzeiten erwartet|
+|Kauf|`Purchasing.PurchaseOrderLines`|Vs tatsächliche Vorlaufzeiten erwartet|
 |Transaktion|`Sales.CustomerTransactions` und `Purchasing.SupplierTransactions`|Messen von Problem Daten im Vergleich zum Abschluss von Datumsangaben und Summen.|
 |Movement|`Warehouse.StockTransactions`|Bewegungen im Zeitverlauf.|
 |Aktien Aufbewahrung|`Warehouse.StockItemHoldings`|Auf der Hand.|

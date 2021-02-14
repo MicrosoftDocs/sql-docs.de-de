@@ -10,12 +10,12 @@ ms.date: 08/16/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 13639627081a9bb9cb1309bcd0793653c7900ac8
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: b83c79398dbcc6c7d55eb0ddfe6cb1d8f0d398ed
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257270"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039590"
 ---
 # <a name="run-apps-with-azdata---sql-server-big-data-clusters"></a>Ausführen von Apps mit azdata – Big Data-Cluster in SQL Server
 

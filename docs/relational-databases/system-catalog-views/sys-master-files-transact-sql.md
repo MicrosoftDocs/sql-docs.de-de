@@ -21,12 +21,12 @@ ms.assetid: 803b22f2-0016-436b-a561-ce6f023d6b6a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 1cfe105e765fbdafc1c4e61e0c340b3db44ed095
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 59258c52e24e5b9d85f9096d6eb2d24fa3d48df3
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99191356"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489454"
 ---
 # <a name="sysmaster_files-transact-sql"></a>sys.master_files (Transact-SQL)
 [!INCLUDE [sql-asdbmi-pdw](../../includes/applies-to-version/sql-asdbmi-pdw.md)]
@@ -69,6 +69,9 @@ ms.locfileid: "99191356"
   
 > [!NOTE]  
 >  Wenn Sie große Indizes löschen oder neu erstellen bzw. wenn Sie große Tabellen löschen oder abschneiden, verzögert [!INCLUDE[ssDE](../../includes/ssde-md.md)] die Aufhebung der aktuellen Seitenzuordnungen sowie die zugehörigen Sperren, bis für die Transaktion ein Commit ausgeführt wird. Bei verzögerten Löschvorgängen wird der zugeordnete Speicherplatz nicht sofort freigegeben. Deshalb geben die von sys.master_files unmittelbar nach dem Löschen oder Abschneiden eines umfangreichen Objekts zurückgegebenen Werte möglicherweise nicht den tatsächlich verfügbaren Speicherplatz an.  
+
+> [!NOTE]  
+>  Für tempdb zeigt View sys.master_files die anfängliche tempdb-Größe an. Die Werte werden als Vorlage für die Erstellung von tempdb beim Start von SQL Server verwendet. Wenn tempdb wächst, wird es daher nicht in der Ansicht widergespiegelt. Um die aktuelle Größe der tempdb-Dateien zu erhalten, Fragen Sie ab `tempdb.sys.database_files` .
   
 ## <a name="permissions"></a>Berechtigungen  
  Zum Anzeigen der entsprechenden Zeile ist mindestens eine der Berechtigungen CREATE DATABASE, ALTER ANY DATABASE oder VIEW ANY DEFINITION erforderlich.  

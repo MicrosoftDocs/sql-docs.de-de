@@ -10,12 +10,12 @@ ms.prod_service: reporting-services-native
 ms.technology: application-integration
 ms.topic: reference
 ms.date: 12/01/2020
-ms.openlocfilehash: f6c713d579042425dc863b7d4f942229a091d0c4
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: fac7ebfc88432ef3bd8abde6c0e4e62115311520
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96502694"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100015640"
 ---
 # <a name="support-for-report-viewer-current-branch-versions"></a>Unterstützung für aktuelle Branch-Versionen des Report Viewer
 

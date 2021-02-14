@@ -8,12 +8,12 @@ ms.reviewer: mikeray
 ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: sql
-ms.openlocfilehash: e0c68752d21de5945c06433af8c08f6208322f7c
-ms.sourcegitcommit: 18e2f0706e03d0b2b6324845244fbafaa077a8dd
+ms.openlocfilehash: 2d7cdc1a04cfa8f3a1697eed68913f92174f972b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97103169"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063225"
 ---
 # <a name="configure-advanced-data-security-for-azure-arc-enabled-sql-server-instance"></a>Konfigurieren der erweiterten Datensicherheit für Azure Arc-fähige SQL Server-Instanzen
 

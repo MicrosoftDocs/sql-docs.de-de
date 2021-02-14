@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.assetid: 8d5a4ce6-b747-46e3-9184-645d56e8b35c
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: fa1205a2511eb2c49c5be616caefad0ee0102105
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 8fca8219dfe89c8229b8d296fe355b97417d9daf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87931604"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100073364"
 ---
 # <a name="installing-ssma-for-sap-ase-sybasetosql"></a>Installieren von SSMA für SAP ASE (sybasedesql)
-[!INCLUDE[msCoName](../../includes/msconame_md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Migration Assistant (SSMA) für SAP Adaptive Server Enterprise (ASE) besteht aus einer Client Anwendung, mit der Sie eine Migration von SAP ASE zu [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] oder Azure SQL-Datenbank durchführen. Außerdem enthält es ein Erweiterungspaket, das die Datenmigration und die Verwendung von ASE-Systemfunktionen in den migrierten Datenbanken unterstützt.  
+[!INCLUDE[msCoName](../../includes/msconame_md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Migration Assistant (SSMA) für SAP Adaptive Server Enterprise (ASE) besteht aus einer Client Anwendung, mit der Sie eine Migration von SAP ASE zu [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] oder Azure SQL-Datenbank durchführen. Außerdem enthält es ein Erweiterungspaket, das die Datenmigration und die Verwendung von ASE-Systemfunktionen in den migrierten Datenbanken unterstützt.  
   
 Installieren Sie die Client Anwendung auf dem Computer, von dem aus Sie die Migrations Schritte ausführen möchten. Installieren Sie die Erweiterungspaket Dateien auf dem Computer, auf dem ausgeführt wird, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] auf dem die migrierten Datenbanken gehostet werden sollen.  
   

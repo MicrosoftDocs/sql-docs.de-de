@@ -1,8 +1,8 @@
 ---
 description: sys.dm_os_spinlock_stats (Transact-SQL)
-title: sys.dm_os_spinlock_stats (Transact-SQL) | Microsoft-Dokumentation
+title: sys.dm_os_spinlock_stats (Transact-SQL)
 ms.custom: ''
-ms.date: 06/03/2019
+ms.date: 02/10/2021
 ms.prod: sql-non-specified
 ms.prod_service: database-engine
 ms.service: ''
@@ -23,12 +23,12 @@ author: bluefooted
 ms.author: pamela
 ms.reviewer: wiassaf
 manager: amitban
-ms.openlocfilehash: 636a16d8656572e6fe2505f58bafc9eca9f6ce18
-ms.sourcegitcommit: 78b3096c2be89bcda92244f78663d8b38811bec5
+ms.openlocfilehash: 66b8a24e8b2b48aa43dd00cb37e8fc4c60fa0cd4
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100009288"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100342836"
 ---
 # <a name="sysdm_os_spinlock_stats-transact-sql"></a>sys.dm_os_spinlock_stats (Transact-SQL)
 
@@ -37,7 +37,7 @@ ms.locfileid: "100009288"
 Gibt Informationen zu allen Spinlock-warte Vorgängen nach Typ organisiert zurück.  
   
 
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |name|**nvarchar(256)**|Der Name des Spinlock-Typs.|  
 |Stöße|**bigint**|Gibt an, wie oft ein Thread versucht, die Spinlock abzurufen, und wird blockiert, da ein anderer Thread derzeit die Spinlock-Sperre besitzt.|  
@@ -49,7 +49,7 @@ Gibt Informationen zu allen Spinlock-warte Vorgängen nach Typ organisiert zurü
 
 ## <a name="permissions"></a>Berechtigungen  
 In [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] ist die- `VIEW SERVER STATE` Berechtigung erforderlich.   
-Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken `Server admin` oder ein `Azure Active Directory admin` Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.    
+Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken das [Server Administrator](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.    
   
 ## <a name="remarks"></a>Bemerkungen  
  
@@ -69,10 +69,13 @@ GO
   
 ## <a name="spinlocks"></a>Spinlocks  
  Ein Spinlock ist ein schlankes Synchronisierungs Objekt, das verwendet wird, um den Zugriff auf Datenstrukturen zu serialisieren, die in der Regel für kurze Zeit aufbewahrt werden. Wenn ein Thread versucht, auf eine Ressource zuzugreifen, die durch einen Spinlock geschützt ist, der von einem anderen Thread aufbewahrt wird, führt der Thread eine Schleife aus, und versucht erneut, auf die Ressource zuzugreifen, anstatt sofort den Scheduler wie bei einem Latch oder einer anderen Ressourcen Wartezeit bereitzustellen. Der Thread wird fortgesetzt, bis die Ressource verfügbar ist, oder die Schleife wird beendet. zu diesem Zeitpunkt führt der Thread den Scheduler aus und wechselt zurück in die ausführbare Warteschlange. Durch diese Vorgehensweise wird die übermäßige Thread Kontext Umschaltung verringert. Wenn jedoch ein Konflikt zwischen Spinlock vorliegt, wird möglicherweise eine beträchtliche CPU-Auslastung festgestellt.
-   
+
+> [!NOTE]  
+>  Wenn Sie ein [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] auf Intel skylake-Prozessoren installiert haben, lesen Sie [diesen Artikel](https://support.microsoft.com/topic/kb4538688-fix-severe-spinlock-contention-occurs-in-sql-server-2019-43faea65-fdcb-6835-f7fe-93abdb235837) , um das erforderliche Update anzuwenden und das Ablaufverfolgungsflag 8101 zu aktivieren.
+
  Die folgende Tabelle enthält kurze Beschreibungen einiger der gängigsten Spinlock-Typen.  
   
-|SpinLock-Typ|BESCHREIBUNG|  
+|SpinLock-Typ|Beschreibung|  
 |-----------------|-----------------|  
 |ABR|Nur zur internen Verwendung.|
 |ADB_CACHE|Nur zur internen Verwendung.|
@@ -230,6 +233,7 @@ GO
 |MEM_MGR|Nur zur internen Verwendung.|
 |MGR_CACHE|Nur zur internen Verwendung.|
 |MIGRATION_BUF_LIST|Nur zur internen Verwendung.|
+|Mutex|Schützt die Cache Einträge im Zusammenhang mit Sicherheits Token und Zugriffs Überprüfungen. Wird für nachfolgende Versionen verwendet [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] . Wenn sich die Einträge im Cache Speicher "TokenAndPermUserStore" kontinuierlich vergrößern, bemerken Sie möglicherweise große Drehungen für diese Spinlock. Wertet die [](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) Verwendung der Ablaufverfolgungsflags 4610 und 4618 aus Weitere Referenzen: [Blog](https://techcommunity.microsoft.com/t5/sql-server-support/query-performance-issues-associated-with-a-large-sized-security/ba-p/315494), [Artikel](https://support.microsoft.com/topic/queries-take-a-longer-time-to-finish-running-when-the-size-of-the-tokenandpermuserstore-cache-grows-in-sql-server-2005-ad1622e7-3bb5-7902-19a0-5d0e6271033d) und [Dokumentation](../../database-engine/configure-windows/access-check-cache-server-configuration-options.md).|
 |NETCONN_ADDRESS|Nur zur internen Verwendung.|
 |ONDEMAND_TASK|Nur zur internen Verwendung.|
 |ONE_PROC_SIM_NODE_CONTEXT|Nur zur internen Verwendung.|
@@ -290,7 +294,7 @@ GO
 |SBS_TRANSPORT|Nur zur internen Verwendung.|
 |SBS_UCS_DISPATCH|Nur zur internen Verwendung.|
 |SICHERHEIT|Nur zur internen Verwendung.|
-|SECURITY_CACHE|Nur zur internen Verwendung.|
+|SECURITY_CACHE|Schützt die Cache Einträge im Zusammenhang mit Sicherheits Token und Zugriffs Überprüfungen. Wird für [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] und höher verwendet. Wenn sich die Einträge im Cache Speicher "TokenAndPermUserStore" kontinuierlich vergrößern, bemerken Sie möglicherweise große Drehungen für diese Spinlock. Wertet die [](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) Verwendung der Ablaufverfolgungsflags 4610 und 4618 aus Weitere Referenzen: [Blog](https://techcommunity.microsoft.com/t5/sql-server-support/query-performance-issues-associated-with-a-large-sized-security/ba-p/315494), [Artikel](https://support.microsoft.com/topic/queries-take-a-longer-time-to-finish-running-when-the-size-of-the-tokenandpermuserstore-cache-grows-in-sql-server-2005-ad1622e7-3bb5-7902-19a0-5d0e6271033d) und [Dokumentation](../../database-engine/configure-windows/access-check-cache-server-configuration-options.md). Beachten Sie die Änderung des Spinlock-namens nach dem Anwenden [von Updates für SQL 2017 und SQL 2016](https://support.microsoft.com/topic/kb3195888-fix-high-cpu-usage-causes-performance-issues-in-sql-server-2016-and-2017-9514b80d-938f-e179-3131-74e6c757c4d5).|
 |SECURITY_FEDAUTH_AAD_BECWSCONNS|Nur zur internen Verwendung.|
 |SEMANTIC_TICACHE|Nur zur internen Verwendung.|
 |SEQUENCED_OBJECT|Nur zur internen Verwendung.|
@@ -416,5 +420,4 @@ GO
  [Diagnostizieren und Beheben von Spinlock-Konflikten auf SQL Server](../diagnose-resolve-spinlock-contention.md)
   
   
-
 

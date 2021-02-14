@@ -11,12 +11,12 @@ ms.assetid: 4bb8466e-2199-4f00-8513-b04e9586723d
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 0facd2ecca0ff6cc0a4bc28fe709a7adfc0c5acf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cbb47d74535af0dea97842bdf46680a4376c2ba7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320446"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067732"
 ---
 # <a name="project-settings-type-mapping-oracletosql"></a>Projekteinstellungen (Typzuordnung) (OracleToSQL)
 Die Seite Typzuordnung des Dialog Felds **Projekteinstellungen** enthält Einstellungen, die anpassen, wie SSMA Oracle-Datentypen in- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Datentypen konvertiert.  
@@ -32,7 +32,7 @@ Verwenden Sie die Registerkarte **Typzuordnung** im primären SSMA-Fenster, um E
 ## <a name="options"></a>Tastatur  
 In der folgenden Tabelle werden die Registerkarten Optionen für die **Typzuordnung** angezeigt:  
   
-**Quelltyp**  
+**Quellentyp**  
 Der zugeordnete Oracle-Datentyp.  
   
 **Zieltyp**  
@@ -89,7 +89,7 @@ Die folgende Tabelle enthält die standardmäßige Datentyp Zuordnung für Argum
 |unterschiedliches Zeichen<sup>*</sup>|nvarchar(max)|  
 |NCHAR|nvarchar(max)|  
 |NCLOB|nvarchar(max)|  
-|number|float [53]|  
+|Zahl|float [53]|  
 |NUMERIC|float [53]|  
 |nvarchar2|nvarchar(max)|  
 |pls_integer|INT|  
@@ -156,7 +156,7 @@ Die folgende Tabelle enthält die Standardtyp Zuordnung für-Spalten.
 |NCHAR|NCHAR|  
 |NCHAR [*]|NCHAR [*]|  
 |NCLOB|nvarchar(max)|  
-|number|float [53]|  
+|Zahl|float [53]|  
 |Zahl [*.. \* ]|numerisch [*]|  
 |Zahl [*.. \* ] [\*..\*]|numerisch [*] [ \* ]|  
 |NUMERIC|NUMERIC|  
@@ -235,10 +235,10 @@ Die folgende Tabelle enthält die Standardtyp Zuordnung für lokale Variablen.
 |NCHAR variiert [*. 4000]|nvarchar [*]|  
 |NCHAR-Variation [4001.. *]|nvarchar(max)|  
 |NCLOB|nvarchar(max)|  
-|Zahl|float [53]|  
+|Number|float [53]|  
 |Zahl [*.. \* ]|numerisch [*]|  
 |Zahl [*.. \* ] [\*..\*]|numerisch [*] [ \* ]|  
-|Numerisch|numerisch [38] [0]|  
+|Numeric|numerisch [38] [0]|  
 |numerisch [*.. \* ]|numerisch [*]|  
 |numerisch [*.. \* ] [\*..\*]|numerisch [*] [ \* ]|  
 |nvarchar2[*.. 4000]|nvarchar [*]|  

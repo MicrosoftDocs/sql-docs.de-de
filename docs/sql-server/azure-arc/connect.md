@@ -8,12 +8,12 @@ ms.reviewer: mikeray
 ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: sql
-ms.openlocfilehash: 5f0401081e6d437bcc0290c111bb5325e476650e
-ms.sourcegitcommit: 18e2f0706e03d0b2b6324845244fbafaa077a8dd
+ms.openlocfilehash: 03841af487d6c715357b543798cbb6ac3c6d853e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97103189"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100078266"
 ---
 # <a name="connect-your-sql-server-to-azure-arc"></a>Herstellen einer Verbindung zwischen Ihrer SQL Server-Instanz und Azure Arc
 

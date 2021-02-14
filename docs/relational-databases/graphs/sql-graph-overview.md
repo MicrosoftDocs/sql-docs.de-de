@@ -16,15 +16,15 @@ author: shkale-msft
 ms.author: shkale
 ms.custom: seo-dt-2019
 monikerRange: =azuresqldb-current||>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 846f37923f8388e15663c56a4f724984a1a2588f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8c7dfeaa67e0ede78b0a891409be3211e1fa8d2e
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480171"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100351424"
 ---
 # <a name="graph-processing-with-sql-server-and-azure-sql-database"></a>Graph-Verarbeitung mit SQL Server und Azure SQL-Datenbank
-[!INCLUDE[sqlserver2017-asdb](../../includes/applies-to-version/sqlserver2017-asdb.md)]
+[!INCLUDE[sqlserver2017-asdb](../../includes/applies-to-version/sqlserver2017-asdb-asdbmi.md)]
 
 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bietet Graph-Datenbankfunktionen zum Modellieren von m:n-Beziehungen. Die Diagramm Beziehungen sind in integriert [!INCLUDE[tsql-md](../../includes/tsql-md.md)] und erhalten die Vorteile der Verwendung von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] als grundlegendes Datenbankverwaltungssystem.
 
@@ -43,7 +43,7 @@ Eine relationale Datenbank kann eine beliebige Diagramm Datenbank erreichen. Ein
 -    Ihre Anwendung verfügt über komplexe m:n-Beziehungen. Wenn die Anwendung weiterentwickelt wird, werden neue Beziehungen hinzugefügt.
 -    Sie müssen miteinander verbundene Daten und Beziehungen analysieren.
 
-## <a name="graph-features-introduced-in-sssqlv14"></a>In eingeführte Graph-Features [!INCLUDE[sssqlv14](../../includes/sssqlv14-md.md)] 
+## <a name="graph-features-introduced-in-sssql17"></a>In eingeführte Graph-Features [!INCLUDE[sssql17](../../includes/sssql17-md.md)] 
 Wir beginnen damit, SQL Server Graph-Erweiterungen hinzuzufügen, um das Speichern und Abfragen von Diagramm Daten zu vereinfachen. Die folgenden Funktionen werden in der ersten Version eingeführt. 
 
 

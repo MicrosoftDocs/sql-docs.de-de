@@ -8,12 +8,12 @@ ms.technology: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a97450563aa62e7b8179b7c5a0d2bead5f156f1b
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: d82c6f45d6cd8e4e35735291433d3e054afe5481
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80342925"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100024106"
 ---
 # <a name="export-reports-report-builder-and-ssrs"></a>Exportieren von Berichten (Berichts-Generator und SSRS)
 
@@ -70,7 +70,7 @@ ms.locfileid: "80342925"
   
      Klicken Sie auf **Speichern**, um den Bericht sofort im ausgewählten Exportformat zu speichern.  
   
-     Der Bericht wird mit der Anwendung, die dem von Ihnen gewählten Format zugeordnet ist, entweder angezeigt oder gespeichert. Wenn Sie auf **Speichern**klicken, werden Sie aufgefordert, einen Speicherort für Ihren Bericht anzugeben.  
+     Der Bericht wird mit der Anwendung, die dem von Ihnen gewählten Format zugeordnet ist, entweder angezeigt oder gespeichert. Wenn Sie auf **Speichern** klicken, werden Sie aufgefordert, einen Speicherort für Ihren Bericht anzugeben.  
   
 ##  <a name="to-export-a-report-from-a-sharepoint-library"></a><a name="bkmk_export_from_sharepoint"></a> So exportieren Sie einen Bericht aus einer SharePoint-Bibliothek  
   
@@ -86,7 +86,7 @@ ms.locfileid: "80342925"
   
      Klicken Sie auf **Speichern**, um den Bericht sofort im ausgewählten Exportformat zu speichern.  
   
-     Der Bericht wird mit der Anwendung, die dem von Ihnen gewählten Format zugeordnet ist, entweder angezeigt oder gespeichert. Wenn Sie auf **Speichern**klicken, werden Sie aufgefordert, einen Speicherort für Ihren Bericht anzugeben.  
+     Der Bericht wird mit der Anwendung, die dem von Ihnen gewählten Format zugeordnet ist, entweder angezeigt oder gespeichert. Wenn Sie auf **Speichern** klicken, werden Sie aufgefordert, einen Speicherort für Ihren Bericht anzugeben.  
   
      Sie können den Dateinamen des exportierten Berichts ändern.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "80342925"
 |XML|Daten|Die XML-Renderingerweiterung gibt einen Bericht im XML-Format zurück. Das Schema der Bericht-XML-Ausgabe hängt vom jeweiligen Bericht ab und enthält nur Daten. Layoutinformationen werden von der XML-Renderingerweiterung nicht gerendert, und die Paginierung wird nicht beibehalten. Der von dieser Erweiterung generierte XML-Code kann in eine Datenbank importiert, als XML-Datennachricht verwendet oder an eine benutzerdefinierte Anwendung gesendet werden.<br/><br/> Weitere Informationen finden Sie unter [Exportieren nach XML](../../reporting-services/report-builder/exporting-to-xml-report-builder-and-ssrs.md).|  
   
 ##  <a name="generating-data-feeds-from-a-report"></a><a name="GeneratingDataFeedsFromReport"></a> Generieren von Datenfeeds aus einem Bericht  
- Führen Sie den Bericht im [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] -Webportal aus, und klicken Sie anschließend auf der Symbolleiste des Webportals auf das Symbol **Datenfeed generieren** , um Datenfeeds aus einem Bericht zu generieren. In einer Eingabeaufforderung werden Sie gefragt, ob die Datei gespeichert oder geöffnet werden soll. Wenn Sie **Öffnen**auswählen, wird das Atom-Dienstdokument in der Anwendung geöffnet, die der Dateierweiterung ".atomsvc" zugeordnet ist. Wenn Sie **Speichern**auswählen, wird das Dokument als ATOMSVC-Datei gespeichert. Standardmäßig wird der Name des Berichts als Dateiname verwendet. Sie können den Namen ändern, um einen sinnvolleren Namen anzugeben.  
+ Führen Sie den Bericht im [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] -Webportal aus, und klicken Sie anschließend auf der Symbolleiste des Webportals auf das Symbol **Datenfeed generieren** , um Datenfeeds aus einem Bericht zu generieren. In einer Eingabeaufforderung werden Sie gefragt, ob die Datei gespeichert oder geöffnet werden soll. Wenn Sie **Öffnen** auswählen, wird das Atom-Dienstdokument in der Anwendung geöffnet, die der Dateierweiterung ".atomsvc" zugeordnet ist. Wenn Sie **Speichern** auswählen, wird das Dokument als ATOMSVC-Datei gespeichert. Standardmäßig wird der Name des Berichts als Dateiname verwendet. Sie können den Namen ändern, um einen sinnvolleren Namen anzugeben.  
   
  Das Atom-Dienstdokument wird auf dem Computer gespeichert. Sie können es später auf einen Berichtsserver oder einen anderen Server hochladen, um es für andere Benutzer verfügbar zu machen. Weitere Informationen finden Sie unter [Generieren von Datenfeeds aus Berichten](../../reporting-services/report-builder/generating-data-feeds-from-reports-report-builder-and-ssrs.md) und [Generieren von Datenfeeds aus einem Bericht](../../reporting-services/report-builder/generate-data-feeds-from-a-report-report-builder-and-ssrs.md).  
   

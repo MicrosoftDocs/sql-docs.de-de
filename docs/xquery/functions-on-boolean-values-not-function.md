@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 93dfc377-45f1-4384-9392-560d9331a915
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: db4fbd8e78827ff8818f74e83bf9f2d8ca8d0d39
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: f857a8f107b26500bb324584d7d7853e09bbb735
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85753603"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353305"
 ---
 # <a name="functions-on-boolean-values---not-function"></a>Funktionen für boolesche Werte – not Function 
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
