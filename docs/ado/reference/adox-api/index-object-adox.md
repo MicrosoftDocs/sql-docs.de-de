@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6b9578c0-bc94-46b9-b801-c18e14b04b31
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a11389324337d4e5a9deea347dda8ecd5cea3016
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 4992a0236553f597c3926fd25c823cd6ba91433c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172042"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054125"
 ---
 # <a name="index-object-adox"></a>Index-Objekt (ADOX)
 Stellt einen Index aus einer Datenbanktabelle dar.  

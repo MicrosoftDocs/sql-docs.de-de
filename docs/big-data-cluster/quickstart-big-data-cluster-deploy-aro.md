@@ -9,12 +9,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 9f2a96afd598a4a16ad4683f6ed096032f9b8091
-ms.sourcegitcommit: fc24f7ecc155d97e789676fffe55e45840fcb088
+ms.openlocfilehash: d53950d277b245b405420af2c28fa7666ba653dd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98620285"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044120"
 ---
 # <a name="use-a-python-script-to-deploy-a-sql-server-big-data-cluster-on-azure-red-hat-openshift-aro"></a>Verwenden eines Python-Skripts zum Bereitstellen eines Big Data-Clusters in SQL Server für Azure Red Hat OpenShift (ARO)
 

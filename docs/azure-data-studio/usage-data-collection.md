@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, maghan, sstein
 ms.custom: seodec18; seo-lt-2019
 ms.date: 09/24/2018
-ms.openlocfilehash: 5ef44a7e2981d98c749e25692e667ae71b42843d
-ms.sourcegitcommit: 63aef5a96905f0b026322abc9ccb862ee497eebe
+ms.openlocfilehash: ee687a6c6ab63386ad0e96e97ea86397703b53d1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91363887"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040520"
 ---
 # <a name="enable-or-disable-usage-data-collection-for-azure-data-studio"></a>Aktivieren oder Deaktivieren der Sammlung von Nutzungsdaten für Azure Data Studio
 

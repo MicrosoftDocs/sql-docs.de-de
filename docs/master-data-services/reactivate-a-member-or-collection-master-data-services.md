@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: bb4884c0-3658-4763-92d1-636804278b1c
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: dce90b3bf8b151ec5ea24dda8ea3628852a8dcfe
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8c17875c71e9ab7a69cdc9a5a535708e3792ae8b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92257937"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345607"
 ---
 # <a name="reactivate-a-member-or-collection-master-data-services"></a>Reaktivieren eines Elements oder einer Auflistung (Master Data Services)
 

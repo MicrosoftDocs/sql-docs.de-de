@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5222c4ff-890c-4d57-8506-c065a5ebfd3e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fd33b2c0496289e3a94e2a1b9ab9644dd178762e
-ms.sourcegitcommit: 768f046107642f72693514f51bf2cbd00f58f58a
+ms.openlocfilehash: b832484a1edd7177617cdd9ad6de05b15b603ba2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87106990"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341896"
 ---
 # <a name="functions-on-string-values---lower-case"></a>Funktionen für Zeichenfolgenwerte – lower-case
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]

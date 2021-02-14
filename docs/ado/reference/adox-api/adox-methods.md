@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 8de11ef7-034c-4613-91df-2244171f0b9a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0ab9548dabfc6e330353dde12c0142edb026ab4d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3755213b9ed971a7fccb248c0d9e516bf355b8a7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169630"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050611"
 ---
 # <a name="adox-methods"></a>ADOX-Methoden
 

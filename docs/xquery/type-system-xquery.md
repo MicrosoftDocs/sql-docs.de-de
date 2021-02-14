@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: 22d6f861-d058-47ee-b550-cbe9092dcb12
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: cb0b853b83fc65d8faddc341f9f0249debc2d2c1
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: a92b26642f5759044233d5d63b5a432ee5fe426c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86915266"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352842"
 ---
 # <a name="type-system-xquery"></a>Typensystem (XQuery)
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
@@ -69,7 +69,7 @@ WHERE ProductModelID=7
   
 -   Sie können diese Typen nicht verwenden, wenn Sie eine XML-Schemaauflistung erstellen. Diese Typen werden im XQuery-Typsystem verwendet und für die [XQuery-und statische Typisierung](../xquery/xquery-and-static-typing.md)verwendet. Sie können eine Umwandlung in die atomaren Typen, z. b. **xdt: untypedAtomic**, in den **xdt** -Namespace ausführen.  
   
--   Beim Abfragen von nicht typisiertem XML ist der statische und dynamische Typ von Elementknoten **xdt: untypisiert**, und der Typ der Attributwerte ist **xdt: untypedAtomic**. Das Ergebnis einer **Query ()** -Methode generiert nicht typisierten XML-Code. Dies bedeutet, dass die XML-Knoten als **xdt: untypisiert** und **xdt: untypedAtomic**zurückgegeben werden.  
+-   Beim Abfragen von nicht typisiertem XML ist der statische und dynamische Typ von Elementknoten **xdt: untypisiert**, und der Typ der Attributwerte ist **xdt: untypedAtomic**. Das Ergebnis einer **Query ()** -Methode generiert nicht typisierten XML-Code. Dies bedeutet, dass die XML-Knoten als **xdt: untypisiert** und **xdt: untypedAtomic** zurückgegeben werden.  
   
 -   Die **xdt: dayTimeDuration** -und **xdt: yearMonthDuration** -Typen werden nicht unterstützt.  
   

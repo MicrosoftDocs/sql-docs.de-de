@@ -13,12 +13,12 @@ dev_langs:
 ms.assetid: 293cc233-8688-4823-9887-176ed772f53d
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 4f5fa49df257451a48f390a250a3cfa63dfb2225
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 95b9447aec67199055df3609fe9054acb67a474e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99196230"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344279"
 ---
 # <a name="always-on-availability-groups-functions-transact-sql"></a>Funktionen der Always on-Verfügbarkeits Gruppen (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 6242b374-091b-406f-827a-c0dcd3e1967a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7863e32f6da1a7dbb6e8e3befaa8569c17b5709f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c84c5cecab9af0f2247b18ac870e24aefd379ec4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170033"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100055865"
 ---
 # <a name="ado-md-object-model"></a>ADO MD-Objektmodell
 In diesem Thema wird beschrieben, wie Objekte in ADO MD dargestellt und verknüpft werden.  

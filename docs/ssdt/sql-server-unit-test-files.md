@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: ec988c2df747164111c8915219d90366af2af463
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 48a8ba38c1af97f868162bdbc955006dbf646f55
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85883432"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066895"
 ---
 # <a name="sql-server-unit-test-files"></a>SQL Server-Komponententestdateien
 

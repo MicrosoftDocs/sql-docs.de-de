@@ -9,12 +9,12 @@ ms.date: 09/22/2020
 ms.topic: reference
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: ab6518677ffdbba92ec51da9f3c0fb7dbb0af0d7
-ms.sourcegitcommit: 29a2be59c56f8a4b630af47760ef38d2bf56a3eb
+ms.openlocfilehash: 6403db5f9b716684c3a791ade183a8f9c5edad47
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92358129"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052271"
 ---
 # <a name="azdata-postgres"></a>azdata postgres
 

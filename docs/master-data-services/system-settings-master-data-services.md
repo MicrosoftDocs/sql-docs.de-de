@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 83075cdf-f059-4646-8ba2-19be8202f130
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 3f95aed9433ea58f14c183d4de008e5df6642926
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 75033975cf0f06f7f21c75edbacd40349ddc5ad1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92258094"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343593"
 ---
 # <a name="system-settings-master-data-services"></a>Systemeinstellungen (Master Data Services)
 
@@ -51,7 +51,7 @@ ms.locfileid: "92258094"
   
 ##  <a name="general-settings"></a><a name="General"></a> Allgemeine Einstellungen  
   
-|Einstellung des Konfigurations-Managers|Systemeinstellung|BESCHREIBUNG|  
+|Einstellung des Konfigurations-Managers|Systemeinstellung|Beschreibung|  
 |-----------------------------------|--------------------|-----------------|  
 |**Timeout für Datenbankverbindung**|**DatabaseConnectionTimeOut**|Die Anzahl von Sekunden, während der die [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] -Datenbank auf die Herstellung einer Verbindung wartet. Wenn die Verbindung innerhalb dieser Zeit nicht hergestellt wird, wird sie abgebrochen, und es wird ein Fehler zurückgegeben. Der Standardwert ist **60** Sekunden (1 Minute).|  
 |**Timeout für Datenbankbefehl**|**DatabaseCommandTimeOut**|Die Anzahl von Sekunden, während der die [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] -Datenbank auf den Abschluss eines Befehls wartet. Wenn der Befehl innerhalb dieser Zeit nicht abgeschlossen wird, wird er abgebrochen, und es wird ein Fehler zurückgegeben. Der Standardwert ist **3600** Sekunden (60 Minuten).|  
@@ -64,15 +64,15 @@ ms.locfileid: "92258094"
   
 ##  <a name="version-management-settings"></a><a name="Versions"></a> Versions Verwaltungs Einstellungen  
   
-|Einstellung des Konfigurations-Managers|Systemeinstellung|BESCHREIBUNG|  
+|Einstellung des Konfigurations-Managers|Systemeinstellung|Beschreibung|  
 |-----------------------------------|--------------------|-----------------|  
-|**Nur Versionen kopieren, für die ein Commit ausgeführt wurde**|**CopyOnlyCommittedVersion**|Gibt in [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)]an, ob Benutzer nur Modellversionen mit dem Status **Commit wurde ausgeführt**oder Versionen mit einem beliebigen anderen Status kopieren können. Der Standardwert ist **Ja** oder **1**. Er gibt an, dass Benutzer nur Versionen mit dem Status **Commit wurde ausgeführt** kopieren können. Wenn Sie den Wert in **Nein** oder **2** ändern, können Benutzer alle Versionen kopieren.|  
+|**Nur Versionen kopieren, für die ein Commit ausgeführt wurde**|**CopyOnlyCommittedVersion**|Gibt in [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)]an, ob Benutzer nur Modellversionen mit dem Status **Commit wurde ausgeführt** oder Versionen mit einem beliebigen anderen Status kopieren können. Der Standardwert ist **Ja** oder **1**. Er gibt an, dass Benutzer nur Versionen mit dem Status **Commit wurde ausgeführt** kopieren können. Wenn Sie den Wert in **Nein** oder **2** ändern, können Benutzer alle Versionen kopieren.|  
   
  Weitere Informationen finden Sie unter [Versionen &#40;Master Data Services&#41;](../master-data-services/versions-master-data-services.md).  
   
 ##  <a name="staging-settings"></a><a name="Staging"></a> Stagingeinstellungen  
   
-|Einstellung des Konfigurations-Managers|Systemeinstellung|BESCHREIBUNG|  
+|Einstellung des Konfigurations-Managers|Systemeinstellung|Beschreibung|  
 |-----------------------------------|--------------------|-----------------|  
 |**Protokollieren aller Stagingtransaktionen**|**StagingTransactionLogging**|Gilt nur für SQL Server 2008 R2. Legt fest, ob Transaktionen beim Laden von Stagingdatensätzen in die [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] -Datenbank protokolliert werden. Der Standardwert ist **Aus** oder **2**. Ändern Sie den Wert in **Ein** oder **1** , um die Protokollierung zu aktivieren.|  
 |**Staging-Batchintervall**|**StagingBatchInterval**|Gibt im Funktionsbereich [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] **Integration Management** functional area, the number of seconds after you select **Start Batches** that your batch is processed. Der Standardwert ist **60** Sekunden (1 Minute).|  
@@ -81,7 +81,7 @@ ms.locfileid: "92258094"
   
 ##  <a name="explorer-settings"></a><a name="Explorer"></a> Explorereinstellungen  
   
-|Einstellung des Konfigurations-Managers|Systemeinstellung|BESCHREIBUNG|  
+|Einstellung des Konfigurations-Managers|Systemeinstellung|Beschreibung|  
 |-----------------------------------|--------------------|-----------------|  
 |**Die Standardanzahl der Elemente in der Hierarchie.**|**HierarchyChildNodeLimit**|Gibt im Funktionsbereich -[!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] **Explorer** an, wie viele Elemente maximal in den einzelnen Hierarchieknoten angezeigt werden, bevor **...Weitere...** angezeigt wird. Sie können auf **...Weitere...** klicken, um die nächste Gruppe von Elementen anzuzeigen. Der Standardwert lautet **50**.|  
 |**Standardmäßig Namen in Hierarchie anzeigen**|**ShowNamesInHierarchy**|Legt im Funktionsbereich -[!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] **Explorer** die Standardeinstellung fest, die bei der Anzeige von Hierarchien ausgewählt wird.<br /><br /> Der Standardwert ist **Yes** oder **1**. Er gibt an, dass Name und Code der einzelnen Elemente angezeigt werden. Ändern Sie den Wert in **No** oder **2** , wenn Sie nur den Code anzeigen möchten.|  
@@ -90,14 +90,14 @@ ms.locfileid: "92258094"
   
 ##  <a name="add-in-for-excel-settings"></a><a name="xls"></a> Add-in für Excel-Einstellungen  
   
-|Einstellung des Konfigurations-Managers|Systemeinstellung|BESCHREIBUNG|  
+|Einstellung des Konfigurations-Managers|Systemeinstellung|Beschreibung|  
 |-----------------------------------|--------------------|-----------------|  
 |Anzeigen von Add-In für Excel-Text auf Websitehomepage|ShowAddInText|Zeigt auf der Startseite von [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] einen Link an, damit Benutzer das [!INCLUDE[ssMDSXLS](../includes/ssmdsxls-md.md)]herunterladen können.|  
 |Add-In für Excel-Installationspfad auf Websitehomepage|AddInURL|Dies ist auf der [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] -Homepage, wenn der Link zum [!INCLUDE[ssMDSXLS](../includes/ssmdsxls-md.md)] angezeigt wird, der Speicherort, zu dem die Benutzer nach Anklicken des Links geführt werden.|  
   
 ##  <a name="business-rule-settings"></a><a name="BusinessRules"></a> Geschäftsregeleinstellungen  
   
-|Einstellung des Konfigurations-Managers|Systemeinstellung|BESCHREIBUNG|  
+|Einstellung des Konfigurations-Managers|Systemeinstellung|Beschreibung|  
 |-----------------------------------|--------------------|-----------------|  
 |**Zahl, mit der neue Geschäftsregeln inkrementiert werden**|**BusinessRuleDefaultPriorityIncrement**|Im Funktionsbereich [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] **Systemverwaltung** die Zahl, mit der die Priorität der einzelnen neuen Geschäftsregeln inkrementiert wird. Der Standardwert ist **10**.|  
 |**Anzahl von Elementen zur Anwendung von Geschäftsregeln.**|**BusinessRuleRealtimeMemberCount**|Gibt im Funktionsbereich  [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] **Explorer** an, auf wie viele Elemente im Raster Geschäftsregeln angewendet werden sollen. In [!INCLUDE[ssMDSXLS](../includes/ssmdsxls-md.md)]die maximale Anzahl von Elementen im aktiven Arbeitsblatt, auf die Geschäftsregeln angewendet werden sollen. Der Standardwert ist **10000**.|  
@@ -107,7 +107,7 @@ ms.locfileid: "92258094"
   
 ##  <a name="notification-settings"></a><a name="Notifications"></a> Benachrichtigungseinstellungen  
   
-|Einstellung des Konfigurations-Managers|Systemeinstellung|BESCHREIBUNG|  
+|Einstellung des Konfigurations-Managers|Systemeinstellung|Beschreibung|  
 |-----------------------------------|--------------------|-----------------|  
 |**Master Data Manager-URL für Benachrichtigungen**|**MDMRootURL**|Gibt die URL für die [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)]-Webanwendung an, die im Link in E-Mail-Benachrichtigungen verwendet wird, z.B. `https://constoso/mds`.|  
 |**Benachrichtigungs-E-Mail-Intervall**|**NotificationInterval**|Die Häufigkeit in Sekunden, in der E-Mail-Benachrichtigungen gesendet werden. Der Standardwert ist **120** Sekunden (2 Minuten).|  
@@ -125,13 +125,13 @@ ms.locfileid: "92258094"
   
 ##  <a name="security-settings"></a><a name="Security"></a> Sicherheitseinstellungen  
   
-|Einstellung des Konfigurations-Managers|Systemeinstellung|BESCHREIBUNG|  
+|Einstellung des Konfigurations-Managers|Systemeinstellung|Beschreibung|  
 |-----------------------------------|--------------------|-----------------|  
 ||**SecurityMemberProcessInterval**|Gibt im Funktionsbereich [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] **Benutzer- und Gruppenberechtigungen** an, mit welcher Häufigkeit (in Sekunden) Benutzer- und Gruppenberechtigungen angewendet werden, die auf der Registerkarte **Hierarchieelemente** festlegt sind. Der Standardwert ist **3600** Sekunden (60 Minuten).|  
 
 ##  <a name="performance-settings"></a><a name="Performance"></a> Leistungseinstellungen  
 
-|Einstellung des Konfigurations-Managers|Systemeinstellung|BESCHREIBUNG|  
+|Einstellung des Konfigurations-Managers|Systemeinstellung|Beschreibung|  
 |-----------------------------------|--------------------|-----------------|  
 |**Enable performance improvement setting** (Einstellung zur Leistungsverbesserung aktivieren)|**PerformanceImprovementEnable**|Diese Einstellung ist standardmäßig aktiviert (**auf 1 festgelegt**), damit die Leistung der mit der Ladeberechtigung in Zusammenhang stehenden Seite gut ist. In diesem Fall ist die Leistung beim Erstellen bzw. Ändern von Entitäten, Attributen, Benutzern oder Gruppen allerdings schlecht. Sie können die Einstellung deaktivieren (**auf 0 festgelegt**), um dies zu vermeiden. Wenn Sie diese Einstellung geändert haben, müssen Sie den Befehl **EXEC [mdm].[udpPerformanceToggleSwitch];** ausführen, damit die Ansicht sowie die Daten keine Fehler aufweisen.|  
   

@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: ''
 ms.custom: seo-lt-2019, seo-mmd-2019
 ms.date: 01/04/2020
-ms.openlocfilehash: c7739675f03e5c7d895939a286d4f262c8302586
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: fdbf12310fb46add3ce9e3240d7c249028eda606
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472511"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100057295"
 ---
 # <a name="configure-a-report-server-database-connection-report-server-configuration-manager"></a>Konfigurieren einer Verbindung mit der Berichtsserver-Datenbank (Berichtsserver-Konfigurations-Manager)
 

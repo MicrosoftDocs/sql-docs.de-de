@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9408c6ea-d9c4-4a0b-8a1b-1457fb6944af
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 69f65e0ab8a84d51552f50e1cee3f66933de9da4
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: e5aaae9f766832d64c3ca9e59940b933fbcda1b5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85812343"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353709"
 ---
 # <a name="recursive-hierarchies-master-data-services"></a>Rekursive Hierarchien (Master Data Services)
 

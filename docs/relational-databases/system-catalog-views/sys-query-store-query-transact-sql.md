@@ -22,19 +22,19 @@ ms.assetid: bdee149e-7556-4fc3-8242-925dd4b7b6ac
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: d682d739c8f18a7a1f41b6abf23c62dd04f2c17f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 92634254e0931b86eeb5c30cfec5fdaa013699a6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99208117"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347995"
 ---
 # <a name="sysquery_store_query-transact-sql"></a>sys.query_store_query (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]
 
   Enthält Informationen über die Abfrage und die zugeordnete allgemeine allgemeine Lauf Zeit Ausführungs Statistik.  
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**query_id**|**bigint**|Der Primärschlüssel.|  
 |**query_text_id**|**bigint**|Fremdschlüssel. Joins mit [sys.query_store_query_text &#40;Transact-SQL-&#41;](../../relational-databases/system-catalog-views/sys-query-store-query-text-transact-sql.md)|  

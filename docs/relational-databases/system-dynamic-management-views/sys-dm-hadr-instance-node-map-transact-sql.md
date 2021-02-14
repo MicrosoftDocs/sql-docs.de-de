@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: ccfaf62c-9f87-43cf-a5e7-8942e91dd041
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 7632bf8f343c1dd906e574e3ded3688fa2a812ca
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 1a95ad5a8dbd95d185df27aace94f26d5859d648
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99188673"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347610"
 ---
 # <a name="sysdm_hadr_instance_node_map-transact-sql"></a>sys.dm_hadr_instance_node_map (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "99188673"
   
 -   Wenn mehrere SQL Server-Instanzen auf demselben WSFC-Knoten gehostet werden, verwendet die Ressourcen-DLL diese dynamische Verwaltungssicht, um die Instanz von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] zu bestimmen, mit der eine Verbindung hergestellt werden soll.  
    
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**ag_resource_id**|**nvarchar(256)**|Eindeutige ID der Verfügbarkeits Gruppe als Ressource im wsfc.|  
 |**instance_name**|**nvarchar(256)**|Name-*Server* / *Instanz*-einer Serverinstanz, die ein Replikat für die Verfügbarkeits Gruppe hostet.|  

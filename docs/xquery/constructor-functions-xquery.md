@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 98562d0e-d0e0-4f62-b001-90acbac67277
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 56dd5919565d1cbb7d0b95ae4476aef9140cecd0
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 0cc1fe3f4f36191a04973c759474f55a8356abda
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85773716"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349337"
 ---
 # <a name="constructor-functions-xquery"></a>Konstruktorfunktionen (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -44,8 +44,8 @@ TYP($atomicvalue as xdt:anyAtomicType?
  *TYP*  
  Ein beliebiger integrierter XSD-Typ.  
   
-## <a name="remarks"></a>Hinweise  
- Konstruktoren werden von atomaren XSD-Basistypen sowie abgeleiteten Typen unterstützt. Allerdings werden die Untertypen von **xs: Duration**, einschließlich **xdt: yearMonthDuration und xdt: dayTimeDuration**und **xs: QName**, **xs: NMTOKEN**und **xs: Notation** , nicht unterstützt. Die benutzerdefinierten atomaren Typen, die in den damit verbundenen Schemaauflistungen verfügbar sind, stehen auch hier zur Verfügung, unter der Voraussetzung, dass sie direkt oder indirekt aus den folgenden Typen abgeleitet sind.  
+## <a name="remarks"></a>Bemerkungen  
+ Konstruktoren werden von atomaren XSD-Basistypen sowie abgeleiteten Typen unterstützt. Allerdings werden die Untertypen von **xs: Duration**, einschließlich **xdt: yearMonthDuration und xdt: dayTimeDuration** und **xs: QName**, **xs: NMTOKEN** und **xs: Notation** , nicht unterstützt. Die benutzerdefinierten atomaren Typen, die in den damit verbundenen Schemaauflistungen verfügbar sind, stehen auch hier zur Verfügung, unter der Voraussetzung, dass sie direkt oder indirekt aus den folgenden Typen abgeleitet sind.  
   
 #### <a name="supported-base-types"></a>Unterstützte Basistypen  
  Es folgen die unterstützten Basistypen:  

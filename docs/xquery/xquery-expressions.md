@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: a6150940-4d1c-4bff-a8f9-eda667fc45eb
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0144663029fb4e2a000eda590c85ee97d349dab6
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 43890e5162643781079c8c9bd3e4c2d4cd093b94
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86917950"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352778"
 ---
 # <a name="xquery-expressions"></a>XQuery-Ausdrücke
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "86917950"
  Beschreibt die Iterationssyntax FLOWR. Diese steht für FOR, LET, WHERE, ORDER BY und RETURN. LET wird nicht unterstützt.  
   
  [Geordnete und ungeordnete Ausdrücke &#40;XQuery-&#41;](../xquery/ordered-and-unordered-expressions-xquery.md)  
- Beschreibt den Reihenfolgemodus für XQuery-Operationen. Standardmäßig ist der Reihenfolge Modus auf **geordnet**festgelegt.  
+ Beschreibt den Reihenfolgemodus für XQuery-Operationen. Standardmäßig ist der Reihenfolge Modus auf **geordnet** festgelegt.  
   
  [Bedingte Ausdrücke &#40;XQuery-&#41;](../xquery/conditional-expressions-xquery.md)  
  Beschreibt die XQuery-Unterstützung für die bedingte **if-then-else-** Anweisung.  

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: fb2a4df4-5e0d-4b34-818f-383dbde1b15c
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 16b5268f9ca4ac300bafe09b1188776985e5826d
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: ade6b388deb6414a6b2940d5fef74a9f26ef4637
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85811779"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350214"
 ---
 # <a name="deploy-a-model-deployment-package-by-using-mdsmodeldeploy"></a>Bereitstellen eines Modellbereitstellungspakets mit MDSModelDeploy
 
@@ -42,7 +42,7 @@ ms.locfileid: "85811779"
   
 -   Sie müssen Administrator in der Umgebung sein, in der Sie das Modell bereitstellen. Weitere Informationen finden Sie unter [Administratoren &#40;Master Data Services&#41;](../master-data-services/administrators-master-data-services.md).  
   
--   Wenn Sie ein Modell mit Daten aktualisieren, kann die Version, für die Sie **bereit**stellen, nicht **gesperrt** oder übertragen werden.  
+-   Wenn Sie ein Modell mit Daten aktualisieren, kann die Version, für die Sie **bereit** stellen, nicht **gesperrt** oder übertragen werden.  
   
 ### <a name="to-deploy-a-model-deployment-package"></a>So stellen Sie ein Modellbereitstellungspaket bereit  
   
@@ -97,7 +97,7 @@ ms.locfileid: "85811779"
   
  **Hinweise:**  
   
--   Wenn eine Abonnementsicht im Paket denselben Namen wie eine Abonnementsicht in einem vorhandenen Modell ausweist, wird eine Warnung wie diese angezeigt: **Warnung: Die Abonnementsicht des Bereitstellers wurde umbenannt.** . Für die Anzeige wird zudem *modelname.subscriptionviewname*verwendet. Wenn dieser Name bereits verwendet wird, wird die Abonnementsicht nicht erstellt.  
+-   Wenn eine Abonnementsicht im Paket denselben Namen wie eine Abonnementsicht in einem vorhandenen Modell ausweist, wird eine Warnung wie diese angezeigt: **Warnung: Die Abonnementsicht des Bereitstellers wurde umbenannt.** . Für die Anzeige wird zudem *modelname.subscriptionviewname* verwendet. Wenn dieser Name bereits verwendet wird, wird die Abonnementsicht nicht erstellt.  
   
 -   Der Bereitstellungsprozess umfasst vier Schritte:  
   
@@ -114,7 +114,7 @@ ms.locfileid: "85811779"
      Falls bei der Aktualisierung eines Modells der Prozess während der ersten drei Schritte fehlschlägt, wird sie nicht fortgesetzt. Für bereits vorgenommene Änderungen wird jedoch kein Rollback durchgeführt. Wenn der Prozess in Schritt 4 fehlschlägt, werden Elemente, die aktualisiert werden können, aktualisiert.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- Dateiattribute sowie Benutzer- und Gruppenberechtigungen sind nicht in den Modellbereitstellungspaketen enthalten. Nachdem Sie ein Modell bereitgestellt haben, müssen diese manuell aktualisiert werden. Weitere Informationen finden Sie unter  
+ Dateiattribute sowie Benutzer- und Gruppenberechtigungen sind nicht in den Modellbereitstellungspaketen enthalten. Nachdem Sie ein Modell bereitgestellt haben, müssen diese manuell aktualisiert werden. Weitere Informationen finden Sie in folgenden Quellen:  
   
 -   [Zuweisen von Berechtigungen für Modellobjekte &#40;Master Data Services&#41;](../master-data-services/assign-model-object-permissions-master-data-services.md)  
   

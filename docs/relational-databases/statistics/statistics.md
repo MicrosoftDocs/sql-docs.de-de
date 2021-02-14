@@ -25,12 +25,12 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 89ebfbb70c7c50729ebbfb5de6a8551e00927bc6
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 521904030d97213770d4a2310b51eaadc37d4e5d
+ms.sourcegitcommit: 05fc736e6b6b3a08f503ab124c3151f615e6faab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99233243"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478585"
 ---
 # <a name="statistics"></a>Statistik
 
@@ -108,22 +108,38 @@ ORDER BY s.name;
 ```  
   
 #### <a name="auto_update_statistics-option"></a>AUTO_UPDATE_STATISTICS (Option)  
- Wenn die [AUTO_UPDATE_STATISTICS](../../t-sql/statements/alter-database-transact-sql-set-options.md#auto_update_statistics)-Option zum automatischen Update von Statistiken aktiviert ist, stellt der Abfrageoptimierer fest, wann Statistiken veraltet sein könnten, und aktualisiert diese Statistiken, sobald sie von einer Abfrage verwendet werden. Statistiken sind veraltet, wenn die Datenverteilung in der Tabelle oder indizierten Sicht durch die Vorgänge INSERT, UPDATE, DELETE oder MERGE geändert wurde. Der Abfrageoptimierer stellt fest, wann Statistiken veraltet sein könnten, indem er die Anzahl von Datenänderungen seit der letzten Statistikaktualisierung ermittelt und sie mit einem Schwellenwert vergleicht. Der Schwellenwert basiert auf der Anzahl von Zeilen in der Tabelle oder indizierten Sicht.  
+ Wenn die [AUTO_UPDATE_STATISTICS](../../t-sql/statements/alter-database-transact-sql-set-options.md#auto_update_statistics)-Option zum automatischen Update von Statistiken aktiviert ist, stellt der Abfrageoptimierer fest, wann Statistiken veraltet sein könnten, und aktualisiert diese Statistiken, sobald sie von einer Abfrage verwendet werden. Diese Aktion wird auch als Neukompilierung von Statistiken bezeichnet. Statistiken sind veraltet, wenn die Datenverteilung in der Tabelle oder indizierten Sicht durch die Vorgänge INSERT, UPDATE, DELETE oder MERGE geändert wurde. Der Abfrageoptimierer stellt fest, wann Statistiken veraltet sein könnten, indem er die Anzahl von Zeilenänderungen seit der letzten Statistikaktualisierung ermittelt und sie mit einem Schwellenwert vergleicht. Der Schwellenwert basiert auf der Tabellenkardinalität, die als Anzahl von Zeilen in der Tabelle oder indizierten Sicht definiert werden kann.  
   
-* [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] verwendet einen Schwellenwert basierend auf dem Prozentsatz der geänderten Zeilen. Dies ist unabhängig von der Anzahl der Zeilen in der Tabelle. Der Schwellenwert lautet:
-    * Wenn die Tabellenkardinalität zum Zeitpunkt der Statistikauswertung 500 oder weniger beträgt, wird nach jeweils 500 Änderungen eine Aktualisierung durchgeführt.
-    * Wenn die Tabellenkardinalität zum Zeitpunkt der Statistikauswertung über 500 liegt, wird nach jeweils 500 Änderungen + 20 Prozent eine Aktualisierung durchgeführt.
+- Bis zu [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] verwendet [!INCLUDE[ssde_md](../../includes/ssde_md.md)] einen Schwellenwert für die Neukompilierung, der auf der Anzahl der Zeilen in der Tabelle oder indizierten Sicht zum Zeitpunkt der Auswertung der Statistik basiert. Der Schwellenwert hängt davon ab, ob eine Tabelle temporär oder dauerhaft ist.
 
-* Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] und bei einem [Kompatibilitätsgrad](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) von unter 130 verwendet [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] einen abnehmenden dynamischen Schwellenwert für das Statistikupdate, der gemäß der Anzahl von Zeilen in der Tabelle angepasst wird. Dieser berechnet sich als Quadratwurzel des Produkts von 1000 und der aktuellen Tabellenkardinalität. Wenn Ihre Tabelle beispielsweise 2 Millionen Zeilen enthält, lautet die Berechnung folgendermaßen: sqrt(1000 * 2000000) = 44721.359. Durch diese Änderung werden Statistiken für große Tabellen häufiger aktualisiert. Weist eine Datenbank jedoch einen Kompatibilitätsgrad unter 130 auf, dann gilt der Schwellenwert [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]. 
+  |Tabellentyp|Tabellenkardinalität (*n*)|Schwellenwert für Neukompilierung (Anzahl von Änderungen)|
+  |-----------|-----------|-----------|
+  |Temporäre Prozeduren|*n* < 6|6|
+  |Temporäre Prozeduren|6 <= *n* <= 500|500|
+  |Dauerhaft|*n* <= 500|500|
+  |Temporär oder permanent|*n* > 500|500 + (0,20 * *n*)|
+  
+  Wenn die Tabelle beispielsweise 20.000 Zeilen enthält, lautet die Berechnung `500 + (0.2 * 20,000) = 4,500`, und die Statistiken werden alle 4.500 Änderungen aktualisiert.
+
+- Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] und unter dem [Datenbank-Kompatibilitätsgrad](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) von 130 verwendet [!INCLUDE[ssde_md](../../includes/ssde_md.md)] auch einen abnehmenden dynamischen Statistik-Neukompilierungsschwellenwert, der gemäß der Tabellenkardinalität zu dem Zeitpunkt, zu dem die Statistik ausgewertet wurde, angepasst wird. Durch diese Änderung werden Statistiken für große Tabellen häufiger aktualisiert. Weist eine Datenbank jedoch einen Kompatibilitätsgrad unter 130 auf, dann gelten die [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]-Schwellenwerte.
+
+  |Tabellentyp|Tabellenkardinalität (*n*)|Schwellenwert für Neukompilierung (Anzahl von Änderungen)|
+  |-----------|-----------|-----------|
+  |Temporäre Prozeduren|*n* < 6|6|
+  |Temporäre Prozeduren|6 <= *n* <= 500|500|
+  |Dauerhaft|*n* <= 500|500|
+  |Temporär oder permanent|500 <= *n* <= 25.000|500 + (0,20 * *n*)|
+  |Temporär oder permanent|*n* > 25.000|SQRT(1.000 * *n*)|
+
+  Wenn die Tabelle beispielsweise 2 Millionen Zeilen enthält, lautet die Berechnung `SQRT(1,000 * 2,000,000) = 44,721`, und die Statistiken werden alle 44.721 Änderungen aktualisiert.
 
 > [!IMPORTANT]
 > In [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] bis [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] bzw. in [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] und höher mit [Datenbank-Kompatibilitätsgrad](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) 120 und niedriger müssen Sie das [Ablaufverfolgungsflag 2371](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) aktivieren, damit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] einen sinkenden Schwellenwert für das dynamische Statistikupdate verwendet.
 
-Gehen Sie folgendermaßen vor, um das Ablaufverfolgungsflag 2371 in Ihrer Umgebung vor [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] zu aktivieren:
+Obwohl es für alle Szenarien empfohlen wird, ist das Aktivieren des Ablaufverfolgungsflags optional. Gehen Sie jedoch folgendermaßen vor, um das Ablaufverfolgungsflag 2371 in Ihrer Umgebung vor [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] zu aktivieren:
 
- - Wenn Sie keine Leistungsprobleme aufgrund von veralteten Statistiken festgestellt haben, ist es nicht erforderlich, dieses Ablaufverfolgungsflag zu aktivieren.
- - Auf einem SAP-System sollten Sie das Flag aktivieren.  Zusätzliche Informationen finden Sie in diesem [Blog](/archive/blogs/saponsqlserver/changes-to-automatic-update-statistics-in-sql-server-traceflag-2371).
- - Wenn Sie Aufträge zur Statistikaktualisierung über Nacht ausführen müssen, weil die aktuelle automatische Aktualisierung nicht häufig genug ausgelöst wird, sollten Sie das Ablaufverfolgungsflag 2371 aktivieren, um den Schwellenwert zu senken.
+ - Auf einem SAP-System sollten Sie das Flag aktivieren. Zusätzliche Informationen finden Sie in diesem [Blog](/archive/blogs/saponsqlserver/changes-to-automatic-update-statistics-in-sql-server-traceflag-2371).
+ - Wenn Sie Aufträge zur Statistikaktualisierung über Nacht ausführen müssen, weil die aktuelle automatische Aktualisierung nicht häufig genug ausgelöst wird, sollten Sie das Ablaufverfolgungsflag 2371 aktivieren, um den Schwellenwert der Tabellenkardinalität anzupassen.
   
 Bevor der Abfrageoptimierer eine Abfrage kompiliert und einen zwischengespeicherten Abfrageplan ausführt, sucht er nach veralteten Statistiken. Vor dem Kompilieren einer Abfrage ermittelt der Abfrageoptimierer anhand der Spalten, Tabellen und indizierten Sichten im Abfrageprädikat, welche Statistiken veraltet sein könnten. Vor dem Ausführen eines zwischengespeicherten Abfrageplans überprüft das [!INCLUDE[ssDE](../../includes/ssde-md.md)] , ob der Abfrageplan auf aktuelle Statistiken verweist.  
   
@@ -131,9 +147,6 @@ Die AUTO_UPDATE_STATISTICS-Option gilt für Statistikobjekte, die für Indizes, 
  
 Sie können [sys.dm_db_stats_properties](../../relational-databases/system-dynamic-management-views/sys-dm-db-stats-properties-transact-sql.md) verwenden, um die Anzahl geänderter Zeilen in einer Tabelle genau nachzuverfolgen und zu entscheiden, ob Sie die Statistiken manuell aktualisieren möchten.
 
-
-
-  
 #### <a name="auto_update_statistics_async"></a>AUTO_UPDATE_STATISTICS_ASYNC  
 Mit der [AUTO_UPDATE_STATISTICS_ASYNC](../../t-sql/statements/alter-database-transact-sql-set-options.md#auto_update_statistics_async)-Option für das asynchrone Statistikupdate wird festgelegt, ob der Abfrageoptimierer das synchrone oder asynchrone Statistikupdate verwendet. Die Option für das asynchrone Statistikupdate ist standardmäßig deaktiviert, sodass der Abfrageoptimierer Statistiken synchron aktualisiert. Die AUTO_UPDATE_STATISTICS_ASYNC-Option gilt für Statistikobjekte, die für Indizes, einzelne Spalten in Abfrageprädikaten und mit der [CREATE STATISTICS](../../t-sql/statements/create-statistics-transact-sql.md) -Anweisung generierte Statistiken erstellt wurden.  
  
@@ -157,12 +170,12 @@ In den folgenden Szenarien empfiehlt sich die Verwendung asynchroner Statistiken
 > [!NOTE]
 > Statistiken für lokale temporäre Tabellen werden unabhängig von der Option AUTO_UPDATE_STATISTICS_ASYNC immer synchron aktualisiert. Statistiken für globale temporäre Tabellen werden der Option AUTO_UPDATE_STATISTICS_ASYNC entsprechend, die für die Benutzerdatenbank festgelegt wird, synchron oder asynchron aktualisiert.
 
-Asynchrone Statistikupdates werden von einer Hintergrundanforderung ausgeführt. Wenn die Anforderung bereit ist, aktualisierte Statistiken in die Datenbank zu schreiben, versucht sie, eine Schemaänderungssperre für das Statistikmetadatenobjekt zu erhalten. Wenn eine andere Sitzung bereits eine Sperre für dasselbe Objekt verwendet, wird das asynchrone Statistikupdate blockiert, bis die Schemaänderungssperre abgerufen werden kann. Ebenso werden Sitzungen, die zum Kompilieren einer Abfrage eine Schemastabilitätssperre für das Statistikmetadatenobjekt abrufen müssen, möglicherweise durch die Hintergrundsitzung für das asynchrone Statistikupdate blockiert, die bereits die Schemaänderungssperre verwendet oder darauf wartet, diese abzurufen. Daher erhöht sich durch die Verwendung von asynchronen Statistiken für Arbeitsauslastungen mit sehr häufigen Abfragekompilierungen und häufigen Statistikupdates möglicherweise die Wahrscheinlichkeit, dass aufgrund von Blockierung durch Sperren Parallelitätsprobleme auftreten.
+Asynchrone Statistikupdates werden von einer Hintergrundanforderung ausgeführt. Wenn die Anforderung bereit ist, aktualisierte Statistiken in die Datenbank zu schreiben, versucht sie, eine Schemaänderungssperre für das Statistikmetadatenobjekt zu erhalten. Wenn eine andere Sitzung bereits eine Sperre für dasselbe Objekt verwendet, wird das asynchrone Statistikupdate blockiert, bis die Schemaänderungssperre abgerufen werden kann. Ebenso werden Sitzungen, die zum Kompilieren einer Abfrage eine Schemastabilitätssperre (Sch-S) für das Statistikmetadatenobjekt abrufen müssen, möglicherweise durch die Hintergrundsitzung für das asynchrone Statistikupdate blockiert, die bereits die Schemaänderungssperre verwendet oder darauf wartet, diese abzurufen. Daher erhöht sich durch die Verwendung von asynchronen Statistiken für Arbeitsauslastungen mit sehr häufigen Abfragekompilierungen und häufigen Statistikupdates möglicherweise die Wahrscheinlichkeit, dass aufgrund von Blockierung durch Sperren Parallelitätsprobleme auftreten.
 
-In Azure SQL-Datenbank und Azure SQL Managed Instance können Sie mögliche Parallelitätsprobleme bei der Verwendung von asynchronen Statistikupdates vermeiden, wenn Sie die [datenbankweit gültige Konfiguration](../../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY aktivieren. Wenn diese Konfiguration aktiviert ist, wartet die Hintergrundanforderung in einer separaten Warteschlange mit niedriger Priorität auf das Abrufen der Schemaänderungssperre, sodass andere Anforderungen mit der Kompilierung von Abfragen mit vorhandenen Statistiken fortfahren können. Sobald keine andere Sitzung mehr eine Sperre für das Statistikmetadatenobjekt verwendet, ruft die Hintergrundanforderung die Schemaänderungssperre ab und aktualisiert die Statistiken. Im unwahrscheinlichen Fall, dass die Hintergrundanforderung die Sperre innerhalb eines Timeoutzeitraums von einigen Minuten nicht abrufen kann, wird das asynchrone Statistikupdate abgebrochen, und die Statistiken werden erst aktualisiert, wenn ein anderes automatisches Statistikupdate ausgelöst wird oder Statistiken [manuell aktualisiert](update-statistics.md) werden.
+In [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] und [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)] können Sie mögliche Parallelitätsprobleme bei der Verwendung von asynchronen Statistikupdates vermeiden, wenn Sie die [datenbankweit gültige Konfiguration ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY](../../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) aktivieren. Wenn diese Konfiguration aktiviert ist, wartet die Hintergrundanforderung auf das Abrufen der Schemaänderungssperre (Sch-M) und behält die aktualisierte Statistik in einer separaten Warteschlange mit niedriger Priorität, sodass andere Anforderungen mit der Kompilierung von Abfragen mit vorhandenen Statistiken fortfahren können. Sobald keine andere Sitzung mehr eine Sperre für das Statistikmetadatenobjekt verwendet, ruft die Hintergrundanforderung die Schemaänderungssperre ab und aktualisiert die Statistiken. Im unwahrscheinlichen Fall, dass die Hintergrundanforderung die Sperre innerhalb eines Timeoutzeitraums von einigen Minuten nicht abrufen kann, wird das asynchrone Statistikupdate abgebrochen, und die Statistiken werden erst aktualisiert, wenn ein anderes automatisches Statistikupdate ausgelöst wird oder Statistiken [manuell aktualisiert](update-statistics.md) werden.
 
 > [!Note]
-> Die datenbankweit gültige Konfigurationsoption ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY ist nun in Azure SQL-Datenbank und Azure SQL Managed Instance verfügbar und soll demnächst in SQL Server VNext eingebunden werden. 
+> Die datenbankweit gültige Konfigurationsoption ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY ist in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] und [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)] verfügbar und soll in eine zukünftige Version von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] eingebunden werden. 
 
 #### <a name="incremental"></a>INCREMENTAL  
  Wenn die Option INCREMENTAL von CREATE STATISTICS auf ON festgelegt ist, werden die Statistiken pro Partition erstellt. Bei OFF wird die Statistikstruktur gelöscht und [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] berechnet die Statistiken erneut. Der Standardwert ist OFF. Diese Einstellung überschreibt die INCREMENTAL-Eigenschaft auf Datenbankebene. Weitere Informationen zum Erstellen von inkrementellen Statistiken finden Sie unter [CREATE STATISTICS (Transact-SQL)](../../t-sql/statements/create-statistics-transact-sql.md). Weitere Informationen zum automatischen Erstellen von Statistiken pro Partition finden Sie unter [Datenbankeigenschaften (Seite „Optionen“)](../../relational-databases/databases/database-properties-options-page.md#automatic) und [ALTER DATABASE SET Options (Transact-SQL) (Optionen für ALTER DATABASE SET (Transact-SQL))](../../t-sql/statements/alter-database-transact-sql-set-options.md). 

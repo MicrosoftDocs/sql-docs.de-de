@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: ec38d7eeed89d03bab4ebd92446517542e2e51a0
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: d706b9ef0ed5d95c411f00d426a8b9daf1415074
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597004"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340028"
 ---
 # <a name="adventureworks-sample-databases"></a>AdventureWorks-Beispiel Datenbanken
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

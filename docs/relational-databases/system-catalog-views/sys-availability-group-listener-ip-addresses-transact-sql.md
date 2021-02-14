@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: e515fa6b-1354-4110-9b70-ab2e6164c992
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 8036caae71fb58956bd8a4b50d6908fa644ef40c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 6bc6887ad63b56330eab09d20f0b6fa86de4d3d5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99207505"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341384"
 ---
 # <a name="sysavailability_group_listener_ip_addresses-transact-sql"></a>sys.availability_group_listener_ip_addresses (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "99207505"
  Primärschlüssel: **listener_id**  +  **ip_address**  +  **ip_sub_mask**  
   
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**listener_id**|**nvarchar (36)**|Ressourcen-GUID des WSFC-Clusters (Windows Server-Failoverclustering).|  
 |**ip_address**|**nvarchar (48)**|Konfigurierte virtuelle IP-Adresse des Verfügbarkeitsgruppenlisteners. Gibt eine einzelne IPv4- oder IPv6-Adresse zurück.|  

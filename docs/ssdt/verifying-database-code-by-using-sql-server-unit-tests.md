@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: ac5f8d848e2bc6591b0065e21c7588e4977c0d73
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 4c05b9e3a3330b395ee3cd8c2cb3da5aa7d50508
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987736"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066698"
 ---
 # <a name="verifying-database-code-by-using-sql-server-unit-tests"></a>Überprüfen des Datenbankcodes mithilfe von SQL Server-Komponententests
 

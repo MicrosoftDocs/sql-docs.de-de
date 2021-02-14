@@ -9,12 +9,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 6457c4bfe1579453a68e8d5ea11f45b67980ca8b
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: 9c0ccb64a67d547b2027423dbc3571e44b3b21ef
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91785105"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046170"
 ---
 # <a name="use-a-python-script-to-deploy-a-sql-server-big-data-cluster-on-azure-kubernetes-service-aks"></a>Verwenden eines Python-Skripts zum Bereitstellen eines Big-Data-Clusters für SQL Server in Azure Kubernetes Service (AKS)
 
@@ -47,7 +47,7 @@ az login
 
 ## <a name="download-the-deployment-script"></a>Herunterladen des Bereitstellungsskripts
 
-In diesem Tutorial wird die Erstellung des Big-Data-Clusters in AKS mit dem Python-Skript **deploy-sql-big-data-aks.py** automatisiert. Wenn Sie Python für **azdata**bereits installiert haben, sollten Sie das Skript in diesem Tutorial problemlos ausführen können. 
+In diesem Tutorial wird die Erstellung des Big-Data-Clusters in AKS mit dem Python-Skript **deploy-sql-big-data-aks.py** automatisiert. Wenn Sie Python für **azdata** bereits installiert haben, sollten Sie das Skript in diesem Tutorial problemlos ausführen können. 
 
 Führen Sie in PowerShell unter Windows oder Bash unter Linux den folgenden Befehl aus, um das Bereitstellungsskript von GitHub herunterzuladen.
 
@@ -133,7 +133,7 @@ Sie können während der Bereitstellung jederzeit mit **kubectl** oder **azdata*
    > [!TIP]
    > Wenn Sie den Namen des Big-Data-Clusters nicht geändert haben, verwendet das Skript den Standardnamen **sqlbigdata**.
 
-1. Überprüfen Sie die Kubernetes-Dienste und ihre internen und externen Endpunkte mit dem folgenden**kubectl**-Befehl:
+1. Überprüfen Sie die Kubernetes-Dienste und ihre internen und externen Endpunkte mit dem folgenden **kubectl**-Befehl:
 
    ```
    kubectl get svc -n <your-big-data-cluster-name>

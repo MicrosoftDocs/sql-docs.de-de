@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.assetid: f6cd850f-b01b-491f-972c-f966b9fe4190
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: ca05529c9b4ce1d9ec603989af81f0d2aeebf76b
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 630ee8396c3f4f64e7eee5335484299f5bebfd42
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236400"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350707"
 ---
 # <a name="master-data-services-installation-and-configuration"></a>Master Data Services-Installation und -Konfiguration
 
@@ -90,7 +90,7 @@ Wenn Sie Änderungen an der Installation von [!INCLUDE[ssCurrent_md](../includes
    
 9. Bestätigen Sie auf der Seite **Funktionen**, dass die folgenden Funktionen ausgewählt sind, und klicken Sie dann auf **Weiter**. Diese Funktionen werden für [!INCLUDE[ssMDSshort_md](../includes/ssmdsshort-md.md)] unter [!INCLUDE[winblue_server_2_md](../includes/winblue-server-2-md.md)] benötigt.
   
-    |Features|Features|  
+    |Funktionen|Funktionen|  
     |--------------|--------------|  
     |![mds_AddRolesFeaturesWizard_FeaturesPage](../master-data-services/media/mds-addrolesfeatureswizard-featurespage.png)|![mds_AddRolesFeaturesWizard_FeaturesPage_WindowsProcActive](../master-data-services/media/mds-addrolesfeatureswizard-featurespage-windowsprocactive.png)|  
 

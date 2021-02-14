@@ -20,12 +20,12 @@ ms.assetid: 02379a1b-3622-4578-8c59-a1b8f1a17914
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: 14785888953906f42b2196dc2cb06ca35cfc3a8b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 54732718d3c31c8dc646c9f61b3afcfa23cb07d2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99210024"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343146"
 ---
 # <a name="sysresource_stats-azure-sql-database"></a>sys.resource_stats (Azure SQL-Datenbank)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "99210024"
   
  Die folgende Tabelle beschreibt die verfügbaren Spalten bei einem Server mit der Version 12:  
   
-|Spalten|Datentyp|BESCHREIBUNG|  
+|Spalten|Datentyp|Beschreibung|  
 |----------------------------|---------------|-----------------|  
 |start_time|**datetime**|Die UTC-Zeit, die den Beginn des fünfminütigen Berichts Intervalls angibt.|  
 |end_time|**datetime**|Die UTC-Zeit, die das Ende des fünfminütigen Berichts Intervalls angibt.|  

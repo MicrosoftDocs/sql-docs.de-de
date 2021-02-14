@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9fd7a555-43bf-4796-a8b6-1ca63a291216
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: d3de498043b5be0e6ad71a9e32b5abbc6db7ab21
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f3227ef69915e606f514b5ecf36e5f1656db733e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88343226"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340280"
 ---
 # <a name="overlapping-model-and-member-permissions-master-data-services"></a>Überlappende Modell- und Elementberechtigungen (Master Data Services)
 
@@ -30,13 +30,13 @@ ms.locfileid: "88343226"
   
  Wenn ein Element über eine Berechtigung verfügt, die sich von der des zugehörigen Modellobjekts unterscheidet, gelten die folgenden Regeln:  
   
--   Mit**Verweigern** werden alle anderen Berechtigungen überschrieben.  
+-   Mit **Verweigern** werden alle anderen Berechtigungen überschrieben.  
   
 -   **Administratorrechte** auf der Modellebene setzen alle anderen Berechtigungen außer Kraft und werden auf untergeordneten Ebenen in "Alle" (CRUD) geändert.  
   
 -   Die effektive Zugriffsberechtigungen überschneidet sich mit Berechtigungen für Elemente und Attribute.  
   
-     Wenn Elementberechtigungen beispielsweise **Erstellen** und **Aktualisieren**beinhalten, lautet die Berechtigung für Attribute **Aktualisieren**. Die effektive Berechtigung lautet **Aktualisieren**.  
+     Wenn Elementberechtigungen beispielsweise **Erstellen** und **Aktualisieren** beinhalten, lautet die Berechtigung für Attribute **Aktualisieren**. Die effektive Berechtigung lautet **Aktualisieren**.  
   
  Das folgende Bild zeigt, welche Berechtigungen für einen einzelnen Attributwert wirksam werden, wenn Attributberechtigungen sich von Elementberechtigungen unterscheiden.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "88343226"
   
  Auf der Registerkarte **Hierarchieelemente** verfügt der Unterkategorieknoten "Mountain Bikes" in einer abgeleiteten Hierarchie über die zugewiesene Berechtigung **Aktualisieren** .  
   
- Ergebnis: In **Explorer**verfügt der Benutzer über die Berechtigung **Aktualisieren** für alle Attributwerte für alle Elemente im Knoten "Mountain Bikes". Alle anderen Elemente und Attribute werden ausgeblendet.  
+ Ergebnis: In **Explorer** verfügt der Benutzer über die Berechtigung **Aktualisieren** für alle Attributwerte für alle Elemente im Knoten "Mountain Bikes". Alle anderen Elemente und Attribute werden ausgeblendet.  
   
  ![mds_conc_overlap_model_example_1](../master-data-services/media/mds-conc-overlap-model-example-1.gif "mds_conc_overlap_model_example_1")  
   
@@ -60,7 +60,7 @@ ms.locfileid: "88343226"
   
  Auf der Registerkarte **Hierarchieelemente** wird dem Unterkategorieknoten "Mountain Bikes" in einer abgeleiteten Hierarchie die **Leseberechtigung** explizit zugewiesen.  
   
- Ergebnis: In **Explorer**verfügt der Benutzer über die **Leseberechtigung** für die Subcategory-Attributwerte für die Elemente im Knoten "Mountain Bikes". Alle anderen Elemente und Attribute werden ausgeblendet.  
+ Ergebnis: In **Explorer** verfügt der Benutzer über die **Leseberechtigung** für die Subcategory-Attributwerte für die Elemente im Knoten "Mountain Bikes". Alle anderen Elemente und Attribute werden ausgeblendet.  
   
  ![mds_conc_overlap_model_example_2](../master-data-services/media/mds-conc-overlap-model-example-2.gif "mds_conc_overlap_model_example_2")  
   
@@ -71,7 +71,7 @@ ms.locfileid: "88343226"
   
  Auf der Registerkarte **Hierarchieelemente** wird der Unterkategorie "Mountain Bikes" in einer abgeleiteten Hierarchie die Berechtigung **Aktualisieren** explizit zugewiesen.  
   
- Ergebnis: In **Explorer**verfügt der Benutzer über die **Leseberechtigung** für die Attributwerte. Alle anderen Elemente und Attribute werden ausgeblendet.  
+ Ergebnis: In **Explorer** verfügt der Benutzer über die **Leseberechtigung** für die Attributwerte. Alle anderen Elemente und Attribute werden ausgeblendet.  
   
  ![mds_conc_overlap_model_example_2](../master-data-services/media/mds-conc-overlap-model-example-2.gif "mds_conc_overlap_model_example_2")  
   

@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 11/4/2020
-ms.openlocfilehash: a6fc94cf9c692753ef2dc8d93068bda2be8f1bf0
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 5bc3b1591dd05722f1b0d89a0113df4723f26d67
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98689025"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100060995"
 ---
 # <a name="sqlpackage-in-development-pipelines"></a>SqlPackage in Entwicklungspipelines
 

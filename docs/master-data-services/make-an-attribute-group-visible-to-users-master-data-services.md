@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: b2f6cc27-dbc9-4f3f-961e-e81e76375248
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: c966c12bb8245571dcbfac0984d0434282e82c57
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c0e7c6f05ce075571a78e6b16abd8c3f40ccfd75
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88495018"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338199"
 ---
 # <a name="make-an-attribute-group-visible-to-users-master-data-services"></a>Sichtbarmachen einer Attributgruppe für Benutzer (Master Data Services)
 
@@ -45,7 +45,7 @@ ms.locfileid: "88495018"
   
 4.  Klicken Sie auf **Attributgruppen**.  
   
-5.  Wählen Sie auf der Seite **Attributgruppen verwalten** den Elementtyp in der Dropdownliste **Member Types** (Elementtypen) aus, um **Blatt**, **Konsolidiert** oder **Sammlung**abhängig vom Typ der Gruppe, die Sie sichtbar machen möchten, zu erweitern.  
+5.  Wählen Sie auf der Seite **Attributgruppen verwalten** den Elementtyp in der Dropdownliste **Member Types** (Elementtypen) aus, um **Blatt**, **Konsolidiert** oder **Sammlung** abhängig vom Typ der Gruppe, die Sie sichtbar machen möchten, zu erweitern.  
   
 6.  Wählen Sie im Raster die Attributgruppe aus, die Sie bearbeiten möchten, und klicken Sie anschließend auf **Bearbeiten**.  
   

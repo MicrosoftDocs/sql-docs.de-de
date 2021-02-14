@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ee95ffdb-5aa1-49a3-beb2-7695b27c3df9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4c3c2fecc26cf2d8bbf5d53598a7b28ce7db5612
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 8876696412360275fcf443a5543634c9ac537df6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195572"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070335"
 ---
 # <a name="driver-manager-connection-pooling"></a>Verbindungspooling des Treiber-Managers
 Das Verbindungspooling ermöglicht einer Anwendung, eine Verbindung aus einem Pool von Verbindungen zu verwenden, die nicht für jede Verwendung wieder hergestellt werden müssen. Nachdem eine Verbindung erstellt und in einen Pool eingefügt wurde, kann eine Anwendung diese Verbindung wieder verwenden, ohne den gesamten Verbindungsprozess auszuführen.  
@@ -31,14 +31,14 @@ Das Verbindungspooling ermöglicht einer Anwendung, eine Verbindung aus einem Po
  Zusätzlich zu den Leistungssteigerungen ermöglicht die Verbindungspooling-Architektur, dass eine Umgebung und die zugehörigen Verbindungen von mehreren Komponenten in einem einzelnen Prozess verwendet werden können. Dies bedeutet, dass eigenständige Komponenten im gleichen Prozess miteinander interagieren können, ohne sich gegenseitig zu kennen. Eine Verbindung in einem Verbindungspool kann von mehreren Komponenten wiederholt verwendet werden.  
   
 > [!NOTE]
->  Verbindungspooling kann von einer ODBC-Anwendung verwendet werden, die ODBC 2 ausstellt. *x* -Verhalten, sofern die Anwendung *SQLSetEnvAttr*aufgerufen werden kann. Wenn Sie das Verbindungspooling verwenden, dürfen von der Anwendung keine SQL-Anweisungen ausgeführt werden, die die Datenbank oder den Kontext der Datenbank ändern, z. b. das Ändern von \<*database name*> , wodurch der von einer Datenquelle verwendete Katalog geändert wird.  
+>  Verbindungspooling kann von einer ODBC-Anwendung verwendet werden, die ODBC 2 ausstellt. *x* -Verhalten, sofern die Anwendung *SQLSetEnvAttr* aufgerufen werden kann. Wenn Sie das Verbindungspooling verwenden, dürfen von der Anwendung keine SQL-Anweisungen ausgeführt werden, die die Datenbank oder den Kontext der Datenbank ändern, z. b. das Ändern von \<*database name*> , wodurch der von einer Datenquelle verwendete Katalog geändert wird.  
 
 
  Ein ODBC-Treiber muss vollständig Thread sicher sein, und Verbindungen dürfen keine Thread Affinität aufweisen, um das Verbindungspooling zu unterstützen. Dies bedeutet, dass der Treiber jederzeit einen Aufruf für einen beliebigen Thread verarbeiten kann und eine Verbindung mit einem Thread herstellen kann, die Verbindung in einem anderen Thread verwendet und die Verbindung mit einem dritten Thread getrennt werden kann.  
   
- Der Verbindungspool wird vom Treiber-Manager verwaltet. Verbindungen werden aus dem Pool gezeichnet, wenn die Anwendung **SQLCONNECT** oder **SQLDriverConnect** aufruft und an den Pool zurückgegeben wird, wenn die Anwendung **SQLDisconnect**aufruft. Die Größe des Pools wird basierend auf den angeforderten Ressourcen Zuordnungen dynamisch vergrößert. Die Verkleinerung erfolgt basierend auf dem Inaktivitäts Timeout: Wenn eine Verbindung für einen bestimmten Zeitraum inaktiv ist (Sie wurde nicht in einer Verbindung verwendet), wird Sie aus dem Pool entfernt. Die Größe des Pools wird nur durch Arbeitsspeicher Einschränkungen und-Einschränkungen auf dem Server beschränkt.  
+ Der Verbindungspool wird vom Treiber-Manager verwaltet. Verbindungen werden aus dem Pool gezeichnet, wenn die Anwendung **SQLCONNECT** oder **SQLDriverConnect** aufruft und an den Pool zurückgegeben wird, wenn die Anwendung **SQLDisconnect** aufruft. Die Größe des Pools wird basierend auf den angeforderten Ressourcen Zuordnungen dynamisch vergrößert. Die Verkleinerung erfolgt basierend auf dem Inaktivitäts Timeout: Wenn eine Verbindung für einen bestimmten Zeitraum inaktiv ist (Sie wurde nicht in einer Verbindung verwendet), wird Sie aus dem Pool entfernt. Die Größe des Pools wird nur durch Arbeitsspeicher Einschränkungen und-Einschränkungen auf dem Server beschränkt.  
   
- Der Treiber-Manager bestimmt, ob eine bestimmte Verbindung in einem Pool gemäß den in **SQLCONNECT** oder **SQLDriverConnect**weiter gegebenen Argumenten und gemäß den Verbindungs Attributen, die nach dem Zuordnen der Verbindung festgelegt wurden, verwendet werden soll.  
+ Der Treiber-Manager bestimmt, ob eine bestimmte Verbindung in einem Pool gemäß den in **SQLCONNECT** oder **SQLDriverConnect** weiter gegebenen Argumenten und gemäß den Verbindungs Attributen, die nach dem Zuordnen der Verbindung festgelegt wurden, verwendet werden soll.  
   
  Wenn der Treiber-Manager Verbindungen bündelt, muss er ermitteln können, ob eine Verbindung noch funktioniert, bevor die Verbindung hergestellt wird. Andernfalls übergibt der Treiber-Manager immer dann, wenn ein vorübergehender Netzwerkfehler auftritt, die unzustellbare Verbindung mit der Anwendung. In ODBC 3 *. x*: SQL_ATTR_CONNECTION_DEAD wurde ein neues Verbindungs Attribut definiert. Dabei handelt es sich um ein Schreib geschütztes Verbindungs Attribut, das entweder SQL_CD_TRUE oder SQL_CD_FALSE zurückgibt. Der Wert SQL_CD_TRUE bedeutet, dass die Verbindung verloren gegangen ist, während der Wert SQL_CD_FALSE bedeutet, dass die Verbindung noch aktiv ist. (Treiber, die früheren Versionen von ODBC entsprechen, können dieses Attribut ebenfalls unterstützen.)  
   

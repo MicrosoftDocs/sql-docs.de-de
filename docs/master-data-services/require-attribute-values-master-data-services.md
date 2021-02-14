@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a360ef13-0c34-43b8-a87e-2f5d8732d30e
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 74893d2d64a6de182206313a3d227c3a7db2f1de
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8e863605632b82b18f0dbe824fd45adbeaf22274
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456743"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353772"
 ---
 # <a name="require-attribute-values-master-data-services"></a>Erfordern von Attributwerten (Master Data Services)
 
@@ -57,7 +57,7 @@ ms.locfileid: "88456743"
   
 9. Klicken Sie im **Then** -Bereich auf **Hinzufügen**. Ein Bereich wird angezeigt.  
   
-10. Wählen Sie in der Dropdownliste **Operator** eine **erforderliche Aktion**aus.  
+10. Wählen Sie in der Dropdownliste **Operator** eine **erforderliche Aktion** aus.  
   
 11. Wählen Sie ein Attribut aus der Dropdownliste **Attribut** aus.  
   

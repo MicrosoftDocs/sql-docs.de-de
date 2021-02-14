@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: de4bcd56-dac2-45e6-95ab-9fd7f25878fc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bec2b55f7daee865489c3f32e1ee70e53b9102a6
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: ec46ed0f94ffe9bd50d0576ab7b3855011bcf775
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980631"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033160"
 ---
 # <a name="hellodata-a-simple-ado-application"></a>HelloData: Eine einfache ADO-Anwendung
 Diese einfache Anwendung führt Sie durch jeden der vier wichtigsten ADO-Vorgänge: das erhalten, untersuchen, bearbeiten und Aktualisieren von Daten. Diese Vorgänge werden für die Northwind-Beispieldatenbank ausgeführt, die in Microsoft® SQL Server enthalten ist. Um sich auf die Grundlagen von ADO zu konzentrieren und Code Übersichtlichkeit zu verhindern, ist die Fehlerbehandlung im Beispiel minimal.  

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 9e30eae0-776b-4a09-aac3-0c0249d92ca5
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 37cf62c1a0a64e8e9ab09c216f053a4eef98e084
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 214534b5afa47dbaa55661de4bf4c379540f6c32
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92257674"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339868"
 ---
 # <a name="filter-data-before-exporting-mds-add-in-for-excel"></a>Filtern von Daten vor dem Exportieren (MDS Add-In für Excel)
 

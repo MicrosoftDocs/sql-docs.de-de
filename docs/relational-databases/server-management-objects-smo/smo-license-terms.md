@@ -10,12 +10,12 @@ ms.assetid: 8f3d273c-c663-4341-aa2f-5ed8ebcba5b0
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 91301000df95b19338313d4541d7a7de4956095d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 54ef88240d40cdbab062a89dd7f19109a0f50fd8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97439817"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340098"
 ---
 # <a name="sql-server-shared-management-objects-smo-license-terms"></a>SQL Server Shared Management Objects (SMO) License Terms (Lizenzbedingungen für SQL Server Shared Management Objects (SMO))
 [!INCLUDE [SQL Server ASDB, ASDBMI, ASDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

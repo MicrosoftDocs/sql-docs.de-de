@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: b3e15a4a-98f8-4dbb-b847-bbcb20327051
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0946739b0b0aaefd1e0d6a682f0228dfa98529c9
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 1c6d70bba220624cd43ca1ced80cbe89ba936460
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80216984"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061955"
 ---
 # <a name="creating-a-custom-report-item-run-time-component"></a>Erstellen einer Laufzeitkomponente für ein benutzerdefiniertes Berichtselement
   Die Laufzeitkomponente für ein benutzerdefiniertes Berichtselement ist in einer [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]-Komponente mithilfe einer beliebigen CLS-kompatiblen Sprache implementiert und wird während der Laufzeit vom Prozessor aufgerufen. Sie definieren die Eigenschaften für die Laufzeitkomponente in der Entwurfsumgebung, indem Sie die entsprechende Entwurfszeitkomponente für ein benutzerdefiniertes Berichtselement ändern.  

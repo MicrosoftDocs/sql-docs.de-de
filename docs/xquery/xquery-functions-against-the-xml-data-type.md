@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 8df0877d-a03f-4ca9-b84e-908c4bb42b5e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8e92148b5a85ced147599eafe09156cf41c47021
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 82f3eae7098b3ac5e86355aed1e13bdd5c137015
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92037013"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352811"
 ---
 # <a name="xquery-functions-against-the-xml-data-type"></a>XQuery-Funktionen für den xml-Datentyp
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -33,16 +33,16 @@ ms.locfileid: "92037013"
   
  In der folgenden Tabelle sind die XQuery-Funktionen aufgelistet, die für den **XML**-Datentyp unterstützt werden.  
   
-|Kategorie|Funktionsname|  
+|Category|Funktionsname|  
 |--------------|-------------------|  
-|[Funktionen für numerische Werte]()|[ceiling](../xquery/numeric-values-functions-ceiling.md)|  
+|[Funktionen für numerische Werte]()|[Grenze](../xquery/numeric-values-functions-ceiling.md)|  
 ||[floor](../xquery/numeric-values-functions-floor.md)|  
-||[round](../xquery/numeric-values-functions-round.md)|  
+||[umgekehrt](../xquery/numeric-values-functions-round.md)|  
 |[XQuery-Funktionen für Zeichenfolgenwerte]()|[concat](../xquery/functions-on-string-values-concat.md)|  
 ||[contains](../xquery/functions-on-string-values-contains.md)|  
 ||[substring](../xquery/functions-on-string-values-substring.md)|  
 ||[&#40;XQuery-&#41;für Kleinbuchstaben ](../xquery/functions-on-string-values-lower-case.md)|  
-||[string-length](../xquery/functions-on-string-values-string-length.md)|  
+||[Zeichen folgen Länge](../xquery/functions-on-string-values-string-length.md)|  
 ||[&#40;XQuery-&#41;für Großbuchstaben ](../xquery/functions-on-string-values-upper-case.md)|  
 |Funktionen für boolesche Werte|[not](../xquery/functions-on-boolean-values-not-function.md)|  
 |[Funktionen auf Knoten]()|[Zahl](../xquery/functions-on-nodes-number.md)|  
@@ -54,7 +54,7 @@ ms.locfileid: "92037013"
 ||[distinct-values](../xquery/functions-on-sequences-distinct-values.md)|  
 ||[id-Funktion (XQuery)](../xquery/functions-on-sequences-id.md)|  
 |[Aggregatfunktionen &#40;XQuery&#41;]()|[count](../xquery/aggregate-functions-count.md)|  
-||[avg](../xquery/aggregate-functions-avg.md)|  
+||[AVG](../xquery/aggregate-functions-avg.md)|  
 ||[min](../xquery/aggregate-functions-min.md)|  
 ||[max](../xquery/aggregate-functions-max.md)|  
 ||[sum](../xquery/aggregate-functions-sum.md)|  

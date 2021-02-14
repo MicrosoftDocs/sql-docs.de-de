@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 292901b39a4c4f6732290ba7425f26f0bc1e6c48
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 70387a9e18888a47522613b7a76a2483aec0d287
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85901108"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080811"
 ---
 # <a name="overview-of-connection-strings-and-permissions"></a>Übersicht über Verbindungszeichenfolgen und Berechtigungen
 

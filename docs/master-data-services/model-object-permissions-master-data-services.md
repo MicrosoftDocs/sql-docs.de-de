@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: fab6335b-4cae-47de-ae7c-6c4743e0680f
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 79fcb613f985f363631b1ce26c75228bb7ab5862
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: fc4372748ee9556293eee5c074afc2f404134849
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193622"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340318"
 ---
 # <a name="model-object-permissions-master-data-services"></a>Berechtigungen für Modellobjekte (Master Data Services)
 
@@ -31,7 +31,7 @@ ms.locfileid: "92193622"
   
  Um die jedem Attributwert zugewiesene Sicherheit zu ermitteln, werden Modellobjektberechtigungen mit Hierarchieelementberechtigungen kombiniert, die die Elemente bestimmen, auf die ein Benutzer zugreifen kann.  
   
- Um einem Benutzer Zugriff auf einen anderen Funktionsbereich als **Explorer**zu gewähren, muss der Benutzer ein Modelladministrator sein, der Objektmodellen auch Administratorberechtigungen zuweisen kann. Weitere Informationen finden Sie unter [Administratoren &#40;Master Data Services&#41;](../master-data-services/administrators-master-data-services.md).  
+ Um einem Benutzer Zugriff auf einen anderen Funktionsbereich als **Explorer** zu gewähren, muss der Benutzer ein Modelladministrator sein, der Objektmodellen auch Administratorberechtigungen zuweisen kann. Weitere Informationen finden Sie unter [Administratoren &#40;Master Data Services&#41;](../master-data-services/administrators-master-data-services.md).  
   
  Berechtigungen für Modell Objekte werden in der [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] Benutzeroberfläche (User Interface, UI) im Funktionsbereich **Benutzer-und Gruppenberechtigungen** auf der Registerkarte **Modelle** zugewiesen. Auf dieser Registerkarte wird das Modell als Baumstruktur dargestellt. Wenn Sie einem Objekt in der Struktur eine Berechtigung zuweisen, wird diese Berechtigung von allen untergeordneten Objekten geerbt. Sie können die Vererbung überschreiben, indem Sie einzelnen Objekten eine Berechtigung zuweisen.  
   

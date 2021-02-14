@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 6d2bff84-624b-47fc-a4a5-d9ea01d13412
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: dea75b433d96aca750f941ef5dda8bb6b2951420
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2adfa482342431887a602043563ad3bf100f09c8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456774"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351899"
 ---
 # <a name="view-errors-that-occur-during-staging-master-data-services"></a>Anzeigen von Fehlern, die während des Stagings auftreten (Master Data Services)
 

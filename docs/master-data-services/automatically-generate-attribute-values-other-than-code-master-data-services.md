@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.assetid: b82f6f81-6e9c-4918-9ea9-4ab5f5d11b15
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 85339e8fb742bfa6e8545e72ac1ff70dc5bde6c7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 90302e701b8975d300e77cc7ca028c76825a79f6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461961"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339553"
 ---
 # <a name="automatically-generate-attribute-values-other-than-code-master-data-services"></a>Automatisches Generieren von anderen Attributwerten als Code (Master Data Services)
 
@@ -46,7 +46,7 @@ ms.locfileid: "88461961"
   
 5.  Wählen Sie aus der Liste **Elementtyp** einen Typ des Elements aus, auf das die Geschäftsregel angewendet werden soll.  
   
-6.  Behalten Sie in der Liste **Attribut** die Standardeinstellung **Alle**bei.  
+6.  Behalten Sie in der Liste **Attribut** die Standardeinstellung **Alle** bei.  
   
 7.  Klicken Sie auf **Geschäftsregel hinzufügen**.  
   
@@ -58,13 +58,13 @@ ms.locfileid: "88461961"
   
 11. Klicken Sie im Bereich **Attribute** auf das Attribut mit dem zu generierenden Wert, und ziehen Sie es in die Beschriftung **Attribut auswählen** des Bereichs **Aktion bearbeiten** .  
   
-12. Geben Sie in den Feldern **Start bei** und **Erhöhen um** einen Wert ein. Wenn Elemente bereits vorhanden sind, wird der Wert auf Grundlage des höchsten vorhandenen Werts festgelegt. Wenn der höchste vorhandene Wert zum Beispiel 299 beträgt und Sie **Erhöhen um** auf **1**festgelegt haben, wird der Wert des nächsten Elements auf 300 festgelegt.  
+12. Geben Sie in den Feldern **Start bei** und **Erhöhen um** einen Wert ein. Wenn Elemente bereits vorhanden sind, wird der Wert auf Grundlage des höchsten vorhandenen Werts festgelegt. Wenn der höchste vorhandene Wert zum Beispiel 299 beträgt und Sie **Erhöhen um** auf **1** festgelegt haben, wird der Wert des nächsten Elements auf 300 festgelegt.  
   
 13. Klicken Sie im Bereich **Aktion bearbeiten** auf **Element speichern**.  
   
 14. Klicken Sie auf **Zurück**.  
   
-15. Optional können Sie auf der Seite **Verwaltung von Geschäftsregeln** für die Zeile, die die Geschäftsregel enthält, auf eine Zelle in den Spalten **Name**, **Beschreibung**oder **Benachrichtigung** doppelklicken, um den Wert zu aktualisieren.  
+15. Optional können Sie auf der Seite **Verwaltung von Geschäftsregeln** für die Zeile, die die Geschäftsregel enthält, auf eine Zelle in den Spalten **Name**, **Beschreibung** oder **Benachrichtigung** doppelklicken, um den Wert zu aktualisieren.  
   
 16. Klicken Sie auf **Geschäftsregeln veröffentlichen**.  
   

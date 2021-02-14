@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7baa2959-9340-429b-ad53-3df03d8e13fc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d4c0dee40eb08aac425f93570c98fc88d32bcc60
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 9c334f2f78ae79b9a1af3a268728d6fcc5454f05
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85730971"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351079"
 ---
 # <a name="data-accessor-functions---string-xquery"></a>Data Accessor-Funktionen – string (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -40,15 +40,15 @@ fn:string($arg as item()?) as xs:string
  *$arg*  
  Ist ein Knoten oder ein atomarer Wert.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
   
 -   Wenn *$arg* die leere Sequenz ist, wird die Zeichenfolge der Länge 0 (null) zurückgegeben.  
   
 -   Wenn *$arg* ein Knoten ist, gibt die Funktion den Zeichen folgen Wert des Knotens zurück, der mit dem String-value-Accessor abgerufen wird. Dies wurde in der W3C XQuery 1.0- und XPath 2.0-Datenmodellspezifikation definiert.  
   
--   Wenn *$arg* ein atomarer Wert ist, gibt die Funktion die gleiche Zeichenfolge zurück, die von der Umwandlung des Ausdrucks in **xs: String**, *$arg*zurückgegeben wird, sofern nicht anders angegeben.  
+-   Wenn *$arg* ein atomarer Wert ist, gibt die Funktion die gleiche Zeichenfolge zurück, die von der Umwandlung des Ausdrucks in **xs: String**, *$arg* zurückgegeben wird, sofern nicht anders angegeben.  
   
--   Wenn der Typ der *$arg* **xs: anyURI**ist, wird der URI in eine Zeichenfolge konvertiert, ohne Sonderzeichen zu vermeiden.  
+-   Wenn der Typ der *$arg* **xs: anyURI** ist, wird der URI in eine Zeichenfolge konvertiert, ohne Sonderzeichen zu vermeiden.  
   
 -   In dieser Implementierung kann **FN: String ()** ohne Argument nur im Kontext eines kontextabhängigen Prädikats verwendet werden. Insbesondere kann die Funktion nur innerhalb von Klammern ([ ]) verwendet werden.  
   

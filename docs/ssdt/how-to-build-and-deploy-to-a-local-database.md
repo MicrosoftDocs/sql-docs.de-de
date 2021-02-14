@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: d7503049f0ea68b38206764eb3163a5a80a0b2d7
-ms.sourcegitcommit: b860fe41b873977649dca8c1fd5619f294c37a58
+ms.openlocfilehash: 598c75f5ef502d1679bd8ed7f17cb44c0f536abc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85518920"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063535"
 ---
 # <a name="how-to-build-and-deploy-to-a-local-database"></a>Gewusst wie: Erstellen und Bereitstellen in einer lokalen Datenbank
 

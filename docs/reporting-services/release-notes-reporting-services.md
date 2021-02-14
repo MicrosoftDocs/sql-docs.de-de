@@ -10,12 +10,12 @@ ms.reviewer: maggies
 author: casualoak
 ms.author: rhys
 monikerRange: '>=sql-server-2017'
-ms.openlocfilehash: 07e8b01d94d1ab9c3b9d19ab28d4ed4b3d595b2b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ccf46bca321f3b23b1cd9216aa122e2202ff8c24
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97425112"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031152"
 ---
 # <a name="release-notes-for-sql-server-reporting-services-ssrs-2017-and-later"></a>Versionshinweise für SQL Server Reporting Services (SSRS) 2017 und höher
 

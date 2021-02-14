@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: d39d3474-20e7-429f-9c8d-fcc4eb0854fc
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: fe275fe7aef826b3eeaa6ef6e959f8c8bea33b4f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ec99fc4d464037b4051da46e293efb4b2fb6969a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461722"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355287"
 ---
 # <a name="rollback-member-revision-history-master-data-services"></a>Zurücksetzen des Elementrevisionsverlaufs (Master Data Services)
 

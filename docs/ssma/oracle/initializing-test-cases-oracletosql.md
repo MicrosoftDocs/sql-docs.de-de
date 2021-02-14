@@ -11,12 +11,12 @@ ms.assetid: 45897363-cfc2-44bb-817b-7561e60b7410
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: ce2dbecbb82c02b3473cbb8af46c2549d0eebbc8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4c582dc52b76e69a78c21aee68b6b749e8e6192e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320366"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068735"
 ---
 # <a name="initializing-test-cases-oracletosql"></a>Initialisieren von Testfällen (OracleToSQL)
 In diesem Schritt geben Sie die anfänglichen Informationen für den neuen Testfall an.  

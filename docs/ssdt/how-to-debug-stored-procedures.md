@@ -12,12 +12,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: fc60da27d0176057fb7340b4db743786efe27017
-ms.sourcegitcommit: b860fe41b873977649dca8c1fd5619f294c37a58
+ms.openlocfilehash: 6c34db253855127451f375045e51418850bc824a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85518870"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018240"
 ---
 # <a name="how-to-debug-stored-procedures"></a>Gewusst wie: Debuggen von gespeicherten Prozeduren
 

@@ -9,12 +9,12 @@ ms.date: 08/21/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 60aa2f27f83b4b3e91f22e54cb85fa0794a5355f
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 3c95bb10dbd063c56029a01b5a828f80eb5ba4d3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85730644"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046688"
 ---
 # <a name="configure-hdfs-tiering-on-big-data-clusters-2019"></a>Konfigurieren von HDFS-Tiering in [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)]
 

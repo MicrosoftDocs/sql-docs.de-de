@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3e597c52-caf4-4341-8471-d1ade563dbf7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8e12ced9cf435df0b703b5277c6d0846987861df
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 128985c66f08bfbae0bde2ccd4b8665fc717d055
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172011"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054005"
 ---
 # <a name="keytypeenum"></a>KeyTypeEnum
 Gibt den Typ des [Schlüssels](./key-object-adox.md)an: primär, fremd oder eindeutig.  

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: d694a105-69b1-4ff6-99d3-1f408b916b81
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 48d78cffb116996848035e3675e707994226f080
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cad316eb2c1bd4925e72839ede2e29bccb825118
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461823"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351890"
 ---
 # <a name="create-an-index-master-data-services"></a>Erstellen eines Indexes (Master Data Services)
 
@@ -51,9 +51,9 @@ ms.locfileid: "88461823"
   
  Für jeden erstellten Index wird dem Raster eine Zeile mit vier Spalten hinzugefügt. In der folgenden Tabelle werden diese Spalten beschrieben.  
   
-|Spaltenname|Beschreibung|  
+|Spaltenname|BESCHREIBUNG|  
 |-----------------|-----------------|  
-|Status|Der Indexstatus.<br /><br /> Wenn Sie auf **Speichern**klicken, wird das Bild ![Symbol zum Aktualisieren des Status](../master-data-services/media/mds-statusicon-updating.png "Symbol für Aktualisierungs Status") angezeigt, das angibt, dass der Index aktualisiert wird.<br /><br /> Wenn beim Erstellen oder Bearbeiten eines Indexes Fehler auftreten, wird das Bild ![Symbol für den Fehlerstatus](../master-data-services/media/mds-statusicon-error.png "Symbol für Fehlerstatus") angezeigt.<br /><br /> Andernfalls lautet der Status OK, und das Bild ![Symbol für den Status OK](../master-data-services/media/mds-statusicon-ok.png "Symbol für Status OK") wird angezeigt.|  
+|Status|Der Indexstatus.<br /><br /> Wenn Sie auf **Speichern** klicken, wird das Bild ![Symbol zum Aktualisieren des Status](../master-data-services/media/mds-statusicon-updating.png "Symbol für Aktualisierungs Status") angezeigt, das angibt, dass der Index aktualisiert wird.<br /><br /> Wenn beim Erstellen oder Bearbeiten eines Indexes Fehler auftreten, wird das Bild ![Symbol für den Fehlerstatus](../master-data-services/media/mds-statusicon-error.png "Symbol für Fehlerstatus") angezeigt.<br /><br /> Andernfalls lautet der Status OK, und das Bild ![Symbol für den Status OK](../master-data-services/media/mds-statusicon-ok.png "Symbol für Status OK") wird angezeigt.|  
 |Name|Der Indexname.|  
 |Ist eindeutig|Gibt an, ob der Index eindeutig ist.|  
 |On Attributes|Zeigt die Anzeigenamen der Attribute, auf deren Basis der Index definiert ist.|  

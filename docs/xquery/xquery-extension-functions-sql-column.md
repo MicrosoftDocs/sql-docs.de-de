@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e8f67bdf-b489-49a9-9d0f-2069c1750467
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 55a38974ec5e85eeec58195c18edd1f6fb8b5cb4
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 3d2f550e3516594a269257786e109df9c84a1082
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92038063"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341873"
 ---
 # <a name="xquery-extension-functions---sqlcolumn"></a>XQuery-Erweiterungsfunktionen – sql:column()
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -60,11 +60,11 @@ sql:column("columnName")
   
  Beachten Sie im erstellten XML Folgendes:  
   
--   Die Attributwerte **ProductID**, **ProductName**und **ProductPrice** werden aus der **Product** -Tabelle abgerufen.  
+-   Die Attributwerte **ProductID**, **ProductName** und **ProductPrice** werden aus der **Product** -Tabelle abgerufen.  
   
 -   Der **ProductModelID** -Attribut Wert wird aus der **ProductModel** -Tabelle abgerufen.  
   
--   Um die Abfrage interessanter zu gestalten, wird der **ProductModelName** -Attribut Wert aus der **CatalogDescription** -Spalte vom **XML-Typ**abgerufen. Da die XML-Produktmodell-Kataloginformationen nicht für alle Produktmodelle gespeichert werden, wird die `if`-Anweisung nur zum Abrufen des Werts verwendet, wenn dieser vorhanden ist.  
+-   Um die Abfrage interessanter zu gestalten, wird der **ProductModelName** -Attribut Wert aus der **CatalogDescription** -Spalte vom **XML-Typ** abgerufen. Da die XML-Produktmodell-Kataloginformationen nicht für alle Produktmodelle gespeichert werden, wird die `if`-Anweisung nur zum Abrufen des Werts verwendet, wenn dieser vorhanden ist.  
   
     ```sql
     SELECT P.ProductID, CatalogDescription.query('  

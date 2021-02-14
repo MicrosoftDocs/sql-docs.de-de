@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 320b572f-bd5b-4055-95a6-dec5718c0041
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7433ab9f3bd6bcadda324db1a5907f4d83040575
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: f245b613c3e5e32fd2d4cc8eb09e969719ab1762
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85720009"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347913"
 ---
 # <a name="numeric-values-functions---round"></a>Funktionen für numerische Werte – round
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -47,10 +47,10 @@ fn:round ( $arg as numeric?) as numeric?
  *$arg*  
  Anzahl, auf die die Funktion angewendet wird.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn der Typ des *$arg* einer der drei numerischen Basis Typen ( **xs: float**, **xs: Double**oder **xs: Decimal**) ist, ist der Rückgabetyp identisch mit dem *$arg* Typ. Wenn der Typ *$arg* ein Typ ist, der von einem der numerischen Typen abgeleitet ist, ist der Rückgabetyp der numerische Basistyp.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn der Typ des *$arg* einer der drei numerischen Basis Typen ( **xs: float**, **xs: Double** oder **xs: Decimal**) ist, ist der Rückgabetyp identisch mit dem *$arg* Typ. Wenn der Typ *$arg* ein Typ ist, der von einem der numerischen Typen abgeleitet ist, ist der Rückgabetyp der numerische Basistyp.  
   
- Wenn die Eingabe für die **FN: Floor**-, **FN: ceiling**-oder **FN: Round** -Funktionen **xdt: untypedAtomic**, nicht typisierte Daten ist, wird Sie implizit in **xs: Double**umgewandelt.  
+ Wenn die Eingabe für die **FN: Floor**-, **FN: ceiling**-oder **FN: Round** -Funktionen **xdt: untypedAtomic**, nicht typisierte Daten ist, wird Sie implizit in **xs: Double** umgewandelt.  
   
  Alle anderen Typen führen zum Generieren eines statischen Fehlers.  
   
