@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: b77373adb76921ee526aea70528399970bda9246
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 9bc07e55af111adca6c8a995e2f40994ed2d9e5b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597022"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018250"
 ---
 # <a name="how-to--debug-database-objects"></a>Gewusst wie:  Debuggen von Datenbankobjekten
 

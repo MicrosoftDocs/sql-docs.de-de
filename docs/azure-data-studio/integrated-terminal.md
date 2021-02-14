@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: alayu, maghan, sstein
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.openlocfilehash: 09876b320e4761e6d73756d9cf7db5fc6c66a0b6
-ms.sourcegitcommit: 63aef5a96905f0b026322abc9ccb862ee497eebe
+ms.openlocfilehash: 054bfd71962a5775374e8faa567dc24242d846c1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91363997"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048340"
 ---
 # <a name="integrated-terminal"></a>Integriertes Terminal
 

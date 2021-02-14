@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 9a76083e-4902-449e-b125-7e9259fc37f7
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 0a8972f267c21fdd43b01a7316ddd199400733de
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0362be657cfa46cacf81bb989caeefeb3948cd11
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463462"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100071884"
 ---
 # <a name="save-metadata-db2tosql"></a>Speichern von Metadaten (DB2ToSQL)
 Im Dialogfeld **Metadaten speichern** werden Sie aufgefordert, Metadaten vor dem Speichern in das SSMA-Projekt zu laden. Auf diese Weise können Sie eine komplette Projektdatei verwenden, die Sie offline verwenden und an andere Personen wie z. b. technische Supportmitarbeiter senden können.  
@@ -34,12 +34,12 @@ SSMA lädt bei Bedarf Metadaten in das Projekt. Metadaten werden automatisch gel
 **Alles markieren**  
 Wählt alle aufgelisteten Datenbanken aus.  
   
-**Clear**  
+**Clear** (Deaktiviert)  
 Löscht das Kontrollkästchen für alle Datenbanken mit fehlenden Metadaten. Sie können das Kontrollkästchen nicht deaktivieren, wenn eine Metadaten geladen wurde.  
   
 **Speichern**  
 Speichert das Projekt und lädt Metadaten für ausgewählte Datenbanken, die über fehlende Metadaten verfügen.  
   
-**Abbrechen**  
+**Kündigen**  
 Bricht den Speichervorgang ab. Fehlende Metadaten werden nicht in das Projekt geladen.  
   

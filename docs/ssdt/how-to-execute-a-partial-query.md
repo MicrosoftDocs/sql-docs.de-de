@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: f9aaa7712726b37d03c7d7de0994bb8abe01a7d9
-ms.sourcegitcommit: b860fe41b873977649dca8c1fd5619f294c37a58
+ms.openlocfilehash: 25ad063fc90539647a48bac2702e0cd2b80cd53b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85518800"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018200"
 ---
 # <a name="how-to-execute-a-partial-query"></a>Gewusst wie: Ausführen einer Teilabfrage
 

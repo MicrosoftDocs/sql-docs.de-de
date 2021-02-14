@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: dd50eebd-75df-4e0d-8c4d-88b511aae4c7
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 1313699a3d82e0dbced8469f251a0a105f296246
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 3e34f70a41816dcf9a6009f8b38feb016f409a3a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91985226"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100078951"
 ---
 # <a name="installing-sql-server-migration-assistant-for-access-accesstosql"></a>Installieren von SQL Server Migration Assistant für den Zugriff (Access Token)
 
@@ -54,12 +54,12 @@ SSMA ist ein Webdownload. Informationen zum Herunterladen der neuesten Version f
 
 So installieren Sie SSMA:
   
-1. Doppelklicken Sie auf **SSMAforAccess_*n*. msi**, wobei *n* für die Buildnummer steht.
-2. Klicken Sie auf der Seite Willkommenauf **Weiter**.
+1. Doppelklicken Sie auf **SSMAforAccess_ *n*. msi**, wobei *n* für die Buildnummer steht.
+2. Klicken Sie auf der Seite **Willkommen** auf Weiter.
 
    Wenn die erforderlichen Komponenten nicht installiert sind, wird eine Meldung mit dem Hinweis angezeigt, dass Sie zunächst erforderliche Komponenten installieren müssen. Stellen Sie sicher, dass Sie alle erforderlichen Komponenten installiert haben, und führen Sie das Installationsprogramm dann erneut aus.
 
-3. Lesen Sie den End-User-Lizenzvertrag; Wenn Sie zustimmen, wählen Sie **Ich akzeptiere die Vereinbarung**aus, und klicken Sie dann auf **weiter**.
+3. Lesen Sie den End-User-Lizenzvertrag; Wenn Sie zustimmen, wählen Sie **Ich akzeptiere die Vereinbarung** aus, und klicken Sie dann auf **weiter**.
 4. Klicken Sie auf der Seite Setuptyp **auswählen** auf **typisch**.
 5. Auf der Seite **bereit zur Installation** können Sie bei jedem Start des Tools Telemetrie-und automatische Aktualisierungs Prüfungen aktivieren bzw. deaktivieren. Klicken Sie auf **Installieren**, um die Installation zu starten.
   

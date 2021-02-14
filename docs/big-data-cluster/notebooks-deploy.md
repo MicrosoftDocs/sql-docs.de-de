@@ -10,12 +10,12 @@ ms.date: 12/13/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: ac8d7bb761b95edea14d18008fbd96a968665725
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 027da3c742508ff962fcf10b084b638a7eeee708
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99235723"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044240"
 ---
 # <a name="deploy-sql-server-big-data-cluster-with-azure-data-studio-notebook"></a>Bereitstellen eines Big Data-Clusters für SQL Server mit einem Azure Data Studio-Notebook
 

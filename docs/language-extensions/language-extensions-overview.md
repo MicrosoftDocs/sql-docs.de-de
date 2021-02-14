@@ -9,12 +9,12 @@ ms.topic: overview
 ms.prod: sql
 ms.technology: language-extensions
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: 7ee2efbd49ff1d04ae9ed2ffe442a2a9479e35cf
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 50ebe13c330dba1067c2ccc61bcbc779f7bf0b05
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471761"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070611"
 ---
 # <a name="what-is-sql-server-language-extensions"></a>Was sind SQL Server-Spracherweiterungen?
 [!INCLUDE [SQL Server 2019 and later](../includes/applies-to-version/sqlserver2019.md)]

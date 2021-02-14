@@ -13,12 +13,12 @@ ms.assetid: ee5d94c0-c7a6-4779-bd32-729bdaf61e1b
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 1e8b211dc0a73ac6fd84515ce0153faa5ed7ae73
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 32a35ace86beea46d79f8eff1ea9a3ba094903fb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92038874"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100073434"
 ---
 # <a name="working-with-ssma-projects-oracletosql"></a>Arbeiten mit SSMA-Projekten (OracleToSQL)
 Wenn Sie Oracle-Datenbanken zu migrieren möchten [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , erstellen Sie zunächst ein SSMA-Projekt. Das Projekt ist eine Datei, die die folgenden Informationen enthält:  
@@ -97,7 +97,7 @@ Wenn Sie ein Projekt speichern, behält SSMA die Projekteinstellungen und option
   
     Wenn sich Schemas im Projekt geändert haben oder nicht konvertiert wurden, werden Sie von SSMA aufgefordert, Metadaten zu laden und zu speichern. Wenn Sie Metadaten laden und speichern, können Sie offline arbeiten. Außerdem können Sie eine komplette Projektdatei an andere Personen senden, z. b. technische Supportmitarbeiter. Wenn Sie zum Speichern von Metadaten aufgefordert werden, gehen Sie wie folgt vor:  
   
-    1.  Aktivieren Sie für jedes Schema, das den Status **fehlender Metadaten**anzeigt, das Kontrollkästchen neben dem Datenbanknamen.  
+    1.  Aktivieren Sie für jedes Schema, das den Status **fehlender Metadaten** anzeigt, das Kontrollkästchen neben dem Datenbanknamen.  
   
         Das Speichern von Metadaten kann einige Minuten dauern. Wenn Sie noch keine Metadaten speichern möchten, aktivieren Sie keine Kontrollkästchen.  
   
@@ -114,9 +114,9 @@ Wenn Sie ein Projekt öffnen, wird es von Oracle und von getrennt [!INCLUDE[ssNo
   
     -   Zeigen Sie im Menü **Datei** auf **zuletzt verwendete Projekte**, und klicken Sie dann auf das Projekt, das Sie öffnen möchten.  
   
-    -   Wählen Sie im Menü **Datei** die Option **Projekt öffnen**aus, suchen Sie die Projektdatei. o2ssproj, wählen Sie die Datei aus, und klicken Sie dann auf **Öffnen**.  
+    -   Wählen Sie im Menü **Datei** die Option **Projekt öffnen** aus, suchen Sie die Projektdatei. o2ssproj, wählen Sie die Datei aus, und klicken Sie dann auf **Öffnen**.  
   
-2.  Um die Verbindung mit Oracle wiederherzustellen, klicken Sie im Menü **Datei** auf **Verbindung mit Oracle wieder**herstellen.  
+2.  Um die Verbindung mit Oracle wiederherzustellen, klicken Sie im Menü **Datei** auf **Verbindung mit Oracle wieder** herstellen.  
   
 3.  Um erneut eine Verbindung mit herzustellen [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , klicken Sie im Menü **Datei** auf **Verbindung wiederherstellen, um SQL Server**.  
   

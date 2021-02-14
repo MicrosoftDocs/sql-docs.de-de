@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 41ac0e62-860a-4905-a318-68d6f814fb59
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 616a8c01e568a4223f3ba120b3a2dbc21d30f890
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 30a1d8b244c4154322a68f953d673abd2ec411fe
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88388716"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338245"
 ---
 # <a name="integration-management-functional-area-master-data-manager"></a>Funktionsbereich "Integrationsmanagement" (Master Data Manager)
 

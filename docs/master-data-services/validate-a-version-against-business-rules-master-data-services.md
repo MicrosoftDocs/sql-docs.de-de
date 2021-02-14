@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5aee7901-6d05-41d4-8bbb-c6f26791d1df
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 676a6fff88de31480737f1bb82cc0466605b4699
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9a5ad62b83d7a12129da352ef7265996dd770297
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88388316"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272381"
 ---
 # <a name="validate-a-version-against-business-rules-master-data-services"></a>Überprüfen einer Version anhand von Geschäftsregeln (Master Data Services)
 
@@ -41,9 +41,9 @@ ms.locfileid: "88388316"
   
 -   Sie müssen ein Modelladministrator sein. Weitere Informationen finden Sie unter [Administratoren &#40;Master Data Services&#41;](../master-data-services/administrators-master-data-services.md).  
   
--   Der Status der Version muss **Öffnen** oder **Gesperrt**sein.  
+-   Der Status der Version muss **Öffnen** oder **Gesperrt** sein.  
   
--   Auf der Seite **Versionen überprüfen** müssen Elemente mit einem anderen Status als **Überprüfung erfolgreich**vorhanden sein.  
+-   Auf der Seite **Versionen überprüfen** müssen Elemente mit einem anderen Status als **Überprüfung erfolgreich** vorhanden sein.  
   
 ### <a name="to-validate-a-version"></a>So überprüfen Sie eine Version  
   

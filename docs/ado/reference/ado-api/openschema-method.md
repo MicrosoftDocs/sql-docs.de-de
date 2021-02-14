@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 850cf3ce-f18f-4e7c-8597-96c1dc504866
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9b5ca92e42a68639f6b9e3044894ec779109fff5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b764f9a28665d31667e9c502c7ad8bdf0b9bbcad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170681"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041310"
 ---
 # <a name="openschema-method"></a>OpenSchema-Methode
 Ruft Datenbankschema Informationen vom Anbieter ab.  

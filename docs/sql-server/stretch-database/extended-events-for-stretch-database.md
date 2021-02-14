@@ -9,12 +9,12 @@ ms.assetid: 70485e74-2e25-4e7e-be6c-9dd1780a42e3
 author: rothja
 ms.author: jroth
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 7940de563ab3b5dbee0fe59fb93f1dfe2d02ce3b
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: f965b68279398720ff7b1b9bcb76b5ec73410466
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988256"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080061"
 ---
 # <a name="extended-events-for-stretch-database"></a>Erweiterte Ereignisse für Stretch Database
 [!INCLUDE [sqlserver2016-windows-only](../../includes/applies-to-version/sqlserver2016-windows-only.md)]

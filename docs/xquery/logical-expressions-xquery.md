@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: de94cd2e-2d48-49fb-9ebd-a2d90c79bf62
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 140a1631cfd4b7068e4729004f7aa41d9535a904
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 44f05374320dc2d5c329ad234e62dd0c420bf22c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85717184"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341855"
 ---
 # <a name="logical-expressions-xquery"></a>Logische Ausdrücke (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]

@@ -13,12 +13,12 @@ ms.reviewer: maghan
 ms.custom: seo-lt-2019
 ms.date: 02/20/2020
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||=azuresqldb-mi-current'
-ms.openlocfilehash: 8913e553460c9fae3d008783d571aca81b5c21a4
-ms.sourcegitcommit: 44eebb659f9b226c08aea6c31a909b22ad4fec60
+ms.openlocfilehash: cf088c407a95d32f3cfc7413b55ec41661126e78
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97860571"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077236"
 ---
 # <a name="download-sql-server-data-tools-ssdt-for-visual-studio"></a>Herunterladen von SQL Server Data Tools (SSDT) für Visual Studio 2015
 

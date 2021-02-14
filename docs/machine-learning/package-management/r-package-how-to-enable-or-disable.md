@@ -8,12 +8,12 @@ ms.topic: how-to
 author: garyericson
 ms.author: garye
 monikerRange: =sql-server-2016||=sql-server-2017
-ms.openlocfilehash: c425d2c544069f19414e6731cdcd1f9290f07f36
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 728dc656d3fdb94abae0a5c2c0e2665af2c4807c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470971"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100073919"
 ---
 # <a name="enable-or-disable-remote-package-management-for-sql-server"></a>Aktivieren oder Deaktivieren der Remoteverwaltung von R-Paketen für SQL Server
 [!INCLUDE [SQL Server 2016 and 2017 only](../../includes/applies-to-version/sqlserver2016-2017-only.md)]

@@ -11,12 +11,12 @@ ms.reviewer: alayu, sstein, maghan
 ms.custom: tools|mssql-cli
 ms.date: 02/22/2018
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: 345d188106877f5f5aa6740c7e4db7c0c0511bfb
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1514c776944b66757a23baf06bb5169f66171f2d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471781"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033520"
 ---
 # <a name="mssql-cli-command-line-query-tool-for-sql-server-preview"></a>Befehlszeilenabfrage-Tool „mssql-cli“ für SQL Server (Vorschau)
 

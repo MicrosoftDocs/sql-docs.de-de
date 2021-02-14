@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 4ab3f003-2a3b-4268-9e88-b615e35701b2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 035b92b719431b5a9b74f951f20d51911a41d59c
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 91fc5595dadad3a3cf4c8d95c4db1da5406a968f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92035774"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100335859"
 ---
 # <a name="functions-related-to-qnames---namespace-uri-from-qname"></a>Funktionen, die sich auf QNames beziehen – namespace-uri-from-QName
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
 
-  Gibt eine Zeichenfolge zurück, die den Namespace-URI des von *$arg*angegebenen QName darstellt. Das Ergebnis ist die leere Sequenz, wenn *$arg* die leere Sequenz ist.  
+  Gibt eine Zeichenfolge zurück, die den Namespace-URI des von *$arg* angegebenen QName darstellt. Das Ergebnis ist die leere Sequenz, wenn *$arg* die leere Sequenz ist.  
   
 ## <a name="syntax"></a>Syntax  
   

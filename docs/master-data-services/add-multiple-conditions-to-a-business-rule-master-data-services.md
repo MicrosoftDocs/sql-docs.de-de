@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 5f0f6958-6cf2-444b-bdcd-05b887637a0b
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: a3ecfda6bd7b2bbd885cc8cc4b12917289dd3142
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e5529b10ef0a293a19c45eb8a0e904fcf1fc0f42
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88495058"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339692"
 ---
 # <a name="add-multiple-conditions-to-a-business-rule-master-data-services"></a>Hinzufügen mehrerer Bedingungen zu einer Geschäftsregel (Master Data Services)
 
@@ -54,7 +54,7 @@ ms.locfileid: "88495058"
   
 7.  Klicken Sie auf **Bearbeiten**.  
   
-8.  Wählen Sie unter dem **IF** -Abschnitt auf der linken Seite in der Dropdownliste des logischen Operators **UND/ODER/NICHT**aus.  
+8.  Wählen Sie unter dem **IF** -Abschnitt auf der linken Seite in der Dropdownliste des logischen Operators **UND/ODER/NICHT** aus.  
   
 9. Klicken Sie auf **Hinzufügen**. Ein Bereich wird angezeigt.  
   

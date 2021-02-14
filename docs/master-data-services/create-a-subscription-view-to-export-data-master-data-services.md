@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a5e28961-af16-414a-9845-d2e06aac5214
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 381d089aa124f44161b3fd5f1102f7377719f142
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 4181704586d8a0316567ba4548ccd263d4117d79
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85812763"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272601"
 ---
 # <a name="create-a-subscription-view-to-export-data-master-data-services"></a>Erstellen einer Abonnementsicht zum Exportieren von Daten (Master Data Services)
 
@@ -50,7 +50,7 @@ ms.locfileid: "85812763"
   
 6.  Wählen Sie **Include soft-deleted members**(vorläufig gelöschte Elemente miteinbeziehen) aus, um vorläufig gelöschte Elemente in die Sicht miteinzubeziehen.  
   
-7.  Wählen Sie unter **Versionsoptionen** entweder die Option **Version** oder die Option **Versionsflag**aus, und wählen Sie dann aus der entsprechenden Liste aus.  
+7.  Wählen Sie unter **Versionsoptionen** entweder die Option **Version** oder die Option **Versionsflag** aus, und wählen Sie dann aus der entsprechenden Liste aus.  
   
     > [!TIP]  
     >  Erstellen Sie auf Grundlage eines Versionsflags eine Abonnementsicht. Wenn Sie eine Version sperren, können Sie das Flag einer geöffneten Version erneut zuweisen, ohne die Abonnementsicht zu aktualisieren.  
@@ -68,8 +68,8 @@ ms.locfileid: "85812763"
   
 |Spalte|BESCHREIBUNG|  
 |------------|-----------------|  
-|Status|Der Status der Sicht.<br /><br /> Wenn Sie auf **Speichern**klicken, wird das Bild ![Symbol zum Aktualisieren des Status](../master-data-services/media/mds-statusicon-updating.png "Symbol für Aktualisierungs Status") angezeigt, das angibt, dass die Ansicht aktualisiert wird.<br /><br /> Wenn beim Erstellen oder Bearbeiten einer Sicht Fehler auftreten, wird das Bild ![Symbol für den Fehlerstatus](../master-data-services/media/mds-statusicon-error.png "Symbol für Fehlerstatus") angezeigt.<br /><br /> Andernfalls lautet der Status "OK", und das Bild ![Symbol für den Status OK](../master-data-services/media/mds-statusicon-ok.png "Symbol für Status OK") wird angezeigt.|  
-|name|Der Name der Abonnementsicht.|  
+|Status|Der Status der Sicht.<br /><br /> Wenn Sie auf **Speichern** klicken, wird das Bild ![Symbol zum Aktualisieren des Status](../master-data-services/media/mds-statusicon-updating.png "Symbol für Aktualisierungs Status") angezeigt, das angibt, dass die Ansicht aktualisiert wird.<br /><br /> Wenn beim Erstellen oder Bearbeiten einer Sicht Fehler auftreten, wird das Bild ![Symbol für den Fehlerstatus](../master-data-services/media/mds-statusicon-error.png "Symbol für Fehlerstatus") angezeigt.<br /><br /> Andernfalls lautet der Status "OK", und das Bild ![Symbol für den Status OK](../master-data-services/media/mds-statusicon-ok.png "Symbol für Status OK") wird angezeigt.|  
+|Name|Der Name der Abonnementsicht.|  
 |Modell|Der Name des Modells.|  
 |Version|Der Name der Version.|  
 |Version|Der Name des Versionsflags.|  

@@ -12,12 +12,12 @@ dev_langs:
 author: markingmyname
 ms.author: maghan
 ms.date: 01/15/2021
-ms.openlocfilehash: 0983317d1d5c59e486764532708c566bb740000a
-ms.sourcegitcommit: 23649428528346930d7d5b8be7da3dcf1a2b3190
+ms.openlocfilehash: 7e4bb93f4a3a992c5033061ca8a2e0209125a5fa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98245703"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100076621"
 ---
 # <a name="options-azure-services"></a>Optionen (Azure-Dienste)
 

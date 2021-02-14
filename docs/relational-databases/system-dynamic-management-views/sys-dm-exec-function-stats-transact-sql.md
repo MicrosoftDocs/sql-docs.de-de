@@ -2,7 +2,7 @@
 description: sys.dm_exec_function_stats (Transact-SQL)
 title: sys.dm_exec_function_stats (Transact-SQL) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 05/30/2019
+ms.date: 02/10/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse
 ms.reviewer: ''
@@ -19,17 +19,17 @@ ms.assetid: 4c3d6a02-08e4-414b-90be-36b89a0e5a3a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 788596936cf6ce9c8d2ca0a618b441fcbd0f7624
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: be2d102b81bf5535354b99cc3405d50a0bf94915
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099790"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100342985"
 ---
 # <a name="sysdm_exec_function_stats-transact-sql"></a>sys.dm_exec_function_stats (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]
 
-  Gibt aggregierte Leistungsstatistiken für zwischengespeicherte Funktionen zurück. Die Sicht gibt eine Zeile für jeden zwischengespeicherten Funktionsplan zurück, und die Lebensdauer der Zeile ist so lange, wie die Funktion zwischengespeichert bleibt. Wenn eine Funktion aus dem Cache entfernt wird, wird die entsprechende Zeile aus dieser Sicht gelöscht. Zu diesem Zeitpunkt wird ein Leistungsstatistik-SQL-Ablaufverfolgungsereignis ausgelöst, das **sys.dm_exec_query_stats** entspricht. Gibt Informationen zu skalaren Funktionen zurück, einschließlich in-Memory-Funktionen und CLR-Skalarfunktionen. Gibt keine Informationen zu Tabellenwert Funktionen zurück.  
+  Gibt aggregierte Leistungsstatistiken für zwischengespeicherte Funktionen zurück. Die Sicht gibt eine Zeile für jeden zwischengespeicherten Funktionsplan zurück, und die Lebensdauer der Zeile ist so lange, wie die Funktion zwischengespeichert bleibt. Wenn eine Funktion aus dem Cache entfernt wird, wird die entsprechende Zeile aus dieser Sicht gelöscht. Zu diesem Zeitpunkt wird ein Leistungsstatistik-SQL-Ablaufverfolgungsereignis ausgelöst, das **sys.dm_exec_query_stats** entspricht. Gibt Informationen zu skalaren Funktionen zurück, einschließlich in-Memory-Funktionen und CLR-Skalarfunktionen. Gibt keine Informationen zu Tabellenwert Funktionen und zu Skalarfunktionen zurück, die mit [skalaren UDF-Inlining](../../relational-databases/user-defined-functions/scalar-udf-inlining.md)Inline sind.
   
  In [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]können dynamische Verwaltungssichten keine Informationen verfügbar machen, die sich auf die Datenbankkapselung auswirken würden oder die sich auf andere Datenbanken beziehen, auf die der Benutzer Zugriff hat. Um zu vermeiden, dass diese Informationen verfügbar gemacht werden, wird jede Zeile, die Daten enthält, die nicht zum verbundenen Mandanten gehören, herausgefiltert.  
   
@@ -37,7 +37,7 @@ ms.locfileid: "98099790"
 > Die Ergebnisse von **sys.dm_exec_function_stats**  können bei jeder Ausführung variieren, da die Daten nur abgeschlossene Abfragen widerspiegeln, und keine, die noch aktiv sind. 
 
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**database_id**|**int**|Datenbank-ID, in der sich die Funktion befindet.|  
 |**object_id**|**int**|Objekt-ID der Funktion.|  
@@ -76,12 +76,12 @@ ms.locfileid: "98099790"
 ## <a name="permissions"></a>Berechtigungen  
 
 In [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] ist die- `VIEW SERVER STATE` Berechtigung erforderlich.   
-Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken `Server admin` oder ein `Azure Active Directory admin` Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
+Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken das [Server Administrator](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
   
 ## <a name="examples"></a>Beispiele  
  Im folgenden Beispiel werden Informationen zu den zehn wichtigsten Funktionen zurückgegeben, die nach durchschnittlich verstrichener Zeit identifiziert werden.  
   
-```  
+```sql  
 SELECT TOP 10 d.object_id, d.database_id, OBJECT_NAME(object_id, database_id) 'function name',   
     d.cached_time, d.last_execution_time, d.total_elapsed_time,  
     d.total_elapsed_time/d.execution_count AS [avg_elapsed_time],  

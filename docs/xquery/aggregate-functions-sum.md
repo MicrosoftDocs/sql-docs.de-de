@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 12288f37-b54c-4237-b75e-eedc5fe8f96d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5f329d4e4684997138d3c54e6b2831d70b961a93
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: e9d68fba9560ef4b0fe99f1263e8d65c57a7c6a2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85765649"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341932"
 ---
 # <a name="aggregate-functions---sum"></a>Aggregatfunktionen – sum
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -39,7 +39,7 @@ fn:sum($arg as xdt:anyAtomicType*) as xdt:anyAtomicType
  *$arg*  
  Sequenz aus atomaren Werten, deren Summe berechnet werden soll.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  Alle Typen von atomisierten Werten, die an **Sum ()** übermittelt werden, müssen Untertypen desselben Basistyps sein. Zu den akzeptierten Basistypen zählen die drei integrierten numerischen Basistypen oder xdt:untypedAtomic. Werte des Typs xdt:untypedAtomic werden in xs:double umgewandelt. Wenn eine Mischung dieser Typen vorliegt oder andere Werte anderer Typen übermittelt werden, wird ein statischer Fehler ausgelöst.  
   
  Das Ergebnis von **Sum ()** empfängt den Basistyp der im Fall von xdt: untypedAtomic eingegebenen Typen, wie z. b. xs: Double, auch dann, wenn es sich bei der Eingabe optional um die leere Sequenz handelt. Wenn die Eingabe statisch leer ist, ist das Ergebnis 0 mit dem statischen und dynamischen Typ xs:integer.  

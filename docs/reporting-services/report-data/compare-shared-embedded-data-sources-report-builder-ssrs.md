@@ -8,12 +8,12 @@ ms.technology: report-data
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 25721242123d34c1cb4b826cd937df2decf02523
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5e2c72ad95392be7571c05e1dddcee1ed35c3d6a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88484993"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100042220"
 ---
 # <a name="compare-shared-and-embedded-data-sources---report-builder--reporting-services-ssrs"></a>Vergleichen von freigegebenen und eingebetteten Datenquellen: Berichts-Generator und Reporting Services (SSRS)
 

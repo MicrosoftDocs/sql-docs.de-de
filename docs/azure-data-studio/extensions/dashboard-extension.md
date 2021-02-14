@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: alayu, maghan
 ms.custom: ''
 ms.date: 08/28/2020
-ms.openlocfilehash: d933f9bdff4279b841522f8a0e09f66e01364630
-ms.sourcegitcommit: fa63019cbde76dd981b0c5a97c8e4d57e8d5ca4e
+ms.openlocfilehash: 400dae97922503d37b1ca1c2b726264032fa12cb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99495754"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048600"
 ---
 # <a name="create-an-azure-data-studio-dashboard-extension"></a>Erstellen einer Azure Data Studio-Dashboarderweiterung
 

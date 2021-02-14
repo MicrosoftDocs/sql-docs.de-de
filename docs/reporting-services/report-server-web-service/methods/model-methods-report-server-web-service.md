@@ -9,12 +9,12 @@ ms.topic: reference
 ms.assetid: d3e658c9-bb22-480b-a3d5-bcde8f537ab2
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 73d4a0ee4c5db4059dfe5ceac908b92d41ab8a45
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 082c5b37029782a2e1222639199a3da4dee025b3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "79198237"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100015250"
 ---
 # <a name="model-methods---report-server-web-service"></a>Modellmethoden – Berichtsserver-Webdienst
   Sie können Modelle mithilfe dieser Methoden verwalten.  

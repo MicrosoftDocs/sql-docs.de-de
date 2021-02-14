@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 22785062-4faf-46ee-bffa-01cbd6d5a5b3
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: b71ffdf22c3a6758ee81d92f5f25300784d73fff
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 21604b52105714bd9982f92bf27e848a0f5bb1f2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88389186"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272561"
 ---
 # <a name="entity-permissions-master-data-services"></a>Entitätsberechtigungen (Master Data Services)
 
@@ -27,7 +27,7 @@ ms.locfileid: "88389186"
 
   Entitätsberechtigungen gelten für:  
   
--   Alle Attribute der Entität, einschließlich **Name** und **Code**für Blatt- und konsolidierte Elemente.  
+-   Alle Attribute der Entität, einschließlich **Name** und **Code** für Blatt- und konsolidierte Elemente.  
   
 -   Alle Collections der Entität.  
   

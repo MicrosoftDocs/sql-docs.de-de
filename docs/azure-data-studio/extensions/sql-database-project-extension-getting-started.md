@@ -9,12 +9,12 @@ ms.author: drskwier
 ms.reviewer: maghan
 ms.custom: ''
 ms.date: 07/30/2020
-ms.openlocfilehash: cd818010b068ccd206f411ce8c578386d0b8772f
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 397bdebe2bdea292009e0216c6b3004ac9475b18
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91123363"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040314"
 ---
 # <a name="getting-started-with-the-sql-database-projects-extension-preview"></a>Erste Schritte mit der Erweiterung „SQL Database Projects“ (Vorschau)
 

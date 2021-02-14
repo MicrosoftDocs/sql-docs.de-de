@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: b93fa36c-bf69-46b9-b137-f597d66fd0c0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d1eccee8a5acfbb810ed7636f5d073c2644f0342
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6d69a916d19c519e1b313a7244a6a07feba36a67
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85759485"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339989"
 ---
 # <a name="path-expressions-xquery"></a>Pfadausdrücke (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "85759485"
   Über XQuery-Pfadausdrücke werden in einem Dokument enthaltene Knoten gesucht, z. B. Element-, Attribut- und Textknoten. Das Ergebnis eines Pfadausdrucks erscheint immer in der Dokumentreihenfolge ohne Duplikatknoten in der Ergebnissequenz. Beim Angeben eines Pfads können Sie entweder die vollständige oder die abgekürzte Syntax verwenden. Die folgenden Informationen beziehen sich auf die ungekürzte Syntax. Die abgekürzte Syntax wird anschließend beschrieben.  
   
 > [!NOTE]  
->  Da die Beispielabfragen in diesem Thema anhand der Spalten des **XML** -Typs **CatalogDescription** und **instructions**in der **ProductModel** -Tabelle angegeben werden, sollten Sie sich mit dem Inhalt und der Struktur der in diesen Spalten gespeicherten XML-Dokumente vertraut machen.  
+>  Da die Beispielabfragen in diesem Thema anhand der Spalten des **XML** -Typs **CatalogDescription** und **instructions** in der **ProductModel** -Tabelle angegeben werden, sollten Sie sich mit dem Inhalt und der Struktur der in diesen Spalten gespeicherten XML-Dokumente vertraut machen.  
   
  Ein Pfadausdruck kann relativ oder absolut sein. Beide sind im Folgenden beschrieben:  
   

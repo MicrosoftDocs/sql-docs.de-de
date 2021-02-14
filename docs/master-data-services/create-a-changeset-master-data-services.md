@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: cfad6f1c-9125-4896-b5f5-a4b9f9593cc4
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: ea6b6f0da9dc2660b91cd6432331256854a1d80c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7aa771612709a47f5dce24038af6307dc41d95e7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88495057"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272731"
 ---
 # <a name="create-a-changeset-master-data-services"></a>Erstellen eines Changesets (Master Data Services)
 
@@ -48,9 +48,9 @@ ms.locfileid: "88495057"
   
 2.  Klicken Sie im Menü **Entitäten** auf eine Entität.  
   
-3.  Ändern Sie die Entität, und klicken Sie auf**OK**.  
+3.  Ändern Sie die Entität, und klicken Sie auf **OK**.  
   
-4.  Das Dialogfeld**Changeset auswählen** wird angezeigt.  
+4.  Das Dialogfeld **Changeset auswählen** wird angezeigt.  
   
 5.  Klicken Sie auf **Neu**, geben Sie einen Namen für das Changeset ein, und klicken Sie anschließend auf **Speichern**. Der Changesetname muss innerhalb eines Modells eindeutig sein.  
   

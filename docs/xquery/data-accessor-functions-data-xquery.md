@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 511b5d7d-c679-4cb2-a3dd-170cc126f49d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a5d0940f6e182d477d2c0660f4c93aaa9fedeb6f
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 4e20c00d93082994cd5dc230bfe1b4356b3ed031
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85643549"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338506"
 ---
 # <a name="data-accessor-functions---data-xquery"></a>Data Accessor-Funktionen – data (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
 
-  Gibt den typisierten Wert für jedes Element zurück, das durch *$arg*angegeben wird.  
+  Gibt den typisierten Wert für jedes Element zurück, das durch *$arg* angegeben wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,7 +39,7 @@ fn:data ($arg as item()*) as xdt:untypedAtomic*
  *$arg*  
  Sequenz der Items, deren typisierte Werte zurückgegeben werden.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  Für typisierte Werte gilt Folgendes:  
   
 -   Der typisierte Wert eines atomaren Werts ist der atomare Wert.  
@@ -56,9 +56,9 @@ fn:data ($arg as item()*) as xdt:untypedAtomic*
   
 -   Wenn ein Attributknoten mit einem XML-Schematyp typisiert wird, ist dessen typisierter Wert der entsprechende typisierte Wert.  
   
--   Wenn der Attribut Knoten nicht typisiert ist, ist der typisierte Wert gleich seinem Zeichen folgen Wert, der als Instanz von **xdt: untypedAtomic**zurückgegeben wird.  
+-   Wenn der Attribut Knoten nicht typisiert ist, ist der typisierte Wert gleich seinem Zeichen folgen Wert, der als Instanz von **xdt: untypedAtomic** zurückgegeben wird.  
   
--   Wenn der Elementknoten nicht typisiert wurde, ist der typisierte Wert gleich seinem Zeichen folgen Wert, der als Instanz von **xdt: untypedAtomic**zurückgegeben wird.  
+-   Wenn der Elementknoten nicht typisiert wurde, ist der typisierte Wert gleich seinem Zeichen folgen Wert, der als Instanz von **xdt: untypedAtomic** zurückgegeben wird.  
   
  Für typisierte Elementknoten gilt Folgendes:  
   
@@ -126,7 +126,7 @@ WHERE ProductModelID = 19
   
  In den folgenden Beispielen werden-Instanzen veranschaulicht, in denen die **Data ()** -Funktion erforderlich ist.  
   
- In der folgenden Abfrage gibt **$pd/p1: Spezifikationen/Material** das <`Material`>-Element zurück. Außerdem gibt **Data ($PD/P1: Spezifikationen/Material)** Zeichendaten zurück, die als xdt: untypedAtomic typisiert sind, da <`Material`> nicht typisiert ist. Wenn die Eingabe nicht typisiert ist, wird das Ergebnis der **Daten ()** als **xdt: untypedAtomic**typisiert.  
+ In der folgenden Abfrage gibt **$pd/p1: Spezifikationen/Material** das <`Material`>-Element zurück. Außerdem gibt **Data ($PD/P1: Spezifikationen/Material)** Zeichendaten zurück, die als xdt: untypedAtomic typisiert sind, da <`Material`> nicht typisiert ist. Wenn die Eingabe nicht typisiert ist, wird das Ergebnis der **Daten ()** als **xdt: untypedAtomic** typisiert.  
   
 ```  
 SELECT CatalogDescription.query('  

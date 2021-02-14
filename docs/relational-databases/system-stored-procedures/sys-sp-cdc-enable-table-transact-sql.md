@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 26150c09-2dca-46ad-bb01-3cb3165bcc5d
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: fe8e347cb82fa1b89ad03ebb152a8d0257f0985b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f499a26e4884518e002b5d33d9f9cb25b7c1457e
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99205992"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100339392"
 ---
 # <a name="syssp_cdc_enable_table-transact-sql"></a>sys.sp_cdc_enable_table (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -99,7 +99,12 @@ sys.sp_cdc_enable_table
   
 > [!IMPORTANT]  
 >  SWITCH PARTITION ist ein Metadatenvorgang, verursacht jedoch Datenänderungen. Die mit diesem Vorgang verbundenen Datenänderungen werden nicht in den Change Data Capture-Änderungstabellen aufgezeichnet. Beispiel: An einer Tabelle mit drei Partitionen werden Änderungen vorgenommen. Mit dem Aufzeichnungsprozess werden Einfüge-, Update- und Löschvorgänge verfolgt, die Benutzer in der Tabelle ausführen. Wenn jedoch eine Partition in eine andere Tabelle ausgelagert wird (z. B. zur Durchführung einer Massenlöschung), werden die verschobenen Zeilen in der Änderungstabelle nicht als gelöschte Zeilen aufgezeichnet. Wenn der Tabelle eine neue Partition mit vorab ausgefüllten Zeilen hinzugefügt wird, werden diese Zeilen auch nicht in der Änderungstabelle erfasst. Dies kann zu inkonsistenten Daten führen, wenn die Änderungen von einer Anwendung belegt und auf ein Ziel angewendet werden.  
-  
+ 
+> [!NOTE] 
+> Bevor Sie einen Split-oder Merge-Vorgang für eine CDC-fähige Tabelle ausführen, stellen Sie sicher, dass für die Partition keine ausstehenden replizierten Befehle vorhanden sind und dass während der Split-oder Merge-Vorgänge keine DML-Vorgänge ausgeführt werden. Nicht verarbeitete Transaktionen oder DML-Vorgänge können zu Verarbeitungsfehlern `Error 608: No catalog entry found for partitionID` beim Protokoll Lese-Agent oder CDC-Aufzeichnungs Auftrag führen. Möglicherweise muss CDC für die Tabelle deaktiviert werden, damit der Split-oder Merge-Vorgang fortgesetzt werden kann. 
+
+
+
 ## <a name="return-code-values"></a>Rückgabecodewerte  
  **0** (Erfolg) oder **1** (Fehler)  
   

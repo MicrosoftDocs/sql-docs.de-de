@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 59c98e39bccbb6d4f74ddb5e9494e7fc4bced3eb
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 5e3905a3ded61ac6ef99f9ada4e94ffaab77a36c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91985076"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100016680"
 ---
 # <a name="walkthrough-extend-database-project-build-to-generate-model-statistics"></a>Exemplarische Vorgehensweise: Erweitern von Datenbankprojekten zum Generieren von Modellstatistiken
 
@@ -93,7 +93,7 @@ Zum Erstellen eines Erstellungs-Contributors führen Sie folgende Aufgaben aus:
   
 4.  Wählen Sie den Eintrag **System.ComponentModel.Composition** aus, und klicken Sie dann auf **OK**.  
   
-5.  Erforderliche SQL-Verweise hinzufügen: Klicken Sie mit der rechten Maustaste auf den Projektknoten, und klicken Sie dann auf **Verweis hinzufügen**. Klicken Sie auf die Schaltfläche **Durchsuchen** . Navigieren Sie zum Ordner **C:\Programme (x86)\Microsoft SQL Server\110\DAC\Bin**. Wählen Sie die Einträge **Microsoft.SqlServer.Dac.dll**, **Microsoft.SqlServer.Dac.Extensions.dll**und **Microsoft.Data.Tools.Schema.Sql.dll** , und klicken Sie dann auf **OK**.  
+5.  Erforderliche SQL-Verweise hinzufügen: Klicken Sie mit der rechten Maustaste auf den Projektknoten, und klicken Sie dann auf **Verweis hinzufügen**. Klicken Sie auf die Schaltfläche **Durchsuchen** . Navigieren Sie zum Ordner **C:\Programme (x86)\Microsoft SQL Server\110\DAC\Bin**. Wählen Sie die Einträge **Microsoft.SqlServer.Dac.dll**, **Microsoft.SqlServer.Dac.Extensions.dll** und **Microsoft.Data.Tools.Schema.Sql.dll** , und klicken Sie dann auf **OK**.  
   
     Beginnen Sie als Nächstes, der Klasse Code hinzuzufügen.  
   
@@ -440,7 +440,7 @@ Zum Erstellen eines Erstellungs-Contributors führen Sie folgende Aufgaben aus:
   
 4.  Klicken Sie unter **Schlüsseldatei mit starkem Namen auswählen:** auf **<New>** .  
   
-5.  Geben Sie im Dialogfeld **Schlüssel für einen starken Namen erstellen** unter **Schlüsseldateiname** **MyRefKey**ein.  
+5.  Geben Sie im Dialogfeld **Schlüssel für einen starken Namen erstellen** unter **Schlüsseldateiname** **MyRefKey** ein.  
   
 6.  (optional) Sie können ein Kennwort für Ihre Schlüsseldatei mit starkem Namen angeben.  
   

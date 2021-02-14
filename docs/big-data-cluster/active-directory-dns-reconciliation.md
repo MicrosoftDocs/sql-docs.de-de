@@ -8,12 +8,12 @@ ms.date: 09/30/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 63a5c53e64ece7650e65414fd24ddd82d6da5324
-ms.sourcegitcommit: 783b35f6478006d654491cb52f6edf108acf2482
+ms.openlocfilehash: a20afc81637eba30427b7b1062738b2d81ae67a0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91892460"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100047880"
 ---
 # <a name="active-directory-and-kubernetes-dns-reconciliation-in-big-data-clusters-deployments"></a>Active Directory- und Kubernetes-DNS-Abstimmung in Big Data-Cluster-Bereitstellungen
 

@@ -9,12 +9,12 @@ ms.date: 09/22/2020
 ms.topic: reference
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 536e9b87cd6c6477b235746a792f3585e4f3259d
-ms.sourcegitcommit: 29a2be59c56f8a4b630af47760ef38d2bf56a3eb
+ms.openlocfilehash: 1b68597661d889043a6a0b4a182209b6769f736c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92358368"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048740"
 ---
 # <a name="azdata-bdc-status"></a>azdata bdc status
 

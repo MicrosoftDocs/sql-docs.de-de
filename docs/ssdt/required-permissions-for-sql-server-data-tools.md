@@ -10,12 +10,12 @@ ms.assetid: b27038c4-94ab-449c-90b7-29d87ce37a8b
 author: markingmyname
 ms.author: maghan
 ms.reviewer: “”
-ms.openlocfilehash: 5637af0406176ba8099038eaa8a2500d2f03629e
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: 6e519a3786b45d87344f8f5f5355353fd5865d62
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87243721"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100072454"
 ---
 # <a name="required-permissions-for-sql-server-data-tools"></a>Erforderliche Berechtigungen für SQL Server Data Tools
 

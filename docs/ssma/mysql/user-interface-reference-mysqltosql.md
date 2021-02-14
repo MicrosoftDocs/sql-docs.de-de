@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 2fad3fa2-5729-4b96-99d4-2c6edfab0a54
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 47633dca91b3cf240ef745b186e01d4795de7d37
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: f2e74f5138108d4f7bcc8f4d7a3b2f8f008ab455
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92035153"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074481"
 ---
 # <a name="user-interface-reference-mysqltosql"></a>Referenz zur Benutzeroberfläche (MySqlToSql)
 Dieser Abschnitt enthält Hilfe Themen für SQL Server Migration Assistant (SSMA) für MySQL.  
@@ -23,7 +23,7 @@ Dieser Abschnitt enthält Hilfe Themen für SQL Server Migration Assistant (SSMA
 ## <a name="in-this-section"></a>In diesem Abschnitt  
 In der folgenden Tabelle sind die SSMA-Dialogfelder aufgeführt:  
   
-|Thema|Beschreibung|  
+|Thema|BESCHREIBUNG|  
 |-|-|  
 |[Erweiterte Objektauswahl &#40;mysqlto SQL&#41;](../../ssma/mysql/advanced-object-selection-mysqltosql.md)|Verwenden Sie das Dialogfeld **Erweiterte Objektauswahl** , um mithilfe von Filterkriterien Datenbankobjekte zu suchen, und wählen Sie diese Objekte aus, oder löschen Sie Sie.|  
 |[Bewertungsbericht &#40;mysqlto SQL&#41;](../../ssma/mysql/assessment-report-mysqltosql.md)|Verwenden Sie den Bericht, um die Ergebnisse der Konvertierung von MySQL-Objekten in die Transact-SQL-Syntax anzuzeigen und um die Zeit und die Komplexität einer Migration zu SQL Server einzuschätzen.|  

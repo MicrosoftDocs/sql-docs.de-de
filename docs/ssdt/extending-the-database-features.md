@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: cd0ba3850c401c57b0f478eba1ba6f8013f4a4d0
-ms.sourcegitcommit: b860fe41b873977649dca8c1fd5619f294c37a58
+ms.openlocfilehash: b0ae38d1d1c8950c6be90ca1e775bdbb2870278b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85518950"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100079531"
 ---
 # <a name="extending-the-database-features"></a>Erweitern der Datenbankfunktionen
 

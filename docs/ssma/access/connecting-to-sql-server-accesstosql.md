@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: f84cf007-ddf1-4396-a07c-3e0729abc769
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 1bd54d3fdf90447dbbf8b35a96c6b454ca6c4e56
-ms.sourcegitcommit: 82b92f73ca32fc28e1948aab70f37f0efdb54e39
+ms.openlocfilehash: 59583057641bb167aae197dd9fae3bf6e5833302
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94869562"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100076191"
 ---
 # <a name="connecting-to-sql-server-accesstosql"></a>Herstellen einer Verbindung mit SQL Server (accesstosql)
 

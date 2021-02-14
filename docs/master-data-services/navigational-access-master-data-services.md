@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 3403b7b0-44e2-48c3-a1b7-9c4612b874b8
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: bd1879ee534a3f17de39b1b632a0fcaeb835abbf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d9813ed487942783a589f704e2385e58c90ada21
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88343116"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340307"
 ---
 # <a name="navigational-access-master-data-services"></a>Navigationszugriff (Master Data Services)
 

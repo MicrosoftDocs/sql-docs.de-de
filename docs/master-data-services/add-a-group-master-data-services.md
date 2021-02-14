@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: c7a88381-3b2c-4af7-9cf7-3a930c1abdee
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 2a5693bfcc62beaad8f5423d6e5d3dbee5cd7fb7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8ddc803c87e5c899f482a123f3217c8c13bc0b3b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491504"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272911"
 ---
 # <a name="add-a-group-master-data-services"></a>Hinzufügen einer Gruppe (Master Data Services)
 

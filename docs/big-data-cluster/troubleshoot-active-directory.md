@@ -9,12 +9,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 269e886708ec82211a4e29ac8b1e492d9f69cc98
-ms.sourcegitcommit: 783b35f6478006d654491cb52f6edf108acf2482
+ms.openlocfilehash: 7008ce1d720816be6e68afc2bbe9f19303016b0b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91891070"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045730"
 ---
 # <a name="troubleshoot-sql-server-big-data-cluster-active-directory-integration"></a>Behandeln von Problemen mit der Integration von Active Directory in SQL Server-Big Data-Clustern
 
@@ -31,18 +31,18 @@ Das folgende Beispiel zeigt die Ergebnisse der Bereitstellung in einer Bash-Shel
 ```
 The privacy statement can be viewed at:
 https://go.microsoft.com/fwlink/?LinkId=853010
- 
+ 
 The license terms for SQL Server Big Data Cluster can be viewed at:
 Enterprise: https://go.microsoft.com/fwlink/?linkid=2104292
 Standard: https://go.microsoft.com/fwlink/?linkid=2104294
 Developer: https://go.microsoft.com/fwlink/?linkid=2104079
- 
+ 
 Cluster deployment documentation can be viewed at:
 https://aka.ms/bdc-deploy
- 
+ 
 NOTE: Cluster creation can take a significant amount of time depending on
 configuration, network speed, and the number of nodes in the cluster.
- 
+ 
 Starting cluster deployment.
 Cluster controller endpoint is available at bdc-control.contoso.com:30080, 193.168.5.14:30080.
 Waiting for control plane to be ready after 5 minutes.

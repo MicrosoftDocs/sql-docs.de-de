@@ -14,12 +14,12 @@ ms.assetid: 0262df2b-5ba7-4715-b17b-3d9ce470a38e
 author: ronortloff
 ms.author: rortloff
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 402e8ff5793ad0ea5abd11cad60f93b6ae963df2
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 46eb4bf2855cf6f5f8121d1480776c83703a5fcc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99191403"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341357"
 ---
 # <a name="sysinternal_partitions-transact-sql"></a>sys.internal_partitions (Transact-SQL)
 
@@ -27,7 +27,7 @@ ms.locfileid: "99191403"
 
   Gibt eine Zeile für jedes Rowset zurück, das interne Daten für columnstore--Indizes für Datenträger basierte Tabellen nachverfolgt. Diese Rowsets sind für columnstore--Indizes intern und Nachverfolgen gelöschter Zeilen, Zeilen Gruppen Zuordnungen und Delta Speicher-Zeilen Gruppen. Sie verfolgen Daten für jede Tabellen Partition nach. jede Tabelle verfügt über mindestens eine Partition. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] erstellt jedes Mal, wenn der columnstore--Index neu erstellt wird, die Rowsets neu.   
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |partition_id|**bigint**|Partitions-ID für diese Partition. Sie ist innerhalb einer Datenbank eindeutig.|  
 |object_id|**int**|Objekt-ID für die Tabelle, die die Partition enthält.|  

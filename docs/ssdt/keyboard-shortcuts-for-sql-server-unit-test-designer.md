@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 7916bf0cf6b80df1bddcf25223c97593129d5dfc
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 79cb4b53e457f8ae2e9302a8c3748c59fb6a3296
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597113"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017840"
 ---
 # <a name="keyboard-shortcuts-for-sql-server-unit-test-designer"></a>Tastenkombinationen für den SQL Server-Komponententest-Designer
 

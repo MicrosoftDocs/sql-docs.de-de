@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: rajmera3
 ms.author: raajmera
 ms.reviewer: mikeray
-ms.openlocfilehash: b4c7027fd4695e1c1110fb19ae8cefc9be34ac10
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 15a4bdb66ea87f85337540adfec4b5e175b1c55b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97438853"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058125"
 ---
 # <a name="apache-spark-connector-sql-server--azure-sql"></a>Apache Spark-Connector: SQL Server und Azure SQL
 

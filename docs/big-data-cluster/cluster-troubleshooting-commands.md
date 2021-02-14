@@ -9,12 +9,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 4d384a1835d902e56030b62897d657c81c0ec3b7
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 3f0d8ba02c56ca625094829770771c053e31802e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85773668"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039640"
 ---
 # <a name="troubleshoot-big-data-clusters-2019-kubernetes"></a>Problembehandlung für [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] auf Kubernetes
 

@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: alayu, maghan
 ms.custom: ''
 ms.date: 08/28/2020
-ms.openlocfilehash: aaa1357686217a37ca68acb61d4cff36c47d7da6
-ms.sourcegitcommit: fa63019cbde76dd981b0c5a97c8e4d57e8d5ca4e
+ms.openlocfilehash: 37875ecc79d471d1e7226337cec65c3323e19875
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99495768"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052061"
 ---
 # <a name="create-a-jupyter-book-extension"></a>Erstellen einer Jupyter Book-Erweiterung
 

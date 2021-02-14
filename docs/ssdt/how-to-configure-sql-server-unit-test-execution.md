@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: b2d0b76423ab5a391351783970a6c9a057896bf7
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 569262aece2d8b1212704c0b2ba443c6c63f2b07
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987966"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018410"
 ---
 # <a name="how-to-configure-sql-server-unit-test-execution"></a>Gewusst wie: Konfigurieren der Ausführung von SQL Server-Komponententests
 

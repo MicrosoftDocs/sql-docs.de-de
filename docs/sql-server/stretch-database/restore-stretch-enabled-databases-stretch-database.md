@@ -9,12 +9,12 @@ ms.assetid: cebc1f6d-d5ea-460d-ae60-d047d29c2723
 author: rothja
 ms.author: jroth
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 8cef37be62e91b608852a4b5867d5917e72e8742
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 18c4d602edea0f414863e3fc54bfa58d1e6ca2cd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492604"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100079791"
 ---
 # <a name="restore-stretch-enabled-databases-stretch-database"></a>Wiederherstellen von Stretch-aktivierten Datenbanken (Stretch Database)
 [!INCLUDE [sqlserver2016-windows-only](../../includes/applies-to-version/sqlserver2016-windows-only.md)]
@@ -40,11 +40,11 @@ Der Dienst SQL Server Stretch Database erstellt mit Azure Storage mindestens all
 Um eine Azure-Livedatenbank im Azure-Portal in einem Zustand wiederherzustellen, den sie zu einem früheren Zeitpunkt hatte, führen Sie folgende Schritte aus:
 
 1. Melden Sie sich beim [Azure-Portal][]an.
-2. Wählen Sie auf der linken Seite des Fensters **DURCHSUCHEN** , und wählen Sie dann **SQL-Datenbanken**aus.
+2. Wählen Sie auf der linken Seite des Fensters **DURCHSUCHEN** , und wählen Sie dann **SQL-Datenbanken** aus.
 3. Navigieren Sie zu Ihrer Datenbank, und wählen Sie sie aus.
 4. Klicken Sie oben im Blatt für die Datenbank auf **Wiederherstellen**.
-5. Geben Sie einen neuen **Datenbanknamen**an, wählen Sie einen **Wiederherstellungspunkt** aus, und klicken Sie dann auf **Erstellen**.
-6. Der Wiederherstellungsvorgang für die Datenbank beginnt und kann mithilfe von **BENACHRICHTIGUNGEN**überwacht werden.
+5. Geben Sie einen neuen **Datenbanknamen** an, wählen Sie einen **Wiederherstellungspunkt** aus, und klicken Sie dann auf **Erstellen**.
+6. Der Wiederherstellungsvorgang für die Datenbank beginnt und kann mithilfe von **BENACHRICHTIGUNGEN** überwacht werden.
 
 ### <a name="recover-a-deleted-azure-database"></a>Wiederherstellen einer gelöschten Azure-Datenbank
 Der Azure-Dienst SQL Server Stretch Database erstellt eine Datenbankmomentaufnahme, bevor eine Datenbank gelöscht wird, und bewahrt diese sieben Tage lang auf. Danach werden keine Momentaufnahmen der Livedatenbank mehr aufbewahrt. Dadurch können Sie eine gelöschte Datenbank in dem Zustand wiederherstellen, den sie zum Zeitpunkt des Löschens hatte.
@@ -52,12 +52,12 @@ Der Azure-Dienst SQL Server Stretch Database erstellt eine Datenbankmomentaufnah
 Um eine gelöschte Azure-Datenbank im Azure-Portal in dem Zustand wiederherzustellen, den sie zum Zeitpunkt des Löschens hatte, führen Sie folgende Schritte aus:
 
 1. Melden Sie sich beim [Azure-Portal][]an.
-2. Wählen Sie auf der linken Seite des Fensters **DURCHSUCHEN** , und wählen Sie dann **Server mit SQL Server**aus.
+2. Wählen Sie auf der linken Seite des Fensters **DURCHSUCHEN** , und wählen Sie dann **Server mit SQL Server** aus.
 3. Navigieren Sie zu Ihrem Server, und wählen Sie ihn aus.
 4. Scrollen Sie auf dem Blatt für Ihren Server nach unten zu den Vorgängen, und klicken Sie auf die Kachel **Gelöschte Datenbanken** .
 5. Wählen Sie die gelöschte Datenbank aus, die Sie wiederherstellen möchten.
 5. Geben Sie einen neuen **Datenbanknamen** an, und klicken Sie auf **Erstellen**.
-6. Der Wiederherstellungsvorgang für die Datenbank beginnt und kann mithilfe von **BENACHRICHTIGUNGEN**überwacht werden.
+6. Der Wiederherstellungsvorgang für die Datenbank beginnt und kann mithilfe von **BENACHRICHTIGUNGEN** überwacht werden.
 
 ## <a name="restore-the-connection-between-the-sql-server-database-and-the-remote-azure-database"></a><a name="reconnect"></a>Wiederherstellen der Verbindung zwischen der SQL Server-Datenbank und der Azure-Remotedatenbank
 
@@ -65,7 +65,7 @@ Um eine gelöschte Azure-Datenbank im Azure-Portal in dem Zustand wiederherzuste
   
 2.  Führen Sie die gespeicherte Prozedur [sys.sp_rda_reauthorize_db](../../relational-databases/system-stored-procedures/sys-sp-rda-reauthorize-db-transact-sql.md) aus, um die lokale Stretch-aktivierte Datenbank erneut mit Azure zu verbinden.  
   
-    -   Geben Sie die vorhandenen datenbankbezogenen Anmeldeinformationen als sysname- oder varchar (128)-Wert an. (Verwenden Sie nicht varchar(max).) Sie können den Anmeldeinformationsnamen in der Sicht **sys.database_scoped_credentials**nachschlagen.  
+    -   Geben Sie die vorhandenen datenbankbezogenen Anmeldeinformationen als sysname- oder varchar (128)-Wert an. (Verwenden Sie nicht varchar(max).) Sie können den Anmeldeinformationsnamen in der Sicht **sys.database_scoped_credentials** nachschlagen.  
   
     -   Geben Sie an, ob eine Kopie der Remotedaten erstellt und eine Verbindung mit der Kopie hergestellt werden soll (empfohlen).  
   

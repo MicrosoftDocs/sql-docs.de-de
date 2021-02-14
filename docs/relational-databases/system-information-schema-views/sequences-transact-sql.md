@@ -18,12 +18,12 @@ helpviewer_keywords:
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 60a542af207d0de4936dda79c2560dc14dac9ba6
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8f8d71ff5d8e8cf90a5057721deaad383a33678a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99185469"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338075"
 ---
 # <a name="sequences-transact-sql"></a>Sequenzen (Transact-SQL)
 
@@ -33,7 +33,7 @@ Gibt für jede Sequenz, auf die der aktuelle Benutzer in der aktuellen Datenbank
 
 Zum Abrufen von Informationen aus diesen Sichten geben Sie den voll qualifizierten Namen **INFORMATION_SCHEMA**_.view_name_ an.
 
-|Spaltenname|Datentyp|BESCHREIBUNG|
+|Spaltenname|Datentyp|Beschreibung|
 |-----------------|---------------|-----------------|
 |**SEQUENCE_CATALOG**|**nvarchar(128)**|Sequenz Qualifizierer|
 |**SEQUENCE_SCHEMA**|**nvarchar (** 128) * *|Name des Schemas, das die Sequenz enthält|

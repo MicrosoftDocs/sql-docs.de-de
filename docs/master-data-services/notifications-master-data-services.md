@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d7ad32d5-9fe5-48fd-8c61-0b00c0aff082
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 6a907505771493e7e087b5eead35923feb8659ae
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 60bc5e525d858413ddd3637f5977b9a61fd7789c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88343166"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340295"
 ---
 # <a name="notifications-master-data-services"></a>Benachrichtigungen (Master Data Services)
 

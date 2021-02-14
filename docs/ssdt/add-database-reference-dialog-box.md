@@ -13,12 +13,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 4804032b47059ccfbd376cbe10f2433736893ef0
-ms.sourcegitcommit: 29a2be59c56f8a4b630af47760ef38d2bf56a3eb
+ms.openlocfilehash: feb7df193ea54f4c7184066bb38cc5cc700f9bf9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92358848"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100079661"
 ---
 # <a name="add-database-reference-dialog-box"></a>Datenbankverweis hinzufügen (Dialogfeld)
 

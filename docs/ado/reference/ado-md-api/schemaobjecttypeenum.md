@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bf53939f-5543-40ac-a707-aa35e9bde1dd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c976627dce4df86180f7c26072663f51292ca515
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d94cbdf9528d3a7bde6d21d15a79368696b025cc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164416"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050881"
 ---
 # <a name="schemaobjecttypeenum"></a>SchemaObjectTypeEnum
 Gibt den Typ des Objekts an, das von der [getschemaobject](./getschemaobject-method-ado-md.md) -Methode abgerufen werden soll.  

@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan, sstein
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.openlocfilehash: 3d00919c0967db12dfe678ad541a5a9ed9ecae61
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 6bec78ab2c79af6f6a4dca70b25345f567def48b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91123122"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040270"
 ---
 # <a name="sql-server-agent-extension-preview"></a>SQL Server-Agent-Erweiterung (Vorschau)
 

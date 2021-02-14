@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: b5a10fdbc94858a9fe3f5b523fdd43b505e2563f
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 8fe5cea5559f687b74fac93239b694a7736c6fcd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987556"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018330"
 ---
 # <a name="how-to-create-a-test-project-for-sql-server-database-unit-testing"></a>Gewusst wie: Erstellen eines Testprojekts für SQL Server-Datenbankkomponententests
 
