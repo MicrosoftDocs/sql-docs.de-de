@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 113069c5-12e6-48ec-b443-b42e14f77308
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 16928202fa2007ecdd2566f7ef215b2ffc09ff4f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 148d2d815680ef0e8c03cf2dc4d68f43864872f4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88388687"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341408"
 ---
 # <a name="member-revision-history-master-data-services"></a>Elementrevisionsverlauf (Master Data Services)
 
@@ -63,7 +63,7 @@ ms.locfileid: "88388687"
 4.  Klicken Sie auf **Verlauf anzeigen** im rechten Bereich.  
   
 ## <a name="log-retention-setting"></a>Einstellung für Protokollbeibehaltung  
- Sie können konfigurieren, wie lange Verlaufsdaten beibehalten werden, indem Sie die Eigenschaft **Protokollaufbewahrung in Tagen[!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] in den Systemeinstellungen für die **-Datenbank festlegen, und durch Festlegen von **Protokollaufbewahrung in Tagen**, wenn Sie ein Modell erstellen oder bearbeiten.  
+ Sie können konfigurieren, wie lange Verlaufsdaten beibehalten werden, indem Sie die Eigenschaft **Protokollaufbewahrung in Tagen[!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] in den Systemeinstellungen für die**-Datenbank festlegen, und durch Festlegen von **Protokollaufbewahrung in Tagen**, wenn Sie ein Modell erstellen oder bearbeiten.  
   
 ## <a name="related-task"></a>Verwandte Aufgabe  
   

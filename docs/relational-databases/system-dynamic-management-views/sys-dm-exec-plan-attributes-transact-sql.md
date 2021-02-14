@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: dacf3ab3-f214-482e-aab5-0dab9f0a3648
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: da9707021bf11d2417b48f95c07da85f6e668897
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0bbf64478b1ce114419df3e65c26ff453b3cfc5e
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99159873"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100342972"
 ---
 # <a name="sysdm_exec_plan_attributes-transact-sql"></a>sys.dm_exec_plan_attributes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -45,7 +45,7 @@ sys.dm_exec_plan_attributes ( plan_handle )
   
 ## <a name="table-returned"></a>Zurückgegebene Tabelle  
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |Attribut|**varchar(128)**|Name des Attributs, das diesem Plan zugeordnet ist. In der folgenden Tabelle sind die möglichen Attribute, deren Datentypen und ihre Beschreibungen aufgeführt.|  
 |value|**sql_variant**|Wert des Attributs, das diesem Plan zugeordnet ist.|  
@@ -53,7 +53,7 @@ sys.dm_exec_plan_attributes ( plan_handle )
 
 In der obigen Tabelle kann das- **Attribut** die folgenden Werte aufweisen:
 
-|Attribut|Datentyp|BESCHREIBUNG|  
+|attribute|Datentyp|Beschreibung|  
 |---------------|---------------|-----------------|  
 |set_options|**int**|Gibt die Optionswerte an, mit denen der Plan kompiliert wurde.|  
 |objectid|**int**|Einer der Hauptschlüssel zur Suche nach einem Objekt im Cache. Dies ist die Objekt-ID, die in [sys. Objects](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md) für Datenbankobjekte (Prozeduren, Sichten, Trigger usw.) gespeichert ist. Für Pläne vom Typ "Adhoc" oder "Prepared" ist dies ein interner Hash des Batchtexts.|  
@@ -82,7 +82,7 @@ In der obigen Tabelle kann das- **Attribut** die folgenden Werte aufweisen:
 ## <a name="permissions"></a>Berechtigungen  
 
 In [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] ist die- `VIEW SERVER STATE` Berechtigung erforderlich.   
-Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken `Server admin` oder ein `Azure Active Directory admin` Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
+Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken das [Server Administrator](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
 
 ## <a name="remarks"></a>Bemerkungen  
   

@@ -8,12 +8,12 @@ ms.custom: ''
 ms.topic: article
 ms.date: 03/06/2020
 ms.author: v-daenge
-ms.openlocfilehash: 8d5c44c11d9f5158abc52634f648a4159f86c143
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: b64d5d6d20e7d83385b040a49516cb9728b5f048
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91726611"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058145"
 ---
 # <a name="connection-modules-for-microsoft-sql-database"></a>Verbindungsmodule für Microsoft SQL-Datenbank
 

@@ -17,17 +17,17 @@ helpviewer_keywords:
 ms.assetid: 8a69344f-2990-4357-8160-cb26aac95b91
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a50ed63856e9998066db0b4d0791feb79478726c
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6fec2edcca6a5a73c8fcdb9bb0629b7b5ed2ff24
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85734159"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340459"
 ---
 # <a name="xquery-language-reference-sql-server"></a>XQuery-Sprachreferenz (SQL Server)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
 
-  [!INCLUDE[tsql](../includes/tsql-md.md)]unterstützt eine Teilmenge der XQuery-Sprache, die zum Abfragen des **XML** -Datentyps verwendet wird. Diese XQuery-Implementierung orientiert sich am Arbeitsentwurf für XQuery (Juli 2004). Diese Sprache wird zurzeit vom W3C (World Wide Web Consortium) unter Mitwirkung aller großen Datenbankhersteller und Microsoft entwickelt. Da die W3C-Spezifikationen möglicherweise überarbeitet werden, bevor eine W3C-Empfehlung ausgesprochen wird, kann sich diese Implementierung von der endgültigen Empfehlung unterscheiden. Dieses Thema beschreibt die Semantik und Syntax der Teilmenge von XQuery, die in [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] unterstützt wird.  
+  [!INCLUDE[tsql](../includes/tsql-md.md)] unterstützt eine Teilmenge der XQuery-Sprache, die zum Abfragen des **XML** -Datentyps verwendet wird. Diese XQuery-Implementierung orientiert sich am Arbeitsentwurf für XQuery (Juli 2004). Diese Sprache wird zurzeit vom W3C (World Wide Web Consortium) unter Mitwirkung aller großen Datenbankhersteller und Microsoft entwickelt. Da die W3C-Spezifikationen möglicherweise überarbeitet werden, bevor eine W3C-Empfehlung ausgesprochen wird, kann sich diese Implementierung von der endgültigen Empfehlung unterscheiden. Dieses Thema beschreibt die Semantik und Syntax der Teilmenge von XQuery, die in [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] unterstützt wird.  
   
  Weitere Informationen finden Sie in der [W3C XQuery 1,0-Sprachspezifikation](https://go.microsoft.com/fwlink/?LinkId=48846).  
   
@@ -59,7 +59,7 @@ WHERE ProductModelID=7
   
  Die folgende Tabelle enthält die verwandten Themen, die das Verständnis der Implementierung von XQuery in [!INCLUDE[ssDE](../includes/ssde-md.md)] vertiefen sollen.  
   
-|Thema|BESCHREIBUNG|  
+|Thema|Beschreibung|  
 |-----------|-----------------|  
 |[XML-Daten &#40;SQL Server&#41;](../relational-databases/xml/xml-data-sql-server.md)|Erläutert die Unterstützung für den **XML**-Datentyp in [!INCLUDE[ssDE](../includes/ssde-md.md)] und die Methoden, die Sie für diesen Datentyp verwenden können. Der **XML** -Datentyp bildet das Eingabe-XQuery-Datenmodell, für das die XQuery-Ausdrücke ausgeführt werden.|  
 |[XML-Schemaauflistungen &#40;SQL Server&#41;](../relational-databases/xml/xml-schema-collections-sql-server.md)|Beschreibt, wie die in einer Datenbank gespeicherten XML-Instanzen typisiert werden können. Dies bedeutet, dass Sie der Spalte vom Typ **XML** eine XML-Schema Auflistung zuordnen können. Alle in der Spalte gespeicherten Instanzen werden in der Auflistung anhand des Schemas überprüft und typisiert und stellen die Typinformationen für XQuery bereit.|  
@@ -70,7 +70,7 @@ WHERE ProductModelID=7
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
-|Thema|BESCHREIBUNG|  
+|Thema|Beschreibung|  
 |-----------|-----------------|  
 |[XQuery-Grundlagen](../xquery/xquery-basics.md)|Stellt eine grundlegende Übersicht über die XQuery-Konzepte und die Auswertung von Ausdrücken (statischer und dynamischer Kontext), die Atomarmachung, effektive boolesche Werte, das XQuery-Typsystem, Sequenztypzuordnung und Fehlerbehandlung zur Verfügung.|  
 |[XQuery-Ausdrücke](../xquery/xquery-expressions.md)|Beschreibt primäre XQuery-Ausdrücke, path-Ausdrücke, sequence-Ausdrücke, arithmetische Vergleiche und logische Ausdrücke, die XQuery-Erstellung, FLWOR-Ausdrücke, bedingte und quantifizierte Ausdrücke sowie verschiedene Ausdrücke für Sequenztypen.|  
@@ -80,7 +80,7 @@ WHERE ProductModelID=7
 |[Zusätzliches Beispiel für XQuery-Abfragen für den XML-Datentyp](../xquery/additional-sample-xqueries-against-the-xml-data-type.md)|Stellt zusätzliche XQuery-Beispiele bereit.|  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [SQL Server der XML-Daten &#40;&#41;](../relational-databases/xml/xml-data-sql-server.md)   
+ [XML-Daten &#40;SQL Server&#41;](../relational-databases/xml/xml-data-sql-server.md)   
  [XML-Schemaauflistungen &#40;SQL Server&#41;](../relational-databases/xml/xml-schema-collections-sql-server.md)   
  [Beispiele für den Massenimport und -export von XML-Dokumenten &#40;SQL Server&#41;](../relational-databases/import-export/examples-of-bulk-import-and-export-of-xml-documents-sql-server.md)  
   

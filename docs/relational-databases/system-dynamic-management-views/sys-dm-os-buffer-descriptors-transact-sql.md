@@ -21,12 +21,12 @@ ms.assetid: 012aab95-8888-4f35-9ea3-b5dff6e3f60f
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ce3894ac989047dc8274c6770e881066023ccabd
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 83162825d5c4598c8c9f5fecae10feed03364abd
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250373"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100344325"
 ---
 # <a name="sysdm_os_buffer_descriptors-transact-sql"></a>sys.dm_os_buffer_descriptors (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "99250373"
   
 > **Hinweis:** Um dies von oder aus aufzurufen [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] , verwenden Sie den Namen **sys.dm_pdw_nodes_os_buffer_descriptors**.  
 
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |database_id|**int**|ID der Datenbank, die der Seite im Pufferpool zugeordnet ist. Lässt NULL-Werte zu.|  
 |file_id|**int**|ID der Datei, die das persistente Image der Seite speichert. Lässt NULL-Werte zu.|  
@@ -56,12 +56,12 @@ ms.locfileid: "99250373"
 ## <a name="permissions"></a>Berechtigungen  
 
 In [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] ist die- `VIEW SERVER STATE` Berechtigung erforderlich.   
-Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken `Server admin` oder ein `Azure Active Directory admin` Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
+Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken das [Server Administrator](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
    
 ## <a name="remarks"></a>Bemerkungen  
  sys.dm_os_buffer_descriptors gibt Seiten zurück, die von der Ressourcendatenbank verwendet werden. sys.dm_os_buffer_descriptors gibt keine Informationen zu freien oder gestohlenen Seiten zurück oder zu Seiten, die beim Lesen Fehler enthielten.  
   
-|Von|Beschreibung|Ein|Beziehung|  
+|From|Beschreibung|Andererseits|Relationship|  
 |----------|--------|--------|------------------|  
 |sys.dm_os_buffer_descriptors|sys.databases|database_id|n:1|  
 |sys.dm_os_buffer_descriptors|\<userdb>.sys.allocation_units|allocation_unit_id|n:1|  

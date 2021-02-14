@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: ec3e66f7-0e35-43d7-a80d-64899948ebfe
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 0e9dd0776b2909f0227d1e2b22946f5d298bb721
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 75facb60f974ebcd6c233e6527fd3a8fd66c112b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88344796"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340415"
 ---
 # <a name="delete-an-attribute-master-data-services"></a>Löschen eines Attributs (Master Data Services)
 

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: bde16e8c-bcd4-4041-8130-55c5450e5f72
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: a50723727690307492d3d16cb3671e762dec401f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1924b33891b36d68a7b79c9046e0375b92f1d940
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461750"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338215"
 ---
 # <a name="leaf-permissions-master-data-services"></a>Blattberechtigungen (Master Data Services)
 
@@ -67,7 +67,7 @@ ms.locfileid: "88461750"
 |Mountain-100|BK-M101|{5} Mountain Bikes|  
 |Mountain-100|BK-M201|{5} Mountain Bikes|  
   
- Sie können im **Explorer**jeden Attributwert in der Spalte „Subcategory“ aktualisieren. Wenn Sie keine Berechtigung für ein Attribut haben, wird das Attribut nicht angezeigt.  
+ Sie können im **Explorer** jeden Attributwert in der Spalte „Subcategory“ aktualisieren. Wenn Sie keine Berechtigung für ein Attribut haben, wird das Attribut nicht angezeigt.  
   
 > [!NOTE]  
 >  In diesem Beispiel ist Subcategory ein domänenbasiertes Attribut, das auf der SubcategoryList-Entität basiert. Sie können eine andere Unterkategorie für Mountain-100 auswählen, der SubcategoryList-Entität jedoch keine Elemente hinzufügen bzw. Elemente aus dieser Entität löschen.  

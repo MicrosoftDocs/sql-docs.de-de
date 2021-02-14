@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: af6fe2f3-37d0-4413-ab27-b3a0fb95eb50
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: fe973a6b5c67a9550a9c7cf687c4be0060be9da4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6ab3cdb64b62a6aaaa176b59f24466dfdda95599
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456800"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339531"
 ---
 # <a name="assign-functional-area-permissions-master-data-services"></a>Zuweisen von Berechtigungen für Funktionsbereiche (Master Data Services)
 

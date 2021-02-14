@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: de90c81c-9e7f-4997-bf96-e22b97b2862c
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 332afe4eaca5e694fa0fa75aeede689a8a92fdde
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2dba27ae76c411f4ac095b9e8c38fa4987e32749
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92257850"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340376"
 ---
 # <a name="view-all-annotations-or-transactions-for-a-member-mds-add-in-for-excel"></a>Anzeigen aller Anmerkungen oder Transaktionen für ein Element (MDS-Add-In für Excel)
 
@@ -29,7 +29,7 @@ ms.locfileid: "92257850"
   
 -   Sie müssen über ein aktives Arbeitsblatt mit von MDS verwalteten Daten verfügen.  
   
--   Die Entität **Transaktionsprotokolltyp** muss **Element** oder **Attribut**sein.  
+-   Die Entität **Transaktionsprotokolltyp** muss **Element** oder **Attribut** sein.  
   
 ### <a name="to-view-annotations-or-transactions"></a>So zeigen Sie Anmerkungen oder Transaktionen an  
   

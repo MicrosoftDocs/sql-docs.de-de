@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 594f1dd0-3c27-41b3-b809-9ce6714c5a97
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: dc2a85c48e404fa717b001482bbe5fc8f8356e99
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 1ea2dbaab164c57acf9e9bc166ee431e80783648
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85775491"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341585"
 ---
 # <a name="numeric-values-functions---ceiling"></a>Funktionen für numerische Werte – ceiling 
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -39,12 +39,12 @@ fn:ceiling ( $arg as numeric?) as numeric?
  *$arg*  
  Anzahl, auf die die Funktion angewendet wird.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn der Typ *$arg* einer der drei numerischen Basis Typen ( **xs: float**, **xs: Double**oder **xs: Decimal**) ist, ist der Rückgabetyp identisch mit dem *$arg* Typ.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn der Typ *$arg* einer der drei numerischen Basis Typen ( **xs: float**, **xs: Double** oder **xs: Decimal**) ist, ist der Rückgabetyp identisch mit dem *$arg* Typ.  
   
  Wenn der Typ *$arg* ein Typ ist, der von einem der numerischen Typen abgeleitet ist, ist der Rückgabetyp der numerische Basistyp.  
   
- Wenn die Eingabe für die FN: Floor-, FN: ceiling-oder fn: Round-Funktionen **xdt: untypedAtomic**ist, wird Sie implizit in **xs: Double**umgewandelt.  
+ Wenn die Eingabe für die FN: Floor-, FN: ceiling-oder fn: Round-Funktionen **xdt: untypedAtomic** ist, wird Sie implizit in **xs: Double** umgewandelt.  
   
  Alle anderen Typen führen zum Generieren eines statischen Fehlers.  
   

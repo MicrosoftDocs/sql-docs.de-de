@@ -12,12 +12,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 43dbf8c960e45ab0b9099951b7b03b331170ad53
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 18021d85c9b490664411b7bb98f1b55972a13022
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987756"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100082411"
 ---
 # <a name="using-test-conditions-in-sql-server-unit-tests"></a>Verwenden von Testbedingungen in SQL Server-Komponententests
 
@@ -97,7 +97,7 @@ Nachdem Sie dem Datenbankkomponententest die Testbedingung „Datenprüfsumme“
 6.  Standardmäßig wird der Transact\-SQL-Text des Tests im Bearbeitungsbereich angezeigt. Sie können ggf. den Code ändern, um die erwarteten Ergebnisse zu erzeugen. Wenn im Vortest des Tests z. B. Code enthalten ist, müssen Sie diesen Code u. U. hinzufügen.  
   
     > [!IMPORTANT]  
-    > Wenn Sie eine Prüfsummenbedingung ändern, für die Sie zuvor eine Prüfsumme angegeben hatten, werden die im Bearbeitungsbereich vorgenommenen Änderungen nicht gespeichert. Sie müssen diese Änderungen erneut vornehmen, bevor Sie auf **Abrufen**klicken.  
+    > Wenn Sie eine Prüfsummenbedingung ändern, für die Sie zuvor eine Prüfsumme angegeben hatten, werden die im Bearbeitungsbereich vorgenommenen Änderungen nicht gespeichert. Sie müssen diese Änderungen erneut vornehmen, bevor Sie auf **Abrufen** klicken.  
   
 7.  Klicken Sie auf **Abrufen**.  
   
@@ -127,7 +127,7 @@ Nachdem Sie einem SQL Server-Komponententest die Testbedingung „Erwartetes Sch
 6.  Standardmäßig wird der Transact\-SQL-Text des Tests im Bearbeitungsbereich angezeigt. Sie können ggf. den Code ändern, um die erwarteten Ergebnisse zu erzeugen. Wenn im Vortest des Tests z. B. Code enthalten ist, müssen Sie diesen Code u. U. hinzufügen.  
   
     > [!IMPORTANT]  
-    > Wenn Sie eine Bedingung für ein erwartetes Schema ändern, für die Sie zuvor ein Schema angegeben hatten, werden die im Bearbeitungsbereich vorgenommenen Änderungen nicht gespeichert. Sie müssen diese Änderungen erneut vornehmen, bevor Sie auf **Abrufen**klicken.  
+    > Wenn Sie eine Bedingung für ein erwartetes Schema ändern, für die Sie zuvor ein Schema angegeben hatten, werden die im Bearbeitungsbereich vorgenommenen Änderungen nicht gespeichert. Sie müssen diese Änderungen erneut vornehmen, bevor Sie auf **Abrufen** klicken.  
   
 7.  Klicken Sie auf **Abrufen**.  
   

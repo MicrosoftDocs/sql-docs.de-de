@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 8a74802f-34d6-4676-bf94-07df5f8bff66
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d0008772cf116385ca5ccedb5fb5d5bad694ce45
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 7654130b4247d489cbb4a9a58c07b0c63c49c727
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168949"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053161"
 ---
 # <a name="filtercolumn-filtercriterion-filtervalue-sortcolumn-and-sortdirection-properties-and-reset-method-example-vbscript"></a>Filter Column, Filterkriterium, FilterValue, SortColumn und SortDirection Properties und Reset Method example (VBScript)
 > [!IMPORTANT]

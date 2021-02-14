@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4ec83e96-88a5-4b7b-8d5a-f3429d9a936b
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 7f6b1db29b03d0ea0b2f6704039a1436107a4fd9
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: d1fff0a65821ee981a76431ff6b9b6af6150f7ce
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987643"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081851"
 ---
 # <a name="convert-load-and-migrate-accesstosql"></a>Konvertieren, laden und migrieren (accesstosql)
 

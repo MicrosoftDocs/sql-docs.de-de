@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 86435534-c9fe-4b49-b88c-7fb6d21976b0
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: dcc18839d2e10a35a35289a5950cab566afea23a
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 145a7ad079827ca3392eb0bde0761f9f8f70a9f9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80215589"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081681"
 ---
 # <a name="batching-methods"></a>Methoden der Batchverarbeitung
   Durch die Verwendung von SOAP-Headern in [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] können Sie mehrere Webdienstmethoden in einen einzelnen Vorgang aufnehmen. Die Methoden werden im Rahmen einer Datenbanktransaktion in der Reihenfolge ihres Aufrufs ausgeführt.  

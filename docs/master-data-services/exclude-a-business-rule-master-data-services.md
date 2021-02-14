@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: bdbc9df0-23f7-40b9-8aba-4445c1482580
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: bc69a5cfcd36e96ed6bc0778c72e6a3a09e6fb23
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 75dbbb6f8e880ab587f5a3a23b164bdedcc07706
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88388956"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344817"
 ---
 # <a name="exclude-a-business-rule-master-data-services"></a>Ausschließen einer Geschäftsregel (Master Data Services)
 
@@ -53,7 +53,7 @@ ms.locfileid: "88388956"
   
 9. Klicken Sie auf **Alle veröffentlichen**.  
   
-10. Klicken Sie im Bestätigungsdialogfeld auf **OK**. Der Wert in der Spalte **Geschäftsregelstatus** lautet **Ausgeschlossen** , und die Spalte **Ausgeschlossen** ist auf **Ja**festgelegt.  
+10. Klicken Sie im Bestätigungsdialogfeld auf **OK**. Der Wert in der Spalte **Geschäftsregelstatus** lautet **Ausgeschlossen** , und die Spalte **Ausgeschlossen** ist auf **Ja** festgelegt.  
   
 ## <a name="see-also"></a>Weitere Informationen  
  [Hiermit wird eine Geschäftsregel &#40;Master Data Services gelöscht&#41;](../master-data-services/delete-a-business-rule-master-data-services.md)   

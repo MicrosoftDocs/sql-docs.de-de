@@ -19,19 +19,19 @@ helpviewer_keywords:
 - sys.dm_resource_governor_workload_groups_history_ex dynamic management view
 author: joesackmsft
 ms.author: josack
-ms.openlocfilehash: ac8bc675c5a059c211e6ecfbed063d54daf6ee92
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 75235f489b396c2269ae0d1dcf22ed24297ec4e9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99203308"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342744"
 ---
 # <a name="sysdm_resource_governor_workload_groups_history_ex-azure-sql-database"></a>sys.dm_resource_governor_workload_groups_history_ex (Azure SQL-Datenbank)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
 
 Jede Zeile stellt eine regelmäßige Momentaufnahme von Arbeits Auslastungs Gruppen Statistiken in Azure SQL-Datenbank dar. Eine Momentaufnahme wird erstellt, wenn die Datenbank-Engine gestartet wird, und danach alle paar Sekunden. Das Intervall zwischen der aktuellen und der vorherigen Momentaufnahme kann variieren und wird in der- `duration_ms` Spalte bereitgestellt. Die neuesten verfügbaren Momentaufnahmen werden zurückgegeben, bis zu 128 Momentaufnahmen für jede Arbeits Auslastungs Gruppe.
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**pool_id**| INT |ID des Ressourcenpools. Lässt keine NULL-Werte zu.|
 |**group_id**| INT |ID der Arbeitsauslastungsgruppe. Lässt keine NULL-Werte zu.|

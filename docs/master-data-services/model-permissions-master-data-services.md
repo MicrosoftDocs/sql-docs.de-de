@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 210f440b-2cc1-4c49-94b1-3a97e2af7bc3
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: e195c4f2db244fa5cf647c19c0713f24840c3441
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 029a3f624dea71567f34a26cdd7093cc96be36d3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461740"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340331"
 ---
 # <a name="model-permissions-master-data-services"></a>Modellberechtigungen (Master Data Services)
 

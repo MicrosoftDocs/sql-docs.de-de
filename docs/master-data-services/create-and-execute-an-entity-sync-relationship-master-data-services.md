@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 0ddceab4-d2b3-4bc1-bd9c-6b852200b414
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 6e96975fbd7946c53f60af29a91cec938b0ffeb0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: df91e4bc3d0dab5566abfecd8ef5a8039339d2c6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461793"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339103"
 ---
 # <a name="create-and-execute-an-entity-sync-relationship-master-data-services"></a>Erstellen und Verwenden einer Beziehung für die Entitätensynchronisierung (Master Data Services)
 
@@ -79,7 +79,7 @@ ms.locfileid: "88461793"
   
 9. Wählen Sie **vorhandene Entität** , und wählen Sie anschließend eine Entität von der Entitätsliste, falls Sie eine bereits vorhandene Entität synchronisieren möchten. Wählen Sie **Neue Entität** aus, und geben Sie den Namen der Zielentität ein, falls Sie eine neue Entität erstellen möchten  
   
-10. Wählen Sie **Synchronisierung bei Bedarf**oder **Automatische Synchronisierung** aus, und legen Sie die Häufigkeit fest.  
+10. Wählen Sie **Synchronisierung bei Bedarf** oder **Automatische Synchronisierung** aus, und legen Sie die Häufigkeit fest.  
   
 11. Klicken Sie auf **Speichern**.  
   
@@ -96,7 +96,7 @@ ms.locfileid: "88461793"
 ## <a name="sync-relationship-information"></a>Informationen zur Synchronisierungsbeziehung  
  Für jede erstellte Synchronisierungsbeziehung wird dem Raster eine Zeile mit sieben Spalten hinzugefügt. In der folgenden Tabelle werden diese Spalten beschrieben.  
   
-|Column|Beschreibung|  
+|Spalte|BESCHREIBUNG|  
 |------------|-----------------|  
 |Status|Der Status der Synchronisierungsbeziehung.<br /><br /> Wenn Sie auf **Speichern** klicken oder eine Synchronisierungs Beziehung ausführen, wird das ![Symbol zum Aktualisieren des Status](../master-data-services/media/mds-statusicon-updating.png "Symbol für Aktualisierungs Status") angezeigt, das angibt, dass die Synchronisierungs Partnerschaft aktualisiert wird.<br /><br /> Wenn beim Erstellen, bearbeiten oder Ausführen einer Synchronisierungs Beziehung Fehler auftreten, wird das Bild ![Symbol für den Fehlerstatus](../master-data-services/media/mds-statusicon-error.png "Symbol für Fehlerstatus") angezeigt.<br /><br /> Andernfalls lautet der Status "OK", und das Bild ![Symbol für den Status OK](../master-data-services/media/mds-statusicon-ok.png "Symbol für Status OK") wird angezeigt.|  
 |Quellmodell|Der Name des Quellmodells.|  

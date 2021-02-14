@@ -1,25 +1,21 @@
 ### YamlMime:ZonePivotGroups
 groups:
-- id: python-custom-runtime-platform
-  title: Plattform
-  prompt: Auswählen der Plattform
+- id: sqlml-platforms
+  title: Plattformen
+  prompt: Auswählen einer Plattform
   pivots:
-  - id: python-custom-runtime-windows
+  - id: platform-windows
     title: Windows
-  - id: python-custom-runtime-linux
-    title: Linux
-- id: r-custom-runtime-platform
-  title: Plattform
-  prompt: Auswählen der Plattform
-  pivots:
-  - id: r-custom-runtime-windows
-    title: Windows
-  - id: r-custom-runtime-linux
-    title: Linux
+  - id: platform-linux-ubuntu
+    title: Ubuntu Linux
+  - id: platform-linux-rhel
+    title: Red Hat Enterprise Linux
+  - id: platform-linux-sles
+    title: SUSE Linux Enterprise Server
 metadata:
-  ms.openlocfilehash: 7fd3a2d21b1bbe4f8ccae5296a4366501d414bc4
-  ms.sourcegitcommit: 5b2c47ce88f7e56552fd415c32b319009d043b56
+  ms.openlocfilehash: 6e4a55d7c3ad0ac95b877dc0752766f0b83e14e1
+  ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/29/2020
-  ms.locfileid: "97805339"
+  ms.lasthandoff: 02/10/2021
+  ms.locfileid: "100082221"

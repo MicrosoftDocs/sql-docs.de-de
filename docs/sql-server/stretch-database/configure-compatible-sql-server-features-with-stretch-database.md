@@ -9,12 +9,12 @@ ms.assetid: c8121ede-1aec-459b-b7b0-1408bb3e62fb
 author: rothja
 ms.author: jroth
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 7c1f4df1bd0df0eeb444b009574c4b1a7800d119
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c1f2389ea412b1cdc542f87ee25f3a95c34fa256
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88373286"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080211"
 ---
 # <a name="configure-compatible-sql-server-features-with-stretch-database"></a>Konfigurieren kompatibler SQL Server-Features mit Stretch Database
 [!INCLUDE [sqlserver2016-windows-only](../../includes/applies-to-version/sqlserver2016-windows-only.md)]

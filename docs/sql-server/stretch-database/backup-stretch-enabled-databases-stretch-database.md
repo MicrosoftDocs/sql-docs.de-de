@@ -12,12 +12,12 @@ ms.assetid: 18f0dff0-d8ce-4bee-a935-76ed6dfb3208
 author: rothja
 ms.author: jroth
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 38ee204a715e691654e550f849ccf0216c715edc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b407e37ec4a6c3337bd5c5bc98018c73792396dd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88423124"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081091"
 ---
 # <a name="backup-stretch-enabled-databases-stretch-database"></a>Sichern von Stretch-fähigen Datenbanken (Stretch Database)
 [!INCLUDE [sqlserver2016-windows-only](../../includes/applies-to-version/sqlserver2016-windows-only.md)]

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a9f9e41a-2461-4845-b947-58b3a205543f
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 229ac06d8d37922f5ca0abca4f5d327137e18499
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 4869875867f7b1cad99780b1ec82664c9d569201
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813664"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341481"
 ---
 # <a name="business-rules-master-data-services"></a>Geschäftsregeln (Master Data Services)
 
@@ -59,11 +59,11 @@ ms.locfileid: "85813664"
   
  Andere wichtige Hinweise zum Anwenden von Regeln:  
   
--   Wenn eine Geschäftsregel ausgeschlossen oder nicht mit dem Status **Aktiv**veröffentlicht wurde, ist die Regel zwar verfügbar, wird aber beim Anwenden von Geschäftsregeln nicht eingeschlossen.  
+-   Wenn eine Geschäftsregel ausgeschlossen oder nicht mit dem Status **Aktiv** veröffentlicht wurde, ist die Regel zwar verfügbar, wird aber beim Anwenden von Geschäftsregeln nicht eingeschlossen.  
   
 -   Geschäftsregeln werden auf die Attributwerte für alle Blattelemente oder alle konsolidierten Elemente angewendet, jedoch nicht auf beide.  
   
--   Geschäftsregeln können auf eine beliebige Version eines Modells angewendet werden, das **Offen** oder **Gesperrt**ist.  
+-   Geschäftsregeln können auf eine beliebige Version eines Modells angewendet werden, das **Offen** oder **Gesperrt** ist.  
   
 -   Änderungen an Daten bei der Anwendung von Geschäftsregeln werden nicht als Transaktionen protokolliert.  
   

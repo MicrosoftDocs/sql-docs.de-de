@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 11/4/2020
-ms.openlocfilehash: ef49071f97d255d98f8086b9ff329c77d7b4afad
-ms.sourcegitcommit: 5ceafd29b8f22edb800cec150f0ccddea43313e7
+ms.openlocfilehash: 4c24670e4bdc5603b824d4e5c5c00f7a101933b6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98983663"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081441"
 ---
 # <a name="sqlpackageexe"></a>SqlPackage.exe
 

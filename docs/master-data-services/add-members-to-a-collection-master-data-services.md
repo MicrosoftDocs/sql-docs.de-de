@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 1a7155e6-2d4a-4ed1-a72c-edb37fa1a46b
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 141bdb831dce76b00e0ce14ea5616341d052451a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a1eff1fabaf3f8b5174e37340380feaf97c2fadb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500843"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347751"
 ---
 # <a name="add-members-to-a-collection-master-data-services"></a>Hinzufügen von Elementen zu einer Auflistung (Master Data Services)
 
@@ -55,7 +55,7 @@ ms.locfileid: "88500843"
   
 9. Klicken Sie auf die Zeile mit dem Element, das Sie hinzufügen möchten, und klicken Sie auf **Hinzufügen**.  
   
-10. Ordnen Sie optional Auflistungselemente durch das Klicken auf **Nach oben** oder **Nach unten**neu an.  
+10. Ordnen Sie optional Auflistungselemente durch das Klicken auf **Nach oben** oder **Nach unten** neu an.  
   
 11. Legen Sie optional die Gewichtung fest, indem Sie in der Spalte **Gewichtung** auf einen Wert klicken.  
   

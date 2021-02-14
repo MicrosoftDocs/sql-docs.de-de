@@ -21,19 +21,19 @@ ms.assetid: 3c1887df-6bd8-491e-82fc-d25ad9589faf
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: fba7c17453b0545763afb751aabd23b6c05c617c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 63410c44833d6ce22ac3e1ddc2772f4edb7c5ac4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99185855"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337018"
 ---
 # <a name="sysquery_context_settings-transact-sql"></a>sys.query_context_settings (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]
 
   Enthält Informationen über die Semantik, die die einer Abfrage zugeordneten Kontext Einstellungen beeinflusst. In stehen eine Reihe von Kontext Einstellungen zur Verfügung [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , die die Abfrage Semantik beeinflussen (das richtige Ergebnis der Abfrage wird definiert). Derselbe Abfragetext, der unter verschiedenen Einstellungen kompiliert wird, kann zu unterschiedlichen Ergebnissen führen (abhängig von den zugrunde liegenden Daten).  
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**context_settings_id**|**bigint**|Der Primärschlüssel. Dieser Wert wird in Showplan XML for queries verfügbar gemacht.|  
 |**set_options**|**varbinary(8)**|Bitmaske, die den Zustand mehrerer SET-Optionen reflektiert. Weitere Informationen finden Sie unter [sys.dm_exec_plan_attributes &#40;Transact-SQL-&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-plan-attributes-transact-sql.md).|  

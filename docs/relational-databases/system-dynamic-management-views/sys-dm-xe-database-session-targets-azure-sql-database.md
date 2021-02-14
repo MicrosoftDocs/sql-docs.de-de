@@ -12,12 +12,12 @@ author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: = azuresqldb-current
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 0012b735fe99a2ef68989ee0b714a86e9efc0892
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e3a11ca92581e879c1fc0fbc51fc02b630251fad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99130270"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344288"
 ---
 # <a name="sysdm_xe_database_session_targets-azure-sql-database"></a>sys.dm_xe_database_session_targets (Azure SQL-Datenbank)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "99130270"
 |-|  
 |**Gilt für**: [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] V12 und zukünftige Versionen.|  
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |event_session_address|**varbinary(8)**|Die Speicheradresse der Ereignissitzung. Hat eine n:1-Beziehung mit sys.dm_xe_database_sessions. Address. Lässt keine NULL-Werte zu.|  
 |target_name|**nvarchar(60)**|Der Name des Ziels innerhalb einer Sitzung. Lässt keine NULL-Werte zu.|  
@@ -42,7 +42,7 @@ ms.locfileid: "99130270"
   
 ### <a name="relationship-cardinalities"></a>Kardinalität der Beziehungen  
   
-|Von|Beschreibung|Beziehung|  
+|From|Beschreibung|Relationship|  
 |----------|--------|------------------|  
 |sys.dm_xe_database_session_targets sys.dm_xe_database_session_targets.event_session_address|sys.dm_xe_database_sessions. Adresse|n:1|  
   

@@ -11,12 +11,12 @@ ms.assetid: 64dfe192-965c-49d4-a3ea-848fbc5f619f
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 52fb350d3dcf06cb215a723cb9c98402d44f0d21
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b4e080aeb3bb52a5b0562e63f4bda1a19fb9fe94
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320896"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100078881"
 ---
 # <a name="creating-script-files-accesstosql"></a>Erstellen von Skriptdateien (accesstosql)
 Der erste Schritt vor dem Starten der SSMA-Konsolenanwendung besteht darin, die Skriptdatei zu erstellen und bei Bedarf die Variablen Wert Datei und die Server Verbindungs Datei zu erstellen.  
@@ -321,9 +321,9 @@ Die vom benutzerkonfigurierbaren Optionen umfassen:
   
     Es treten zwei Fälle auf:  
   
-    1.  Wenn die Außerkraftsetzungs Option auf **false**gesetzt ist, wird die Such Reihenfolge durch den &gt; Benutzer geschützt &gt; &gt; .  
+    1.  Wenn die Außerkraftsetzungs Option auf **false** gesetzt ist, wird die Such Reihenfolge durch den &gt; Benutzer geschützt &gt; &gt; .  
   
-    2.  Wenn die Überschreibungs Option **true**ist, ist die Reihenfolge der Suche ein Skript für die Datei- &gt; Server-Verbindungs Datei &gt; .  
+    2.  Wenn die Überschreibungs Option **true** ist, ist die Reihenfolge der Suche ein Skript für die Datei- &gt; Server-Verbindungs Datei &gt; .  
   
     **Beispiel:**  
   

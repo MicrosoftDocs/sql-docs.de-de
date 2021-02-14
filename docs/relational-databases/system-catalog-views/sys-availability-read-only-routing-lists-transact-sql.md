@@ -25,19 +25,19 @@ helpviewer_keywords:
 ms.assetid: 0686bc5a-c206-41ef-b40a-79a8259d51d2
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: f38f8ea25b94097da9bcfd2fca272f9ad9030d77
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: caee2c4d248b9cdba9a5f7539e375ce8379a23b6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99183655"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338941"
 ---
 # <a name="sysavailability_read_only_routing_lists-transact-sql"></a>sys.availability_read_only_routing_lists (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Gibt eine Zeile für die schreibgeschützte Routingliste aller Verfügbarkeitsreplikate zurück, die zu einer Always On-Verfügbarkeitsgruppe im WSFC-Failovercluster gehören.  
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**replica_id**|**uniqueidentifier**|Eindeutige ID des Verfügbarkeitsreplikats, das die Routingliste besitzt.|  
 |**routing_priority**|**int**|Prioritätsreihenfolge nach Routing (1 an erster Stelle, 2 an zweiter Stelle usw.).|  

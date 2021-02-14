@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 0a06e9b6-a1e4-4293-867b-5c3f5a8ff62c
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 80291c619bedea8718854600a6480eb214a986a6
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b78d5e65fe9f6c60e94ddbf241c9eabfed332f0c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99198612"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338927"
 ---
 # <a name="sysavailability_replicas-transact-sql"></a>sys.availability_replicas (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -36,7 +36,7 @@ Gibt eine Zeile für jedes Verfügbarkeitsreplikat zurück, das zu einer Always 
 Wenn die lokale Serverinstanz nicht mit dem WSFC-Failovercluster kommunizieren kann, beispielsweise beim Ausfall des Clusters oder im Fall eines verlorenen Quorums, werden nur Zielen für lokale Verfügbarkeitsreplikate zurückgegeben. Diese Zeilen enthalten nur die Spalten der Daten, die in Metadaten lokal zwischengespeichert sind.  
   
  
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**replica_id**|**uniqueidentifier**|Eindeutige ID des Replikats.|  
 |**group_id**|**uniqueidentifier**|Eindeutige ID der Verfügbarkeitsgruppe, zu der das Replikat gehört.|  

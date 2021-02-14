@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 22a8f1a3-b4f2-4cfa-8495-7daad5ce9d12
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 5b2bb59ff72884649feb2167c41c5d838b9779d6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a32550093aefa8eb27af1736e317a7ce4caf0eaa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461901"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272721"
 ---
 # <a name="create-a-date-attribute-master-data-services"></a>Erstellen eines Datenattributs (Master Data Services)
 
@@ -63,9 +63,9 @@ ms.locfileid: "88461901"
   
 8.  Geben Sie im Feld **Pixelbreite anzeigen** die Breite der Attributspalte ein, die im **Explorerraster** angezeigt werden soll.  
   
-9. Wählen Sie in der Liste **Attributtyp** die Option **Freiform**aus.  
+9. Wählen Sie in der Liste **Attributtyp** die Option **Freiform** aus.  
   
-10. Wählen Sie aus der Liste **Datentyp** die Option **DateTime**aus.  
+10. Wählen Sie aus der Liste **Datentyp** die Option **DateTime** aus.  
   
 11. Wählen Sie aus der Liste **Eingabeformat** ein Format für Datumsangaben aus.  
   
@@ -76,7 +76,7 @@ ms.locfileid: "88461901"
 ## <a name="to-display-the-time-portion-of-a-datetime-value"></a>So zeigen Sie den Zeitbereich eines datetime-Werts an  
  Damit der Zeitbereich eines datetime-Werts in der Benutzeroberfläche angezeigt wird, müssen Sie ein geeignetes Eingabeformat für das Attribut auswählen. Da keine der integrierten Masken für Datetime-Attribute hierzu geeignet ist, können Sie eine neue Maske hinzufügen, die die Anzeige der Uhrzeit ermöglicht. Fügen Sie dazu der Tabelle mdm.tblList der MDS-Datenbank, in der integrierte Masken gespeichert werden, eine Zeile hinzu. Die Zeile sollte über die folgenden Werte verfügen:  
   
-|Column|Wert|  
+|Spalte|Wert|  
 |-|-|  
 |ListCode|lstInputMask|  
 |ListName|Eingabeformat|  
@@ -93,7 +93,7 @@ ms.locfileid: "88461901"
 ## <a name="see-also"></a>Weitere Informationen  
  [Attribute &#40;Master Data Services&#41;](../master-data-services/attributes-master-data-services.md)   
  [Ändern eines Attribut namens und Datentyps &#40;Master Data Services&#41;](../master-data-services/change-an-attribute-name-and-data-type-master-data-services.md)   
- [Erstellen eines domänenbasierten Attributs &#40;Master Data Services&#41;](../master-data-services/create-a-domain-based-attribute-master-data-services.md)   
+ [Erstellen Sie ein Domain-Based-Attribut &#40;Master Data Services&#41;](../master-data-services/create-a-domain-based-attribute-master-data-services.md)   
  [Erstellen eines Dateiattributs &#40;Master Data Services&#41;](../master-data-services/create-a-file-attribute-master-data-services.md)  
   
   

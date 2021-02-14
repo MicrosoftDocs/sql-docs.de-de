@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 58dbe99a-288d-4f1c-9cd5-704d6836c945
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: e9fe89ec7abff9a3440b72bb00d4aaee86837ca4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e0661048822933b8b49274d7addc40cec130e289
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92257777"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343192"
 ---
 # <a name="refreshing-data-mds-add-in-for-excel"></a>Aktualisieren von Daten (MDS-Add-In für Excel)
 

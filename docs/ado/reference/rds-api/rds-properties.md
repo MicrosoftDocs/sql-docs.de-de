@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e4e04cbd-21fc-44a1-9f21-49aa68746934
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6bf9a232f2dadfc562cd6e7e183858c3a7f64e9c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 641b2776efbd8b4e78348c45aecef3ace006dfdd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168824"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049220"
 ---
 # <a name="rds-properties"></a>RDS-Eigenschaften
 > [!IMPORTANT]

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0cc60267-3c56-4a88-8ad7-bb07f0255d56
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: af6e9ba832a267c2f85bbe2f44f087399384179c
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: ee09ab89e1acb0fc8ddad23d002e2cd0e136bc59
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86914662"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340488"
 ---
 # <a name="aggregate-functions---avg"></a>Aggregatfunktionen – avg
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

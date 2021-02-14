@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 5059f858-086a-40d4-811e-81fedaa18b06
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a870cdbd9a90fefe29088892f278446479665de7
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: f4fd85737d1a7cdc981576f624a2a403f0eb19ee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85753630"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341951"
 ---
 # <a name="expression-context-and-query-evaluation-xquery"></a>Ausdruckskontext und Ausdrucksauswertung (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "85753630"
   
 -   Wenn eine typisierte **XML** -Spalte oder-Variable abgefragt wird, werden die Komponenten der XML-Schema Auflistung, die der Spalte oder Variablen zugeordnet ist, in den statischen Kontext importiert. Weitere Informationen finden Sie unter [Vergleichen von typisiertem XML mit nicht typisiertem XML](../relational-databases/xml/compare-typed-xml-to-untyped-xml.md).  
   
--   Für jeden atomaren Typ in den importierten Schemas wird im statischen Kontext auch eine Umwandlungsfunktion verfügbar gemacht. Dies wird im folgenden Beispiel veranschaulicht. In diesem Beispiel wird eine Abfrage für eine typisierte **XML** -Variable angegeben. Die dieser Variablen zugeordnete XML-Schemaauflistung definiert den atomaren Typ myType. Entsprechend diesem Typ ist die Typumwandlungs Funktion **MyType ()** während der statischen Analyse verfügbar. Der Abfrageausdruck (`ns:myType(0)`) gibt einen Wert von myType zurück.  
+-   Für jeden atomaren Typ in den importierten Schemas wird im statischen Kontext auch eine Umwandlungsfunktion verfügbar gemacht. Dies wird im folgenden Beispiel illustriert. In diesem Beispiel wird eine Abfrage für eine typisierte **XML** -Variable angegeben. Die dieser Variablen zugeordnete XML-Schemaauflistung definiert den atomaren Typ myType. Entsprechend diesem Typ ist die Typumwandlungs Funktion **MyType ()** während der statischen Analyse verfügbar. Der Abfrageausdruck (`ns:myType(0)`) gibt einen Wert von myType zurück.  
   
     ```  
     -- DROP XML SCHEMA COLLECTION SC  
@@ -183,7 +183,7 @@ ms.locfileid: "85753630"
 ### <a name="implementation-restrictions"></a>Einschränkungen für die Implementierung  
  Im Zusammenhang mit dem dynamischen Kontext gelten die folgenden Einschränkungen:  
   
--   Die **aktuellen Datums-und Uhrzeit** Kontextfunktionen, **FN: Current-Date**, **FN: Current-Time**und **FN: Current-DateTime**, werden nicht unterstützt.  
+-   Die **aktuellen Datums-und Uhrzeit** Kontextfunktionen, **FN: Current-Date**, **FN: Current-Time** und **FN: Current-DateTime**, werden nicht unterstützt.  
   
 -   Die **implizite Zeitzone** ist auf "UTC + 0" gesetzt und kann nicht geändert werden.  
   

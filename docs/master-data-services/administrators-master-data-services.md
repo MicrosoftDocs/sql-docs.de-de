@@ -1,5 +1,5 @@
 ---
-title: Administratoren
+title: Administrators
 description: 'Erfahren Sie mehr über die Typen von Administratoren in Master Data Services: Modell Administratoren, Entitäts Administratoren und Administrator.'
 ms.custom: ''
 ms.date: 03/01/2017
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d330aa4e-6ade-4b09-b376-1b15d6c78f7d
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 7e65024ac3673e6579e614ad64931ab772b599f3
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: bfe03a31b5d8f35770f8ded41e4d8fdb86fb9d30
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193657"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339664"
 ---
 # <a name="administrators-master-data-services"></a>Administratoren (Master Data Services)
 

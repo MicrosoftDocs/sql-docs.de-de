@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: adecce2d-46bb-49ff-8be9-0b31b8dd3cb6
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 490841c151fc4636e2a5ed8a252de0fb3385c042
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4a23a3827cafd22b23144fa8d0862e25f2afe48b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88342796"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340234"
 ---
 # <a name="purge-version-members-master-data-services"></a>Endgültiges Löschen von Versionselementen (Master Data Services)
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: cac20b18-0a6d-4243-bbda-a5d1b9476441
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2289009f4f0dc6d8e48dc5a6cccd58695d667da9
-ms.sourcegitcommit: 2600a414c321cfd6dc6daf5b9bcbc9a99c049dc4
+ms.openlocfilehash: 93c40d3c64f2a32cd9f318dc236c4c350cfddc28
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91603310"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058115"
 ---
 # <a name="step-3-proof-of-concept-connecting-to-sql-using-ruby"></a>Schritt 3: Machbarkeitsnachweis für Verbindungen mit SQL mithilfe von Ruby
 

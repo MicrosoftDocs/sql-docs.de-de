@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||=azuresqldb-mi-current||=azure-sqldw-latest||>=aps-pdw-2016||>=sql-server-linux-2017||>=sql-server-2016
-ms.openlocfilehash: 0ea96bf157c6ab781e8e0fa34dc8146e590c4b2f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 56ef939790de90d02add427f14f8817df885383f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461371"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100079751"
 ---
 # <a name="versioning-system-for-sql-documentation"></a>Versionierungssystem für die SQL-Dokumentation
 

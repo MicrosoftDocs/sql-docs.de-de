@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4ace57dd-b66e-4b60-a2b9-a1b0f1a0831d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: cf7943cbcef462dbdf73e72357f28e4f4e3eb20d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 206bacf618d38c2dbbe593355d48ed66f7a9e67f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85724206"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341547"
 ---
 # <a name="numeric-values-functions---floor"></a>Funktionen für numerische Werte – floor
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -39,10 +39,10 @@ fn:floor ($arg as numeric?) as numeric?
  *$arg*  
  Anzahl, auf die die Funktion angewendet wird.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn der Typ des *$arg* einer der drei numerischen Basis Typen ( **xs: float**, **xs: Double**oder **xs: Decimal**) ist, ist der Rückgabetyp identisch mit dem *$arg* Typ. Wenn der Typ *$arg* ein Typ ist, der von einem der numerischen Typen abgeleitet ist, ist der Rückgabetyp der numerische Basistyp.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn der Typ des *$arg* einer der drei numerischen Basis Typen ( **xs: float**, **xs: Double** oder **xs: Decimal**) ist, ist der Rückgabetyp identisch mit dem *$arg* Typ. Wenn der Typ *$arg* ein Typ ist, der von einem der numerischen Typen abgeleitet ist, ist der Rückgabetyp der numerische Basistyp.  
   
- Wenn die Eingabe für die FN: Floor-, FN: ceiling-oder fn: Round-Funktionen **xdt: untypedAtomic**, nicht typisierte Daten ist, wird Sie implizit in **xs: Double**umgewandelt. Alle anderen Typen führen zum Generieren eines statischen Fehlers.  
+ Wenn die Eingabe für die FN: Floor-, FN: ceiling-oder fn: Round-Funktionen **xdt: untypedAtomic**, nicht typisierte Daten ist, wird Sie implizit in **xs: Double** umgewandelt. Alle anderen Typen führen zum Generieren eines statischen Fehlers.  
   
 ## <a name="examples"></a>Beispiele  
  Dieses Thema stellt XQuery-Beispiele für XML-Instanzen bereit, die in verschiedenen Spalten vom Typ **XML** in der AdventureWorks-Beispieldatenbank gespeichert sind.  

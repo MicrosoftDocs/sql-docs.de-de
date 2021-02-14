@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7cd69c8b-cf2c-478c-b9a3-e0e14e1aa8aa
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2987001d2163340d9734a9cf606dfbe009901de3
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 588e3a4dc19d502da07d23971aea7b987e49a8ea
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85720054"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344996"
 ---
 # <a name="functions-on-string-values---string-length"></a>Funktionen für Zeichenfolgenwerte – string-length
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -40,7 +40,7 @@ fn:string-length($arg as xs:string?) as xs:integer
  *$arg*  
  Quellzeichenfolge, deren Länge berechnet werden soll.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Bemerkungen  
  Wenn der Wert *$arg* eine leere Sequenz ist, wird der **xs: Integer** -Wert 0 zurückgegeben.  
   
  Das Verhalten von Ersatzpaaren in XQuery-Funktionen hängt vom Kompatibilitätsgrad der Datenbank ab. Beim Kompatibilitätsgrad 110 oder höher wird jedes Ersatzpaar als einzelnes Zeichen gezählt. Bei niedrigeren Kompatibilitätsgraden werden Ersatzpaare als zwei Zeichen betrachtet. Weitere Informationen finden Sie unter [ALTER DATABASE-Kompatibilitäts Grad &#40;Transact-SQL-&#41;](../t-sql/statements/alter-database-transact-sql-compatibility-level.md) und [Sortierung und Unicode-Unterstützung](../relational-databases/collations/collation-and-unicode-support.md).  

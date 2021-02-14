@@ -20,12 +20,12 @@ ms.assetid: 6e76b39f-236e-4bbf-b0b5-38be190d81e8
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: 5115f543953d549769f1894530baba1f41eac42a
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c9dbbe97b010e5fb47dd58f60f5863a63a5a36fd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99190154"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342144"
 ---
 # <a name="sysdm_os_job_object-azure-sql-database"></a>sys.dm_os_job_object (Azure SQL-Datenbank)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
@@ -34,7 +34,7 @@ Gibt eine einzelne Zeile zurück, die die Konfiguration des Auftrags Objekts bes
 
 Ein Auftrags Objekt ist ein Windows-Konstrukt, das CPU-, Arbeitsspeicher-und e/A-Ressourcenkontrolle auf Betriebssystemebene implementiert. Weitere Informationen zu Auftrags Objekten finden Sie unter [Auftrags Objekte](/windows/desktop/ProcThread/job-objects).
   
-|Spalten|Datentyp|BESCHREIBUNG|  
+|Spalten|Datentyp|Beschreibung|  
 |-------------|---------------|-----------------|  
 |cpu_rate|**int**|Gibt den Teil der Prozessor Zyklen an, den SQL Server Threads während jedes Zeit Planungs Intervalls verwenden können. Der Wert wird als Prozentsatz der verfügbaren Zyklen innerhalb eines 10000-Zyklus-Planungs Intervalls, multipliziert mit der Anzahl logischer CPUs, angezeigt. Beispielsweise bedeutet der Wert 800 für eine SQL Server Instanz mit 8 logischen CPUs, dass die Verwendung von CPUs die volle Kapazität von Threads verwenden kann.|
 |cpu_affinity_mask|**bigint**|Eine Bitmaske, die beschreibt, welche logischen Prozessoren der SQL Server Prozess innerhalb der Prozessor Gruppe verwenden kann. Beispielsweise bedeutet cpu_affinity_mask 255 (1111 1111 in Binary), dass die ersten acht logischen Prozessoren verwendet werden können. <br /><br />Diese Spalte wird aus Gründen der Abwärtskompatibilität bereitgestellt. Die Prozessor Gruppe wird nicht gemeldet, und der gemeldete Wert ist möglicherweise falsch, wenn eine Prozessor Gruppe mehr als 64 logische Prozessoren enthält. Verwenden Sie die- `process_physical_affinity` Spalte, um stattdessen die Prozessor Affinität zu bestimmen.|

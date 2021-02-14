@@ -13,12 +13,12 @@ author: ronortloff
 ms.author: rortloff
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
 ms.custom: seo-dt-2019
-ms.openlocfilehash: dcc54d2d6367182ab6363ef7be2e3c9de6d615eb
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 68a4abf4e532719d67032c2eeb64a0027c1c88a5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99210767"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100271797"
 ---
 # <a name="sp_pdw_add_network_credentials-azure-synapse-analytics"></a>sp_pdw_add_network_credentials (Azure-Synapse-Analyse)
 [!INCLUDE[applies-to-version/asa-pdw](../../includes/applies-to-version/asa-pdw.md)]

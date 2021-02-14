@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 721277fd-84f0-41aa-8f2d-bc13a7221044
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: dc41a190a556e04746ebbba55defd444da21c5b1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b89334fd75b5bce9023640761e02c569a79fe094
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500697"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272881"
 ---
 # <a name="change-a-user39s-email-address-master-data-services"></a>Ändern einer Benutzer-E-Mail-Adresse (Master Data Services)
 

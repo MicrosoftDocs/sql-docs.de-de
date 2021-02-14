@@ -21,12 +21,12 @@ ms.assetid: 1d556c67-5c12-46d5-aa8c-7ec1bb858df7
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 2d6278f03b3bb49c4083c90c0967b5ed6ac8907c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 87d26cf7e64e509f811b80b954984217430ef831
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99190187"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100338865"
 ---
 # <a name="sysdm_os_memory_clerks-transact-sql"></a>sys.dm_os_memory_clerks (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "99190187"
 > [!NOTE]  
 >  Um dies von oder aus aufzurufen [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] , verwenden Sie den Namen **sys.dm_pdw_nodes_os_memory_clerks**.  
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**memory_clerk_address**|**varbinary(8)**|Gibt die eindeutige Speicheradresse des Arbeitsspeicherclerks an. Dies ist die Primärschlüsselspalte. Lässt keine NULL-Werte zu.|  
 |**type**|**nvarchar(60)**|Gibt den Typ des Arbeitsspeicherclerks an. Jeder Clerk entspricht einem bestimmten Typ, wie z. B. dem CLR-Clerk MEMORYCLERK_SQLCLR. Lässt keine NULL-Werte zu.|  
@@ -58,7 +58,7 @@ ms.locfileid: "99190187"
 ## <a name="permissions"></a>Berechtigungen 
 
 In [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] ist die- `VIEW SERVER STATE` Berechtigung erforderlich.   
-Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken `Server admin` oder ein `Azure Active Directory admin` Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
+Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken das [Server Administrator](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
   
 ## <a name="remarks"></a>Bemerkungen  
  Der Speicher-Manager von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] besteht aus einer Hierarchie mit drei Ebenen. Die unterste Ebene der Hierarchie bilden Speicherknoten. Die mittlere Ebene besteht aus Arbeitsspeicherclerks, Arbeitsspeichercaches und Arbeitsspeicherpools. Die obere Ebene besteht aus Speicherobjekten. Diese Objekte werden im Allgemeinen für die Zuordnung von Arbeitsspeicher in einer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Instanz verwendet.  

@@ -15,12 +15,12 @@ ms.assetid: 8ad860e7-e054-4186-80a2-03977e42531d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 4c9b29762b2f6ba3c44368313d23ecbe002b3741
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 1f1258350540f67c362b94f4eb0f1dae3cd842e4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99187362"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338082"
 ---
 # <a name="system-functions-by-category-for-transact-sql"></a>System Funktionen nach Kategorie für Transact-SQL
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

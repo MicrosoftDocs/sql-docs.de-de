@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 2c88c015-04fc-429b-84b2-835596a28b65
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9c1f313a5316059a05cb30a5af6ef7a451353a3d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 18f57d57e1a944a1be66a880231533e6cf34493e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85724222"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344975"
 ---
 # <a name="functions-on-string-values---contains"></a>Funktionen für Zeichenfolgenwerte – contains
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
 
-  Gibt einen Wert vom Typ xs: Boolean zurück, der angibt, ob der Wert von *$arg 1* einen Zeichen folgen Wert enthält, der durch *$Arg 2*angegeben wird.  
+  Gibt einen Wert vom Typ xs: Boolean zurück, der angibt, ob der Wert von *$arg 1* einen Zeichen folgen Wert enthält, der durch *$Arg 2* angegeben wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,14 +42,14 @@ fn:contains ($arg1 as xs:string?, $arg2 as xs:string?) as xs:boolean?
  *$Arg 2*  
  Abzurufende Unterzeichenfolge.  
   
-## <a name="remarks"></a>Hinweise  
- Wenn der Wert von *$Arg 2* eine Zeichenfolge der Länge 0 (null) ist, gibt die Funktion **true**zurück. Wenn der Wert von *$arg 1* eine Zeichenfolge der Länge 0 (null) ist und der Wert von *$Arg 2* keine Zeichenfolge der Länge 0 (null) ist, gibt die Funktion **false**zurück.  
+## <a name="remarks"></a>Bemerkungen  
+ Wenn der Wert von *$Arg 2* eine Zeichenfolge der Länge 0 (null) ist, gibt die Funktion **true** zurück. Wenn der Wert von *$arg 1* eine Zeichenfolge der Länge 0 (null) ist und der Wert von *$Arg 2* keine Zeichenfolge der Länge 0 (null) ist, gibt die Funktion **false** zurück.  
   
  Wenn der Wert *$arg 1* oder *$Arg 2* die leere Sequenz ist, wird das Argument als Zeichenfolge der Länge 0 (null) behandelt.  
   
  Die contains()-Funktion verwendet die Unicode-Codepunkt-Standardsortierung von XQuery für den Zeichenfolgenvergleich.  
   
- Der für *$Arg 2* angegebene Teil Zeichenfolgen-Wert muss kleiner oder gleich 4000 Zeichen sein. Wenn der angegebene Wert größer als 4000 Zeichen ist, tritt eine dynamische Fehlerbedingung auf, und die enthält ()-Funktion gibt eine leere Sequenz anstelle eines booleschen Werts von **true** oder **false**zurück. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] löst keine dynamischen Fehler bei XQuery-Ausdrücken aus.  
+ Der für *$Arg 2* angegebene Teil Zeichenfolgen-Wert muss kleiner oder gleich 4000 Zeichen sein. Wenn der angegebene Wert größer als 4000 Zeichen ist, tritt eine dynamische Fehlerbedingung auf, und die enthält ()-Funktion gibt eine leere Sequenz anstelle eines booleschen Werts von **true** oder **false** zurück. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] löst keine dynamischen Fehler bei XQuery-Ausdrücken aus.  
   
  Um Vergleiche ohne Berücksichtigung der Groß-/Kleinschreibung zu erhalten, können die groß [-](../xquery/functions-on-string-values-upper-case.md) oder Kleinbuchstaben verwendet werden.  
   

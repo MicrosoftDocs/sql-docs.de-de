@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: ad5b83b1-8e40-4ef8-9ba8-4ea17a58b672
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: f4b7f610ca23940c676befc107331b406c124cb2
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: e9faf7de8d3e7517d47c61ba3a9b6e00cd2e2b09
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197021"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347735"
 ---
 # <a name="import-data-from-tables-master-data-services"></a>Importieren von Daten aus Tabellen (Master Data Services)
 
@@ -30,7 +30,7 @@ ms.locfileid: "92197021"
   
 -   Sie müssen über Berechtigungen verfügen, um entweder den STG.udp_ \<name> _Leaf, STG. UDP \_ \<name> _Consolidated oder die gespeicherte Prozedur STG. UDP \_ \<name> _Relationship in der- [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] Datenbank auszuführen.  
   
--   Das Modell darf nicht den Status **Commit wurde ausgeführt**haben.  
+-   Das Modell darf nicht den Status **Commit wurde ausgeführt** haben.  
   
  **So können Sie Daten in der Datenbank hinzufügen, aktualisieren und Löschen [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)]**  
   

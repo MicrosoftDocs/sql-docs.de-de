@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0af057d5-6b73-472b-99eb-9f5eb61a9b5b
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 5c40c4cd565d01e7918cecd7c2dc89015f13c9f9
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 2862edbc70fdd2fd4d26ba580a04b18ebe1c9ce3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85811969"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341771"
 ---
 # <a name="entities-master-data-services"></a>Entitäten (Master Data Services)
 

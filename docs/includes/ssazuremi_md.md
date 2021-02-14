@@ -4,11 +4,11 @@ ms.service: sql
 ms.topic: include
 ms.date: 07/20/2020
 ms.author: mikeray
-ms.openlocfilehash: e34f82f19350ae6ae1819d358ac8f5565593cd0c
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 9c1af5a4e40d9fa8718a7b3673def7aad4c98258
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96115936"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100019333"
 ---
 Verwaltete Azure SQL-Instanz

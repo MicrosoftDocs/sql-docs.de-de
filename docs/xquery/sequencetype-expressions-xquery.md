@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: ad3573da-d820-4d1c-81c4-a83c4640ce22
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 909d3cb49879a94c466e58f83997e32c468d9df8
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 0627d892733f84cb4a8d1b5cf80ad65d9c09f824
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85643361"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100335846"
 ---
 # <a name="sequencetype-expressions-xquery"></a>SequenceType-Ausdrücke (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "85643361"
 Expression instance of SequenceType[Occurrence indicator]  
 ```  
   
- Beachten Sie, dass der- `instance of` Operator, der die `Occurrence indicator` Kardinalität, die Anzahl der Elemente in der resultierenden Sequenz angibt. Wenn dieser Operator nicht angegeben wird, wird eine Kardinalität von 1 verwendet. In [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] wird nur der Indikator "Fragezeichen (**?)** vorkommen" unterstützt. Die **?** der Vorkommen Indikator gibt an, dass `Expression` null oder ein Element zurückgeben kann. Wenn **?** der Vorkommen Indikator wird angegeben. `instance of` gibt true zurück, wenn der `Expression` Typ mit dem angegebenen übereinstimmt `SequenceType` , unabhängig davon, ob `Expression` einen Singleton oder eine leere Sequenz zurückgibt.  
+ Beachten Sie, dass der- `instance of` Operator, der die `Occurrence indicator` Kardinalität, die Anzahl der Elemente in der resultierenden Sequenz angibt. Wenn dieser Operator nicht angegeben wird, wird eine Kardinalität von 1 verwendet. In [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] wird nur der Indikator "Fragezeichen (**?)** vorkommen" unterstützt. Der **?**-Quantifizierer der Vorkommen Indikator gibt an, dass `Expression` null oder ein Element zurückgeben kann. Wenn **?** der Vorkommen Indikator wird angegeben. `instance of` gibt true zurück, wenn der `Expression` Typ mit dem angegebenen übereinstimmt `SequenceType` , unabhängig davon, ob `Expression` einen Singleton oder eine leere Sequenz zurückgibt.  
   
  Wenn **?** der Vorkommen Indikator ist nicht angegeben, `sequence of` gibt nur dann true zurück, wenn der `Expression` Typ mit dem angegebenen übereinstimmt `Type` und `Expression` ein Singleton zurückgibt.  
   
  **Hinweis** Das Pluszeichen ( **+** ) und das Sternchen (**&#42;**) werden in nicht unterstützt [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] .  
   
- In den folgenden Beispielen wird die Verwendung der**Instanz des** XQuery-Operators veranschaulicht.  
+ In den folgenden Beispielen wird die Verwendung der **Instanz des** XQuery-Operators veranschaulicht.  
   
 ### <a name="example-a"></a>Beispiel A  
  Im folgenden Beispiel wird eine Variable vom Typ **XML** erstellt und eine Abfrage dafür angegeben. Der Abfrageausdruck gibt einen `instance of`-Operator an, um zu bestimmen, ob der dynamische Typ des von dem ersten Operanden zurückgegebenen Werts mit dem im zweiten Operanden angegebenen Typ übereinstimmt.  
@@ -313,7 +313,7 @@ select @x.query(' declare namespace CustOrders="Customers";
   
 -   Vollständige Sequenzen wie z. B. `(1,2) instance of xs:integer*` werden nicht unterstützt.  
   
--   Wenn Sie eine Form des Element Sequenz Typs **()** verwenden, der einen Typnamen angibt, z. b `element(ElementName, TypeName)` ., muss der Typ mit einem Fragezeichen (?) qualifiziert werden. `element(Title, xs:string?)` gibt beispielsweise an, dass für das Element NULL-Werte zulässig sind. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]unterstützt keine Lauf Zeit Erkennung der **xsi: Nil** -Eigenschaft mithilfe von `instance of` .  
+-   Wenn Sie eine Form des Element Sequenz Typs **()** verwenden, der einen Typnamen angibt, z. b `element(ElementName, TypeName)` ., muss der Typ mit einem Fragezeichen (?) qualifiziert werden. `element(Title, xs:string?)` gibt beispielsweise an, dass für das Element NULL-Werte zulässig sind. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] unterstützt keine Lauf Zeit Erkennung der **xsi: Nil** -Eigenschaft mithilfe von `instance of` .  
   
 -   Wenn der Wert in `Expression` aus einem als UNION typisierten Element oder Attribut stammt, identifiziert [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] nur den Grundtyp, nicht aber den Typ, aus dem der Typ des Werts abgeleitet wurde. Wenn <> beispielsweise `e1` als statischer Typ (xs: integer | xs: String) definiert ist, wird false zurückgegeben.  
   
@@ -375,13 +375,13 @@ select @x.query('xs:date("2000-01-01Z")')
   
 #### <a name="implementation-limitations"></a>Implementierungseinschränkungen  
   
--   Die XQuery-Ausdrücke **typeswitch**, **castable**und **Treat** werden nicht unterstützt.  
+-   Die XQuery-Ausdrücke **typeswitch**, **castable** und **Treat** werden nicht unterstützt.  
   
 -   Umwandlung **als** erfordert ein Fragezeichen (?) nach dem Atomic-Typ.  
   
 -   **xs: QName** wird nicht als Typ für die Umwandlung unterstützt. Verwenden Sie stattdessen " **expanded-QName** ".  
   
--   **xs: Date**, **xs: Time**und **xs: DateTime** erfordern eine Zeitzone, die durch a Z angegeben wird.  
+-   **xs: Date**, **xs: Time** und **xs: DateTime** erfordern eine Zeitzone, die durch a Z angegeben wird.  
   
      Die folgende Abfrage schlägt fehl, da die Zeitzone nicht angegeben ist.  
   

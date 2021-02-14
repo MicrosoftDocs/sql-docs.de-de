@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || >= sql-server-linux-2017'
-ms.openlocfilehash: 7e3375c3d9cfe8d9671151901f4b64d23bc79e85
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 91a43d9ef3050538a1b3f4c8cfdafa94958c32d5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97409118"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080981"
 ---
 # <a name="sql-server-help-and-feedback"></a>SQL Server-Hilfe und -Feedback
 

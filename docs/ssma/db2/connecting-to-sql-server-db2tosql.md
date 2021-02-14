@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: b59803cb-3cc6-41cc-8553-faf90851410e
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 5b039840ea7e010597de05ffb524eb5f568b0624
-ms.sourcegitcommit: 82b92f73ca32fc28e1948aab70f37f0efdb54e39
+ms.openlocfilehash: 1109bd083476bf9be2421b06637751c34fc6405c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94870656"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081636"
 ---
 # <a name="connecting-to-sql-server-db2tosql"></a>Herstellen einer Verbindung mit SQL Server (DB2ToSQL)
 

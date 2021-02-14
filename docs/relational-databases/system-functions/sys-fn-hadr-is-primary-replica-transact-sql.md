@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: c9b1969f-be1d-4dfb-a33d-551f380b9e27
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: af4f038c1e33004a8502307ed27a0c1c9ee45b58
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d6e16fbf2bc815becc2a0f45183514aff4311a04
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99198728"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338107"
 ---
 # <a name="sysfn_hadr_is_primary_replica-transact-sql"></a>sys.fn_hadr_is_primary_replica (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: cdb31c76-e559-475c-b33a-aac24f73e70e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6e3369e181577214a9e4b430dded19110744eb0d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 08bb9e7bb82484080f969bce5e817a1d21724809
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169315"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054035"
 ---
 # <a name="keys-collection-adox"></a>Keys-Collection (ADOX)
 Enthält alle [Schlüssel](./key-object-adox.md) Objekte einer [Tabelle](./table-object-adox.md).  

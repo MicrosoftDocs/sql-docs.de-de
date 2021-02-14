@@ -10,12 +10,12 @@ ms.custom: ''
 ms.date: 07/14/2017
 ms.author: v-daenge
 author: David-Engel
-ms.openlocfilehash: dce2f56d3257ac3b513ef3839f949258c6f018df
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2acdc83e4dd85a2663becaee11ec8ca5f3b5bcbb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99187175"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100079311"
 ---
 # <a name="retrieve-numeric-data-with-sql_numeric_struct"></a>Abrufen numerischer Daten mit der numerischen SQL- \_ \_ Struktur
 
