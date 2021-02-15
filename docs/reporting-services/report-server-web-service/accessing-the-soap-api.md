@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 63bb870a-4dbf-46bd-8921-78f8ebe5fd75
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 165302d4bb324dfb79f43e37b8a47e5e11973ce5
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 5fcb5dd895f6997ed72c91e9c66d9bd7be1c5aa4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "79509911"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018653"
 ---
 # <a name="accessing-the-soap-api"></a>Accessing the SOAP API
   Der Berichtsserver-Webdienst verwendet SOAP (Simple Object Access Protocol) über HTTP und agiert als Kommunikationsschnittstelle zwischen den Clientprogrammen und dem Berichtsserver. Der Webdienst verfügt über zwei Endpunkte (einen für die Berichtsausführung und einen für die Berichtsverwaltung) und besteht aus Methoden und einer Reihe komplexer Typenobjekte, anhand derer Sie auf die kompletten Funktionen von [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] zugreifen können. Um den Dienst aufzurufen, müssen Sie auf die Reporting Services-WSDL (Web Services Description Language) verweisen.  
@@ -54,7 +54,7 @@ https://server/reportserver/ReportService2010.asmx?wsdl
 |-----------------|-----------------|  
 |*server*|Der Name des Servers, auf dem der Berichtsserver eingesetzt wird.|  
 |*berichtsserver*|Der Name des Ordners, der den XML-Webdienst enthält. Dieser wird während des Setups konfiguriert.|  
-|*\<endpunktname>.asmx*|Der Name des Webdienst-Endpunkts.|  
+|*\<endpoint name>.asmx*|Der Name des Webdienst-Endpunkts.|  
   
  Weitere Informationen über das WSDL-Format finden Sie in der WSDL-Spezifikation von W3C (World Wide Web Consortium) unter http://www.w3.org/TR/wsdl.  
   

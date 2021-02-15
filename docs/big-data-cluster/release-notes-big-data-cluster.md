@@ -9,12 +9,12 @@ ms.date: 01/13/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: e10beb2ef41881312e4871021bb2595e52731262
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 75b3b483a9e7744bb35b50ff30649b3257e14285
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596597"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046185"
 ---
 # <a name="sql-server-2019-big-data-clusters-release-notes"></a>Versionshinweise zu Big Data-Clustern für SQL Server 2019
 
@@ -200,6 +200,30 @@ Mit der allgemeinen Vertriebsversion 1 für SQL Server 2019 (GDR1) wird die allg
 [!INCLUDE [sql-server-servicing-updates-version-15](../includes/sql-server-servicing-updates-version-15.md)]
 
 ## <a name="known-issues"></a>Bekannte Probleme
+
+### <a name="partial-loss-of-logs-collected-in-elasticsearch-upon-rollback"></a>Partieller Verlust von Protokollen, die in ElasticSearch bei einem Rollback gesammelt wurden
+
+- **Betroffene Releases:** Vorhandene Cluster bei einem fehlgeschlagenen Upgrade auf CU9-Ergebnisse in einem Rollback oder wenn ein Benutzer einen Downgrade auf ein älteres Release ausstellt
+
+- **Problem und Kundenbeeinträchtigung:** Die für die elastische Suche verwendete Softwareversion wurde auf CU9 aktualisiert, und die neue Version ist nicht abwärtskompatibel mit dem vorherigen Protokollformat bzw. den Metadaten. Wenn die ElasticSearch-Komponente erfolgreich aktualisiert wird, aber ein späteres Rollback ausgelöst wird, gehen die zwischen dem ElasticSearch-Upgrade und dem Rollback gesammelten Protokolle dauerhaft verloren. Wenn Sie ein Downgrade auf eine ältere Version von BDC ausgeben (nicht empfohlen), gehen die in Elasticsearch gespeicherten Protokolle verloren. Beachten Sie Folgendes: Wenn der Benutzer ein Upgrade auf CU9 durchführt, werden die Daten wiederhergestellt.
+
+- **Problemumgehung**: Bei Bedarf können Sie die Problembehandlung mithilfe von Protokollen über den Befehl `azdata bdc debug copy-logs` durchführen.
+
+### <a name="missing-pods-and-container-metrics"></a>Fehlende Pods und Containermetriken
+
+- **Betroffene Releases:** Vorhandene und neue Cluster beim Upgrade auf CU9
+
+- **Problem und Kundenbeeinträchtigung:** Wenn Sie ein Upgrade der Version von Telegraf für die BDC-Überwachungselemente in CU9 durchführen, werden Sie beim Upgrade des Clusters auf das CU9-Release bemerken, dass Pods und Containermetriken nicht gesammelt werden. Dies liegt daran, dass eine zusätzliche Ressource in der Definition der Clusterrolle erforderlich ist, die als Ergebnis des Softwareupgrades für Telegraf verwendet wird. Wenn der Benutzer, der den Cluster bereitstellt oder das Upgrade durchführt, nicht die erforderlichen Berechtigungen hat, wird die Bereitstellung bzw. das Upgrade mit einer Warnung fortgesetzt und erfolgreich abgeschlossen. Allerdings werden dabei keine Pod- und Knotenmetriken gesammelt.
+
+- **Problemumgehung**: Sie können einen Administrator bitten, die Rolle und das zugehörige Dienstkonto zu erstellen oder zu aktualisieren (vor oder nach der Bereitstellung bzw. dem Upgrade). Big Data-Cluster verwendet diese dann. [In diesem Artikel wird](kubernetes-rbac.md#cluster-role-required-for-pods-and-nodes-metrics-collection) beschrieben, wie Sie die erforderlichen Artefakte erstellen.
+
+### <a name="issuing-azdata-bdc-copy-logs-does-not-result-in-logs-being-copied"></a>Das Ausgeben von `azdata bdc copy-logs` führt nicht dazu, dass Protokolle kopiert werden.
+
+- **Betroffene Releases**: [!INCLUDE [azure-data-cli-azdata](../includes/azure-data-cli-azdata.md)]-Version *20.0.0*
+
+- **Problem und Kundenbeeinträchtigung:** Bei der Implementierung des Befehls *copy-logs* wird davon ausgegangen, dass das Clienttool `kubectl` (Version 1.15 oder höher) auf dem Clientcomputer installiert ist, von dem der Befehl gesendet wird. Wenn `kubectl` Version 1.14 verwendet wird, wird der Befehl *azdata bdc debug copy-logs* ohne Fehler beendet, aber Protokolle werden nicht kopiert. Wenn Sie die Aktion mit dem *--Debug*-Flag ausführen, wird dieser Fehler in der Ausgabe angezeigt: *source "." is invalid* (Die Quelle "." ist ungültig).
+
+- **Problemumgehung**: Installieren Sie das Tool `kubectl` Version 1.15 oder höher auf demselben Clientcomputer, und geben Sie den `azdata bdc copy-logs`-Befehl erneut aus. Informationen zum Installieren von `kubectl` finden Sie [unter diesem Link](deploy-big-data-tools.md).
 
 ### <a name="msdtc-capabilities-can-not-be-enabled-for-sql-server-master-instance-running-within-bdc"></a>MS DTC-Funktionen können nicht für die SQL Server-Masterinstanz aktiviert werden, die in Big Data-Clustern ausgeführt werden.
 

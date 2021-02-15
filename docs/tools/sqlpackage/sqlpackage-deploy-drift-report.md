@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 12/11/2020
-ms.openlocfilehash: 07a393bb785aafda352aff28f920cb4316a47191
-ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
+ms.openlocfilehash: 8f58ec917fa6c26e4095649c33fca8b4048b96b1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97577868"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081501"
 ---
 # <a name="sqlpackage-deploy-report-and-drift-report"></a>DeployReport- und DriftReport-Aktionen von SqlPackage
 Die Aktion [DeployReport](#deployreport-action-parameters) von „SqlPackage.exe“ erstellt einen XML-Bericht für die Änderungen, die von einer Publish-Aktion durchgeführt werden würden.
@@ -76,7 +76,7 @@ SqlPackage {parameters}{properties}{SQLCMD Variables}
 |**/p:**|AllowIncompatiblePlatform=(BOOLEAN)|Gibt an, ob versucht werden soll, die Aktion trotz inkompatibler SQL Server-Plattformen auszuführen.|
 |**/p:**|AllowUnsafeRowLevelSecurityDataMovement=(BOOLEAN)|Wenn diese Eigenschaft auf TRUE festgelegt ist, wird das Verschieben von Daten in einer Tabelle mit Sicherheit auf Zeilenebene nicht blockiert. Der Standardwert ist "false".|
 |**/p:**|BackupDatabaseBeforeChanges=(BOOLEAN)|Sichert die Datenbank, bevor Änderungen bereitgestellt werden.|
-|**/p:**|BlockOnPossibleDataLoss=(BOOLEAN 'True')|Gibt an, dass der Veröffentlichungszeitraum beendet werden soll, wenn durch den Veröffentlichungsvorgang ein Datenverlust verursacht werden könnte.|
+|**/p:**|BlockOnPossibleDataLoss=(BOOLEAN 'True')| Mit dieser Eigenschaft wird angegeben, dass der Vorgang während des Schritts zur Schemaüberprüfung beendet wird, wenn die resultierenden Schemaänderungen einen Datenverlust verursachen könnten, auch aufgrund von Datengenauigkeit oder einer Datentypänderung, die einen Umwandlungsvorgang erfordert. Der Standardwert (`True`) bewirkt, dass der Vorgang unabhängig davon beendet wird, ob die Zieldatenbank Daten enthält.  Eine Ausführung mit einem `False`-Wert für BlockOnPossibleDataLoss kann während der Ausführung des Bereitstellungsplans trotzdem fehlschlagen, wenn Daten auf dem Ziel vorhanden sind, die nicht in den neuen Spaltentyp konvertiert werden können. |
 |**/p:**|BlockWhenDriftDetected=(BOOLEAN 'True')|Gibt an, ob die Aktualisierung einer Datenbank, deren Schema nicht mehr mit der Registrierung übereinstimmt oder aus der Registrierung entfernt wurde, blockiert wird. |
 |**/p:**|CommandTimeout=(INT32 '60')|Gibt das Befehlstimeout in Sekunden zum Ausführen von Abfragen in SQL Server zurück. |
 |**/p:**|CommentOutSetVarDeclarations=(BOOLEAN)|Gibt an, ob die SETVAR-Variablendeklaration im generierten Veröffentlichungsskript auskommentiert werden soll. Dies empfiehlt sich beispielsweise, wenn Sie die Werte über die Befehlszeile eingeben möchten und mithilfe eines Tool wie SQLCMD.EXE veröffentlichen. |
@@ -163,7 +163,7 @@ SqlPackage {parameters}{properties}{SQLCMD Variables}
   
 ## <a name="driftreport-action-parameters"></a>Parameter für die DriftReport-Aktion
 
-|Parameter|Kurzform|Wert|BESCHREIBUNG|
+|Parameter|Kurzform|Wert|Beschreibung|
 |---|---|---|---|
 |**/Action:**|**/a**|DriftReport|Gibt die auszuführende Aktion an. |
 |**/AccessToken:**|**/at**|{string}| Gibt das Zugriffstoken für die tokenbasierte Authentifizierung an, das beim Herstellen einer Verbindung mit der Zieldatenbank verwendet werden soll. |

@@ -40,12 +40,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 126a649f2555b2a66ba7ce4378378ff9e401f6fc
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 99552883fb06c01a862ddc973ff3747d11a89ee8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987226"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100079551"
 ---
 # <a name="database-project-settings"></a>Datenbankprojekteinstellungen
 
@@ -75,7 +75,7 @@ Mit Datenbankprojekteinstellungen werden Aspekte der Datenbank-, Debug- und Buil
   
 1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Datenbankprojekt, für das Sie Eigenschaften konfigurieren möchten, und wählen Sie **Eigenschaften** aus.  
   
-    Alternativ können Sie auf den Knoten **Eigenschaften** des Projekts im **Projektmappen-Explorer**doppelklicken.  
+    Alternativ können Sie auf den Knoten **Eigenschaften** des Projekts im **Projektmappen-Explorer** doppelklicken.  
   
 2.  Das Eigenschaftenblatt für das Datenbankprojekt wird angezeigt.  
   
@@ -176,7 +176,7 @@ Sie können für jedes Datenbankprojekt in der Projektmappe eine Buildkonfigurat
   
 #### <a name="to-specify-a-build-configuration-for-a-solution"></a>So geben Sie eine Buildkonfiguration für eine Projektmappe an  
   
-1.  Klicken Sie im **Projektmappen-Explorer**auf den Projektmappenknoten, für den Sie eine Buildkonfiguration angeben möchten.  
+1.  Klicken Sie im **Projektmappen-Explorer** auf den Projektmappenknoten, für den Sie eine Buildkonfiguration angeben möchten.  
   
 2.  Klicken Sie im Menü **Build** auf **Konfigurations-Manager**. Das Dialogfeld **Konfigurations-Manager** wird angezeigt.  
   

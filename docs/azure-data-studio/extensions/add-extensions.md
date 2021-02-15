@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, maghan, sstein
 ms.custom: ''
 ms.date: 10/03/2019
-ms.openlocfilehash: 2e2e76c436c02f2cbc5878228f1be2d57248816c
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 3cc965ffd169d53e59706ca4ba68f2bcdddb5aa9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91123453"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052120"
 ---
 # <a name="extend-the-functionality-of-azure-data-studio"></a>Erweitern der Funktionalität von Azure Data Studio
 
@@ -58,7 +58,7 @@ Sie können eine Erweiterung vorübergehend deaktivieren, anstatt sie dauerhaft 
 
 ### <a name="enable-an-extension"></a>Aktivieren einer Erweiterung
 
-Wenn eine Erweiterung deaktiviert wurde, befindet sie sich im Abschnitt **Deaktiviert** der Liste der Erweiterungen und ist als ***Deaktiviert*** gekennzeichnet. Sie können sie mit den Befehlen **Aktivieren** oder **Aktivieren (Arbeitsbereich)** im Dropdownmenü erneut aktivieren. Mit der **Befehlspalette** können Sie auch alle Erweiterungen mit den Befehlen **Erweiterungen: Alle Erweiterungen aktivieren** und **Erweiterungen: Ale Erweiterungen aktivieren (Arbeitsbereich)** aktivieren.
+Wenn eine Erweiterung deaktiviert wurde, befindet sie sich im Abschnitt **Deaktiviert** der Liste der Erweiterungen und ist als **_Deaktiviert_ *_ gekennzeichnet. Sie können sie mit den Befehlen _* Aktivieren** oder **Aktivieren (Arbeitsbereich)** im Dropdownmenü erneut aktivieren. Mit der **Befehlspalette** können Sie auch alle Erweiterungen mit den Befehlen **Erweiterungen: Alle Erweiterungen aktivieren** und **Erweiterungen: Ale Erweiterungen aktivieren (Arbeitsbereich)** aktivieren.
 
 ![Aktivieren von Erweiterungen](media/add-extensions/extensions-enable.png)
 

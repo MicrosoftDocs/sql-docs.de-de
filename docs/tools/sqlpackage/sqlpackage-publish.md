@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 12/11/2020
-ms.openlocfilehash: e2c163114485bb9449779d076aad6de68c295bfa
-ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
+ms.openlocfilehash: 84fdd99b00de38b88b1a21963c4565e5c3b27ea7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97577844"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081451"
 ---
 # <a name="sqlpackage-publish-parameters-properties-and-sqlcmd-variables"></a>Parameter und Eigenschaften sowie SQLCMD-Variablen für die Publish-Aktion von SqlPackage
 Die Publish-Aktion von „SqlPackage.exe“ führt inkrementelle Updates für das Schema einer Zieldatenbank durch, sodass dieses der Struktur einer Quelldatenbank entspricht. Durch die Veröffentlichung eines Bereitstellungspakets, das Benutzerdaten für alle oder eine Teilmenge der Tabellen enthält, werden zusätzlich zum Schema auch die Tabellendaten aktualisiert. Das Schema und die Daten in bestehenden Tabellen der Zieldatenbank werden durch die Datenbereitstellung überschrieben. Für Tabellen, die im Bereitstellungspaket nicht enthalten sind, werden das bestehende Schema bzw. die Daten in der Zieldatenbank durch die Datenbereitstellung nicht geändert.  
@@ -82,7 +82,7 @@ SqlPackage {parameters}{properties}{SQLCMD Variables}
 |**/p:**|AllowIncompatiblePlatform=(BOOLEAN)|Gibt an, ob versucht werden soll, die Aktion trotz inkompatibler SQL Server-Plattformen auszuführen.|
 |**/p:**|AllowUnsafeRowLevelSecurityDataMovement=(BOOLEAN)|Wenn diese Eigenschaft auf TRUE festgelegt ist, wird das Verschieben von Daten in einer Tabelle mit Sicherheit auf Zeilenebene nicht blockiert. Der Standardwert ist "false".|
 |**/p:**|BackupDatabaseBeforeChanges=(BOOLEAN)|Sichert die Datenbank, bevor Änderungen bereitgestellt werden.|
-|**/p:**|BlockOnPossibleDataLoss=(BOOLEAN 'True')|Gibt an, dass der Veröffentlichungszeitraum beendet werden soll, wenn durch den Veröffentlichungsvorgang ein Datenverlust verursacht werden könnte.|
+|**/p:**|BlockOnPossibleDataLoss=(BOOLEAN 'True')| Mit dieser Eigenschaft wird angegeben, dass der Vorgang während des Schritts zur Schemaüberprüfung beendet wird, wenn die resultierenden Schemaänderungen einen Datenverlust verursachen könnten, auch aufgrund von Datengenauigkeit oder einer Datentypänderung, die einen Umwandlungsvorgang erfordert. Der Standardwert (`True`) bewirkt, dass der Vorgang unabhängig davon beendet wird, ob die Zieldatenbank Daten enthält.  Eine Ausführung mit einem `False`-Wert für BlockOnPossibleDataLoss kann während der Ausführung des Bereitstellungsplans trotzdem fehlschlagen, wenn Daten auf dem Ziel vorhanden sind, die nicht in den neuen Spaltentyp konvertiert werden können. |
 |**/p:**|BlockWhenDriftDetected=(BOOLEAN 'True')|Gibt an, ob die Aktualisierung einer Datenbank, deren Schema nicht mehr mit der Registrierung übereinstimmt oder aus der Registrierung entfernt wurde, blockiert wird.|
 |**/p:**|CommandTimeout=(INT32 '60')|Gibt das Befehlstimeout in Sekunden zum Ausführen von Abfragen in SQL Server zurück.|
 |**/p:**|CommentOutSetVarDeclarations=(BOOLEAN)|Gibt an, ob die SETVAR-Variablendeklaration im generierten Veröffentlichungsskript auskommentiert werden soll. Dies empfiehlt sich beispielsweise, wenn Sie die Werte über die Befehlszeile eingeben möchten und mithilfe eines Tool wie SQLCMD.EXE veröffentlichen.|

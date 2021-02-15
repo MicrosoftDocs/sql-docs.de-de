@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 12/4/2020
-ms.openlocfilehash: cffeb28f69fe93bb69cfdafd0afa98ef663e6ef8
-ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
+ms.openlocfilehash: ffd92afe2a5e57b4c039ead2dd5fee6e2a23be0a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97577841"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100060925"
 ---
 # <a name="sqlpackage-script-parameters-and-properties"></a>Parameter und Eigenschaften des SqlPackage-Skripts
 Durch die Aktion des Skripts „SqlPackage.exe“ wird ein inkrementelles Transact-SQL-Updateskript erstellt, das das Schema einer Zieldatenbank aktualisiert, sodass es dem Schema einer Quelldatenbank entspricht. 
@@ -77,7 +77,7 @@ SqlPackage {parameters}{properties}{SQLCMD Variables}
 |**/p:**|AllowIncompatiblePlatform=(BOOLEAN)|Gibt an, ob versucht werden soll, die Aktion trotz inkompatibler SQL Server-Plattformen auszuführen.
 |**/p:**|AllowUnsafeRowLevelSecurityDataMovement=(BOOLEAN)|Wenn diese Eigenschaft auf TRUE festgelegt ist, wird das Verschieben von Daten in einer Tabelle mit Sicherheit auf Zeilenebene nicht blockiert. Der Standardwert ist "false".
 |**/p:**|BackupDatabaseBeforeChanges=(BOOLEAN)|Sichert die Datenbank, bevor Änderungen bereitgestellt werden.
-|**/p:**|BlockOnPossibleDataLoss=(BOOLEAN 'True')|Gibt an, dass der Veröffentlichungszeitraum beendet werden soll, wenn durch den Veröffentlichungsvorgang ein Datenverlust verursacht werden könnte.
+|**/p:**|BlockOnPossibleDataLoss=(BOOLEAN 'True')| Mit dieser Eigenschaft wird angegeben, dass der Vorgang während des Schritts zur Schemaüberprüfung beendet wird, wenn die resultierenden Schemaänderungen einen Datenverlust verursachen könnten, auch aufgrund von Datengenauigkeit oder einer Datentypänderung, die einen Umwandlungsvorgang erfordert. Der Standardwert (`True`) bewirkt, dass der Vorgang unabhängig davon beendet wird, ob die Zieldatenbank Daten enthält.  Eine Ausführung mit einem `False`-Wert für BlockOnPossibleDataLoss kann während der Ausführung des Bereitstellungsplans trotzdem fehlschlagen, wenn Daten auf dem Ziel vorhanden sind, die nicht in den neuen Spaltentyp konvertiert werden können. |
 |**/p:**|BlockWhenDriftDetected=(BOOLEAN 'True')|Gibt an, ob die Aktualisierung einer Datenbank, deren Schema nicht mehr mit der Registrierung übereinstimmt oder aus der Registrierung entfernt wurde, blockiert wird.
 |**/p:**|CommandTimeout=(INT32 '60')|Gibt das Befehlstimeout in Sekunden zum Ausführen von Abfragen in SQL Server zurück.
 |**/p:**|CommentOutSetVarDeclarations=(BOOLEAN)|Gibt an, ob die SETVAR-Variablendeklaration im generierten Veröffentlichungsskript auskommentiert werden soll. Dies empfiehlt sich beispielsweise, wenn Sie die Werte über die Befehlszeile eingeben möchten und mithilfe eines Tool wie SQLCMD.EXE veröffentlichen.

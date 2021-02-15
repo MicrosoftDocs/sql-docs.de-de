@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 8c0bdd18-8905-4e22-9774-a240fc81a8a7
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: f352c393f1386dae1839a76a4fd6e5a2553a54c3
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 1c977799cb20d3735b4cc77d2608c0412ce51769
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "79198557"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100022283"
 ---
 # <a name="using-the-rsclientprint-control-in-custom-applications"></a>Verwenden des RSClientPrint-Steuerelements in benutzerdefinierten Anwendungen
   Das [!INCLUDE[msCoName](../../../includes/msconame-md.md)]-ActiveX-Steuerelement **RSPrintClient** sorgt für clientseitigen Druck von Berichten, die in einem HTML-Viewer angezeigt werden. Es enthält das Dialogfeld **Drucken**, mit dessen Hilfe ein Benutzer Druckaufträge initiieren, Berichte in der Vorschau anzeigen, Seiten zum Drucken angeben und Ränder ändern kann. Während eines clientseitigen Druckvorgangs rendert der Berichtsserver den Bericht mithilfe der Bildrenderingerweiterung (EMF) und verwendet die Druckfunktionen des Betriebssystems zum Erstellen des Druckauftrags und zum Senden des Auftrags an einen Drucker.  
@@ -32,7 +32,7 @@ ms.locfileid: "79198557"
   
 -   Kopieren Sie die CAB-Datei aus den [!INCLUDE[ssRSNoVersion](../../../includes/ssrsnoversion-md.md)]-Programmdateien, und fügen Sie sie zur Codebasis Ihrer benutzerdefinierten Anwendung hinzu.  
  
--   Verwenden Sie ein \<OBJECT>-Tag zum Angeben des Steuerelements.  
+-   Verwenden Sie ein \<OBJECT>-Tag, um das Steuerelement anzugeben.  
   
 -   Geben Sie eine relative oder vollqualifizierte URL zur CAB-Datei im OBJECT CODEBASE-Attribut an.  
   
