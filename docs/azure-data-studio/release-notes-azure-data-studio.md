@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan
 ms.custom: seodec18
 ms.date: 1/22/2021
-ms.openlocfilehash: 2325f5744c58ee047cde096b3bf4c96174a3d92c
-ms.sourcegitcommit: 6f4fb9cfd0cad06127a6328adc745e2ba7c191d1
+ms.openlocfilehash: d249e36c9b15cabe9556701c8aafc3cb5ab66fac
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99570404"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040010"
 ---
 # <a name="release-notes-for-azure-data-studio"></a>Versionshinweise für Azure Data Studio
 
