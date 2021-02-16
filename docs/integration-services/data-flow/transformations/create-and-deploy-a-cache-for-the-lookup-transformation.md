@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cedf5cad-2fac-42d0-ad91-9461e117d330
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 26f08ee42a1fae6ac5a5d3a50d8b32282c2a2fde
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 426ec69e927a61acfc083f9f4c0462553ea11d97
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92192685"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348290"
 ---
 # <a name="create-and-deploy-a-cache-for-the-lookup-transformation"></a>Erstellen und Bereitstellen eines Cache für die Transformation für Suche
 
@@ -45,13 +45,13 @@ ms.locfileid: "92192685"
   
      Konfigurieren Sie die Datenquelle nach Bedarf.  
   
-4.  Doppelklicken Sie auf die Transformation für Cachetransformation, und klicken Sie dann im **Cachetransformations-Editor**auf der Seite **Verbindungs-Manager** auf **Neu** , um einen neuen Cacheverbindungs-Manager zu erstellen.  
+4.  Doppelklicken Sie auf die Transformation für Cachetransformation, und klicken Sie dann im **Cachetransformations-Editor** auf der Seite **Verbindungs-Manager** auf **Neu** , um einen neuen Cacheverbindungs-Manager zu erstellen.  
   
-5.  Konfigurieren Sie den Cacheverbindungs-Manager zum Speichern des Cache im **Editor für Cacheverbindungs-Manager**auf der Registerkarte **Allgemein** , indem Sie die folgenden Optionen auswählen:  
+5.  Konfigurieren Sie den Cacheverbindungs-Manager zum Speichern des Cache im **Editor für Cacheverbindungs-Manager** auf der Registerkarte **Allgemein** , indem Sie die folgenden Optionen auswählen:  
   
-    1.  Wählen Sie **Dateicache verwenden**aus.  
+    1.  Wählen Sie **Dateicache verwenden** aus.  
   
-    2.  Geben Sie den Dateipfad in das Feld **Dateiname**ein.  
+    2.  Geben Sie den Dateipfad in das Feld **Dateiname** ein.  
   
      Das System erstellt die Datei, wenn Sie das Paket ausführen.  
   

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 11be89e9-ff2a-4a94-ab5d-27d8edf9167d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 75f74fcfca0e039b6f11bc36fd6cf694dfb756b3
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: e2652320875d3bf22f5a7557dc7c1deba9a93376
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765576"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349039"
 ---
 # <a name="sql-server-backup-to-url"></a>SQL Server-Sicherung über URLs
 

@@ -11,7 +11,7 @@ DROP WORKLOAD GROUP group_name
 
 ## <a name="arguments"></a>Argumente
 
-*group_name* : Der Name einer vorhandenen benutzerdefinierten Arbeitsauslastungsgruppe.
+*group_name*: Der Name einer vorhandenen benutzerdefinierten Arbeitsauslastungsgruppe.
 
 ## <a name="remarks"></a>Bemerkungen
 

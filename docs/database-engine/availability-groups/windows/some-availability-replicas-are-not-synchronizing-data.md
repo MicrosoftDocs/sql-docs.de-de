@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 3db6a569-e942-4321-a0dd-c4ab002087c8
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ea07cb123c2e5ef077644a86a9e195422a07ac22
-ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
+ms.openlocfilehash: 8e4d4441faac8600bcf8fd0d2d8aed333fbf8f6b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98783135"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352608"
 ---
 # <a name="some-availability-replicas-are-not-synchronizing-data"></a>Einige Verfügbarkeitsreplikate synchronisieren keine Daten
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

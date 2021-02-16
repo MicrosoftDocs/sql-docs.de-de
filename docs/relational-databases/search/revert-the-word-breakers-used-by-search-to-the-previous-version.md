@@ -12,12 +12,12 @@ ms.author: pelopes
 ms.reviewer: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
 ms.custom: seo-lt-2019
-ms.openlocfilehash: f99e5892f697b06bcafcfc35f9672d8ee474bc40
-ms.sourcegitcommit: 10ae200635b9e8554e6bc6f658125e1a80d4d5ae
+ms.openlocfilehash: 8362788a2bf1092e815a9df43c3b65298935d555
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99589295"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344461"
 ---
 # <a name="revert-word-breakers-used-by-search-to-previous-version-sql-server-search"></a>Wiederherstellen der von der Suche verwendeten Wörtertrennungen auf die vorherige Version (SQL Server-Suche)
 

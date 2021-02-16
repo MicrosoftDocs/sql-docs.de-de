@@ -10,12 +10,12 @@ ms.technology: integration-services
 ms.topic: conceptual
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: e0181cb68a68e7788d59f70d25c9b6935478f248
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 85465e017126a116289c396787d7d8ccecba042f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88425812"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339887"
 ---
 # <a name="use-the-teradata-connection-manager"></a>Verwenden des Teradata-Verbindungs-Managers
 

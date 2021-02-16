@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: 06fb3549-e970-4ca2-a61f-59affb9c6dcc
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 9c0c28c81f607f5ab7ddc71d84ae52ea848d9334
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: a2e322c0b5011d8d99b45b059d71e932d4dd7c46
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96129866"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346793"
 ---
 # <a name="catalogcreate_folder-ssisdb-database"></a>catalog.create_folder (SSISDB-Datenbank)
 

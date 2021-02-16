@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 1de2b888-78a6-4fb2-a647-ba4bf097caf3
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7d18348dbfc80a6f3b5bec94eb47a8bf17baa76a
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: f4f4e5448a01ce9e4d644aec6dd50eaea2c31297
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99075832"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100346768"
 ---
 # <a name="restore-a-transaction-log-backup-sql-server"></a>Wiederherstellen einer Transaktionsprotokollsicherung (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -255,7 +255,7 @@ GO
 RESTORE LOG AdventureWorks2012  
    FROM AdventureWorks2012_log  
    WITH FILE = 1,  
-   WITH NORECOVERY;  
+   NORECOVERY;  
 GO  
 RESTORE DATABASE AdventureWorks2012  
    WITH RECOVERY;  
@@ -278,12 +278,12 @@ GO
 RESTORE LOG AdventureWorks2012  
    FROM AdventureWorks2012_log  
    WITH FILE = 2,  
-   WITH NORECOVERY;  
+   NORECOVERY;  
 GO  
 RESTORE LOG AdventureWorks2012  
    FROM AdventureWorks2012_log  
    WITH FILE = 3,  
-   WITH NORECOVERY;  
+   NORECOVERY;  
 GO  
 RESTORE DATABASE AdventureWorks2012  
    WITH RECOVERY;  

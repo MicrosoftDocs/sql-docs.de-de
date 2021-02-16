@@ -10,12 +10,12 @@ ms.technology: integration-services
 author: swinarko
 ms.author: sawinark
 ms.reviewer: maghan
-ms.openlocfilehash: 7a73a233a84d532f55dc61797f44e5d39013722f
-ms.sourcegitcommit: 894c1a23e922dc29b82c1d2c34c7b0ff28b38654
+ms.openlocfilehash: f603b138773ea76fe73ea3d6929ece535779e23c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93067337"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351991"
 ---
 # <a name="tutorial-deploy-and-run-a-sql-server-integration-services-ssis-package-in-azure"></a>Tutorial: Bereitstellen und Ausführen eines SSIS-Pakets in Azure
 
@@ -66,7 +66,7 @@ Beachten Sie diese beiden wichtigen Punkte. Diese Schritte werden in der folgend
 
 4. Wählen Sie dann **Verbinden** aus. Das Fenster „Objekt-Explorer“ wird in SSMS geöffnet. 
 
-5. Erweitern Sie im Objekt-Explorer **Integration Services-Kataloge** und dann **SSISDB** , um die Objekte in der SSIS-Katalogdatenbank anzuzeigen.
+5. Erweitern Sie im Objekt-Explorer **Integration Services-Kataloge** und dann **SSISDB**, um die Objekte in der SSIS-Katalogdatenbank anzuzeigen.
 
 ## <a name="deploy-a-project-with-the-deployment-wizard"></a>Bereitstellen eines Projekts mit dem Bereitstellungs-Assistenten
 
@@ -76,41 +76,41 @@ Weitere Informationen zum Bereitstellen von Paketen und zum Bereitstellungs-Assi
 > Für die Bereitstellung in Azure wird nur das Projektbereitstellungsmodell unterstützt.
 
 ### <a name="start-the-integration-services-deployment-wizard"></a>Starten des Bereitstellungs-Assistenten für Integration Services
-1. Erweitern Sie im Objekt-Explorer in SSMS einen Projektorder mit den Knoten **Integration Services-Kataloge** und dem erweiterten **SSISDB** -Knoten.
+1. Erweitern Sie im Objekt-Explorer in SSMS einen Projektorder mit den Knoten **Integration Services-Kataloge** und dem erweiterten **SSISDB**-Knoten.
 
 2.  Wählen Sie den Knoten **Projekte** aus.
 
-3.  Klicken Sie mit der rechten Maustaste auf den Knoten **Projekte** , und wählen Sie **Projekt bereitstellen** aus. Der Bereitstellungs-Assistent für Integration Services wird geöffnet. Sie können ein Projekt aus der SSIS-Katalogdatenbank oder dem Dateisystem bereitstellen.
+3.  Klicken Sie mit der rechten Maustaste auf den Knoten **Projekte**, und wählen Sie **Projekt bereitstellen** aus. Der Bereitstellungs-Assistent für Integration Services wird geöffnet. Sie können ein Projekt aus der SSIS-Katalogdatenbank oder dem Dateisystem bereitstellen.
 
     ![Bereitstellen eines Projekts aus SSMS](media/ssis-azure-deploy-run-monitor-tutorial/ssisdb-deploy-project1.png)
 
     ![Das Dialogfeld des SSIS-Bereitstellungs-Assistenten wird geöffnet](media/ssis-azure-deploy-run-monitor-tutorial/ssisdb-deploy-project2.png)
 
 ### <a name="deploy-a-project-with-the-deployment-wizard"></a>Bereitstellen eines Projekts mit dem Bereitstellungs-Assistenten
-1. Lesen Sie auf der Seite **Einführung** des Bereitstellungs-Assistenten die Einführung. Klicken Sie auf **Weiter** , um zur Seite **Quelle auswählen** zu wechseln.
+1. Lesen Sie auf der Seite **Einführung** des Bereitstellungs-Assistenten die Einführung. Klicken Sie auf **Weiter**, um zur Seite **Quelle auswählen** zu wechseln.
 
 2. Wählen Sie auf der Seite **Quelle auswählen** das vorhandene SSIS-Projekt aus, das bereitgestellt werden soll.
     -   Um eine von Ihnen erstellte Projektbereitstellungsdatei bereitzustellen, wählen Sie **Projektbereitstellungsdatei** aus, und geben Sie den Pfad für die ISPAC-Datei ein.
     -   Um ein Projekt bereitzustellen, das sich in einem SSIS-Katalog befindet, wählen Sie **Integration Services-Katalog** aus und geben dann den Servernamen und den Pfad zum Projekt im Katalog ein. In diesem Schritt können nur Projekte erneut bereitgestellt werden, die sich in der von SQL Server gehosteten SSISDB befinden.
-    -   Klicken Sie auf **Weiter** , um die Seite **Ziel auswählen** zu sehen.
+    -   Klicken Sie auf **Weiter**, um die Seite **Ziel auswählen** zu sehen.
   
 3.  Wählen Sie auf der Seite **Ziel auswählen** das Ziel für das Projekt aus.
     -   Geben Sie den vollqualifizierten Servernamen im Format `<server_name>.database.windows.net` ein.
     -   Stellen Sie die Authentifizierungsinformationen bereit, und klicken Sie dann auf **Verbinden**.
-    -   Klicken Sie dann auf **Durchsuchen** , um den Zielordner in SSISDB auszuwählen.
-    -   Klicken Sie dann auf **Weiter** , um die Seite **Überprüfen** zu öffnen. (Die Schaltfläche **Weiter** ist nur nach der Auswahl von **Verbinden** aktiviert.)
+    -   Klicken Sie dann auf **Durchsuchen**, um den Zielordner in SSISDB auszuwählen.
+    -   Klicken Sie dann auf **Weiter**, um die Seite **Überprüfen** zu öffnen. (Die Schaltfläche **Weiter** ist nur nach der Auswahl von **Verbinden** aktiviert.)
   
 4.  Überprüfen Sie auf der Seite **Überprüfen** die Einstellungen, die Sie ausgewählt haben.
     -   Sie können Ihre Auswahl ändern, indem Sie auf **Vorherige** klicken, oder indem Sie auf einen der Schritte im linken Bereich klicken.
-    -   Klicken Sie auf **Bereitstellen** , um den Bereitstellungsprozess zu starten.
+    -   Klicken Sie auf **Bereitstellen**, um den Bereitstellungsprozess zu starten.
 
     > [!NOTE]
     > Wenn Sie die Fehlermeldung **Es liegt kein aktiver Worker-Agent vor (.Net SqlClient-Datenanbieter)** erhalten, stellen Sie sicher, dass die Azure-SSIS Integration Runtime ausgeführt wird. Dieser Fehler tritt auf, wenn Sie versuchen, eine Bereitstellung durchzuführen, während die Azure-SSIS IR beendet ist.
 
 5.  Nachdem der Bereitstellungsvorgang abgeschlossen ist, wird die Seite **Ergebnisse** geöffnet. Diese Seite zeigt an, ob die einzelnen Aktionen erfolgreich ausgeführt wurden oder ob Fehler aufgetreten sind.
-    -   Ist die Aktion fehlerhaft, klicken Sie in der Spalte **Ergebnis** auf **Fehlgeschlagen** , um eine Erklärung über den Fehler anzuzeigen.
+    -   Ist die Aktion fehlerhaft, klicken Sie in der Spalte **Ergebnis** auf **Fehlgeschlagen**, um eine Erklärung über den Fehler anzuzeigen.
     -   Sie können auf **Bericht speichern** klicken, um die Ergebnisse in einer XML-Datei zu speichern.
-    -   Klicken Sie auf **Schließen** , um den Assistenten zu beenden.
+    -   Klicken Sie auf **Schließen**, um den Assistenten zu beenden.
 
 ## <a name="deploy-a-project-with-powershell"></a>Bereitstellen eines Projekts mit PowerShell
 
@@ -180,15 +180,15 @@ Write-Host "All done."
 
 1. Wählen Sie im Objekt-Explorer von SSMS das Paket aus, das Sie ausführen möchten.
 
-2. Klicken Sie mit der rechten Maustaste auf das ausgewählte Paket, und klicken Sie auf **Ausführen** , um das Dialogfeld **Paket ausführen** zu öffnen.
+2. Klicken Sie mit der rechten Maustaste auf das ausgewählte Paket, und klicken Sie auf **Ausführen**, um das Dialogfeld **Paket ausführen** zu öffnen.
 
-3.  Konfigurieren Sie im Dialogfeld **Paket ausführen** die Paketausführung, indem Sie die Einstellungen auf den Registerkarten **Parameter** , **Verbindungs-Manager** und **Erweitert** nutzen.
+3.  Konfigurieren Sie im Dialogfeld **Paket ausführen** die Paketausführung, indem Sie die Einstellungen auf den Registerkarten **Parameter**, **Verbindungs-Manager** und **Erweitert** nutzen.
 
-4.  Klicken Sie auf **OK** , um das Paket auszuführen.
+4.  Klicken Sie auf **OK**, um das Paket auszuführen.
 
 ## <a name="monitor-the-running-package-in-ssms"></a>Überwachen des ausgeführten Pakets in SSMS
 
-Um die Status der ausgeführten Integration Services-Vorgänge, wie Bereitstellung, Überprüfung und Paketausführung, auf dem Integration Services-Server anzuzeigen, verwenden Sie das Dialogfeld **Aktive Vorgänge** in SSMS. Klicken Sie mit der rechten Maustaste auf **SSISDB** , und klicken Sie dann auf **Aktive Vorgänge** , um das Dialogfeld **Aktive Vorgänge** zu öffnen.
+Um die Status der ausgeführten Integration Services-Vorgänge, wie Bereitstellung, Überprüfung und Paketausführung, auf dem Integration Services-Server anzuzeigen, verwenden Sie das Dialogfeld **Aktive Vorgänge** in SSMS. Klicken Sie mit der rechten Maustaste auf **SSISDB**, und klicken Sie dann auf **Aktive Vorgänge**, um das Dialogfeld **Aktive Vorgänge** zu öffnen.
 
 Sie können auch im Objekt-Explorer ein Paket auswählen, mit der rechten Maustaste darauf klicken, und dann auf **Berichte** > **Standardberichte** > **Alle Ausführungen** klicken.
 

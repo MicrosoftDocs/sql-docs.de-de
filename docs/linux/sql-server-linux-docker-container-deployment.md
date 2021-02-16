@@ -12,12 +12,12 @@ ms.technology: linux
 ms.assetid: 82737f18-f5d6-4dce-a255-688889fdde69
 moniker: '>= sql-server-linux-2017 || >= sql-server-2017 '
 zone_pivot_groups: cs1-command-shell
-ms.openlocfilehash: e4524dccd4241a2400e8bf1be76bbc326149a8c6
-ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
+ms.openlocfilehash: f789dd2b80515116e7bf0a12e26e6e8fe6c45b03
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878811"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100273101"
 ---
 # <a name="deploy-and-connect-to-sql-server-docker-containers"></a>Bereitstellen von und Herstellen einer Verbindung mit SQL Server Docker-Containern
 

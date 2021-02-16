@@ -9,12 +9,12 @@ ms.custom: ''
 ms.technology: integration-services
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: ce752b03e085ab70b033876d5c30ae3ff96d777c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f44c8c3677f76ebc96b6e0385aa839a9e20aa2f8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091537"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100030608"
 ---
 # <a name="sql-server-integration-services-ssis-devops-tools-azure-devops-extension"></a>SSIS-DevOps-Tools (SQL Server Integration Services) Azure DevOps-Erweiterung
 

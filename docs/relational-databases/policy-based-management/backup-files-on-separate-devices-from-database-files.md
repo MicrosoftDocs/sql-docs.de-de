@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Best Practices [Database Engine]
 author: dzsquared
 ms.author: drskwier
-ms.openlocfilehash: 5b98f8163a3564ccc4aadac6c71c30eb5cf37697
-ms.sourcegitcommit: 5da46e16b2c9710414fe36af9670461fb07555dc
+ms.openlocfilehash: 657b93c4979c838801aee9b5aeab53f31f77c02d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89285066"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345508"
 ---
 # <a name="backup-files-must-be-on-separate-devices-from-the-database-files"></a>Sicherungsdateien und Datenbankdateien müssen auf separaten Geräten gespeichert sein
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

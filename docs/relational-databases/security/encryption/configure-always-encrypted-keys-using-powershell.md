@@ -11,12 +11,12 @@ ms.assetid: 3bdf8629-738c-489f-959b-2f5afdaf7d61
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: db15f4e1a01ae894e44c0e544f780873d21c7efb
-ms.sourcegitcommit: 6f4fb9cfd0cad06127a6328adc745e2ba7c191d1
+ms.openlocfilehash: 536b6f0acb0c8f3668b24e7bc5f0ad66ba352b03
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99570454"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345432"
 ---
 # <a name="provision-always-encrypted-keys-using-powershell"></a>Bereitstellen von Always Encrypted-Schlüsseln mithilfe von PowerShell
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]

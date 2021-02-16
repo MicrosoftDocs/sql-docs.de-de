@@ -9,12 +9,12 @@ ms.date: 05/24/2018
 ms.topic: how-to
 ms.prod: sql
 ms.technology: availability-groups
-ms.openlocfilehash: c7c7420be3a75ab8ba9e23246e76232c3048a71f
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 995d8d2238ef9ded767544423093c8352e02bb1c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97639737"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343385"
 ---
 # <a name="configure-read-scale-for-an-always-on-availability-group"></a>Konfigurieren der Leseskalierung für eine Always On-Verfügbarkeitsgruppe
 

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - ghost clean up process
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 16c9aa51475b00998b3c7aa9e71529bbbc292464
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: e228afb793e69ab7b9d36fae31e838f6d1bca15a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87248159"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100059225"
 ---
 # <a name="ghost-cleanup-process-guide"></a>Leitfaden zum Prozess für das Cleanup inaktiver Datensätze
 

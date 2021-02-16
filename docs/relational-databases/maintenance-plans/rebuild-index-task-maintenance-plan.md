@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 33e2940b-139f-4563-b0cb-5683f08bd879
 author: MightyPen
 ms.author: genemi
-ms.openlocfilehash: 1199b30249c5948381e40fe3c248b44a1f9c5930
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6c95f60259fb25b457e4349b6e0798ce4fa0e6fa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85755720"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351182"
 ---
 # <a name="rebuild-index-task-maintenance-plan"></a>Task 'Index neu erstellen' (Wartungsplan)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 28261014-342c-442a-bd89-6d04b8d4e8b7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b19e7f11a60ac21b191c524c0444414f1c5231e8
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 6edcd5419260ac6bccf03739fe19f580c59e0718
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766039"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340888"
 ---
 # <a name="always-on-availability-group-is-not-ready-for-automatic-failover"></a>Die Always On-Verfügbarkeitsgruppe ist nicht für das automatische Failover bereit.
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

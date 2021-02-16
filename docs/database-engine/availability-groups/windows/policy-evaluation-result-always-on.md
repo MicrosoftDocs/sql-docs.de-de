@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 703e947f-d345-4506-be21-34bfbfa7bca6
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 735598f97a9d735d3a827e0e561fa365b7b1d6cd
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 6915f335ab36c3256e8ea0b1dfbd3e921350f982
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642556"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350765"
 ---
 # <a name="policy-evaluation-result-page-always-on-dashboard"></a>Seite „Ergebnis der Richtlinienauswertung“ (Always On-Dashboard)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -17,12 +17,12 @@ helpviewer_keywords:
 author: VanMSFT
 ms.author: vanto
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 739501f78f313f8fbff20d71cc63376a8da27343
-ms.sourcegitcommit: 58e7069b5b2b6367e27b49c002ca854b31b1159d
+ms.openlocfilehash: a842f6ed226fe6b298dc9063f5d6c64f287fc82e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99552668"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340159"
 ---
 # <a name="row-level-security"></a>Sicherheit auf Zeilenebene
 

@@ -31,12 +31,12 @@ ms.assetid: a28c684a-c4e9-4b24-a7ae-e248808b31e9
 author: pmasl
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 991a30108d0683d89d8bece48eb0d2de1c1e0d37
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 340160c64a64479fe8d194887c838dab3bb7468c
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171882"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100353671"
 ---
 # <a name="resolve-index-fragmentation-by-reorganizing-or-rebuilding-indexes"></a>Auflösen der Indexfragmentierung durch Neuorganisieren oder Neuerstellen von Indizes
 
@@ -110,7 +110,7 @@ Nachdem der Grad der Indexfragmentierung bekannt ist, verwenden Sie die folgende
 |**Berechnete Fragmentierung als Prozentwert**|Gilt für Version|Korrigierende Anweisung|
 |-----------------------------------------------|--------------------------|--------------------------|
 |> = 20 %|[!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] und [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|ALTER INDEX REBUILD|
-|> = 20 %|Seit [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]|ALTER INDEX REORGANIZE|
+|> = 20 %|Seit [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]|ALTER INDEX REORGANIZE|
 
 ### <a name="to-check-the-fragmentation-of-a-rowstore-index-using-tsql"></a>Überprüfen der Fragmentierung eines Rowstore-Indexes mit [!INCLUDE[tsql](../../includes/tsql-md.md)]
 
@@ -234,7 +234,7 @@ Beim Neuerstellen eines Indexes wird der Index gelöscht und neu erstellt. Je na
 - Für [Columnstore-Indizes](columnstore-indexes-overview.md) wird bei der Neuerstellung die Fragmentierung entfernt, alle Zeilen werden in den Columnstore verschoben, und Speicherplatz wird freigegeben, indem die logisch aus der Tabelle gelöschten Zeilen physisch gelöscht werden. 
   
   > [!TIP]
-  > Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ist die Neuerstellung des Columnstore-Indexes in der Regel nicht notwendig, weil `REORGANIZE` die Grundlagen der Neuerstellung im Hintergrund als Onlinevorgang ausführt. 
+  > Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] ist die Neuerstellung des Columnstore-Indexes in der Regel nicht notwendig, weil `REORGANIZE` die Grundlagen der Neuerstellung im Hintergrund als Onlinevorgang ausführt. 
   
   Syntaxbeispiele finden Sie unter [Beispiele: ColumnStore-Neuerstellung](../../t-sql/statements/alter-index-transact-sql.md#examples-columnstore-indexes).
 
@@ -364,7 +364,7 @@ Bei der Neuerstellung eines Columnstore-Indexes liest die [!INCLUDE[ssde_md](../
 > Bei der Neuorganisation eines Columnstore-Index mit [!INCLUDE[ssManStudio](../../includes/ssManStudio-md.md)] werden COMPRESSED-Zeilengruppen kombiniert, aber es wird keine Komprimierung aller Zeilengruppen im Columnstore erzwungen. CLOSED-Zeilengruppen werden komprimiert, aber OPEN-Zeilengruppen werden nicht im Columnstore komprimiert. Um das Komprimieren aller Zeilengruppen zu erzwingen, verwenden Sie das [unten angegebene](#TsqlProcedureReorg) [!INCLUDE[tsql](../../includes/tsql-md.md)]-Beispiel.
 
 > [!NOTE]
-> Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] wird der Tupelverschiebungsvorgang von einem Mergetask im Hintergrund unterstützt, der automatisch kleinere OPEN-Deltazeilengruppen komprimiert, die für einen bestimmten Zeitraum vorhanden waren (wie durch einen internen Schwellenwert festgelegt), oder COMPRESSED-Zeilengruppen mergt, aus denen eine große Anzahl von Zeilen gelöscht wurde. Dies verbessert die Qualität des Columnstore-Index im Lauf der Zeit.    
+> Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] wird der Tupelverschiebungsvorgang von einem Mergetask im Hintergrund unterstützt, der automatisch kleinere OPEN-Deltazeilengruppen komprimiert, die für einen bestimmten Zeitraum vorhanden waren (wie durch einen internen Schwellenwert festgelegt), oder COMPRESSED-Zeilengruppen mergt, aus denen eine große Anzahl von Zeilen gelöscht wurde. Dies verbessert die Qualität des Columnstore-Index im Lauf der Zeit.    
 > Weitere Informationen zu Columnstore-Begriffen und -Konzepten finden Sie unter [Columnstore-Indizes: Übersicht](../../relational-databases/indexes/columnstore-indexes-overview.md).
 
 ### <a name="rebuild-a-partition-instead-of-the-entire-table"></a>Neuerstellen einer Partition anstatt der gesamten Tabelle
@@ -382,7 +382,7 @@ Das Neuerstellen einer Partition nach dem Laden von Daten stellt sicher, dass al
 
 ## <a name="considerations-specific-to-reorganizing-a-columnstore-index"></a>Überlegungen zur Neuorganisation eines Columnstore-Indexes
 
-Bei der Neuorganisation eines Columnstore-Indizes komprimiert die [!INCLUDE[ssde_md](../../includes/ssde_md.md)] jede CLOSED-Deltazeilengruppe im Columnstore als eine komprimierte Zeilengruppe. Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] führt der `REORGANIZE`-Befehl die folgenden Optimierungen für eine zusätzliche Defragmentierung online aus:
+Bei der Neuorganisation eines Columnstore-Indizes komprimiert die [!INCLUDE[ssde_md](../../includes/ssde_md.md)] jede CLOSED-Deltazeilengruppe im Columnstore als eine komprimierte Zeilengruppe. Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] führt der `REORGANIZE`-Befehl die folgenden Optimierungen für eine zusätzliche Defragmentierung online aus:
 
 - Es werden Zeilen physisch aus der Zeilengruppe entfernt, wenn mindestens 10 % der Zeilen logisch gelöscht wurden. Die gelöschten Bytes werden auf den physischen Medien freigegeben. Bei einer komprimierten Zeilengruppe mit 1 Million Zeilen, in der beispielsweise 100.000 Zeilen gelöscht wurden, werden von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] die gelöschten Zeilen entfernt, und die Zeilengruppe wird mit 900.000 Zeilen neu komprimiert. Durch das Entfernen gelöschter Zeilen wird Speicherplatz eingespart.
 
@@ -412,7 +412,7 @@ Statistiken
 Ein Index kann nicht neu organisiert werden, wenn `ALLOW_PAGE_LOCKS` auf OFF festgelegt ist.
 
 Bis [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] wird die Neuerstellung eines gruppierten Columnstore-Indexes als Offlinevorgang durchgeführt. Die Datenbank-Engine muss eine exklusive Sperre für die Tabelle oder Partition abrufen, während die Neuerstellung ausgeführt wird. Die Daten sind während der Neuerstellung offline und nicht verfügbar, selbst bei Verwendung von `NOLOCK`, Read Commited-Momentaufnahmeisolation (RCSI) oder Momentaufnahmeisolation.
-Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] kann ein gruppierter Columnstore-Index mit der Option `ONLINE = ON` neu erstellt werden.
+Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] kann ein gruppierter Columnstore-Index mit der Option `ONLINE = ON` neu erstellt werden.
 
 Bei einer Azure Synapse Analytics-Tabelle (früher [!INCLUDE[ssSDW](../../includes/sssdw-md.md)]) mit einem sortierten gruppierten Columnstore-Index werden mit `ALTER INDEX REBUILD` die Daten mit TempDB neu sortiert. Überwachen Sie TempDB während der Neuerstellungsvorgänge. Wenn Sie mehr TempDB-Speicherplatz benötigen, können Sie die Data Warehouse-Instanz hochskalieren. Skalieren Sie es nach Abschluss der Indexneuerstellung wieder herunter.
 

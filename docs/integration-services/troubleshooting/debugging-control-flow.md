@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 54a458cc-9f4f-4b48-8cf2-db2e0fa7756c
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: bea31577692752b028bdbddbf0ed440dfee7e493
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 53fc539f46751cf6073aee0d5cd3aefae1971283
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421964"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338398"
 ---
 # <a name="debugging-control-flow"></a>Debuggen der Ablaufsteuerung
 
@@ -109,7 +109,7 @@ ms.locfileid: "88421964"
 ## <a name="debug-windows"></a>Debugfenster  
  [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] enthält viele Fenster, in denen Sie Breakpoints verwenden und Pakete, die Breakpoints enthalten, debuggen können. Um weitere Informationen zu den einzelnen Fenstern zu erhalten, öffnen Sie das entsprechende Fenster, und drücken Sie F1, um die zugehörige Hilfe anzuzeigen.  
   
- Zeigen Sie zum Öffnen dieser Fenster in [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Breakpoints**, **Ausgabe**oder **Direkt**.  
+ Zeigen Sie zum Öffnen dieser Fenster in [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Breakpoints**, **Ausgabe** oder **Direkt**.  
   
  In der folgenden Tabelle sind diese Fenster beschrieben.  
   
@@ -130,7 +130,7 @@ ms.locfileid: "88421964"
   
 3.  Gehen Sie im SSIS-Designer wie folgt vor:  
   
-    -   Um Breakpoints im Paketobjekt festzulegen, klicken Sie auf die Registerkarte **Ablaufsteuerung,** setzen den Cursor an eine beliebige Stelle im Hintergrund der Entwurfsoberfläche, klicken mit der rechten Maustaste und wählen dann **Breakpoints bearbeiten**aus.  
+    -   Um Breakpoints im Paketobjekt festzulegen, klicken Sie auf die Registerkarte **Ablaufsteuerung,** setzen den Cursor an eine beliebige Stelle im Hintergrund der Entwurfsoberfläche, klicken mit der rechten Maustaste und wählen dann **Breakpoints bearbeiten** aus.  
   
     -   Um Breakpoints in einer Paketablaufsteuerung festzulegen, klicken Sie auf die Registerkarte **Ablaufsteuerung** , klicken mit der rechten Maustaste auf einen Task, einen For-Schleifencontainer, einen Foreach-Schleifencontainer oder einen Sequenzcontainer und dann auf **Breakpoints bearbeiten**.  
   

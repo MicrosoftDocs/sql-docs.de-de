@@ -11,12 +11,12 @@ ms.topic: language-reference
 author: haoqian
 ms.author: haoqian
 monikerRange: '>= sql-server-2017'
-ms.openlocfilehash: 3dbfe1b83132998d946e7b7d192be40fdf4f2856
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1e527ae820050831012c0d5720eaf1305c51122e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465691"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346735"
 ---
 # <a name="catalogupdate_logdb_info-ssisdb-database"></a>Catalog.update_logdb_info (SSISDB-Datenbank)
 

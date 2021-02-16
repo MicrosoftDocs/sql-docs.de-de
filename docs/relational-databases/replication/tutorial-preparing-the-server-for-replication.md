@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: ce30a095-2975-4387-9377-94a461ac78ee
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 2f9cbaaca472c6b63d0196cb2f751e28b184e206
-ms.sourcegitcommit: 4d370399f6f142e25075b3714e5c2ce056b1bfd0
+ms.openlocfilehash: 7506b3b57d81187269c26fae3cafc2d3cdbc6628
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91868395"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348624"
 ---
 # <a name="tutorial-prepare-sql-server-for-replication-publisher-distributor-subscriber"></a>Tutorial: Vorbereiten von SQL Server auf die Replikation (Verleger, Verteiler und Abonnent)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -76,7 +76,7 @@ In diesem Abschnitt erstellen Sie Windows-Konten zum Ausführen von Replikations
   
 1. Öffnen Sie auf dem Verleger in der Systemsteuerung unter **Verwaltung** die Anwendung **Computerverwaltung**.  
   
-2. Erweitern Sie unter **System**den Eintrag **Lokale Benutzer und Gruppen**.  
+2. Erweitern Sie unter **System** den Eintrag **Lokale Benutzer und Gruppen**.  
   
 3. Klicken Sie mit der rechten Maustaste auf **Benutzer**, und klicken Sie dann auf **Neuer Benutzer**.  
      
@@ -94,7 +94,7 @@ In diesem Abschnitt erstellen Sie Windows-Konten zum Ausführen von Replikations
   
 1. Öffnen Sie auf dem Abonnenten in der Systemsteuerung unter **Verwaltung** die Anwendung **Computerverwaltung**.  
   
-2. Erweitern Sie unter **System**den Eintrag **Lokale Benutzer und Gruppen**.  
+2. Erweitern Sie unter **System** den Eintrag **Lokale Benutzer und Gruppen**.  
   
 3. Klicken Sie mit der rechten Maustaste auf **Benutzer**, und klicken Sie dann auf **Neuer Benutzer**.  
   
@@ -186,7 +186,7 @@ Das Konfigurieren eines Verlegers mit einem Remoteverteiler wird in diesem Tutor
    
    Der Verteilungskonfigurations-Assistent wird gestartet.  
   
-3. Aktivieren Sie auf der Seite **Verteiler** das Optionsfeld neben < *'Servername'* >  **als seinen eigenen Verteiler verwenden. SQL Server erstellt eine Verteilungsdatenbank und ein Protokoll**. Wählen Sie **Weiter**aus.  
+3. Aktivieren Sie auf der Seite **Verteiler** das Optionsfeld neben < *'Servername'* >  **als seinen eigenen Verteiler verwenden. SQL Server erstellt eine Verteilungsdatenbank und ein Protokoll**. Wählen Sie **Weiter** aus.  
 
    ![Option, mit der festgelegt wird, dass der Server selbst als Verteiler agiert](media/tutorial-preparing-the-server-for-replication/serverdistributor.png)
   

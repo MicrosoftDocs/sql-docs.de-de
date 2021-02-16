@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: e985c9a6-4230-4087-9fdb-de8571ba5a5f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 72bf9910a86d66ac36cbebbb0be66f8a8df832e5
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: edc2a92b260e85c2de1ff5b4fc1758748643d174
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99235768"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346767"
 ---
 # <a name="restore-and-recovery-overview-sql-server"></a>Übersicht über Wiederherstellungsvorgänge (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -56,11 +56,11 @@ ms.locfileid: "99235768"
 |Wiederherstellungsszenario|Mit dem einfachen Wiederherstellungsmodell|Mit dem vollständigen/massenprotokollierten Wiederherstellungsmodell|  
 |----------------------|---------------------------------|----------------------------------------------|  
 |Vollständige Datenbankwiederherstellung|Dies ist die grundlegende Wiederherstellungsstrategie. Eine vollständige Datenbankwiederherstellung besteht möglicherweise nur im Wiederherstellen einer vollständigen Datenbanksicherung. Alternativ kann eine vollständige Datenbankwiederherstellung das Wiederherstellen einer vollständigen Datenbanksicherung, gefolgt vom Wiederherstellen einer differenziellen Sicherung, umfassen.<br /><br /> Weitere Informationen finden Sie unter [Vollständige Datenbankwiederherstellungen &#40;einfaches Wiederherstellungsmodell&#41;](../../relational-databases/backup-restore/complete-database-restores-simple-recovery-model.md).|Dies ist die grundlegende Wiederherstellungsstrategie. Eine vollständige Datenbankwiederherstellung bedeutet die Wiederherstellung einer vollständigen Datenbanksicherung und, optional, einer differenziellen Sicherung (soweit vorhanden), gefolgt von der Wiederherstellung aller darauffolgenden Protokollsicherungen (in chronologischer Reihenfolge). Um die vollständige Datenbankwiederherstellung abzuschließen, wird die letzte Protokollsicherung wiederhergestellt (RESTORE WITH RECOVERY).<br /><br /> Weitere Informationen finden Sie unter [Vollständige Datenbankwiederherstellungen &#40;vollständiges Wiederherstellungsmodell&#41;](../../relational-databases/backup-restore/complete-database-restores-full-recovery-model.md).|  
-|Dateiwiederherstellung * *\** _|Stellen Sie mindestens eine beschädigte schreibgeschützte Datei wieder her, ohne die gesamte Datenbank wiederherzustellen. Die Dateiwiederherstellung ist nur verfügbar, wenn die Datenbank mindestens eine schreibgeschützte Dateigruppe aufweist.|Wiederherstellen einer oder mehrerer Dateien ohne Wiederherstellung der gesamten Datenbank. Die Dateiwiederherstellung kann ausgeführt werden, während die Datenbank offline ist oder, bei einigen Editionen von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], während die Datenbank online bleibt. Während einer Dateiwiederherstellung sind die Dateigruppen, die die wiederherzustellenden Dateien enthalten, immer offline.|  
+|File restore **\***|Stellen Sie mindestens eine beschädigte schreibgeschützte Datei wieder her, ohne die gesamte Datenbank wiederherzustellen. Die Dateiwiederherstellung ist nur verfügbar, wenn die Datenbank mindestens eine schreibgeschützte Dateigruppe aufweist.|Wiederherstellen einer oder mehrerer Dateien ohne Wiederherstellung der gesamten Datenbank. Die Dateiwiederherstellung kann ausgeführt werden, während die Datenbank offline ist oder, bei einigen Editionen von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], während die Datenbank online bleibt. Während einer Dateiwiederherstellung sind die Dateigruppen, die die wiederherzustellenden Dateien enthalten, immer offline.|  
 |Seitenwiederherstellung|Nicht verfügbar|Stellt mindestens eine beschädigte Seite wieder her. Die Seitenwiederherstellung kann ausgeführt werden, während die Datenbank offline ist oder, bei einigen Editionen von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], während die Datenbank online bleibt. Während einer Seitenwiederherstellung sind die wiederherzustellenden Seiten immer offline.<br /><br /> Es muss eine fortlaufende Kette von Protokollsicherungen bis zur aktuellen Protokolldatei vorhanden sein, und alle Protokollsicherungen müssen angewendet werden, um die Seite auf den Stand der aktuellen Protokolldatei zu bringen.<br /><br /> Weitere Informationen finden Sie unter [Wiederherstellung von Seiten &#40;SQL Server&#41;](../../relational-databases/backup-restore/restore-pages-sql-server.md).|  
-|Schrittweise Wiederherstellung _*\**_|Stellen Sie die Datenbank in Phasen auf Dateigruppenebene wieder her, beginnend mit der primären Dateigruppe und allen sekundären Dateigruppen mit Lese-/Schreibzugriff.|Stellen Sie die Datenbank phasenweise auf Dateigruppenebene wieder her, beginnend mit der primären Dateigruppe.<br /><br /> Weitere Informationen finden Sie unter [Schrittweise Wiederherstellungen &#40;SQL Server&#41;](../../relational-databases/backup-restore/piecemeal-restores-sql-server.md).|  
+|Schrittweise Wiederherstellung **\***|Stellen Sie die Datenbank in Phasen auf Dateigruppenebene wieder her, beginnend mit der primären Dateigruppe und allen sekundären Dateigruppen mit Lese-/Schreibzugriff.|Stellen Sie die Datenbank phasenweise auf Dateigruppenebene wieder her, beginnend mit der primären Dateigruppe.<br /><br /> Weitere Informationen finden Sie unter [Schrittweise Wiederherstellungen &#40;SQL Server&#41;](../../relational-databases/backup-restore/piecemeal-restores-sql-server.md).|  
   
- _*\**_ Die Onlinewiederherstellung wird nur in der Enterprise Edition unterstützt.  
+ **\*** Die Onlinewiederherstellung wird nur in der Enterprise Edition unterstützt.  
 
 ### <a name="steps-to-restore-a-database"></a>Schritte zum Wiederherstellen einer Datenbank
 Zum Ausführen einer Dateiwiederherstellung führt das [!INCLUDE[ssde_md](../../includes/ssde_md.md)] zwei Schritte aus: 
@@ -87,7 +87,7 @@ Zum Ausführen einer Datenbankwiederherstellung führt das [!INCLUDE[ssde_md](..
 -   In [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ist es u. U. möglich, dass während des Datei- oder Seitenwiederherstellungsprozesses andere Daten der Datenbank online bleiben.  
 
 ## <a name="recovery-and-the-transaction-log"></a><a name="TlogAndRecovery"></a> Wiederherstellung und das Transaktionsprotokoll
-Für die meisten Wiederherstellungsszenarios ist es erforderlich, eine Transaktionsprotokollsicherung anzuwenden und [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] die Ausführung des _ *Wiederherstellungsprozesses** zu ermöglichen, damit die Datenbank online geschaltet wird. Wiederherstellung ist der Prozess, der von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] für alle Datenbanken verwendet wird, damit diese im Hinblick auf Transaktionen in einem konsistenten bzw. fehlerfreien Zustand starten.
+Für die meisten Wiederherstellungsszenarien ist es erforderlich, eine Transaktionsprotokollsicherung anzuwenden und dem [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] die Ausführung des **Wiederherstellungsprozesses** zu ermöglichen, damit die Datenbank online geschaltet wird. Wiederherstellung ist der Prozess, der von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] für alle Datenbanken verwendet wird, damit diese im Hinblick auf Transaktionen in einem konsistenten bzw. fehlerfreien Zustand starten.
 
 Im Falle eines Ausfalls oder bei einem sonstigen nicht ordnungsgemäßen Herunterfahren, bleiben die Datenbanken möglicherweise in einem Status, in dem einige Änderungen nicht vom Puffercache in die Datendateien geschrieben wurden, einige Änderungen von unvollständigen Transaktionen jedoch bereits in den Datendateien vorgenommen wurden. Wenn eine Instanz von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] gestartet wird, führt sie basierend auf dem letzten [Datenbankprüfpunkt](../../relational-databases/logs/database-checkpoints-sql-server.md) eine Wiederherstellung der einzelnen Datenbanken aus, die drei Phasen umfasst:
 
@@ -117,9 +117,9 @@ Informationen zum Fortschritt der einzelnen Phasen der Datenbankwiederherstellun
 |Seitenwiederherstellung * *\** _|Vollständige Unterstützung.|Manchmal_ *\*\** *|Keine.|  
 |Schrittweise Wiederherstellung (Dateigruppenebene) * *\** _|Vollständige Unterstützung.|Manchmal_ *\*\** *|Verfügbar nur für schreibgeschützte sekundäre Dateien.|  
   
- * *\** _ Nur in der Enterprise Edition von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] verfügbar  
+ **\*** Verfügbar nur in der Enterprise Edition von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]  
   
- _ *\*\** * Die erforderlichen Bedingungen finden Sie weiter unten in diesem Thema unter [Einschränkungen bei der Wiederherstellung mit dem einfachen Wiederherstellungsmodell](#RMsimpleScenarios).  
+ **\*\*** Die erforderlichen Bedingungen finden Sie in [Einschränkungen bei der Wiederherstellung mit dem einfachen Wiederherstellungsmodell](#RMsimpleScenarios)weiter unten in diesem Thema.  
   
 > [!IMPORTANT]  
 > Unabhängig vom Wiederherstellungsmodell einer Datenbank kann eine [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Sicherung nicht in eine [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)]-Version wiederhergestellt werden, die älter als die Version ist, mit der die Sicherung erstellt wurde.  

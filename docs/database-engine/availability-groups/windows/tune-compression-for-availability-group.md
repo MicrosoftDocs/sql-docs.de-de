@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 7632769c-b246-4766-886f-7c60ec540be8
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1066b1e519f757207b06f1deb94031f2f054bc5f
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 86e85a392a57eb4782be21becb8c06fa405516b5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641851"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337914"
 ---
 # <a name="tune-compression-for-availability-group"></a>Optimieren der Komprimierung für die Verfügbarkeitsgruppe
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

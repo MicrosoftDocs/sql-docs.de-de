@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: a25ebcc7-535e-4619-adf6-4e2b5a62ba37
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 7a55ac708f7cd7c7573a116e984efdd031b04b65
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8d188b361b32627ffac604a9b69e14f54fa26355
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456985"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339206"
 ---
 # <a name="catalogadd_data_tap"></a>catalog.add_data_tap 
 

@@ -8,12 +8,12 @@ ms.topic: tutorial
 author: amvin87
 ms.author: amitkh
 ms.reviewer: vanto
-ms.openlocfilehash: 3956c0470ac9f4b3ac2f2a35ed057015db6ea0e0
-ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
+ms.openlocfilehash: 528d9550f79eea50db554dec11ead53039348cdb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98534875"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051931"
 ---
 # <a name="tutorial---setup-a-three-node-always-on-availability-group-with-hpe-serviceguard-for-linux"></a>Tutorial: Einrichten einer Always On-Verfügbarkeitsgruppe mit drei Knoten mit HPE Serviceguard für Linux 
 
@@ -296,7 +296,7 @@ Für den automatischen Failovertest können Sie das primäre Replikat herunterfa
 1. Der Cluster-Manager stuft eines der sekundären Replikate in der Verfügbarkeitsgruppe auf „Primär“ hoch.
 2. Das fehlgeschlagene primäre Replikat wird automatisch dem Cluster beitreten, nachdem es gesichert wurde. Der Cluster-Manager stuft ihn auf das sekundäre Replikat hoch.
 
-Informationen zu HPE Serviceguard finden Sie im Abschnitt [**Testing the setup for failover readiness (Testen des Setups auf Failoverbereitschaft)** ](https://support.hpe.com/hpesc/public/docDisplay?docId=a00107699en_us#Test_the_setup_preparedness).
+Informationen zu HPE Serviceguard finden Sie im Abschnitt [**Testing the setup for failover readiness (Testen des Setups auf Failoverbereitschaft)**](https://support.hpe.com/hpesc/public/docDisplay?docId=a00107699en_us#Test_the_setup_preparedness).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

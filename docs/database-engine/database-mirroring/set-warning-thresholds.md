@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 17f93147-e7d9-4092-b4c2-c11b38051171
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 999b5d9e1cf50a9ffc2ff349dafac73de9a1465b
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c5433b64027311fbf98b8c62bd8d25d1fbc3fdfb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641947"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352255"
 ---
 # <a name="set-warning-thresholds"></a>Schwellenwerte für Warnung festlegen
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

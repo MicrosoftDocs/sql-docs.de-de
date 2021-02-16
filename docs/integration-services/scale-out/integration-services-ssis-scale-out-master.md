@@ -10,12 +10,12 @@ ms.technology: integration-services
 ms.topic: conceptual
 author: haoqian
 ms.author: haoqian
-ms.openlocfilehash: 6d130bc0d6754a182f7768e4d2e7d8588dc337fc
-ms.sourcegitcommit: 7035d9471876c70b99c58bf9b46af5cce6e9c66c
+ms.openlocfilehash: 8f3b205acd32ba48b86ac797fd99fe4cef4fccf5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87522314"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347407"
 ---
 # <a name="integration-services-ssis-scale-out-master"></a>Scale Out-Master von Integration Services (SSIS)
 

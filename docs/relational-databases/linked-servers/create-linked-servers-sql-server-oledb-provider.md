@@ -11,12 +11,12 @@ author: pmasl
 ms.author: pelopes
 manager: rothj
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 528d1f6e1c7eea06b69fc60e2208eeb37ce3e36f
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 75134031d7567dcc5a653d28ecb1c92a26891d23
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96125124"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080411"
 ---
 # <a name="microsoft-sql-server-distributed-queries-ole-db-connectivity"></a>Verteilte Microsoft SQL Server-Abfragen: OLE DB-Konnektivität
 

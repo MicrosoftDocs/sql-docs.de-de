@@ -17,12 +17,12 @@ ms.assetid: 04f9863c-ba0b-47c5-af91-f2d41b078a23
 author: MikeRayMSFT
 ms.author: mikeray
 manager: erikre
-ms.openlocfilehash: cd258e7680e2f70693ea6e6c36355c0beacbeca8
-ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
+ms.openlocfilehash: de42bca3c6cbcc2ec459bce77ba31e76b572715b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99835854"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352048"
 ---
 # <a name="upgrade-integration-services"></a>Upgrade von Integration Services
 

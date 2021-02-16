@@ -29,12 +29,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 07/20/2020
-ms.openlocfilehash: bcadbc294414b2fe992d3864be240a1998a5e477
-ms.sourcegitcommit: a81823f20262227454c0b5ce9c8ac607aaf537e2
+ms.openlocfilehash: 216e0a9a40466267ab7c7cd5baaef18d9c3e9c38
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684221"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341567"
 ---
 # <a name="server-configuration-options-sql-server"></a>Serverkonfigurationsoptionen (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

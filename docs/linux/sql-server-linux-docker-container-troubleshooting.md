@@ -11,12 +11,12 @@ ms.prod: sql
 ms.technology: linux
 moniker: '>= sql-server-linux-2017 || >= sql-server-2017'
 zone_pivot_groups: cs1-command-shell
-ms.openlocfilehash: d94ae00cb8f3581be51f53d999068e60c4d5b7f1
-ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
+ms.openlocfilehash: d01a4b20b12dfdf47e813fa51d5862e5ce8f0cb6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878795"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100273061"
 ---
 # <a name="troubleshooting-sql-server-docker-containers"></a>Problembehandlung von SQL Server Docker-Containern
 

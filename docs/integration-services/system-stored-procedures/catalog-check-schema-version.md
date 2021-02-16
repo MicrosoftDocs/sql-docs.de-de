@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: e0d5e9f5-59c6-4118-87b5-4aa5c37a7df6
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: b8f1d04f2a41c247a3de8a66f5b07ee74f5036b5
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: fe36fbd5d5a49889fb7a0a02c82f7ade489f2570
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96129946"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339217"
 ---
 # <a name="catalogcheck_schema_version"></a>catalog.check_schema_version 
 

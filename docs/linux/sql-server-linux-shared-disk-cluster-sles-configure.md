@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: e5ad1bdd-c054-4999-a5aa-00e74770b481
-ms.openlocfilehash: c32a526c35d4a4cf236794e1ada6dc66cfac6ba6
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: 87a4fd9edf52c3590fb19781fc5bf76c9bb0168b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91784718"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346265"
 ---
 # <a name="configure-sles-shared-disk-cluster-for-sql-server"></a>Konfigurieren eines freigegebenen SLES-Datenträgerclusters für SQL Server
 

@@ -13,12 +13,12 @@ dev_langs:
 ms.assetid: 764d8f91-957b-4037-997b-a9b6b533c504
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b2a8c285533f7feac07941360bc8d7a85db74f6a
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f683825863a66a14fa715ce507469be218d100f3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99194262"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100023141"
 ---
 # <a name="-scope-resolution-transact-sql"></a>:: (Bereichsauflösung) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx_md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

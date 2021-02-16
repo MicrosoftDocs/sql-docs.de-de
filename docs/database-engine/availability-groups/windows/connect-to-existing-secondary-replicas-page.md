@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 850f1bc8-d7d0-425c-bd7b-03f0e9d3348e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5276c8b0eca7c84fd042a0cbc67e648996da702c
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: b9fc7b197c943ad98b85e80d99616244d39ca34f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765946"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343765"
 ---
 # <a name="connect-to-existing-secondary-replicas-page---always-on-availability-groups"></a>Seite „Verbinden mit vorhandenen sekundären Replikaten“ – Always On-Verfügbarkeitsgruppen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

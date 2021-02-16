@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 2c64cf8b-5edb-48df-8ffe-697096258f71
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: e12fe80482b6b6ffd96fe6e56e6dfad1a92362fc
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: b0bb777c05b30e4b794fc889dc6322e24c4dd5ab
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88425672"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339735"
 ---
 # <a name="tutorial-using-the-odata-source"></a>Tutorial: Verwenden der OData-Quelle
 

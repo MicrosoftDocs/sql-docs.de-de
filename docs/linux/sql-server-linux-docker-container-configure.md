@@ -11,12 +11,12 @@ ms.prod: sql
 ms.technology: linux
 moniker: '>= sql-server-linux-2017 || >= sql-server-2017 '
 zone_pivot_groups: cs1-command-shell
-ms.openlocfilehash: 3fa589fdb522014994923edfa1a7d7858cfa7b72
-ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
+ms.openlocfilehash: 2fa5cc3b5fe8ecc5a2b3ed87444474f1de54b022
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878814"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100273071"
 ---
 # <a name="configure-and-customize-sql-server-docker-containers"></a>Konfigurieren und Anpassen von SQL Server Docker-Containern
 

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 31c947cf-53e9-4ff4-939b-4c1d034ea5b1
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: bfd234025664e7508d7d9cf942ff81a216b447a2
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 89a79b07977d8fec2e2dd6f2a8b9acd9cea0ba5e
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171752"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100343158"
 ---
 # <a name="remote-blob-store-rbs-sql-server"></a>Remote Blob Store (RBS) (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "98171752"
 
 | [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Version | RBS-Downloadort |
 |:---|:---|
-| [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] | [[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833) |
+| [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] | [[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833) |
 | [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] | [[!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] Feature Pack](https://www.microsoft.com/download/details.aspx?id=55992) |
-| [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] | [Downloadseite für [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] RBS](https://go.microsoft.com/fwlink/?linkid=2109005) |
+| [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] | [Downloadseite für [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] RBS](https://go.microsoft.com/fwlink/?linkid=2109005) |
 | &nbsp; | &nbsp; |
   
  
@@ -72,7 +72,7 @@ ms.locfileid: "98171752"
 ### <a name="credential-store-symmetric-key"></a>Symmetrischer Schlüssel des Anmeldeinformationsspeichers  
  Wenn für einen Anbieter das Setup und die Verwendung eines Schlüssels im Anmeldeinformationsspeicher gespeichert werden muss, verwendet RBS einen symmetrischen Schlüssel um die Anbieterschlüssel zu verschlüsseln, die der Client möglicherweise benötigt, um die Autorisierung für den Blobspeicher des Anbieters zu erhalten.  
   
--   RBS 2016 verwendet einen mit **AES_128** erstellten symmetrischen Schlüssel. [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] lässt die Erstellung neuer **TRIPLE_DES** -Schlüssel nur zu Zwecken der Abwärtskompatibilität zu. Weitere Informationen finden Sie unter [CREATE SYMMETRIC KEY &#40;Transact-SQL&#41;](../../t-sql/statements/create-symmetric-key-transact-sql.md).  
+-   RBS 2016 verwendet einen mit **AES_128** erstellten symmetrischen Schlüssel. [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] lässt die Erstellung neuer **TRIPLE_DES** -Schlüssel nur zu Zwecken der Abwärtskompatibilität zu. Weitere Informationen finden Sie unter [CREATE SYMMETRIC KEY &#40;Transact-SQL&#41;](../../t-sql/statements/create-symmetric-key-transact-sql.md).  
   
 -   RBS 2014 und frühere Versionen verwenden einen Anmeldeinformationsspeicher mit geheimen Schlüsseln, die mithilfe des veralteten symmetrischen **TRIPLE_DES** -Schlüsselalgorithmus verschlüsselt werden. Wenn Sie derzeit **TRIPLE_DES** verwenden, empfiehlt [!INCLUDE[msCoName](../../includes/msconame-md.md)], dass Sie ihre Sicherheit erhöhen, indem Sie folgende Schritte in diesem Thema ausführen, um beim Rotieren des Schlüssels auf eine sicherere Verschlüsselungsmethode wechseln.  
   

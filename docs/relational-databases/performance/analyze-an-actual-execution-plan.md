@@ -16,12 +16,12 @@ ms.assetid: 9e583a18-5f4a-4054-bfe1-4b2a76630db6
 author: pmasl
 ms.author: pelopes
 manager: amitban
-ms.openlocfilehash: 461f2ef3dc8617531513272d032eb30c6b59d790
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: 33ed1ed03b9e340e295c14481a6432fca0d3a385
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96505417"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350065"
 ---
 # <a name="analyze-an-actual-execution-plan"></a>Analysieren eines tatsächlichen Ausführungsplans
 

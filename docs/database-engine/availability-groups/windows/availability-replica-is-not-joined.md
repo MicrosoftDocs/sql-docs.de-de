@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9c0d10b1-9e12-430c-83b9-ca2bd0a3afc4
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ad7d5c627055b6dfb4ccf5c9de0824a5f28277ad
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: d80170723101e1e78e70d06f91653e4592b3560d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766000"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343819"
 ---
 # <a name="availability-replica-is-not-joined-to-an-always-on-availability-group"></a>Verfügbarkeitsreplikat ist nicht mit einer Always On-Verfügbarkeitsgruppe verknüpft
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

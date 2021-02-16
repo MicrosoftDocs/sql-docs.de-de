@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: rpsqrd
 ms.author: ryanpu
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 5864ec2b5bda5febc27bbb15606452befe7e293f
-ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
+ms.openlocfilehash: 64971ecd3ed3a821ca823ad3cc5d0d05d08669f4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98534779"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031392"
 ---
 # <a name="register-computer-with-host-guardian-service"></a>Registrieren des Computers beim Host-Überwachungsdienst
 

@@ -1,0 +1,159 @@
+### YamlMime:Hub
+title: Leitfäden zur Azure-Datenbankmigration
+summary: 'Schritt-für-Schritt-Anleitung zur Modernisierung ihrer Datenassets. '
+brand: sql
+metadata:
+  title: Leitfäden zur Azure-Datenbankmigration | Microsoft-Dokumentation
+  description: Schritt-für-Schritt-Anleitung zur Modernisierung ihrer Datenassets.
+  ms.topic: hub-page
+  ms.openlocfilehash: 86398df9a3f1c2deeec590589d31fc183bd2970e
+  ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 02/13/2021
+  ms.locfileid: "100336492"
+conceptualContent:
+  items:
+  - title: SQL Server zu
+    links:
+    - text: SQL Server (neuere Version)
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: architecture
+    - text: Azure SQL-Datenbank
+      url: ssms/tutorials/connect-query-sql-server.md
+      itemType: concept
+    - text: Verwaltete Azure SQL-Instanz
+      url: t-sql/tutorial-writing-transact-sql-statements.md
+      itemType: deploy
+    - text: SQL Server auf Azure-VMs
+      url: linux/quickstart-install-connect-docker.md
+      itemType: download
+  - title: Oracle zu
+    links:
+    - text: SQL Server
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: get-started
+    - text: Azure SQL-Datenbank
+      url: ssms/tutorials/connect-query-sql-server.md
+      itemType: how-to-guide
+    - text: Verwaltete Azure SQL-Instanz
+      url: t-sql/tutorial-writing-transact-sql-statements.md
+      itemType: video
+    - text: SQL Server auf Azure-VMs
+      url: linux/quickstart-install-connect-docker.md
+      itemType: whats-new
+  - title: DB2 zu
+    links:
+    - text: SQL Server
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: quickstart
+    - text: Azure SQL-Datenbank
+      url: ssms/tutorials/connect-query-sql-server.md
+      itemType: quickstart
+    - text: Verwaltete Azure SQL-Instanz
+      url: t-sql/tutorial-writing-transact-sql-statements.md
+      itemType: quickstart
+    - text: SQL Server auf Azure-VMs
+      url: linux/quickstart-install-connect-docker.md
+      itemType: quickstart
+  - title: MySQL zu
+    links:
+    - text: SQL Server
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: quickstart
+    - text: Azure SQL-Datenbank
+      url: ssms/tutorials/connect-query-sql-server.md
+      itemType: quickstart
+    - text: Verwaltete Azure SQL-Instanz
+      url: t-sql/tutorial-writing-transact-sql-statements.md
+      itemType: quickstart
+    - text: SQL Server auf Azure-VMs
+      url: linux/quickstart-install-connect-docker.md
+      itemType: quickstart
+  - title: PostgreSQL zu
+    links:
+    - text: Azure Database for PostgreSQL
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: quickstart
+  - title: MongoDB zu
+    links:
+    - text: Azure CosmosDB
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: quickstart
+  - title: Cassandra zu
+    links:
+    - text: Azure CosmosDB
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: quickstart
+  - title: MariaDB zu
+    links:
+    - text: Azure Database for MariaDB
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: quickstart
+  - title: Access zu
+    links:
+    - text: SQL Server
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: quickstart
+    - text: Azure SQL-Datenbank
+      url: ssms/tutorials/connect-query-sql-server.md
+      itemType: quickstart
+    - text: Verwaltete Azure SQL-Instanz
+      url: t-sql/tutorial-writing-transact-sql-statements.md
+      itemType: quickstart
+    - text: SQL Server auf Azure-VMs
+      url: linux/quickstart-install-connect-docker.md
+      itemType: quickstart
+  - title: SAP ASE zu
+    links:
+    - text: SQL Server (neuere Version)
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: quickstart
+    - text: Azure SQL-Datenbank
+      url: ssms/tutorials/connect-query-sql-server.md
+      itemType: quickstart
+    - text: Verwaltete Azure SQL-Instanz
+      url: t-sql/tutorial-writing-transact-sql-statements.md
+      itemType: quickstart
+    - text: SQL Server auf Azure-VMs
+      url: linux/quickstart-install-connect-docker.md
+      itemType: quickstart
+  - title: Microsoft Azure Table Storage zu
+    links:
+    - text: Azure CosmosDB
+      url: azure-data-studio/quickstart-sql-server.md
+      itemType: quickstart
+tools:
+  title: Sprachen und Tools
+  items:
+  - title: Azure Migrate
+    imageSrc: https://docs.microsoft.com/media/logos/logo_python.svg
+    url: /azure/developer/python/
+  - title: Azure Database Migration Service
+    imageSrc: ./media/index/net-logo.svg
+    url: /dotnet/azure/
+  - title: Datenbankmigrations-Assistent (DMA)
+    imageSrc: https://docs.microsoft.com/media/logos/logo_js.svg
+    url: /azure/developer/javascript/
+  - title: SQL Server Migration Assistant
+    imageSrc: https://docs.microsoft.com/media/logos/logo_java.svg
+    url: /azure/developer/java/
+additionalContent:
+  sections:
+  - title: Fallstudien
+    items:
+    - title: Capita
+      summary: Dedizierte Cloud für US-Regierungsbehörden und ihre Partner
+      url: azure-government/index.yml
+    - title: Willis Towers Watson
+      summary: Dedizierte Cloud mit Einhaltung der in Deutschland geltenden Gesetze für die Datenverarbeitung
+      url: germany/index.yml
+    - title: Innovative Systems
+      summary: Dedizierte Cloud in China, die von 21Vianet betrieben wird
+      url: /azure/china/
+    - title: Geekwire
+      summary: Dedizierte Cloud in China, die von 21Vianet betrieben wird
+      url: /azure/china/
+    - title: Vipps
+      summary: Dedizierte Cloud in China, die von 21Vianet betrieben wird
+      url: /azure/china/

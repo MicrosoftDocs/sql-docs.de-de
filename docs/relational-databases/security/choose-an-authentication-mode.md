@@ -26,12 +26,12 @@ helpviewer_keywords:
 ms.assetid: ff7a6a48-3d38-4209-aa0f-7d6c0a8c64ef
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: ffe53e3f7819a2ca9bdd8adc9cb3db66aad57371
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: ebcf99ad025477a562f2a050eb1c2c3f3f63e12f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85627584"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344402"
 ---
 # <a name="choose-an-authentication-mode"></a>Auswählen eines Authentifizierungsmodus
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -71,7 +71,7 @@ ms.locfileid: "85627584"
   
 1.  Klicken Sie im Menü **Start** auf **Ausführen**.  
   
-2.  Geben Sie **secpol.msc** im Dialogfeld **Ausführen**ein, und klicken Sie dann auf **OK**.  
+2.  Geben Sie **secpol.msc** im Dialogfeld **Ausführen** ein, und klicken Sie dann auf **OK**.  
   
 3.  Erweitern Sie in der Anwendung **Lokale Sicherheitseinstellung** die **Sicherheitseinstellungen**, erweitern Sie **Kontorichtlinien**, und klicken Sie dann auf **Kennwortrichtlinie**.  
 

@@ -13,17 +13,17 @@ ms.assetid: 5064e35b-b70d-4a0b-a9e9-fff04162f9d2
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 3e5bdb3488708bfd4c4e6463b1f87bda580c8fd4
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 5019205027168dc2ebd1e429087924c59f7a17d0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170132"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353828"
 ---
 # <a name="upgrade-sql-server"></a>Aktualisieren von SQL Server
 [!INCLUDE [SQL Server -Windows Only](../../includes/applies-to-version/sql-windows-only.md)]
  
- Sie können Instanzen von [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], [!INCLUDE[ss2016](../../includes/sssql16-md.md)] oder [!INCLUDE[ss2017](../../includes/sssqlv14-md.md)] direkt auf [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] aktualisieren. Bei [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] und [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] müssen Sie entweder ein paralleles Upgrade oder eine Migration durchführen, um zu SQL Server 2019 zu wechseln, da es keine Überschneidungen mit einem der unterstützten Betriebssysteme gibt. Lesen Sie die folgenden Artikel zum Upgradeprozess und die Versionsanmerkungen, bevor Sie mithilfe des [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Setups ein Upgrade auf [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] ausführen.  
+ Sie können Instanzen von [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], [!INCLUDE[ss2016](../../includes/sssql16-md.md)] oder [!INCLUDE[ss2017](../../includes/sssql17-md.md)] direkt auf [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] aktualisieren. Bei [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] und [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] müssen Sie entweder ein paralleles Upgrade oder eine Migration durchführen, um zu SQL Server 2019 zu wechseln, da es keine Überschneidungen mit einem der unterstützten Betriebssysteme gibt. Lesen Sie die folgenden Artikel zum Upgradeprozess und die Versionsanmerkungen, bevor Sie mithilfe des [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Setups ein Upgrade auf [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] ausführen.  
   
    - Weitere Informationen zu einem Upgrade von [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]finden Sie unter [Are you upgrading from SQL Server 2005?](../../sql-server/end-of-support/sql-server-end-of-life-overview.md)(Führen Sie ein Upgrade von SQL Server 2005 aus?).  
    - [Versionsanmerkungen zu SQL Server 2016](../../sql-server/sql-server-2016-release-notes.md) 

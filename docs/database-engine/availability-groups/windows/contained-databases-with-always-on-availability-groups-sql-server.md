@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: cacce3ae-e940-4566-8298-6607c4268e74
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 45b8d52881813336420f92a96b5df4e149f0b579
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 1857d8830ed1aa53e6edb58d60f08a4416da299a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765929"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350818"
 ---
 # <a name="use-contained-databases-with-always-on-availability-groups"></a>Verwenden eigenständiger Datenbanken mit Always On-Verfügbarkeitsgruppen 
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

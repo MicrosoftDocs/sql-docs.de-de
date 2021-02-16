@@ -9,12 +9,12 @@ ms.custom: ''
 ms.technology: integration-services
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 65712139819c65c2fe8804cc8e0f6768025b322a
-ms.sourcegitcommit: e3ab17fe9822629eda4df5fb4550df5d495f3134
+ms.openlocfilehash: a445e38d796113826f45199cf19b4f59a6e9dc16
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98207859"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045100"
 ---
 # <a name="standalone-sql-server-integration-service-ssis-devops-tools-preview"></a>Eigenständige SSIS-DevOps-Tools (SQL Server Integration Service) (Vorschauversion)
 

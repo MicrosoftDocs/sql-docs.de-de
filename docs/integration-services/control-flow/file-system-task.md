@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7dd79a6a-e066-4028-a385-1d40f31056f8
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 9d686ed80120622c2a53cbb9cc52eb4637cfd3f2
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 51646edb5b2937d04d4915e2a7d4a66327343a6c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92196514"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345711"
 ---
 # <a name="file-system-task"></a>Task Dateisystem
 
@@ -52,7 +52,7 @@ ms.locfileid: "92196514"
   
  Der Task Dateisystem wird in einer einzelnen Datei oder in einem einzelnen Verzeichnis ausgeführt. Daher unterstützt dieser Task nicht die Verwendung von Platzhalterzeichen, um denselben Vorgang in mehreren Dateien auszuführen. Damit der Task Dateisystem einen Vorgang in mehreren Dateien oder Verzeichnissen wiederholt, platzieren Sie den Task Dateisystem in einem Foreach-Schleifencontainer, wie in den folgenden Schritten beschrieben.  
   
--   **Konfigurieren des Foreach-Schleifencontainers** Legen Sie auf der Seite **Auflistung** des Foreach-Schleifen-Editors den Enumerator auf **Foreach-Dateienumerator** fest, und geben Sie den Platzhalterausdruck als Enumeratorkonfiguration für **Dateien**an. Ordnen Sie auf der Seite **Variablenzuordnungen** des Foreach-Schleifen-Editors eine Variable zu, mit der die Dateinamen nacheinander an den Task Dateisystem übergeben werden.  
+-   **Konfigurieren des Foreach-Schleifencontainers** Legen Sie auf der Seite **Auflistung** des Foreach-Schleifen-Editors den Enumerator auf **Foreach-Dateienumerator** fest, und geben Sie den Platzhalterausdruck als Enumeratorkonfiguration für **Dateien** an. Ordnen Sie auf der Seite **Variablenzuordnungen** des Foreach-Schleifen-Editors eine Variable zu, mit der die Dateinamen nacheinander an den Task Dateisystem übergeben werden.  
   
 -   **Hinzufügen und Konfigurieren eines Tasks 'Dateisystem'** Fügen Sie dem Foreach-Schleifencontainer einen Task Dateisystem hinzu. Legen Sie auf der Seite **Allgemein** des Editors für den Task **Dateisystem** die Eigenschaft **SourceVariable** oder DestinationVariable auf die im Foreach-Schleifencontainer definierte Variable fest.  
   
@@ -86,10 +86,10 @@ ms.locfileid: "92196514"
 ## <a name="file-system-task-editor-general-page"></a>Editor für den Task 'Dateisystem' (Seite Allgemein)
   Mithilfe der Seite **Allgemein** des Dialogfelds **Editor für den Task 'Dateisystem'** können Sie den Dateisystemvorgang konfigurieren, der durch den Task ausgeführt wird.  
   
- Sie müssen durch Festlegen der Eigenschaften SourceConnection und DestinationConnection einen Quell- und einen Zielverbindungs-Manager angeben. Sie können entweder die Namen von Dateiverbindungs-Managern bereitstellen, die auf die Dateien zeigen, die der Task als Quelle oder Ziel verwendet. Wenn die Pfade der Dateien in Variablen gespeichert sind, können Sie alternativ auch die Namen der Variablen bereitstellen. Wenn Sie Variablen zum Speichern der Dateipfade verwenden möchten, müssen Sie zuerst die Option IsSourcePathVariable für die Quellverbindung und die Option IsDestinationPathVariable für die Zielverbindung auf **True**festlegen. Sie können dann die vorhandenen System- oder benutzerdefinierten Variablen zur Verwendung auswählen oder neue Variablen erstellen. Im Dialogfeld **Variable hinzufügen** können Sie den Bereich der Variablen konfigurieren und angeben. Der Bereich muss der Task Dateisystem oder ein übergeordneter Container sein. Weitere Informationen finden Sie unter [Integration Services-Variablen &#40;SSIS&#41;](../../integration-services/integration-services-ssis-variables.md) und [Verwenden von Variablen in Paketen](../integration-services-ssis-variables.md).  
+ Sie müssen durch Festlegen der Eigenschaften SourceConnection und DestinationConnection einen Quell- und einen Zielverbindungs-Manager angeben. Sie können entweder die Namen von Dateiverbindungs-Managern bereitstellen, die auf die Dateien zeigen, die der Task als Quelle oder Ziel verwendet. Wenn die Pfade der Dateien in Variablen gespeichert sind, können Sie alternativ auch die Namen der Variablen bereitstellen. Wenn Sie Variablen zum Speichern der Dateipfade verwenden möchten, müssen Sie zuerst die Option IsSourcePathVariable für die Quellverbindung und die Option IsDestinationPathVariable für die Zielverbindung auf **True** festlegen. Sie können dann die vorhandenen System- oder benutzerdefinierten Variablen zur Verwendung auswählen oder neue Variablen erstellen. Im Dialogfeld **Variable hinzufügen** können Sie den Bereich der Variablen konfigurieren und angeben. Der Bereich muss der Task Dateisystem oder ein übergeordneter Container sein. Weitere Informationen finden Sie unter [Integration Services-Variablen &#40;SSIS&#41;](../../integration-services/integration-services-ssis-variables.md) und [Verwenden von Variablen in Paketen](../integration-services-ssis-variables.md).  
   
 > [!NOTE]  
->  Um die für die **SourceConnection** -Eigenschaft und die **DestinationConnection** -Eigenschaft ausgewählten Variablen zu überschreiben, geben Sie einen Ausdruck für die **Source** -Eigenschaft und einen für die **Destination** -Eigenschaft ein. Die Ausdrücke werden im **Editor für den Task 'Dateisystem'** auf der Seite **Ausdrücke**eingegeben. Wenn Sie beispielsweise den Pfad der Dateien, die vom Task verwendet werden, als Ziel festlegen möchten, kann in einigen Fällen die Variable A und in anderen die Variable B besser geeignet sein.  
+>  Um die für die **SourceConnection** -Eigenschaft und die **DestinationConnection** -Eigenschaft ausgewählten Variablen zu überschreiben, geben Sie einen Ausdruck für die **Source** -Eigenschaft und einen für die **Destination** -Eigenschaft ein. Die Ausdrücke werden im **Editor für den Task 'Dateisystem'** auf der Seite **Ausdrücke** eingegeben. Wenn Sie beispielsweise den Pfad der Dateien, die vom Task verwendet werden, als Ziel festlegen möchten, kann in einigen Fällen die Variable A und in anderen die Variable B besser geeignet sein.  
   
 > [!NOTE]  
 >  Der Task Dateisystem wird in einer einzelnen Datei oder in einem einzelnen Verzeichnis ausgeführt. Daher unterstützt dieser Task nicht die Verwendung von Platzhalterzeichen, um denselben Vorgang in mehreren Dateien oder Verzeichnissen auszuführen. Damit der Task Dateisystem einen Vorgang in mehreren Dateien oder Verzeichnissen wiederholt, platzieren Sie den Task Dateisystem in einem Foreach-Schleifencontainer. Weitere Informationen finden Sie unter [File System Task](../../integration-services/control-flow/file-system-task.md).  
@@ -102,8 +102,8 @@ ms.locfileid: "92196514"
   
 |Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|**Wahr**|Der Zielpfad ist in einer Variablen gespeichert. Wenn Sie diesen Wert auswählen, wird die dynamische Option **DestinationVariable**angezeigt.|  
-|**False**|Der Zielpfad wird in einem Dateiverbindungs-Manager angegeben. Bei Auswahl dieses Wertes wird die dynamische Option **DestinationConnection**angezeigt.|  
+|**Wahr**|Der Zielpfad ist in einer Variablen gespeichert. Wenn Sie diesen Wert auswählen, wird die dynamische Option **DestinationVariable** angezeigt.|  
+|**False**|Der Zielpfad wird in einem Dateiverbindungs-Manager angegeben. Bei Auswahl dieses Wertes wird die dynamische Option **DestinationConnection** angezeigt.|  
   
  **OverwriteDestination**  
  Geben Sie an, ob der Vorgang Dateien im Zielverzeichnis überschreiben kann.  
@@ -138,8 +138,8 @@ ms.locfileid: "92196514"
   
 |Wert||  
 |-----------|-|  
-|**Wahr**|Der Zielpfad ist in einer Variablen gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **SourceVariable**angezeigt.|  
-|**False**|Der Zielpfad wird in einem Dateiverbindungs-Manager angegeben. Wenn Sie diesen Wert auswählen, wird die dynamische Option **DestinationVariable**angezeigt.|  
+|**Wahr**|Der Zielpfad ist in einer Variablen gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **SourceVariable** angezeigt.|  
+|**False**|Der Zielpfad wird in einem Dateiverbindungs-Manager angegeben. Wenn Sie diesen Wert auswählen, wird die dynamische Option **DestinationVariable** angezeigt.|  
   
 ### <a name="isdestinationpathvariable-dynamic-options"></a>IsDestinationPathVariable (dynamische Optionen)  
   

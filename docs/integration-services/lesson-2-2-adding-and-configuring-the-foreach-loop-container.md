@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.assetid: 88a973cc-0f23-4ecf-adb6-5b06279c2df6
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: e80ddcc6a21eecfea98fbe44aa985066c1a92736
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 8c63288019fa6938f4481bbded2e5b29c29198d3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193794"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354314"
 ---
 # <a name="lesson-2-2-add-and-configure-the-foreach-loop-container"></a>Lektion 2-2: Hinzufügen und Konfigurieren des Foreach-Schleifencontainers
 
@@ -45,11 +45,11 @@ Nachdem Sie diese Änderungen am Paket vorgenommen haben, iteriert der Foreach-S
   
 1.  Wählen Sie in **SQL Server Data Tools** die Registerkarte **Ablaufsteuerung** aus.  
   
-2.  Erweitern Sie **Container**in der **SSIS-Toolbox**, und ziehen Sie anschließend **Foreach-Schleifencontainer** auf die Entwurfsoberfläche der Registerkarte **Ablaufsteuerung** .  
+2.  Erweitern Sie **Container** in der **SSIS-Toolbox**, und ziehen Sie anschließend **Foreach-Schleifencontainer** auf die Entwurfsoberfläche der Registerkarte **Ablaufsteuerung** .  
   
 3.  Klicken Sie mit der rechten Maustaste auf den neuen **Foreach-Schleifencontainer**, und wählen Sie **Bearbeiten** aus.  
   
-4.  Geben Sie im Dialogfeld **Foreach-Schleifen-Editor** auf der Seite**Allgemein** für **Name** den Namen **Foreach File in Folder** ein. Klicken Sie auf **OK**.  
+4.  Geben Sie im Dialogfeld **Foreach-Schleifen-Editor** auf der Seite **Allgemein** für **Name** den Namen **Foreach File in Folder** ein. Klicken Sie auf **OK**.  
   
 5.  Klicken Sie mit der rechten Maustaste auf den Foreach-Schleifencontainer, wählen Sie **Eigenschaften** aus, und vergewissern Sie sich im **Eigenschaften**-Fenster, dass die Eigenschaft **LocaleID** auf **Englisch (USA)** festgelegt ist.  
   
@@ -59,7 +59,7 @@ Nachdem Sie diese Änderungen am Paket vorgenommen haben, iteriert der Foreach-S
   
 2.  Wählen Sie **Sammlung** aus.  
   
-3.  Wählen Sie auf der Seite **Sammlung** **Foreach-Dateienumerator**aus.  
+3.  Wählen Sie auf der Seite **Sammlung** **Foreach-Dateienumerator** aus.  
   
 4.  Wählen Sie in der Gruppe **Enumeratorkonfiguration** die Option **Durchsuchen** aus.  
   

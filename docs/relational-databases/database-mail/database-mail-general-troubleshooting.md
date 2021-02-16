@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: MashaMSFT
 ms.author: mathoma
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 524b2cb81b5c50eadfefd607f4bb62a7ac3bd6cc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2e9b7f5b5aec4f1b111983f893783e46ad14e021
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461059"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352954"
 ---
 # <a name="general-database-mail-troubleshooting-steps"></a>Allgemeine Schritte zur Problembehandlung für Datenbank-E-Mail 
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

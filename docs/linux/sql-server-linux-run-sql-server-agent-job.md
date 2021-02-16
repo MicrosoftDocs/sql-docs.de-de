@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: 1d93d95e-9c89-4274-9b3f-fa2608ec2792
-ms.openlocfilehash: 61790d066d6cdf0d3e2a520cca740823b78fc6dc
-ms.sourcegitcommit: 67befbf7435f256e766bbce6c1de57799e1db9ad
+ms.openlocfilehash: bc52f0a2052d0b9abd1700e92af3a30c0e02bad2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92524045"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346445"
 ---
 # <a name="create-and-run-sql-server-agent-jobs-on-linux"></a>Erstellen und Ausführen eines SQL Server-Agent-Auftrags unter Linux
 
@@ -56,7 +56,7 @@ Um den SQL Server-Agent unter Linux verwenden zu können, müssen Sie den SQL Se
   ```
 
 > [!NOTE]
-> Ab SQL Server 2017 CU4 ist der SQL Server-Agent im **mssql-server** -Paket enthalten und standardmäßig deaktiviert. Informationen über das Setup eines Agent vor CU4 finden Sie unter [Installieren des SQL Server-Agent unter Linux](sql-server-linux-setup-sql-agent.md).
+> Ab SQL Server 2017 CU4 ist der SQL Server-Agent im **mssql-server**-Paket enthalten und standardmäßig deaktiviert. Informationen über das Setup eines Agent vor CU4 finden Sie unter [Installieren des SQL Server-Agent unter Linux](sql-server-linux-setup-sql-agent.md).
 
 ## <a name="create-a-sample-database"></a>Erstellen einer Beispieldatenbank
 
@@ -64,7 +64,7 @@ Führen Sie die folgenden Schritte aus, um eine Beispieldatenbank mit dem Namen 
 
 1. Öffnen Sie auf Ihrem Linux-Computer eine Bash-Terminalsitzung.
 
-1. Führen Sie mit **sqlcmd** einen Transact- SQL- **CREATE DATABASE** -Befehl aus.
+1. Führen Sie mit **sqlcmd** einen Transact- SQL-**CREATE DATABASE**-Befehl aus.
 
    ```bash
    /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -Q 'CREATE DATABASE SampleDB'
@@ -159,7 +159,7 @@ Sie können Aufträge mithilfe von SQL Server Management Studio (SSMS) auch remo
 
    <img src="./media/sql-server-linux-run-sql-server-agent-job/ssms-agent-0.png" alt="Create a SampleDB database" style="width: 550px;"/>
 
-1. Stellen Sie sicher, dass der SQL-Agent richtig [installiert](sql-server-linux-setup-sql-agent.md) und konfiguriert wurde. Suchen Sie im Objekt-Explorer das Pluszeichen neben SQL Server-Agent. Wenn SQL Server-Agent nicht aktiviert ist, versuchen Sie, den **mssql-server** -Dienst unter Linux neu zu starten.
+1. Stellen Sie sicher, dass der SQL-Agent richtig [installiert](sql-server-linux-setup-sql-agent.md) und konfiguriert wurde. Suchen Sie im Objekt-Explorer das Pluszeichen neben SQL Server-Agent. Wenn SQL Server-Agent nicht aktiviert ist, versuchen Sie, den **mssql-server**-Dienst unter Linux neu zu starten.
 
    ![Überprüfen, ob SQL Server-Agent installiert wurde](./media/sql-server-linux-run-sql-server-agent-job/ssms-agent-1.png)
 

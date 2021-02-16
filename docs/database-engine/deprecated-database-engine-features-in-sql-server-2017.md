@@ -17,20 +17,20 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017'
-ms.openlocfilehash: 5d9f07f96f83767a84f7ee0128d674f4ab955eed
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: e14f354812c99b9ed3e8be86734e3cb8e07db751
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170852"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489474"
 ---
 # <a name="deprecated-database-engine-features-in-sql-server-2017"></a>Als veraltet markierte Funktionen der Datenbank-Engine in SQL Server 2017
 
 [!INCLUDE[SQL Server 2017](../includes/applies-to-version/sqlserver2017.md)]
 
-  In diesem Thema werden die als veraltet markierten Funktionen von [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] beschrieben, die in [!INCLUDE[sssqlv14-md](../includes/sssqlv14-md.md)]noch verfügbar sind. Als veraltet markierte Funktionen sollten in neuen Anwendungen nicht verwendet werden.  
+  In diesem Thema werden die als veraltet markierten Funktionen von [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] beschrieben, die in [!INCLUDE[sssql17-md](../includes/sssql17-md.md)]noch verfügbar sind. Als veraltet markierte Funktionen sollten in neuen Anwendungen nicht verwendet werden.  
   
-Wenn eine Funktion als veraltet markiert ist, bedeutet dies:\
+Wenn eine Funktion als veraltet markiert ist, bedeutet dies:
 
 - Die Funktion ist ausschließlich im Wartungsmodus. Es werden keine weiteren Änderungen vorgenommen, auch solche nicht, die mit der Interoperabilität mit neuen Funktionen zu tun haben.
 - Wir bemühen uns, veraltete Funktionen in zukünftigen Versionen zu belassen, um Upgrades zu vereinfachen. In seltenen Fällen kann es jedoch vorkommen, dass eine veraltete Funktion aus [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] entfernt wird, weil sie zukünftige Innovationen beschränkt.
@@ -46,7 +46,7 @@ WHERE object_name = 'SQLServer:Deprecated Features';
 ```
 
 > [!NOTE]
-> Diese Liste ist identisch mit der [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]-Liste. Es gibt keine Datenbank-Engine-Funktionen, die neu für [!INCLUDE[sssqlv14-md](../includes/sssqlv14-md.md)] als veraltet markiert oder eingestellt wurden.
+> Diese Liste ist identisch mit der [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]-Liste. Es gibt keine Datenbank-Engine-Funktionen, die neu für [!INCLUDE[sssql17-md](../includes/sssql17-md.md)] als veraltet markiert oder eingestellt wurden.
 
 ## <a name="features-deprecated-in-the-next-version-of-sql-server"></a>Funktionen, die ab der nächsten Version von SQL Server veraltet sind
 

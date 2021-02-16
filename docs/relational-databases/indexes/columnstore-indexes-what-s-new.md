@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 58f0348a84362b48520c9bd5cf46868cdaea60e0
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 4a82a85c87fd1b5c9b2625ed0d8a7c51bee11e21
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171182"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351234"
 ---
 # <a name="columnstore-indexes---what39s-new"></a>Columnstore-Indizes - Neuigkeiten
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -24,12 +24,12 @@ ms.locfileid: "98171182"
   Zusammenfassung der Columnstore-Funktionen, die für die einzelnen Versionen von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] und die aktuellen Releases von [!INCLUDE[ssSDS](../../includes/sssds-md.md)], [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] und [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] verfügbar sind.  
 
  > [!NOTE]
- > Für [!INCLUDE[ssSDS](../../includes/sssds-md.md)] sind Columnstore-Indizes in den [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]-Tarifen Premium und Standard (S3 und höher) sowie in allen V-Kern-Tarifen verfügbar. Für [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1 und höher sind Columnstore-Indizes in allen Editionen verfügbar. Für [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] (vor SP1) und frühere Versionen sind Columnstore-Indizes nur in der Enterprise Edition verfügbar.
+ > Für [!INCLUDE[ssSDS](../../includes/sssds-md.md)] sind Columnstore-Indizes in den [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]-Tarifen Premium und Standard (S3 und höher) sowie in allen V-Kern-Tarifen verfügbar. Für [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1 und höher sind Columnstore-Indizes in allen Editionen verfügbar. Für [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] (vor SP1) und frühere Versionen sind Columnstore-Indizes nur in der Enterprise Edition verfügbar.
  
 ## <a name="feature-summary-for-product-releases"></a>Zusammenfassung der Funktionen für Produktversionen  
  In dieser Tabelle sind die wichtigsten Funktionen für Columnstore-Indizes sowie die Produkte zusammengefasst, in denen sie verfügbar sind.  
 
-|Columnstore-Index-Funktion|[!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]|[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]|[!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]|[!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]|[!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)]|[!INCLUDE[ssSDW](../../includes/sssdw-md.md)]|  
+|Columnstore-Index-Funktion|[!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]|[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]|[!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]|[!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]|[!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)]|[!INCLUDE[ssSDW](../../includes/sssdw-md.md)]|  
 |-------------------------------|---------------------------|---------------------------|---------------------------|---------------------------|--------------------------------------------|-------------------------|---|  
 |Batchmodusausführung für Multithread-Abfragen|ja|ja|ja|ja|ja|ja|ja| 
 |Batchmodusausführung für Singlethread-Abfragen|||ja|ja|ja|ja|ja|  
@@ -55,11 +55,11 @@ ms.locfileid: "98171182"
 > [!NOTE]
 > Der Grad an Parallelität (DOP) für Vorgänge im [Batchmodus](../../relational-databases/query-processing-architecture-guide.md#batch-mode-execution) sind für [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Standard Edition auf „2“ und für [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Web und Express Edition auf „1“ beschränkt. Dies gilt für Columnstore-Indizes, die über datenträgerbasierte Tabellen und speicheroptimierte Tabellen erstellt wurden.
 
-## [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] 
- [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] fügt diese neuen Funktionen hinzu.
+## [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] 
+ [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] fügt diese neuen Funktionen hinzu.
 
 ### <a name="functional"></a>Funktionen
-- Seit [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] wird der Tupelverschiebungsvorgang von einem Zusammenführungstask im Hintergrund unterstützt. Dieser komprimiert automatisch kleinere OPEN-Deltazeilengruppen, die für einen bestimmten durch einen internen Schwellenwert definierten Zeitraum vorhanden waren, oder führt COMPRESSED-Zeilengruppen zusammen, aus denen eine große Anzahl von Zeilen gelöscht wurde. Zuvor war ein Vorgang zum Neuorganisieren eines Index erforderlich, um Zeilengruppen mit teilweise gelöschten Daten zusammenzuführen. Dies verbessert die Qualität des Columnstore-Index im Lauf der Zeit. 
+- Seit [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] wird der Tupelverschiebungsvorgang von einem Zusammenführungstask im Hintergrund unterstützt. Dieser komprimiert automatisch kleinere OPEN-Deltazeilengruppen, die für einen bestimmten durch einen internen Schwellenwert definierten Zeitraum vorhanden waren, oder führt COMPRESSED-Zeilengruppen zusammen, aus denen eine große Anzahl von Zeilen gelöscht wurde. Zuvor war ein Vorgang zum Neuorganisieren eines Index erforderlich, um Zeilengruppen mit teilweise gelöschten Daten zusammenzuführen. Dies verbessert die Qualität des Columnstore-Index im Lauf der Zeit. 
 
 ## [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] 
  [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] fügt diese neuen Funktionen hinzu.
@@ -67,8 +67,8 @@ ms.locfileid: "98171182"
 ### <a name="functional"></a>Funktionen
 - [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] unterstützt nichtpersistierte berechnete Spalten in gruppierten Columnstore-Indexen. Persistierte berechnete Spalten werden in gruppierten Columnstore-Indizes nicht unterstützt. Sie können keinen nicht gruppierten Index für einen Columnstore-Index erstellen, der berechnete Spalten umfasst. 
 
-## [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]  
- [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] fügt wichtige Verbesserungen hinzu, um die Leistung und Flexibilität von Columnstore-Indizes zu erhöhen. Dies verbessert die Data Warehouse-Szenarios und ermöglicht operative Echtzeitanalysen.  
+## [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]  
+ [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] fügt wichtige Verbesserungen hinzu, um die Leistung und Flexibilität von Columnstore-Indizes zu erhöhen. Dies verbessert die Data Warehouse-Szenarios und ermöglicht operative Echtzeitanalysen.  
   
 ### <a name="functional"></a>Funktionen  
   

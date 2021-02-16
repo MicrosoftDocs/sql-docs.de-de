@@ -11,12 +11,12 @@ ms.assetid: eabcc635-7adf-4e45-b6f1-158d6e024908
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: ae52c9ea34bd8731a70e4e8a077bd2abc5aa9980
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c9c129535f85f89b3676222e2e4d438250bd5b23
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463601"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353076"
 ---
 # <a name="prepare-for-upgrade-by-running-data-migration-assistant"></a>Vorbereiten der Aktualisierung durch Ausführen von Data Migration Assistant
 

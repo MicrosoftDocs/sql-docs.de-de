@@ -11,12 +11,12 @@ author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: ''
 monikerRange: '>= sql-server-2016'
-ms.openlocfilehash: 4fcac0794148135138194a07bce8b3ad70c0ee0e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 00cb6468e269b057fb5d5d539a3f0efdd8be36ed
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97417044"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351808"
 ---
 # <a name="install-polybase-on-windows"></a>Installieren von PolyBase unter Windows
 
