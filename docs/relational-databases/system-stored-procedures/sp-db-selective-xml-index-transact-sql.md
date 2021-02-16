@@ -17,20 +17,20 @@ helpviewer_keywords:
 - sp_db_selective_xml_index procedure
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 5df370a674026b4c6ebc7eb59985505821e3b028
-ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
+ms.openlocfilehash: ed30d2b8df6141b308d32dee8f2fdcec0c2eceb1
+ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489444"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525168"
 ---
 # <a name="sp_db_selective_xml_index-transact-sql"></a>sp_db_selective_xml_index (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Aktiviert und deaktiviert die Funktion des selektiven XML-Indexes in einer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Datenbank. Wenn diese ohne Parameter aufgerufen wird, gibt die gespeicherte Prozedur 1 zurück, wenn der selektive XML-Index in einer bestimmten Datenbank aktiviert ist.  
-  
+
 > [!NOTE]  
->  Um den selektiven XML-Index mithilfe dieser gespeicherten Prozedur zu deaktivieren, muss die Datenbank mithilfe des Befehls [ALTER DATABASE Set options &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md) in den einfachen Wiederherstellungs Modus versetzt werden.  
+> Ab [!INCLUDE[sssql14-md](../../includes/sssql14-md.md)] kann die selektive XML-Index Funktion nicht deaktiviert werden. [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] In [!INCLUDE[sssql11-md](../../includes/sssql11-md.md)] muss die Datenbank mithilfe des Befehls [ALTER DATABASE Set options &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md) in das einfache Wiederherstellungs Modell eingefügt werden, um die selektive XML-Index Funktion mithilfe dieser gespeicherten Prozedur zu deaktivieren.  
   
  ![Symbol für Themenlink](../../database-engine/configure-windows/media/topic-link.gif "Symbol für Themenlink") [Transact-SQL-Syntaxkonventionen](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   

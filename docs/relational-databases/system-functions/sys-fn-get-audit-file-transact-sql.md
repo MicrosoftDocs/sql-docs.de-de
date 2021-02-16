@@ -22,12 +22,12 @@ ms.assetid: d6a78d14-bb1f-4987-b7b6-579ddd4167f5
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current||=azure-sqldw-latest
-ms.openlocfilehash: e0e6692a24371b91b57ad2269ec48c43db1e1a8c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 013586570ce43b8270ae2613c05ced8bc9bdc48b
+ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99206073"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525214"
 ---
 # <a name="sysfn_get_audit_file-transact-sql"></a>sys.fn_get_audit_file (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]    
@@ -52,11 +52,11 @@ fn_get_audit_file ( file_pattern,
     
     Dieses Argument muss sowohl einen Pfad (Laufwerksbuchstabe oder Netzwerkfreigabe) als auch einen Dateinamen umfassen. Diese können ein Platzhalterzeichen enthalten. Ein einzelnes Sternchen (*) kann verwendet werden, um mehrere Dateien aus einem Überwachungs Datei Satz zu erfassen. Beispiel:  
   
-    -   **\<path>\\\** _-Alle Überwachungs Dateien werden am angegebenen Speicherort gesammelt.  
+    -   **\<path>\\\*** : Sammelt alle Überwachungs Dateien am angegebenen Speicherort.  
   
-    -   _* \<path> \Loginsaudit_{GUID} * * _-alle Überwachungs Dateien erfassen, die über den angegebenen Namen und das GUID-paar verfügen.  
+    -   **\<path> \ LoginsAudit_ {GUID}***-alle Überwachungs Dateien mit dem angegebenen Namen und dem GUID-paar sammeln.  
   
-    -   _* \<path> \Loginsaudit_{GUID} _00_29384. sqlaudit * *-sammelt eine bestimmte Überwachungs Datei.  
+    -   **\<path> \ LoginsAudit_ {GUID} _00_29384. sqlaudit** -sammelt eine bestimmte Überwachungs Datei.  
   
  - **Azure SQL-Datenbank**:
  
@@ -84,7 +84,7 @@ fn_get_audit_file ( file_pattern,
 ## <a name="tables-returned"></a>Zurückgegebene Tabellen  
  In der folgenden Tabelle wird der Inhalt der Überwachungsdatei beschrieben, die von dieser Funktion zurückgegeben werden kann.  
   
-| Spaltenname | type | BESCHREIBUNG |  
+| Spaltenname | type | Beschreibung |  
 |-------------|------|-------------|  
 | action_id | **varchar(4)** | ID der Aktion. Lässt keine NULL-Werte zu. |  
 | additional_information | **nvarchar(4000)** | Eindeutige Informationen, die nur für ein einzelnes Ereignis gelten, werden als XML zurückgegeben. Eine kleine Anzahl überwachbarer Aktionen enthält diese Art von Informationen.<br /><br /> Eine Ebene des TSQL-Stapels wird im XML-Format für Aktionen angezeigt, denen ein TSQL-Stapel zugeordnet ist. Das XML-Format sieht folgendermaßen aus:<br /><br /> `<tsql_stack><frame nest_level = '%u' database_name = '%.*s' schema_name = '%.*s' object_name = '%.*s' /></tsql_stack>`<br /><br /> Frame nest_level gibt die aktuelle Schachtelungsebene des Frames an. Der Modulname (database_name, schema_name und object_name) wird in einem aus drei Teilen bestehenden Format dargestellt.  Der Modulname wird so analysiert, dass ungültige XML-Zeichen wie,,, mit Escapezeichen versehen werden `'\<'` `'>'` `'/'` `'_x'` . Sie werden mit Escapezeichen versehen `_xHHHH\_` . HHHH steht für den vierstelligen hexadezimalen UCS 2-Code für das Zeichen<br /><br /> Lässt NULL-Werte zu. Gibt NULL zurück, wenn keine zusätzlichen vom Ereignis gemeldeten Informationen vorliegen. |
@@ -115,7 +115,7 @@ fn_get_audit_file ( file_pattern,
 | server_principal_name | **sysname** | Aktuelle Anmeldung. Lässt NULL-Werte zu. |  
 | server_principal_sid | **varbinary** | Aktuelle Anmeldungs-SID. Lässt NULL-Werte zu. |  
 | session_id | **smallint** | Die ID der Sitzung, in der das Ereignis aufgetreten ist. Lässt keine NULL-Werte zu. |  
-| session_server_principal_name | **sysname** | Der Server Prinzipal für die Sitzung. Lässt NULL-Werte zu. |  
+| session_server_principal_name | **sysname** | Der Server Prinzipal für die Sitzung. Lässt NULL-Werte zu. Gibt die Identität des ursprünglichen Anmelde namens zurück, der mit der Instanz von verbunden war SQL Server für den Fall, dass es explizite oder implizite Kontextwechsel gab.|  
 | statement | **nvarchar(4000)** | TSQL-Anweisung, falls vorhanden. Lässt NULL-Werte zu. Falls nicht zutreffend, wird NULL zurückgegeben. |  
 | Erfolgreich | **bit** | Gibt an, ob die Aktion, die das Ereignis ausgelöst hat, erfolgreich war Lässt keine NULL-Werte zu. Für alle Ereignisse außer Anmeldeereignisse meldet dies nur, ob die Berechtigungsüberprüfung erfolgreich war oder fehlgeschlagen ist, nicht der Vorgang.<br /> 1 = success<br /> 0 = Fehler |
 | target_database_principal_id | **int** | Datenbankprinzipal, auf dem der GRANT-, DENY- oder REVOKE-Vorgang ausgeführt wird Lässt keine NULL-Werte zu. Falls nicht zutreffend, wird 0 zurückgegeben. |  
