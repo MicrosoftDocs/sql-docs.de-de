@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6baee70f-848c-4e86-b20d-78875c0f82cb
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9336a99169c0656d290898e3474254d9bb423030
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 36e9640011bb273fee05a1eefa899e10bb595eff
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765805"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340908"
 ---
 # <a name="availability-database-is-suspended-for-an-availability-group"></a>Verfügbarkeitsdatenbank angehalten
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

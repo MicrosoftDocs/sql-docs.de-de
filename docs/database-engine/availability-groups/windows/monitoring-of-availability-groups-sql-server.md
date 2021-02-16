@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 1d5e3291-0d0a-45a1-88e5-1fc242d17210
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 734c89393b77fa74db57ce2896af64bbac7c1a63
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 075f4a957764038b56d61b7be64fd31acb9e13c8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643731"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337956"
 ---
 # <a name="tools-to-monitor-always-on-availability-groups"></a>Tools zum Überwachen von Always On-Verfügbarkeitsgruppen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

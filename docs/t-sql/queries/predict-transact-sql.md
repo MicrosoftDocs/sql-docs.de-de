@@ -19,12 +19,12 @@ helpviewer_keywords:
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-2017||=azuresqldb-current||>=sql-server-linux-2017||=azuresqldb-mi-current||>=azure-sqldw-latest'
-ms.openlocfilehash: 0baf8812e8bcfc6c5095a5e082b85b62bfa9db7e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 9ccee4b3502dafac331803ba1e8e56c068666bbc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99207612"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347543"
 ---
 # <a name="predict-transact-sql"></a>PREDICT (Transact-SQL)
 

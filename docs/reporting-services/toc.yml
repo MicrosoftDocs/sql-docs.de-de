@@ -347,11 +347,11 @@
         - name: Überwachen der Leistung des Berichtsservers
           href: ../reporting-services/report-server/monitoring-report-server-performance.md
           items:
-            - name: 'Leistungsindikatoren für den MSRS 2011-Webdienst und den MSRS 2011-Windows-Dienst, Leistungsobjekte (einheitlicher Modus)'
+            - name: "Leistungsindikatoren, Leistungsobjekte MSRS\_2016-Webdienst und MSRS\_2016-Windows-Dienst (einheitlicher Modus)"
               href: ../reporting-services/report-server/performance-counters-msrs-2011-web-service-performance-objects.md
-            - name: 'Leistungsindikatoren für den MSRS 2011-Webdienst im SharePoint-Modus und den MSRS 2011-Windows-Dienst im SharePoint-Modus, Leistungsobjekte (SharePoint-Modus)'
+            - name: "Leistungsindikatoren, Leistungsobjekte MSRS\_2016-Webdienst im SharePoint-Modus und MSRS\_2016-Windows-Dienst im SharePoint-Modus"
               href: ../reporting-services/report-server/performance-counters-msrs-2011-sharepoint-mode-performance-objects.md
-            - name: 'Leistungsindikatoren für die Leistungsobjekte ''ReportServer:Service'' und ''ReportServerSharePoint:Service'''
+            - name: 'Leistungsindikatoren, Leistungsobjekte ReportServer:Service und ReportServerSharePoint:Service'
               href: ../reporting-services/report-server/performance-counters-reportserver-service-performance-objects.md
         - name: Festlegen von Berichtsverarbeitungseigenschaften
           href: ../reporting-services/report-server/set-report-processing-properties.md

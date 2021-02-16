@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 11f8017e-5bc3-4bab-8060-c16282cfbac1
 author: briancarrig
 ms.author: brcarrig
-ms.openlocfilehash: 6625022360c93da5cbc43224572908738f6d430c
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 96f175f4eb6f913c7870f573e65201e1124dffad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236451"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351280"
 ---
 # <a name="in-memory-database-systems-and-technologies"></a>In-Memory-Datenbanksysteme und -Technologien
 

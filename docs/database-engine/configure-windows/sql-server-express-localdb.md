@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 5a641a46-7cfb-4d7b-a90d-6e4625719d74
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: f290da98335aaf46c3c0d12c94d265f14dc1e2bd
-ms.sourcegitcommit: 773c1203e3c4617606cecb2626f6b2f2c855a53d
+ms.openlocfilehash: 9b7f57127bd8d1bd6b289ba82291ba9c1dd87424
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96535284"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340437"
 ---
 # <a name="sql-server-express-localdb"></a>SQL Server Express LocalDB
 

@@ -10,12 +10,12 @@ ms.technology: integration-services
 ms.topic: conceptual
 author: haoqian
 ms.author: haoqian
-ms.openlocfilehash: e8e8a2b2acde605c779375adec9c0908cbf46b03
-ms.sourcegitcommit: 7035d9471876c70b99c58bf9b46af5cce6e9c66c
+ms.openlocfilehash: 7d9c02b6912019304b37d3d536312c6a5707f769
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87522324"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337414"
 ---
 # <a name="troubleshoot-scale-out"></a>Problembehandlung in Scale Out
 

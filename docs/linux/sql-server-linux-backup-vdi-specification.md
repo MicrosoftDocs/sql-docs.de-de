@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: 0250ba2b-8cdd-450e-9109-bf74f70e1247
-ms.openlocfilehash: 8351bf128b2e53e51b49020588c8ff1ba44422a7
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: dcdbd7ba3a00048b63836e52092835fe6f7a618f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91784810"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343178"
 ---
 # <a name="sql-server-on-linux-vdi-client-sdk-specification"></a>Spezifikation des VDI-Client SDK für SQL Server für Linux
 

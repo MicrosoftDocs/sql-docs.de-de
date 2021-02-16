@@ -18,12 +18,12 @@ ms.assetid: 9e583a18-5f4a-4054-bfe1-4b2a76630db6
 author: pmasl
 ms.author: pelopes
 manager: amitban
-ms.openlocfilehash: 4f3c78649a8934af4add9bf0696aaf91f017e687
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: 03b6ec22a3eadf7281f0513997cfcc28d40eb1b6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96505354"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344729"
 ---
 # <a name="compare-execution-plans"></a>Vergleichen von Ausführungsplänen
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

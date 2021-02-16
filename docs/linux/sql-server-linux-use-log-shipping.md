@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: fdabd19b81a880c0969cc6359c703cd156a03fab
-ms.sourcegitcommit: 36fe62a3ccf34979bfde3e192cfa778505add465
+ms.openlocfilehash: 9385bcc04935c90ff060201d38e676b6da226e33
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94521102"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346209"
 ---
 # <a name="get-started-with-log-shipping-on-linux"></a>Erste Schritte mit dem Protokollversand unter Linux
 

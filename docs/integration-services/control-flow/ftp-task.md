@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 41c3f2c4-ee04-460a-9822-bb9ae4036c2e
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 013fffc66c8e40ca2124b949f555e0638df7967e
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 839f9cc803dfcfe6c753851e53f0db1f2ef14daf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96127402"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348964"
 ---
 # <a name="ftp-task"></a>FTP-Task
 

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f63d4107-13e4-4bfe-922d-5e4f712e472d
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: eccedfef8f3e882425ccbeb6476cfef2e0ebf9e0
-ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
+ms.openlocfilehash: c20fa84b3921cdd76db17d1657ba6c6f8ae0be86
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98813322"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350910"
 ---
 # <a name="detach-a-database"></a>Trennen einer Datenbank
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

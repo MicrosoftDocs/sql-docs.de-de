@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 33f2f2d0-79e0-4107-9902-d67019b826aa
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: caeb53cdc384a02d5ccdcba35c6137c08b868e8c
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 50bfb7b8fdef0c516c3b5fe62d739fe90612f38f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766478"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348469"
 ---
 # <a name="getting-started-with-always-on-availability-groups"></a>Erste Schritte mit Always On-Verfügbarkeitsgruppen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

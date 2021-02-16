@@ -18,12 +18,12 @@ author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: ''
 monikerRange: '>= sql-server-2016'
-ms.openlocfilehash: 2eec9c64a65ae0fb548944dc88a056c15e5c1e80
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: cdcd5d06395d8216fdf3e9c61b8434ab226c9837
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97416809"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351834"
 ---
 # <a name="polybase-query-scenarios"></a>PolyBase-Abfrageszenarien
 

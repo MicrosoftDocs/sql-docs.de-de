@@ -10,12 +10,12 @@ ms.prod: sql
 ms.technology: linux
 ms.assetid: c75717c8-c677-4033-8ca6-d0ac93aee04d
 moniker: '>= sql-server-linux-2017 || >= sql-server-2017 '
-ms.openlocfilehash: 1cb0de31ae69fd2bcd43f7191e98c7a6fb309269
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4f7cda4e6f12f3c37237ff4ae99b78f9766b2912
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471651"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349149"
 ---
 # <a name="business-continuity-and-database-recovery---sql-server-on-linux"></a>Geschäftskontinuität und Datenbankwiederherstellung – SQL Server für Linux
 

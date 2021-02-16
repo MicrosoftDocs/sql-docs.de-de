@@ -12,12 +12,12 @@ f1_keywords:
 author: yanancai
 ms.author: yanacai
 ms.reviewer: maghan
-ms.openlocfilehash: d3fd592913164d92851ca738090de9dd200df66f
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 2bc717a0dc59c0d880e7095e18a0c97432519e56
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91719277"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346575"
 ---
 # <a name="azure-data-lake-analytics-task"></a>Azure Data Lake Analytics-Task
 
@@ -51,7 +51,7 @@ Für die U-SQL-Konfiguration gibt es zwei Einstellungen: **SourceType** und dyna
 |-----------|-----------------|  
 |**DirectInput**|Gibt das U-SQL-Skript durch den Inline-Editor an. Bei Auswahl dieses Werts wird die dynamische Option **USQLStatement** angezeigt.|  
 |**FileConnection**|Legt eine lokale .usql-Datei fest, die das U-SQL-Skript enthält. Bei Auswahl dieser Option wird die dynamische Option **FileConnection** angezeigt.|  
-|**Variable**|Legt eine lokale SSIS-Variable fest, die das U-SQL-Skript enthält. Bei Auswahl dieses Wertes wird die dynamische Option **SourceVariable**angezeigt.|
+|**Variable**|Legt eine lokale SSIS-Variable fest, die das U-SQL-Skript enthält. Bei Auswahl dieses Wertes wird die dynamische Option **SourceVariable** angezeigt.|
 | &nbsp; | &nbsp; |
 
 **SourceType (dynamische Optionen):** Legt den Inhalt des Skripts für die U-SQL-Abfrage fest. 

@@ -11,12 +11,12 @@ ms.topic: language-reference
 author: haoqian
 ms.author: haoqian
 monikerRange: '>= sql-server-2017'
-ms.openlocfilehash: 7f7abd4db53e6871e3291a63c755fb43ac731c3d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 666345dbcf16c1b4839abc9b001044722c7199d2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97438767"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346785"
 ---
 # <a name="catalogupdate_master_address-ssisdb-database"></a>catalog.update_master_address (SSISDB-Datenbank)
 

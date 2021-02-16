@@ -15,12 +15,12 @@ ms.assetid: e06344a4-22a5-4c67-b6c6-a7060deb5de6
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current||=azure-sqldw-latest
-ms.openlocfilehash: e61f723ddbc3010cc705c076675b731482fdee6b
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: c8a836f1a8daf2b4b6a9d5b76156191799013484
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171842"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341710"
 ---
 # <a name="monitoring-performance-by-using-the-query-store"></a>Leistungsüberwachung mit dem Abfragespeicher
 
@@ -31,7 +31,7 @@ Der [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Abfragespeicher b
 Informationen zum Betrieb des Abfragespeichers in Azure [!INCLUDE[ssSDS](../../includes/sssds-md.md)] finden Sie unter [Verwenden des Abfragespeichers in Azure SQL-Datenbank](best-practice-with-the-query-store.md#Insight).
 
 > [!IMPORTANT]
-> Wenn Sie den Abfragespeicher für Erkenntnisse zu Just-In-Time-Arbeitsauslastungen in [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] verwenden, planen Sie baldmöglichst die Installation der Fixes zur Leistungsskalierbarkeit in [KB 4340759](https://support.microsoft.com/help/4340759) ein.
+> Wenn Sie den Abfragespeicher für Erkenntnisse zu Just-In-Time-Arbeitsauslastungen in [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] verwenden, planen Sie baldmöglichst die Installation der Fixes zur Leistungsskalierbarkeit in [KB 4340759](https://support.microsoft.com/help/4340759) ein.
 
 ## <a name="enabling-the-query-store"></a><a name="Enabling"></a> Aktivieren des Abfragespeichers
 
@@ -645,7 +645,7 @@ Durch die Verwendung von **sp_query_store_force_plan** können Sie ausschließli
 
 #### <a name="a-namectp23-plan-forcing-support-for-fast-forward-and-static-cursors"></a><a name="ctp23"><a/> Erzwingen eines Plans für schnelle Vorwärts- und statische Cursor
 
-Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] und Azure SQL-Datenbank (alle Bereitstellungsmodelle) unterstützt der Abfragespeicher die Möglichkeit, Abfrageausführungspläne für schnelle Vorwärtscursor und statische Cursor ([!INCLUDE[tsql](../../includes/tsql-md.md)] und API) zu erzwingen. Das Erzwingen wird durch `sp_query_store_force_plan` oder [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]-Abfragespeicherberichte unterstützt.
+Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] und Azure SQL-Datenbank (alle Bereitstellungsmodelle) unterstützt der Abfragespeicher die Möglichkeit, Abfrageausführungspläne für schnelle Vorwärtscursor und statische Cursor ([!INCLUDE[tsql](../../includes/tsql-md.md)] und API) zu erzwingen. Das Erzwingen wird durch `sp_query_store_force_plan` oder [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]-Abfragespeicherberichte unterstützt.
 
 ### <a name="remove-plan-forcing-for-a-query"></a>Aufheben der Erzwingung eines Plans für eine Abfrage
 

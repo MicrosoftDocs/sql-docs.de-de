@@ -14,12 +14,12 @@ f1_keywords:
 ms.assetid: 134e14ce-4f8d-4a20-889a-918014c841d8
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: a65f5d8114907472eb03aa06e428927aa1408b7b
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 2826ed7de2ffe70267d8c0627dd3ec12b6d07c97
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88484910"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339252"
 ---
 # <a name="validate-dialog-box"></a>Dialogfeld 'Überprüfen'
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 monikerRange: '>= sql-server-linux-ver15 || >= sql-server-ver15'
-ms.openlocfilehash: 2c93d219860f2bbbdf11050966955a63d44387e4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 85beab1eb4d256c0433678ca34a8ac2627ebfb52
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97416395"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100062246"
 ---
 # <a name="install-polybase-on-linux"></a>Installieren von PolyBase unter Linux
 

@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 01aa0b88-d477-4581-9a3b-2efc3de2b133
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 9d663d75f7588ad91973f3bce5f416136bc5583e
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 6b757c7c0a60ab8cff5c496c2a0774646da4c7f8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193782"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340771"
 ---
 # <a name="security-overview-integration-services"></a>Sicherheitsübersicht (Integration Services)
 

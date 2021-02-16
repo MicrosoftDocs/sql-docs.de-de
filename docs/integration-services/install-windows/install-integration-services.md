@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: bd20fd3a-414b-4581-959d-ebba4ddf5a55
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: abb62aec3a712ace96d6db82ea8eb0085d8a9e74
-ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
+ms.openlocfilehash: 04519dfedcdde98d5cc0d2751476fa1bb3f24c46
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99049275"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352060"
 ---
 # <a name="install-integration-services-ssis"></a>Installieren von Integration Services (SSIS)
 

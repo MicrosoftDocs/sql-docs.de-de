@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 97c19716-6447-4c1c-b277-cc2e6c1e6a6c
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: a8e86b0cee816bae92656da9de24648c24de1abc
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 99f1f97ef2165aff97f9f45d667c95677180815f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88430472"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354360"
 ---
 # <a name="persisting-custom-objects"></a>Beibehalten von benutzerdefinierten Objekten
 

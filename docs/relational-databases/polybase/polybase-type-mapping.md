@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: ''
-ms.openlocfilehash: 2cbdcfca40f1fa2fd51e669aeefcf317a958c687
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ddb0c0ac0c1afd4e4a3f94504256fa787dceaf9d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97467431"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080002"
 ---
 # <a name="type-mapping-with-polybase"></a>Typzuordnung mit PolyBase
 

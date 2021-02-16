@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Database Mail [SQL Server], components
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 442e95c2e579fa67cb54b801fe6ebbdcd4098ae3
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 0df7b437ff897966502291975a99d56a64003f08
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96125238"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272361"
 ---
 # <a name="common-errors-with-database-mail"></a>Häufige Fehler mit Datenbank-E-Mail 
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

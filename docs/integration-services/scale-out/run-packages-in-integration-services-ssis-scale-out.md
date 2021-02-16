@@ -11,12 +11,12 @@ ms.author: haoqian
 ms.reviewer: maghan
 f1_keywords:
 - sql13.ssis.ssms.ispackageexecuteinscaleout.f1
-ms.openlocfilehash: 8de8aeb3b41c8ae44020c0cb0d4cca656ee96418
-ms.sourcegitcommit: 7035d9471876c70b99c58bf9b46af5cce6e9c66c
+ms.openlocfilehash: 13f9a386b6ab60280edf2d8b494721dd233b042a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87522942"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347417"
 ---
 # <a name="run-packages-in-integration-services-ssis-scale-out"></a>Ausführen von Paketen in SSIS Scale Out (SQL Server Integration Services)
 
@@ -35,7 +35,7 @@ Nachdem Sie Pakete auf dem Integration Services-Server bereitgestellt haben, kö
 
 1. Öffnen Sie das Dialogfeld „Paket in Scale Out ausführen“.
 
-    Stellen Sie in [!INCLUDE[ssManStudioFull_md](../../includes/ssmanstudiofull-md.md)]eine Verbindung mit dem Integration Services-Server her. Erweitern Sie im Objekt-Explorer die Struktur, um die Knoten unter **Integration Services-Kataloge**anzuzeigen. Klicken Sie mit der rechten Maustaste auf den **SSISDB**-Knoten oder auf das Projekt oder Paket, das Sie ausführen möchten, und klicken Sie dann auf **In Scale Out ausführen**.
+    Stellen Sie in [!INCLUDE[ssManStudioFull_md](../../includes/ssmanstudiofull-md.md)]eine Verbindung mit dem Integration Services-Server her. Erweitern Sie im Objekt-Explorer die Struktur, um die Knoten unter **Integration Services-Kataloge** anzuzeigen. Klicken Sie mit der rechten Maustaste auf den **SSISDB**-Knoten oder auf das Projekt oder Paket, das Sie ausführen möchten, und klicken Sie dann auf **In Scale Out ausführen**.
 
 2. Wählen Sie Pakete aus, und legen Sie die Optionen fest.
 

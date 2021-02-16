@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DATABASEPROPERTYEX
 - DATABASEPROPERTYEX_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 8a9e0ffb-28b5-4640-95b2-a54e3e5ad941
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 096d215aa0962b3a580cdd43a337075aab638964
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: ec28104c0d178c50bc468a9e9012e71c89cc21db
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171142"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100346611"
 ---
 # <a name="databasepropertyex-transact-sql"></a>DATABASEPROPERTYEX (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -86,9 +86,9 @@ Ein Ausdruck, der den Namen der zurückzugebenden Datenbankeigenschaft angibt. *
 |IsSubscribed|Die Datenbank wurde für eine Veröffentlichung abonniert.|1: TRUE<br /><br /> 0: FALSE<br /><br /> NULL: Ungültige Eingabe<br /><br /> Basisdatentyp: **int**|  
 |IsSyncWithBackup|Die Datenbank ist entweder eine veröffentlichte oder eine Verteilungsdatenbank, und für sie wird ein Wiederherstellen unterstützt, bei dem Transaktionsreplikation nicht unterbrochen wird.|1: TRUE<br /><br /> 0: FALSE<br /><br /> NULL: Ungültige Eingabe<br /><br /> Basisdatentyp: **int**|  
 |IsTornPageDetectionEnabled|[!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] erkennt unvollständige E/A-Vorgänge, die durch Stromausfälle oder andere Systemunterbrechungen verursacht wurden.|1: TRUE<br /><br /> 0: FALSE<br /><br /> NULL: Ungültige Eingabe<br /><br /> Basisdatentyp: **int**| 
-|IsVerifiedClone|Die Datenbank ist nur eine Kopie der Schemas und Statistiken einer Benutzerdatenbank, die mit der DBBC CLONEDATABASE-Option WITH VERIFY_CLONEDB erstellt wurde. Weitere Informationen finden Sie im folgenden [Microsoft Support-Artikel](https://support.microsoft.com/help/3177838).|**Gilt für**: Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2.<br /><br /> <br /><br /> 1: TRUE<br /><br /> 0: FALSE<br /><br /> NULL: Ungültige Eingabe<br /><br /> Basisdatentyp: **int**| 
-|IsXTPSupported|Gibt an, ob die Datenbank In-Memory-OLTP unterstützt, d.h. das Erstellen und Verwenden von speicheroptimierten Tabellen und nativ kompilierten Modulen.<br /><br /> Spezifisch für [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]:<br /><br /> IsXTPSupported ist unabhängig von der Existenz von MEMORY_OPTIMIZED_DATA-Dateigruppen, die für die Erstellung von In-Memory-OLTP-Objekten benötigt werden.|**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] und höher) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].<br /><br /> 1: TRUE<br /><br /> 0: FALSE<br /><br /> NULL: Ungültige Eingabe, ein Fehler oder nicht anwendbar<br /><br /> Basisdatentyp: **int**|  
-|LastGoodCheckDbTime|Datum und Uhrzeit der letzten Ausführung von DBCC CHECKDB in der angegebenen Datenbank. <sup>1</sup> Wenn DBCC CHECKDB in einer Datenbank noch nicht ausgeführt wurde, wird 1900-01-01 00:00:00.000 zurückgegeben.|**Gilt für:** [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ab SP2.</br>[!INCLUDE[sssqlv14](../../includes/sssqlv14-md.md)] ab CU9</br>[!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] oder höher.</br>Azure SQL-Datenbank.<br/><br/>Ein datetime-Wert<br /><br /> NULL: Ungültige Eingabe<br /><br /> Basisdatentyp: **datetime**| 
+|IsVerifiedClone|Die Datenbank ist nur eine Kopie der Schemas und Statistiken einer Benutzerdatenbank, die mit der DBBC CLONEDATABASE-Option WITH VERIFY_CLONEDB erstellt wurde. Weitere Informationen finden Sie im folgenden [Microsoft Support-Artikel](https://support.microsoft.com/help/3177838).|**Gilt für**: Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2.<br /><br /> <br /><br /> 1: TRUE<br /><br /> 0: FALSE<br /><br /> NULL: Ungültige Eingabe<br /><br /> Basisdatentyp: **int**| 
+|IsXTPSupported|Gibt an, ob die Datenbank In-Memory-OLTP unterstützt, d.h. das Erstellen und Verwenden von speicheroptimierten Tabellen und nativ kompilierten Modulen.<br /><br /> Spezifisch für [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]:<br /><br /> IsXTPSupported ist unabhängig von der Existenz von MEMORY_OPTIMIZED_DATA-Dateigruppen, die für die Erstellung von In-Memory-OLTP-Objekten benötigt werden.|**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] und höher) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].<br /><br /> 1: TRUE<br /><br /> 0: FALSE<br /><br /> NULL: Ungültige Eingabe, ein Fehler oder nicht anwendbar<br /><br /> Basisdatentyp: **int**|  
+|LastGoodCheckDbTime|Datum und Uhrzeit der letzten Ausführung von DBCC CHECKDB in der angegebenen Datenbank. <sup>1</sup> Wenn DBCC CHECKDB in einer Datenbank noch nicht ausgeführt wurde, wird 1900-01-01 00:00:00.000 zurückgegeben.|**Gilt für:** [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] ab SP2.</br>[!INCLUDE[sssql17](../../includes/sssql17-md.md)] ab CU9</br>[!INCLUDE[sssql19](../../includes/sssql19-md.md)] oder höher.</br>Azure SQL-Datenbank.<br/><br/>Ein datetime-Wert<br /><br /> NULL: Ungültige Eingabe<br /><br /> Basisdatentyp: **datetime**| 
 |LCID|Der zur Sortierung verwendete Windows-Gebietsschemabezeichner (LCID, Locale Identifier).|LCID-Wert (im Dezimalformat).<br /><br /> Basisdatentyp: **int**|  
 |MaxSizeInBytes|Maximale Datenbankgröße in Bytes.|**Gilt für**: [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], [!INCLUDE[ssSDW](../../includes/sssdw-md.md)].<br /><br />[Azure SQL-Datenbank und Azure Synapse Analytics](/azure/sql-database/sql-database-single-database-scale#dtu-based-purchasing-model): Der Wert basiert auf SLO, sofern kein zusätzlicher Speicher erworben wurde.<br /><br />[vCore](/azure/sql-database/sql-database-single-database-scale#vcore-based-purchasing-model): Der Wert wird in Inkrementen von 1 GB bis zur Maximalgröße erhöht.<br /><br />NULL: Die Datenbank wurde nicht gestartet.<br /><br /> Basisdatentyp: **bigint**|  
 |Wiederherstellung|Datenbank-Wiederherstellungsmodell|FULL: Vollständiges Wiederherstellungsmodell<br /><br /> BULK_LOGGED: Massenprotokolliertes Modell<br /><br /> SIMPLE: Einfaches Wiederherstellungsmodell<br /><br /> Basisdatentyp: **nvarchar(128)**|  

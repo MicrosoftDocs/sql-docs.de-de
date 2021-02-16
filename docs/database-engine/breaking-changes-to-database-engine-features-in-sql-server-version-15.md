@@ -15,12 +15,12 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017'
-ms.openlocfilehash: b22141c2a7e851bd354a2f1d2b05e754c8f191a2
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: e0fe1531c004b20c365c7d0dafc24ad8c2bd4f97
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99233935"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100060020"
 ---
 # <a name="breaking-changes-to-database-engine-in-sssql19-md"></a>Wichtige Änderungen an der Datenbank-Engine in [!INCLUDE[sssql19-md](../includes/sssql19-md.md)]
 [!INCLUDE[sqlserver2019](../includes/applies-to-version/sqlserver2019.md)]

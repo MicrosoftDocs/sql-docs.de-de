@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 14839cec-6dbf-49c2-aa27-56847b09b4db
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: bb40ff622df8183b51349252663b964249399c3a
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: f53a43fa102505121cd176eca6c94d4697a25372
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99077108"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336188"
 ---
 # <a name="specify-merge-replication-properties"></a>Angeben von Mergereplikationseigenschaften
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

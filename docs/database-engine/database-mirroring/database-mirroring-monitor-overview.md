@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8ebbdcd6-565a-498f-b674-289c84b985eb
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: a5c0a12ba95a6f0248ac6ba0c073e0d5428205f7
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 1bbe6002daa25cc29a91194abad022fce5c5ff92
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642036"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353124"
 ---
 # <a name="database-mirroring-monitor-overview"></a>Datenbankspiegelungs-Monitor (Übersicht)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

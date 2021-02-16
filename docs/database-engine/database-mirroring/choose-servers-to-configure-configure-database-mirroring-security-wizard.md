@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 59e23ff3-d7ee-4e32-9629-0b54d3a258f7
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 52df789b46ac1caf5609a3342cc2f9e7131b239c
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c2561f81c55ca387f8038ca8ab10f82ea6fce704
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643658"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350714"
 ---
 # <a name="configure-database-mirroring-wizard-choose-servers-to-configure"></a>Konfigurieren des Assistenten für die Datenbankspiegelung: Auswählen des zu konfigurierenden Servers 
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

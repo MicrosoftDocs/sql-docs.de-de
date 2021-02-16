@@ -9,12 +9,12 @@ ms.date: 10/02/2017
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: fda9b1459cf7cd0b15252cfb0e51e0d3ad4e9374
-ms.sourcegitcommit: 3ea082c778f6771b17d90fb597680ed334d3e0ec
+ms.openlocfilehash: 285d80477449e057837c91c9b351a4ee375a1309
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88089021"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339157"
 ---
 # <a name="sample-unattended-sql-server-installation-script-for-red-hat-enterprise-linux"></a>Beispiel: Skript für eine unbeaufsichtigte SQL Server-Installation für Red Hat Enterprise Linux
 

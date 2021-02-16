@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: b7422911-7524-4bcd-9ab9-e460d5897b3d
 author: DavidTrigano
 ms.author: datrigan
-ms.openlocfilehash: e435d8c94dfdfc8f989875d48440554e04405376
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 0ab7abaaa4473bdc1d4a309ce3ccf0103a33a54a
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172492"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100344421"
 ---
 # <a name="sql-server-audit-action-groups-and-actions"></a>SQL Server Audit-Aktionsgruppen und -Aktionen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -126,7 +126,7 @@ ms.locfileid: "98172492"
  Aktionen auf Serverebene ermöglichen keine ausführliche Filterung für Aktionen auf Datenbankebene. Eine Überwachung auf Datenbankebene, z. B. eine Überwachung der SELECT-Aktionen in der Customers-Tabelle für Anmeldedaten in der Employee-Gruppe, ist für die Implementierung einer ausführlichen Aktionsfilterung notwendig. Beziehen Sie in einer Benutzerdatenbank-Überwachungsspezifikation keine Objekte mit Serverbereich ein, wie Systemsichten.  
 
  > [!NOTE]
- > Da das Aktivieren einer Überwachung auf Transaktionsebene sehr aufwändig ist, ist dies ab [!INCLUDE[ssSQL15](../../../includes/sssql16-md.md)] SP2 CU3 und [!INCLUDE[ssSQL17](../../../includes/sssql17-md.md)] CU4 standardmäßig deaktiviert, wenn auch die Common Criteria-Kompatibilität deaktiviert ist.  Wenn die Common Criteria-Kompatibilität deaktiviert ist, können Sie zwar trotzdem eine Aktion der TRANSACTION_GROUP zu einer Überwachungsspezifikation hinzufügen, aber dann werden keine Transaktionsdaten erfasst.  Wenn Sie Überwachungsaktionen der TRANSACTION_GROUP konfigurieren möchten, vergewissern Sie sich, dass die Infrastruktur zur Überwachung auf Transaktionsebene aktiviert ist, indem Sie ab [!INCLUDE[ssSQL15](../../../includes/sssql16-md.md)] SP2 CU3 und [!INCLUDE[ssSQL17](../../../includes/sssql17-md.md)] CU4 und höher die Common Criteria-Kompatibilität aktivieren.  Beachten Sie dabei, dass bei [!INCLUDE[ssSQL15](../../../includes/sssql16-md.md)] ab SP1 CU2 die Überwachung auf Transaktionsebene auch mit dem Ablaufverfolgungsflag 3427 deaktiviert sein kann.
+ > Da das Aktivieren einer Überwachung auf Transaktionsebene sehr aufwändig ist, ist dies ab [!INCLUDE[sssql16-md](../../../includes/sssql16-md.md)] SP2 CU3 und [!INCLUDE[ssSQL17](../../../includes/sssql17-md.md)] CU4 standardmäßig deaktiviert, wenn auch die Common Criteria-Kompatibilität deaktiviert ist.  Wenn die Common Criteria-Kompatibilität deaktiviert ist, können Sie zwar trotzdem eine Aktion der TRANSACTION_GROUP zu einer Überwachungsspezifikation hinzufügen, aber dann werden keine Transaktionsdaten erfasst.  Wenn Sie Überwachungsaktionen der TRANSACTION_GROUP konfigurieren möchten, vergewissern Sie sich, dass die Infrastruktur zur Überwachung auf Transaktionsebene aktiviert ist, indem Sie ab [!INCLUDE[sssql16-md](../../../includes/sssql16-md.md)] SP2 CU3 und [!INCLUDE[ssSQL17](../../../includes/sssql17-md.md)] CU4 und höher die Common Criteria-Kompatibilität aktivieren.  Beachten Sie dabei, dass bei [!INCLUDE[sssql16-md](../../../includes/sssql16-md.md)] ab SP1 CU2 die Überwachung auf Transaktionsebene auch mit dem Ablaufverfolgungsflag 3427 deaktiviert sein kann.
   
 ## <a name="database-level-audit-action-groups"></a>Überwachungsaktionsgruppen auf Datenbankebene  
  Überwachungsaktionsgruppen auf Datenbankebene sind Aktionen, die Ereignisklassen der Sicherheitsüberwachung in [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ähneln. Weitere Informationen zu Ereignisklassen finden Sie unter [Ereignisklassen in SQL Server – Referenz](../../../relational-databases/event-classes/sql-server-event-class-reference.md).  

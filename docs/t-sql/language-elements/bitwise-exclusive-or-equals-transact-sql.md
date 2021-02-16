@@ -23,12 +23,12 @@ ms.assetid: ce524b0f-a24d-44e7-bd5b-b6943793cd48
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: c0e075549d5c449f146f6ae5c73eb8806958a5b4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b8024b3d3728f4348b14bba5470df682b03650be
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99187269"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341611"
 ---
 # <a name="-bitwise-exclusive-or-assignment-transact-sql"></a>^= (Zuweisung von bitweisem exklusiven OR) (Transact-SQL))
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

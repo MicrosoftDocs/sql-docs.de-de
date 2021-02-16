@@ -16,12 +16,12 @@ f1_keywords:
 author: swinarko
 ms.author: sawinark
 ms.reviewer: maghan
-ms.openlocfilehash: fc7f3e5ef6561338f6177f1810f6af2b92c7064a
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 43e02595cc57413eb18ff3e390606ea94493912a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92192684"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336351"
 ---
 # <a name="power-query-source-preview"></a>Power Query-Quelle (Preview)
 

@@ -15,12 +15,12 @@ author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: ''
 monikerRange: '>= sql-server-linux-ver15 || >= sql-server-2016'
-ms.openlocfilehash: 4440573f9c9ae00cc293ff356127c1de65b272ff
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5945f88320f01f6ce431bea79483528bf8dbeb64
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97406489"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351748"
 ---
 # <a name="monitor-and-troubleshoot-polybase"></a>Überwachung und Problembehandlung für PolyBase
 

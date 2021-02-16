@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e9cbebbd-f36f-4176-9832-382a46ac946c
 author: MightyPen
 ms.author: genemi
-ms.openlocfilehash: 1dbe4520d621c85edafe4150cd60cc3571ceb9be
-ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
+ms.openlocfilehash: 19a8a14383b11d97f2cc598c0b51159bc4c96622
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99049280"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351170"
 ---
 # <a name="reorganize-index-task-maintenance-plan"></a>Task 'Index neu organisieren' (Wartungsplan)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

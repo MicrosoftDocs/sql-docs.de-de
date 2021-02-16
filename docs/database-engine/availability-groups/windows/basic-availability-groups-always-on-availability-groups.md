@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.assetid: 285adbc7-ac9b-40f6-b4a9-3f1591d3b632
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 50db7fba110c33cc6c50211cd1b431bf1380ba26
-ms.sourcegitcommit: 44eebb659f9b226c08aea6c31a909b22ad4fec60
+ms.openlocfilehash: 1308a8b703a07c961a5230affd694eb40e13bb54
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97860585"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343845"
 ---
 # <a name="basic-always-on-availability-groups-for-a-single-database"></a>Always On-Basisverfügbarkeitsgruppen für einzelne Datenbanken
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

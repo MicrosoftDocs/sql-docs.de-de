@@ -17,12 +17,12 @@ ms.assetid: 9926a4f7-bcd8-4b9b-9dcf-5426a5857116
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: ea2612ddb838ba9d38ffc4a5421db78881bdca3b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 72b1d22d14cf83d44743d2081ee051bd02faf342
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460673"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351019"
 ---
 # <a name="upgrade-or-patch-replicated-databases"></a>Upgraden oder Patchen replizierter Datenbanken
 

@@ -10,12 +10,12 @@ ms.technology: integration-services
 ms.topic: conceptual
 author: haoqian
 ms.author: haoqian
-ms.openlocfilehash: 00a31303aac5f562462cf6950e233fa84be31215
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 444226f7e0f28a6f587a5f01b1e512f2392e9916
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86922106"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351966"
 ---
 # <a name="scale-out-support-for-high-availability-via-sql-server-failover-cluster-instance"></a>Scale Out-Unterstützung für Hochverfügbarkeit über eine SQL Server-Failoverclusterinstanz
 

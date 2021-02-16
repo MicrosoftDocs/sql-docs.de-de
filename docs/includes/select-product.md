@@ -4,12 +4,12 @@ ms.service: sql
 ms.topic: include
 ms.date: 07/02/2020
 ms.author: mikeray
-ms.openlocfilehash: 357bca37665d5595f6eb39d8240d67a8e55dc938
-ms.sourcegitcommit: b57d98e9b2444348f95c83a24b8eea0e6c9da58d
+ms.openlocfilehash: 785fe5eff7c18c6078cba2238ac3f0a380703a7c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86552419"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017467"
 ---
 ## <a name="select-a-product"></a>Auswählen eines Produkts
 

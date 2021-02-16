@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4ca6eeb5-b60e-4b81-86dd-0674be8ae8d8
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 15e55ec942331ef14458aad461c5b7c9432b0d6e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 864463e65b5857c3d24710f286f17817d2f48a46
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88430842"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339768"
 ---
 # <a name="extract-data-by-using-the-ole-db-source"></a>Extrahieren von Daten mithilfe der OLE DB-Quelle
 
@@ -35,7 +35,7 @@ ms.locfileid: "88430842"
   
 2.  Doppelklicken Sie im Projektmappen-Explorer auf das Paket, um es zu öffnen.  
   
-3.  Klicken Sie auf die Registerkarte **Datenfluss** , und ziehen Sie dann aus dem Bereich **Toolbox**die OLE DB-Quelle mit der Maus auf die Entwurfsoberfläche.  
+3.  Klicken Sie auf die Registerkarte **Datenfluss** , und ziehen Sie dann aus dem Bereich **Toolbox** die OLE DB-Quelle mit der Maus auf die Entwurfsoberfläche.  
   
 4.  Doppelklicken Sie auf die OLE DB-Quelle.  
   
@@ -47,7 +47,7 @@ ms.locfileid: "88430842"
   
     -   **Variable für Tabellenname oder Sichtname** Wählen Sie die benutzerdefinierte Variable aus, die den Namen einer Tabelle oder Sicht in der Datenbank enthält, mit der der OLE DB-Verbindungs-Manager eine Verbindung herstellt.  
   
-    -   **SQL-Befehl** Geben Sie einen SQL-Befehl ein, oder klicken Sie auf **Abfrage erstellen** , um mit dem **Abfrage-Generator**einen SQL-Befehl zu erstellen.  
+    -   **SQL-Befehl** Geben Sie einen SQL-Befehl ein, oder klicken Sie auf **Abfrage erstellen** , um mit dem **Abfrage-Generator** einen SQL-Befehl zu erstellen.  
   
         > [!NOTE]  
         >  Der Befehl kann Parameter enthalten. Weitere Informationen finden Sie unter [Zuordnen von Abfrageparametern zu Variablen in einer Datenflusskomponente](../../integration-services/data-flow/map-query-parameters-to-variables-in-a-data-flow-component.md).  

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d4122dcf-f16f-47a0-93a2-ffa3d0d4f9cf
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: a9897a33c986a78061d18b06ba76db7685e5fb3a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 45612ea0bfdbda2b27e6cac8b4deb1e302eb9298
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88487693"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346552"
 ---
 # <a name="events-logged-by-the-integration-services-service"></a>Ereignisprotokollierung durch den Integration Services-Dienst
 
@@ -62,7 +62,7 @@ ms.locfileid: "88487693"
 ## <a name="view-events"></a>Anzeigen von Ereignissen
   Es gibt zwei Tools, in denen Sie Ereignisse für den [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Dienst anzeigen können:  
   
--   Das Dialogfeld **Protokolldatei-Viewer** in [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Das Dialogfeld **Protokolldatei-Viewer** enthält Optionen zum Exportieren, Filtern und Durchsuchen des Protokolls. Weitere Informationen zu den Optionen im Dialogfeld **Protokolldatei-Viewer**finden Sie unter [Protokolldatei-Viewer (F1-Hilfe)](../../relational-databases/logs/log-file-viewer-f1-help.md).  
+-   Das Dialogfeld **Protokolldatei-Viewer** in [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Das Dialogfeld **Protokolldatei-Viewer** enthält Optionen zum Exportieren, Filtern und Durchsuchen des Protokolls. Weitere Informationen zu den Optionen im Dialogfeld **Protokolldatei-Viewer** finden Sie unter [Protokolldatei-Viewer (F1-Hilfe)](../../relational-databases/logs/log-file-viewer-f1-help.md).  
   
 -   Die Windows-Ereignisanzeige.  
   
@@ -82,13 +82,13 @@ ms.locfileid: "88487693"
   
 ### <a name="to-view-service-events-for-integration-services-in-windows-event-viewer"></a>So zeigen Sie Dienstereignisse für Integration Services in der Windows-Ereignisanzeige an  
   
-1.  Wenn Sie die klassische Ansicht verwenden, klicken Sie in der **Systemsteuerung**auf **Verwaltung**. Wenn Sie die Kategorieansicht verwenden, klicken Sie auf **Leistung und Wartung** und dann auf **Verwaltung**.  
+1.  Wenn Sie die klassische Ansicht verwenden, klicken Sie in der **Systemsteuerung** auf **Verwaltung**. Wenn Sie die Kategorieansicht verwenden, klicken Sie auf **Leistung und Wartung** und dann auf **Verwaltung**.  
   
 2.  Klicken Sie auf **Ereignisanzeige**.  
   
 3.  Klicken Sie im Dialogfeld **Ereignisanzeige** auf **Anwendung**.  
   
-4.  Suchen Sie im **Anwendungs** -Snap-In einen Eintrag in der Spalte **Quelle** , die den Wert **SQLISService**enthält. Klicken Sie mit der rechten Maustaste auf den Eintrag und anschließend auf **Eigenschaften**.  
+4.  Suchen Sie im **Anwendungs** -Snap-In einen Eintrag in der Spalte **Quelle** , die den Wert **SQLISService** enthält. Klicken Sie mit der rechten Maustaste auf den Eintrag und anschließend auf **Eigenschaften**.  
   
 5.  Klicken Sie wahlweise auf den Nach-Oben- oder Nach-Unten-Pfeil, um das vorherige oder nächste Ereignis anzuzeigen.  
   

@@ -9,12 +9,12 @@ ms.technology: integration-services
 ms.topic: conceptual
 author: haoqian
 ms.author: haoqian
-ms.openlocfilehash: bbbb10c7de03dc4561bb497b30ea7bfcec8950ea
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: a56792633259e2f8d224696f94c7095a0ec1ae96
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86919006"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347419"
 ---
 # <a name="integration-services-scale-out-manager"></a>Integration Services Scale Out-Manager
 

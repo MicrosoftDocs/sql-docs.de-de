@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Best Practices [Database Engine]
 author: dzsquared
 ms.author: drskwier
-ms.openlocfilehash: 905accc62afdc12152110d44a18e61d4c8a9bcef
-ms.sourcegitcommit: 5da46e16b2c9710414fe36af9670461fb07555dc
+ms.openlocfilehash: 7c196d81609a9bb223caa0dd2ffa055a4e9b2bce
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284989"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272341"
 ---
 # <a name="set-the-collation-of-user-defined-databases-to-match-master-and-model-databases"></a>Festlegen der Sortierung benutzerdefinierter Datenbanken zur Übereinstimmung mit Master- und Modelldatenbanken
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: cd613898-82d9-482f-a255-0230a6c7d6fe
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e96836a85fb75cc6436530356e8f38ea1a1e1882
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 478724d2081e95deb10bd2f0e44a6cd330fe94ce
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642544"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350774"
 ---
 # <a name="determine-possible-reason-for-connectivity-failures-between-availability-replicas"></a>Bestimmen möglicher Gründe für Verbindungsfehler zwischen Verfügbarkeitsreplikaten
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

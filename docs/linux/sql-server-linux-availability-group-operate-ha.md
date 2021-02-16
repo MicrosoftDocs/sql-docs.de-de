@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: ''
-ms.openlocfilehash: a95d3e53f5ca2b15e0cccf87bd267258e2f4baab
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: 00e576b6fd2fc92cca591a5ffa3d6e97556bc1ad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91784751"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352561"
 ---
 # <a name="operate-always-on-availability-groups-on-linux"></a>Betreiben von Always On-Verfügbarkeitsgruppen unter Linux
 

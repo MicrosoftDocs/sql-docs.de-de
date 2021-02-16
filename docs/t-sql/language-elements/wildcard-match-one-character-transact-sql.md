@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 11a2ed36-9e21-4bdf-ae20-a31db1434b97
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9c82aed5ad9ae3fa43ba17825a8682be40b2aabe
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: cb64d54fce70481e72a6d7eeb048efe96d9d42d5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99202110"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352355"
 ---
 # <a name="_-wildcard---match-one-character-transact-sql"></a>_ (Platzhalterzeichen - einzelnes zu suchendes Zeichen) (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

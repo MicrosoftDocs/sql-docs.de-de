@@ -9,12 +9,12 @@ ms.topic: how-to
 author: bluefooted
 ms.author: pamela
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: af2caf850d3f7facb61a7484c5af44e4ba785fa3
-ms.sourcegitcommit: 5f9d682924624fe1e1a091995cd3a673605a4e31
+ms.openlocfilehash: 67f6fe5f8c1577142ac2356a070a954f94b856f1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98860913"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100075014"
 ---
 # <a name="diagnose-and-resolve-latch-contention-on-sql-server"></a>Diagnostizieren und Lösen von Latchkonflikten in SQL Server
 
@@ -89,16 +89,16 @@ Verwenden Sie das Objekt **SQL Server:Latches** und die zugehörigen Leistungsin
 
 Kumulative Warteinformationen werden von SQL Server nachverfolgt und können über die DMV (dynamische Verwaltungssicht) *sys.dm_os_wait_stats* eingesehen werden. SQL Server nutzt drei Latchwartetypen, die vom entsprechenden Wert für „wait_type“ in der DMV *sys.dm_os_wait_stats* definiert werden:
 
-* **Pufferlatch (BUF):** Mit diesem Typ wird die Konsistenz von Index- und Datenseiten für Benutzerobjekte gewährleistet. Sie werden außerdem dazu verwendet, den Zugriff auf Datenseiten zu schützen, die SQL Server für Systemobjekte verwendet. Beispielsweise werden Seiten, die Zuteilungen verwalten, durch Pufferlatches geschützt. Dazu gehören folgende Seiten: PFS (Page Free Space), GAM (Global Allocation Map), SGAM (Shared Global Allocation Map) und IAM (Index Allocation Map). Pufferlatches werden in *sys.dm_os_wait_stats* mit dem *wait_type*-Wert **PAGELATCH\_\** _ angezeigt.
+* **Pufferlatch (BUF):** Mit diesem Typ wird die Konsistenz von Index- und Datenseiten für Benutzerobjekte gewährleistet. Sie werden außerdem dazu verwendet, den Zugriff auf Datenseiten zu schützen, die SQL Server für Systemobjekte verwendet. Beispielsweise werden Seiten, die Zuteilungen verwalten, durch Pufferlatches geschützt. Dazu gehören folgende Seiten: PFS (Page Free Space), GAM (Global Allocation Map), SGAM (Shared Global Allocation Map) und IAM (Index Allocation Map). Pufferlatches werden in *sys.dm_os_wait_stats* mit dem *wait_type*-Wert **PAGELATCH\_\*** angezeigt.
 
-_ **Nicht-Puffer-Latch (Non-BUF):** Mit diesem Typ wird die Konsistenz beliebiger In-Memory-Strukturen gewährleistet, bei denen es sich nicht um Pufferpoolseiten handelt. Alle Wartevorgänge für Nicht-Puffer-Latches werden mit dem *wait_type*-Wert **LATCH\_\** _ angezeigt.
+* **Nicht-Pufferlatch (Non-BUF):** Mit diesem Typ wird die Konsistenz beliebiger In-Memory-Strukturen gewährleistet, bei denen es sich nicht um Pufferpoolseiten handelt. Alle Wartevorgänge für Nicht-Pufferlatches werden mit dem *wait_type*-Wert **LATCH\_\*** angezeigt.
 
-_ **E/A-Latch:** Hierbei handelt es sich um eine Teilmenge von Pufferlatches, die die Konsistenz derselben Strukturen gewährleisten, die durch Pufferlatches geschützt werden, wenn diese Strukturen mit einem E/A-Vorgang in den Pufferpool geladen werden müssen. E/A-Latches hindern andere Threads am Laden derselben Seite in den Pufferpool mit einem inkompatiblen Latch. Diese Latches werden mit dem *wait_type*-Wert **PAGEIOLATCH\_\** _ angezeigt.
+* **E/A-Latch:** Hierbei handelt es sich um eine Teilmenge von Pufferlatches, die die Konsistenz derselben Strukturen gewährleisten, die durch Pufferlatches geschützt werden, wenn diese Strukturen mit einem E/A-Vorgang in den Pufferpool geladen werden müssen. E/A-Latches hindern andere Threads am Laden derselben Seite in den Pufferpool mit einem inkompatiblen Latch. Diese Latches werden mit dem *wait_type*-Wert **PAGEIOLATCH\_\*** angezeigt.
 
    > [!NOTE]
    > Wenn lange PAGEIOLATCH-Wartezeiten vorliegen, bedeutet dies, dass SQL Server auf das E/A-Subsystem wartet. Eine gewisse Menge an PAGEIOLATCH-Wartevorgängen wird erwartet und entspricht dem normalen verhalten. Wenn die durchschnittlichen PAGEIOLATCH-Wartezeiten jedoch konsistent über 10 Millisekunden (ms) liegen, sollten Sie untersuchen, wieso das E/A-Subsystem überlastet ist.
 
-Wenn Sie beim Untersuchen der DMV _sys.dm_os_wait_stats* Nicht-Puffer-Latches finden, müssen Sie *sys.dm_os_latch_waits* untersuchen, um eine detaillierte Aufschlüsselung der kumulativen Warteinformationen für Nicht-Puffer-Latches zu erhalten. Alle Puffer-Latchwartevorgänge werden mit der Latchklasse BUFFER klassifiziert. Die restlichen werden zum Klassifizieren von Nicht-Pufferlatches verwendet.
+Wenn Sie beim Untersuchen der DMV *sys.dm_os_wait_stats* Nicht-Pufferlatches finden, müssen Sie *sys.dm_os_latch_waits* untersuchen, um eine detaillierte Aufschlüsselung der kumulativen Warteinformationen für Nicht-Pufferlatches zu erhalten. Alle Puffer-Latchwartevorgänge werden mit der Latchklasse BUFFER klassifiziert. Die restlichen werden zum Klassifizieren von Nicht-Pufferlatches verwendet.
 
 ## <a name="symptoms-and-causes-of-sql-server-latch-contention"></a>Symptome und Ursachen von SQL Server-Latchkonflikten
 

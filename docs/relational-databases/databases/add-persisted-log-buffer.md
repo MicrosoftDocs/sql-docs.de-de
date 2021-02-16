@@ -19,12 +19,12 @@ ms.assetid: 8ead516a-1334-4f40-84b2-509d0a8ffa45
 author: briancarrig
 ms.author: brcarrig
 manager: amitban
-ms.openlocfilehash: 63425d2a96cffb585a5b36c0614ee06b1586bbf8
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: ab2554561abb1590db33249a0ade4e8458b0fd54
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237987"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272371"
 ---
 # <a name="add-persisted-log-buffer-to-a-database"></a>Hinzufügen von persistentem Protokollpuffer zu einer Datenbank
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

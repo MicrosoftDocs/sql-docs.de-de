@@ -14,12 +14,12 @@ ms.author: jovanpop
 ms.reviewer: jroth
 ms.custom: seo-dt-2019
 monikerRange: =azuresqldb-current||= azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 3ca366f274f4880fdb629eab4b77fa180bacb60b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 551a0ad762f6cc8fdc0a347c5896a3bbbea27b82
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463511"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100075992"
 ---
 # <a name="json-data-in-sql-server"></a>JSON-Daten in SQL Server
 

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 39252dd5-09c3-46f9-a17b-15208cfd336d
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 80d1573e5ab4f0f598ef0b1af5ee415b785cdbdb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 229809b060a9a0d3103acdb9a562a3dc639b91e8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431152"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338478"
 ---
 # <a name="perform-an-incremental-load-of-multiple-tables"></a>Ausführen eines inkrementellen Ladens von mehreren Tabellen
 

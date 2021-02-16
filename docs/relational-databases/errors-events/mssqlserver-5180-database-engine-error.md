@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: rgward
 ms.author: ramakoni
-ms.openlocfilehash: f80f4dafad6b0570837728e15a79eebdd7d6f41c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8ab3ce2256eadc0952c4ab42f91f74e71372c937
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99185535"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348747"
 ---
 # <a name="mssqlserver_5180"></a>MSSQLSERVER_5180
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

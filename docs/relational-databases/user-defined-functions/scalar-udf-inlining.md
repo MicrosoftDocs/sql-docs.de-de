@@ -15,18 +15,18 @@ ms.assetid: ''
 author: s-r-k
 ms.author: karam
 monikerRange: = azuresqldb-current || >= sql-server-ver15
-ms.openlocfilehash: 8d116fbf036540337bef9d0b21bb66f79017bfd2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5e2dd566b0c5842636619c8331bfc88378dc4f84
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464501"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350859"
 ---
 # <a name="scalar-udf-inlining"></a>Inlining benutzerdefinierter Skalarfunktionen
 
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-Dieser Artikel stellt eine Einführung in das Inlining benutzerdefinierter Skalarfunktionen dar. Dabei handelt es sich um ein Feature für die [intelligente Abfrageverarbeitung](../../relational-databases/performance/intelligent-query-processing.md). Durch dieses Feature wird die Leistung von Abfragen verbessert, die benutzerdefinierte Skalarfunktionen in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQLv15](../../includes/sssqlv15-md.md)]) aufrufen.
+Dieser Artikel stellt eine Einführung in das Inlining benutzerdefinierter Skalarfunktionen dar. Dabei handelt es sich um ein Feature für die [intelligente Abfrageverarbeitung](../../relational-databases/performance/intelligent-query-processing.md). Durch dieses Feature wird die Leistung von Abfragen verbessert, die benutzerdefinierte Skalarfunktionen in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssql19](../../includes/sssql19-md.md)]) aufrufen.
 
 ## <a name="t-sql-scalar-user-defined-functions"></a>Benutzerdefinierte T-SQL-Skalarfunktionen
 Benutzerdefinierte Funktionen (User-defined functions, UDF), die in [!INCLUDE[tsql](../../includes/tsql-md.md)] implementiert werden und einen einzelnen Datenwert zurückgeben, werden als benutzerdefinierte T-SQL-Skalarfunktionen bezeichnet. Benutzerdefinierte T-SQL-Funktionen sind gut geeignet, um Code in [!INCLUDE[tsql](../../includes/tsql-md.md)]-Abfragen wiederzuverwenden und Modularität zu erreichen. Einige Berechnungen (z.B. komplexe Geschäftsregeln) können einfacher in imperativer UDF-Form ausgedrückt werden. Mit benutzerdefinierten Funktionen können Sie eine komplexe Logik erstellen, ohne komplexe SQL-Abfragen schreiben zu können. Weitere Informationen zu benutzerdefinierten Funktionen (UDFs) finden Sie unter [Erstellen von benutzerdefinierten Funktionen (Datenbank-Engine)](../../relational-databases/user-defined-functions/create-user-defined-functions-database-engine.md).
@@ -174,13 +174,13 @@ Je nach Komplexität der Logik in der benutzerdefinierten Funktion kann der resu
 
 <sup>3</sup> Intrinsische Funktionen, deren Ergebnisse von der aktuellen Systemzeit abhängen, sind zeitabhängig. Ein Beispiel für eine Funktion mit Nebeneffekten ist eine intrinsische Funktion, die einen internen globalen Status aktualisieren kann. Solche Funktionen geben bei jedem Aufruf unterschiedliche Ergebnisse auf Grundlage des internen Status zurück.
 
-<sup>4</sup> Einschränkung hinzugefügt in [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU2
+<sup>4</sup> Einschränkung hinzugefügt in [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU2
 
-<sup>5</sup> Einschränkung hinzugefügt in [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU4
+<sup>5</sup> Einschränkung hinzugefügt in [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU4
 
-<sup>6</sup> Einschränkung hinzugefügt in [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU5
+<sup>6</sup> Einschränkung hinzugefügt in [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU5
 
-<sup>7</sup> Einschränkung hinzugefügt in [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU6
+<sup>7</sup> Einschränkung hinzugefügt in [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU6
 
 > [!NOTE]
 > Informationen zu den neuesten T-SQL-Inliningfixes für Skalar-UDFs und Änderungen für Inliningberechtigungsszenarios finden Sie im Knowledge Base-Artikel [FIX: Inliningprobleme bei benutzerdefinierten Skalarfunktionen in SQL Server 2019](https://support.microsoft.com/help/4538581).
@@ -283,7 +283,7 @@ Wie in diesem Artikel beschrieben wurde, wird beim Inlining einer benutzerdefini
 1. Joinhinweise auf Abfrageebene sind möglicherweise nicht mehr gültig, da durch das Inlining neue Joins hinzugefügt werden. Sie müssen stattdessen lokale Joinhinweise verwenden.
 1. Ansichten, die auf benutzerdefinierte Inlineskalarfunktionen verweisen, können nicht indiziert werden. Wenn Sie einen Index in einer entsprechenden Ansicht erstellen müssen, sollten Sie das Inlining für die benutzerdefinierten Funktionen deaktivieren, auf die verwiesen wird.
 1. Durch das Inlining benutzerdefinierter Funktionen kann das Verhalten der [dynamischen Datenmaskierung](../security/dynamic-data-masking.md) sich ändern. In bestimmten Situationen (je nach Logik in der benutzerdefinierten Funktion) in Bezug auf das Maskieren von Ausgabespalten einen konservativeren Ansatz dar. In Szenarios, bei denen es sich bei den Spalten, auf die in einer benutzerdefinierten Funktion verwiesen wird, nicht um Ausgabespalten handelt, werden diese nicht maskiert. 
-1. Wenn eine benutzerdefinierte Funktion auf integrierte Funktionen wie `SCOPE_IDENTITY()`, `@@ROWCOUNT` oder `@@ERROR` verweist, ändert sich der Wert, der von der integrierten Funktion zurückgegeben wird, durch das Inlining. Diese Änderung im Verhalten geht darauf zurück, dass das Inlining den Bereich der Anweisungen in der benutzerdefinierten Funktion ändert. Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU2 wird das Inlining blockiert, wenn die benutzerdefinierte Funktion auf bestimmte intrinsische Funktionen verweist (z. B. `@@ROWCOUNT`).
+1. Wenn eine benutzerdefinierte Funktion auf integrierte Funktionen wie `SCOPE_IDENTITY()`, `@@ROWCOUNT` oder `@@ERROR` verweist, ändert sich der Wert, der von der integrierten Funktion zurückgegeben wird, durch das Inlining. Diese Änderung im Verhalten geht darauf zurück, dass das Inlining den Bereich der Anweisungen in der benutzerdefinierten Funktion ändert. Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU2 wird das Inlining blockiert, wenn die benutzerdefinierte Funktion auf bestimmte intrinsische Funktionen verweist (z. B. `@@ROWCOUNT`).
 
 ## <a name="see-also"></a>Weitere Informationen
 [Erstellen von benutzerdefinierten Funktionen (Datenbank-Engine)](../../relational-databases/user-defined-functions/create-user-defined-functions-database-engine.md)   

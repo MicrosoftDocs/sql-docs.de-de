@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: 07a9a163-4787-40f7-b371-ac5c6cb4b095
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: d449dae68ce74abcf8509eb9f6b2e22ef46c51bb
-ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
+ms.openlocfilehash: 1d3d9c223a4d415b9bfd28ed4c202570141c1f1f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99835305"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347371"
 ---
 # <a name="catalogexecution_component_phases"></a>catalog.execution_component_phases 
 
