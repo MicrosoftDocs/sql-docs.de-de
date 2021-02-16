@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: ecc72850-8b01-492e-9a27-ec817648f0e0
-ms.openlocfilehash: 4a9137ad71947d222d246df046c6ab573fb4500d
-ms.sourcegitcommit: 22102f25db5ccca39aebf96bc861c92f2367c77a
+ms.openlocfilehash: f4201aa6c07d4ae96d44d8aa443b23e275e1f9f2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92115813"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346408"
 ---
 # <a name="walkthrough-for-the-security-features-of-sql-server-on-linux"></a>Exemplarische Vorgehensweise für die Sicherheitsfeatures von SQL Server für Linux
 
@@ -82,12 +82,12 @@ Wenn Sie später bereit sind, präziseren Datenzugriff (sehr empfohlen) zu konfi
 
 Die folgenden Anweisungen erstellen z.B. eine Datenbankrolle mit dem Namen `Sales` und geben der `Sales`-Gruppe die Möglichkeit, Zeilen der `Orders`-Tabelle anzuzeigen, zu aktualisieren und zu löschen, und anschließend wird der Benutzer `Jerry` der `Sales`-Rolle hinzugefügt.   
    
-```   
-CREATE ROLE Sales;   
-GRANT SELECT ON Object::Sales TO Orders;   
-GRANT UPDATE ON Object::Sales TO Orders;   
-GRANT DELETE ON Object::Sales TO Orders;   
-ALTER ROLE Sales ADD MEMBER Jerry;   
+```   
+CREATE ROLE Sales;   
+GRANT SELECT ON Object::Sales TO Orders;   
+GRANT UPDATE ON Object::Sales TO Orders;   
+GRANT DELETE ON Object::Sales TO Orders;   
+ALTER ROLE Sales ADD MEMBER Jerry;   
 ```
 
 Weitere Informationen zum Berechtigungssystem finden Sie unter [Erste Schritte mit Berechtigungen für die Datenbank-Engine](../relational-databases/security/authentication-access/getting-started-with-database-engine-permissions.md).
@@ -99,27 +99,27 @@ Mit der [Sicherheit auf Zeilenebene](../relational-databases/security/row-level-
 
 In den folgenden Schritten erfahren Sie, wie Sie zwei Benutzer mit unterschiedlichen Zugriffsrechten auf Zeilenebene für die Tabelle `Sales.SalesOrderHeader` einrichten. 
 
-Erstellen Sie zwei Benutzerkonten, um die Sicherheit auf Zeilenebene zu testen:    
+Erstellen Sie zwei Benutzerkonten, um die Sicherheit auf Zeilenebene zu testen:    
    
-```   
-USE AdventureWorks2014;   
-GO   
+```   
+USE AdventureWorks2014;   
+GO   
    
-CREATE USER Manager WITHOUT LOGIN;     
+CREATE USER Manager WITHOUT LOGIN;     
    
-CREATE USER SalesPerson280 WITHOUT LOGIN;    
+CREATE USER SalesPerson280 WITHOUT LOGIN;    
 ```
 
-Erteilen Sie den Benutzern Lesezugriff auf die Tabelle `Sales.SalesOrderHeader`:    
+Erteilen Sie den Benutzern Lesezugriff auf die Tabelle `Sales.SalesOrderHeader`:    
    
-```   
-GRANT SELECT ON Sales.SalesOrderHeader TO Manager;      
+```   
+GRANT SELECT ON Sales.SalesOrderHeader TO Manager;      
 GRANT SELECT ON Sales.SalesOrderHeader TO SalesPerson280;
 ```
    
 Erstellen Sie ein neues Schema und eine Inline-Tabellenwertfunktion. Die Funktion gibt 1 zurück, wenn eine Zeile in der Spalte `SalesPersonID` der ID einer `SalesPerson`-Anmeldung entspricht oder wenn der Benutzer, der die Abfrage ausführt, der Managerbenutzer ist.   
    
-```     
+```     
 CREATE SCHEMA Security;   
 GO   
    
@@ -129,7 +129,7 @@ WITH SCHEMABINDING
 AS     
    RETURN SELECT 1 AS fn_securitypredicate_result    
 WHERE ('SalesPerson' + CAST(@SalesPersonId as VARCHAR(16)) = USER_NAME())     
-    OR (USER_NAME() = 'Manager');    
+    OR (USER_NAME() = 'Manager');    
 ```
 
 Erstellen Sie eine Sicherheitsrichtlinie, und fügen Sie der Tabelle diese Funktion als FILTER- und BLOCK-Prädikat hinzu:  
@@ -172,7 +172,7 @@ Führen Sie eine `ALTER TABLE`-Anweisung aus, um der Spalte `EmailAddress` in de
 ```
 USE AdventureWorks2014;
 GO
-ALTER TABLE Person.EmailAddress    
+ALTER TABLE Person.EmailAddress    
 ALTER COLUMN EmailAddress    
 ADD MASKED WITH (FUNCTION = 'email()');
 ``` 
@@ -231,7 +231,7 @@ GO
 CREATE CERTIFICATE MyServerCert WITH SUBJECT = 'My Database Encryption Key Certificate';  
 GO  
 
-USE AdventureWorks2014;  
+USE AdventureWorks2014;  
 GO
   
 CREATE DATABASE ENCRYPTION KEY  
@@ -254,7 +254,7 @@ Weitere Informationen zu TDE finden Sie unter [Transparent Data Encryption (TDE)
 
 
 ## <a name="configure-backup-encryption"></a>Konfigurieren der Sicherungsverschlüsselung
-In SQL Server können die Daten während der Erstellung einer Sicherung verschlüsselt werden. Indem der Verschlüsselungsalgorithmus und der Verschlüsseler (ein Zertifikat oder ein asymmetrischer Schlüssel) beim Erstellen einer Sicherung angegeben werden, können Sie eine verschlüsselte Sicherungsdatei erstellen.    
+In SQL Server können die Daten während der Erstellung einer Sicherung verschlüsselt werden. Indem der Verschlüsselungsalgorithmus und der Verschlüsseler (ein Zertifikat oder ein asymmetrischer Schlüssel) beim Erstellen einer Sicherung angegeben werden, können Sie eine verschlüsselte Sicherungsdatei erstellen.    
   
 > [!WARNING]
 > Es ist sehr wichtig, das Zertifikat oder den asymmetrischen Schlüssel zu sichern – vorzugsweise an einem anderen Speicherort als die Sicherungsdatei, die zum Verschlüsseln verwendet wurde. Ohne das Zertifikat oder den asymmetrischen Schlüssel können Sie keine Sicherung wiederherstellen, sodass die Sicherungsdatei unbrauchbar ist. 
@@ -263,12 +263,12 @@ In SQL Server können die Daten während der Erstellung einer Sicherung verschl�
 Im folgenden Beispiel werden ein Zertifikat und anschließend eine durch das Zertifikat geschützte Sicherung erstellt.
 
 ```
-USE master;  
-GO  
-CREATE CERTIFICATE BackupEncryptCert   
-   WITH SUBJECT = 'Database backups';  
+USE master;  
+GO  
+CREATE CERTIFICATE BackupEncryptCert   
+   WITH SUBJECT = 'Database backups';  
 GO 
-BACKUP DATABASE [AdventureWorks2014]  
+BACKUP DATABASE [AdventureWorks2014]  
 TO DISK = N'/var/opt/mssql/backups/AdventureWorks2014.bak'  
 WITH  
   COMPRESSION,  

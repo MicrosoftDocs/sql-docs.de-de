@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 4d93489e-e9bb-45b3-8354-21f58209965d
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 2bcb047dc1d998eb797a3bca7b6d09699f8585d2
-ms.sourcegitcommit: 4d370399f6f142e25075b3714e5c2ce056b1bfd0
+ms.openlocfilehash: 2f3082f83296efe396fa2fca447782e13588df38
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91867539"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340120"
 ---
 # <a name="securing-sql-server"></a>Sichern von SQL Server
 

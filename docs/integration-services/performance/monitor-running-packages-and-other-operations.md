@@ -14,12 +14,12 @@ f1_keywords:
 ms.assetid: cbbcd79f-ab9b-46ec-84cb-4821c1d16b99
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 50c651fac37223ad157ea4ee04c9842a0ee7083c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2716b85dde5aaa7a7e2df15e87004c838b8137ee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88457110"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353026"
 ---
 # <a name="monitor-running-packages-and-other-operations"></a>Überwachen der Ausführung von Paketen und anderen Vorgängen
 
@@ -145,7 +145,7 @@ ms.locfileid: "88457110"
 |**Ausführungsinformationen**|Zeigt die Anzahl von Ausführungen an, die in den vergangenen 24 Stunden unterschiedliche Status (fehlerhaft, ausgeführt, erfolgreich, andere) aufgewiesen haben.|  
 |**Paketinformationen**|Zeigt die Gesamtanzahl der Pakete, die in den letzten 24 Stunden ausgeführt wurden.|  
 |**Verbindungsinformationen**|Zeigt die Verbindungen, die in den letzten 24 Stunden in fehlerhaften Ausführungen verwendet wurden.|  
-|**Detaillierte Paketinformationen**|Zeigt die Details der abgeschlossenen Ausführungen an, die in den letzten 24 Stunden durchgeführt wurden. Dieser Abschnitt zeigt z. B. die Anzahl der fehlerhaften Ausführungen im Vergleich zur Gesamtzahl der Ausführungen, die Dauer der Ausführungen (in Sekunden) und die durchschnittliche Dauer der Ausführungen in den vergangenen drei Monaten an.<br /><br /> Sie können weitere Informationen für ein Paket anzeigen, indem Sie auf **Übersicht**, **Alle Meldungen**und **Ausführungsleistung**klicken.<br /><br /> Der Bericht **Ausführungsleistung** zeigt die Dauer der letzten Ausführungsinstanz sowie die Start- und Endzeiten und die Umgebung an, die angewendet wurde.<br /><br /> Das Diagramm und die zugeordnete Tabelle im Bericht **Ausführungsleistung** zeigen die Dauer der letzten 10 erfolgreichen Ausführungen des Pakets an. In der Tabelle wird auch die durchschnittliche Ausführungsdauer in einem Zeitraum von drei Monaten angezeigt. Unterschiedliche Umgebungen und Literalwerte wurden möglicherweise zur Laufzeit für diese 10 erfolgreichen Ausführungen des Pakets angewendet.<br /><br /> Schließlich wird im Bericht **Ausführungsleistung** die aktive Zeit und die Gesamtzeit für die Datenflusskomponenten des Pakets angezeigt. Die aktive Zeit bezieht sich auf die gesamte Zeit, die für die Ausführung der Komponente in allen Phasen benötigt wurde, und die Gesamtzeit bezieht sich auf die insgesamt verstrichene Zeit für eine Komponente. Der Bericht zeigt nur diese Informationen für Paketkomponenten an, wenn der Protokolliergrad der letzten Paketausführung auf "Leistung" oder "Ausführlich" festgelegt wird.<br /><br /> Der Bericht **Übersicht** zeigt den Status von Pakettasks an. Der Bericht **Meldungen** zeigt die Ereignismeldungen und die Fehlermeldungen für das Paket und die Tasks an, beispielsweise das Melden der Start- und Endzeiten sowie die Anzahl der geschriebenen Zeilen.<br /><br /> Sie können auch im Bericht **Übersicht** auf **Meldungen anzeigen** klicken, um zum Bericht **Meldungen** zu navigieren. Sie können auch im Bericht **Meldungen** auf **Übersicht anzeigen** klicken, um zum Bericht **Übersicht** zu navigieren.|  
+|**Detaillierte Paketinformationen**|Zeigt die Details der abgeschlossenen Ausführungen an, die in den letzten 24 Stunden durchgeführt wurden. Dieser Abschnitt zeigt z. B. die Anzahl der fehlerhaften Ausführungen im Vergleich zur Gesamtzahl der Ausführungen, die Dauer der Ausführungen (in Sekunden) und die durchschnittliche Dauer der Ausführungen in den vergangenen drei Monaten an.<br /><br /> Sie können weitere Informationen für ein Paket anzeigen, indem Sie auf **Übersicht**, **Alle Meldungen** und **Ausführungsleistung** klicken.<br /><br /> Der Bericht **Ausführungsleistung** zeigt die Dauer der letzten Ausführungsinstanz sowie die Start- und Endzeiten und die Umgebung an, die angewendet wurde.<br /><br /> Das Diagramm und die zugeordnete Tabelle im Bericht **Ausführungsleistung** zeigen die Dauer der letzten 10 erfolgreichen Ausführungen des Pakets an. In der Tabelle wird auch die durchschnittliche Ausführungsdauer in einem Zeitraum von drei Monaten angezeigt. Unterschiedliche Umgebungen und Literalwerte wurden möglicherweise zur Laufzeit für diese 10 erfolgreichen Ausführungen des Pakets angewendet.<br /><br /> Schließlich wird im Bericht **Ausführungsleistung** die aktive Zeit und die Gesamtzeit für die Datenflusskomponenten des Pakets angezeigt. Die aktive Zeit bezieht sich auf die gesamte Zeit, die für die Ausführung der Komponente in allen Phasen benötigt wurde, und die Gesamtzeit bezieht sich auf die insgesamt verstrichene Zeit für eine Komponente. Der Bericht zeigt nur diese Informationen für Paketkomponenten an, wenn der Protokolliergrad der letzten Paketausführung auf "Leistung" oder "Ausführlich" festgelegt wird.<br /><br /> Der Bericht **Übersicht** zeigt den Status von Pakettasks an. Der Bericht **Meldungen** zeigt die Ereignismeldungen und die Fehlermeldungen für das Paket und die Tasks an, beispielsweise das Melden der Start- und Endzeiten sowie die Anzahl der geschriebenen Zeilen.<br /><br /> Sie können auch im Bericht **Übersicht** auf **Meldungen anzeigen** klicken, um zum Bericht **Meldungen** zu navigieren. Sie können auch im Bericht **Meldungen** auf **Übersicht anzeigen** klicken, um zum Bericht **Übersicht** zu navigieren.|  
   
  Sie können die auf einer beliebigen Seite angezeigte Tabelle filtern, indem Sie auf **Filtern** klicken und dann im Dialogfeld **Filtereinstellungen** die gewünschten Kriterien auswählen. Abhängig von den angezeigten Daten sind unterschiedliche Filterkriterien verfügbar. Sie können die Sortierreihenfolge des Berichts ändern, indem Sie im Dialogfeld **Filtereinstellungen** auf das Sortiersymbol klicken.  
   
@@ -194,7 +194,7 @@ ms.locfileid: "88457110"
   
 1.  Erweitern Sie in [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]den Knoten **Integration Services-Kataloge** im Objekt-Explorer.  
   
-2.  Klicken Sie mit der rechten Maustaste auf **SSISDB**, klicken Sie auf **Berichte**und dann auf **Standardberichte**.  
+2.  Klicken Sie mit der rechten Maustaste auf **SSISDB**, klicken Sie auf **Berichte** und dann auf **Standardberichte**.  
   
 3.  Klicken Sie auf eine oder mehrere der folgenden Optionen, um einen Bericht anzuzeigen.  
   

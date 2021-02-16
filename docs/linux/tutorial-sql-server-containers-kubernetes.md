@@ -9,12 +9,12 @@ ms.date: 09/01/2020
 ms.topic: tutorial
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: db9b5c98bd073fcf92f7fd93a24c551f5bca0804
-ms.sourcegitcommit: d2dba862814c60f00b16d4e412bf673b2c0dee5f
+ms.openlocfilehash: 53d63320bc72b0c5f0e1891b67fd41b81d46458e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94810520"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337293"
 ---
 # <a name="deploy-a-sql-server-container-in-kubernetes-with-azure-kubernetes-services-aks"></a>Bereitstellen eines SQL Server-Containers in Kubernetes mit Azure Kubernetes Service
 

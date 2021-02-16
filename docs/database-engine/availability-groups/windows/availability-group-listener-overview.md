@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 76fb3eca-6b08-4610-8d79-64019dd56c44
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2dc23852fc5792d29c25b151f7c6180ba32295ce
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: e96b57c13cccf07424ce43aab74fde8b4fa43d08
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641141"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340854"
 ---
 # <a name="what-is-an-availability-group-listener"></a>Was ist ein Verfügbarkeitsgruppenlistener?  
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

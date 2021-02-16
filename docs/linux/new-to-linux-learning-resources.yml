@@ -9,12 +9,12 @@ metadata:
   author: MashaMSFT
   ms.author: mathoma
   ms.date: 07/25/2020
-  ms.openlocfilehash: f78daf1c47974a7b4799e7b6ef42ae27cce3d4b2
-  ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+  ms.openlocfilehash: 77799aabb15567bea43ffa37d554962296650175
+  ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/11/2021
-  ms.locfileid: "98100614"
+  ms.lasthandoff: 02/10/2021
+  ms.locfileid: "100078681"
 landingContent:
 - title: 'Modul 1: Einführung in SQL Server für Linux'
   linkLists:

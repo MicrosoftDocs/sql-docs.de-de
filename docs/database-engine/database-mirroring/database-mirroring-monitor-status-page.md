@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 4f64b4e1-89e9-4827-98fa-b92c3dc73b48
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 82904684508369a48e1bf9fd56abaa6015aaa553
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 2d912623497cc6dc0baac1c4fbb4c8e794363ce8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642015"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353112"
 ---
 # <a name="database-mirroring-monitor-status-page"></a>Datenbankspiegelungs-Monitor (Seite Status)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

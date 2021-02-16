@@ -10,12 +10,12 @@ ms.technology: database-mirroring
 ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 3e5bc078ee4ee8817f8884d5c8e6f638ce432e3e
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: a0bf290bb61cd5e6eb5cbd3715618b5949df87f8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643711"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349205"
 ---
 # <a name="database-mirroring-system-object-reference"></a>Systemobjektreferenz für die Datenbankspiegelung
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: 8f5bd3ed-3e79-43a4-b6c1-435e4c2cc8cc
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 76296ff7dc7c5084a2c62613182c4d3e0fa6f80b
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 9b24d33156162028fdef7e0806a5ac2f8d9f0ef5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88484192"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343675"
 ---
 # <a name="implementing-external-metadata"></a>Implementieren externer Metadaten
 

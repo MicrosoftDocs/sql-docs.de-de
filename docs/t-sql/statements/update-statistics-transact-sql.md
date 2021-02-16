@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - UPDATE STATISTICS
 - UPDATE_STATISTICS_TSQL
@@ -22,12 +22,12 @@ ms.assetid: 919158f2-38d0-4f68-82ab-e1633bd0d308
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3680ba07e290f8b531ab46576f76bd3ffeee3460
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: ab5b7fac995e54160798d2f2c3113e391a84340d
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170442"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100349978"
 ---
 # <a name="update-statistics-transact-sql"></a>UPDATE STATISTICS (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -108,7 +108,7 @@ UPDATE STATISTICS [ schema_name . ] table_name
   
  SAMPLE eignet sich für Sonderfälle, in denen der auf Standardstichproben beruhende Abfrageplan nicht optimal ist. In den meisten Situationen muss SAMPLE nicht angegeben werden, da der Abfrageoptimierer standardmäßig Stichproben verwendet und die statistisch signifikante Stichprobengröße ermittelt, wie zum Erstellen hochwertiger Abfragepläne erforderlich. 
  
-Beginnend mit [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] werden Datenstichproben zum Erstellen von Statistiken parallel gewonnen, wenn der Kompatibilitätsgrad 130 verwendet wird, um die Leistung von Statistiken zu verbessern. Der Abfrageoptimierer verwendet parallele Beispielstatistiken, wenn die Größe einer Tabelle einen gewissen Grenzwert überschreitet. 
+Beginnend mit [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] werden Datenstichproben zum Erstellen von Statistiken parallel gewonnen, wenn der Kompatibilitätsgrad 130 verwendet wird, um die Leistung von Statistiken zu verbessern. Der Abfrageoptimierer verwendet parallele Beispielstatistiken, wenn die Größe einer Tabelle einen gewissen Grenzwert überschreitet. 
    
  SAMPLE kann nicht in Verbindung mit der Option FULLSCAN verwendet werden. Wenn weder SAMPLE noch FULLSCAN angegeben wurde, verwendet der Abfrageoptimierer Stichprobendaten und berechnet die Stichprobengröße anhand der Standardeinstellungen.  
   
@@ -136,7 +136,7 @@ Bei **ON** behalten die Statistiken den festgelegten Prozentsatz für die Stichp
  > [!TIP] 
  > [DBCC SHOW_STATISTICS](../../t-sql/database-console-commands/dbcc-show-statistics-transact-sql.md) und [sys.dm_db_stats_properties](../../relational-databases/system-dynamic-management-views/sys-dm-db-stats-properties-transact-sql.md) machen den beibehaltenen Prozentwert für die Stichprobenentnahme der ausgewählten Statistik verfügbar.
  
- **Gilt für**: [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] (ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1 CU4) und höher (ab [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU1).  
+ **Gilt für**: [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] (ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1 CU4) und höher (ab [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU1).  
  
  ON PARTITIONS ( { \<partition_number> | \<range> } [, ...n] ) ] Erzwingt, dass die Statistiken auf Blattebene, die die in der ON PARTITIONS-Klausel angegebenen Partitionen umfassen, erneut berechnet und dann zusammengeführt werden, um die globale Statistik zu bilden. WITH RESAMPLE ist erforderlich, da mit unterschiedlichen Stichprobenraten erstellte Partitionsstatistiken nicht zusammengeführt werden können.  
   
@@ -171,7 +171,7 @@ Bei **ON** behalten die Statistiken den festgelegten Prozentsatz für die Stichp
 **Gilt für**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] und höher
 
 MAXDOP = *max_degree_of_parallelism*  
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 und [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3).  
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 und [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3).  
   
  Überschreibt die Konfigurationsoption **max degree of parallelism** (Max. Grad an Parallelität) für die Dauer des Statistikvorgangs. Weitere Informationen finden Sie unter [Konfigurieren der Serverkonfigurationsoption Max. Grad an Parallelität](../../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md). Sie können mit MAXDOP die Anzahl der Prozessoren begrenzen, die bei der Ausführung paralleler Pläne verwendet werden. Maximal sind 64 Prozessoren zulässig.  
   

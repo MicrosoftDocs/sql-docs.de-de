@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 143c68a5-589f-4e7f-be59-02707e1a430a
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 7584e4611d957f48efcb73d12b5965f0a4727b45
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: baa9d359af3b4003cdeb29d79e6b8a699519a99d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642026"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353154"
 ---
 # <a name="configure-database-mirroring"></a>Konfigurieren der Datenbankspiegelung
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

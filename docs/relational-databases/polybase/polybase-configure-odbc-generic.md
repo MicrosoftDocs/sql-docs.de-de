@@ -10,12 +10,12 @@ author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: mikeray
 monikerRange: '>= sql-server-linux-ver15 || >= sql-server-ver15'
-ms.openlocfilehash: ac4fa22e2d0aea57f25aaa9ef2d8c570f8bb130b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e9cdd3692c32b57917e6db0e358c22f9c0dcd15a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475931"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351847"
 ---
 # <a name="configure-polybase-to-access-external-data-with-odbc-generic-types"></a>Konfigurieren von PolyBase für den Zugriff auf externe Daten mit generischen ODBC-Typen
 

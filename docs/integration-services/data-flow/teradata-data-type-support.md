@@ -10,12 +10,12 @@ ms.technology: integration-services
 ms.topic: conceptual
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: b6c628128423d835d90845a4ef85db28c8275ec3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cb58e1d27e955009cd420a089f8d8f938f26c10f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88425782"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346524"
 ---
 # <a name="data-type-support"></a>Datentypunterstützung
 

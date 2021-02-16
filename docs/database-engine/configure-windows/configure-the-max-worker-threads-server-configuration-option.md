@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: abeadfa4-a14d-469a-bacf-75812e48fac1
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4d95d8f774d2b9daba6bd2a0e7a179dd901ef0ac
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: c5291b502ec70be8b86c6806e14404664d0b0831
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171042"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100347003"
 ---
 # <a name="configure-the-max-worker-threads-server-configuration-option"></a>Konfigurieren der Serverkonfigurationsoption Maximale Anzahl von Arbeitsthreads
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -69,7 +69,7 @@ Der Standardwert für **Max. Anzahl von Arbeitsthreads** ist 0. Auf diese Weise 
   
 -   Die folgende Tabelle zeigt die automatisch konfigurierte Anzahl von maximalen Arbeitsthreads (bei einem Wert von 0) auf der Basis verschiedener Kombinationen aus CPUs, Computerarchitektur und [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Versionen. Folgende Formel wird verwendet: **_Standardwert für maximale Anzahl von Workern_ + ((* logische CPUs* – 4) * *Worker pro CPU*)**.  
   
-    |Anzahl von CPUs|32-Bit-Computer (bis [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)])|64-Bit-Computer (bis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1)|64-Bit-Computer (ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 und [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)])|   
+    |Anzahl von CPUs|32-Bit-Computer (bis [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)])|64-Bit-Computer (bis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1)|64-Bit-Computer (ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 und [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)])|   
     |------------|------------|------------|------------|  
     |\<= 4|256|512|512|   
     |8|288|576|576|   
@@ -79,14 +79,14 @@ Der Standardwert für **Max. Anzahl von Arbeitsthreads** ist 0. Auf diese Weise 
     |128|1248|2496|4480|   
     |256|2272|4544|8576|   
     
-    Bis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1 hängt der Wert für *Worker pro CPU* nur von der Architektur ab (32 oder 64 Bit):
+    Bis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1 hängt der Wert für *Worker pro CPU* nur von der Architektur ab (32 oder 64 Bit):
     
     |Anzahl von CPUs|32-Bit-Computer <sup>1</sup>|64-Bit-Computer|   
     |------------|------------|------------|   
     |\<= 4|256|512|   
     |\> 4|256 + ((logische CPUs - 4) * 8)|512 <sup>2</sup> + ((logische CPUs - 4) * 16)|   
     
-    Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 und [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] hängt der Wert für *Worker pro CPU* von der Architektur und der Anzahl von Prozessoren ab (zwischen 4 und 64 oder mehr als 64):
+    Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 und [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] hängt der Wert für *Worker pro CPU* von der Architektur und der Anzahl von Prozessoren ab (zwischen 4 und 64 oder mehr als 64):
     
     |Anzahl von CPUs|32-Bit-Computer <sup>1</sup>|64-Bit-Computer|   
     |------------|------------|------------|   
@@ -94,7 +94,7 @@ Der Standardwert für **Max. Anzahl von Arbeitsthreads** ist 0. Auf diese Weise 
     |\> 4 und \<= 64|256 + ((logische CPUs - 4) * 8)|512 <sup>2</sup> + ((logische CPUs - 4) * 16)|   
     |\> 64|256 + ((logische CPUs – 4) * 32)|512 <sup>2</sup> + ((logische CPUs - 4) * 32)|   
   
-    <sup>1</sup> Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] kann [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] nicht mehr unter einem 32-Bit-Betriebssystem installiert werden. Werte für 32-Bit-Computer sind zur Unterstützung von Kunden aufgeführt, die [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] und früher nutzen. Als maximale Anzahl von Arbeitsthreads auf einer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Instanz, die auf einem 32-Bit-Computer ausgeführt wird, wird der Wert 1.024 empfohlen.
+    <sup>1</sup> Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] kann [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] nicht mehr unter einem 32-Bit-Betriebssystem installiert werden. Werte für 32-Bit-Computer sind zur Unterstützung von Kunden aufgeführt, die [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] und früher nutzen. Als maximale Anzahl von Arbeitsthreads auf einer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Instanz, die auf einem 32-Bit-Computer ausgeführt wird, wird der Wert 1.024 empfohlen.
     
     <sup>2</sup> Ab [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] wird der *Standardwert für maximale Anzahl von Workern* für Computer mit weniger als 2 GB Arbeitsspeicher durch 2 dividiert.
   

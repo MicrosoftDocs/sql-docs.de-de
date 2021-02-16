@@ -10,12 +10,12 @@ ms.assetid: edd75f68-dc62-4479-a596-57ce8ad632e5
 author: VanMSFT
 ms.author: vanto
 ms.reviewer: vanto
-ms.openlocfilehash: 8c48facb150d527cc1c03c0d5cd9ca0849a889f0
-ms.sourcegitcommit: 22e97435c8b692f7612c4a6d3fe9e9baeaecbb94
+ms.openlocfilehash: edeb7ab3de19b50f78f2b4b5bab9c0f8afe80780
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92679276"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347778"
 ---
 # <a name="high-availability-and-data-protection-for-availability-group-configurations"></a>Hochverfügbarkeit und Schutz von Daten für Verfügbarkeitsgruppenkonfigurationen
 

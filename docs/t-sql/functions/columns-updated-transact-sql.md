@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 765fde44-1f95-4015-80a4-45388f18a42c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2f2c9a71bab585bc2b4d6b03ff62b60cfc96bd2e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 42f23dce6b51f573c2bdf07c0a4d2f25ab088fa3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99209987"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352409"
 ---
 # <a name="columns_updated-transact-sql"></a>COLUMNS_UPDATED (Transact-SQL)
 

@@ -11,12 +11,12 @@ ms.author: chugu
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 05/21/2018
-ms.openlocfilehash: fc86054be556dbb34d212b24172e50fbf52f8980
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 3749daf45eb51cda3e37d2bd3d31105fcb23c1c2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96129974"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354224"
 ---
 # <a name="deploy-an-ssis-project-with-sql-server-management-studio-ssms"></a>Bereitstellen eines SSIS-Projekts mit SQL Server Management Studio (SSMS)
 

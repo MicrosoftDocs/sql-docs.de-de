@@ -20,12 +20,12 @@ ms.assetid: c3040db6-21d6-40ac-a783-82c98ec006cc
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3e3dc98ec56d529c89165e803f302c8751752f98
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 616463e573d3ccf912889e9ad69b802ca91d1167
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99161818"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074606"
 ---
 # <a name="-assignment-operator-transact-sql"></a>= (Zuweisungsoperator) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-all_md](../../includes/tsql-appliesto-ss2012-all-md.md)]

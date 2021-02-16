@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: ae1d8fad-6649-4e93-b589-14a32d07da33
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 28d2bac4024f067f4c3eb07318a47ef0d91fd171
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: e39187e32afbcf72bf1eb950f18d5f21cef38211
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92194282"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348299"
 ---
 # <a name="message-queue-task"></a>Message Queue Task
 
@@ -76,7 +76,7 @@ ms.locfileid: "92194282"
   
 -   Fehler bei einem Timeout.  
   
--   Überschreiben einer vorhandenen Datei, falls die Nachricht in einer **Data file**gespeichert ist.  
+-   Überschreiben einer vorhandenen Datei, falls die Nachricht in einer **Data file** gespeichert ist.  
   
 -   Speichern der Nachrichtendatei unter einem anderen Dateinamen, falls die Nachricht den Typ **Data file message** verwendet.  
   
@@ -123,10 +123,10 @@ ms.locfileid: "92194282"
  **MSMQConnection**  
  Wählen Sie einen vorhandenen MSMQ-Verbindungs-Manager aus, oder klicken Sie auf \<**New connection...**>, um einen neuen Verbindungs-Manager zu erstellen.  
   
- **Verwandte Themen:** [MSMQ-Verbindungs-Manager ](../../integration-services/connection-manager/msmq-connection-manager.md), [MSMQ-Verbindungs-Manager-Editor](../connection-manager/msmq-connection-manager.md)  
+ **Verwandte Themen:** [MSMQ-Verbindungs-Manager](../../integration-services/connection-manager/msmq-connection-manager.md), [MSMQ-Verbindungs-Manager-Editor](../connection-manager/msmq-connection-manager.md)  
   
  **Meldung**  
- Geben Sie an, ob Nachrichten vom Task Nachrichtenwarteschlange gesendet oder empfangen werden. Wenn Sie **Nachricht senden**auswählen, wird im linken Bereich des Dialogfelds die Seite Senden angezeigt; wenn Sie **Nachricht empfangen**auswählen, wird die Seite Empfangen aufgelistet. Standardmäßig ist dieser Wert auf **Nachricht senden**festgelegt.  
+ Geben Sie an, ob Nachrichten vom Task Nachrichtenwarteschlange gesendet oder empfangen werden. Wenn Sie **Nachricht senden** auswählen, wird im linken Bereich des Dialogfelds die Seite Senden angezeigt; wenn Sie **Nachricht empfangen** auswählen, wird die Seite Empfangen aufgelistet. Standardmäßig ist dieser Wert auf **Nachricht senden** festgelegt.  
   
 ## <a name="message-queue-task-editor-send-page"></a>Task 'Nachrichtenwarteschlange' (Seite Senden)
   Im Dialogfeld **Editor für den Task „Nachrichtenwarteschlange“** können Sie auf der Seite **Senden** den Task „Nachrichtenwarteschlange“ so konfigurieren, dass Nachrichten von einem [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]-Paket gesendet werden.  
@@ -149,9 +149,9 @@ ms.locfileid: "92194282"
   
 |Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|**Data file message**|Die Nachricht wird in einer Datei gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **DataFileMessage**angezeigt.|  
-|**Variable message**|Die Nachricht wird in einer Variable gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **VariableMessage**angezeigt.|  
-|**String message**|Die Nachricht wird im Task 'Nachrichtenwarteschlange' gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **StringMessage**angezeigt.|  
+|**Data file message**|Die Nachricht wird in einer Datei gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **DataFileMessage** angezeigt.|  
+|**Variable message**|Die Nachricht wird in einer Variable gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **VariableMessage** angezeigt.|  
+|**String message**|Die Nachricht wird im Task 'Nachrichtenwarteschlange' gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **StringMessage** angezeigt.|  
   
 ### <a name="messagetype-dynamic-options"></a>MessageType (dynamische Optionen)  
   
@@ -174,7 +174,7 @@ ms.locfileid: "92194282"
   
 ### <a name="options"></a>Tastatur  
  **RemoveFromMessageQueue**  
- Geben Sie an, ob die Nachricht aus der Warteschlange entfernt werden soll, nachdem sie empfangen wurde. Standardmäßig ist dieser Wert auf **False**festgelegt.  
+ Geben Sie an, ob die Nachricht aus der Warteschlange entfernt werden soll, nachdem sie empfangen wurde. Standardmäßig ist dieser Wert auf **False** festgelegt.  
   
  **ErrorIfMessageTimeOut**  
  Geben Sie an, ob der Task fehlschlägt und eine Fehlermeldung angezeigt wird, wenn die Zeit für die Nachricht überschritten wird. Der Standardwert ist **False**.  
@@ -187,10 +187,10 @@ ms.locfileid: "92194282"
   
 |Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|**Data file message**|Die Nachricht wird in einer Datei gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **DataFileMessage**angezeigt.|  
-|**Variable message**|Die Nachricht wird in einer Variable gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **VariableMessage**angezeigt.|  
-|**String message**|Die Nachricht wird im Task 'Nachrichtenwarteschlange' gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **StringMessage**angezeigt.|  
-|**String message to variable**|Die Nachricht wurde in einer Variablen gespeichert.<br /><br /> Bei Auswahl dieses Wertes wird die dynamische Option **StringMessage**angezeigt.|  
+|**Data file message**|Die Nachricht wird in einer Datei gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **DataFileMessage** angezeigt.|  
+|**Variable message**|Die Nachricht wird in einer Variable gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **VariableMessage** angezeigt.|  
+|**String message**|Die Nachricht wird im Task 'Nachrichtenwarteschlange' gespeichert. Bei Auswahl dieses Wertes wird die dynamische Option **StringMessage** angezeigt.|  
+|**String message to variable**|Die Nachricht wurde in einer Variablen gespeichert.<br /><br /> Bei Auswahl dieses Wertes wird die dynamische Option **StringMessage** angezeigt.|  
   
 ### <a name="messagetype-dynamic-options"></a>MessageType (dynamische Optionen)  
   
@@ -206,8 +206,8 @@ ms.locfileid: "92194282"
   
 |Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|**Kein Filter**|Der Task filtert keine Nachrichten. Wenn Sie diesen Wert auswählen, wird die dynamische Option **IdentifierReadOnly**angezeigt.|  
-|**Vom Paket**|Der Task empfängt nur Nachrichten von dem angegebenen Paket. Wenn Sie diesen Wert auswählen, wird die dynamische Option **Identifier**angezeigt.|  
+|**Kein Filter**|Der Task filtert keine Nachrichten. Wenn Sie diesen Wert auswählen, wird die dynamische Option **IdentifierReadOnly** angezeigt.|  
+|**Vom Paket**|Der Task empfängt nur Nachrichten von dem angegebenen Paket. Wenn Sie diesen Wert auswählen, wird die dynamische Option **Identifier** angezeigt.|  
   
 #### <a name="filter-dynamic-options"></a>Filter (dynamische Optionen)  
   
@@ -227,8 +227,8 @@ ms.locfileid: "92194282"
   
 |Wert|BESCHREIBUNG|  
 |-----------|-----------------|  
-|**Kein Filter**|Der Task filtert keine Nachrichten. Wenn Sie diesen Wert auswählen, wird die dynamische Option **IdentifierReadOnly**angezeigt.|  
-|**Vom Paket**|Der Task empfängt nur Nachrichten von dem angegebenen Paket. Wenn Sie diesen Wert auswählen, wird die dynamische Option **Identifier**angezeigt.|  
+|**Kein Filter**|Der Task filtert keine Nachrichten. Wenn Sie diesen Wert auswählen, wird die dynamische Option **IdentifierReadOnly** angezeigt.|  
+|**Vom Paket**|Der Task empfängt nur Nachrichten von dem angegebenen Paket. Wenn Sie diesen Wert auswählen, wird die dynamische Option **Identifier** angezeigt.|  
   
  **Variable**  
  Geben Sie den Variablennamen ein, oder klicken Sie auf \<**New variable...**>, und konfigurieren Sie dann eine neue Variable.  
@@ -259,7 +259,7 @@ ms.locfileid: "92194282"
 |**Mit Inhalt**|Die Nachrichten müssen die Zeichenfolge in der Option **CompareString** enthalten.|  
   
  **CompareString**  
- Geben Sie hier die Zeichenfolge an, mit der die Nachricht verglichen wird, wenn die Option **Vergleichen** nicht auf **Keine**festgelegt ist.  
+ Geben Sie hier die Zeichenfolge an, mit der die Nachricht verglichen wird, wenn die Option **Vergleichen** nicht auf **Keine** festgelegt ist.  
   
 #### <a name="messagetype--string-message-to-variable"></a>MessageType = String message to variable  
  **Vergleichen**  
@@ -273,7 +273,7 @@ ms.locfileid: "92194282"
 |**Mit Inhalt**|Die Nachricht muss die Zeichenfolge in der Option **CompareString** enthalten.|  
   
  **CompareString**  
- Geben Sie hier die Zeichenfolge an, mit der die Nachricht verglichen wird, wenn die Option **Vergleichen** nicht auf **Keine**festgelegt ist.  
+ Geben Sie hier die Zeichenfolge an, mit der die Nachricht verglichen wird, wenn die Option **Vergleichen** nicht auf **Keine** festgelegt ist.  
   
  **Variable**  
  Geben Sie den Namen der Variablen ein, die die empfangene Nachricht enthalten soll, oder klicken Sie auf \<**New variable...**>, und konfigurieren Sie dann eine neue Variable.  

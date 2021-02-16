@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 464c9096-10d6-4c5e-8bb1-19acba27ad9e
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 163b7af8795b663645133307317e39646deee6e5
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: a53b3c3c871b62ac8824d170f71035d4359fa09f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637470"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349188"
 ---
 # <a name="database-mirroring---use-certificates-for-outbound-connections"></a>Datenbankspiegelung: Verwenden von Zertifikaten für ausgehende Verbindungen
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: a48a387c-2e70-45bc-be2e-26e57a9bb2c4
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: afdeac18b14b75461038889fe34b6fd34658991f
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 05c4f40fe7ae71637761e09fb817fcfcc87d9465
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88457764"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350981"
 ---
 # <a name="project-versions-dialog-box"></a>Projektversionen (Dialogfeld)
 

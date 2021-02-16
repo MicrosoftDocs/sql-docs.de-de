@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: ae52a723-91c4-43fd-bcc7-f8de1d1f90e5
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: ea62ec35accc4f808fdbd1b2ff4319c0b44cdcc5
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 5091c3437d0e74f3c108e13efb3789997cadb2d3
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195689"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489464"
 ---
 # <a name="extract-a-dac-from-a-database"></a>Extrahieren einer DAC aus einer Datenbank
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -39,12 +39,12 @@ ms.locfileid: "92195689"
  Eine DAC kann nur aus einer Datenbank in [!INCLUDE[ssSDS](../../includes/sssds-md.md)]oder [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] Service Pack 4 (SP4) oder höher extrahiert werden. Eine DAC kann nicht registriert werden, wenn die Datenbank in einer DAC nicht unterstützte Objekte oder enthaltene Benutzer enthält. Weitere Informationen zu den in einer DAC unterstützten Objekttypen finden Sie unter [DAC Support For SQL Server Objects and Versions](/previous-versions/sql/sql-server-2012/ee210549(v=sql.110)).  
   
 ##  <a name="permissions"></a><a name="Permissions"></a> Berechtigungen  
- Zum Registrieren einer DAC sind mindestens die ALTER ANY LOGIN-Berechtigung und die VIEW DEFINITION-Berechtigung auf Datenbankebene sowie SELECT-Berechtigungen für **sys.sql_expression_dependencies**erforderlich. Zum Extrahieren einer DAC sind nur Mitglieder der festen Serverrolle securityadmin berechtigt, die ebenfalls Mitglieder der festen Datenbankrolle database_owner in der Datenbank waren, aus der die DAC extrahiert wird. Mitglieder der festen Serverrolle „sysadmin“ oder das integrierte SQL Server-Systemadministratorkonto **sa** sind ebenfalls berechtigt, eine DAC zu extrahieren.  
+ Zum Registrieren einer DAC sind mindestens die ALTER ANY LOGIN-Berechtigung und die VIEW DEFINITION-Berechtigung auf Datenbankebene sowie SELECT-Berechtigungen für **sys.sql_expression_dependencies** erforderlich. Zum Extrahieren einer DAC sind nur Mitglieder der festen Serverrolle securityadmin berechtigt, die ebenfalls Mitglieder der festen Datenbankrolle database_owner in der Datenbank waren, aus der die DAC extrahiert wird. Mitglieder der festen Serverrolle „sysadmin“ oder das integrierte SQL Server-Systemadministratorkonto **sa** sind ebenfalls berechtigt, eine DAC zu extrahieren.  
   
 ##  <a name="using-the-extract-data-tier-application-wizard"></a><a name="UsingDACExtractWizard"></a> Verwenden des Assistenten zum Extrahieren von Datenebenenanwendungen  
  **So extrahieren Sie eine DAC mithilfe eines Assistenten**  
   
-1.  Erweitern Sie im **Objekt-Explorer**den Knoten für die Instanz, die die Datenbank enthält, aus der DAC extrahiert werden soll.  
+1.  Erweitern Sie im **Objekt-Explorer** den Knoten für die Instanz, die die Datenbank enthält, aus der DAC extrahiert werden soll.  
   
 2.  Erweitern Sie den Knoten **Datenbanken** .  
   
@@ -100,7 +100,7 @@ Wählen Sie die Verweisdaten aus, die Sie in die Paketdatei der Datenebenenanwen
   
 > **HINWEIS!**: Wenn ein oder mehrere Objekte nicht von einer DAC unterstützt werden, wird die Schaltfläche **Weiter** deaktiviert, und der Extrahierungsprozess wird möglicherweise nicht fortgesetzt. In solchen Fällen wird empfohlen, die nicht unterstützten Objekte zu entfernen und diesen Assistenten anschließend erneut auszuführen.  
   
- **Zusammenfassung:** Unter **DAC-Eigenschaften**wird eine Übersicht zu den von Ihnen ausgewählten Optionen aufgeführt. Die Ergebnisse der Überprüfung sind unter **DAC-Objekte**aufgeführt. Es gibt drei Typen von Überprüfungsergebnissen:  
+ **Zusammenfassung:** Unter **DAC-Eigenschaften** wird eine Übersicht zu den von Ihnen ausgewählten Optionen aufgeführt. Die Ergebnisse der Überprüfung sind unter **DAC-Objekte** aufgeführt. Es gibt drei Typen von Überprüfungsergebnissen:  
   
 -   **Objekte, die erfolgreich in die DAC eingeschlossen wurden:** Diese Objekte und ihre Abhängigkeiten werden unterstützt und können erfolgreich in die DAC eingeschlossen werden.  
   
@@ -108,7 +108,7 @@ Wählen Sie die Verweisdaten aus, die Sie in die Paketdatei der Datenebenenanwen
   
 -   **Objekte, die nicht in DAC eingeschlossen wurden**: Diese Objekte werden nicht unterstützt und müssen vor dem Extrahieren einer DAC aus der Datenbank entfernt werden.  
   
- Der Überprüfungsprozess überprüft mehrere Ebenen von Abhängigkeiten. Wenn eine gespeicherte Prozedur z. B. von einer Tabelle abhängig ist, die den nicht unterstützten CLR-Datentyp verwendet, wird die gespeicherte Prozedur unter **Objekte, die mit Warnungen in DAC eingeschlossen wurden**aufgeführt.  
+ Der Überprüfungsprozess überprüft mehrere Ebenen von Abhängigkeiten. Wenn eine gespeicherte Prozedur z. B. von einer Tabelle abhängig ist, die den nicht unterstützten CLR-Datentyp verwendet, wird die gespeicherte Prozedur unter **Objekte, die mit Warnungen in DAC eingeschlossen wurden** aufgeführt.  
   
  Wenn ein oder mehrere Objekte nicht von einer DAC unterstützt werden, wird die Schaltfläche **Weiter** deaktiviert und der Extrahierungsprozess wird nicht fortgesetzt. In solchen Fällen wird empfohlen, die nicht unterstützten Objekte zu entfernen und diesen Assistenten anschließend erneut auszuführen.  
   
@@ -162,5 +162,5 @@ $extractionunit.Extract($dacpacPath)
 ```  
   
 ## <a name="see-also"></a>Weitere Informationen  
- [Datenebenenanwendungen](../../relational-databases/data-tier-applications/data-tier-applications.md)  
-  
+ - [Datenebenenanwendungen](../../relational-databases/data-tier-applications/data-tier-applications.md) 
+ - [SqlPackage in Entwicklungspipelines](../../tools/sqlpackage/sqlpackage-pipelines.md)

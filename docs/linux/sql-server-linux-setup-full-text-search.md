@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: bb42076f-e823-4cee-9281-cd3f83ae42f5
-ms.openlocfilehash: 054de1a7f4213a7a8c23ff44bab021d2b64c9f35
-ms.sourcegitcommit: 3ea082c778f6771b17d90fb597680ed334d3e0ec
+ms.openlocfilehash: 406c1a5eb384db2d03514193e0e252ca89c94bd4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88088780"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346369"
 ---
 # <a name="install-sql-server-full-text-search-on-linux"></a>Installieren der SQL Server-Volltextsuche unter Linux
 

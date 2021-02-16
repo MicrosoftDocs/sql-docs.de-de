@@ -12,12 +12,12 @@ ms.assetid: 64a9eade-22c3-4a9d-ab50-956219e08df1
 author: MightyPen
 ms.author: genemi
 monikerRange: =sql-server-2016
-ms.openlocfilehash: 95f920fc8648ed646f1056c9d334ee831651f5e2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a5038368e66524324fb0189b2f1b06e0b374e41a
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465371"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100353689"
 ---
 # <a name="migrating-computed-columns"></a>Migrieren von berechneten Spalten
 
@@ -25,7 +25,7 @@ ms.locfileid: "97465371"
 
 Berechnete Spalten werden in speicheroptimierten Tabellen nicht unterstützt. Sie können jedoch eine berechnete Spalte simulieren.
 
-Ab [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] werden in speicheroptimierten Tabellen und Indizes berechnete Spalten unterstützt.
+Ab [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] werden in speicheroptimierten Tabellen und Indizes berechnete Spalten unterstützt.
 
 Sie sollten berücksichtigen, dass berechnete Spalten beibehalten werden müssen, wenn Sie datenträgerbasierte Tabellen zu speicheroptimierten Tabellen migrieren. Aufgrund der unterschiedlichen Leistungsmerkmale speicheroptimierter Tabellen und systemintern kompilierter gespeicherter Prozeduren ist u. U. keine Persistenz erforderlich.  
   

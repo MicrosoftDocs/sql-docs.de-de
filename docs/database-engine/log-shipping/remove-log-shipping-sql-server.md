@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 859373db-c744-4a4b-8479-45163f61e8cb
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 34753dc0aedfaa92fa20077b786bea52ac11982c
-ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
+ms.openlocfilehash: e8994d1661c46d20bf1b1d82ab35af3ad4b1b581
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98813169"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346966"
 ---
 # <a name="remove-log-shipping-sql-server"></a>Entfernen des Protokollversands (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -11,12 +11,12 @@ ms.topic: article
 ms.prod: sql
 ms.technology: linux
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: 1e0ace10e1a976128146b82d77660d1edc06040a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: fdd43008abb9ba49ab3a5e3a2859a6366a3a6542
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471491"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346474"
 ---
 # <a name="configure-replication-snapshot-folder-with-shares"></a>Konfigurieren der Replikation eines Momentaufnahmeordners mit Freigaben
 

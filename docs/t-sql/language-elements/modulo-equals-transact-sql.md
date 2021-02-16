@@ -23,12 +23,12 @@ ms.assetid: 45e35516-1f4c-406b-a580-70a14b087847
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: c25e1b7a1ab8c19adfd1a712fd1d69529705c989
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 917d51d4570883218daff768869b1299e8180fbe
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99179644"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344675"
 ---
 # <a name="-modulus-assignment-transact-sql"></a>%= (Modulozuweisung) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

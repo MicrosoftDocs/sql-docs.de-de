@@ -13,12 +13,12 @@ f1_keywords:
 - sql14.dts.designer.afpextfilesrc.f1
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 4be8d36cb6bff0b8cc50bf479d41fcca2e7064f1
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 26f960ea45509a2016d38824474a18ab2ffb88e2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091680"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339745"
 ---
 # <a name="flexible-file-source"></a>Flexible Dateiquelle
 

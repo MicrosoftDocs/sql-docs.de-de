@@ -4,12 +4,12 @@ ms.service: sql
 ms.topic: include
 ms.date: 11/14/2018
 ms.author: mathoma
-ms.openlocfilehash: 3c0b2a292b33860a7f3974d9157bb46a056dcd7f
-ms.sourcegitcommit: 039fb38c583019b3fd06894160568387a19ba04e
+ms.openlocfilehash: 7be6ef0b73aeaf904bd279839e044be23deb6fa6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87451205"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100105453"
 ---
 ### <a name="transactional--snapshot-replication-compatibility-matrix"></a>Kompatibilitätsmatrix für Transaktions- und Momentaufnahmereplikation
 

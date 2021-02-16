@@ -15,12 +15,12 @@ ms.assetid: 0300e777-d56b-4d10-9c33-c9ebd2489ee5
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 1930f2e9d41bb212b01a9417fb7d6c861fda228f
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 8f123235f263abd05878e7be422c13fcf84825e8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172042"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353088"
 ---
 # <a name="sql-server-installation-guide"></a>Installationsleitfaden für SQL Server
 
@@ -34,13 +34,13 @@ Informationen zu weiteren Bereitstellungsszenarios finden Sie unter:
 - [Docker-Container](../../linux/sql-server-linux-docker-container-deployment.md)
 - [Kubernetes: Big Data-Cluster](../../big-data-cluster/deploy-get-started.md)
 
-Ab [!INCLUDE[sssql15](../../includes/sssql16-md.md)] ist [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] nur noch als 64-Bit-Anwendung verfügbar. Hier erhalten Sie wichtige Informationen zum Erhalt und zur Installation von SQL Server.
+Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] ist [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] nur noch als 64-Bit-Anwendung verfügbar. Hier erhalten Sie wichtige Informationen zum Erhalt und zur Installation von SQL Server.
 
 ## <a name="getting-started"></a>Erste Schritte
   
 * **Editionen und Features:** Überprüfen Sie die unterstützten Features für die verschiedenen Editionen und Versionen von SQL Server, um zu ermitteln, welche am besten zu Ihren geschäftlichen Anforderungen passt. 
-    - [[!INCLUDE[ss2019](../../includes/sssqlv15-md.md)]](~/sql-server/editions-and-components-of-sql-server-version-15.md).  
-    - [[!INCLUDE[ss2017](../../includes/sssqlv14-md.md)]](~/sql-server/editions-and-components-of-sql-server-2017.md).  
+    - [[!INCLUDE[ss2019](../../includes/sssql19-md.md)]](~/sql-server/editions-and-components-of-sql-server-version-15.md).  
+    - [[!INCLUDE[ss2017](../../includes/sssql17-md.md)]](~/sql-server/editions-and-components-of-sql-server-2017.md).  
     - [[!INCLUDE[ss2016](../../includes/sssql16-md.md)]](~/sql-server/editions-and-components-of-sql-server-2016.md).  
     - [[!INCLUDE[ss2014](../../includes/sssql14-md.md)]](https://docs.microsoft.com/previous-versions/sql/2014/getting-started/features-supported-by-the-editions-of-sql-server-2014)
 

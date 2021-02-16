@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 6acd02b9-2311-49b0-a5f8-3852beecb4b0
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 5dfb3293071982720908c61368a475376db24dd3
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 06d4ec7d0ab7598e40aa28bcf0cb84cb7e069c5a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641324"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337834"
 ---
 # <a name="register-mirrored-database"></a>Registrieren der gespiegelten Datenbank
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 01936122-961d-436b-ba3c-5f79fefe5469
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 02acad8ee93c311c18c80e325450105ac47ee876
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: e55294b2bbba96ebe9dda253852d3f1b8280220f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642317"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353105"
 ---
 # <a name="database-mirroring-monitor-warnings-page"></a>Datenbankspiegelungs-Monitor (Seite Warnungen)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

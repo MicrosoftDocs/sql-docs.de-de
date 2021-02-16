@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.prod: sql
 ms.technology: language-extensions
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: 1036f81b62134b2301bb2d800e9481bd06dcdcee
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a98eed7109a45958864e85822bbb69de4767a85d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471461"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100073929"
 ---
 # <a name="install-sql-server-java-language-extension-on-linux"></a>Installieren der Java-Spracherweiterung für SQL Server unter Linux
 

@@ -12,12 +12,12 @@ ms.assetid: df347f9b-b950-4e3a-85f4-b9f21735eae3
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: bc7e46cf13da66476b53d68d5f2ea02fb29a69a5
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 67f29ef6d47de5cc14cb248d20a243053857c9e9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172102"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353640"
 ---
 # <a name="sample-database-for-in-memory-oltp"></a>Beispieldatenbank für In-Memory OLTP
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "98172102"
   
 ##  <a name="prerequisites"></a><a name="Prerequisites"></a> Voraussetzungen  
   
--   [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]  
+-   [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]  
   
 -   Für Leistungstests benötigen Sie einen Server, dessen Kapazität ungefähr der eines Servers in Ihrer Produktionsumgebung entspricht. Für dieses spezielle Beispiel sollten SQL Server mindestens 16 GB Arbeitsspeicher zur Verfügung stehen. Allgemeine Richtlinien zur Hardware für In-Memory-OLTP finden Sie in folgendem Blogbeitrag: [Aspekte zur Hardware für In-Memory-OLTP in SQL Server 2014](blog-hardware-in-memory-oltp.md).
 
@@ -142,25 +142,25 @@ ms.locfileid: "98172102"
   
 -   Da *Standardeinschränkungen* bei speicheroptimierten Tabellen unterstützt werden, wurden die meisten Standardeinschränkungen unverändert migriert. Die ursprüngliche Tabelle Sales.SalesOrderHeader enthält jedoch zwei Standardeinschränkungen, durch die für die Spalten OrderDate und ModifiedDate das aktuelle Datum abgerufen wird. In einer Arbeitsauslastung für die Auftragsverarbeitung mit hohem Durchsatz und einem hohen Maß an Parallelität können globale Ressourcen zu Konflikten führen. Die Systemzeit ist beispielsweise eine solche globale Ressource und kann bei einer In-Memory OLTP-Arbeitsauslastung, durch die Verkaufsaufträge eingefügt werden, erfahrungsgemäß einen Engpass verursachen. Dies gilt insbesondere, wenn die Systemzeit für mehrere Spalten sowohl in der Auftragskopfzeile als auch in den Auftragsdetails abgerufen werden muss. In diesem Beispiel wird das Problem umgangen, indem die Systemzeit für jeden eingefügten Verkaufsauftrag nur einmal abgerufen und dieser Wert in der gespeicherten Prozedur Sales.usp_InsertSalesOrder_inmem für die datetime-Spalten in SalesOrderHeader_inmem und SalesOrderDetail_inmem verwendet wird.  
   
--   *Alias-UDTs*: In der ursprünglichen Tabelle werden die beiden Alias-UDTs (User-defined Data Types, benutzerdefinierte Datentypen) „dbo.OrderNumber“ und „dbo.AccountNumber“ für die Spalten „PurchaseOrderNumber“ bzw. „AccountNumber“ verwendet. [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] unterstützt keine Alias-UDTs für speicheroptimierte Tabellen, daher verwenden die neuen Tabellen die Systemdatentypen nvarchar(25) bzw. nvarchar(15).  
+-   *Alias-UDTs*: In der ursprünglichen Tabelle werden die beiden Alias-UDTs (User-defined Data Types, benutzerdefinierte Datentypen) „dbo.OrderNumber“ und „dbo.AccountNumber“ für die Spalten „PurchaseOrderNumber“ bzw. „AccountNumber“ verwendet. [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] unterstützt keine Alias-UDTs für speicheroptimierte Tabellen, daher verwenden die neuen Tabellen die Systemdatentypen nvarchar(25) bzw. nvarchar(15).  
   
 -   *Spalten mit NULL-Werten in Indexschlüsseln* : In der ursprünglichen Tabelle sind für die Spalte „SalesPersonID“ NULL-Werte zulässig, während die Spalte in den neuen Tabellen keine NULL-Werte zulässt und über eine Standardeinschränkung mit dem Wert (-1) verfügt. Dieser Umstand ist darin begründet, dass Indizes für speicheroptimierte Tabellen im Indexschlüssel keine Spalten aufweisen dürfen, die Nullwerte zulassen. Daher dient -1 in diesem Fall als Ersatz für NULL.  
   
--   *Berechnete Spalten* : Auf die berechneten Spalten SalesOrderNumber und TotalDue wurde verzichtet, da berechnete Spalten in speicheroptimierten Tabellen von [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] nicht unterstützt werden. In der neuen Sicht Sales.vSalesOrderHeader_extended_inmem sind die Spalten SalesOrderNumber und TotalDue enthalten. Falls diese Spalten benötigt werden, können Sie diese Sicht verwenden.  
+-   *Berechnete Spalten* : Auf die berechneten Spalten SalesOrderNumber und TotalDue wurde verzichtet, da berechnete Spalten in speicheroptimierten Tabellen von [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] nicht unterstützt werden. In der neuen Sicht Sales.vSalesOrderHeader_extended_inmem sind die Spalten SalesOrderNumber und TotalDue enthalten. Falls diese Spalten benötigt werden, können Sie diese Sicht verwenden.  
 
-    - **Anwendungsbereich:** [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] CTP 1.1.  
-Ab [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] CTP 1.1 werden in speicheroptimierten Tabellen und Indizes berechnete Spalten unterstützt.
+    - **Anwendungsbereich:** [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] CTP 1.1.  
+Ab [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] CTP 1.1 werden in speicheroptimierten Tabellen und Indizes berechnete Spalten unterstützt.
 
   
--   *Fremdschlüsseleinschränkungen* werden für speicheroptimierte Tabellen in [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]nur dann unterstützt, wenn die referenzierten Tabellen ebenfalls speicheroptimiert sind. Fremdschlüssel mit Verweis auf Tabellen, die ebenfalls zu speicheroptimierten Tabellen migriert werden, werden in den migrierten Tabellen beibehalten, während andere Fremdschlüssel ausgelassen werden.  SalesOrderHeader_inmem stellt in der exemplarischen Arbeitsauslastung eine aktive Tabelle dar. Darüber hinaus verursachen FOREIGN KEY-Einschränkungen für DML-Vorgänge zusätzlichen Verarbeitungsaufwand, da alle anderen Tabellen, auf die in diesen Einschränkungen verwiesen wird, durchsucht werden müssen. Daher wird davon ausgegangen, dass die App referenzielle Integrität für die Tabelle „Sales.SalesOrderHeader_inmem“ gewährleistet, und eingefügte Zeilen werden nicht auf referenzielle Integrität überprüft.  
+-   *Fremdschlüsseleinschränkungen* werden für speicheroptimierte Tabellen in [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]nur dann unterstützt, wenn die referenzierten Tabellen ebenfalls speicheroptimiert sind. Fremdschlüssel mit Verweis auf Tabellen, die ebenfalls zu speicheroptimierten Tabellen migriert werden, werden in den migrierten Tabellen beibehalten, während andere Fremdschlüssel ausgelassen werden.  SalesOrderHeader_inmem stellt in der exemplarischen Arbeitsauslastung eine aktive Tabelle dar. Darüber hinaus verursachen FOREIGN KEY-Einschränkungen für DML-Vorgänge zusätzlichen Verarbeitungsaufwand, da alle anderen Tabellen, auf die in diesen Einschränkungen verwiesen wird, durchsucht werden müssen. Daher wird davon ausgegangen, dass die App referenzielle Integrität für die Tabelle „Sales.SalesOrderHeader_inmem“ gewährleistet, und eingefügte Zeilen werden nicht auf referenzielle Integrität überprüft.  
   
--   *Rowguid* : Die rowguid-Spalte wird nicht verwendet. Im Gegensatz zu uniqueidentifier wird die ROWGUIDCOL-Option für speicheroptimierte Tabellen in [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]nicht unterstützt. Spalten dieses Typs werden normalerweise für Mergereplikationen oder für Tabellen mit FILESTREAM-Spalten verwendet, die in diesem Beispiel beide nicht zum Einsatz kommen.  
+-   *Rowguid* : Die rowguid-Spalte wird nicht verwendet. Im Gegensatz zu uniqueidentifier wird die ROWGUIDCOL-Option für speicheroptimierte Tabellen in [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]nicht unterstützt. Spalten dieses Typs werden normalerweise für Mergereplikationen oder für Tabellen mit FILESTREAM-Spalten verwendet, die in diesem Beispiel beide nicht zum Einsatz kommen.  
   
  Sales.SalesOrderDetail  
   
 -   *Standardeinschränkungen*: Ähnlich wie SalesOrderHeader wird die Standardeinschränkung, die das Systemdatum bzw. die Systemzeit erfordert, nicht migriert. Stattdessen wird das aktuelle Systemdatum bzw. die aktuelle Systemzeit von der gespeicherten Prozedur, die Verkaufsaufträge einfügt, beim ersten Einfügevorgang hinzugefügt.  
   
--   *Berechnete Spalten*: Die berechnete Spalte „LineTotal“ wurde nicht migriert, weil berechnete Spalten bei speicheroptimierten Tabellen in [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]nicht unterstützt werden. Um auf diese Spalte zuzugreifen, verwenden Sie die Sicht „Sales.vSalesOrderDetail_extended_inmem“.  
+-   *Berechnete Spalten*: Die berechnete Spalte „LineTotal“ wurde nicht migriert, weil berechnete Spalten bei speicheroptimierten Tabellen in [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]nicht unterstützt werden. Um auf diese Spalte zuzugreifen, verwenden Sie die Sicht „Sales.vSalesOrderDetail_extended_inmem“.  
   
 -   *Rowguid* : Die rowguid-Spalte wird nicht verwendet. Ausführliche Informationen finden Sie in der Beschreibung zur Tabelle SalesOrderHeader.  
   

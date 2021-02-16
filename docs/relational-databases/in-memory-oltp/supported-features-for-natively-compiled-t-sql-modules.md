@@ -12,12 +12,12 @@ ms.assetid: 05515013-28b5-4ccf-9a54-ae861448945b
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 42d638afd9fc98fb68eb024c0a712bea5f278a26
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 011a7d3fa710699f75afd4ca835ba1f082a956b5
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170222"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100353613"
 ---
 # <a name="supported-features-for-natively-compiled-t-sql-modules"></a>Unterstützte Funktionen für nativ kompilierte T-SQL-Module
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -34,8 +34,8 @@ ms.locfileid: "98170222"
 Die folgenden Abfragekonstrukte werden unterstützt:  
 
 CASE-Ausdruck: CASE kann in einer beliebigen Anweisung oder Klausel verwendet werden, die einen gültigen Ausdruck zulässt.
-   - **Gilt für:** [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)]  
-    Ab [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)] werden CASE-Anweisungen für nativ kompilierte T-SQL-Module unterstützt.
+   - **Gilt für:** [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)]  
+    Ab [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)] werden CASE-Anweisungen für nativ kompilierte T-SQL-Module unterstützt.
 
 SELECT-Klausel:  
 
@@ -176,8 +176,8 @@ Die folgenden DML-Anweisungen werden unterstützt.
 -   Bitweise Operatoren ~, &, |, und ^  
 
 -   APPLY-Operator
-    - **Gilt für:** [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)]  
-      Ab [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] wird der APPLY-Operator in nativ kompilierten Modulen unterstützt.
+    - **Gilt für:** [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)]  
+      Ab [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] wird der APPLY-Operator in nativ kompilierten Modulen unterstützt.
 
 ##  <a name="built-in-functions-in-natively-compiled-modules"></a><a name="bfncsp"></a> Integrierte Funktionen in nativ kompilierten Modulen  
  Die folgenden Funktionen werden in Einschränkungen in speicheroptimierten Tabellen und in nativ kompilierten T-SQL-Modulen unterstützt.  
@@ -187,8 +187,8 @@ Die folgenden DML-Anweisungen werden unterstützt.
 -   Datumsfunktionen: CURRENT_TIMESTAMP, DATEADD, DATEDIFF, DATEFROMPARTS, DATEPART, DATETIME2FROMPARTS, DATETIMEFROMPARTS, DAY, EOMONTH, GETDATE, GETUTCDATE, MONTH, SMALLDATETIMEFROMPARTS, SYSDATETIME, SYSUTCDATETIME und YEAR.  
 
 -   Zeichenfolgenfunktionen: LEN, LTRIM, RTRIM und SUBSTRING.  
-    - **Gilt für:** [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)]  
-      Ab [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] werden die folgenden integrierten Funktionen ebenfalls unterstützt: TRIM, TRANSLATE und CONCAT_WS.  
+    - **Gilt für:** [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)]  
+      Ab [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] werden die folgenden integrierten Funktionen ebenfalls unterstützt: TRIM, TRANSLATE und CONCAT_WS.  
 
 -   Identitätsfunktionen: SCOPE_IDENTITY  
 
@@ -197,8 +197,8 @@ Die folgenden DML-Anweisungen werden unterstützt.
 -   Uniqueidentifier-Funktionen: NEWID und NEWSEQUENTIALID  
 
 -   JSON-Funktionen  
-    - **Gilt für:** [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)]  
-      Ab [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] werden die JSON-Funktionen in nativ kompilierten Modulen unterstützt.
+    - **Gilt für:** [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)]  
+      Ab [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] werden die JSON-Funktionen in nativ kompilierten Modulen unterstützt.
 
 -   Fehlerfunktionen: ERROR_LINE, ERROR_MESSAGE, ERROR_NUMBER, ERROR_PROCEDURE, ERROR_SEVERITY und ERROR_STATE  
 

@@ -15,12 +15,12 @@ helpviewer_keywords: ''
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: =azuresqldb-current||=azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||=azuresqldb-mi-current
-ms.openlocfilehash: ebce6a90990df0394707d99c69eeb54e0e43f31d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ba0c386cb8f242902bc8ca1c20e36b2df5e9c8fa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99204604"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100082291"
 ---
 # <a name="title-transact-sql"></a>Titel (Transact-SQL)
 

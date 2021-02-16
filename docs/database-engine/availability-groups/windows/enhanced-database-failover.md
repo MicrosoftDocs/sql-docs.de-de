@@ -13,12 +13,12 @@ ms.assetid: ''
 author: cawrites
 ms.reviewer: mikeray
 ms.author: chadam
-ms.openlocfilehash: d26d584c4a644d9ff712f7bf1ac5a82e87302f83
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 9122be35804569519bb3945d34f6950cd0dafb78
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643557"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340438"
 ---
 # <a name="enable-enhanced-database-failover-to-a-database-in-an-always-on-availability-group"></a>Aktivieren eines verbesserten Datenbankfailovers für eine Datenbank in einer Always On-Verfügbarkeitsgruppe
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

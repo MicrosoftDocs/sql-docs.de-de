@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1fda034d-09e4-4647-9a9f-e8d508c2cc8f
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: ac791960040a0bceb46e129b2f48a8410e953258
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: c48454ceec4f05f6b2386e4abb96092bbbbcb140
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88477280"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344859"
 ---
 # <a name="parsing-non-standard-text-file-formats-with-the-script-component"></a>Analysieren von nicht standardmäßigen Textdateiformaten mit der Skriptkomponente
 
@@ -289,7 +289,7 @@ Public Overrides Sub Input0_ProcessInputRow(ByVal Row As Input0Buffer)
   
     ' If current row starts with separator characters,  
     '  then following row contains new parent record.  
-    If Row.Column0.StartsWith("**_") Then  
+    If Row.Column0.StartsWith("***") Then  
         nextRowIsParent = True  
     Else  
         If nextRowIsParent Then  
@@ -322,7 +322,7 @@ public override void Input0_ProcessInputRow(Input0Buffer Row)
   
         // If current row starts with separator characters,   
         // then following row contains new parent record.   
-        if (Row.Column0.StartsWith("_**"))  
+        if (Row.Column0.StartsWith("***"))  
         {  
             static_Input0_ProcessInputRow_nextRowIsParent = true;  
         }  

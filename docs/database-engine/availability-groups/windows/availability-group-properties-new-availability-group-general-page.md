@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 9af5379f-91b8-4729-9f75-4a80242a30e9
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 035b32b57862564039dfd12a38496d7ff323e64f
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: af68a7e9243578e78d0d154ebc4d89d62af3f4b2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641033"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340875"
 ---
 # <a name="availability-group-properties-new-availability-group-general-page"></a>Eigenschaften von Verfügbarkeitsgruppen: Neue Verfügbarkeitsgruppen (Seite „Allgemein“)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -15,12 +15,12 @@ f1_keywords:
 ms.assetid: 10183c8d-b1be-420f-972a-96ea97d4f4d8
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: cdbcc9b0a03b0afefe56152dc6b29c7ae59ea4cc
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 0d37b0c08debbd108645c697d53f9136c2a729d1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96130686"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354979"
 ---
 # <a name="configure-dialog-box"></a>Konfigurieren (Dialogfeld)
 

@@ -11,12 +11,12 @@ ms.assetid: 3f08087e-e532-416c-8caa-e0ec88c57596
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: c309c86f4f6609f1bd5383d311e1ce5781350fd9
-ms.sourcegitcommit: 3ec49252e82590de0fe559a8574606ae213f6f3b
+ms.openlocfilehash: 5e4d727666ad2e3c013aacdabee93517389059bd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975439"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347831"
 ---
 # <a name="complete-the-database-engine-upgrade"></a>Abschließen des Datenbank-Engine-Upgrades
 

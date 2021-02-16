@@ -13,12 +13,12 @@ f1_keywords:
 - sql14.dts.designer.afpextfiledest.f1
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: d331004e82b155a1c101a31253a82e029ec4a31b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 1899538413552e0381f87dd997356e885e435b58
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091650"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339754"
 ---
 # <a name="flexible-file-destination"></a>Flexibles Dateiziel
 

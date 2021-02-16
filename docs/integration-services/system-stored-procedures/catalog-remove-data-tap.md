@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: b77db3e6-478c-441a-a838-82c4de750275
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: ca55276a6108cd53ffae82fd4c40089023da20fb
-ms.sourcegitcommit: 80701484b8f404316d934ad2a85fd773e26ca30c
+ms.openlocfilehash: f350aa9ee715212dcfc5e6163f758110cde58023
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93243609"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342183"
 ---
 # <a name="catalogremove_data_tap"></a>catalog.remove_data_tap 
 

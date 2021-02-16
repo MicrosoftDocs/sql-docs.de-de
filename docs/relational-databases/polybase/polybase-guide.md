@@ -20,12 +20,12 @@ author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: ''
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||>=aps-pdw-2016||=azure-sqldw-latest'
-ms.openlocfilehash: afcc848a169ec6a9c9dd02ecee50718d7e1508c1
-ms.sourcegitcommit: 81f06a754fcaf4b72136859ccb18c82693f24780
+ms.openlocfilehash: e4f0bfbac2fe4e49261f9940a97fd73e05676661
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97811535"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100062225"
 ---
 # <a name="what-is-polybase"></a>Was ist PolyBase?
 

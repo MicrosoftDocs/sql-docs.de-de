@@ -79,8 +79,6 @@ items:
             items:
               - name: Hinweise zur Bereitstellung
                 href: big-data-cluster/deployment-guidance.md
-              - name: Bereitgestellte Ressourcen
-                href: big-data-cluster/concept-architecture-pods.md
               - name: Upgrade auf ein neues Release
                 href: big-data-cluster/deployment-upgrade.md
               - name: Anpassen von Bereitstellungen
@@ -165,12 +163,14 @@ items:
         items:
           - name: Konfigurieren
             items:
-              - name: Cluster
-                href: big-data-cluster/configure-cluster.md
-              - name: SQL Server-Masterinstanz
-                href: big-data-cluster/configure-sql-server-master-instance.md
-              - name: Konfigurieren von Apache Spark und Apache Hadoop
-                href: big-data-cluster/configure-spark-hdfs.md
+              - name: Überblick
+                href: big-data-cluster/configure-bdc-overview.md
+              - name: Upgrade auf zur Konfigurationsverwaltung fähigen Cluster (CU9+)
+                href: big-data-cluster/bdc-upgrade-configuration.md
+              - name: Konfiguration nach der Bereitstellung
+                href: big-data-cluster/configure-bdc-postdeployment.md
+              - name: Übersicht (vor CU9)
+                href: big-data-cluster/configure-bdc-pre-configuration.md
           - name: Datenvirtualisierung
             items:
               - name: Relationale Daten
@@ -465,6 +465,12 @@ items:
                 href: big-data-cluster/cluster-troubleshooter-notebooks.md
       - name: Verweis
         items:
+          - name: Bereitstellung
+            items:
+              - name: Open-Source-Software
+                href: big-data-cluster/reference-open-source-software.md
+              - name: Bereitgestellte Ressourcen
+                href: big-data-cluster/concept-architecture-pods.md
           - name: BDC-Partner
             href: sql-server/partner-big-data-cluster.md
           - name: Referenz zur Bereitstellung
@@ -473,7 +479,9 @@ items:
                 href: big-data-cluster/reference-deployment-config.md
           - name: Konfiguration
             items:
-              - name: Master-Instanz
+              - name: Übersicht
+                href: big-data-cluster/reference-config-bdc-overview.md
+              - name: Masterinstanz (vor CU9)
                 href: big-data-cluster/reference-config-master-instance.md
               - name: Apache Spark und Apache Hadoop
                 href: big-data-cluster/reference-config-spark-hadoop.md
@@ -517,10 +525,16 @@ items:
                     href: azdata/reference/reference-azdata-bdc-gateway-status.md
                   - name: bdc hdfs
                     href: azdata/reference/reference-azdata-bdc-hdfs.md
+                  - name: BDC-HDFS-Verschlüsselungszone
+                    href: azdata/reference/reference-azdata-bdc-hdfs-encryption-zone.md
+                  - name: BDC-HDFS-Schlüssel
+                    href: azdata/reference/reference-azdata-bdc-hdfs-key.md
                   - name: bdc hdfs mount
                     href: azdata/reference/reference-azdata-bdc-hdfs-mount.md
                   - name: BDC-HDFS-Status
                     href: azdata/reference/reference-azdata-bdc-hdfs-status.md
+                  - name: BDC-Einstellungen
+                    href: azdata/reference/reference-azdata-bdc-settings.md
                   - name: bdc spark
                     href: azdata/reference/reference-azdata-bdc-spark.md
                   - name: bdc spark batch
@@ -12234,6 +12248,10 @@ items:
                 href: relational-databases/system-dynamic-management-views/sys-dm-hadr-availability-replica-cluster-states-transact-sql.md
               - name: sys.dm_hadr_availability_replica_states
                 href: relational-databases/system-dynamic-management-views/sys-dm-hadr-availability-replica-states-transact-sql.md
+              - name: sys.dm_hadr_ag_threads
+                href: relational-databases/system-dynamic-management-views/sys-dm-hadr-ag-threads-transact-sql.md
+              - name: sys.dm_hadr_db_threads
+                href: relational-databases/system-dynamic-management-views/sys-dm-hadr-db-threads-transact-sql.md
               - name: sys.dm_hadr_cluster
                 href: relational-databases/system-dynamic-management-views/sys-dm-hadr-cluster-transact-sql.md
               - name: sys.dm_hadr_cluster_members

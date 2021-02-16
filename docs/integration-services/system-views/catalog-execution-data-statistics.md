@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: 6f51407e-0e4e-4b44-af33-db14c9d40ded
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: daf22fecd119c23a60cdaf33f80d30331f9f7a5b
-ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
+ms.openlocfilehash: 38ccfb2c31df09c44b9374c50c402d0e89f33764
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99835306"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347391"
 ---
 # <a name="catalogexecution_data_statistics"></a>catalog.execution_data_statistics 
 

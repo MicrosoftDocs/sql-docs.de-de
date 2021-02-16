@@ -15,12 +15,12 @@ f1_keywords:
 ms.assetid: d9a2bfae-fcc8-46be-b588-4a9db03f7e45
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 29fb988b6c326f9c6bb6ef39d5d1fc031d12f908
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: c51cdb5211b69e9adec66271c41bbc539983adc5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96123781"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355021"
 ---
 # <a name="folder-properties-dialog-box"></a>Ordnereigenschaften (Dialogfeld)
 

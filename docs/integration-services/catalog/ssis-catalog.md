@@ -15,12 +15,12 @@ f1_keywords:
 ms.assetid: 24bd987e-164a-48fd-b4f2-cbe16a3cd95e
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: a8ed14b14198bb95db838e76ca07bffe5875ce69
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: fa8c9cb8d507acd5766e441cbd7387161a283bbf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642591"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339289"
 ---
 # <a name="ssis-catalog"></a>SSIS-Katalog
 

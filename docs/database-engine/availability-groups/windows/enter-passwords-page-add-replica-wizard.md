@@ -12,12 +12,12 @@ f1_keywords:
 ms.assetid: e69207a0-c5c4-44e4-ae9a-4afbb67251d1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c9d1cfdb0437972ef5f1115c0e9ba6e667038932
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 8bef426da309598674848d42dfee473439cfb318
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765546"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348479"
 ---
 # <a name="enter-passwords-page-add-replica-wizard-for-always-on-availability-groups"></a>Seite zum Eingeben der Kennwörter (Assistent zum Hinzufügen von Replikaten) für Always On-Verfügbarkeitsgruppen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

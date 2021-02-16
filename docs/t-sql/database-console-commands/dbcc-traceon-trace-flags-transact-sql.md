@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: b971b540-1ac2-435b-b191-24399eb88265
 author: pmasl
 ms.author: pelopes
-ms.openlocfilehash: c6299862498ff2b24e2d81c889eb4e2caa03c2f4
-ms.sourcegitcommit: 0b400bb99033f4b836549cb11124a1f1630850a1
+ms.openlocfilehash: 269ab12772cacfdb7ead24c612eb3408e6c6067b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "99978838"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066175"
 ---
 # <a name="dbcc-traceon---trace-flags-transact-sql"></a>DBCC TRACEON – Ablaufverfolgungsflags
 

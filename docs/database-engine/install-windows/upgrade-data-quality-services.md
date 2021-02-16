@@ -11,12 +11,12 @@ ms.assetid: f396666b-7754-4efc-9507-0fd114cc32d5
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 1be8d8e6b320af96bc3acf7a28ec2c017a92914a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 36d580e73939d99d8e4a08dc609a48d0390fac6e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480321"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341831"
 ---
 # <a name="upgrade-data-quality-services"></a>Aktualisieren von Data Quality Services
 

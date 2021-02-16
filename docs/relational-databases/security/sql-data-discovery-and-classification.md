@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/05/2021
 ms.author: datrigan
 author: DavidTrigano
-ms.openlocfilehash: 3b24c9accfd205057086a477a586b33218e532b6
-ms.sourcegitcommit: c52a6aeb6fa6d7c3a86b3e84449361f4a0949ad0
+ms.openlocfilehash: 74478f363ac4c6fac4ab684fde1bafd0a2bb8551
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99623796"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340174"
 ---
 # <a name="sql-data-discovery-and-classification"></a>SQL-Datenermittlung und -klassifizierung
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

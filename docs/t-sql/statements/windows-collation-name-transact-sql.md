@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -19,12 +19,12 @@ ms.assetid: acceef84-2c68-46e2-a021-be019b7ab14e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: e89cac604654a1793a65bdd43dcd38cf77484b06
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2fa047e5ef018109352972f3ae139c6eff2c1b93
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099381"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100349953"
 ---
 # <a name="windows-collation-name-transact-sql"></a>Name der Windows-Sortierung (Transact-SQL)
 
@@ -75,12 +75,12 @@ Bei Weglassen dieser Option erfolgt keine Unterscheidung nach Kanatyp. Bei **KS*
 Bei Weglassen dieser Option erfolgt keine Unterscheidung nach Breite. Bei **WS** erfolgt eine Unterscheidung.
 
 *VariationSelectorSensitivity*  
-- **Gilt für**: Seit [!INCLUDE[ssSQL15](../../includes/sssqlv14-md.md)] 
+- **Gilt für**: Seit [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)] 
 
 - Bei Weglassen dieser Option erfolgt keine Unterscheidung nach Variantenselektor. Bei **VSS** erfolgt eine Unterscheidung.
 
 **UTF8**  
-- **Gilt für**: Seit [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]   
+- **Gilt für**: Seit [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]   
 
 - Gibt an, dass für geeignete Datentypen UTF-8-Codierung verwendet werden soll. Weitere Informationen finden Sie unter [Collation and Unicode Support](../../relational-databases/collations/collation-and-unicode-support.md).
 
@@ -134,7 +134,7 @@ Führen Sie die folgende Abfrage aus, um die von Ihrer [!INCLUDE[ssNoVersion](..
 SELECT * FROM sys.fn_helpcollations() WHERE [name] NOT LIKE N'SQL%';
 ```
 
-In der folgenden Tabelle werden alle Windows-Sortierungen aufgelistet, die in [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] unterstützt werden.
+In der folgenden Tabelle werden alle Windows-Sortierungen aufgelistet, die in [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] unterstützt werden.
 
 |Windows-Gebietsschema|Sortierungsversion 100|Sortierungsversion 90|
 |--------------------|---------------------------|--------------------------|

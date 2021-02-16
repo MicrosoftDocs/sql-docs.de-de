@@ -13,12 +13,12 @@ author: mashamsft
 ms.author: mathoma
 ms.reviewer: kfarlee
 monikerRange: '>=sql-server-ver15'
-ms.openlocfilehash: ca11bbae7f1bcc86c0891cc22d8a7a02b26fd46e
-ms.sourcegitcommit: fa63019cbde76dd981b0c5a97c8e4d57e8d5ca4e
+ms.openlocfilehash: 28ab5d23e4a2dc3168a9682424b3cb11a8e0b70e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99495778"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100062208"
 ---
 # <a name="manage-accelerated-database-recovery"></a>Verwalten der schnelleren Datenbankwiederherstellung
 

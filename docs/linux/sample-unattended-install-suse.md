@@ -8,12 +8,12 @@ ms.date: 11/04/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: 6562d01d615b4aac929b01d1e28985b5adddea42
-ms.sourcegitcommit: 3ea082c778f6771b17d90fb597680ed334d3e0ec
+ms.openlocfilehash: 410a4c1fcb378f4d93730721ecfc0416564794bf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88089010"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339138"
 ---
 # <a name="sample-unattended-sql-server-installation-script-for-suse-linux-enterprise-server"></a>Beispiel: Skript für eine unbeaufsichtigte SQL Server-Installation für SUSE Linux Enterprise Server
 

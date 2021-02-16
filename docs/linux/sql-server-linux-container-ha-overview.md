@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: sql
 ms.technology: linux
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017'
-ms.openlocfilehash: b0d384b2d75b6eedc431b4b352de8915b7e8097d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 168b1e11896ac29cf1d34037b1a28d7421fcfcc3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471531"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061455"
 ---
 # <a name="high-availability-for-sql-server-containers"></a>Hochverfügbarkeit für SQL Server-Container
 

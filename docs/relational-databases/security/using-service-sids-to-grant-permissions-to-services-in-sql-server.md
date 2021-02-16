@@ -8,12 +8,12 @@ ms.date: 05/02/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.openlocfilehash: b7d5336bd6f4ad37fba6cf44865d49721b3cbb80
-ms.sourcegitcommit: 0b400bb99033f4b836549cb11124a1f1630850a1
+ms.openlocfilehash: 9d0c008c3fa5df37ddb2658607d1966a3e1b3164
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "99978809"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077534"
 ---
 # <a name="using-service-sids-to-grant-permissions-to-services-in-sql-server"></a>Verwenden von Dienst-SIDs zum Erteilen von Berechtigungen für Dienste in SQL Server
 
