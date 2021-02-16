@@ -13,12 +13,12 @@ author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: genemi
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 74e4df5fc33b90ae9e455d566b41e6eae71408ac
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 45540a538982f75033f35ad759782317983dc958
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99187788"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100071814"
 ---
 # <a name="nondeterministic-conversion-of-literal-date-strings-into-date-values"></a>Nicht deterministische Konvertierung von Datumsliteralen in DATE-Werte
 
@@ -60,7 +60,7 @@ SL_Polish
 
 SL_Croatian
 2018-10-28
-**_/
+***/
 ```
 
 
@@ -69,7 +69,7 @@ SL_Croatian
 
 - `SET DATEFORMAT dmy;`
 
-Das voranstehende _ *dmy**-Format besagt, dass die Beispieldatumszeichenfolge '01-03-2018' als _der erste Tag im März des Jahres 2018_ interpretiert wird.
+Das voranstehende **dmy**-Format besagt, dass z. B. die Datumszeichenfolge '01-03-2018' so interpretiert wird, dass sie _den ersten Tag im März im Jahr 2018_ bedeutet.
 
 Wenn stattdessen **mdy** angegeben wird, würde die gleiche Zeichenfolge '01-03-2018' _den dritten Tag im Januar 2018_ bedeuten.
 
@@ -115,10 +115,10 @@ MDY-Interpretation-of-input-format
 
 YMD-Interpretation--?--NotGuaranteed
 2018-12-09
-**_/
+***/
 ```
 
-Im vorherigen Codebeispiel weist das letzte Beispiel keine Übereinstimmung zwischen dem Format _ *ymd** und der Eingabezeichenfolge auf. Der dritte Knoten der Eingabezeichenfolge stellt einen Zahlenwert dar, der für einen Tag zu groß ist. Bei solchen Nichtübereinstimmungen garantiert Microsoft nicht den Ausgabewert.
+Im vorhergehenden Codebeispiel weist das letzte Beispiel eine Nichtübereinstimmung zwischen dem Format **ymd** und der Eingabezeichenfolge auf. Der dritte Knoten der Eingabezeichenfolge stellt einen Zahlenwert dar, der für einen Tag zu groß ist. Bei solchen Nichtübereinstimmungen garantiert Microsoft nicht den Ausgabewert.
 
 #### <a name="convert-offers-explicit-codes-for-_deterministic_-control-of-date-formats"></a>CONVERT bietet explizite Codes für die _deterministische_ Steuerung von Datumsformaten.
 

@@ -12,12 +12,12 @@ author: cawrites
 ms.author: chadam
 manager: erikre
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: c7d64fdbc557f5b985d27818847091f7eea1816f
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 1bcb05458c8e8792975606382e7a1cd24de628a3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641661"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338488"
 ---
 # <a name="analysis-services-with-always-on-availability-groups"></a>Analysis Services mit Always On-Verfügbarkeitsgruppen
 

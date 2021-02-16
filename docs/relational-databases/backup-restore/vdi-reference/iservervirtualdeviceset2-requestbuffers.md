@@ -9,12 +9,12 @@ ms.technology: backup-restore
 ms.topic: reference
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 50a99b29c5bc9e814f669f925115da0c8619c632
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: ddbafcb7c9389fbe26252e341a9d73056a9c1ee8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96128854"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347062"
 ---
 # <a name="iservervirtualdeviceset2requestbuffers-vdi"></a>IServerVirtualDeviceSet2::RequestBuffers (VDI)
 

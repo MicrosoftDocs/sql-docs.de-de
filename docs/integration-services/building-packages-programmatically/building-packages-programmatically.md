@@ -11,12 +11,12 @@ ms.topic: reference
 ms.assetid: 7474b1f4-7607-4f28-a6fd-67f7db1dd3f8
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 464bc971ca52c1363366ff439bcc5c51f32d5065
-ms.sourcegitcommit: 827ad02375793090fa8fee63cc372d130f11393f
+ms.openlocfilehash: daf54aa01dcea6d5c63fba21a3b4ffaf61f2cdd9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89480768"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351013"
 ---
 # <a name="building-packages-programmatically"></a>Programmgesteuertes Erstellen von Paketen
 

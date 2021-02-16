@@ -5,12 +5,12 @@ ms.technology: linux
 ms.topic: include
 ms.date: 06/22/2020
 ms.author: vanto
-ms.openlocfilehash: 9117ad52cbe1875a80ab129cc45f4f0512563e3e
-ms.sourcegitcommit: 2991ad5324601c8618739915aec9b184a8a49c74
+ms.openlocfilehash: 0b73bba1694e7ef90ada6ce1e44a197ffa751234
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97351206"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063823"
 ---
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 

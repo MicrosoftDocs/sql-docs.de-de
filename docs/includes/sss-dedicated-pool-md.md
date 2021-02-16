@@ -4,11 +4,11 @@ ms.service: sql
 ms.topic: include
 ms.date: 11/05/2020
 ms.author: nipejic
-ms.openlocfilehash: 174c861a888daa9120f104a0ef6f6150285fa3ab
-ms.sourcegitcommit: ab68925e9869e6cf5b39efdb415ecc8e8f5b08fc
+ms.openlocfilehash: efc96e45c03b0890219355a33f47f4a410c7e8f7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93417420"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070680"
 ---
 Dedizierter SQL-Pool

@@ -20,12 +20,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 01/12/2021
-ms.openlocfilehash: d4ad86b8ce46e39f0143f72badca4926bc0d50b2
-ms.sourcegitcommit: 0b400bb99033f4b836549cb11124a1f1630850a1
+ms.openlocfilehash: 9d6eebebb411c4d3939de8dd09b094b245efc1d2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "99978624"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355338"
 ---
 # <a name="certificate-management-sql-server-configuration-manager"></a>Zertifikatverwaltung (SQL Server-Konfigurations-Manager)
 

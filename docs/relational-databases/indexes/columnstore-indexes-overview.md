@@ -19,17 +19,17 @@ ms.assetid: f98af4a5-4523-43b1-be8d-1b03c3217839
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: c7b30279b49a21bbc50492b5a17224fe42d0b335
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: f4ac369f42fccd251cffb5b06f3603f8349f857a
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171232"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100351226"
 ---
 # <a name="columnstore-indexes-overview"></a>Columnstore-Indizes: Übersicht
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-Columnstore-Indizes stellen den Standard für das Speichern und Abfragen großer Data Warehousing-Faktentabellen dar. Dieser Index verwendet spaltenbasierte Datenspeicherung und Abfrageverarbeitung, um eine bis zu zehnmal höhere Abfrageleistung im Data Warehouse im Vergleich zur herkömmlichen zeilenorientierten Speicherung zu erzielen. Sie können im Vergleich zur unkomprimierten Datengröße außerdem eine bis zu 10-mal höhere Datenkomprimierung erzielen. Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1 ermöglichen Columnstore-Indizes die operative Analyse und bieten damit die Möglichkeit, leistungsfähige Echtzeitanalysen von Transaktionsarbeitsauslastungen durchzuführen.  
+Columnstore-Indizes stellen den Standard für das Speichern und Abfragen großer Data Warehousing-Faktentabellen dar. Dieser Index verwendet spaltenbasierte Datenspeicherung und Abfrageverarbeitung, um eine bis zu zehnmal höhere Abfrageleistung im Data Warehouse im Vergleich zur herkömmlichen zeilenorientierten Speicherung zu erzielen. Sie können im Vergleich zur unkomprimierten Datengröße außerdem eine bis zu 10-mal höhere Datenkomprimierung erzielen. Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1 ermöglichen Columnstore-Indizes die operative Analyse und bieten damit die Möglichkeit, leistungsfähige Echtzeitanalysen von Transaktionsarbeitsauslastungen durchzuführen.  
   
 Erfahren Sie mehr über ähnliche Szenarien:  
   
@@ -60,11 +60,11 @@ Der Zustand einer Zeilengruppe, aus der alle Daten gelöscht wurden, ändert sic
 
 > [!TIP]
 > Zu viele kleine Zeilengruppen verschlechtern die Qualität des Columnstore-Index. Bis [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] ist ein Neuorganisierungsvorgang erforderlich, um kleinere COMPRESSED-Zeilengruppen zusammenzuführen. Dabei wird eine interne Schwellenwertrichtlinie eingehalten, die bestimmt, wie gelöschte Zeilen entfernt und die komprimierten Zeilengruppen kombiniert werden.    
-> Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] wird ebenfalls ein Hintergrundvorgang durchgeführt, um COMPRESSED-Zeilengruppen zusammenzuführen, aus denen viele Zeilen gelöscht wurden.     
+> Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] wird ebenfalls ein Hintergrundvorgang durchgeführt, um COMPRESSED-Zeilengruppen zusammenzuführen, aus denen viele Zeilen gelöscht wurden.     
 > Nachdem kleinere Zeilengruppen zusammengeführt wurden, sollte sich die Indexqualität verbessern. 
 
 > [!NOTE]
-> Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] wird der Tupelverschiebungsvorgang von einem Mergetask im Hintergrund unterstützt, der automatisch kleinere OPEN-Deltazeilengruppen komprimiert, die für einen bestimmten Zeitraum vorhanden waren (wie durch einen internen Schwellenwert festgelegt), oder COMPRESSED-Zeilengruppen mergt, aus denen eine große Anzahl von Zeilen gelöscht wurde. Dies verbessert die Qualität des Columnstore-Index im Lauf der Zeit.         
+> Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] wird der Tupelverschiebungsvorgang von einem Mergetask im Hintergrund unterstützt, der automatisch kleinere OPEN-Deltazeilengruppen komprimiert, die für einen bestimmten Zeitraum vorhanden waren (wie durch einen internen Schwellenwert festgelegt), oder COMPRESSED-Zeilengruppen mergt, aus denen eine große Anzahl von Zeilen gelöscht wurde. Dies verbessert die Qualität des Columnstore-Index im Lauf der Zeit.         
 
 #### <a name="column-segment"></a>Spaltensegment
 Ein Spaltensegment ist eine Spalte mit Daten aus der Zeilengruppe.  
@@ -91,7 +91,7 @@ Wenn eine Deltazeilengruppe komprimiert wurde, ändert sich der Zustand der vorh
 Weitere Informationen zu Zeilengruppenzuständen finden Sie unter [sys.dm_db_column_store_row_group_physical_stats (Transact-SQL)](../../relational-databases/system-dynamic-management-views/sys-dm-db-column-store-row-group-physical-stats-transact-sql.md). 
 
 > [!NOTE]
-> Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] wird der Tupelverschiebungsvorgang von einem Mergetask im Hintergrund unterstützt, der automatisch kleinere OPEN-Deltazeilengruppen komprimiert, die für einen bestimmten Zeitraum vorhanden waren (wie durch einen internen Schwellenwert festgelegt), oder COMPRESSED-Zeilengruppen mergt, aus denen eine große Anzahl von Zeilen gelöscht wurde. Dies verbessert die Qualität des Columnstore-Index im Lauf der Zeit.         
+> Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] wird der Tupelverschiebungsvorgang von einem Mergetask im Hintergrund unterstützt, der automatisch kleinere OPEN-Deltazeilengruppen komprimiert, die für einen bestimmten Zeitraum vorhanden waren (wie durch einen internen Schwellenwert festgelegt), oder COMPRESSED-Zeilengruppen mergt, aus denen eine große Anzahl von Zeilen gelöscht wurde. Dies verbessert die Qualität des Columnstore-Index im Lauf der Zeit.         
   
 #### <a name="deltastore"></a>Deltastore
 Ein Columnstore-Index kann mehr als eine Deltazeilengruppe haben. Alle Deltazeilengruppen zusammen werden als „Deltastore“ bezeichnet.   
@@ -109,7 +109,7 @@ Ein nicht gruppierter Columnstore-Index ermöglicht operative Echtzeitanalyse, b
 Die Batchmodusausführung ist eine Methode zur Abfrageverarbeitung, die zum gleichzeitigen Abfragen mehrerer Zeilen verwendet wird. Die Batchmodusausführung ist eng in das Columnstore-Speicherformat integriert und für dieses optimiert. Die Batchmodusausführung wird auch als *vektorbasierte* oder *vektorisierte* Ausführung bezeichnet. Abfragen von Columnstore-Indizes verwenden die Batchmodusausführung, die die Abfrageleistung in der Regel um das Zwei- bis Vierfache steigert. Weitere Informationen finden Sie im [Handbuch zur Architektur der Abfrageverarbeitung](../query-processing-architecture-guide.md#execution-modes). 
   
 ##  <a name="why-should-i-use-a-columnstore-index"></a><a name="benefits"></a> Warum sollte ich einen Columnstore-Index verwenden?  
-Ein Columnstore-Index kann eine sehr hohe Datenkomprimierung bieten, normalerweise etwa zehnfach. Dadurch werden die Speicherkosten für ein Data Warehouse erheblich reduziert. Für Analysezwecke bietet der Columnstore-Index eine weitaus bessere Leistung als ein B-Strukturindex. Columnstore-Indizes stellen das bevorzugte Datenspeicherformat für Data Warehouse- und Analyseworkloads dar. Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]können Sie Columnstore-Indizes für Echtzeitanalysen Ihrer Betriebsarbeitsauslastung verwenden.  
+Ein Columnstore-Index kann eine sehr hohe Datenkomprimierung bieten, normalerweise etwa zehnfach. Dadurch werden die Speicherkosten für ein Data Warehouse erheblich reduziert. Für Analysezwecke bietet der Columnstore-Index eine weitaus bessere Leistung als ein B-Strukturindex. Columnstore-Indizes stellen das bevorzugte Datenspeicherformat für Data Warehouse- und Analyseworkloads dar. Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]können Sie Columnstore-Indizes für Echtzeitanalysen Ihrer Betriebsarbeitsauslastung verwenden.  
   
 Gründe für die hohe Geschwindigkeit von Columnstore-Indizes:  
   
@@ -134,9 +134,9 @@ Rowstore-Indizes eignen sich am besten für Abfragen, die Daten bei der Suche na
 Columnstore-Indizes ermöglichen große Leistungsvorteile bei Analyseabfragen, die große Mengen von Daten durchsuchen, insbesondere bei umfangreichen Tabellen. Verwenden Sie Columnstore-Indizes für Data Warehouse- und Analyseworkloads, insbesondere für Faktentabellen, da diese eher Scans ganzer Tabellen als Suchvorgänge in Tabellen erfordern.  
   
 ### <a name="can-i-combine-rowstore-and-columnstore-on-the-same-table"></a>Können Rowstore und Columnstore in der gleichen Tabelle kombiniert werden?  
-Ja. Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]können Sie einen aktualisierbaren, nicht gruppierten Columnstore-Index für eine Rowstore-Tabelle erstellen. Der Columnstore-Index speichert eine Kopie der ausgewählten Spalten, sodass zusätzlicher Speicherplatz benötigt wird. Allerdings werden die ausgewählten Daten im Durchschnitt um das Zehnfache komprimiert. So können Sie Analysen im Columnstore-Index und Transaktionen im Rowstore-Index zur gleichen Zeit ausführen. Der Columnstore wird aktualisiert, wenn sich Daten in der Rowstore-Tabelle ändern, daher arbeiten beide Indizes mit den gleichen Daten.  
+Ja. Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]können Sie einen aktualisierbaren, nicht gruppierten Columnstore-Index für eine Rowstore-Tabelle erstellen. Der Columnstore-Index speichert eine Kopie der ausgewählten Spalten, sodass zusätzlicher Speicherplatz benötigt wird. Allerdings werden die ausgewählten Daten im Durchschnitt um das Zehnfache komprimiert. So können Sie Analysen im Columnstore-Index und Transaktionen im Rowstore-Index zur gleichen Zeit ausführen. Der Columnstore wird aktualisiert, wenn sich Daten in der Rowstore-Tabelle ändern, daher arbeiten beide Indizes mit den gleichen Daten.  
   
-Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] können Sie mindestens einen nicht gruppierten Rowstore-Index auf einem Columnstore-Index haben und auf dem zugrunde liegenden Columnstore effiziente Suchen in Tabellen durchführen. Auch weitere Optionen werden dadurch verfügbar. Beispielsweise können Sie eine Primärschlüsseleinschränkung durchsetzen, indem Sie eine UNIQUE-Bedingung auf die Rowstore-Tabelle anwenden. Da ein nicht eindeutiger Wert nicht in die Rowstore-Tabelle eingefügt werden kann, kann [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] den Wert nicht in den Columnstore einfügen.  
+Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] können Sie mindestens einen nicht gruppierten Rowstore-Index auf einem Columnstore-Index haben und auf dem zugrunde liegenden Columnstore effiziente Suchen in Tabellen durchführen. Auch weitere Optionen werden dadurch verfügbar. Beispielsweise können Sie eine Primärschlüsseleinschränkung durchsetzen, indem Sie eine UNIQUE-Bedingung auf die Rowstore-Tabelle anwenden. Da ein nicht eindeutiger Wert nicht in die Rowstore-Tabelle eingefügt werden kann, kann [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] den Wert nicht in den Columnstore einfügen.  
   
 ## <a name="metadata"></a>Metadaten  
 Alle Spalten in einem Columnstore-Index werden in den Metadaten als eingeschlossene Spalten gespeichert. Der Columnstore-Index hat keine Schlüsselspalten.  
@@ -205,11 +205,11 @@ Beim Erstellen einer Tabelle mit der `CREATE TABLE`-Anweisung können Sie die Ta
   
 |Aufgabe|Referenzthemen|Notizen|  
 |----------|----------------------|-----------|  
-|Erstellen einer Tabelle als Columnstore.|[CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md)|Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]können Sie die Tabelle als gruppierten Columnstore-Index erstellen. Sie müssen nicht zuerst eine Rowstore-Tabelle erstellen, die Sie dann in Columnstore konvertieren.|  
-|Erstellen Sie eine In-Memory-Tabelle mit einem Columnstore-Index.|[CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md)|Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]können Sie eine speicheroptimierte Tabelle mit einem Columnstore-Index erstellen. Der Columnstore-Index kann auch nach dem Erstellen der Tabelle mit der `ALTER TABLE ADD INDEX`-Syntax hinzugefügt werden.|  
+|Erstellen einer Tabelle als Columnstore.|[CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md)|Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]können Sie die Tabelle als gruppierten Columnstore-Index erstellen. Sie müssen nicht zuerst eine Rowstore-Tabelle erstellen, die Sie dann in Columnstore konvertieren.|  
+|Erstellen Sie eine In-Memory-Tabelle mit einem Columnstore-Index.|[CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md)|Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]können Sie eine speicheroptimierte Tabelle mit einem Columnstore-Index erstellen. Der Columnstore-Index kann auch nach dem Erstellen der Tabelle mit der `ALTER TABLE ADD INDEX`-Syntax hinzugefügt werden.|  
 |Konvertieren einer Rowstore-Tabelle in eine Columnstore-Tabelle.|[CREATE COLUMNSTORE INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-columnstore-index-transact-sql.md)|Konvertieren Sie einen vorhandenen Heap oder eine binäre Struktur in einen Columnstore. Aus den Beispielen können Sie ersehen, wie vorhandene Indizes und der Name des Index beim Durchführen der Konvertierung behandelt werden.|  
 |Konvertieren einer Columnstore-Tabelle in einen Rowstore.|[CREATE CLUSTERED INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-columnstore-index-transact-sql.md#d-convert-a-columnstore-table-to-a-rowstore-table-with-a-clustered-index) oder [Konvertieren einer Columnstore-Tabelle in einen Rowstore-Heap](../../t-sql/statements/create-columnstore-index-transact-sql.md#e-convert-a-columnstore-table-back-to-a-rowstore-heap) |In der Regel müssen Sie nicht konvertieren, allerdings kann es vorkommen, dass Sie diese Aktion durchführen müssen. Aus den Beispielen ist zu ersehen, wie ein Columnstore in einen Heap oder einen gruppierten Index konvertiert werden kann.|  
-|Erstellen eines Columnstore-Index für eine Rowstore-Tabelle.|[CREATE COLUMNSTORE INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-columnstore-index-transact-sql.md)|Eine Rowstore-Tabelle kann über einen Columnstore-Index verfügen. Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]kann der Columnstore-Index eine Filterbedingung aufweisen. In den Beispielen wird die grundlegende Syntax verwendet.|  
+|Erstellen eines Columnstore-Index für eine Rowstore-Tabelle.|[CREATE COLUMNSTORE INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-columnstore-index-transact-sql.md)|Eine Rowstore-Tabelle kann über einen Columnstore-Index verfügen. Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]kann der Columnstore-Index eine Filterbedingung aufweisen. In den Beispielen wird die grundlegende Syntax verwendet.|  
 |Erstellen leistungsfähiger Indizes für Betriebsanalysen.|[Erste Schritte mit Columnstore für operative Echtzeitanalyse](../../relational-databases/indexes/get-started-with-columnstore-for-real-time-operational-analytics.md)|Beschreibt, wie sich ergänzende Columnstore- und B-Strukturindizes erstellt werden, sodass OLTP-Abfragen die B-Strukturindizes und Analyseabfragen die Columnstore-Indizes verwenden.|  
 |Erstellen leistungsfähiger Columnstore-Indizes für Data Warehousing|[Columnstore-Indizes: Data Warehouse](~/relational-databases/indexes/columnstore-indexes-data-warehouse.md)|Beschreibt, wie B-Strukturindizes für Columnstore-Tabellen verwendet werden können, um leistungsstarke Data Warehousing-Abfragen zu erstellen.|  
 |Verwenden eines B-Strukturindex zum Durchsetzen einer Primärschlüsseleinschränkung für einen Columnstore-Index.|[Columnstore-Indizes: Data Warehouse](~/relational-databases/indexes/columnstore-indexes-data-warehouse.md)|Zeigt, wie B-Struktur- und Columnstore-Indizes kombiniert werden können, um Primärschlüsseleinschränkungen für den Columnstore-Indizes durchzusetzen.|  

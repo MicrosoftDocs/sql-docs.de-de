@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: dcc0a8d3-9d25-4208-8507-a5e65d2a9a15
-ms.openlocfilehash: 617487d27842a6eb2c8844ae6c7ed2aa4e8fadce
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: f635a10d0a1165fb3f657e41147fe023f55d2874
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91785084"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346278"
 ---
 # <a name="configure-rhel-failover-cluster-instance-fci-cluster-for-sql-server"></a>Konfigurieren eines RHEL-FCI-Clusters (Failoverclusterinstanz) für SQL Server
 

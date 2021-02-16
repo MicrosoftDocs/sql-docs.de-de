@@ -9,12 +9,12 @@ ms.technology: backup-restore
 ms.topic: reference
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a70217da1fad6461ee5d20cdc6228f3984c367ff
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: d0b2b89a9ac7415c80927e4cedd28a2530c7c5bc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96128873"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347109"
 ---
 # <a name="iservervirtualdeviceset2getconfiguration-vdi"></a>IServerVirtualDeviceSet2::GetConfiguration (VDI)
 

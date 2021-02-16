@@ -8,12 +8,12 @@ ms.date: 08/28/2017
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: 1b2b852a1c1acecefa3b702bb140d9128d04a212
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: 1839442f20e2a48ed612e42e3c654d9e3255a477
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91784641"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346400"
 ---
 # <a name="failover-cluster-instances---sql-server-on-linux"></a>Failoverclusterinstanzen – SQL Server für Linux
 

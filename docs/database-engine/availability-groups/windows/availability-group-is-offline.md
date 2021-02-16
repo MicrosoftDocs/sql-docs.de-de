@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 093c5208-bf7a-49f4-a546-72b48197cadf
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a0c27e56044476217de8be84181115336a6ff015
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 8a1de6e359fbb74b3d53a4c86851e9c3fdc4570c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766040"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340885"
 ---
 # <a name="always-on-availability-group-is-offline"></a>Always On-Verfügbarkeitsgruppe ist offline
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

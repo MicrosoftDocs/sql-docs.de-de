@@ -1,4 +1,4 @@
-1. **Erstellen Sie auf allen Servern mit SQL Server eine Server-Anmeldung für Pacemaker** . Die folgende Transact-SQL erstellt eine Anmeldung:
+1. **Erstellen Sie auf allen Servern mit SQL Server eine Server-Anmeldung für Pacemaker**. Die folgende Transact-SQL erstellt eine Anmeldung:
 
    ```Transact-SQL
    USE [master]
@@ -10,7 +10,7 @@
 
   Für die Erstellung der Verfügbarkeitsgruppe benötigt der Pacemaker-Benutzer die Berechtigungen ALTER, CONTROL und VIEW DEFINITION für die Verfügbarkeitsgruppe, nachdem diese erstellt wurde, aber bevor ihr irgendwelche Knoten hinzugefügt werden.
 
-1. **Speichern Sie auf allen Servern mit SQL Server die Anmeldeinformationen für die SQL Server-Anmeldung** .
+1. **Speichern Sie auf allen Servern mit SQL Server die Anmeldeinformationen für die SQL Server-Anmeldung**.
 
    ```bash
    echo 'pacemakerLogin' >> ~/pacemaker-passwd

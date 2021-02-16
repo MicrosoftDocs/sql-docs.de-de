@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 57801bcc-4d51-4ffc-8454-b9cb6eddbfe0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9b45f2d2b3bc95315951202440dc7edfdb32f435
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c233940c1ffa016d2f09761480cb1ad697f3fb87
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641740"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355099"
 ---
 # <a name="useful-tools-for-troubleshooting"></a>Hilfreiche Tools für die Problembehandlung
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

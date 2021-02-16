@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER INDEX
 - ALTER_INDEX_TSQL
@@ -47,12 +47,12 @@ ms.assetid: b796c829-ef3a-405c-a784-48286d4fb2b9
 author: pmasl
 ms.author: pelopes
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: f04986f085653957bd685ae0db72a14a109e8079
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 2ec8737d01b52db828dbe95cd1252d8913128c90
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170752"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339317"
 ---
 # <a name="alter-index-transact-sql"></a>ALTER INDEX (Transact-SQL)
 
@@ -293,7 +293,7 @@ LOB_COMPACTION = OFF
 -   REORGANIZE ist für das Verschieben von CLOSED-Delta-Zeilengruppen in komprimierte Zeilengruppen nicht erforderlich. Der im Hintergrund ausgeführte Tupelverschiebungsvorgang (TM, Tuple Mover) wird in bestimmten Zeitabständen reaktiviert, um CLOSED-Delta-Zeilengruppen zu komprimieren. Es wird empfohlen, REORGANIZE zu verwenden, wenn TM im Rückstand ist. Mit REORGANIZE können Zeilengruppen aggressiver komprimiert werden.  
 -   Informationen zum Komprimieren aller OPEN- und CLOSED-Zeilengruppen finden Sie unter der `REORGANIZE WITH (COMPRESS_ALL_ROW_GROUPS)`-Option in diesem Abschnitt.  
   
-Bei Columnstore-Indizes in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] werden mit REORGANIZE die folgenden Optimierungen für eine zusätzliche Defragmentierung online ausgeführt:  
+Bei Columnstore-Indizes in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] werden mit REORGANIZE die folgenden Optimierungen für eine zusätzliche Defragmentierung online ausgeführt:  
   
 -   Es werden Zeilen physisch aus der Zeilengruppe entfernt, wenn mindestens 10 % der Zeilen logisch gelöscht wurden. Die gelöschten Bytes werden auf den physischen Medien freigegeben. Bei einer komprimierten Zeilengruppe mit 1 Million Zeilen, in der beispielsweise 100.000 Zeilen gelöscht wurden, werden von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] die gelöschten Zeilen entfernt, und die Zeilengruppe wird mit 900.000 Zeilen neu komprimiert. Durch das Entfernen gelöschter Zeilen wird Speicherplatz eingespart.  
   
@@ -304,7 +304,7 @@ Bei Columnstore-Indizes in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.
 REORGANIZE WITH ( COMPRESS_ALL_ROW_GROUPS = { ON | **OFF** } )  
  Gilt für Columnstore-Indizes. 
 
- **Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]
+ **Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]
 
 Mit COMPRESS_ALL_ROW_GROUPS kann die Übernahme von OPEN- oder CLOSED-Delta-Zeilengruppen in den Columnstore erzwungen werden. Mit dieser Option ist es nicht notwendig, den Columnstore-Index zum Leeren der Delta-Zeilengruppe neu zu erstellen.  Damit sowie durch die anderen Defragmentierungsfeatures zum Entfernen und Zusammenfügen von Zeilengruppen ist es in den meisten Fällen nicht mehr erforderlich, den Index neu zu erstellen.    
 
@@ -410,7 +410,7 @@ Bei **ON** wird die Statistik pro Partition erstellt. Bei **OFF** wird die Stati
  Bei XML-Indizes oder räumlichen Indizes wird nur `ONLINE = OFF` unterstützt, und wenn ONLINE auf ON festgelegt wird, wird ein Fehler ausgelöst.  
   
 > [!IMPORTANT]
-> Onlineindexvorgänge sind nicht in jeder Edition von [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]verfügbar. Eine Liste der Features, die von den [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Editionen unterstützt werden, finden Sie unter [Editionen und unterstützte Features von [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]](../../sql-server/editions-and-supported-features-for-sql-server-2016.md) und [Editionen und unterstützte Features von SQL Server 2017](../../sql-server/editions-and-components-of-sql-server-2017.md).  
+> Onlineindexvorgänge sind nicht in jeder Edition von [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]verfügbar. Eine Liste der Features, die von den [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Editionen unterstützt werden, finden Sie unter [Editionen und unterstützte Features von [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]](../../sql-server/editions-and-supported-features-for-sql-server-2016.md) und [Editionen und unterstützte Features von SQL Server 2017](../../sql-server/editions-and-components-of-sql-server-2017.md).  
   
  EIN  
  Lang andauernde Sperren werden nicht für die Dauer des Indexvorgangs aufrechterhalten. Während der Hauptphase des Indexvorgangs wird nur eine beabsichtigte freigegebene Sperre für die Quelltabelle aufrechterhalten. Auf diese Weise können Abfragen oder Updates der zugrunde liegenden Tabelle und Indizes fortgesetzt werden. Zu Beginn des Vorgangs wird das Quellobjekt für sehr kurze Zeit mit einer gemeinsamen Sperre (S) belegt. Am Ende des Vorgangs wird für kurze Zeit eine S-Sperre für die Quelle eingerichtet, wenn ein nicht gruppierter Index erstellt wird, oder es wird eine Sch-M-Sperre (Schema Modification, Schemaänderung) eingerichtet, wenn ein gruppierter Index online erstellt oder gelöscht wird oder wenn ein gruppierter oder nicht gruppierter Index neu erstellt wird. ONLINE kann nicht auf ON festgelegt werden, wenn ein Index auf einer lokalen temporären Tabelle erstellt wird.  
@@ -481,7 +481,7 @@ ALLOW_PAGE_LOCKS **=** { **ON** | OFF }
 
  OPTIMIZE_FOR_SEQUENTIAL_KEY = { ON | **OFF** }
 
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]
 
 Gibt an, ob der Konflikt beim Einfügen der letzten Seite optimiert werden soll. Der Standardwert ist OFF. Weitere Informationen finden Sie im Abschnitt [Sequenzielle Schlüssel](./create-index-transact-sql.md#sequential-keys) auf der CREATE INDEX-Seite.
 
@@ -512,7 +512,7 @@ Gibt an, ob der Konflikt beim Einfügen der letzten Seite optimiert werden soll.
   
 COMPRESSION_DELAY **=** { **0** |*Dauer [Minuten]* }  
 
-**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)])  
+**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)])  
   
  DELAY gibt bei einer datenträgerbasierten Tabelle die minimale Anzahl von Minuten an, die eine Deltazeilengruppe im Zustand CLOSED in der Delta-Zeilengruppe verbringen muss, bevor [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sie in die komprimierte Zeilengruppe komprimieren kann. Da Einfügungs- und Aktualisierungszeiten in datenträgerbasierten Tabellen nicht für einzelne Zeilen nachverfolgt werden, wird die Verzögerung in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] auf Delta-Zeilengruppen im CLOSED-Status angewendet.  
   
@@ -835,7 +835,7 @@ CREATE TABLE cci_target (
 CREATE CLUSTERED COLUMNSTORE INDEX idxcci_cci_target ON cci_target;  
 ```  
   
- Mit der TABLOCK-Option können Sie Zeilen parallel einfügen. Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] können der INSERT INTO-Vorgang und die TABLOCK-Option parallel ausgeführt werden.  
+ Mit der TABLOCK-Option können Sie Zeilen parallel einfügen. Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] können der INSERT INTO-Vorgang und die TABLOCK-Option parallel ausgeführt werden.  
   
 ```sql  
 INSERT INTO cci_target WITH (TABLOCK) 
@@ -875,7 +875,7 @@ ALTER INDEX cci_FactInternetSales2 ON FactInternetSales2 REORGANIZE PARTITION = 
 ```  
   
 ### <a name="c-compress-all-open-and-closed-delta-rowgroups-into-the-columnstore"></a>C. Komprimieren aller OPEN- und CLOSED-Delta-Zeilengruppen im Columnstore  
- **Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
+ **Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
   
  Mit dem Befehl REORGANIZE WITH (COMPRESS_ALL_ROW_GROUPS = ON) werden alle OPEN- und CLOSED-Delta-Zeilengruppen als eine komprimierte Zeilengruppe im Columnstore komprimiert. Dadurch wird der Deltastore geleert, und es werden alle Zeilen im Columnstore komprimiert. Dies ist insbesondere nach dem Ausführen einer Vielzahl von Einfügevorgängen nützlich, da die Zeilen bei diesen Vorgängen in einer oder mehreren Delta-Zeilengruppen gespeichert werden.  
   
@@ -893,10 +893,10 @@ ALTER INDEX cci_FactInternetSales2 ON FactInternetSales2 REORGANIZE PARTITION = 
 ### <a name="d-defragment-a-columnstore-index-online"></a>D: Online-Defragmentieren eines Columnstore-Index  
  Gilt nicht für: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] und [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)].  
   
- Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] können Sie mit REORGANIZE mehr tun, als Delta-Zeilengruppen im Columnstore zu komprimieren. Sie können auch eine Onlinedefragmentierung durchführen. Zunächst wird die Größe des Columnstores verringert, indem gelöschte Zeilen physisch entfernt werden, wenn mindestens 10 % der Zeilen in einer Zeilengruppe gelöscht wurden.  Anschließend werden Zeilengruppen zu größeren Zeilengruppen bis maximal 1.024.576 Zeilen pro Zeilengruppe zusammengeführt.  Alle geänderten Zeilengruppen werden erneut komprimiert.  
+ Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] können Sie mit REORGANIZE mehr tun, als Delta-Zeilengruppen im Columnstore zu komprimieren. Sie können auch eine Onlinedefragmentierung durchführen. Zunächst wird die Größe des Columnstores verringert, indem gelöschte Zeilen physisch entfernt werden, wenn mindestens 10 % der Zeilen in einer Zeilengruppe gelöscht wurden.  Anschließend werden Zeilengruppen zu größeren Zeilengruppen bis maximal 1.024.576 Zeilen pro Zeilengruppe zusammengeführt.  Alle geänderten Zeilengruppen werden erneut komprimiert.  
   
 > [!NOTE]
-> Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ist das Neuerstellen eines Columnstore-Index in den meisten Fällen nicht mehr erforderlich, da mit REORGANIZE gelöschte Zeilen physisch entfernt und Zeilengruppen zusammengeführt werden. Mit der Option COMPRESS_ALL_ROW_GROUPS wird die Übernahme aller OPEN- oder CLOSED-Delta-Zeilengruppen in den Columnstore erzwungen. Dies konnte zuvor nur mit einer Neuerstellung ausgeführt werden. REORGANIZE wird online im Hintergrund ausgeführt, wodurch Abfragen parallel dazu erfolgen können.  
+> Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] ist das Neuerstellen eines Columnstore-Index in den meisten Fällen nicht mehr erforderlich, da mit REORGANIZE gelöschte Zeilen physisch entfernt und Zeilengruppen zusammengeführt werden. Mit der Option COMPRESS_ALL_ROW_GROUPS wird die Übernahme aller OPEN- oder CLOSED-Delta-Zeilengruppen in den Columnstore erzwungen. Dies konnte zuvor nur mit einer Neuerstellung ausgeführt werden. REORGANIZE wird online im Hintergrund ausgeführt, wodurch Abfragen parallel dazu erfolgen können.  
   
 ```sql  
 -- Uses AdventureWorks  
@@ -908,7 +908,7 @@ ALTER INDEX cci_FactInternetSales2 ON FactInternetSales2 REORGANIZE;
 Gilt für: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)])   
   
 > [!TIP]
-> Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] wird empfohlen, anstelle von ALTER INDEX REBUILD die Option ALTER INDEX REORGANIZE zu verwenden.  
+> Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] wird empfohlen, anstelle von ALTER INDEX REBUILD die Option ALTER INDEX REORGANIZE zu verwenden.  
   
 > [!NOTE]
 > In [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] und [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] werden mit REORGANIZE nur CLOSED-Zeilengruppen im Columnstore komprimiert. Die einzige Möglichkeit, Defragmentierungsvorgänge auszuführen und die Übernahme aller Delta-Zeilengruppen in den Columnstore zu erzwingen, ist das Neuerstellen des Index.  
@@ -946,7 +946,7 @@ SELECT * FROM sys.column_store_row_groups;
 ### <a name="f-rebuild-a-partition-of-a-clustered-columnstore-index-offline"></a>F. Neuerstellen einer Partition eines gruppierten Columnstore-Index im Offline-Modus  
  **Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)])  
  
- Verwenden Sie ALTER INDEX REBUILD mit der Partitionsoption, um eine Partition eines großen gruppierten Columnstore-Index neu zu erstellen. In diesem Beispiel wird die Partition 12 neu erstellt. Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] wird empfohlen, REBUILD durch REORGANIZE zu ersetzen.  
+ Verwenden Sie ALTER INDEX REBUILD mit der Partitionsoption, um eine Partition eines großen gruppierten Columnstore-Index neu zu erstellen. In diesem Beispiel wird die Partition 12 neu erstellt. Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] wird empfohlen, REBUILD durch REORGANIZE zu ersetzen.  
   
 ```sql  
 ALTER INDEX cci_fact3   

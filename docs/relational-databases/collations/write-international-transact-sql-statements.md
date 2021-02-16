@@ -19,18 +19,18 @@ ms.assetid: f0b10fee-27f7-45fe-aece-ccc3f63bdcdb
 author: stevestein
 ms.author: sstein
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 942e69f127b37fa6caf4ba83605fabdf4a31da38
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8872cf6e593279a282c34868a2f019ac82e5bf01
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97408164"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100339494"
 ---
 # <a name="write-international-transact-sql-statements"></a>Schreiben internationaler Transact-SQL-Anweisungen
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
   Datenbanken und Datenbankanwendungen, die [!INCLUDE[tsql](../../includes/tsql-md.md)] -Anweisungen verwenden, können leichter von einer Sprache in eine andere übertragen werden bzw. unterstützen mehrere Sprachen, wenn die folgenden Richtlinien eingehalten werden:  
 
--   Verwenden Sie ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] eine der folgenden Optionen:
+-   Verwenden Sie ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] eine der folgenden Optionen:
     -   Die Datentypen **char**, **varchar** und **varchar(max)** mit einer für [UTF-8](../../relational-databases/collations/collation-and-unicode-support.md#utf8) aktivierten Sortierung. Dabei werden die Daten mit UTF-8 codiert.
     -   Die Datentypen **nchar**, **nvarchar** und **nvarchar(max)** mit einer für [ergänzende Zeichen (Supplementary Characters, SC)](../../relational-databases/collations/collation-and-unicode-support.md#Supplementary_Characters) aktivierten Sortierung. Dabei werden die Daten mit UTF-16 codiert. Wird eine Sortierung ohne ergänzende Zeichen verwendet, werden die Daten mit UCS-2 codiert.      
 

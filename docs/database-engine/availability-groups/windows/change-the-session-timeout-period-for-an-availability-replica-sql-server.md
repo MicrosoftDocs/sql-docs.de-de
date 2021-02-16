@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e23c6e06-1cd1-4d4a-9bc2-e3e06ab2933d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8241dd2cc68ba477b5f59f39281ed0d57529ffa7
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 8aebb45eb25338a2303e607f1a37a877af999ed8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765983"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343791"
 ---
 # <a name="modify-the-session-timeout-period-for-an-availability-group-replica"></a>Ändern der Sitzungstimeoutperiode für ein Verfügbarkeitsgruppenreplikat
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

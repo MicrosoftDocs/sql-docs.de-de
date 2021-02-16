@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Best Practices [Database Engine]
 author: dzsquared
 ms.author: drskwier
-ms.openlocfilehash: 048fa8d28e32ad73aa9e2a85e217f268fa865a3c
-ms.sourcegitcommit: 5da46e16b2c9710414fe36af9670461fb07555dc
+ms.openlocfilehash: 8c68b60243ec033fff3735901cc4e35134222704
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89285072"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345505"
 ---
 # <a name="database-recovery-model"></a>Datenbank-Wiederherstellungsmodell
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

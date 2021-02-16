@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.assetid: afa8caff-f325-48d9-a8ef-a30beab60389
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ae57df2dfb3aa43f22ebed392b9ac35fd46c5d33
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 4be170149181263e7d904f5f820a9dd50f6d3801
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641405"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347492"
 ---
 # <a name="identify-waits-associated-with-availability-groups"></a>Identifizieren von Wartevorgängen von Verfügbarkeitsgruppen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

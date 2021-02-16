@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 0dedb685-d3a6-4bd6-8afd-58d98853deee
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 0942fa73c29b14ba5b07b305126e4ba70bfa0cb1
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 3784d6262bc8f3fd2653b55970d3915587a68276
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96129918"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346893"
 ---
 # <a name="catalogcleanup_server_log"></a>catalog.cleanup_server_log 
 

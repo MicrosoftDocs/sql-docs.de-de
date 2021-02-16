@@ -16,12 +16,12 @@ ms.assetid: 702359c4-6ca9-42a8-860c-a95a802898a1
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 8bf008b28a130c705eabaebf986b28d7da8cd669
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 591dc50594dbd7ed321188de0a6892e7adf125a8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172232"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341791"
 ---
 # <a name="supported-version--edition-upgrades-sql-server-2016"></a>Unterstützte Versions- und Editionsupgrades in SQL Server 2016
 

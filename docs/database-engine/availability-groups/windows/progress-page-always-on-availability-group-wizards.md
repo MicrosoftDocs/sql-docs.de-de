@@ -15,12 +15,12 @@ f1_keywords:
 ms.assetid: bd3b0306-8384-4120-a1c9-03825f0ae26a
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a331651b92e4781a51de8e03dcfec55797d8723f
-ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
+ms.openlocfilehash: 8656399c063af3b8f0a3a91e8ad85f6af0ef8ac5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98783485"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351048"
 ---
 # <a name="progress-page-always-on-availability-group-wizards"></a>Seite „Status“ (Always On-Verfügbarkeitsgruppen-Assistenten)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

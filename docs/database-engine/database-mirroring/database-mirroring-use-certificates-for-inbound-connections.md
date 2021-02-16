@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5d48bb98-61f0-4b99-8f1a-b53f831d63d0
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 2eb5bd6f4b8b234d8b48b32645ecd18b7734a776
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c1ff8414ef765459bea59af5d158a0d4bdcd6cc7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643368"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349218"
 ---
 # <a name="database-mirroring---use-certificates-for-inbound-connections"></a>Datenbankspiegelung: Verwenden von Zertifikaten für eingehende Verbindungen
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

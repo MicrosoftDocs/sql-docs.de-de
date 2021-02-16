@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: c27555c4-208c-43c8-b511-a4de2a8a3344
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: beb42ea05e69b9c806b0a0306b91e9c333bdd631
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 00270115679b886a0f4d657487a91e845c56da3f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91725957"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352119"
 ---
 # <a name="data-flow-task"></a>Datenflusstask
 

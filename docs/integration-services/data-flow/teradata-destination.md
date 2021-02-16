@@ -10,12 +10,12 @@ ms.technology: integration-services
 ms.topic: conceptual
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 158184ea961aa8938bb0eb2b6f94890dd1eddbfa
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 83453cfa36ae4b2e9f6596acc7206162c2b82b76
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489870"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342269"
 ---
 # <a name="teradata-destination"></a>Teradata-Ziel
 

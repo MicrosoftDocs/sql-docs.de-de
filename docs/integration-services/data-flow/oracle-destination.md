@@ -10,12 +10,12 @@ ms.technology: integration-services
 ms.topic: conceptual
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: a4221c4200d8b56a1ce1b848e024ef8f135d9129
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 3b28d420d66e55565c882c9fa2ae41f86e1c0764
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489780"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343236"
 ---
 # <a name="oracle-destination"></a>Oracle-Ziel
 

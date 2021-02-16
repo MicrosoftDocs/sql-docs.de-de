@@ -11,12 +11,12 @@ ms.prod: sql
 ms.technology: backup-restore
 ms.prod_service: backup-restore
 ms.assetid: ''
-ms.openlocfilehash: d658358fa8e09b967b921d162b8f443032a16ddc
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 66b4277674c1144a716e5153a9fa062f988c75c0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96129204"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340208"
 ---
 # <a name="quickstart-backup-and-restore-a-sql-server-database-on-premises"></a>Schnellstart: Lokales Sichern und Wiederherstellen einer SQL Server-Datenbank
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

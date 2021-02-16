@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 7329a575-be29-46e0-abc6-1344db37920c
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 6611528bd3d5b12f01ecebb48e63ee3b01d73215
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 78db0b212c0aaf2706f54478b59039b68ced9ec1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641979"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352289"
 ---
 # <a name="set-up-an-encrypted-mirror-database"></a>Einrichten einer verschlüsselten Spiegeldatenbank
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

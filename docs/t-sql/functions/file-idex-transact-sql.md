@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 7532fea5-ee5e-4edd-b98b-111a7ba56c8e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fc1a9dce88f13e9f1e0933ec19ef6d6b8ddeecd0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 70fe6ce44d8c3a9d1d4aefd1b53070eae767e5c6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99198443"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350843"
 ---
 # <a name="file_idex-transact-sql"></a>FILE_IDEX (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

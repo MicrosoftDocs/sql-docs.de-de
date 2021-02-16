@@ -12,12 +12,12 @@ ms.assetid: 07a305b1-4110-42f0-b7aa-28a4e32e912a
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: be7a5c94f5de63f343a8c529f8a824e13177923c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 234f6233e2f6b024e6ad74a82f403e3df7db9a05
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97467301"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340184"
 ---
 # <a name="overview-of-key-management-for-always-encrypted"></a>Übersicht über die Schlüsselverwaltung für Always Encrypted
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]
@@ -27,10 +27,10 @@ ms.locfileid: "97467301"
 
 Wenn es um Always Encrypted-Schlüssel und Schlüsselmanagement geht, ist es wichtig, den Unterschied zwischen den tatsächlichen kryptografischen Schlüsseln und den Metadatenobjekten zu verstehen, die die Schlüssel *beschreiben* . Die Begriffe **Spaltenverschlüsselungsschlüssel** und **Spaltenhauptschlüssel** beziehen sich auf die tatsächlichen kryptografischen Schlüssel, während sich die Begriffe **Spaltenverschlüsselungsschlüssel-Metadaten** und **Spaltenhauptschlüssel-Metadaten** auf die *Beschreibungen* der Always Encrypted-Schlüssel in der Datenbank beziehen.
 
-- ***Spaltenverschlüsselungsschlüssel** sind Inhaltsverschlüsselungsschlüssel, die zum Verschlüsseln von Daten verwendet werden. Wie der Name schon sagt, verwenden Sie die Spaltenverschlüsselungsschlüssel zum Verschlüsseln von Daten in Datenbankspalten. Je nach den Anforderungen Ihrer Anwendung können Sie eine oder mehrere Spalten mit demselben Spaltenverschlüsselungsschlüssel verschlüsseln oder mehrere Spaltenverschlüsselungsschlüssel verwenden. Die Spaltenverschlüsselungsschlüssel sind selbst verschlüsselt, und nur die verschlüsselten Werte der Spaltenverschlüsselungsschlüssel werden in der Datenbank gespeichert (als Teil der Spaltenverschlüsselungsschlüssel-Metadaten). Die Spaltenverschlüsselungsschlüssel-Metadaten werden in den Katalogsichten [sys.column_encryption_keys (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-encryption-keys-transact-sql.md) und [sys.column_encryption_key_values (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-encryption-key-values-transact-sql.md) gespeichert. Spaltenverschlüsselungsschlüssel, die mit dem AES-256-Algorithmus verwendet werden, sind 256 Bit lang.
+- ***Spaltenverschlüsselungsschlüssel*** sind Inhaltsverschlüsselungsschlüssel, die zum Verschlüsseln von Daten verwendet werden. Wie der Name schon sagt, verwenden Sie die Spaltenverschlüsselungsschlüssel zum Verschlüsseln von Daten in Datenbankspalten. Je nach den Anforderungen Ihrer Anwendung können Sie eine oder mehrere Spalten mit demselben Spaltenverschlüsselungsschlüssel verschlüsseln oder mehrere Spaltenverschlüsselungsschlüssel verwenden. Die Spaltenverschlüsselungsschlüssel sind selbst verschlüsselt, und nur die verschlüsselten Werte der Spaltenverschlüsselungsschlüssel werden in der Datenbank gespeichert (als Teil der Spaltenverschlüsselungsschlüssel-Metadaten). Die Spaltenverschlüsselungsschlüssel-Metadaten werden in den Katalogsichten [sys.column_encryption_keys (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-encryption-keys-transact-sql.md) und [sys.column_encryption_key_values (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-encryption-key-values-transact-sql.md) gespeichert. Spaltenverschlüsselungsschlüssel, die mit dem AES-256-Algorithmus verwendet werden, sind 256 Bit lang.
 
 
-- _*_Spaltenhauptschlüssel_*_ sind Schlüsselschutzschlüssel, die zur Verschlüsselung von Spaltenverschlüsselungsschlüsseln verwendet werden. Spaltenhauptschlüssel müssen in einem vertrauenswürdigen Schlüsselspeicher, wie z.B. Windows-Zertifikatspeicher, Azure Key Vault oder einem Hardwaresicherheitsmodul gespeichert werden. Die Datenbank enthält nur Metadaten zu Spaltenhauptschlüsseln (der Schlüsselspeichertyp und -ort). Die Spaltenhauptschlüssel-Metadaten befinden sich in der Katalogsicht [sys.column_master_keys (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-master-keys-transact-sql.md) .  
+- ***Spaltenhauptschlüssel*** sind Schlüsselschutzschlüssel, die zur Verschlüsselung von Spaltenverschlüsselungsschlüsseln verwendet werden. Spaltenhauptschlüssel müssen in einem vertrauenswürdigen Schlüsselspeicher, wie z.B. Windows-Zertifikatspeicher, Azure Key Vault oder einem Hardwaresicherheitsmodul gespeichert werden. Die Datenbank enthält nur Metadaten zu Spaltenhauptschlüsseln (der Schlüsselspeichertyp und -ort). Die Spaltenhauptschlüssel-Metadaten befinden sich in der Katalogsicht [sys.column_master_keys (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-master-keys-transact-sql.md) .  
 
 Es ist wichtig zu beachten, dass die Schlüsselmetadaten im Datenbanksystem keine Nur-Text-Spaltenhauptschlüssel oder Nur-Text-Spaltenverschlüsselungsschlüssel enthalten. Die Datenbank enthält nur Informationen über den Typ und den Speicherort von Spaltenhauptschlüsseln sowie verschlüsselte Werte von Spaltenverschlüsselungsschlüsseln. Dies bedeutet, dass Nur-Text-Schlüssel dem Datenbanksystem niemals zur Verfügung gestellt werden, wodurch sichergestellt wird, dass das Schützen von Daten mithilfe von Always Encrypted sicher ist, selbst wenn das Datenbanksystem kompromittiert wird. Achten Sie darauf, Ihre Schlüsselverwaltungstools auf einem anderen Computer als dem Computer auszuführen, der Ihre Datenbank hostet, um sicherzustellen, dass das Datenbanksystem keinen Zugriff auf die Nur-Text-Schlüssel erhält. Weitere Informationen hierzu finden Sie im Abschnitt [Sicherheitsüberlegungen für die Schlüsselverwaltung](#security-considerations-for-key-management) weiter unten.
 
@@ -42,7 +42,7 @@ Da die Datenbank nur verschlüsselte Daten (in Always Encrypted geschützte Spal
 
 Der Prozess der Schlüsselverwaltung kann in die folgenden grundlegenden Tasks unterteilt werden:
 
-- _ *Schlüsselbereitstellung**: Erstellen des physischen Schlüssels in einem vertrauenswürdigen Schlüsselspeicher (z. B. im Windows-Zertifikatspeicher, Azure Key Vault oder einem Hardwaresicherheitsmodul), Verschlüsseln von Spaltenverschlüsselungsschlüsseln mithilfe von Spaltenhauptschlüsseln und Erstellen von Metadaten für beide Schlüsseltypen in der Datenbank
+- **Schlüsselbereitstellung** – Erstellen des physischen Schlüssels in einem vertrauenswürdigen Schlüsselspeicher (z.B. im Windows-Zertifikatspeicher, Azure Key Vault oder einem Hardwaresicherheitsmodul), Verschlüsseln von Spaltenverschlüsselungsschlüsseln mithilfe von Spaltenhauptschlüsseln und Erstellen von Metadaten für beide Schlüsseltypen in der Datenbank
 
 - **Schlüsselrotation** – Ersetzen eines vorhandenen Schlüssels mit einem neuen Schlüssel in regelmäßigen Abständen Sie müssen einen Schlüssel möglicherweise rotieren, wenn er kompromittiert wurde, oder um die Richtlinien und Kompatibilitätsbestimmungen Ihrer Organisation einzuhalten, die die Rotation kryptografischer Schlüssel vorschreiben. 
 

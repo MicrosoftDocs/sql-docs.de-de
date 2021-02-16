@@ -20,12 +20,12 @@ ms.assetid: 6ef578bf-8da7-46e0-88b5-e310fc908bb0
 author: stevestein
 ms.author: sstein
 ms.custom: seo-dt-2019
-ms.openlocfilehash: ea8f2b873b8990a00bc61cd8ce45c192feefaaa5
-ms.sourcegitcommit: 4d370399f6f142e25075b3714e5c2ce056b1bfd0
+ms.openlocfilehash: 09738de0caf9b7da5fcf3bec7c413d53d5d46981
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91869417"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100351188"
 ---
 # <a name="linked-servers-database-engine"></a>Verbindungsserver (Datenbank-Engine)
 
@@ -57,7 +57,7 @@ Ein Verbindungsserver kann mit [!INCLUDE[ssManStudioFull](../../includes/ssmanst
   
 Ein *OLE DB-Anbieter* ist eine DLL (Dynamic Link Library), die mit einer bestimmten Datenquelle interagiert und sie verwaltet. Eine *OLE DB-Datenquelle* identifiziert die spezielle Datenbank, auf die über OLE DB zugegriffen werden kann. Obwohl es sich bei Datenquellen, die über Verbindungsserverdefinitionen abgefragt werden, normalerweise um Datenbanken handelt, sind OLE DB-Anbieter für eine Vielzahl von Dateien und Dateiformaten verfügbar. Dazu gehören Textdateien, Kalkulationstabellendaten und die Ergebnisse aus Volltextsuchläufen.  
   
-Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] ist der [Microsoft OLE DB-Treiber für SQL Server (MSOLEDBSQL)](../../connect/oledb/oledb-driver-for-sql-server.md) (PROGID: MSOLEDBSQL) der OLE DB-Standardanbieter. In früheren Versionen war dies der [SQL Server Native Client OLE DB-Anbieter (SQLNCLI)](../../relational-databases/native-client/sql-server-native-client.md) (PROGID: SQLNCLI11).
+Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] ist der [Microsoft OLE DB-Treiber für SQL Server (MSOLEDBSQL)](../../connect/oledb/oledb-driver-for-sql-server.md) (PROGID: MSOLEDBSQL) der OLE DB-Standardanbieter. In früheren Versionen war dies der [SQL Server Native Client OLE DB-Anbieter (SQLNCLI)](../../relational-databases/native-client/sql-server-native-client.md) (PROGID: SQLNCLI11).
   
 > [!NOTE]  
 > [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sind jedoch so entworfen, dass sie mit jedem OLE DB-Anbieter zusammenarbeiten, der die erforderlichen OLE DB-Schnittstellen implementiert. Getestet wurde [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] jedoch für den OLE DB-Standardanbieter.  
@@ -86,13 +86,13 @@ Beim Einrichten eines Verbindungsservers sollten die Verbindungsinformationen un
   
 Sie können gespeicherte Prozeduren und Katalogsichten zum Verwalten von Verbindungsserverdefinitionen verwenden:  
   
--   Erstellen Sie eine Verbindungsserverdefinition, indem Sie **sp_addlinkedserver**ausführen.  
+-   Erstellen Sie eine Verbindungsserverdefinition, indem Sie **sp_addlinkedserver** ausführen.  
   
 -   Zeigen Sie Informationen zu den in einer bestimmten Instanz von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] definierten Verbindungsservern an, indem Sie eine Abfrage der **sys.servers** -Systemkatalogsichten ausführen.  
   
--   Löschen Sie eine Verbindungsserverdefinition, indem Sie **sp_dropserver**ausführen. Sie können mit dieser gespeicherten Prozedur auch einen Remoteserver entfernen.  
+-   Löschen Sie eine Verbindungsserverdefinition, indem Sie **sp_dropserver** ausführen. Sie können mit dieser gespeicherten Prozedur auch einen Remoteserver entfernen.  
   
-Sie können Verbindungsserver auch mithilfe von [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]definieren. Klicken Sie im Objekt-Explorer mit der rechten Maustaste auf **Serverobjekte**, klicken Sie auf **Neu**, und klicken Sie dann auf **Verbindungsserver**. Sie können eine Verbindungsserverdefinition löschen, indem Sie mit der rechten Maustaste auf den Namen des Verbindungsservers und dann auf **Löschen**klicken.  
+Sie können Verbindungsserver auch mithilfe von [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]definieren. Klicken Sie im Objekt-Explorer mit der rechten Maustaste auf **Serverobjekte**, klicken Sie auf **Neu**, und klicken Sie dann auf **Verbindungsserver**. Sie können eine Verbindungsserverdefinition löschen, indem Sie mit der rechten Maustaste auf den Namen des Verbindungsservers und dann auf **Löschen** klicken.  
   
  Wenn Sie eine verteilte Abfrage auf einem Verbindungsserver ausführen, sollten Sie einen vollqualifizierten vierteiligen Tabellennamen für jede Datenquelle einschließen, die abgefragt werden soll. Dieser vierteilige Name muss dieses Format haben: _linked\_server\_name.catalog_ **.** _schema_ **.** _object\_name_.  
   

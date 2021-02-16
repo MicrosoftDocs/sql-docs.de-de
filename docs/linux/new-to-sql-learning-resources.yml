@@ -9,12 +9,12 @@ metadata:
   author: MashaMSFT
   ms.author: mathoma
   ms.date: 07/25/2020
-  ms.openlocfilehash: 605a22e6f82b40fe88efa6ea41bbd8c1d6b0df81
-  ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+  ms.openlocfilehash: fcab56382250151c1ebb57724e4f117a69d6ab5c
+  ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/11/2021
-  ms.locfileid: "98099283"
+  ms.lasthandoff: 02/10/2021
+  ms.locfileid: "100078721"
 landingContent:
 - title: 'Modul 1: Grundlagen zu SQL Server'
   linkLists:

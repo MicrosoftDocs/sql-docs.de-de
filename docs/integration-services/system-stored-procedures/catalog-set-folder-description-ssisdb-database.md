@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: 802416f6-5177-4db5-bca5-976dec5faf53
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 18e7cb22f94e33328ed08968052d03b0261c73df
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 60ed9b6b57b933170404ba5674c931444a29f909
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96129638"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100273141"
 ---
 # <a name="catalogset_folder_description-ssisdb-database"></a>catalog.set_folder_description (SSISDB-Datenbank)
 

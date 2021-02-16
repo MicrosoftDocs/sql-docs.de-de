@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: faa1eedd-db14-41e5-8e58-8f0f6f561e42
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 33586839b3efb0c8c93786a2e020228a44dc6bbc
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: dc0bb9e5238e490689b9ffa57836d2db0666e75b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91726682"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338435"
 ---
 # <a name="dqs-cleansing-connection-manager"></a>Verbindungs-Manager für DQS-Bereinigung
 

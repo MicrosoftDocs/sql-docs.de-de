@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: ef3b0325-d8e9-472b-bf11-7d3efa6312ff
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: d1c9e003b76cfbf6e563fc41a47e4b9aabfeecf0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4c7cf1e3c23eacbabfd59ba3b8948740dc1a0543
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88430062"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342191"
 ---
 # <a name="catalogmove_project---ssisdb-database"></a>catalog.move_project (SSISDB-Datenbank)
 

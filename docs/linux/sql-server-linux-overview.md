@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: 9dcc6a90-0add-42c2-815b-862e4e2a21ac
-ms.openlocfilehash: 504dd2ca2e8d1e2527a95830106fc152aec4ec77
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 4890633022a7888a21f14ae57c6f6db3934b7ce9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237638"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100273051"
 ---
 # <a name="sql-server-on-linux"></a>SQL Server unter Linux
 

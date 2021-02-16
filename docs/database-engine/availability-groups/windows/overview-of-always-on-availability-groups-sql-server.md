@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 04fd9d95-4624-420f-a3be-1794309b3a47
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b30a3004ccf0d5bafa94ae9c601db287a5eef288
-ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
+ms.openlocfilehash: 28b5723194757d09e735de1e75c64c1073f48de3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98783317"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337942"
 ---
 # <a name="what-is-an-always-on-availability-group"></a>Was ist eine Always On-Verfügbarkeitsgruppe?
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

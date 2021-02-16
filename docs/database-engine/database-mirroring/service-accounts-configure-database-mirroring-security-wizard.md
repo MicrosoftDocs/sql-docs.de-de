@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: d58d8f93-7888-4d66-af4d-969ef6a2dbee
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: e3493525e67edcaf75ca6bbe7e3f3ef087ea71c0
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 57f9d5989074e748fa76acdf3104571090cdb32c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641291"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352305"
 ---
 # <a name="configure-database-mirroring-security-wizard-service-accounts"></a>Assistent zum Konfigurieren der Sicherheit für die Datenbankspiegelung: Dienstkonten
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 57b23cce5d223c20d5072c6b0133d3deffa2e9a8
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: eb93b2cc00350322228fe7528a79b66f94753eec
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99198158"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348854"
 ---
 # <a name="mssqlserver_3013"></a>MSSQLSERVER_3013
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

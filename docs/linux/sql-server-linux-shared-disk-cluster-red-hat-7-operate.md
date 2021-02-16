@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: 075ab7d8-8b68-43f3-9303-bbdf00b54db1
-ms.openlocfilehash: 639e88a96ac639d20a6190bffeed75d46495aa51
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: 272bc33012e37c58f6a3f8ea0ed51f1c216d716f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91785077"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346277"
 ---
 # <a name="operate-rhel-failover-cluster-instance-fci-for-sql-server"></a>Ausführen einer RHEL-Failoverclusterinstanz für SQL Server
 
@@ -41,10 +41,10 @@ Weitere Informationen zur Clusterkonfiguration, den Optionen für Ressourcen-Age
 
 ## <a name="failover-cluster-manually"></a><a name = "failManual"></a>Durchführen eines manuellen Clusterfailovers
 
-Der Befehl `resource move` erstellt eine Einschränkung, die die Ressource zwingt, auf dem Zielknoten zu starten.  Nachdem der Befehl `move` ausgeführt wurde, entfernt die ausführende Ressource `clear` die Einschränkung, sodass die Ressource erneut verschoben oder ein automatisches Failover für die Ressource durchgeführt werden kann. 
+Der Befehl `resource move` erstellt eine Einschränkung, die die Ressource zwingt, auf dem Zielknoten zu starten.    Nachdem der Befehl `move` ausgeführt wurde, entfernt die ausführende Ressource `clear` die Einschränkung, sodass die Ressource erneut verschoben oder ein automatisches Failover für die Ressource durchgeführt werden kann. 
 
 ```bash
-sudo pcs resource move <sqlResourceName> <targetNodeName>  
+sudo pcs resource move <sqlResourceName> <targetNodeName>  
 sudo pcs resource clear <sqlResourceName> 
 ```
 
@@ -60,7 +60,7 @@ sudo pcs resource clear mssqlha
 Anzeigen des aktuellen Clusterstatus:
 
 ```bash
-sudo pcs status  
+sudo pcs status  
 ```
 
 Anzeigen des aktuellen Status von Cluster und Ressourcen:
@@ -183,7 +183,7 @@ Die Protokolle des Ressourcen-Agents können Sie unter `/var/log/cluster/corosyn
     Im folgenden Beispiel wird der Knoten **vm3** dem Cluster hinzugefügt.
 
     ```bash
-    sudo pcs    cluster auth  
+    sudo pcs    cluster auth  
     sudo pcs    cluster start 
     ```
 
@@ -192,7 +192,7 @@ Die Protokolle des Ressourcen-Agents können Sie unter `/var/log/cluster/corosyn
 Führen Sie den folgenden Befehl aus, um einen Knoten aus einem Cluster zu entfernen:
 
 ```bash
-sudo pcs    cluster node remove <nodeName>  
+sudo pcs    cluster node remove <nodeName>  
 ```
 
 ## <a name="change-the-frequency-of-sqlservr-resource-monitoring-interval"></a>Ändern der Häufigkeit der SQL Server-Ressourcenüberwachung
@@ -226,7 +226,7 @@ Eine fehlerfreie Pacemaker-Quorumausgabe könnte wie folgt aussehen:
 
 ```
 Cluster name: MyAppSQL 
-Last updated: Wed Oct 31 12:00:00 2016  Last change: Wed Oct 31 11:00:00 2016 by root via crm_resource on sqlvmnode1 
+Last updated: Wed Oct 31 12:00:00 2016  Last change: Wed Oct 31 11:00:00 2016 by root via crm_resource on sqlvmnode1 
 Stack: corosync 
 Current DC: sqlvmnode1  (version 1.1.13-10.el7_2.4-44eb2dd) - partition with quorum 
 3 nodes and 1 resource configured 

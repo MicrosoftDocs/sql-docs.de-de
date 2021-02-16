@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 1f717ad6-f67b-4980-9397-577ecb0e5789
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 79171692156d2abc360265b25d57a1cc0e28d3e2
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 5f25709500f370b6083584b1321937b0484310bf
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99200489"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100342586"
 ---
 # <a name="some--any-transact-sql"></a>SOME | ANY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -117,7 +117,7 @@ IF
     ON Sales.SalesOrderDetail.ProductID = Production.Product.ProductID   
     WHERE SalesOrderID = @OrderID  
    )  
-PRINT 'At least one item for this order can't be manufactured in specified number of days.'  
+PRINT 'At least one item for this order can''t be manufactured in specified number of days.'
 ELSE   
 PRINT 'All items for this order can be manufactured in the specified number of days or less.' ;  
   

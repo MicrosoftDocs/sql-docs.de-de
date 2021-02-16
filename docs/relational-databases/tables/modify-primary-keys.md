@@ -15,12 +15,12 @@ ms.assetid: 8e2a15ba-1cd1-4408-b860-16c3ee37d635
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 3873b6327080f0d34152c61c7519cebd6712c069
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 510e2857c040c13fa51af9844761c3f5c38e4889
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99179190"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354114"
 ---
 # <a name="modify-primary-keys"></a>Ändern von Primärschlüsseln
 

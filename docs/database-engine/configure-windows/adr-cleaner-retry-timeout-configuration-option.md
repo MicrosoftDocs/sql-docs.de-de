@@ -11,12 +11,12 @@ helpviewer_keywords:
 - ADR cleaner retry timeout (min)
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 25d7df032b0606a324d98d14258cbbd40602bae7
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 05502bbf760b0f8aa18d81739ce89e19e92397cb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85698157"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347470"
 ---
 # <a name="adr-cleaner-retry-timeout-min-configuration-option"></a>Timeout für die Wiederholung der ADR-Bereinigung (Serverkonfigurationsoption)
 

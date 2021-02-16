@@ -10,12 +10,12 @@ ms.topic: reference
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 6a2d56121276e0a485d0f7a95f45c16c2a87d866
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ef31edf367eacd41135bb4db9a58cd8ba4950de8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481281"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346722"
 ---
 # <a name="system-objects-that-support-extended-events"></a>Systemobjekte, die erweiterte Ereignisse unterstützen
 

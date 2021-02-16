@@ -9,12 +9,12 @@ ms.technology: backup-restore
 ms.topic: reference
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 367d398160daa8b9a9da5bfc3a3285cf61b6d085
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: bac15898440ec2afad21b6487888290eeee8df8e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96128995"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347294"
 ---
 # <a name="iclientvirtualdevicecompletecommand-vdi"></a>IClientVirtualDevice::CompleteCommand (VDI)
 

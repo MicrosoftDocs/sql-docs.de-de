@@ -30,12 +30,12 @@ helpviewer_keywords:
 ms.assetid: 65e17889-371f-4951-9a7e-9932b2d0dcde
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: cee8ccf62e9ec8a6497d3515e85b7aeff8f0b479
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8ac0f913188b23b85548f87a4f458d1c2b754d15
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88457135"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347452"
 ---
 # <a name="integration-services-ssis-logging"></a>Integration Services-Protokollierung (SSIS)
 
@@ -148,7 +148,7 @@ ms.locfileid: "88457135"
  Sie sollten den Namen und GUID der neuen Pakete ändern, um diese Mehrdeutigkeit zu umgehen. Sie können in [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]mithilfe des Eigenschaftenfensters die GUID in der **ID** -Eigenschaft neu generieren und den Wert der **Name** -Eigenschaft aktualisieren. Sie haben auch die Möglichkeit, den GUID und Namen programmgesteuert oder mit dem Hilfsprogramm **dtutil** zu ändern. Weitere Informationen finden Sie unter [Festlegen von Paketeigenschaften](../../integration-services/set-package-properties.md) und [dtutil (Hilfsprogramm)](../../integration-services/dtutil-utility.md).  
   
 ### <a name="parent-logging-options"></a>Übergeordnete Protokollierungsoptionen  
- Häufig entsprechen die Protokollierungsoptionen von Tasks und For-Schleifen-, Foreach-Schleifen- und Sequenz-Containern denen des Paketcontainers oder eines übergeordneten Containers. In diesem Fall können Sie diese so konfigurieren, dass sie die Protokollierungsoptionen von ihrem übergeordneten Container erben. In einem For-Schleifen-Container, der den Task "SQL ausführen" enthält, kann z. B. der Task "SQL ausführen" die Protokollierungsoptionen verwenden, die für den For-Schleifen-Container festgelegt werden. Legen Sie zum Verwenden der übergeordneten Protokollierungsoptionen die LoggingMode-Eigenschaft des Containers auf **UseParentSetting**fest. Sie können diese Eigenschaft im Fenster **Eigenschaften** von [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] oder im Dialogfeld **SSIS-Protokolle konfigurieren** in [!INCLUDE[ssIS](../../includes/ssis-md.md)] -Designer festlegen.  
+ Häufig entsprechen die Protokollierungsoptionen von Tasks und For-Schleifen-, Foreach-Schleifen- und Sequenz-Containern denen des Paketcontainers oder eines übergeordneten Containers. In diesem Fall können Sie diese so konfigurieren, dass sie die Protokollierungsoptionen von ihrem übergeordneten Container erben. In einem For-Schleifen-Container, der den Task "SQL ausführen" enthält, kann z. B. der Task "SQL ausführen" die Protokollierungsoptionen verwenden, die für den For-Schleifen-Container festgelegt werden. Legen Sie zum Verwenden der übergeordneten Protokollierungsoptionen die LoggingMode-Eigenschaft des Containers auf **UseParentSetting** fest. Sie können diese Eigenschaft im Fenster **Eigenschaften** von [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] oder im Dialogfeld **SSIS-Protokolle konfigurieren** in [!INCLUDE[ssIS](../../includes/ssis-md.md)] -Designer festlegen.  
   
 ### <a name="logging-templates"></a>Protokollierungsvorlagen  
  Im Dialogfeld **SSIS-Protokolle konfigurieren** können Sie auch häufig verwendete Protokollierungskonfigurationen als Vorlagen erstellen und speichern und die Vorlagen dann in mehreren Paketen verwenden. So ist es einfach, eine konsequente Protokollierungsstrategie für mehrere Pakete anzuwenden und Protokolleinstellungen für Pakete zu ändern, indem die Vorlagen aktualisiert und dann angewendet werden. Die Vorlagen werden als XML-Dateien gespeichert.  
@@ -386,7 +386,7 @@ ms.locfileid: "88457135"
 ## <a name="enable-logging-for-package-execution-on-the-ssis-server"></a><a name="server_logging"></a> Aktivieren Sie die Protokollierung for Package Execution on the SSIS Server
   In diesem Thema wird beschrieben, wie Sie den Protokolliergrad für ein Paket festlegen oder ändern, wenn Sie ein auf dem [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Server bereitgestelltes Paket ausführen. Der Protokolliergrad, den Sie beim Ausführen des Pakets festlegen, überschreibt die Paketprotokollierung, die Sie zur Entwurfszeit in [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]konfigurieren. Weitere Informationen finden Sie unter [Aktivieren der Paketprotokollierung in SQL Server Data Tools](#ssdt) .  
   
- Sie können nun in den **Servereigenschaften**von SQL Server in der Eigenschaft **Serverprotokolliergrad** einen Standardwert für den serverweiten Protokolliergrad festlegen. Sie können sich zwischen einem der in diesem Thema beschriebenen integrierten Protokolliergrade oder einem vorhandenen benutzerdefinierten Protokolliergrad entscheiden. Der ausgewählte Protokolliergrad wird standardmäßig auf alle im SSIS-Katalog bereitgestellten Pakete angewendet. Er gilt standardmäßig auch für SQL Agent-Auftragsschritte, die ein SSIS-Paket ausführen.  
+ Sie können nun in den **Servereigenschaften** von SQL Server in der Eigenschaft **Serverprotokolliergrad** einen Standardwert für den serverweiten Protokolliergrad festlegen. Sie können sich zwischen einem der in diesem Thema beschriebenen integrierten Protokolliergrade oder einem vorhandenen benutzerdefinierten Protokolliergrad entscheiden. Der ausgewählte Protokolliergrad wird standardmäßig auf alle im SSIS-Katalog bereitgestellten Pakete angewendet. Er gilt standardmäßig auch für SQL Agent-Auftragsschritte, die ein SSIS-Paket ausführen.  
   
  Sie können den Protokolliergrad für ein einzelnes Paket auch mithilfe einer der folgenden Methoden angeben. In diesem Thema wird die erste Methode behandelt.  
   
@@ -400,11 +400,11 @@ ms.locfileid: "88457135"
   
 1.  Navigieren Sie in [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]zum Paket im Objekt-Explorer.  
   
-2.  Klicken Sie mit der rechten Maustaste auf das Paket, und wählen Sie **Ausführen**aus.  
+2.  Klicken Sie mit der rechten Maustaste auf das Paket, und wählen Sie **Ausführen** aus.  
   
 3.  Wählen Sie im Dialogfeld **Paket ausführen** die Registerkarte **Erweitert** aus.  
   
-4.  Wählen Sie unter **Protokolliergrad**den Protokolliergrad aus. Dieses Thema enthält eine Beschreibung der verfügbaren Werte.  
+4.  Wählen Sie unter **Protokolliergrad** den Protokolliergrad aus. Dieses Thema enthält eine Beschreibung der verfügbaren Werte.  
   
 5.  Nehmen Sie ggf. weitere Einstellungen für die Paketkonfiguration vor, und klicken Sie anschließend auf **OK** , um das Paket auszuführen.  
   
@@ -416,14 +416,14 @@ ms.locfileid: "88457135"
 |Keine|Die Protokollierung ist deaktiviert. Nur der Status der Ausführung von Paketen wird protokolliert.|  
 |Basic|Alle Ereignisse werden protokolliert, außer benutzerdefinierten und Diagnose-Ereignissen. Dies ist der Standardwert.|  
 |RuntimeLineage|Sammelt die Daten, die zum Nachverfolgen von Informationen über die Datenherkunft im Datenfluss benötigt werden. Sie können diese Herkunftsinformationen analysieren, um die Herkunftsbeziehung zwischen Tasks zu bestimmen. Unabhängige Softwareentwickler (ISVs) und Entwickler können mit diesen Informationen benutzerdefinierte Herkunftszuordnungstools erstellen.|  
-|Leistung|Nur Leistungsstatistiken sowie OnError- und OnWarning-Ereignisse werden protokolliert.<br /><br /> In dem Bericht **Ausführungsleistung** wird die aktive Zeit und die Gesamtzeit für Datenflusskomponenten des Pakets angezeigt. Diese Informationen sind verfügbar, wenn der Protokolliergrad der letzten Paketausführung auf **Leistung** oder **Ausführlich**festgelegt wurde. Weitere Informationen finden Sie unter [Berichte für den Integration Services-Server](../../integration-services/performance/monitor-running-packages-and-other-operations.md#reports).<br /><br /> In der [catalog.execution_component_phases](../../integration-services/system-views/catalog-execution-component-phases.md) -Sicht werden die Start- und Beendigungszeiten der Datenflusskomponenten für jede Ausführungsphase angezeigt. In dieser Sicht werden die Informationen für diese Komponenten nur angezeigt, wenn der Protokolliergrad der Paketausführung auf **Leistung** oder **Ausführlich**festgelegt ist.|  
+|Leistung|Nur Leistungsstatistiken sowie OnError- und OnWarning-Ereignisse werden protokolliert.<br /><br /> In dem Bericht **Ausführungsleistung** wird die aktive Zeit und die Gesamtzeit für Datenflusskomponenten des Pakets angezeigt. Diese Informationen sind verfügbar, wenn der Protokolliergrad der letzten Paketausführung auf **Leistung** oder **Ausführlich** festgelegt wurde. Weitere Informationen finden Sie unter [Berichte für den Integration Services-Server](../../integration-services/performance/monitor-running-packages-and-other-operations.md#reports).<br /><br /> In der [catalog.execution_component_phases](../../integration-services/system-views/catalog-execution-component-phases.md) -Sicht werden die Start- und Beendigungszeiten der Datenflusskomponenten für jede Ausführungsphase angezeigt. In dieser Sicht werden die Informationen für diese Komponenten nur angezeigt, wenn der Protokolliergrad der Paketausführung auf **Leistung** oder **Ausführlich** festgelegt ist.|  
 |Ausführlich|Alle Ereignisse werden protokolliert, einschließlich benutzerdefinierter Ereignisse und Diagnose-Ereignissen.<br /><br /> Zu benutzerdefinierten Ereignissen zählen auch die von [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Tasks protokollierten Ereignisse. Weitere Informationen zu benutzerdefinierten Ereignissen finden Sie unter [Benutzerdefinierte Meldungen für die Protokollierung](#custom_messages).<br /><br /> Ein Beispiel für ein Diagnoseereignis ist das **DiagnosticEx** -Ereignis. Immer wenn ein „Paket ausführen“-Task ein untergeordnetes Paket ausführt, erfasst dieses Ereignis die an untergeordnete Pakete übergebenen Parameterwerte.<br /><br /> Das **DiagnosticEx** -Ereignis hilft Ihnen auch dabei, die Namen der Spalten abzurufen, in denen Fehler auf Zeilenebene auftreten. Dieses Ereignis schreibt eine Herkunftszuordnung für den Datenfluss in das Protokoll. Sie können den Spaltennamen dann in dieser Herkunftszuordnung nachschlagen, und zwar anhand des von einer Fehlerausgabe erfassten Spaltenbezeichners.  Weitere Informationen finden Sie unter [Fehlerbehandlung in Daten](../../integration-services/data-flow/error-handling-in-data.md).<br /><br /> Der Wert der Meldungsspalte für **DiagnosticEx** ist XML-Text. Fragen Sie zum Anzeigen des Meldungstexts für eine Paketausführung die Sicht [catalog.operation_messages &#40;SSISDB-Datenbank&#41;](../../integration-services/system-views/catalog-operation-messages-ssisdb-database.md) ab. Beachten Sie, dass Leerraum in der XML-Ausgabe beim **DiagnosticEx** -Ereignis nicht beibehalten wird, um die Größe des Protokolls zu verringern. Kopieren Sie das Protokoll in einen XML-Editor wie z.B. Visual Studio, der XML-Formatierung und Syntaxhervorhebung unterstützt, um die Lesbarkeit zu verbessern.<br /><br /> In der [catalog.execution_data_statistics](../../integration-services/system-views/catalog-execution-data-statistics.md) -Sicht wird eine Zeile angezeigt, sobald eine Datenflusskomponente Daten zur Paketausführung an eine Downstreamkomponente sendet. Der Protokolliergrad muss auf **Ausführlich** festgelegt werden, um diese Informationen in der Sicht zu erfassen.|  
   
 ### <a name="create-and-manage-customized-logging-levels-by-using-the-customized-logging-level-management-dialog-box"></a>Erstellen und Verwalten benutzerdefinierter Protokolliergrade mithilfe des Dialogfelds „Customized Logging Level Management“ (Verwaltung benutzerdefinierter Protokolliergrade)  
  Sie können benutzerdefinierte Protokolliergrade erstellen, die nur die von Ihnen gewünschten Statistiken und Ereignisse sammeln. Optional können Sie auch den Kontext von Ereignissen erfassen, der Variablenwerte, Verbindungszeichenfolgen und Komponenteneigenschaften umfasst. Wenn Sie ein Paket ausführen, können Sie überall dort einen benutzerdefinierten Protokolliergrad auswählen, wo Sie auch einen integrierten Protokolliergrad auswählen können.  
   
 > [!TIP]  
->  Die **IncludeInDebugDump** -Eigenschaft der Variablen muss auf **TRUE**festgelegt werden, damit die Werte der Paketvariablen erfasst werden.  
+>  Die **IncludeInDebugDump** -Eigenschaft der Variablen muss auf **TRUE** festgelegt werden, damit die Werte der Paketvariablen erfasst werden.  
   
 1.  Klicken Sie in [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]mit der rechten Maustaste auf die SSISDB-Datenbank, und wählen Sie **Customized Logging Level** (Angepasster Protokolliergrad) aus, um das Dialogfeld **Verwaltung des angepassten Protokolliergrads** zu öffnen. So erstellen und verwalten Sie angepasste Protokolliergrade. Die Liste **Angepasste Protokolliergrade** enthält alle vorhandenen angepassten Protokolliergrade.  
   

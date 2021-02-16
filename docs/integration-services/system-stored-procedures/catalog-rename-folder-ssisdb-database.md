@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: 336ab467-c32f-4d2e-a79c-174dc6fab75e
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 65b913576b68e5c84037eac57205b23b81d53f95
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: b2734385dfb968c32bdc0a7482cd8af455e33031
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96129763"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346505"
 ---
 # <a name="catalogrename_folder-ssisdb-database"></a>catalog.rename_folder (SSISDB-Datenbank)
 

@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 9702e90c-fada-4978-a473-1b1423017d80
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: cd1ad3437f02b0c0df834d3a16365140d9638798
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d8801c1a4f7387f1ff5bc815b45897d5a4f68fdb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88487744"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340782"
 ---
 # <a name="integration-services-roles-ssis-service"></a>Integration Services-Rollen (SSIS-Dienst)
 
@@ -69,7 +69,7 @@ ms.locfileid: "88487744"
 -   Die **ownersid** -Spalte enthält den eindeutigen Sicherheitsbezeichner des Benutzers, der das Paket erstellte. In dieser Spalte wird der Besitzer des Pakets definiert.  
   
 ### <a name="permissions"></a>Berechtigungen  
- Standardmäßig gelten die Berechtigungen der festen Rollen auf Datenbankebene **db_ssisadmin** und **db_ssisoperator** und die eindeutige Sicherheits-ID des Benutzers, der das Paket erstellt hat, für die Leserolle für Pakete, und die Berechtigungen der **db_ssisadmin** -Rolle und die eindeutige Sicherheits-ID des Benutzers, der das Paket erstellt hat, gelten für die Schreibrolle. Ein Benutzer muss Mitglied der Rolle **db_ssisadmin**, **db_ssisltduser**oder **db_ssisoperator** sein, um über Lesezugriff auf das Paket zu verfügen. Ein Benutzer muss Mitglied der **db_ssisadmin** -Rolle sein, um über Schreibzugriff zu verfügen.  
+ Standardmäßig gelten die Berechtigungen der festen Rollen auf Datenbankebene **db_ssisadmin** und **db_ssisoperator** und die eindeutige Sicherheits-ID des Benutzers, der das Paket erstellt hat, für die Leserolle für Pakete, und die Berechtigungen der **db_ssisadmin** -Rolle und die eindeutige Sicherheits-ID des Benutzers, der das Paket erstellt hat, gelten für die Schreibrolle. Ein Benutzer muss Mitglied der Rolle **db_ssisadmin**, **db_ssisltduser** oder **db_ssisoperator** sein, um über Lesezugriff auf das Paket zu verfügen. Ein Benutzer muss Mitglied der **db_ssisadmin** -Rolle sein, um über Schreibzugriff zu verfügen.  
   
 ### <a name="access-to-packages"></a>Zugriff auf Pakete  
  Die festen Rollen auf Datenbankebene arbeiten mit benutzerdefinierten Rollen zusammen. Die benutzerdefinierten Rollen sind die Rollen, die Sie in [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] erstellen und dann zum Zuweisen von Berechtigungen zu Paketen verwenden. Um auf ein Paket zuzugreifen, muss ein Benutzer Mitglied der benutzerdefinierten Rolle und der entsprechenden festen [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Datenbankrolle sein. Wenn die Benutzer z.B. Mitglieder der benutzerdefinierten **AuditUsers** -Rolle sind, die einem Paket zugewiesen ist, müssen sie auch Mitglieder der **db_ssisadmin**-, **db_ssisltduser**- oder **db_ssisoperator** -Rolle sein, um Lesezugriff auf das Paket zu erhalten.  
@@ -138,7 +138,7 @@ ms.locfileid: "88487744"
 ## <a name="package-roles-dialog-box-ui-reference"></a><a name="roles_dialog"></a> Benutzeroberflächenverweis zum Dialogfeld „Paketrollen“
   Verwenden Sie das Dialogfeld **Paketrollen** , das in [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]verfügbar ist, um die Rollen auf Datenbankebene anzugeben, die Lesezugriff auf das Paket besitzen, sowie die Rollen auf Datenbankebene, die Schreibzugriff auf das Paket besitzen. Rollen auf Datenbankebene gelten nur für Pakete, die in der -Datenbank [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] **msdb** gespeichert sind.  
   
- Die im Dialogfeld aufgeführten Rollen sind die aktuellen Rollen der **msdb** -Systemdatenbank. Wenn keine Rollen ausgewählt sind, gelten die [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Standardrollen. Standardmäßig enthält die Leserolle **db_ssisadmin**, **db_ssisoperator**und den Benutzer, der das Paket erstellt hat. Ein Benutzer, der Mitglied einer dieser Rollen ist oder die Pakete erstellt hat, kann Pakete aufzählen, anzeigen, exportieren und ausführen. Standardmäßig schließt die Schreibrolle **db_ssisadmin** und den Benutzer ein, der das Paket erstellt hat. Ein Benutzer, der Mitglied dieser Rolle ist, und der Benutzer, der die Pakete erstellt hat, kann Pakete importieren, löschen und ändern.  
+ Die im Dialogfeld aufgeführten Rollen sind die aktuellen Rollen der **msdb** -Systemdatenbank. Wenn keine Rollen ausgewählt sind, gelten die [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] -Standardrollen. Standardmäßig enthält die Leserolle **db_ssisadmin**, **db_ssisoperator** und den Benutzer, der das Paket erstellt hat. Ein Benutzer, der Mitglied einer dieser Rollen ist oder die Pakete erstellt hat, kann Pakete aufzählen, anzeigen, exportieren und ausführen. Standardmäßig schließt die Schreibrolle **db_ssisadmin** und den Benutzer ein, der das Paket erstellt hat. Ein Benutzer, der Mitglied dieser Rolle ist, und der Benutzer, der die Pakete erstellt hat, kann Pakete importieren, löschen und ändern.  
   
  Die **ownersid** -Spalte in der **sysssispackages** -Tabelle enthält die eindeutige Sicherheits-ID des Benutzers, der das Paket erstellt hat.  
   

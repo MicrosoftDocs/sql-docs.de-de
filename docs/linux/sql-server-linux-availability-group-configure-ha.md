@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: ''
-ms.openlocfilehash: 03c9c90f1c9382c85141853ff19cc5d76b40f093
-ms.sourcegitcommit: 22102f25db5ccca39aebf96bc861c92f2367c77a
+ms.openlocfilehash: 7313fbc789b37cf326d55566c1f087f80b4929df
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92115936"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100351942"
 ---
 # <a name="configure-sql-server-always-on-availability-group-for-high-availability-on-linux"></a>Konfigurieren von SQL Server-Always On-Verfügbarkeitsgruppen für Hochverfügbarkeit unter Linux
 
@@ -178,8 +178,8 @@ Führen Sie **nur eines** der folgenden Skripte aus:
          FAILOVER_MODE = EXTERNAL,
          SEEDING_MODE = AUTOMATIC
       ),
-      N'node2' WITH ( 
-         ENDPOINT_URL = N'tcp://node2:5022', 
+      N'node2' WITH ( 
+         ENDPOINT_URL = N'tcp://node2:5022', 
          AVAILABILITY_MODE = SYNCHRONOUS_COMMIT,
          FAILOVER_MODE = EXTERNAL,
          SEEDING_MODE = AUTOMATIC
@@ -211,7 +211,7 @@ ALTER AVAILABILITY GROUP [ag1] GRANT CREATE ANY DATABASE;
 [!INCLUDE [Create Post](../includes/ss-linux-cluster-availability-group-create-post.md)]
 
 >[!IMPORTANT]
->Nach dem Erstellen der Verfügbarkeitsgruppe müssen Sie für Hochverfügbarkeit die Integration in eine Clustertechnologie wie Pacemaker konfigurieren. Ab [!INCLUDE [SQL Server version](../includes/sssqlv14-md.md)] ist das Einrichten eines Clusters für eine Leseskalierungskonfiguration mit Verfügbarkeitsgruppen nicht erforderlich.
+>Nach dem Erstellen der Verfügbarkeitsgruppe müssen Sie für Hochverfügbarkeit die Integration in eine Clustertechnologie wie Pacemaker konfigurieren. Ab [!INCLUDE [SQL Server version](../includes/sssql17-md.md)] ist das Einrichten eines Clusters für eine Leseskalierungskonfiguration mit Verfügbarkeitsgruppen nicht erforderlich.
 
 Wenn Sie die Schritte in diesem Dokument befolgt haben, verfügen Sie über eine Verfügbarkeitsgruppe, die noch nicht gruppiert ist. Der nächste Schritt besteht darin, den Cluster hinzuzufügen. Diese Konfiguration gilt für Leseskalierungs-/Lastenausgleichsszenarios und ist für die Hochverfügbarkeit nicht abgeschlossen. Für Hochverfügbarkeit müssen Sie die Verfügbarkeitsgruppe als Clusterressource hinzufügen. Anweisungen finden Sie unter [Nächste Schritte](#next-steps). 
 

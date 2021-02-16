@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bdc92038-3720-4795-8a5c-79b963f2c952
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 074aa791a20eed06241aef1087f5ac355f8ea493
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: fba6ab0ff6c58228f702983b6338c2bd9965e5e7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96123705"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338438"
 ---
 # <a name="cache-connection-manager"></a>Cacheverbindungs-Manager
 

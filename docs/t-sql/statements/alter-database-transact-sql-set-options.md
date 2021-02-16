@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -31,12 +31,12 @@ ms.assetid: f76fbd84-df59-4404-806b-8ecb4497c9cc
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||=azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||=azuresqldb-mi-current
-ms.openlocfilehash: d02a4199775c519602e88573c7fbca72c1e8f9a9
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 37ea2f4896d68f4ae5a47b14025d54a344febdc0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170482"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100016315"
 ---
 # <a name="alter-database-set-options-transact-sql"></a>ALTER DATABASE SET-Optionen (Transact-SQL)
 
@@ -327,9 +327,9 @@ CURRENT
 Führt die Aktion in der aktuellen Datenbank aus. `CURRENT` wird nicht in allen Kontexten für alle Optionen unterstützt. Wenn `CURRENT` einen Fehler verursacht, geben Sie den Datenbanknamen an.
 
 **\<accelerated_database_recovery> ::=**      
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
-Aktiviert die [schnellere Datenbankwiederherstellung](../../relational-databases/accelerated-database-recovery-management.md) (Accelerated Database Recovery, ADR) für jede Datenbank. Die Standardeinstellung für ADR in [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] ist „OFF“. Mit dieser Syntax verfügen Sie über die Option, eine bestimmte Dateigruppe für die Daten des persistenten Versionsspeichers (PVS) festzulegen. Wenn keine Dateigruppe angegeben wird, wird der PVS in der PRIMARY-Dateigruppe gespeichert. Beispiele und weitere Informationen finden Sie unter [Schnellere Datenbankwiederherstellung](../../relational-databases/accelerated-database-recovery-management.md).
+Aktiviert die [schnellere Datenbankwiederherstellung](../../relational-databases/accelerated-database-recovery-management.md) (Accelerated Database Recovery, ADR) für jede Datenbank. Die Standardeinstellung für ADR in [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] ist „OFF“. Mit dieser Syntax verfügen Sie über die Option, eine bestimmte Dateigruppe für die Daten des persistenten Versionsspeichers (PVS) festzulegen. Wenn keine Dateigruppe angegeben wird, wird der PVS in der PRIMARY-Dateigruppe gespeichert. Beispiele und weitere Informationen finden Sie unter [Schnellere Datenbankwiederherstellung](../../relational-databases/accelerated-database-recovery-management.md).
 
 **\<auto_option> ::=**      
 Steuert automatische Optionen.
@@ -432,7 +432,7 @@ Sie können den Status dieser Option ermitteln, indem Sie die Spalte `is_auto_up
 Weitere Informationen dazu, wann synchrone bzw. asynchrone Statistikupdates verwendet werden sollten, finden Sie im Abschnitt „Statistikoptionen“ unter [Statistiken](../../relational-databases/statistics/statistics.md#statistics-options).
 
 <a name="auto_tuning"></a> **\<automatic_tuning_option> ::=**      
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)])
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)])
 
 Aktiviert bzw. deaktiviert die Option `FORCE_LAST_GOOD_PLAN` für die [automatische Optimierung](../../relational-databases/automatic-tuning/automatic-tuning.md).
 
@@ -557,12 +557,12 @@ OFF
 Legt fest, dass die Datenbank nicht verschlüsselt wird.
 
 SUSPEND     
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])     
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])     
 
 Kann verwendet werden, um den Verschlüsselungsscan anzuhalten, nachdem TDE aktiviert oder deaktiviert wurde oder der Verschlüsselungsschlüssel geändert wurde.
 
 RESUME     
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
 Kann verwendet werden, um einen zuvor angehaltenen Verschlüsselungsscan fortzusetzen.
 
@@ -738,7 +738,7 @@ Ein Windows-kompatibler Verzeichnisname. Dieser Name sollte für alle Verzeichni
 Siehe [ALTER DATABASE SET HADR](../../t-sql/statements/alter-database-transact-sql-set-hadr.md).
 
 **\<mixed_page_allocation_option> ::=**      
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)])
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)])
 
 Steuert, ob die Datenbank die ersten Seiten mit einem gemischten Block für die ersten acht Seiten einer Tabelle oder eines Index erstellen kann.
 
@@ -764,7 +764,7 @@ FORCED
 Die aktuelle Einstellung dieser Option kann mithilfe der Spalte `is_parameterization_forced column` in der [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)-Katalogsicht ermittelt werden.
 
 <a name="query-store"></a> **\<query_store_options> ::=**      
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)])
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)])
 
 ON | **OFF** [ ( FORCED )  ] | CLEAR [ ALL ]     
 Überprüft, ob der Abfragespeicher in dieser Datenbank aktiviert ist, und steuert außerdem das Entfernen des Inhalts des Abfragespeichers. Weitere Informationen finden Sie unter [Verwendungsszenarios für den Abfragespeicher](../../relational-databases/performance/query-store-usage-scenarios.md).
@@ -773,7 +773,7 @@ EIN
 Aktiviert den Abfragespeicher.
 
 OFF [ ( FORCED ) ]      
-Deaktiviert den Abfragespeicher. OFF ist der Standardwert. FORCED ist optional. FORCED bricht alle Hintergrundaufgaben, die gerade im Abfragespeicher ausgeführt werden, ab und überspringt die synchrone Leerung, wenn der Abfragespeicher deaktiviert wird. Bewirkt, dass der Abfragespeicher so schnell wie möglich heruntergefahren wird. FORCED gilt für [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 CU14, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU21, [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU6 und höhere Builds.
+Deaktiviert den Abfragespeicher. OFF ist der Standardwert. FORCED ist optional. FORCED bricht alle Hintergrundaufgaben, die gerade im Abfragespeicher ausgeführt werden, ab und überspringt die synchrone Leerung, wenn der Abfragespeicher deaktiviert wird. Bewirkt, dass der Abfragespeicher so schnell wie möglich heruntergefahren wird. FORCED gilt für [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU14, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU21, [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU6 und höhere Builds.
 
 > [!NOTE]  
 > In [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] mit einer Einzeldatenbank oder einem Pool für elastische Datenbanken kann der Abfragespeicher nicht deaktiviert werden. Beim Ausführen von `ALTER DATABASE [database] SET QUERY_STORE = OFF` wird die Warnung `'QUERY_STORE=OFF' is not supported in this version of SQL Server.` zurückgegeben. 
@@ -797,7 +797,7 @@ DATA_FLUSH_INTERVAL_SECONDS
 Bestimmt die Häufigkeit, mit der in den Abfragespeicher geschriebene Daten auf Datenträger gespeichert werden. Um die Leistung zu optimieren, werden durch den Abfragespeicher gesammelte Daten asynchron auf den Datenträger geschrieben. Die Häufigkeit, mit der diese asynchrone Übertragung stattfindet, wird mit dem Argument DATA_FLUSH_INTERVAL_SECONDS konfiguriert. DATA_FLUSH_INTERVAL_SECONDS weist den Typ **bigint** auf. Der Standardwert ist **900** (15 Minuten).
 
 MAX_STORAGE_SIZE_MB     
-Bestimmt den Speicherplatz, der vom Abfragespeicher belegt wird. MAX_SIZE_MB weist den Typ **bigint** auf. Der Standardwert ist **100 MB** für [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] durch [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]). Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] beträgt der Standardwert **1 GB**.
+Bestimmt den Speicherplatz, der vom Abfragespeicher belegt wird. MAX_SIZE_MB weist den Typ **bigint** auf. Der Standardwert ist **100 MB** für [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] durch [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]). Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] beträgt der Standardwert **1 GB**.
 
 > [!NOTE]
 > Die Begrenzung `MAX_STORAGE_SIZE_MB` wird nicht streng erzwungen. Die Speichergröße wird nur überprüft, wenn der Abfragespeicher Daten auf einen Datenträger schreibt. Dieses Intervall wird durch die Option `DATA_FLUSH_INTERVAL_SECONDS` oder die Option **Datenleerungsintervall** im Dialogfeld des [!INCLUDE[ssManStudio](../../includes/ssManStudio-md.md)]-Abfragespeichers festgelegt. Der Standardwert des Intervalls liegt bei 900 Sekunden (oder 15 Minuten).
@@ -806,7 +806,7 @@ Bestimmt den Speicherplatz, der vom Abfragespeicher belegt wird. MAX_SIZE_MB wei
 
 > [!IMPORTANT]
 > Wenn Sie glauben, dass für Ihre Arbeitsauslastungserfassung mehr als 10 GB Speicherplatz benötigt werden, sollten Sie vermutlich die Arbeitsauslastung überdenken und optimieren, um Abfragepläne wiederzuverwenden (z. B. mithilfe von [erzwungener Parametrisierung](../../relational-databases/query-processing-architecture-guide.md#ForcedParam)), oder die Abfragespeicherkonfigurationen anpassen.    
-> Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] können Sie für zusätzliche Kontrolle über die Abfrageerfassungsrichtlinie `QUERY_CAPTURE_MODE` auf CUSTOM festlegen.
+> Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] können Sie für zusätzliche Kontrolle über die Abfrageerfassungsrichtlinie `QUERY_CAPTURE_MODE` auf CUSTOM festlegen.
 
 INTERVAL_LENGTH_MINUTES     
 Bestimmt das Zeitintervall, mit dem statistische Daten zur Laufzeitausführung im Abfragespeicher aggregiert werden. Um die Speicherverwendung zu optimieren, werden die statistischen Daten zur Laufzeitausführung im Speicher für Laufzeitstatistiken über ein festes Zeitfenster aggregiert. Dieses feste Zeitfenster wird mit dem Argument INTERVAL_LENGTH_MINUTES konfiguriert. INTERVAL_LENGTH_MINUTES weist den Typ **bigint** auf. Der Standardwert lautet **60**.
@@ -829,16 +829,16 @@ Bestimmt den zum aktuellen Zeitpunkt aktiven Abfrageerfassungsmodus. Für jeden 
 > Cursor, Abfragen in gespeicherten Prozeduren und nativ kompilierte Abfragen werden immer erfasst, wenn der Abfrageerfassungsmodus auf ALL, AUTO oder CUSTOM festgelegt ist.
 
 ALL     
-Erfasst alle Abfragen. **ALL** ist der Standardkonfigurationswert für [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] bis [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]).
+Erfasst alle Abfragen. **ALL** ist der Standardkonfigurationswert für [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] bis [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]).
 
 AUTO     
-Relevante Abfragen werden anhand der Ausführungsanzahl und des Ressourcenverbrauchs erfasst. Dies ist der Standardkonfigurationswert für [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
+Relevante Abfragen werden anhand der Ausführungsanzahl und des Ressourcenverbrauchs erfasst. Dies ist der Standardkonfigurationswert für [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]) und [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
 
 Keine     
 Es werden keine weiteren neuen Abfragen erfasst. Der Abfragespeicher sammelt weiterhin Statistiken zur Kompilierung und Runtime für Abfragen, die bereits erfasst wurden. Verwenden Sie diese Konfiguration mit Bedacht, da dadurch möglicherweise wichtige Abfragen verloren gehen.
 
 CUSTOM     
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
 Ermöglicht die Kontrolle über die QUERY_CAPTURE_POLICY-Optionen.
 
@@ -859,7 +859,7 @@ OFF
 Wartestatistikinformationen pro Abfrage werden nicht erfasst.
 
 **\<query_capture_policy_option_list> :: =**      
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
 Steuert die Optionen für die Erfassungsrichtlinie des Abfragespeichers. Mit Ausnahme von STALE_CAPTURE_POLICY_THRESHOLD definieren diese Optionen die OR-Bedingungen, die auftreten müssen, damit Abfragen im definierten STALE_CAPTURE_POLICY_THRESHOLD-Wert erfasst werden.
 
@@ -945,7 +945,7 @@ Weitere Informationen zu den Fehlermeldungen 823, 824 und 825 finden Sie unter:
 Die aktuelle Einstellung dieser Option kann mithilfe der `page_verify_option`-Spalte in der [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)-Katalogsicht oder der `IsTornPageDetectionEnabled`-Eigenschaft der [DATABASEPROPERTYEX](../../t-sql/functions/databasepropertyex-transact-sql.md)-Funktion ermittelt werden.
 
 **\<remote_data_archive_option> ::=**      
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)])
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)])
 
 Aktiviert bzw. Deaktiviert Stretch Database für die Datenbank. Weitere Informationen finden Sie unter [Stretch Database](../../sql-server/stretch-database/stretch-database.md).
 
@@ -1206,7 +1206,7 @@ Sie können den Status dieser Option mithilfe der Spalte `is_recursive_triggers_
 **\<target_recovery_time_option> ::=**      
 **Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)])
 
-Gibt die Frequenz indirekter Prüfpunkte auf Basis einzelner Datenbanken an. Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] beträgt der Standardwert für neue Datenbanken, der darauf hindeutet, dass Datenbanken indirekte Prüfpunkte verwendet werden, **eine Minute**. Der Standard für ältere Versionen ist 0 (null) und gibt an, dass die Datenbank automatische Prüfpunkte verwendet, deren Frequenz von der Einstellung für das Wiederherstellungsintervall der Serverinstanz abhängt. Für [!INCLUDE[msCoName](../../includes/msconame-md.md)] ist für die meisten Systeme eine Minute empfohlen.
+Gibt die Frequenz indirekter Prüfpunkte auf Basis einzelner Datenbanken an. Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] beträgt der Standardwert für neue Datenbanken, der darauf hindeutet, dass Datenbanken indirekte Prüfpunkte verwendet werden, **eine Minute**. Der Standard für ältere Versionen ist 0 (null) und gibt an, dass die Datenbank automatische Prüfpunkte verwendet, deren Frequenz von der Einstellung für das Wiederherstellungsintervall der Serverinstanz abhängt. Für [!INCLUDE[msCoName](../../includes/msconame-md.md)] ist für die meisten Systeme eine Minute empfohlen.
 
 TARGET_RECOVERY_TIME **=** *target_recovery_time* { SECONDS | MINUTES }     
 *target_recovery_time*     
@@ -1400,7 +1400,7 @@ SET CHANGE_TRACKING = OFF;
 
 ### <a name="e-enabling-the-query-store"></a>E. Aktivieren des Abfragespeichers
 
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)])
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)])
 
 Im folgenden Beispiel werden der Abfragespeicher aktiviert und dessen Parameter konfiguriert.
 
@@ -1440,7 +1440,7 @@ SET QUERY_STORE = ON
 
 ### <a name="g-enabling-the-query-store-with-custom-capture-policy-options"></a>G. Aktivieren des Abfragespeichers mit benutzerdefinierten Erfassungsrichtlinienoptionen
 
-**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**Gilt für**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
 Im folgenden Beispiel werden der Abfragespeicher aktiviert und dessen Parameter konfiguriert.
 
@@ -1738,7 +1738,7 @@ Sie können den Status dieser Option ermitteln, indem Sie die Spalte `is_auto_up
 Weitere Informationen dazu, wann synchrone bzw. asynchrone Statistikupdates verwendet werden sollten, finden Sie im Abschnitt „Statistikoptionen“ unter [Statistiken](../../relational-databases/statistics/statistics.md#statistics-options).
 
 <a name="auto_tuning"></a> **\<automatic_tuning_option> ::=**      
-**Gilt für:** [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)]
+**Gilt für:** [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)]
 
 Steuert automatische Optionen für die [automatische Optimierung](../../relational-databases/automatic-tuning/automatic-tuning.md).
 
@@ -1926,7 +1926,7 @@ Bestimmt den Speicherplatz, der vom Abfragespeicher belegt wird. MAX_SIZE_MB wei
 
 > [!IMPORTANT]
 > Wenn Sie glauben, dass für Ihre Arbeitsauslastungserfassung mehr als 10 GB Speicherplatz benötigt werden, sollten Sie vermutlich die Arbeitsauslastung überdenken und optimieren, um Abfragepläne wiederzuverwenden (z. B. mithilfe von [erzwungener Parametrisierung](../../relational-databases/query-processing-architecture-guide.md#ForcedParam)), oder die Abfragespeicherkonfigurationen anpassen.    
-> Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] können Sie für zusätzliche Kontrolle über die Abfrageerfassungsrichtlinie `QUERY_CAPTURE_MODE` auf CUSTOM festlegen.
+> Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] können Sie für zusätzliche Kontrolle über die Abfrageerfassungsrichtlinie `QUERY_CAPTURE_MODE` auf CUSTOM festlegen.
 
 INTERVAL_LENGTH_MINUTES     
 Bestimmt das Zeitintervall, mit dem statistische Daten zur Laufzeitausführung im Abfragespeicher aggregiert werden. Um die Speicherverwendung zu optimieren, werden die statistischen Daten zur Laufzeitausführung im Speicher für Laufzeitstatistiken über ein festes Zeitfenster aggregiert. Dieses feste Zeitfenster wird mit dem Argument INTERVAL_LENGTH_MINUTES konfiguriert. INTERVAL_LENGTH_MINUTES weist den Typ **bigint** auf. Der Standardwert lautet **60**.
@@ -2178,7 +2178,7 @@ Sie können den Status dieser Option ermitteln, indem Sie die Spalte `is_recursi
 Sie können den Status dieser Option mithilfe der Spalte `is_recursive_triggers_on` in der Katalogsicht [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md) oder der `IsRecursiveTriggersEnabled`-Eigenschaft der [DATABASEPROPERTYEX](../../t-sql/functions/databasepropertyex-transact-sql.md)-Funktion ermitteln.
 
 **\<target_recovery_time_option> ::=**      
-Gibt die Frequenz indirekter Prüfpunkte auf Basis einzelner Datenbanken an. Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] beträgt der Standardwert für neue Datenbanken, der darauf hindeutet, dass Datenbanken indirekte Prüfpunkte verwendet werden, eine Minute. Der Standard für ältere Versionen ist 0 (null) und gibt an, dass die Datenbank automatische Prüfpunkte verwendet, deren Frequenz von der Einstellung für das Wiederherstellungsintervall der Serverinstanz abhängt. Für [!INCLUDE[msCoName](../../includes/msconame-md.md)] ist für die meisten Systeme eine Minute empfohlen.
+Gibt die Frequenz indirekter Prüfpunkte auf Basis einzelner Datenbanken an. Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] beträgt der Standardwert für neue Datenbanken, der darauf hindeutet, dass Datenbanken indirekte Prüfpunkte verwendet werden, eine Minute. Der Standard für ältere Versionen ist 0 (null) und gibt an, dass die Datenbank automatische Prüfpunkte verwendet, deren Frequenz von der Einstellung für das Wiederherstellungsintervall der Serverinstanz abhängt. Für [!INCLUDE[msCoName](../../includes/msconame-md.md)] ist für die meisten Systeme eine Minute empfohlen.
 
 TARGET_RECOVERY_TIME **=** target_recovery_time { SECONDS | MINUTES }     
 *target_recovery_time*     
@@ -2609,7 +2609,7 @@ Sie können den Status dieser Option ermitteln, indem Sie die Spalte „is_auto_
 Weitere Informationen dazu, wann synchrone bzw. asynchrone Statistikupdates verwendet werden sollten, finden Sie im Abschnitt „Verwenden der datenbankweiten Statistikoptionen“ unter [Statistiken](../../relational-databases/statistics/statistics.md).
 
 <a name="auto_tuning"></a> **\<automatic_tuning_option> ::=**      
-**Gilt für:** [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)]
+**Gilt für:** [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)]
 
 Aktiviert bzw. deaktiviert die Option `FORCE_LAST_GOOD_PLAN` für die [automatische Optimierung](../../relational-databases/automatic-tuning/automatic-tuning.md).
 
@@ -2748,7 +2748,7 @@ Bestimmt den Speicherplatz, der vom Abfragespeicher belegt wird. MAX_SIZE_MB wei
 
 > [!IMPORTANT]
 > Wenn Sie glauben, dass für Ihre Arbeitsauslastungserfassung mehr als 10 GB Speicherplatz benötigt werden, sollten Sie vermutlich die Arbeitsauslastung überdenken und optimieren, um Abfragepläne wiederzuverwenden (z. B. mithilfe von [erzwungener Parametrisierung](../../relational-databases/query-processing-architecture-guide.md#ForcedParam)), oder die Abfragespeicherkonfigurationen anpassen.    
-> Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] können Sie für zusätzliche Kontrolle über die Abfrageerfassungsrichtlinie `QUERY_CAPTURE_MODE` auf CUSTOM festlegen.
+> Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] und in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] können Sie für zusätzliche Kontrolle über die Abfrageerfassungsrichtlinie `QUERY_CAPTURE_MODE` auf CUSTOM festlegen.
 
 INTERVAL_LENGTH_MINUTES     
 Bestimmt das Zeitintervall, mit dem statistische Daten zur Laufzeitausführung im Abfragespeicher aggregiert werden. Um die Speicherverwendung zu optimieren, werden die statistischen Daten zur Laufzeitausführung im Speicher für Laufzeitstatistiken über ein festes Zeitfenster aggregiert. Dieses feste Zeitfenster wird mit dem Argument INTERVAL_LENGTH_MINUTES konfiguriert. INTERVAL_LENGTH_MINUTES weist den Typ **bigint** auf. Der Standardwert lautet **60**.
@@ -2999,7 +2999,7 @@ Sie können den Status dieser Option ermitteln, indem Sie die Spalte `is_recursi
 Sie können den Status dieser Option mithilfe der Spalte `is_recursive_triggers_on` in der Katalogsicht [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md) oder der `IsRecursiveTriggersEnabled`-Eigenschaft der [DATABASEPROPERTYEX](../../t-sql/functions/databasepropertyex-transact-sql.md)-Funktion ermitteln.
 
 **\<target_recovery_time_option> ::=**      
-Gibt die Frequenz indirekter Prüfpunkte auf Basis einzelner Datenbanken an. Ab [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] beträgt der Standardwert für neue Datenbanken, der darauf hindeutet, dass Datenbanken indirekte Prüfpunkte verwendet werden, **eine Minute**. Der Standard für ältere Versionen ist 0 (null) und gibt an, dass die Datenbank automatische Prüfpunkte verwendet, deren Frequenz von der Einstellung für das Wiederherstellungsintervall der Serverinstanz abhängt. Für [!INCLUDE[msCoName](../../includes/msconame-md.md)] ist für die meisten Systeme eine Minute empfohlen.
+Gibt die Frequenz indirekter Prüfpunkte auf Basis einzelner Datenbanken an. Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] beträgt der Standardwert für neue Datenbanken, der darauf hindeutet, dass Datenbanken indirekte Prüfpunkte verwendet werden, **eine Minute**. Der Standard für ältere Versionen ist 0 (null) und gibt an, dass die Datenbank automatische Prüfpunkte verwendet, deren Frequenz von der Einstellung für das Wiederherstellungsintervall der Serverinstanz abhängt. Für [!INCLUDE[msCoName](../../includes/msconame-md.md)] ist für die meisten Systeme eine Minute empfohlen.
 
 TARGET_RECOVERY_TIME **=** _target_recovery_time_ { SECONDS | MINUTES }     
 *target_recovery_time*     

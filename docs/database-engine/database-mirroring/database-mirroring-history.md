@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 1d6e4b10-4a23-47d7-9918-c417992f09d3
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: eb42f9910acbc412117713b7be7d08fe4c6ee78f
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 4dee4a7fd6632cfb8ef2f4a6950f20979c912b54
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642010"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353141"
 ---
 # <a name="database-mirroring-history"></a>Datenbankspiegelungsverlauf
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

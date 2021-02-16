@@ -16,24 +16,24 @@ helpviewer_keywords:
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5587622f0f61b7b7063b246d0599d46cc8c16f0c
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: c05da95541e728d981745d43f4da864c2e8b07a8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170782"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343552"
 ---
 # <a name="configure-distributed-transactions-for-an-always-on-availability-group"></a>Konfigurieren von verteilten Transaktionen für Always On-Verfügbarkeitsgruppen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
 
-[!INCLUDE[SQL2017](../../../includes/sssqlv14-md.md)] unterstützt alle verteilten Transaktionen, einschließlich Datenbanken in einer Verfügbarkeitsgruppe. In diesem Artikel erfahren Sie, wie Sie eine Verfügbarkeitsgruppe für verteilte Transaktionen konfigurieren.  
+[!INCLUDE[SQL2017](../../../includes/sssql17-md.md)] unterstützt alle verteilten Transaktionen, einschließlich Datenbanken in einer Verfügbarkeitsgruppe. In diesem Artikel erfahren Sie, wie Sie eine Verfügbarkeitsgruppe für verteilte Transaktionen konfigurieren.  
 
 Um verteilte Transaktionen gewährleisten zu können, muss die Verfügbarkeitsgruppe so konfiguriert sein, dass Datenbanken als Ressourcenmanager verteilter Transaktionen registriert werden.  
 
 >[!NOTE]
->[!INCLUDE[SQL2016](../../../includes/sssql16-md.md)] Service Pack 2 und höher stellt die vollständige Unterstützung für verteilte Transaktionen in Verfügbarkeitsgruppen bereit. In früheren [!INCLUDE[SQL2016](../../../includes/sssql16-md.md)]-Versionen vor Service Pack 2 werden datenbankübergreifende verteilte Transaktionen nicht unterstützt, wenn sie eine Datenbank in einer Verfügbarkeitsgruppe enthalten. Bei diesen Transaktionen werden nur Datenbanken auf der gleichen SQL Server-Instanz verwendet. Diese Einschränkung besteht in [!INCLUDE[SQL2017](../../../includes/sssqlv14-md.md)] nicht. 
+>[!INCLUDE[SQL2016](../../../includes/sssql16-md.md)] Service Pack 2 und höher stellt die vollständige Unterstützung für verteilte Transaktionen in Verfügbarkeitsgruppen bereit. In früheren [!INCLUDE[SQL2016](../../../includes/sssql16-md.md)]-Versionen vor Service Pack 2 werden datenbankübergreifende verteilte Transaktionen nicht unterstützt, wenn sie eine Datenbank in einer Verfügbarkeitsgruppe enthalten. Bei diesen Transaktionen werden nur Datenbanken auf der gleichen SQL Server-Instanz verwendet. Diese Einschränkung besteht in [!INCLUDE[SQL2017](../../../includes/sssql17-md.md)] nicht. 
 >
->Die Einrichtungsschritte für [!INCLUDE[SQL2016](../../../includes/sssql16-md.md)] sind identisch mit denen für [!INCLUDE[SQL2017](../../../includes/sssqlv14-md.md)].
+>Die Einrichtungsschritte für [!INCLUDE[SQL2016](../../../includes/sssql16-md.md)] sind identisch mit denen für [!INCLUDE[SQL2017](../../../includes/sssql17-md.md)].
 
 Bei einer verteilten Transaktion arbeiten Clientanwendungen mit dem Microsoft Distributed Transaction Coordinator (MS DTC oder auch DTC) zusammen, um Transaktionskonsistenz über mehrere Datenquellen hinweg zu gewährleisten. Der DTC ist ein Dienst für Betriebssysteme, die auf Windows Server basieren. Bei einer verteilten Transaktion agiert der DTC als *Transaktionskoordinator*. Normalerweise agiert eine SQL Server-Instanz als *Ressourcenmanager*. Wenn sich eine Datenbank in einer Verfügbarkeitsgruppe befindet, benötigt sie ihren eigenen Ressourcenmanager. 
 
@@ -81,7 +81,7 @@ CREATE AVAILABILITY GROUP MyAG
 
 ## <a name="alter-an-availability-group-for-distributed-transactions"></a>Anpassen einer Verfügbarkeitsgruppe für verteilte Transaktionen
 
-Ab [!INCLUDE[SQL2017](../../../includes/sssqlv14-md.md)] lasen sich Verfügbarkeitsgruppen für verteilte Transaktionen ändern. Um eine Verfügbarkeitsgruppe für verteilte Transaktionen zu ändern, nehmen Sie `DTC_SUPPORT = PER_DB` in das Skript `ALTER AVAILABILITY GROUP` auf. Das Beispielskript aktiviert für eine Verfügbarkeitsgruppe die Unterstützung verteilter Transaktionen. 
+Ab [!INCLUDE[SQL2017](../../../includes/sssql17-md.md)] lasen sich Verfügbarkeitsgruppen für verteilte Transaktionen ändern. Um eine Verfügbarkeitsgruppe für verteilte Transaktionen zu ändern, nehmen Sie `DTC_SUPPORT = PER_DB` in das Skript `ALTER AVAILABILITY GROUP` auf. Das Beispielskript aktiviert für eine Verfügbarkeitsgruppe die Unterstützung verteilter Transaktionen. 
 
 ```sql
 ALTER AVAILABILITY GROUP MyaAG
@@ -106,7 +106,7 @@ ALTER AVAILABILITY GROUP MyaAG
 
 Bei einer verteilten Transaktion sind mindestens zwei Datenbanken beteiligt. Der DTC als Transaktionsmanager koordiniert die Transaktion zwischen SQL Server-Instanzen und anderen Datenquellen. Jeder Instanz der [!INCLUDE[SQLServer](../../../includes/ssnoversion-md.md)]-Datenbank-Engine kann als Ressourcenmanager operieren. Wenn bei einer Verfügbarkeitsgruppe die Einstellung `DTC_SUPPORT = PER_DB` verwendet wird, können die Datenbanken als Ressourcenmanager operieren. Weitere Informationen finden Sie in der MS DTC-Dokumentation.
 
-Bei einer Transaktion mit zwei oder mehr Datenbanken in einer einzelnen Instanz der Datenbank-Engine handelt es sich eigentlich um eine verteilte Transaktion. Die Instanz verwaltet die verteilte Transaktion jedoch intern; für den Benutzer entsteht der Eindruck, es handele sich um eine lokale Transaktion. [!INCLUDE[SQL2017](../../../includes/sssqlv14-md.md)] leitet alle datenbankübergreifenden Transaktionen an den DTC weiter, wenn die Datenbanken sich in einer Verfügbarkeitsgruppe mit der Einstellung `DTC_SUPPORT = PER_DB` befinden. Dies gilt auch, innerhalb einer einzelnen SQL Server-Instanz. 
+Bei einer Transaktion mit zwei oder mehr Datenbanken in einer einzelnen Instanz der Datenbank-Engine handelt es sich eigentlich um eine verteilte Transaktion. Die Instanz verwaltet die verteilte Transaktion jedoch intern; für den Benutzer entsteht der Eindruck, es handele sich um eine lokale Transaktion. [!INCLUDE[SQL2017](../../../includes/sssql17-md.md)] leitet alle datenbankübergreifenden Transaktionen an den DTC weiter, wenn die Datenbanken sich in einer Verfügbarkeitsgruppe mit der Einstellung `DTC_SUPPORT = PER_DB` befinden. Dies gilt auch, innerhalb einer einzelnen SQL Server-Instanz. 
 
 Auf der Anwendungsebene wird eine verteilte Transaktion beinahe so wie eine lokale Transaktion verwaltet. Am Ende der Transaktion fordert die Anwendung die Transaktion auf, entweder einen Commit oder Rollback auszuführen. Ein verteilter Commit darf vom Transaktions-Manager nicht auf dieselbe Art verwaltet werden, um das Risiko zu minimieren, dass einige Ressourcen-Manager bei einem Netzwerkfehler den Commit erfolgreich ausführen, während andere für die Transaktion einen Rollback ausführen. Dies wird dadurch erreicht, dass der Commitvorgang in zwei Phasen verläuft (die Vorbereitungsphase und die Commitphase), bekannt als Zweiphasencommit.
 

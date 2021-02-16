@@ -14,12 +14,12 @@ ms.assetid: 65ea76db-d809-439d-be64-08b6965aaea1
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: db6ae3969a8049ce7eb02038520f8b664d5f9d1e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0256363ba3b83f1b8f7c4c489e7db00636c67d7e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468811"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340718"
 ---
 # <a name="replication-monitor-main-page"></a>Replikationsmonitor (Hauptseite)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

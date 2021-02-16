@@ -9,12 +9,12 @@ ms.technology: backup-restore
 ms.topic: reference
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: d311b2253e9083c78207d1443782096b4c82a491
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 42e51b53e7d19ba0ced7116acbb7505e98afd597
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96128941"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347159"
 ---
 # <a name="iservervirtualdeviceset2allocatebuffer-vdi"></a>IServerVirtualDeviceSet2::AllocateBuffer (VDI)
 

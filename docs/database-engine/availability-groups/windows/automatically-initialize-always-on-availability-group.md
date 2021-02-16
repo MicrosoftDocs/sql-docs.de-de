@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.assetid: 67c6a601-677a-402b-b3d1-8c65494e9e96
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a4b992ab522145959cb4e3fe4e4b978f15b11e9c
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 13af5b044bfc7f3242e5e69e297b1fe0a9371ac1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644159"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340927"
 ---
 # <a name="use-automatic-seeding-to-initialize-an-always-on-availability-group"></a>Verwenden von automatischem Seeding zum Initialisieren einer Always On-Verfügbarkeitsgruppe
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

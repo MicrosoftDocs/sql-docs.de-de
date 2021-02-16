@@ -11,12 +11,12 @@ ms.topic: article
 ms.prod: sql
 ms.technology: linux
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: ce4e17be837794382435c8a5369ef92a44a5b91a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f51dd4ebdb3a797a54eb488e8d99c02017dc70e9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471501"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346484"
 ---
 # <a name="configure-replication-with-non-default-ports-sql-server-linux"></a>Konfigurieren der Replikation mit vom Standard abweichenden Ports (SQL Server für Linux)
 

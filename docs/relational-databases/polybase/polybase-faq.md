@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: mikeray
-ms.openlocfilehash: 70ffec480513c7a002a8691f2624a604bc82ead0
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 2e0f89137327deada6307147f8bd83a28f23e6a0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99235812"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351818"
 ---
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 

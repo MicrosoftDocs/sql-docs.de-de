@@ -15,12 +15,12 @@ author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 2d4df010b8034147093725b630f652e3123f9719
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 487b155561944e1303aac0fdb7453fc2d494802e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643679"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342449"
 ---
 # <a name="configure-a-flexible-automatic-failover-policy-for-an-always-on-availability-group"></a>Konfigurieren einer flexiblen Richtlinie für ein automatischen Failover für eine Always On-Verfügbarkeitsgruppe
 

@@ -16,12 +16,12 @@ ms.assetid: 29816a41-f105-4414-8be1-070675d62e84
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f31a17d3f8bf2285bc41c7462deec4e53008efd1
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: d4580e3e7f4b8511e8de18f8dad1dc1e99d8d801
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237082"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345442"
 ---
 # <a name="provision-always-encrypted-keys-using-sql-server-management-studio"></a>Bereitstellen von Always Encrypted-Schlüsseln mithilfe von SQL Server Management Studio
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]

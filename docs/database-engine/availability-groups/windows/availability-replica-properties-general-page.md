@@ -12,12 +12,12 @@ f1_keywords:
 ms.assetid: 8318fefb-e045-4fab-8507-e1951fc7cec6
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: eeb2ca47cc083b6690c6d961493d7cb48f6f6e44
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: e81251f9d5cb1f87f3b823b9fc23bcb69c26e79e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643183"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343834"
 ---
 # <a name="availability-replica-properties-general-page-for-always-on-availability-groups"></a>Eigenschaften des Verfügbarkeitsreplikats (Seite „Allgemein“) für Always On-Verfügbarkeitsgruppen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

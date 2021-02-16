@@ -13,12 +13,12 @@ ms.assetid: e94720a8-a3a2-4364-b0a3-bbe86e3ce4d5
 author: rothja
 ms.author: jroth
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: a5225cdec356cbefc3df6abae58ae4cd512445b8
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 931ba1487b8212c6c088b044df5e0b9fa30b5ef1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461511"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347597"
 ---
 # <a name="manage-trigger-security"></a>Verwalten der Triggersicherheit
 
