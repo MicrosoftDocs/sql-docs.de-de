@@ -4,11 +4,12 @@ ms.service: sql
 ms.topic: include
 ms.date: 06/11/2020
 ms.author: mikeray
-ms.openlocfilehash: c0e2396ad1b84aae354df1c488e74c20acf12962
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6bb6dc0966c193215f39945bfde1c8c529178206
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "86032556"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100531047"
 ---
 <!--sql-asdb-smi--->
 

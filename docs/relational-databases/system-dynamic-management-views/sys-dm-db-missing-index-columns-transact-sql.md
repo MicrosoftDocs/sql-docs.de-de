@@ -1,6 +1,6 @@
 ---
 description: sys.dm_db_missing_index_columns (Transact-SQL)
-title: sys.dm_db_missing_index_columns (Transact-SQL) | Microsoft-Dokumentation
+title: sys.dm_db_missing_index_columns (Transact-SQL)
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_missing_index_columns dynamic management function
 - missing indexes feature [SQL Server], sys.dm_db_missing_index_columns dynamic management function
-ms.assetid: 3b24e5ed-0c79-47e5-805c-a0902d0aeb86
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 3905f5c31da774eac8e5df59404aa84913c7b173
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ec00a68faedb48e63988d91f6e612c62a705caf3
+ms.sourcegitcommit: c6cc0b669b175ae290cf5b08952010661ebd03c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99208284"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100530852"
 ---
 # <a name="sysdm_db_missing_index_columns-transact-sql"></a>sys.dm_db_missing_index_columns (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -51,7 +50,7 @@ sys.dm_db_missing_index_columns(index_handle)
   
 ## <a name="table-returned"></a>Zurückgegebene Tabelle  
   
-|Spaltenname|Datentyp|BESCHREIBUNG|  
+|Spaltenname|Datentyp|Beschreibung|  
 |-----------------|---------------|-----------------|  
 |**column_id**|**int**|ID der Spalte.|  
 |**column_name**|**sysname**|Name der Tabellenspalte.|  
@@ -69,7 +68,7 @@ sys.dm_db_missing_index_columns(index_handle)
 ## <a name="examples"></a>Beispiele  
  Im folgenden Beispiel wird eine Abfrage für die `Address`-Tabelle und anschließend eine Abfrage mithilfe der dynamischen Verwaltungssicht `sys.dm_db_missing_index_columns` ausgeführt, um die Tabellenspalten zurückzugeben, die keinen Index aufweisen.  
   
-```  
+```sql
 USE AdventureWorks2012;  
 GO  
 SELECT City, StateProvinceID, PostalCode  
@@ -89,5 +88,5 @@ GO
  [sys.dm_db_missing_index_details &#40;Transact-SQL-&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql.md)   
  [sys.dm_db_missing_index_groups &#40;Transact-SQL-&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-groups-transact-sql.md)   
  [sys.dm_db_missing_index_group_stats &#40;Transact-SQL-&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-group-stats-transact-sql.md)  
-  
+ [sys.dm_db_missing_index_group_stats_query &#40;Transact-SQL-&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-group-stats-query-transact-sql.md)     
   
