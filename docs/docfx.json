@@ -42,6 +42,7 @@
     "markdownEngineName": "markdig",
 
     "globalMetadata": {
+      "recommendations": true
       "layout": "Conceptual",
       "uhfHeaderId": "MSDocsHeader-DocsSQL",
       "contributors_to_exclude": ["hexiaokai", "openpublishingbuild","sudeepku","saldana","iRaindrop"],
