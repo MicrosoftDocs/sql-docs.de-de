@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 07/22/2020
 monikerRange: '>= sql-server-2016'
-ms.openlocfilehash: 0a62b9bae20ec9f45d73c2a891b50dda746d568d
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 573091d7d142af73fda87ed802186b66e1988f07
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642299"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351606"
 ---
 # <a name="transact-sql-debugger"></a>Transact-SQL-Debugger
 

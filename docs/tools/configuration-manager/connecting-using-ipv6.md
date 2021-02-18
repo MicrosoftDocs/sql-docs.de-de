@@ -16,12 +16,12 @@ ms.assetid: 2669098c-f5f1-43da-aec6-e91003ac89f6
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: a429bb74fce5226ddd65d853da8c1d67d94e6636
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bd244c33134c3864a85bebb97439fdd44f1df7d5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481671"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349845"
 ---
 # <a name="connecting-using-ipv6"></a>Herstellen von Verbindungen über IPv6
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

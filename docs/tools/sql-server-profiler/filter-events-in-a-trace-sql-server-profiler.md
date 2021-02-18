@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: fd8eae33f37b3e21716a0eabd894f77558ac34da
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: c80703ac5c23ba40007528c6285eb74e15e80264
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85790006"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345059"
 ---
 # <a name="filter-events-in-a-trace-sql-server-profiler"></a>Filtern von Ereignissen in einer Ablaufverfolgung (SQL Server Profiler)
 
@@ -49,7 +49,7 @@ Durch Filter werden die in einer Ablaufverfolgung aufgezeichneten Ereignisse ein
   
          ODER  
   
-    -   Im Dialogfeld**Allgemeine Optionen** ist die Option **Einstellungen für Land/Region zum Anzeigen von Datums- und Uhrzeitwerten verwenden** aktiviert. Klicken Sie im [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]-Menü **Extras** auf **Optionen**, um das Dialogfeld **Allgemeine Optionen** anzuzeigen.  
+    -   Im Dialogfeld **Allgemeine Optionen** ist die Option **Einstellungen für Land/Region zum Anzeigen von Datums- und Uhrzeitwerten verwenden** aktiviert. Klicken Sie im [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]-Menü **Extras** auf **Optionen**, um das Dialogfeld **Allgemeine Optionen** anzuzeigen.  
   
          -UND-  
   

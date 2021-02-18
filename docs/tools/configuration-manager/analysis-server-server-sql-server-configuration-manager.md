@@ -15,12 +15,12 @@ ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: c8b527826199f71edd9ab0ea1752d9a442eddac2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ebcaade343755652c0954f470bcb2fdfbe516cdd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481691"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349914"
 ---
 # <a name="analysis-server-ltservergt-sql-server-configuration-manager"></a>Analysis-Server-&lt;Server&gt; (SQL Server-Konfigurations-Manager)
 

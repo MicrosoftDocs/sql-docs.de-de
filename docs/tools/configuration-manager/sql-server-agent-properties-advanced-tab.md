@@ -12,12 +12,12 @@ ms.assetid: 588f886f-d6c8-48c8-893d-c2be43a97943
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: bc64aa018a9c1a6e7d6e1a0ac43502a08ca9498c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: eb0025b84263f296aefb11b7eb0468a31de648db
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481571"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349648"
 ---
 # <a name="sql-server-agent-properties-advanced-tab"></a>SQL Server-Agent-Eigenschaften (Registerkarte Erweitert)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

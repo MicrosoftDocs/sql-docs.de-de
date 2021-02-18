@@ -23,12 +23,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.date: 10/20/2016
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: b3b03ba4a8fae0114991cfb7556070b6a2266acd
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4a55de0f9f6a6b8ae80161adaa0252b3d5c4a774
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474291"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354690"
 ---
 # <a name="configure-firewall-rules-before-running-the-tsql-debugger"></a>Konfigurieren von Firewallregeln vor dem Ausführen des TSQL-Debuggers
 
@@ -84,7 +84,7 @@ Verwenden Sie auf dem Computer, auf dem die Instanz von [!INCLUDE[ssDE](../../in
 
    2. Wählen Sie im Dialogfeld **Regeltyp** die Option **Programm** aus, und klicken Sie anschließend auf **Weiter**.
 
-   3. Wählen Sie im Dialogfeld **Programm** **Dieser Programmpfad:** aus, und geben Sie den vollständigen Pfad zu svchost.exe ein. Standardmäßig ist svchost.exe in %systemroot%\System32\svchost.exe. installiert.
+   3. Wählen Sie im Dialogfeld **Programm****Dieser Programmpfad:** aus, und geben Sie den vollständigen Pfad zu svchost.exe ein. Standardmäßig ist svchost.exe in %systemroot%\System32\svchost.exe. installiert.
 
    4. Wählen Sie im Dialogfeld **Aktion** die Option **Verbindung zulassen** aus, und klicken Sie auf **Weiter**.
 
@@ -112,7 +112,7 @@ Wenn Ihnen beim Versuch, eine Remotedebugsitzung zu öffnen, Fehler angezeigt we
 
    2. Wählen Sie im Dialogfeld **Regeltyp** die Option **Programm** aus, und klicken Sie anschließend auf **Weiter**.
 
-   3. Wählen Sie im Dialogfeld **Programm** **Dieser Programmpfad:** aus, und geben Sie den vollständigen Pfad zu svchost.exe ein. Standardmäßig ist svchost.exe in %systemroot%\System32\svchost.exe. installiert.
+   3. Wählen Sie im Dialogfeld **Programm****Dieser Programmpfad:** aus, und geben Sie den vollständigen Pfad zu svchost.exe ein. Standardmäßig ist svchost.exe in %systemroot%\System32\svchost.exe. installiert.
 
    4. Wählen Sie im Dialogfeld **Aktion** die Option **Verbindung zulassen** aus, und klicken Sie auf **Weiter**.
 
@@ -132,7 +132,7 @@ Wenn Ihnen beim Versuch, eine Remotedebugsitzung zu öffnen, Fehler angezeigt we
 
    2. Wählen Sie im Dialogfeld **Regeltyp** die Option **Programm** aus, und klicken Sie anschließend auf **Weiter**.
 
-   3. Wählen Sie im Dialogfeld **Programm** **Dieser Programmpfad:** aus, und geben Sie einen dieser drei Werte ein.
+   3. Wählen Sie im Dialogfeld **Programm****Dieser Programmpfad:** aus, und geben Sie einen dieser drei Werte ein.
 
        - Geben Sie für [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]den vollständigen Pfad zu ssms.exe ein. Standardmäßig wird "ssms.exe" unter "C:\Programme (x86)\Microsoft SQL Server\130\Tools\Binn\Management Studio" installiert.
 

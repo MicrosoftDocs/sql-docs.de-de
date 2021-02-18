@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 89cb9c6a1e49f96663f07b9ab31d2b4a4b08d4d7
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: d2cee071e42e2272f38c3c0d593b7c2e3f799fca
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85775048"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353473"
 ---
 # <a name="name-element-for-index-dta"></a>Name-Element für Index (DTA)
 

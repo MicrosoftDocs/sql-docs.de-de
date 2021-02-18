@@ -12,12 +12,12 @@ ms.assetid: ea939db1-ce97-4eea-8223-1ca6a82128d7
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: fa3584919575e7e85355145a8b0d6e7040998af0
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0d8fb974cda1cbfc5a642ce4dcdfb8ea1c33bb51
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463791"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346024"
 ---
 # <a name="report-server-ltservergt-sql-server-configuration-manager"></a>Berichtsserver-&lt;Server&gt; (SQL Server-Konfigurations-Manager)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

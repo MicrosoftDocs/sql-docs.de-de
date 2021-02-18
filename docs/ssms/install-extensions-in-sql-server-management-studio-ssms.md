@@ -15,12 +15,12 @@ ms.author: drskwier
 ms.reviewer: maghan
 ms.custom: seo-lt-2019
 ms.date: 07/29/2020
-ms.openlocfilehash: bf4c9ee5287a2e0fdecf8455334561ce130499bc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d9fe47b283eb95ed624b68bc9c22abd9258bad15
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492034"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344715"
 ---
 # <a name="install-extensions-in-sql-server-management-studio-ssms"></a>Installieren von Erweiterungen in SQL Server Management Studio (SSMS)
 

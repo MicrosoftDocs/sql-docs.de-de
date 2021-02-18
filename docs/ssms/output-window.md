@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a2ce1a07-b4e2-471c-87d2-b8de5e6c6864
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b631bfd647aa9bc90bd564fc69dc48e738ffe2aa
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: f123f01811bec35f8418e8e6a5935d581650c261
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92038679"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353960"
 ---
 # <a name="output-window-in-sql-server-management-studio"></a>Das Ausgabefenster in SQL Server Management Studio
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

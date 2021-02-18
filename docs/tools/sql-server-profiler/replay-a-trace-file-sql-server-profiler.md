@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: e473cfa21a026563bc2ac71b39e25d66d4c6a619
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: b7d6139941e7ee3b80e62596e95f0d5d492cbc1d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774780"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349383"
 ---
 # <a name="replay-a-trace-file-sql-server-profiler"></a>Wiedergeben einer Ablaufverfolgungsdatei (SQL Server Profiler)
 
@@ -33,15 +33,15 @@ Die Wiedergabe bezeichnet die Möglichkeit, eine gespeicherte Ablaufverfolgung z
   
 2.  Klicken Sie im Menü **Wiedergeben** auf **Start**, und stellen Sie eine Verbindung mit der Serverinstanz her, in der Sie die Ablaufverfolgung wiedergeben möchten.  
   
-3.  Geben Sie im Dialogfeld **Wiedergabekonfiguration** auf der Registerkarte **Grundlegende Wiedergabeoptionen** den **Wiedergabeserver**an. Klicken Sie auf **Ändern** , um den im Feld **Wiedergabeserver** angezeigten Server zu ändern.  
+3.  Geben Sie im Dialogfeld **Wiedergabekonfiguration** auf der Registerkarte **Grundlegende Wiedergabeoptionen** den **Wiedergabeserver** an. Klicken Sie auf **Ändern** , um den im Feld **Wiedergabeserver** angezeigten Server zu ändern.  
   
 4.  Wählen Sie optional eines der folgenden Ziele zum Speichern der Wiedergabe aus:  
   
-    -   **In Datei speichern**gibt eine Datei an, in der die Wiedergabe gespeichert wird.  
+    -   **In Datei speichern** gibt eine Datei an, in der die Wiedergabe gespeichert wird.  
   
-    -   **In Tabelle speichern**gibt eine Tabelle an, in der die Wiedergabe gespeichert wird.  
+    -   **In Tabelle speichern** gibt eine Tabelle an, in der die Wiedergabe gespeichert wird.  
   
-5.  Wählen Sie entweder **Ereignisse in der Reihenfolge wiedergeben, in der ihr Ablauf verfolgt wurde**oder **Ereignisse mithilfe mehrerer Threads wiedergeben**. In der folgenden Tabelle wird der Unterschied zwischen diesen Einstellungen beschrieben.  
+5.  Wählen Sie entweder **Ereignisse in der Reihenfolge wiedergeben, in der ihr Ablauf verfolgt wurde** oder **Ereignisse mithilfe mehrerer Threads wiedergeben**. In der folgenden Tabelle wird der Unterschied zwischen diesen Einstellungen beschrieben.  
   
     |Option|BESCHREIBUNG|  
     |------------|-----------------|  
@@ -52,11 +52,11 @@ Die Wiedergabe bezeichnet die Möglichkeit, eine gespeicherte Ablaufverfolgung z
   
 7.  Klicken Sie optional auf die Registerkarte **Erweiterte Wiedergabeoptionen**, um folgende Optionen zu konfigurieren:  
   
-    -   Wählen Sie **System-SPIDs wiedergeben**aus, um alle Serverprozess-IDs (SPIDs) wiederzugeben.  
+    -   Wählen Sie **System-SPIDs wiedergeben** aus, um alle Serverprozess-IDs (SPIDs) wiederzugeben.  
   
-    -   Wählen Sie **Nur eine SPID wiedergeben**aus, um die Wiedergabe auf Prozesse zu beschränken, die zu einer bestimmten SPID gehören. Geben Sie im Feld **SPID für Wiedergabe** die SPID ein.  
+    -   Wählen Sie **Nur eine SPID wiedergeben** aus, um die Wiedergabe auf Prozesse zu beschränken, die zu einer bestimmten SPID gehören. Geben Sie im Feld **SPID für Wiedergabe** die SPID ein.  
   
-    -   Wählen Sie **Wiedergabe nach Datum und Zeit beschränken**aus, um Ereignisse wiederzugeben, die in einem bestimmten Zeitraum aufgetreten sind. Wählen Sie ein Datum und eine Uhrzeit für **Startzeit**und **Beendigungszeit**aus, um den in der Wiedergabe enthaltenen Zeitraum anzugeben.  
+    -   Wählen Sie **Wiedergabe nach Datum und Zeit beschränken** aus, um Ereignisse wiederzugeben, die in einem bestimmten Zeitraum aufgetreten sind. Wählen Sie ein Datum und eine Uhrzeit für **Startzeit** und **Beendigungszeit** aus, um den in der Wiedergabe enthaltenen Zeitraum anzugeben.  
   
     -   Konfigurieren Sie **Systemüberwachungsoptionen**, um zu steuern, wie SQL Server die Prozesse während der Wiedergabe verwaltet.  
   

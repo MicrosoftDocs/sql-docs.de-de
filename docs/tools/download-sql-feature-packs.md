@@ -11,12 +11,12 @@ ms.author: maghan
 ms.reviewer: mikeray
 ms.custom: seo-lt-2019
 ms.date: 12/15/2019
-ms.openlocfilehash: 3afde284deb138b23392eaf4632af22f52ae9b7e
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 81f53aca0de017f4fdd05d5c8b365e741daa784d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98689159"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349505"
 ---
 # <a name="download-sql-server-extended-features-and-tools"></a>Download erweiterter SQL Server-Features und -Tools
 

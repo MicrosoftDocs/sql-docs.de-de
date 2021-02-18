@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 47d1585f308c89b87e5c6e3f602ae94a06569ffe
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 1fcb83e992140228bb5a17b7265e882d752f50e3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85775026"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353488"
 ---
 # <a name="name-element-for-server-dta"></a>Name-Element für Server (DTA)
 

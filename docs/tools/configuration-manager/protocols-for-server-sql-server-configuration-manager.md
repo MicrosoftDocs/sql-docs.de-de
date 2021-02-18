@@ -12,12 +12,12 @@ ms.assetid: ee30d5f5-7f6a-4101-849e-73dfcc1b2528
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 56dbca8fa6e32a73c0393c7a8da797e6c3f08c95
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 21c2df45dcc3a8eeece8d4c933373225f8206be0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483802"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349680"
 ---
 # <a name="protocols-for-ltservergt-sql-server-configuration-manager"></a>Protokolle für &lt;Server&gt; (SQL Server-Konfigurations-Manager)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

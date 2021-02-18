@@ -12,12 +12,12 @@ ms.assetid: a701c5d5-f190-4b57-a3f8-954c2572e682
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: cbcce872e012e2ab77745ee8f9b694897ea7adec
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bd72866422f546c7553480257689ed3e7068c8d2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465741"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349582"
 ---
 # <a name="sql-server-ltservergt-sql-server-configuration-manager"></a>SQL Server-&lt;Server&gt; (SQL Server-Konfigurations-Manager)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

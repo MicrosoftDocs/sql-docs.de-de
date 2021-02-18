@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 2dd83d35238e74908614c2aaed96e3bc8a11180f
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 2727aa7ed5e95881e21eddb73a94ddef97795c08
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774749"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353408"
 ---
 # <a name="organize-columns-displayed-in-a-trace-sql-server-profiler"></a>Organisieren von in einer Ablaufverfolgung angezeigten Spalten (SQL Server Profiler)
 
@@ -55,7 +55,7 @@ ms.locfileid: "85774749"
   
 4.  Klicken Sie auf der Registerkarte **Ereignisauswahl** auf **Spalten organisieren**.  
   
-5.  Wählen Sie im Dialogfeld **Spalten organisieren** die Spalten aus, die in einer Gruppe angezeigt werden sollen, und klicken Sie auf **Nach oben** , um sie in die Liste **Gruppen**zu verschieben. Wenn Sie alle gewünschten Spalten in die Liste **Gruppen**verschoben haben, können Sie die Schaltflächen **Nach oben** und **Nach unten** verwenden, um ihre Reihenfolge zu ändern.  
+5.  Wählen Sie im Dialogfeld **Spalten organisieren** die Spalten aus, die in einer Gruppe angezeigt werden sollen, und klicken Sie auf **Nach oben** , um sie in die Liste **Gruppen** zu verschieben. Wenn Sie alle gewünschten Spalten in die Liste **Gruppen** verschoben haben, können Sie die Schaltflächen **Nach oben** und **Nach unten** verwenden, um ihre Reihenfolge zu ändern.  
   
      Das Verschieben der Datenspaltennamen in die Liste **Gruppen** hat zur Folge, dass die angezeigte Ablaufverfolgung zunächst nach den Werten in der obersten Datenspalte in der Liste **Gruppen** organisiert wird, dann nach der zweiten Datenspalte in der Liste **Gruppen** usw.  
   
@@ -75,7 +75,7 @@ ms.locfileid: "85774749"
   
 4.  Klicken Sie auf der Registerkarte **Ereignisauswahl** auf **Spalten organisieren**.  
   
-5.  Wählen Sie im Dialogfeld **Spalten organisieren** eine Spalte aus, nach der die angezeigten Ablaufverfolgungsereignisse gruppiert und aggregiert werden sollen. Klicken Sie auf **Nach oben** , um den Spaltennamen in die Liste **Gruppen**zu verschieben. Sie können die Schaltflächen **Nach oben** und **Nach unten** verwenden, um die übrigen Spalten unter **Spalten** bei Bedarf neu anzuordnen.  
+5.  Wählen Sie im Dialogfeld **Spalten organisieren** eine Spalte aus, nach der die angezeigten Ablaufverfolgungsereignisse gruppiert und aggregiert werden sollen. Klicken Sie auf **Nach oben** , um den Spaltennamen in die Liste **Gruppen** zu verschieben. Sie können die Schaltflächen **Nach oben** und **Nach unten** verwenden, um die übrigen Spalten unter **Spalten** bei Bedarf neu anzuordnen.  
   
 6.  Klicken Sie im Dialogfeld **Spalten organisieren** auf **OK** , und klicken Sie dann im Dialogfeld **Eigenschaften der Ablaufverfolgungstabelle** oder **Eigenschaften der Ablaufverfolgungsdatei** auf **OK** .  
   

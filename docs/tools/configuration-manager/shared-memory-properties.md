@@ -14,12 +14,12 @@ ms.assetid: dc1704da-eacd-4d26-b529-c996f958ca4b
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 34a46a86e24e784ac7ab1426c843cfd2e2639dc3
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8f5d913a9517ef441b50ea4bc3e8cbac5791ce49
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481591"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349644"
 ---
 # <a name="shared-memory-properties"></a>Shared Memory-Eigenschaften
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

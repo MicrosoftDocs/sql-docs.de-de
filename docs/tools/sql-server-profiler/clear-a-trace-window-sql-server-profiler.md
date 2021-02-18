@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: d954095346814d208b27c44b4e91825a58742578
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: d717e5e802f29a09f563e7a62e11dc723b3fe6a3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774910"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349440"
 ---
 # <a name="clear-a-trace-window-sql-server-profiler"></a>Löschen des Inhalts eines Ablaufverfolgungsfensters (SQL Server Profiler)
 
@@ -28,7 +28,7 @@ ms.locfileid: "85774910"
   
 1.  Wählen Sie das Ablaufverfolgungsfenster aus, dessen Inhalt gelöscht werden soll.  
   
-2.  Klicken Sie im Menü **Bearbeiten**auf **Ablaufverfolgungsfenster löschen**.  
+2.  Klicken Sie im Menü **Bearbeiten** auf **Ablaufverfolgungsfenster löschen**.  
   
      Der Inhalt des Ablaufverfolgungsfensters wird entfernt. Wurde die Ablaufverfolgungsdatei oder -tabelle gespeichert, bleibt der Inhalt der Datei oder Tabelle unverändert.  
   

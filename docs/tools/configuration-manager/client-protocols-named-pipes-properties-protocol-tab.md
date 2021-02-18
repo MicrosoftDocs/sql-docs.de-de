@@ -16,12 +16,12 @@ ms.assetid: 30fbae62-2f2e-4d36-9c6e-3444fff68781
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 6e637bb0dd5979e5149ef70cba59ed8a4ac7f583
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: afcc04a5b48014843c5aedcf2c3d62fc9993fd39
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463878"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349867"
 ---
 # <a name="client-protocols---named-pipes-properties-protocol-tab"></a>Clientprotokolle - Named Pipes-Eigenschaften (Registerkarte Protokoll)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

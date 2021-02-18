@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: f55c6a0e-b6bd-4803-b51a-f3a419803024
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7a4e10b437f60c8f6b1f80ed76017591fc22686d
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 7a00c8196a3a20d17f07c215b8d0d0f1c3ffd84e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597258"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352449"
 ---
 # <a name="configure-the-windows-firewall-to-allow-sql-server-access"></a>Configure the Windows Firewall to Allow SQL Server Access
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -204,7 +204,7 @@ Die folgende Tabelle enthält Ports und Dienste, von denen [!INCLUDE[ssNoVersion
  Weitere Informationen zu Port 135 finden Sie in den folgenden Ressourcen:  
   
 -   [Dienste und Netzwerkportanforderungen für das Windows Server-System](https://support.microsoft.com/kb/832017)   
--   [Problembehandlung von Fehlern der RPC-Endpunktzuordnung unter Verwndung der Windows Server 2003-Supporttools von der Produkt-CD](https://support.microsoft.com/kb/839880)  
+-   [Problembehandlung von Fehlern der RPC-Endpunktzuordnung unter Verwndung der Windows Server 2003-Supporttools von der Produkt-CD](https://mskb.pkisolutions.com/kb/839880)  
 -   [Remoteprozeduraufruf (RPC)](/previous-versions/ms950395(v=msdn.10))    
 -   [Konfigurieren der dynamischen RPC-Portzuweisung für Firewall-Einsatz](https://support.microsoft.com/kb/154596/)  
   

@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 84adfcc937006ed9c1c079977d09e37bbfa5e922
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: b2b19cee883683043893e59da2ca6ddcb5f3456a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85785985"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336000"
 ---
 # <a name="eventstring-element-dta"></a>EventString-Element (DTA)
 

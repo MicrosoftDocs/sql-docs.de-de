@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 697674390fe11ff569451dcb0153482f7b8aefd8
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: edc3ed219b019a81f3093db88a19526e5e9dee0a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85789979"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340566"
 ---
 # <a name="find-a-value-or-data-column-while-tracing-sql-server-profiler"></a>Suchen eines Wertes oder einer Datenspalte während der Ablaufverfolgung (SQL Server Profiler)
 
@@ -31,7 +31,7 @@ In diesem Thema wird beschrieben, wie Sie mithilfe von [!INCLUDE[ssSqlProfiler](
   
 2.  Klicken Sie im Menü **Bearbeiten** auf **Suchen**.  
   
-3.  Geben Sie im Dialogfeld**Suchen** in das Textfeld **Suchen what** einen Suchwert ein. Sie können auch zusätzlich eine Datenspalte angeben.  
+3.  Geben Sie im Dialogfeld **Suchen** in das Textfeld **Suchen what** einen Suchwert ein. Sie können auch zusätzlich eine Datenspalte angeben.  
   
 4.  Um das nächste Vorkommen eines Wertes zu suchen, klicken Sie auf **Weitersuchen**.  
   

@@ -18,12 +18,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: 17a2e3275aa36f3c65d46430f215563a6940145e
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 3ff3ef8df5ebf9246ebf224b7cde6d789317d68c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99251242"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341095"
 ---
 # <a name="write-execution-trace-messages-to-the-sql-server-agent-error-log"></a>Meldungen zur Ablaufverfolgung in das SQL Server-Agent-Fehlerprotokoll schreiben
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

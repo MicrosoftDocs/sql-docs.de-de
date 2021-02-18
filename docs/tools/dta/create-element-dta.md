@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 4afa4261a652930862d0d9fd5128ad7e7c1353cc
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 281fd59192deeedbc32d7e543fdb95875929801d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85732150"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342084"
 ---
 # <a name="create-element-dta"></a>Create-Element (DTA)
 

@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/03/2017
-ms.openlocfilehash: 8adc8e6839b6af9765139d0fe26b38cb1d1253c8
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 373bcce8731dad1375efd9a4c2196ab184b38954
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774945"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349464"
 ---
 # <a name="analyze-deadlocks-with-sql-server-profiler"></a>Analysieren von Deadlocks mit SQL Server Profiler
 
@@ -31,7 +31,7 @@ Verwenden Sie [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] , um
   
 -   Mithilfe der Option **SQL Server-Ereignisse extrahieren** im Menü **Datei**  
   
--   Einzelne Ereignisse können auch extrahiert und gespeichert werden, indem Sie mit der rechten Maustaste auf ein bestimmtes Ereignis klicken und **Ereignisdaten extrahieren**auswählen.  
+-   Einzelne Ereignisse können auch extrahiert und gespeichert werden, indem Sie mit der rechten Maustaste auf ein bestimmtes Ereignis klicken und **Ereignisdaten extrahieren** auswählen.  
   
 ## <a name="deadlock-graphs"></a>Deadlockdiagramme  
  [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] und [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] verwenden Deadlock-Wartediagramme zum Beschreiben von Deadlocks. Das Deadlock-Wartediagramm enthält Prozessknoten, Ressourcenknoten und Rahmen, die die Beziehungen zwischen den Prozessen und Ressourcen darstellen. Die folgende Tabelle enthält die Definitionen der Komponenten in Wartediagrammen:  

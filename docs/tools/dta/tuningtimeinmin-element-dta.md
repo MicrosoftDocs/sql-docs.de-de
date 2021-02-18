@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: d4e7443a3263ac580b5619b6f44b5ad8dea8823f
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 18bd9b4578a6221a6754f7ef906039633e3ed082
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85731990"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354428"
 ---
 # <a name="tuningtimeinmin-element-dta"></a>TuningTimeInMin-Element (DTA)
 

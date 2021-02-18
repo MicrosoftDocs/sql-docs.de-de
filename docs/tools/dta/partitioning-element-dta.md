@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 36b26f67dd54b2fc28b70e05114011070de9ba7e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 7dc261ca057aeebe07cf8dbd8cb4a735f05ffbce
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774994"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100335958"
 ---
 # <a name="partitioning-element-dta"></a>Partitioning-Element (DTA)
 

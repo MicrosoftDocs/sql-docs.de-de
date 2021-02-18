@@ -9,12 +9,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 8a9e792f4a0878b474a459a3935b2b44ba22973d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 91ae86607ee2127af21ae0d47f80580df32c93cd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471381"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337101"
 ---
 # <a name="monitor-sql-server-machine-learning-services-using-dynamic-management-views-dmvs"></a>Überwachen von SQL Server Machine Learning Services mithilfe von dynamischen Verwaltungssichten
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]
@@ -143,7 +143,7 @@ ORDER BY language, counter_name;
 
 Die Abfrage gibt die folgenden Spalten zurück:
 
-| Column        | BESCHREIBUNG |
+| Column        | Beschreibung |
 |---------------|-------------|
 | language      | Name der registrierten externen Skriptsprache. |
 | counter_name  | Name einer registrierten externen Skriptfunktion. |
@@ -222,7 +222,7 @@ FROM sys.dm_resource_governor_external_resource_pools AS ep;
 
 Die Abfrage gibt die folgenden Spalten zurück:
 
-| Column             | BESCHREIBUNG |
+| Column             | Beschreibung |
 |--------------------|-------------|
 | name               | Gibt den Namen des externen Ressourcenpools oder der SQL Server-Instanz an. |
 | max_memory_percent | Gibt den maximalen Arbeitsspeicher an, den die SQL Server-Instanz oder der externe Ressourcenpool beanspruchen kann. |

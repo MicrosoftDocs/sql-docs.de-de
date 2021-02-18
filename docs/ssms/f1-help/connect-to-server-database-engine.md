@@ -19,17 +19,17 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 04/07/2020
-ms.openlocfilehash: 83ff5d5ffae698c49655ef65e8e5d5171eae31ac
-ms.sourcegitcommit: bd3a135f061e4a49183bbebc7add41ab11872bae
+ms.openlocfilehash: 9f0eca39db873b277d0c698407c5c02afa520b35
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92300678"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342663"
 ---
 # <a name="connect-to-server-database-engine"></a>Verbindung mit Server herstellen (Datenbank-Engine)
 
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
-Verwenden Sie dieses Dialogfeld, um Optionen bei der Verbindungsherstellung mit [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion_md.md)] anzuzeigen oder anzugeben. In den meisten Fällen können Sie eine Verbindung herstellen, indem Sie im Feld **Servername** den Computernamen des Datenbankservers eingeben und dann auf **Verbinden**klicken. Wenn Sie eine Verbindung mit einer benannte Instanz herstellen, verwenden Sie den Computernamen, gefolgt von einem umgekehrten Schrägstrich und dem Namen der Instanz. Beispiel: `mycomputer\myinstance`. Geben Sie beim Herstellen der Verbindung mit [!INCLUDE[ssExpress](../../includes/ssexpress_md.md)]den Computernamen gefolgt von **\sqlexpress**an.
+Verwenden Sie dieses Dialogfeld, um Optionen bei der Verbindungsherstellung mit [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion_md.md)] anzuzeigen oder anzugeben. In den meisten Fällen können Sie eine Verbindung herstellen, indem Sie im Feld **Servername** den Computernamen des Datenbankservers eingeben und dann auf **Verbinden** klicken. Wenn Sie eine Verbindung mit einer benannte Instanz herstellen, verwenden Sie den Computernamen, gefolgt von einem umgekehrten Schrägstrich und dem Namen der Instanz. Beispiel: `mycomputer\myinstance`. Geben Sie beim Herstellen der Verbindung mit [!INCLUDE[ssExpress](../../includes/ssexpress_md.md)]den Computernamen gefolgt von **\sqlexpress** an.
   
 Viele Faktoren können Auswirkungen auf die Fähigkeit zum Herstellen der Verbindung mit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]haben. Hilfe finden Sie in den folgenden Artikeln:
 
@@ -51,7 +51,7 @@ Wählen Sie die Serverinstanz aus, mit der eine Verbindung hergestellt werden so
 > Um eine Verbindung mit einer aktiven Benutzerinstanz von [!INCLUDE[ssExpress](../../includes/ssexpress_md.md)] mit dem Named Pipes-Protokoll herzustellen, geben Sie den Pipenamen an, z.B. `np:\\.\pipe\3C3DF6B1-2262-47\tsql\query`. Weitere Informationen finden Sie in der Dokumentation zu [!INCLUDE[ssExpress](../../includes/ssexpress_md.md)].  
 
 > [!NOTE]  
-> Verbindungen werden in der Regel im Verlauf „Zuletzt verwendet“ (Most Recently Used, MRU) gespeichert. Wenn Sie Einträge aus dem MRU-Verlauf entfernen möchten, klicken Sie einfach auf das Kombinationsfeld **Servername**, wählen Sie den Namen des zu entfernenden Servers aus, und drücken Sie dann die**ENTF**-Taste.  
+> Verbindungen werden in der Regel im Verlauf „Zuletzt verwendet“ (Most Recently Used, MRU) gespeichert. Wenn Sie Einträge aus dem MRU-Verlauf entfernen möchten, klicken Sie einfach auf das Kombinationsfeld **Servername**, wählen Sie den Namen des zu entfernenden Servers aus, und drücken Sie dann die **ENTF**-Taste.  
 
 **Authentifizierung**  
 Die aktuelle Version von SSMS stellt fünf verschiedene Authentifizierungsmodi beim Verbinden mit einer Instanz von [!INCLUDE[ssDE](../../includes/ssde_md.md)] bereit. Wenn das Authentifizierungsdialogfeld nicht mit der folgenden Liste übereinstimmt, laden Sie die aktuellste Version von SSMS unter [Herunterladen von SQL Server Management Studio (SSMS)](../download-sql-server-management-studio-ssms.md) herunter.  
@@ -78,7 +78,7 @@ Der Windows-Benutzername zum Herstellen der Verbindung. Diese Option ist nur ver
 Geben Sie den Anmeldenamen für die Verbindung ein. Diese Option ist nur verfügbar, wenn Sie die [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Authentifizierung oder die Active Directory-Kennwortauthentifizierung ausgewählt haben, um eine Verbindung herzustellen.  
   
 > [!NOTE]  
-> Verbindungen werden in der Regel im Verlauf „Zuletzt verwendet“ (Most Recently Used, MRU) gespeichert. Wenn Sie Einträge aus dem MRU-Verlauf entfernen möchten, klicken Sie einfach auf das Kombinationsfeld **Servername**, wählen Sie den Namen des zu entfernenden Servers aus, und drücken Sie dann die**ENTF**-Taste. Dies wurde mit SSMS 18.5 eingeführt.
+> Verbindungen werden in der Regel im Verlauf „Zuletzt verwendet“ (Most Recently Used, MRU) gespeichert. Wenn Sie Einträge aus dem MRU-Verlauf entfernen möchten, klicken Sie einfach auf das Kombinationsfeld **Servername**, wählen Sie den Namen des zu entfernenden Servers aus, und drücken Sie dann die **ENTF**-Taste. Dies wurde mit SSMS 18.5 eingeführt.
 
 **Kennwort**  
 Geben Sie das Kennwort für die Anmeldung ein. Diese Option ist nur bearbeitbar, wenn Sie die [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Authentifizierung oder die Active Directory-Kennwortauthentifizierung ausgewählt haben, um eine Verbindung herzustellen.  

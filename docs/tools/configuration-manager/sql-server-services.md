@@ -12,12 +12,12 @@ ms.assetid: 97193ac4-aa97-489c-9e81-6fcbdf88aebf
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: dcc5a82e7c8336322e518f2028b8cdda109f8446
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 80b08249bb736e79d6de2ed61a032c353d4e90ee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465711"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349568"
 ---
 # <a name="sql-server-services"></a>SQL Server-Dienste
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

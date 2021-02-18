@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 12/04/2019
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 9c895d2ac72f2c763357a2a2352009f8b2d7cab2
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 1921e37b51728d9d460082ecbd73643ef80f1a92
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597104"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339368"
 ---
 # <a name="transact-sql-debugger---command-window"></a>Transact-SQL-Debugger – Befehlsfenster
 

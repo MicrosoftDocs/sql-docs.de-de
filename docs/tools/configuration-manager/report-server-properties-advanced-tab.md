@@ -12,12 +12,12 @@ ms.assetid: 80aedab6-2be4-409d-88ba-2107e96345fe
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: d18e6d26dacb9b3d2b88443b49c187d2fcfa2503
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1fca4710d16e8b1a7fca3ba6944a4bdd16efa43b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481621"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349674"
 ---
 # <a name="report-server-properties-advanced-tab"></a>Berichtsserver-Eigenschaften (Registerkarte Erweitert)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

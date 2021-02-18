@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: b7596c622bd82bb109051439cbcde5ff72b9cb84
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 41b390816effb3c55acc50fc31a6d221c627b716
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85731919"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338652"
 ---
 # <a name="run-a-trace-after-it-has-been-paused-or-stopped-sql-server-profiler"></a>Ausführen einer Ablaufverfolgung, nachdem sie angehalten oder beendet wurde (SQL Server Profiler)
 

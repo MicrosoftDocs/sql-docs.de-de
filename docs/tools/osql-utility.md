@@ -26,12 +26,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/16/2017
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017'
-ms.openlocfilehash: 29f495dda754d3456e8d8df8811620548426cd89
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 41c47f76dd0a4b81d1ccc337b65bf1c8c157b770
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478441"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100335986"
 ---
 # <a name="osql-utility"></a>osql (Hilfsprogramm)
 

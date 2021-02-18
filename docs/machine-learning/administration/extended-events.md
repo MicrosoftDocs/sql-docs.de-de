@@ -9,12 +9,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 2cd28eaa17a52e0e0ae525f5977dbd5f6a26bf64
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d8324e49ce4de61096880275a07df5a20e288a93
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471361"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337160"
 ---
 # <a name="monitor-python-and-r-scripts-with-extended-events-in-sql-server-machine-learning-services"></a>Überwachen von Python- und R-Skripts mit erweiterten Ereignissen in SQL Server Machine Learning Services
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]
@@ -46,7 +46,7 @@ Weitere Informationen zum Erfassen dieser Ereignisse finden Sie im Abschnitt [Sa
 
 ## <a name="table-of-extended-events"></a>Tabelle erweiterter Ereignisse
 
-|Ereignis|BESCHREIBUNG|Notizen|  
+|Ereignis|Beschreibung|Notizen|  
 |-----------|-----------------|---------|  
 |connection_accept|Tritt auf, wenn eine neue Verbindung akzeptiert wird. Dieses Ereignis dient dazu, alle Verbindungsversuche zu protokollieren.||  
 |failed_launching|Fehler beim Starten.|Gibt einen Fehler an.|  

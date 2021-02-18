@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: ''
 ms.date: 03/14/2017
-ms.openlocfilehash: c074b0f0ed5f5b041a8a4c4ed341837fec2b1926
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: 3e74949152adb8ecadc720ced14ff3b29b196fd6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92006168"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338164"
 ---
 # <a name="run-windows-powershell-from-sql-server-management-studio"></a>Ausführen von Windows PowerShell über SQL Server Management Studio
 
@@ -25,7 +25,7 @@ Sie können Windows PowerShell-Sitzungen aus dem **Objekt-Explorer** in [!INCLUD
 
 [!INCLUDE [sql-server-powershell-version](../includes/sql-server-powershell-version.md)]
 
-Wenn Sie die Ausführung von PowerShell für ein Objekt im **Objekt-Explorer** angeben, startet [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] eine Windows PowerShell-Sitzung, in denen die [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] -PowerShell-Snap-Ins geladen und registriert wurden. Der Pfad für die Sitzung ist auf den Speicherort des Objekts voreingestellt, auf das Sie in Objekt-Explorer mit der rechten Maustaste geklickt haben. Wenn Sie beispielsweise im Objekt-Explorer mit der rechten Maustaste auf das Datenbankobjekt [!INCLUDE[ssSampleDBobject](../includes/sssampledbobject-md.md)] klicken und dann **PowerShell starten**auswählen, wird der Windows PowerShell-Pfad folgendermaßen festgelegt:  
+Wenn Sie die Ausführung von PowerShell für ein Objekt im **Objekt-Explorer** angeben, startet [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] eine Windows PowerShell-Sitzung, in denen die [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] -PowerShell-Snap-Ins geladen und registriert wurden. Der Pfad für die Sitzung ist auf den Speicherort des Objekts voreingestellt, auf das Sie in Objekt-Explorer mit der rechten Maustaste geklickt haben. Wenn Sie beispielsweise im Objekt-Explorer mit der rechten Maustaste auf das Datenbankobjekt [!INCLUDE[ssSampleDBobject](../includes/sssampledbobject-md.md)] klicken und dann **PowerShell starten** auswählen, wird der Windows PowerShell-Pfad folgendermaßen festgelegt:  
 
 ```powershell
 SQLSERVER:\SQL\MyComputer\MyInstance\Databases\AdventureWorks2012>  
@@ -39,7 +39,7 @@ SQLSERVER:\SQL\MyComputer\MyInstance\Databases\AdventureWorks2012>
 
 2. Navigieren Sie zum Knoten für das zu verarbeitende Objekt.
 
-3. Klicken Sie mit der rechten Maustaste auf das Objekt, und wählen Sie **PowerShell starten**aus.
+3. Klicken Sie mit der rechten Maustaste auf das Objekt, und wählen Sie **PowerShell starten** aus.
 
 ## <a name="permissions"></a>Berechtigungen
 

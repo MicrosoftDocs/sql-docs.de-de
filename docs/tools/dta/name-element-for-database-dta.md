@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 5bf14c3057fa2268e879e9dd2f39f287f1364f95
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 8b4e1efa7764d6a2f0f354d7b6e81c5fb24290ce
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85775042"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353487"
 ---
 # <a name="name-element-for-database-dta"></a>Name-Element für Datenbank (DTA)
 

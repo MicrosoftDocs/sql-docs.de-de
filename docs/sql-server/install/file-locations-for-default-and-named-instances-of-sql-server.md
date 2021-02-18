@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 463c570e-9f75-4653-b3b8-4d61753b0013
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b542b33ee1dc4bf849131f90be0316c32b386879
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 053f8519ab8d75659dc9073c11fcc940cacdc1d9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765875"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341138"
 ---
 # <a name="file-locations-for-default-and-named-instances-of-sql-server"></a>Dateispeicherorte für Standard- und benannte Instanzen von SQL Server
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -40,8 +40,8 @@ ms.locfileid: "98765875"
 
 |Version|\*nnn*|{nn}|
 |-----|-----|--------|
-|[!INCLUDE[ssqlv15](../../includes/sssqlv15-md.md)]| 150| 15| 
-|[!INCLUDE[ssqlv14](../../includes/sssqlv14-md.md)]| 140| 14| 
+|[!INCLUDE[ssqlv15](../../includes/sssql19-md.md)]| 150| 15| 
+|[!INCLUDE[ssqlv14](../../includes/sssql17-md.md)]| 140| 14| 
 |[!INCLUDE[ssqlv13](../../includes/sssql16-md.md)]| 130| 13 | 
 |[!INCLUDE[ssqlv12](../../includes/sssql14-md.md)]  | 120|12 | 
 |[!INCLUDE[sssql11](../../includes/sssql11-md.md)] | 110|11 | 

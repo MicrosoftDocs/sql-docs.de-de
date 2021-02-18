@@ -22,12 +22,12 @@ ms.assetid: 029abf7d-6414-47ca-a3a7-b3a057efb6c2
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: 6787c74845424603353e346b841c98a4bcb02d7c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 33e6979fb6b385825d4c45df2ab33d88058120e2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88313546"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340969"
 ---
 # <a name="sql-editor-visual-database-tools"></a>SQL-Editor (Visual Database Tools)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

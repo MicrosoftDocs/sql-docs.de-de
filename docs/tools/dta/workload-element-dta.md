@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: dc93d098ad5b130af90b2e1da987963e3a95c2cc
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 60e673cf32849203c921afa41fa4af6df8f2023e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85731984"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349479"
 ---
 # <a name="workload-element-dta"></a>Workload-Element (DTA)
 

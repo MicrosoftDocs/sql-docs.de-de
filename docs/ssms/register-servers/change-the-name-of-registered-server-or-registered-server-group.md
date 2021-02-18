@@ -11,12 +11,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 08/02/2016
-ms.openlocfilehash: c5c8566a40d3993c6e273de3e3b6137d35e969c1
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: e741cfa596d13bfc30c48cc7550125faf0fde7fa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250969"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350574"
 ---
 # <a name="change-the-name-of-registered-server-or-registered-server-group"></a>Ändern des Namens eines registrierten Servers oder einer Servergruppe
 
@@ -44,6 +44,6 @@ Navigieren Sie über das Menü zu **Ansicht\\Registrierte Server**, um den Berei
 
 3. Geben Sie im Textfeld **Gruppenname** den neuen Namen für die Servergruppe ein, und klicken Sie anschließend auf **Speichern**.  
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Ändern der Registrierung eines Servers &#40;SQL Server Management Studio&#41;](./change-a-server-s-registration-sql-server-management-studio.md)

@@ -11,12 +11,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 01/19/2017
-ms.openlocfilehash: 3aa6e8eccd1bfec881fc01759860bfd79699c834
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1b97a2490e1d31591624149191230b70249f9a52
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88479926"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346624"
 ---
 # <a name="visual-database-tools"></a>Visual Database Tools
 

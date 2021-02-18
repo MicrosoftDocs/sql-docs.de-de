@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 01/19/2017
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: cc8adae5672f14e25e9094befd455ac6ee599850
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 543491e19d1182d611508797bab2354d483302af
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250985"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344257"
 ---
 # <a name="sql-server-agent"></a>SQL Server-Agent
 

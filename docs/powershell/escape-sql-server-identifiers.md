@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: 4ad4bdc7720d0c405e3982b6b4533b55c2756490
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: 25d6badaab16caef587afc9843ccc220f392acb4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92005502"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354301"
 ---
 # <a name="escape-sql-server-identifiers"></a>Escape-Bezeichner für SQL Server
 

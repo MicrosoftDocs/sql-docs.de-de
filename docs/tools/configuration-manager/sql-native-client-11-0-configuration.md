@@ -14,12 +14,12 @@ ms.assetid: e73143e9-5e7b-4d0a-8827-ab900efdcb35
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: aa0eac24445ec24c4b86c54bad6fc1c94c7072d4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 22b9377a750b3b9460dcb8a9940121e67f62d8b9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463761"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346035"
 ---
 # <a name="sql-native-client-110-configuration"></a>SQL Native Client 11.0-Konfiguration
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

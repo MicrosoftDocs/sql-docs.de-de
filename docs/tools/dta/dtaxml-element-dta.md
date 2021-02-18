@@ -14,12 +14,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 8d82b1d9198946d9ef7c14e80d443d151a7154d3
-ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
+ms.openlocfilehash: 9224b5ef28cd891e0dac3d5fdeb60c210f02cd71
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98812862"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338711"
 ---
 # <a name="dtaxml-element-dta"></a>DTAXML-Element (DTA)
 

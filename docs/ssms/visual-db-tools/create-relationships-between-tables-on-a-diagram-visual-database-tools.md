@@ -13,12 +13,12 @@ ms.assetid: 28e9630c-dff4-46cc-bb0e-fe77998b6ac2
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: 0b758a04f81dffc31844af91933a544960f6ba2d
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 5dd6604f4fb82a502402d74cb15c0a0744f82e0e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92037525"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350466"
 ---
 # <a name="create-relationships-between-tables-on-a-diagram-visual-database-tools"></a>Erstellen von Beziehungen zwischen Tabellen in einem Diagramm (Visual Database Tools)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -32,7 +32,7 @@ Sie können im Datenbank-Designer Beziehungen zwischen den Spalten in verschiede
   
 3.  Es werden zwei Dialogfelder angezeigt: **Fremdschlüsselbeziehung** und **Tabellen und Spalten**, wobei letzteres im Vordergrund angezeigt wird.  
   
-4.  Unter**Beziehungsname** wird ein vom System bereitgestellter Name im Format FK_*localtable*\_*foreigntable* angegeben. Sie können diesen Wert ändern.  
+4.  Unter **Beziehungsname** wird ein vom System bereitgestellter Name im Format FK_ *localtable*\_*foreigntable* angegeben. Sie können diesen Wert ändern.  
   
 5.  Stellen Sie sicher, dass für **Primärschlüsseltabelle** die richtige Tabelle angegeben ist.  
   
@@ -40,7 +40,7 @@ Sie können im Datenbank-Designer Beziehungen zwischen den Spalten in verschiede
   
 7.  Wählen Sie **OK** aus.  
   
-    Das Dialogfeld **Fremdschlüsselbeziehung** wird angezeigt. Unter**Ausgewählte Beziehung** wird die von Ihnen erstellte Beziehung angezeigt.  
+    Das Dialogfeld **Fremdschlüsselbeziehung** wird angezeigt. Unter **Ausgewählte Beziehung** wird die von Ihnen erstellte Beziehung angezeigt.  
   
 8.  Sie können die Eigenschaften der Beziehung im Raster ändern.  
   

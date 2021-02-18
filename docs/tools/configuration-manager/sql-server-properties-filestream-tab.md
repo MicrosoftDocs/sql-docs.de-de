@@ -12,12 +12,12 @@ ms.assetid: 07ca5ac6-a68a-4e85-bc6f-fa7ccf9f1c10
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: a6e98afaa7b86c03fc1702b2c07ca0e8714eef7c
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: 556e324b786ba330bb5cab3d406b89c4fac35144
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99076598"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345104"
 ---
 # <a name="sql-server-properties-filestream-tab"></a>SQL Server-Eigenschaften (Registerkarte FILESTREAM)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

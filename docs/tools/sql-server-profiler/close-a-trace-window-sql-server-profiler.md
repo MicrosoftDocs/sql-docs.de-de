@@ -12,12 +12,12 @@ ms.author: maghan
 ms.topic: conceptual
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: d12347b8645932a04b6949c84eaeeaafdc3348f7
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: f976999f25f075acbd5b2552635959b29e10f495
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774924"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349428"
 ---
 # <a name="close-a-trace-window-sql-server-profiler"></a>Schließen eines Ablaufverfolgungsfensters (SQL Server Profiler)
 

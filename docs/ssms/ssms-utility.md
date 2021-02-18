@@ -17,12 +17,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 07/24/2020
-ms.openlocfilehash: 4cc43babe2ae064731f293a0dc96219aaeced5a5
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 102a07f1b26b8c1e31807227686dd8f1f6856237
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92035999"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344185"
 ---
 # <a name="ssms-utility"></a>SSMS-Hilfsprogramm
 

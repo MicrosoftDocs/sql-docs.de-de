@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 50658797fd2a012503dc6669e5613ebd8ba4c5bd
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 664741a4bdb2ef0c5fa9ff604a42023bc76a2552
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644366"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345850"
 ---
 # <a name="export-a-trace-template-sql-server-profiler"></a>Exportieren einer Ablaufverfolgungsvorlage (SQL Server Profiler)
 

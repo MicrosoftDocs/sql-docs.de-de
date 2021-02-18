@@ -11,12 +11,12 @@ ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: seo-lt-2019
 ms.date: 10/14/2020
-ms.openlocfilehash: 28369cdd9f2336e9666f65bbaa99b13a31c77d13
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: ed8fce6dfaebb20ebeebe9b5197948dbf2502dad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489800"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339056"
 ---
 # <a name="manage-authentication-to-sql-server-in-powershell"></a>Verwalten der Authentifizierung bei SQL Server in PowerShell
 

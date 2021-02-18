@@ -19,12 +19,12 @@ ms.assetid: 74b0fb71-7f8e-4171-9431-d07528532524
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 9cf769ae3dc43e6e8c0601d25322627d7dec4920
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1b235dc6b3a332c0ec9e165e4498d152737e3d42
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466231"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353918"
 ---
 # <a name="sqlcmd---connect-to-the-database-engine"></a>Herstellen einer Verbindung mit der Datenbank-Engine mithilfe von „sqlcmd“
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

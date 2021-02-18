@@ -12,12 +12,12 @@ ms.assetid: f4415e35-8f50-4cb7-813e-bdfafbdee275
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 1831107a38ec8a00de0fee7c51eb7dd977217334
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d57d6c40cca7622b54e02015f39b131a8cca6c7c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483852"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349904"
 ---
 # <a name="analysis-server-properties-advanced-tab"></a>Analysis-Server-Eigenschaften (Registerkarte Erweitert)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

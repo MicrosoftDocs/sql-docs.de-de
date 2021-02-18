@@ -17,12 +17,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/07/2017
-ms.openlocfilehash: ba1ed37292b3b92ead4af84cb3f00d4b51e3372d
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 2891d4dcfcae8689dda1aaf78cad9c4c43bae220
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250918"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350472"
 ---
 # <a name="move-a-registered-server-or-registered-server-group"></a>Verschieben eines registrierten Servers bzw. einer registrierte Servergruppe
 
@@ -38,7 +38,7 @@ In diesem Thema wird beschrieben, wie Sie die Server in Registrierte Server orga
   
 2. Erweitern Sie im Dialogfeld **Serverregistrierung verschieben** die Liste mit den Servergruppen, klicken Sie auf den Knoten, in dem der Server bzw. die Servergruppe angezeigt werden soll, und klicken Sie dann auf **OK**.  
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Registrieren von Servern](./register-servers.md)
 

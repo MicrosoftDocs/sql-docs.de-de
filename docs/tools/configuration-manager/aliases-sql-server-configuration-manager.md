@@ -12,12 +12,12 @@ ms.assetid: 7dc5d029-a1ed-4c13-a5c2-2aafb0f7866f
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 1e75121b27118f0ac91665bd74b43e1e3e32c30a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4f8acac81e37151c0e6c32bba6878af01a10ec75
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463917"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349919"
 ---
 # <a name="aliases-sql-server-configuration-manager"></a>Aliase (SQL Server-Konfigurations-Manager)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

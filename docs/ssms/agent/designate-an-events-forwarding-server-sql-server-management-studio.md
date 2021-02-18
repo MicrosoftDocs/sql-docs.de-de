@@ -16,12 +16,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: ecb37153660b08e03170b2d0e8655eb6db20b42c
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 44c1623849efbc989bddaff86fedc87524b84a6d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236372"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342690"
 ---
 # <a name="designate-an-events-forwarding-server"></a>Bestimmen eines Ereignisweiterleitungsservers
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

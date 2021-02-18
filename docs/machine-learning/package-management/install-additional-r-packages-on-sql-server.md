@@ -9,12 +9,12 @@ author: garyericson
 ms.author: garye
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: bdd8189559bc3de1659e4874f80f8862dc341b1d
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 489bea391897c0924690719343bdf5febc37f35f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596278"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350682"
 ---
 # <a name="install-r-packages-with-sqlmlutils"></a>Installieren von R-Paketen mit sqlmlutils
 

@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 9a9b112adc2f91dd6bdf68655148ba74c4204b8d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 829500f7335d1cb805b309ef642e6f70393b6912
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85643844"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345899"
 ---
 # <a name="keepexisting-element-dta"></a>KeepExisting-Element (DTA)
 

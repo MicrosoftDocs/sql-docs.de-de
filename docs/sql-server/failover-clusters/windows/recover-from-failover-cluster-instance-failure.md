@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3d151d0c-e841-4325-8606-c094de37d7d1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 45b917246037b9c333ba07bece6f6630e0ae2464
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 62c8dba2598c5ea52ab95bc8170d838140988753
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99251229"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353585"
 ---
 # <a name="recover-from-failover-cluster-instance-failure"></a>Wiederherstellen nach einem Fehler der Failoverclusterinstanz
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
