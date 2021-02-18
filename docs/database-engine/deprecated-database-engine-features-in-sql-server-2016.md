@@ -1,9 +1,9 @@
 ---
-title: Als veraltet markierte Features der Datenbank-Engine | Microsoft-Dokumentation
+title: Veraltete Features der Datenbank-Engine
 titleSuffix: SQL Server 2016
 description: Erfahren Sie mehr über die veralteten Features der Datenbank-Engine, die weiterhin in SQL Server 2016 (13.x) verfügbar sind, aber nicht in neuen Anwendungen verwendet werden sollten.
 ms.custom: seo-lt-2019
-ms.date: 12/13/2019
+ms.date: 02/11/2021
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
@@ -13,20 +13,19 @@ helpviewer_keywords:
 - deprecated features [SQL Server]
 - Database Engine [SQL Server], backward compatibility
 - deprecation [SQL Server], feature list
-ms.assetid: c10eeaa5-3d3c-49b4-a4bd-5dc4fb190142
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 2e46ade314bf0218344b682c7b75762de3f10396
-ms.sourcegitcommit: 58e7069b5b2b6367e27b49c002ca854b31b1159d
+ms.openlocfilehash: 518b29507e7992b267922e09c97bf98b1657205d
+ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99552639"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525159"
 ---
 # <a name="deprecated-database-engine-features-in-sql-server-2016"></a>Als veraltet markierte Funktionen der Datenbank-Engine in SQL Server 2016
 [!INCLUDE [SQL Server 2016](../includes/applies-to-version/sqlserver2016.md)]  
 
-In diesem Thema werden die als veraltet markierten Funktionen von [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] beschrieben, die in [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]noch verfügbar sind. Als veraltet markierte Funktionen sollten in neuen Anwendungen nicht verwendet werden.  
+In diesem Artikel werden die als veraltet markierten Features von [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] beschrieben, die in [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]noch verfügbar sind. Als veraltet markierte Funktionen sollten in neuen Anwendungen nicht verwendet werden.  
   
 Wenn eine Funktion als veraltet markiert ist, bedeutet dies:
 -  Die Funktion ist ausschließlich im Wartungsmodus. Es werden keine weiteren Änderungen vorgenommen, auch solche nicht, die mit der Interoperabilität mit neuen Funktionen zu tun haben.
@@ -67,6 +66,7 @@ WHERE object_name = 'SQLServer:Deprecated Features';
 |Kompatibilitätsgrade|sp_dbcmptlevel|ALTER DATABASE ... SET COMPATIBILITY_LEVEL. Weitere Informationen finden Sie unter [ALTER DATABASE-Kompatibilitätsgrad &#40;Transact-SQL&#41;](../t-sql/statements/alter-database-transact-sql-compatibility-level.md).|sp_dbcmptlevel|80|  
 |Kompatibilitätsgrade|Datenbank-Kompatibilitätsgrad 110 und 120|Planen Sie, in einer zukünftigen Version die Datenbank und die Anwendung zu aktualisieren. Wir werden jedoch so lange wie möglich Anwendungen unterstützen, die für irgendeinen unterstützten Datenbankkompatibilitätsgrad zertifiziert sind, um die Upgrades zu vereinfachen. Weitere Informationen zu den Kompatibilitätsgraden finden Sie unter [ALTER DATABASE-Kompatibilitätsgrad &#40;Transact-SQL&#41;](../t-sql/statements/alter-database-transact-sql-compatibility-level.md).|Datenbank-Kompatibilitätsgrad 110<br /><br /> Datenbank-Kompatibilitätsgrad 120||  
 |XML|XDR-Inlineschemagenerierung|Die XMLDATA-Direktive zur FOR XML-Option ist veraltet. Verwenden Sie XSD-Generierung für RAW- und AUTO-Modus. Es gibt keinen Ersatz für die XMLDATA-Direktive im EXPLICIT-Modus.|XMLDATA|181|  
+|XML|sys.sp_db_selective_xml_index|ALTER INDEX … DISABLE<BR><BR>Weitere Informationen finden Sie unter [ALTER INDEX](../t-sql/statements/alter-index-transact-sql.md).|[sys.sp_db_selective_xml_index](../relational-databases/system-stored-procedures/sp-db-selective-xml-index-transact-sql.md)|
 |Sichern und Wiederherstellen|BACKUP { DATABASE &#124; LOG } TO TAPE<br /><br /> BACKUP { DATABASE &#124; LOG } TO *Bandgerät*|BACKUP { DATABASE &#124; LOG } TO DISK<br /><br /> BACKUP { DATABASE &#124; LOG } TO *Datenträger*|BACKUP DATABASE oder LOG TO TAPE|235|  
 |Sichern und Wiederherstellen|sp_addumpdevice'**tape**'|sp_addumpdevice'**disk**'|ADDING TAPE DEVICE|236|  
 |Sichern und Wiederherstellen|sp_helpdevice|sys.backup_devices|sp_helpdevice|100|  
@@ -175,4 +175,4 @@ WHERE object_name = 'SQLServer:Deprecated Features';
   
 ## <a name="see-also"></a>Weitere Informationen  
  [Nicht mehr unterstützte Datenbank-Engine-Funktionalität in SQL Server 2016](./discontinued-database-engine-functionality-in-sql-server.md)     
- [Als veraltet markierte Funktionen der Datenbank-Engine in SQL Server 2017](../database-engine/deprecated-database-engine-features-in-sql-server-2017.md)
+ [Als veraltet markierte Funktionen der Datenbank-Engine in SQL Server 2017](../database-engine/deprecated-database-engine-features-in-sql-server-2017.md)  

@@ -8,25 +8,26 @@ author: yualan
 ms.author: alayu
 ms.reviewer: maghan
 ms.custom: seodec18
-ms.date: 1/22/2021
-ms.openlocfilehash: d249e36c9b15cabe9556701c8aafc3cb5ab66fac
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 2/10/2021
+ms.openlocfilehash: 17cc8ef3252ad39c344de7a7c51a9af80c1f6030
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100040010"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343399"
 ---
 # <a name="release-notes-for-azure-data-studio"></a>Versionshinweise für Azure Data Studio
 
 **[Neuestes Release herunterladen und installieren](./download-azure-data-studio.md)**
 
-## <a name="january-2021-hotfix"></a>Januar 2021 (Hotfix)
+## <a name="december-2020-hotfix"></a>Dezember 2020 (Hotfix)
 
-22. Januar 2021 &nbsp; / &nbsp; Version: 1.25.2
+10. Februar 2021 &nbsp; / &nbsp; Version: 1.25.3
 
 | Change | Details |
 | ------ | ------- |
-| Behebung des Fehlers [#13899](https://github.com/microsoft/azuredatastudio/issues/13899)| Scrollen zu den entsprechenden Querverweislinks in Notebooks |
+| Behebung des Fehlers [#13899](https://github.com/microsoft/azuredatastudio/issues/13899) | Scrollen zu den entsprechenden Querverweislinks in Notebooks |
+| Upgraden von Electron zum Einschließen wichtiger Fehlerbehebungen| – |
 
 ## <a name="december-2020"></a>Dezember 2020
 

@@ -25,12 +25,13 @@ helpviewer_keywords:
 ms.assetid: c17996d6-56a6-482f-80d8-086a3423eecc
 author: XiaoyuMSFT
 ms.author: XiaoyuL
-ms.openlocfilehash: 6b6610293bb78ef34ae5ca8b88f762c9ab4948e9
-ms.sourcegitcommit: 0b400bb99033f4b836549cb11124a1f1630850a1
+monikerRange: = azuresqldb-current || = azuresqldb-mi-current || >= sql-server-2016 || >= sql-server-linux-2017 ||  azure-sqldw-latest
+ms.openlocfilehash: 6bb1014c22353826b6e4429726d4d28549cc274a
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "99978862"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489334"
 ---
 # <a name="merge-transact-sql"></a>MERGE (Transact-SQL)
 
@@ -100,7 +101,8 @@ MERGE
   
 <clause_search_condition> ::=  
     <search_condition> 
-```  
+```
+
 [!INCLUDE[sql-server-tsql-previous-offline-documentation](../../includes/sql-server-tsql-previous-offline-documentation.md)]
 
 ```syntaxsql
@@ -117,9 +119,9 @@ MERGE
     [ WHEN NOT MATCHED BY SOURCE [ AND <clause_search_condition> ]  
         THEN <merge_matched> ] [ ...n ]
     [ OPTION ( <query_hint> [ ,...n ] ) ]
-;  -- The semi-colon is required, or the query will return syntax  error. 
+;  -- The semi-colon is required, or the query will return a syntax error. 
 ```
- 
+
 ## <a name="arguments"></a>Argumente
 
 WITH \<common_table_expression>  
@@ -236,7 +238,9 @@ Gibt das Graph-Vergleichsmuster an. Weitere Informationen zu den Argumenten für
 >[!NOTE]
 > In Azure Synapse Analytics weist der MERGE-Befehl (Vorschau) die folgenden Unterschiede im Vergleich mit SQL-Server und Azure SQL-Datenbank auf.  
 > - Ein MERGE-Update ist als Paar aus Delete und Insert implementiert. Die betroffene Zeilenanzahl für ein MERGE-Update schließt die gelöschten und eingefügten Zeilen ein. 
+
 > - Während der Vorschau wird MERGE…WHEN NOT MATCHED INSERT nicht für Tabellen mit IDENTITY-Spalten unterstützt.  
+
 > - Die Unterstützung für Tabellen mit verschiedenen Verteilungstypen ist in dieser Tabelle beschrieben:
 
 >|MERGE-KLAUSEL in Azure Synapse Analytics|Unterstützte ZIEL-Verteilungstabelle| Unterstützte QUELL-Verteilungstabelle|Comment|  
@@ -256,7 +260,6 @@ Bei Verwendung nach MERGE gibt [@@ROWCOUNT &#40;Transact-SQL&#41;](../../t-sql/f
 MERGE ist ein vollständig reserviertes Schlüsselwort, wenn der Kompatibilitätsgrad der Datenbank auf 100 oder höher festgelegt ist. Die MERGE-Anweisung ist bei einem Kompatibilitätsgrad von sowohl 90 als auch 100 verfügbar. Bei einem Kompatibilitätsgrad von 90 ist das Schlüsselwort allerdings nicht vollständig reserviert.  
   
 Verwenden Sie die **MERGE**-Anweisung nicht zusammen mit dem Replikationstyp „Verzögertes Update über eine Warteschlange“. **MERGE** und der Trigger für verzögerte Updates über eine Warteschlange sind nicht kompatibel. Ersetzen Sie die **MERGE**-Anweisung durch eine INSERT- oder UPDATE-Anweisung.  
-
 
 ## <a name="trigger-implementation"></a>Triggerimplementierung
 

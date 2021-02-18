@@ -21,12 +21,12 @@ ms.assetid: 32dfe254-6df7-4437-bfd6-ca7d37557b0a
 author: ronortloff
 ms.author: rortloff
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
-ms.openlocfilehash: 9c97ee3e1f268553a828e035498b203c8fa1e747
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 14a7dce61b50ced328c103ec88973e9bf7b18c7d
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97438945"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100345243"
 ---
 # <a name="create-external-table-as-select-transact-sql"></a>CREATE EXTERNAL TABLE AS SELECT (Transact-SQL)
 [!INCLUDE[applies-to-version/asa-pdw](../../includes/applies-to-version/asa-pdw.md)]
@@ -160,6 +160,8 @@ Als Voraussetzung für das Erstellen einer externen Tabelle muss der Appliancead
  DML-Vorgänge (Data Manipulation Language, Datenbearbeitungssprache) werden in externen Tabellen nicht unterstützt. So können Sie beispielsweise externe Daten nicht mit den [!INCLUDE[tsql](../../includes/tsql-md.md)]-Anweisungen UPDATE, INSERT oder DELETE ändern.
 
  Die Anweisungen CREATE TABLE, DROP TABLE, CREATE STATISTICS, DROP STATISTICS, CREATE VIEW und DROP VIEW sind die einzigen DDL-Vorgänge (Data Definition Language, Datenbeschreibungssprache), die für externe Tabelle zulässig sind.
+
+ Externe Tabellen für den serverlosen SQL-Pool können nicht an einem Speicherort erstellt werden, an dem Sie zurzeit über Daten verfügen. Um einen Speicherort wiederzuverwenden, der bereits zum Speichern von Daten verwendet wurde, muss der Speicherort auf ADLS manuell gelöscht werden.
 
  PolyBase kann bei 32 gleichzeitigen PolyBase-Abfragen maximal 33.000 Dateien pro Ordner verarbeiten. Diese maximale Anzahl schließt sowohl Dateien als auch Unterordner im jeweiligen HDFS-Ordner ein. Bei weniger als 32 gleichzeitigen Abfragen können Benutzer auch PolyBase-Abfragen für Ordner in HDFS ausführen, die mehr als 33.000 Dateien enthalten. Benutzern von Hadoop und PolyBase wird empfohlen, kurze Dateipfade und nicht mehr als 30.000 Dateien pro HDFS-Ordner zu verwenden. Verweise auf eine zu große Anzahl von Dateien können zu einer JVM-Ausnahme aufgrund unzureichenden Arbeitsspeichers führen.
 

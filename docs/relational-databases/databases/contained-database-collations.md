@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 4b44f6b9-2359-452f-8bb1-5520f2528483
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: 09edac79bf52c2826436ecdfdf25b0db342f4aeb
-ms.sourcegitcommit: 99f61724de5edf6640efd99916d464172eb23f92
+ms.openlocfilehash: a1da6b96aea93feaacdb5384716ef6cd0ab82a06
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87363561"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489404"
 ---
 # <a name="contained-database-collations"></a>Enthaltene Datenbanksortierungen
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -136,7 +136,7 @@ END;
 |Goto-Bezeichnungen|Instanzsortierung|CATALOG_DEFAULT|  
 |Cursornamen|Instanzsortierung|CATALOG_DEFAULT|  
   
- Im zuvor beschriebenen Beispiel für eine temporäre Tabelle ist ersichtlich, dass dieses Sortierverhalten bei den meisten Verwendungen temporärer Tabellen eine explizite **COLLATE** -Klausel überflüssig macht. In einer enthaltenen Datenbank wird dieser Code nun ohne Fehler ausgeführt, selbst wenn sich die Datenbanksortierung und die Instanzsortierung unterscheiden:  
+ Im zuvor beschriebenen Beispiel für eine temporäre Tabelle ist ersichtlich, dass dieses Sortierverhalten bei den meisten Verwendungen temporärer Tabellen eine explizite **COLLATE**-Klausel überflüssig macht. In einer enthaltenen Datenbank wird dieser Code nun ohne Fehler ausgeführt, selbst wenn sich die Datenbanksortierung und die Instanzsortierung unterscheiden:  
   
 ```sql  
 CREATE TABLE T1 (T1_txt nvarchar(max)) ;  
@@ -164,7 +164,7 @@ JOIN #T2
   
 -   Durch den Verweis können mehrere Übereinstimmungen gefunden werden, die sich ursprünglich voneinander unterschieden haben. Auch hierdurch wird ein Fehler ausgelöst.  
   
- Dies wird im Folgenden anhand einiger Beispiele veranschaulicht. Dabei wird angenommen, dass eine teilweise eigenständige Datenbank mit dem Namen `MyCDB` vorhanden ist, deren Datenbanksortierung auf die Standardsortierung **Latin1_General_100_CI_AS_WS_KS_SC**festgelegt ist. Wir nehmen an, dass die instanzsortierung **Latin1_General_100_CS_AS_WS_KS_SC**ist. Die beiden Sortierungen unterscheiden sich nur hinsichtlich der Berücksichtigung der Groß- und Kleinschreibung.  
+ Dies wird im Folgenden anhand einiger Beispiele veranschaulicht. Dabei wird angenommen, dass eine teilweise eigenständige Datenbank mit dem Namen `MyCDB` vorhanden ist, deren Datenbanksortierung auf die Standardsortierung **Latin1_General_100_CI_AS_WS_KS_SC** festgelegt ist. Wir nehmen an, dass die instanzsortierung **Latin1_General_100_CS_AS_WS_KS_SC** ist. Die beiden Sortierungen unterscheiden sich nur hinsichtlich der Berücksichtigung der Groß- und Kleinschreibung.  
   
 ### <a name="example-1"></a>Beispiel 1  
  Im folgenden Beispiel wird der Fall veranschaulicht, bei dem durch den Verweis genau eine Übereinstimmung gefunden wird.  

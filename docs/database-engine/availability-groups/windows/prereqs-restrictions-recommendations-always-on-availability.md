@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: edbab896-42bb-4d17-8d75-e92ca11f7abb
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e1a2fe365ff2cf40e1dd7e08e113a586e7c2b666
-ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
+ms.openlocfilehash: 571cf683c8d905cfb499624cbd05dc40efe94b86
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98783517"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100344639"
 ---
 # <a name="prerequisites-restrictions-and-recommendations-for-always-on-availability-groups"></a>Voraussetzungen, Einschränkungen und Empfehlungen für Always On-Verfügbarkeitsgruppen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -263,7 +263,7 @@ ms.locfileid: "98783517"
   
 -   **Eindeutiger Name der Verfügbarkeitsgruppe:**  Jeder Verfügbarkeitsgruppenname muss auf dem WSFC eindeutig sein. Die maximale Länge eines Verfügbarkeitsgruppennamens beträgt 128 Zeichen.  
   
--   **Verfügbarkeitsreplikate:**  Jede Verfügbarkeitsgruppe unterstützt ein primäres Replikat und bis zu acht sekundäre Replikate. Alle Replikate können im Modus für asynchrone Commits ausgeführt werden. Alternativ können bis zu drei Replikate im Modus für synchrone Commits ausgeführt werden (ein primäres Replikat mit zwei synchronen sekundären Replikaten).  
+-   **Verfügbarkeitsreplikate:**  Jede Verfügbarkeitsgruppe unterstützt ein primäres Replikat und bis zu acht sekundäre Replikate. Alle Replikate können im Modus für asynchrone Commits ausgeführt werden. Alternativ können bis zu fünf Replikate im Modus für synchrone Commits ausgeführt werden (ein primäres Replikat mit zwei synchronen sekundären Replikaten).  
   
 -   **Maximale Anzahl von Verfügbarkeitsgruppen und Verfügbarkeitsdatenbanken pro Computer:** Die tatsächliche Anzahl der auf einem Computer (virtuell oder physisch) ausführbaren Datenbanken und Verfügbarkeitsgruppen richtet sich nach der Hardware und Workload, es gibt jedoch keine maximale Vorgabe. Microsoft hat bis zu 10 Verfügbarkeitsgruppen und 100 Datenbanken pro physischem Computer getestet, aber dies stellt keinen bindenden Grenzwert dar. Abhängig von der Hardwarespezifikation auf dem Server und dem Workload können Sie eine höhere Anzahl von Datenbanken und Verfügbarkeitsgruppen auf einer Instanz von SQL Server platzieren. Anzeichen für eine Systemüberlastung könnten u.a. zu wenige Arbeitsthreads, langsame Antwortzeiten für Verfügbarkeitsgruppen-Systemsichten und DMVs und/oder Systemspeicherabbilder bei angehaltenem Verteiler sein. Es wird empfohlen, die Umgebung unter produktionsähnlichen Bedingungen eingehend zu testen, um zu gewährleisten, dass das System maximale Arbeitsauslastungen im Rahmen Ihrer Anwendungs-SLAs bewältigen kann. Im Hinblick auf SLAs sollten sowohl die Auslastung unter Fehlerbedingungen als auch die erwarteten Antwortzeiten abgewogen werden.  
   

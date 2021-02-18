@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a616e9b8fb1ebce6edd15c6af101765963d862f8
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 787a683eb0fc666eff8f3c72519bbba149dafe96
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97640316"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100340808"
 ---
 # <a name="mechanics-and-guidelines-of-lease-cluster-and-health-check-timeouts-for-always-on-availability-groups"></a>Mechanismen und Richtlinien der Timeouts für Leases, Cluster und Integritätsprüfung für Always On-Verfügbarkeitsgruppen 
 
@@ -98,7 +98,7 @@ Die Verzögerungswerte (Delay) bestimmen die Wartezeit zwischen Takten vom Clust
 Zum Auflisten aller aktuellen Clusterwerte öffnen Sie auf einem beliebigen Knoten im Zielcluster einen PowerShell-Terminal mit erhöhten Rechten. Führen Sie den folgenden Befehl aus:
 
 ```PowerShell
- Get-Cluster | fl \
+ Get-Cluster | fl *
 ``` 
 
 Um einen dieser Werte zu aktualisieren, führen Sie den folgenden Befehl auf einem PowerShell-Terminal mit erhöhten Rechten aus:
@@ -125,6 +125,8 @@ Der Leasemechanismus wird durch einen einzelnen Wert gesteuert, der für jede Ve
 
    Je nach Konfiguration der Verfügbarkeitsgruppe sind möglicherweise zusätzliche Ressourcen für Listener, freigegebene Datenträger, Dateifreigaben usw. vorhanden. Diese Ressourcen erfordern keine zusätzliche Konfiguration. 
 
+> [!NOTE]  
+>  Der neue Wert der Eigenschaft „LeaseTimeout“ wird wirksam, nachdem die Ressource offline und wieder online geschaltet wurde.
    
 ### <a name="health-check-values"></a>Werte für die Integritätsprüfung 
 

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3a5daefd-08a8-4565-b54f-28ad01a47d32
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4038ba678af8635f3ac2bd12f68c818a61e2c87f
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: 86f23acdc6dd82210c5747915d78aafc2344fc6b
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99075633"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100348102"
 ---
 # <a name="restore-a-sql-server-database-to-a-point-in-time-full-recovery-model"></a>Wiederherstellen einer SQL Server-Datenbank zu einem Zeitpunkt (vollständiges Wiederherstellungsmodell)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -156,7 +156,7 @@ ms.locfileid: "99075633"
   
 3.  Stellen Sie die letzte differenzielle Datenbanksicherung wieder her und – sofern vorhanden –  ohne dabei die Datenbank wiederherzustellen (RESTORE DATABASE *database_name* FROM *backup_device* WITH NORECOVERY).  
   
-4.  Wenden Sie jede einzelne Transaktionsprotokollsicherung in derselben Reihenfolge an, in der sie erstellt wurde, und geben Sie dabei den Zeitpunkt an, zu dem die Wiederherstellung des Protokolls beendet werden soll (RESTORE DATABASE *Datenbankname* FROM <Sicherungsmedium> WITH STOPAT **=**_time_**,** RECOVERY).  
+4.  Wenden Sie jede einzelne Transaktionsprotokollsicherung in derselben Reihenfolge an, in der sie erstellt wurde, und geben Sie dabei den Zeitpunkt an, zu dem die Wiederherstellung des Protokolls beendet werden soll (RESTORE DATABASE *Datenbankname* FROM <Sicherungsgerät> WITH STOPAT **=** _Zeit_ **,** RECOVERY).  
   
     > [!NOTE]  
     >  Die Optionen RECOVERY und STOPAT. Wenn die Transaktionsprotokollsicherung den geforderten Zeitpunkt nicht enthält (z. B. wenn der angegebene Zeitpunkt hinter dem Zeitpunkt liegt, bis zu dem das Transaktionsprotokoll reicht), wird eine Warnung erzeugt, und die Datenbank wird nicht wiederhergestellt.  

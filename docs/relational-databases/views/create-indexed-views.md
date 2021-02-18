@@ -19,12 +19,12 @@ ms.assetid: f86dd29f-52dd-44a9-91ac-1eb305c1ca8d
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0cc0d86dbdce6e3618957551a1059c0178a23d61
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 148f93b43f704686b3083954cb3d7353f33a16e0
+ms.sourcegitcommit: c6cc0b669b175ae290cf5b08952010661ebd03c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236294"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100530860"
 ---
 # <a name="create-indexed-views"></a>Erstellen von indizierten Sichten
 
@@ -157,10 +157,11 @@ Indizes für Tabellen und Sichten können deaktiviert werden. Wenn ein gruppiert
 
 #### <a name="permissions"></a><a name="Permissions"></a> Berechtigungen
 
-Erfordert die **CREATE VIEW**-Berechtigung in der Datenbank und die **ALTER**-Berechtigung in dem Schema, in dem die Sicht erstellt wird. Wenn sich die Basistabelle in einem anderen Schema befindet, ist mindestens die **REFERENCES**-Berechtigung für die Tabelle erforderlich.
+Zum Erstellen der Sicht muss ein Benutzer die **CREATE VIEW**-Berechtigung in der Datenbank und die **ALTER**-Berechtigung in dem Schema verwenden, in dem die Sicht erstellt wird. Wenn sich die Basistabelle in einem anderen Schema befindet, ist mindestens die **REFERENCES**-Berechtigung für die Tabelle erforderlich. Wenn sich der Benutzer, der den Index erstellt, von den Benutzern unterscheidet, die die Sicht erstellt haben, ist allein für die Indexerstellung die **ALTER**-Berechtigung für die Sicht erforderlich (durch ALTER für das Schema abgedeckt).
 
     > [!NOTE]  
-    > For the creation of the index on top of the view, the base table must have the same owner as the view. This is also called ownership-chain. This is usually the case when table and view reside within the same schema, but it is possible that individual objects have different owners. The column **principal_id** in sys.tables contains a value if the owner is different from the schema-owner.
+    > Indexes can only be created on views which have the same owner as the referenced table or tables. This is also called an intact **ownership-chain** between the view and the table(s). Typically, when table and view reside within the same schema, the same schema-owner applies to all objects within the schema. But it is possible that individual objects have different explicit owners. The column **principal_id** in sys.tables contains a value if the owner is different from the schema-owner.
+
 
 ## <a name="using-transact-sql"></a><a name="TsqlProcedure"></a> Verwenden von Transact-SQL
 

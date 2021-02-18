@@ -23,12 +23,12 @@ ms.assetid: fe830577-11ca-44e5-953b-2d589d54d045
 author: VanMSFT
 ms.author: vanto
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=aps-pdw-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 1b9a9c27b80d702706d0b6bf1d7e7b3cb7d1d09b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2bb17115cb016e13f0ef20f8bd4ace4edf5c214a
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99192723"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100270497"
 ---
 # <a name="create-database-scoped-credential-transact-sql"></a>CREATE DATABASE SCOPED CREDENTIAL (Transact-SQL)
 
@@ -56,7 +56,7 @@ WITH IDENTITY = 'identity_name'
 IDENTITY **='** _identity\_name_ **'** Gibt den Namen des Kontos an, das beim Herstellen einer Verbindung außerhalb des Servers verwendet wird. Der Identitätsname muss `SHARED ACCESS SIGNATURE` entsprechen, um eine Datei aus Azure Blob Storage mithilfe eines freigegebenen Schlüssels zu importieren. Jeder gültige Wert kann für die Identität verwendet werden, um Daten in Azure Synapse Analytics zu laden. Weitere Informationen zu SAS finden Sie unter [Verwenden von Shared Access Signatures (SAS)](/azure/storage/storage-dotnet-shared-access-signature-part-1). Verwenden Sie nicht den Domänennamen im IDENTITY-Argument, wenn Sie Kerberos (Windows Active Directory oder MIT KDC) verwenden. Sie sollten lediglich den Kontonamen verwenden.
 
 > [!IMPORTANT]
-> Die SQL, Oracle, Teradata und MongoDB ODBC-Connectors für PolyBase unterstützen nur die einfache Authentifizierung, nicht die Kerberos-Authentifizierung.
+> Die einzige externe PolyBase-Datenquelle, die die Kerberos-Authentifizierung unterstützt, ist Hadoop. Alle anderen externen Datenquellen (SQL Server, Oracle, Teradata, MongoDB, generisches ODBC) unterstützen nur die Standardauthentifizierung.
 
 > [!NOTE]
 > WITH IDENTITY ist nicht erforderlich, wenn der Container in Azure Blob Storage für anonymen Zugriff aktiviert ist. Ein Beispiel für das Abfragen von Azure Blob Storage finden Sie unter [Importieren in eine Tabelle aus einer Datei, die in Azure Blob Storage](../functions/openrowset-transact-sql.md#j-importing-into-a-table-from-a-file-stored-on-azure-blob-storage) gespeichert ist.

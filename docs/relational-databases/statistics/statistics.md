@@ -25,12 +25,12 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 521904030d97213770d4a2310b51eaadc37d4e5d
-ms.sourcegitcommit: 05fc736e6b6b3a08f503ab124c3151f615e6faab
+ms.openlocfilehash: 996ae78401e57e538ef2835ec107a2cc5400741a
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478585"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100352471"
 ---
 # <a name="statistics"></a>Statistik
 
@@ -128,10 +128,9 @@ ORDER BY s.name;
   |Temporäre Prozeduren|*n* < 6|6|
   |Temporäre Prozeduren|6 <= *n* <= 500|500|
   |Dauerhaft|*n* <= 500|500|
-  |Temporär oder permanent|500 <= *n* <= 25.000|500 + (0,20 * *n*)|
-  |Temporär oder permanent|*n* > 25.000|SQRT(1.000 * *n*)|
+  |Temporär oder permanent|*n* >= 500|MIN ( 500 + (0.20 * *n*), SQRT(1,000 * *n*) ) |
 
-  Wenn die Tabelle beispielsweise 2 Millionen Zeilen enthält, lautet die Berechnung `SQRT(1,000 * 2,000,000) = 44,721`, und die Statistiken werden alle 44.721 Änderungen aktualisiert.
+  Wenn Ihre Tabelle beispielsweise 2 Millionen Zeilen enthält, ist die Berechnung ein Mindestwert von `500 + (0.20 * 2,000,000) = 400,500` und `SQRT(1,000 * 2,000,000) = 44,721`. Das bedeutet, dass die Statistiken alle 44.721 Änderungen aktualisiert werden.
 
 > [!IMPORTANT]
 > In [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] bis [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] bzw. in [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] und höher mit [Datenbank-Kompatibilitätsgrad](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) 120 und niedriger müssen Sie das [Ablaufverfolgungsflag 2371](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) aktivieren, damit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] einen sinkenden Schwellenwert für das dynamische Statistikupdate verwendet.

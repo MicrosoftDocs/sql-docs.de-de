@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 50f5aad8-0dff-45ef-8350-f9596d3db898
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 361fdb639201fe69c9f31e233dca51a910ed10a7
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 7b5b892518856f38260218a23bb4342ab178aa30
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641544"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100342374"
 ---
 # <a name="take-an-availability-group-offline-sql-server"></a>Offlineschalten einer Verfügbarkeitsgruppe (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
   In diesem Thema wird beschrieben, wie der Status einer Always On-Verfügbarkeitsgruppe mithilfe von [!INCLUDE[tsql](../../../includes/tsql-md.md)] in [!INCLUDE[ssSQL11SP1](../../../includes/sssql11sp1-md.md)] und höheren Versionen von ONLINE auf OFFLINE geändert wird. Es gibt keinen Datenverlust an Datenbanken mit synchronem Commit, da bei nicht vorgenommener Synchronisierung irgendeines Replikats mit synchronem Commit der OFFLINE-Vorgang einen Fehler auslöst und die Verfügbarkeitsgruppe ONLINE bleibt. Da die Verfügbarkeitsgruppe online bleibt, werden unsynchronisierte Datenbanken mit synchronem Commit vor möglichem Datenverlust geschützt. Nachdem eine Verfügbarkeitsgruppe offline geschaltet wurde, sind ihre Datenbanken für Clients nicht mehr verfügbar, und Sie können die Verfügbarkeitsgruppe nicht wieder online schalten. Schalten Sie daher eine Verfügbarkeitsgruppe nur offline, um die Verfügbarkeitsgruppenressourcen von einem WSFC-Cluster zu einem anderen zu migrieren.  
   
- Wenn während einer clusterübergreifenden Migration von [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)]Anwendungen direkt eine Verbindung mit dem primären Replikat einer Verfügbarkeitsgruppe herstellen, muss die Verfügbarkeitsgruppe offline geschaltet werden. Die clusterübergreifende Migration von [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] unterstützt Betriebssystemupgrades mit minimaler Downtime von Verfügbarkeitsgruppen. Typischerweise wird die Kreuzclustermigration von [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] verwendet, um Betriebssysteme auf [!INCLUDE[win8](../../../includes/win8-md.md)] oder [!INCLUDE[win8srv](../../../includes/win8srv-md.md)]zu aktualisieren. Weitere Informationen finden Sie unter [Lösungen mit hoher Verfügbarkeit (SQL Server)](/previous-versions/sql/sql-server-2012/jj873730(v=msdn.10)).  
+ Wenn während einer clusterübergreifenden Migration von [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)]Anwendungen direkt eine Verbindung mit dem primären Replikat einer Verfügbarkeitsgruppe herstellen, muss die Verfügbarkeitsgruppe offline geschaltet werden. Die clusterübergreifende Migration von [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] unterstützt Betriebssystemupgrades mit minimaler Downtime von Verfügbarkeitsgruppen. Das typische Szenario ist die Verwendung der clusterübergreifenden Migration von [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] mit SQL Server 2012 SP1 (11.0.3x) und höheren Versionen. Weitere Informationen finden Sie unter [Lösungen mit hoher Verfügbarkeit (SQL Server)](/previous-versions/sql/sql-server-2012/jj873730(v=msdn.10)).  
   
   
 > [!CAUTION]  

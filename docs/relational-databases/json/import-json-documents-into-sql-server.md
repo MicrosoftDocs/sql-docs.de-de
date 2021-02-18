@@ -11,12 +11,12 @@ ms.author: jovanpop
 ms.reviewer: jroth
 ms.custom: seo-dt-2019
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: af720d627c0af05060b4d6f4915762cd80782714
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 34f8655a24a84d50c5f677d819330537fa030cc6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469501"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100075056"
 ---
 # <a name="import-json-documents-into-sql-server"></a>Importieren von JSON-Dokumenten in SQL Server
 
@@ -91,6 +91,9 @@ Weitere Informationen zu Azure File Storage finden Sie unter [File Storage](http
 ## <a name="import-json-documents-from-azure-blob-storage"></a>Importieren von JSON-Dokumenten aus Azure BLOB-Speicher
 
 Sie können Dateien mit dem Befehl T-SQL BULK INSERT oder der OPENROWSET-Funktion direkt aus Azure Blob Storage in Azure SQL-Datenbank laden.
+
+> [!NOTE]
+> Diese Funktion wird in [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] und Azure SQL hinzugefügt.
 
 Erstellen Sie zunächst eine externe Datenquelle, wie im folgenden Beispiel gezeigt.
 

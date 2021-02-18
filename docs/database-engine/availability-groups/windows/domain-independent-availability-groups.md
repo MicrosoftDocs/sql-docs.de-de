@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 6c809abd5c333013b197dd48ca2fb4832bf6b615
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 060e9e635aa7be4dd3c00e11b0f3a36073cdaa54
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643606"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100349279"
 ---
 # <a name="create-a-domain-independent-availability-group"></a>Erstellen einer domänenunabhängigen Verfügbarkeitsgruppe
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -150,10 +150,10 @@ Die Erstellung einer domänenunabhängigen Verfügbarkeitsgruppe kann derzeit vo
          )
    ```
 
-13. Weisen Sie jedem in dieser Instanz in Schritt 9 erstellten Benutzer Rechte zu, sodass dieser eine Verbindung mit dem Endpunkt herstellen kann. 
+13. Weisen Sie jedem in dieser Instanz in Schritt 8 erstellten Anmeldenamen Rechte zu, sodass dieser eine Verbindung mit dem Endpunkt herstellen kann. 
 
    ```sql
-   GRANT CONNECT ON ENDPOINT::DIAG_EP TO [InstanceX_User];
+   GRANT CONNECT ON ENDPOINT::DIAG_EP TO [InstanceX_Login];
    GO
    ```
 

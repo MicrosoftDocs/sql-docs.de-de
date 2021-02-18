@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: aa427606-8422-4656-b205-c9e665ddc8c1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7f9b06bd6805e75c053037b18fc6870ef1469500
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c38eb3d70f724dc90e14aa77641dddd781233a62
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642199"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343877"
 ---
 # <a name="always-on-availability-groups-a-high-availability-and-disaster-recovery-solution"></a>Always On-Verfügbarkeitsgruppen: eine Hochverfügbarkeits- und Notfallwiederherstellungslösung
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "97642199"
   
     -   *Modus für asynchrone Commits*. Dieser Verfügbarkeitsmodus ist eine Lösung für die Notfallwiederherstellung, die gut funktioniert, wenn die Verfügbarkeitsreplikate über große Entfernungen verteilt sind.  
   
-    -   *Modus für synchrone Commits*. Bei diesem Verfügbarkeitsmodus haben Hochverfügbarkeit und Datenschutz Vorrang vor Leistung, und dies hat eine höhere Transaktionslatenz zur Folge. Eine bestimmte Verfügbarkeitsgruppe kann bis zu drei Verfügbarkeitsreplikate mit synchronem Commit (einschließlich des aktuellen primären Replikats) unterstützen.  
+    -   *Modus für synchrone Commits*. Bei diesem Verfügbarkeitsmodus haben Hochverfügbarkeit und Datenschutz Vorrang vor Leistung, und dies hat eine höhere Transaktionslatenz zur Folge. Eine bestimmte Verfügbarkeitsgruppe kann bis zu fünf Verfügbarkeitsreplikate mit synchronem Commit (einschließlich des aktuellen primären Replikats) unterstützen.  
   
      Weitere Informationen finden Sie unter [Verfügbarkeitsmodi &#40;Always On-Verfügbarkeitsgruppen&#41;](../../../database-engine/availability-groups/windows/availability-modes-always-on-availability-groups.md)ausgetauscht werden. 
 
-     In [!INCLUDE[sql-server-2019](../../../includes/sssqlv15-md.md)] wird die maximale Anzahl der synchronen Replikate von ehemals 3 in [!INCLUDE[ssSQL17](../../../includes/sssql17-md.md)] auf 5 erhöht. Sie können diese Gruppe aus fünf Replikaten für das automatische Failover in der Gruppe konfigurieren. Es gibt ein primäres Replikat sowie vier synchrone sekundäre Replikate.
+     In [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)] wird die maximale Anzahl der synchronen Replikate von ehemals 3 in [!INCLUDE[ssSQL17](../../../includes/sssql17-md.md)] auf 5 erhöht. Sie können diese Gruppe aus fünf Replikaten für das automatische Failover in der Gruppe konfigurieren. Es gibt ein primäres Replikat sowie vier synchrone sekundäre Replikate.
   
 -   Unterstützt mehrere Failovermethoden für Verfügbarkeitsgruppen: automatisches Failover, geplantes manuelles Failover (im Allgemeinen "manuelles Failover" genannt) und erzwungenes manuelles Failover (im Allgemeinen "erzwungenes Failover" genannt). Weitere Informationen finden Sie weiter unten in diesem Thema unter [Failover und Failovermodi &#40;Always On-Verfügbarkeitsgruppen&#41;](../../../database-engine/availability-groups/windows/failover-and-failover-modes-always-on-availability-groups.md).  
   

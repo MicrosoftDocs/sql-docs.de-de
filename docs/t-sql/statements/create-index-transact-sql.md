@@ -55,12 +55,12 @@ ms.assetid: d2297805-412b-47b5-aeeb-53388349a5b9
 author: pmasl
 ms.author: pelopes
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 8591620ce92aca8a6c272539721f20a8a64fd9ae
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: e02d3676b1b303ef6dbbae4a509ed0db0c608071
+ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237094"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525230"
 ---
 # <a name="create-index-transact-sql"></a>CREATE INDEX (Transact-SQL)
 
@@ -823,7 +823,7 @@ Für partitionierte Indizes gelten die folgenden Einschränkungen:
 Mit der gespeicherten Prozedur [sp_estimate_data_compression_savings](../../relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql.md) können Sie einschätzen, wie sich eine Änderung des Komprimierungsstatus auf eine Tabelle, einen Index oder eine Partition auswirkt.
 
 ## <a name="permissions"></a>Berechtigungen
-Erfordert die `ALTER`-Berechtigung für die Tabelle oder Sicht. Der Benutzer muss Mitglied der festen Serverrolle `sysadmin` oder der festen Datenbankrolle `db_ddladmin` oder `db_owner` sein.
+Erfordert die `ALTER`-Berechtigung für die Sicht oder die Mitgliedschaft in der festen Datenbankrolle `db_ddladmin`.
 
 ## <a name="limitations-and-restrictions"></a>Einschränkungen
 In [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] und [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] können Sie Folgendes nicht erstellen:

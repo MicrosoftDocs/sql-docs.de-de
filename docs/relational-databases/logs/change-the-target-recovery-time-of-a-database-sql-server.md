@@ -11,16 +11,17 @@ ms.assetid: e466419a-d8a4-48f7-8d97-13a903ad6b15
 author: MashaMSFT
 ms.author: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 6a64388940661139a52a10cd781fa13033e6fb70
-ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
+ms.openlocfilehash: d5762a71ab0bd2425abb0ee59c997f1f30fb10b4
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99049175"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489364"
 ---
 # <a name="change-the-target-recovery-time-of-a-database-sql-server"></a>Ändern der Zielwiederherstellungszeit einer Datenbank (SQL Server)
+
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  In diesem Artikel wird beschrieben, wie Sie die Zielwiederherstellungszeit einer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Datenbank in [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] mithilfe von [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] oder [!INCLUDE[tsql](../../includes/tsql-md.md)] festlegen oder ändern. Standardmäßig beträgt die Zielwiederherstellungszeit 60 Sekunden, und die Datenbank verwendet *indirekte Prüfpunkte*. Die Zielwiederherstellungszeit richtet eine Obergrenze der Wiederherstellungszeit für diese Datenbank ein.  
+  In diesem Artikel wird beschrieben, wie Sie die Zielwiederherstellungszeit einer [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]-Datenbank mithilfe von [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] oder [!INCLUDE[tsql](../../includes/tsql-md.md)] festlegen oder ändern. Standardmäßig beträgt die Zielwiederherstellungszeit 60 Sekunden, und die Datenbank verwendet *indirekte Prüfpunkte*. Die Zielwiederherstellungszeit richtet eine Obergrenze der Wiederherstellungszeit für diese Datenbank ein.  
   
 > [!NOTE]  
 >  Die Obergrenze, die für eine bestimmte Datenbank durch die Wiederherstellungszeiteinstellung für das Ziel angegeben wird, könnte überschritten werden, wenn eine Transaktion mit langer Laufzeit übermäßig lange UNDO-Zeiten verursacht.  

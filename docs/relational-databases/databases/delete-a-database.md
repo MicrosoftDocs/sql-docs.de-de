@@ -19,16 +19,16 @@ ms.assetid: 1fd8c0f5-03e1-449a-af45-b8cacb479d9c
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 8299034ab5ce3baf01c39391777ab551569887f8
-ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
+ms.openlocfilehash: e6835865e78147a11878b12ae8ce9c465b66f0e7
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98813047"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489424"
 ---
 # <a name="delete-a-database"></a>Löschen einer Datenbank
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-  In diesem Thema wird beschrieben, wie eine benutzerdefinierte Datenbank unter [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] in [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] mit [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] oder [!INCLUDE[tsql](../../includes/tsql-md.md)]gelöscht wird.  
+  In diesem Artikel wird beschrieben, wie eine benutzerdefinierte Datenbank unter [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] mit [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] oder [!INCLUDE[tsql](../../includes/tsql-md.md)] gelöscht wird.  
   
  **In diesem Thema**  
   

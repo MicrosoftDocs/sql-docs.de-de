@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: de676bea-cec7-479d-891a-39ac8b85664f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: dc7532aaead7b2257755f2db689c2cbbbd05d3c3
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 6620e688dcd8094bbc5b27bfbb540a2e7d3b1585
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97639156"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100348834"
 ---
 # <a name="sql-server-back-up-to-url-best-practices-and-troubleshooting"></a>Bewährte Methoden und Problembehandlung für die SQL Server-Sicherung über URL
 
@@ -44,6 +44,8 @@ ms.locfileid: "97639156"
 -   Wenn Sie die Sicherung mit der `WITH COMPRESSION`-Option durchführen, können Sie die Speicherkosten und Speichertransaktionskosten minimieren. Darüber hinaus verkürzt die Option die Dauer des Sicherungsvorgangs.  
 
 - Legen Sie die Argumente `MAXTRANSFERSIZE` und `BLOCKSIZE` wie im Artikel [SQL Server-Sicherung über URLs](./sql-server-backup-to-url.md) empfohlen fest.
+
+- SQL Server ist unabhängig von der Art der verwendeten Speicherredundanz. Die Sicherung in Seitenblobs und Blockblobs wird für jede Speicherredundanz unterstützt (LRS\ZRS\GRS\RA-GRS\RA-GZRS\ usw.).
   
 ## <a name="handling-large-files"></a>Behandlung großer Dateien  
   
@@ -155,15 +157,27 @@ CREATE CREDENTIAL <credential name> WITH IDENTITY = 'mystorageaccount'
 , SECRET = '<storage access key>' ;  
 ```  
   
-Die Anmeldeinformationen sind zwar vorhanden, aber das Anmeldekonto zum Ausführen des Sicherungsbefehls verfügt über keine Berechtigung für den Zugriff auf die Anmeldeinformationen. Verwenden Sie ein Anmeldekonto der Rolle **db_backupoperator** mit Berechtigungen des Typs **_Beliebige Anmeldeinformationen ändern_* _.  
+Die Anmeldeinformationen sind zwar vorhanden, aber das Anmeldekonto zum Ausführen des Sicherungsbefehls verfügt über keine Berechtigung für den Zugriff auf die Anmeldeinformationen. Verwenden Sie ein Anmeldekonto der Rolle **db_backupoperator** mit Berechtigungen des Typs **_Beliebige Anmeldeinformationen ändern_**.  
   
 Überprüfen Sie den Namen des Speicherkontos und die Schlüsselwerte. Die in den Anmeldeinformationen gespeicherten Informationen müssen den Eigenschaftswerten Azure-Speicherkontos entsprechen, das Sie für Sicherungs- und Wiederherstellungsvorgänge verwenden.  
   
-  
+
+**Fehler 400: Ungültige Anforderung**
+
+Bei Verwendung von SQL Server 2012 tritt möglicherweise ein Fehler auf, der der folgenden Art von Sicherung ähnelt:
+
+```
+Backup to URL received an exception from the remote endpoint. Exception Message: 
+The remote server returned an error: (400) Bad Request..
+```
+
+Dies wird durch die vom Azure Storage-Konto unterstützte TLS-Version verursacht. Die unterstützte TLS-Version wird geändert, oder die in [KB4017023](https://support.microsoft.com/en-us/topic/kb4017023-sql-server-2012-2014-or-2016-backup-to-microsoft-azure-blob-storage-service-url-isn-t-compatible-for-tls-1-2-e9ef6124-fc05-8128-86bc-f4f4f5ff2b78) aufgeführte Problemumgehung wird verwendet.
+
+
 ## <a name="proxy-errors"></a>Proxyfehler  
  Wenn Sie über Proxyserver auf das Internet zugreifen, können folgende Probleme auftreten:  
   
- _ *Verbindungsdrosselung durch Proxyserver**  
+ **Verbindungsdrosselung durch Proxyserver**  
   
  Proxyserver können über Einstellungen verfügen, die die Anzahl der Verbindungen pro Minute begrenzen. Der URL-Sicherungsprozess ist ein Multithreadprozess und kann diese Begrenzung folglich überschreiten. In diesem Fall wird die Verbindung vom Proxyserver abgebrochen. Um das Problem zu beheben, ändern Sie die Proxyeinstellungen, damit der Proxy von SQL Server nicht verwendet wird. Im Folgenden einige Beispiele für Fehlertypen oder -meldungen, die im Fehlerprotokoll angezeigt werden können:  
   

@@ -17,12 +17,12 @@ ms.assetid: 07f8f594-75b4-4591-8c29-d63811d7753f
 author: pmasl
 ms.author: pelopes
 manager: amitban
-ms.openlocfilehash: fee5c2f4f1d8a286830f4e1fdefdb1043964a726
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: 9007a29a613f1fea6891af33b66e69d98f2058b2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96505224"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355261"
 ---
 # <a name="execution-plans"></a>Ausführungspläne
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -46,9 +46,9 @@ In einem Abfrageausführungsplan wird Folgendes definiert:
 
 > [!NOTE]
 > [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] verfügt über drei Optionen zum Anzeigen von Ausführungsplänen:        
-> -  Der **_[geschätzte Ausführungsplan](../../relational-databases/performance/display-the-estimated-execution-plan.md)_* _ ist der kompilierte Plan, so wie er vom Abfrageoptimierer anhand von Schätzungen erstellt wird. Dies ist der Abfrageplan, der im Plancache gespeichert wird.        
-> -  Der _*_ [tatsächliche Ausführungsplan](../../relational-databases/performance/display-an-actual-execution-plan.md) _*_ entspricht dem kompilierten Plan und enthält zusätzlich den zugehörigen [Ausführungskontext](../../relational-databases/query-processing-architecture-guide.md#execution-plan-caching-and-reuse). Er wird _*nach Abschluss der Abfrageausführung** verfügbar. Dies umfasst die tatsächlichen Laufzeitinformationen, z. B. Ausführungswarnungen oder, in neueren Versionen von [!INCLUDE[ssde_md](../../includes/ssde_md.md)], die vergangene und die CPU-Zeit während der Ausführung.         
-> -  Die **_[Liveabfragestatistik](../../relational-databases/performance/live-query-statistics.md)_ *entspricht dem kompilierten Plan und enthält dessen Ausführungskontext. Sie ist für _* In-Flight-Abfrageausführungen** verfügbar und wird jede Sekunde aktualisiert. Dies schließt Laufzeitinformationen ein, z. B. die tatsächliche Anzahl der Zeilen, die die [Operatoren](../../relational-databases/showplan-logical-and-physical-operators-reference.md) durchlaufen, die verstrichene Zeit und den geschätzten Abfragefortschritt.
+> -  Der ***[geschätzte Ausführungsplan](../../relational-databases/performance/display-the-estimated-execution-plan.md)*** ist der kompilierte Plan, der vom Abfrageoptimierer anhand von Schätzungen erzeugt wird. Dies ist der Abfrageplan, der im Plancache gespeichert wird.        
+> -  Der * **[tatsächliche Ausführungsplan](../../relational-databases/performance/display-an-actual-execution-plan.md)** _ entspricht dem kompilierten Plan und enthält zusätzlich den zugehörigen [Ausführungskontext](../../relational-databases/query-processing-architecture-guide.md#execution-plan-caching-and-reuse). Er wird _*nach Abschluss der Abfrageausführung** verfügbar. Dies umfasst die tatsächlichen Laufzeitinformationen, z. B. Ausführungswarnungen oder, in neueren Versionen von [!INCLUDE[ssde_md](../../includes/ssde_md.md)], die vergangene und die CPU-Zeit während der Ausführung.         
+> -  Die * **[Liveabfragestatistik](../../relational-databases/performance/live-query-statistics.md)** entspricht dem kompilierten Plan und enthält dessen Ausführungskontext. Sie ist für _*In-Flight-Abfrageausführungen** verfügbar und wird jede Sekunde aktualisiert. Dies schließt Laufzeitinformationen ein, z. B. die tatsächliche Anzahl der Zeilen, die die [Operatoren](../../relational-databases/showplan-logical-and-physical-operators-reference.md) durchlaufen, die verstrichene Zeit und den geschätzten Abfragefortschritt.
 
 > [!TIP]
 > Weitere Informationen zur Abfrageverarbeitung und den Abfrageausführungsplänen finden Sie in den Abschnitten [Optimieren von SELECT-Anweisungen](../../relational-databases/query-processing-architecture-guide.md#optimizing-select-statements) und [Zwischenspeichern und Wiederverwenden von Ausführungsplänen](../../relational-databases/query-processing-architecture-guide.md#execution-plan-caching-and-reuse) des Handbuchs zur Architektur der Abfrageverarbeitung.

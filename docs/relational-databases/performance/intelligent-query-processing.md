@@ -12,12 +12,12 @@ helpviewer_keywords: ''
 author: joesackmsft
 ms.author: josack
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 83f19187abd2395ef453e59508b2404a7b10a728
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 40a2ba2ff9e3955c09a8d8529a67ec3275e17222
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469191"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338965"
 ---
 # <a name="intelligent-query-processing-in-sql-databases"></a>Intelligente Abfrageverarbeitung in SQL-Datenbanken
 
@@ -43,13 +43,13 @@ In der folgenden Tabelle sind Details zu allen Features der intelligenten Abfrag
 | **IQP-Feature** | **Unterstützt in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] und [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)]** | **Unterstützt in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]** |**Beschreibung** |
 | ---------------- | ------- | ------- | ---------------- |
 | [Adaptive Joins (Batchmodus)](#batch-mode-adaptive-joins) | Ja, unter Kompatibilitätsgrad 140| Ja, ab [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] unter Kompatibilitätsgrad 140|Adaptive Joins wählen je nach tatsächlichen Eingabezeilen während der Laufzeit dynamisch einen Jointyp aus.|
-| [Approximate Count Distinct](#approximate-query-processing) | Ja| Ja, ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]|Stellt die geschätzte Abfrageverarbeitung für Big Data-Szenarios mit dem Vorteil einer hohen Leistung und einem niedrigen Speicherbedarf bereit. |
-| [Batchmodus bei Rowstore](#batch-mode-on-rowstore) | Ja, unter Kompatibilitätsgrad 150| Ja, ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] unter Kompatibilitätsgrad 150|Stellt den Batchmodus für CPU-gebundene relationale Data Warehouse-Workloads bereit, ohne Columnstore-Indizes zu benötigen.  | 
+| [Approximate Count Distinct](#approximate-query-processing) | Ja| Ja, ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]|Stellt die geschätzte Abfrageverarbeitung für Big Data-Szenarios mit dem Vorteil einer hohen Leistung und einem niedrigen Speicherbedarf bereit. |
+| [Batchmodus bei Rowstore](#batch-mode-on-rowstore) | Ja, unter Kompatibilitätsgrad 150| Ja, ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] unter Kompatibilitätsgrad 150|Stellt den Batchmodus für CPU-gebundene relationale Data Warehouse-Workloads bereit, ohne Columnstore-Indizes zu benötigen.  | 
 | [Verschachtelte Ausführung](#interleaved-execution-for-mstvfs) | Ja, unter Kompatibilitätsgrad 140| Ja, ab [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] unter Kompatibilitätsgrad 140|Verwendet die tatsächliche Kardinalität der Tabellenwertfunktion mit mehreren Anweisungen, die bei der ersten Kompilierung aufgetreten ist, anstatt einer festgelegten Schätzung.|
 | [Feedback zur Speicherzuweisung (Batchmodus)](#batch-mode-memory-grant-feedback) | Ja, unter Kompatibilitätsgrad 140| Ja, ab [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] unter Kompatibilitätsgrad 140|Wenn es für eine Abfrage im Batchmodus Operationen gibt, die sich auf den Datenträger auswirken, wird für anschließende Ausführungen mehr Speicher hinzugefügt. Wenn eine Abfrage unnötigerweise mehr als die Hälfte des zugewiesenen Speichers belegt, wird die Speicherzuweisungsseite für anschließende Ausführungen reduziert.|
-| [Feedback zur Speicherzuweisung (Zeilenmodus)](#row-mode-memory-grant-feedback) | Ja, unter Kompatibilitätsgrad 150| Ja, ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] unter Kompatibilitätsgrad 150|Wenn es für eine Abfrage im Zeilenmodus Operationen gibt, die sich auf den Datenträger auswirken, wird für anschließende Ausführungen mehr Speicher hinzugefügt. Wenn eine Abfrage unnötigerweise mehr als die Hälfte des zugewiesenen Speichers belegt, wird die Speicherzuweisungsseite für anschließende Ausführungen reduziert.|
-| [Inlining benutzerdefinierter Skalarfunktionen](#scalar-udf-inlining) | Nein | Ja, ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] unter Kompatibilitätsgrad 150|Benutzerdefinierte Skalarfunktionen werden in äquivalente relationale Ausdrücke transformiert, für die „Inlining“ in die aufrufende Abfrage ausgeführt wird, was häufig zu erheblichen Leistungssteigerungen führt.|
-| [Verzögerte Kompilierung von Tabellenvariablen](#table-variable-deferred-compilation) | Ja, unter Kompatibilitätsgrad 150| Ja, ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] unter Kompatibilitätsgrad 150|Verwendet die tatsächliche Kardinalität der Tabellenvariable, die bei der ersten Kompilierung aufgetreten ist, anstatt einer festgelegten Schätzung.|
+| [Feedback zur Speicherzuweisung (Zeilenmodus)](#row-mode-memory-grant-feedback) | Ja, unter Kompatibilitätsgrad 150| Ja, ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] unter Kompatibilitätsgrad 150|Wenn es für eine Abfrage im Zeilenmodus Operationen gibt, die sich auf den Datenträger auswirken, wird für anschließende Ausführungen mehr Speicher hinzugefügt. Wenn eine Abfrage unnötigerweise mehr als die Hälfte des zugewiesenen Speichers belegt, wird die Speicherzuweisungsseite für anschließende Ausführungen reduziert.|
+| [Inlining benutzerdefinierter Skalarfunktionen](#scalar-udf-inlining) | Nein | Ja, ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] unter Kompatibilitätsgrad 150|Benutzerdefinierte Skalarfunktionen werden in äquivalente relationale Ausdrücke transformiert, für die „Inlining“ in die aufrufende Abfrage ausgeführt wird, was häufig zu erheblichen Leistungssteigerungen führt.|
+| [Verzögerte Kompilierung von Tabellenvariablen](#table-variable-deferred-compilation) | Ja, unter Kompatibilitätsgrad 150| Ja, ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] unter Kompatibilitätsgrad 150|Verwendet die tatsächliche Kardinalität der Tabellenvariable, die bei der ersten Kompilierung aufgetreten ist, anstatt einer festgelegten Schätzung.|
 
 ## <a name="batch-mode-adaptive-joins"></a>Adaptive Joins im Batchmodus
 Mit dem Feature „Adaptive Joins im Batchmodus“ wird es ermöglicht, die Wahl der Join-Methode ([Hashjoin oder Join geschachtelter Schleifen](../../relational-databases/performance/joins.md)) auf den Zeitpunkt **nach** der Überprüfung der ersten Eingabe zu verzögern, indem ein einzelner zwischengespeicherter Plan verwendet wird. Der Operator für adaptive Joins definiert einen Schwellenwert, der bestimmt, wann zu einem Plan geschachtelter Schleifen gewechselt wird. Daher kann Ihr Plan während der Ausführung dynamisch zu einer passenderen Joinstrategie wechseln.
@@ -128,7 +128,7 @@ Ein USE HINT-Abfragehinweis hat Vorrang vor einer datenbankweit gültigen Konfig
 
 ## <a name="row-mode-memory-grant-feedback"></a>Feedback zur Speicherzuweisung im Zeilenmodus
 
-**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
+**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
 
 Das Feedback zur Speicherzuweisung im Zeilenmodus erweitert die Feedbackfunktion zur Speicherzuweisung im Batchmodus, indem die Größe der Speicherzuweisung sowohl für Batch- als auch für Zeilenmodusoperatoren angepasst wird.  
 
@@ -136,7 +136,7 @@ Um Feedback zur Speicherzuweisung im Zeilenmodus in [!INCLUDE[ssSDSfull](../../i
 
 Die Feedbackaktivität zur Speicherzuweisung im Zeilenmodus wird über das XEvent-Ereignis **memory_grant_updated_by_feedback** angezeigt. 
 
-Seitdem Feedback zur Speicherzuweisung im Zeilenmodus verfügbar ist, werden zwei neue Abfrageplanattribute für die tatsächlichen Pläne nach der Ausführung angezeigt: **_IsMemoryGrantFeedbackAdjusted_* _ und _*_LastRequestedMemory_*_. Diese werden dem XML-Element des _MemoryGrantInfo*-Abfrageplans hinzugefügt. 
+Seitdem Feedback zur Speicherzuweisung im Zeilenmodus verfügbar ist, werden zwei neue Abfrageplanattribute für die tatsächlichen Pläne nach der Ausführung angezeigt: ***IsMemoryGrantFeedbackAdjusted** _ and _*_LastRequestedMemory_*_. Diese werden dem XML-Element des _MemoryGrantInfo*-Abfrageplans hinzugefügt. 
 
 *LastRequestedMemory* zeigt den zugewiesenen Speicher in KB von der vorherigen Abfrageausführung an. Mit dem Attribut *IsMemoryGrantFeedbackAdjusted* können Sie den Feedbackstatus einer Speicherzuweisung für die Anweisung in einem Abfrageausführungsplan überprüfen. Folgende Werte werden in diesem Attribut angezeigt:
 
@@ -279,7 +279,7 @@ Ein USE HINT-Abfragehinweis hat Vorrang vor einer datenbankweit gültigen Konfig
 
 ## <a name="table-variable-deferred-compilation"></a>Verzögerte Kompilierung von Tabellenvariablen
 
-**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
+**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
 
 Die **verzögerte Kompilierung von Tabellenvariablen** verbessert die Qualität des Abfrageplans und die Gesamtleistung für Abfragen mit Verweisen auf Tabellenvariablen. Während der Optimierung und der ersten Kompilierung des Plans verteilt diese Funktion Kardinalitätsschätzungen, die auf tatsächlichen Tabellenvariablen-Zeilenzahlen basieren. Diese Informationen zur genauen Zeilenzahl werden dann zur Optimierung der nachgelagerten Planvorgänge verwendet.
 
@@ -333,7 +333,7 @@ OPTION (USE HINT('DISABLE_DEFERRED_COMPILATION_TV'));
 
 ## <a name="scalar-udf-inlining"></a>Inlining benutzerdefinierter Skalarfunktionen
 
-**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
 Das skalare UDF-Inlining wandelt [skalare UDFs](../../relational-databases/user-defined-functions/create-user-defined-functions-database-engine.md#Scalar) automatisch in relationale Ausdrücke um. Diese werden in die aufrufende SQL-Abfrage eingebettet. Diese Transformation verbessert die Leistung von Workloads, die skalare UDFs nutzen. Skalares UDF-Inlining ermöglicht eine kostenbasierte Optimierung der Vorgänge innerhalb von UDFs. Die Ergebnisse sind effiziente, mengenorientierte und parallele statt ineffiziente, iterative, serielle Ausführungspläne. Dieses Feature ist standardmäßig unter dem Datenbank-Kompatibilitätsgrad 150 aktiviert.
 
@@ -341,7 +341,7 @@ Weitere Informationen finden Sie unter [Inlining benutzerdefinierter Skalarfunkt
 
 ## <a name="approximate-query-processing"></a>Geschätzte Abfrageverarbeitung
 
-**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
+**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
 
 Die geschätzte Abfrageverarbeitung ist eine neue Featurefamilie. Sie stellt Aggregationen über große Datasets hinweg bereit, bei denen die Reaktionsfähigkeit wichtiger ist als die absolute Präzision. Ein Beispiel ist die Berechnung eines **COUNT(DISTINCT())** über 10 Milliarden Zeilen für die Anzeige auf einem Dashboard. In diesem Fall ist absolute Genauigkeit nicht wichtig, aber die Reaktionsfähigkeit ist es jedoch. Diese neue **APPROX_COUNT_DISTINCT**-Aggregatfunktion gibt die ungefähre Anzahl von eindeutigen Ungleich-Null-Werten in einer Gruppe zurück.
 
@@ -349,7 +349,7 @@ Weitere Informationen finden Sie unter [APPROX_COUNT_DISTINCT (Transact-SQL)](..
 
 ## <a name="batch-mode-on-rowstore"></a>Batchmodus bei Rowstore 
 
-**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
+**Anwendungsbereich:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
 
 Batchmodus bei Rowstore ermöglicht die Ausführung im Batchmodus für Analyseworkloads, die keine Columnstore-Indizes erfordern.  Dieses Feature unterstützt die Ausführung im Batchmodus und Bitmapfilter für On-Disk-Heaps und B-Struktur-Indizes. Batchmodus bei Rowstore ermöglicht die Unterstützung aller vorhandenen batchmodusfähigen Operatoren.
 

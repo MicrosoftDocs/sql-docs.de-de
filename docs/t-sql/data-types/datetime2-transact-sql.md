@@ -23,12 +23,12 @@ ms.assetid: 868017f3-214f-43ef-8536-cc1632a2288f
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 837f8bdf2680d62c2b4d6992fc97c65ef59842bd
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0bdacc09933666e1deb2d238f867441a8cbc8f6c
+ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99161286"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525186"
 ---
 # <a name="datetime2-transact-sql"></a>datetime2 (Transact-SQL)
 
@@ -202,11 +202,11 @@ SELECT
   
 |Datentyp|Output|  
 |---|---|
-|**time**|12:35:29. 1234567|  
+|**time**|12:35:29.1234567|  
 |**date**|2007-05-08|  
 |**smalldatetime**|2007-05-08 12:35:00|  
 |**datetime**|2007-05-08 12:35:29.123|  
-|**datetime2**|2007-05-08 12:35:29. 1234567|  
+|**datetime2**|2007-05-08 12:35:29.1234567|  
 |**datetimeoffset**|2007-05-08 12:35:29.1234567 +12:15|  
   
 ## <a name="see-also"></a>Weitere Informationen

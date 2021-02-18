@@ -163,7 +163,7 @@ items:
         items:
           - name: Konfigurieren
             items:
-              - name: Überblick
+              - name: Übersicht
                 href: big-data-cluster/configure-bdc-overview.md
               - name: Upgrade auf zur Konfigurationsverwaltung fähigen Cluster (CU9+)
                 href: big-data-cluster/bdc-upgrade-configuration.md
@@ -12528,6 +12528,8 @@ items:
                 href: relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-groups-transact-sql.md
               - name: sys.dm_db_missing_index_group_stats
                 href: relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-group-stats-transact-sql.md
+              - name: sys.dm_db_missing_index_group_stats_query
+                href: relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-group-stats-query-transact-sql.md
           - name: E/A
             href: relational-databases/system-dynamic-management-views/i-o-related-dynamic-management-views-and-functions-transact-sql.md
             items:
