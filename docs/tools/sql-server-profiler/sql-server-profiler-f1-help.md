@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 07/07/2017
-ms.openlocfilehash: 6b6e67a848b365a32a1177d2655b49992ef185eb
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 06711f4975bb84163f58857759c5470f004c52e9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643435"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338629"
 ---
 # <a name="sql-server-profiler-dialog-boxes"></a>SQL Server Profiler-Dialogfelder
 

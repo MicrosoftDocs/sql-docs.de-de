@@ -17,12 +17,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/07/2017
-ms.openlocfilehash: 2066f5a90f27b892827c1a36034a3f9e57f4f0ea
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 07a0210f5416d899702046cf257ca2b3892609b8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250463"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341051"
 ---
 # <a name="remove-a-server-group-sql-server-management-studio"></a>Entfernen einer Servergruppe (SQL Server Management Studio)
 
@@ -38,6 +38,6 @@ In diesem Thema wird beschrieben, wie Sie eine Servergruppe in Registrierte Serv
   
 2.  Klicken Sie im Dialogfeld **Löschen bestätigen** auf **Ja**.  
   
-## <a name="see-also"></a>Weitere Informationen  
+## <a name="see-also"></a>Siehe auch  
  [Verschieben eines registrierten Servers oder einer registrierten Servergruppe &#40;SQL Server Management Studio&#41;](./move-a-registered-server-or-registered-server-group.md)  
   

@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 65f9f3c32da239c7ae6f41dfbe74b7ee8bb9ce41
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 0394038ecd114f30c1a32005e126a4aa20b548a2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85726859"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345815"
 ---
 # <a name="set-global-trace-options-sql-server-profiler"></a>Festlegen globaler Ablaufverfolgungsoptionen (SQL Server Profiler)
 
@@ -29,11 +29,11 @@ In diesem Thema wird beschrieben, wie Sie die Optionen festlegen können, die f�
   
 1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  Klicken Sie im Dialogfeld **Allgemeine Optionen**auf **Schriftart auswählen**, um die Anzeigeoptionen zu ändern, und klicken Sie anschließend auf **OK**.  
+2.  Klicken Sie im Dialogfeld **Allgemeine Optionen** auf **Schriftart auswählen**, um die Anzeigeoptionen zu ändern, und klicken Sie anschließend auf **OK**.  
   
-3.  Sie können optional auch **Ablaufverfolgung sofort nach Herstellen der Verbindung starten**auswählen.  
+3.  Sie können optional auch **Ablaufverfolgung sofort nach Herstellen der Verbindung starten** auswählen.  
   
-4.  Sie können optional auch **Ablaufverfolgungsdefinition bei Änderung der Anbieterversion aktualisieren**auswählen. Diese Option wird empfohlen, und sie ist standardmäßig aktiviert. Wenn diese Option aktiviert ist, wird die Ablaufverfolgungsdefinition automatisch auf die aktuelle Version des Servers aktualisiert, auf dem die Ablaufverfolgung ausgeführt wird.  
+4.  Sie können optional auch **Ablaufverfolgungsdefinition bei Änderung der Anbieterversion aktualisieren** auswählen. Diese Option wird empfohlen, und sie ist standardmäßig aktiviert. Wenn diese Option aktiviert ist, wird die Ablaufverfolgungsdefinition automatisch auf die aktuelle Version des Servers aktualisiert, auf dem die Ablaufverfolgung ausgeführt wird.  
   
 5.  Sie können optional angeben, wie der Server mit Rolloverdateien umgehen soll:  
   
@@ -53,7 +53,7 @@ In diesem Thema wird beschrieben, wie Sie die Optionen festlegen können, die f�
         |**4**|Standardwert.|  
         |**255**|Maximalwert. Durch Einstellung eines Maximalwerts wird die für andere Prozesse verfügbare Leistung eingeschränkt.|  
   
-    -   Mit**Standardwartezeit für Systemüberwachung (Sek.)** wird die maximale Zeitspanne in Sekunden angegeben, über die ein Wiedergabethread einen anderen Prozess blockieren kann. In der folgenden Tabelle werden die einzelnen Werten näher erläutert.  
+    -   Mit **Standardwartezeit für Systemüberwachung (Sek.)** wird die maximale Zeitspanne in Sekunden angegeben, über die ein Wiedergabethread einen anderen Prozess blockieren kann. In der folgenden Tabelle werden die einzelnen Werten näher erläutert.  
   
         |Wert|BESCHREIBUNG|  
         |-----------|-----------------|  
@@ -61,7 +61,7 @@ In diesem Thema wird beschrieben, wie Sie die Optionen festlegen können, die f�
         |**3600**|Standardwert. Lässt blockierende Prozesse zu, die nicht länger als **3600** Sekunden oder eine Stunde dauern.|  
         |**86400**|Maximalwert. Lässt blockierende Prozesse zu, die nicht länger als **86400** Sekunden oder einen Tag dauern.|  
   
-    -   Mit**Standardabrufintervall für Systemüberwachung (Sek.)** wird die Frequenz festgelegt, mit der Wiedergabethreads für blockierende Prozesse abgerufen werden. In der folgenden Tabelle werden die einzelnen Werten näher erläutert.  
+    -   Mit **Standardabrufintervall für Systemüberwachung (Sek.)** wird die Frequenz festgelegt, mit der Wiedergabethreads für blockierende Prozesse abgerufen werden. In der folgenden Tabelle werden die einzelnen Werten näher erläutert.  
   
         |Wert|BESCHREIBUNG|  
         |-----------|-----------------|  

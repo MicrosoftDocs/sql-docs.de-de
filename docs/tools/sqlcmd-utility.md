@@ -28,12 +28,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 09/11/2020
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017'
-ms.openlocfilehash: 3a33f274b18e36859e697dd4c0a6bdb5c171930e
-ms.sourcegitcommit: 5dcbe4abbe2339292961370c1d8ca3affa625f72
+ms.openlocfilehash: be528466cb44e5c72413b0494dfe5416dd29783e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99536395"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338594"
 ---
 # <a name="sqlcmd-utility"></a>SQLCMD-Hilfsprogramm
 

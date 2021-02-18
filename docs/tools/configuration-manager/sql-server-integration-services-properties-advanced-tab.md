@@ -12,12 +12,12 @@ ms.assetid: d89cc01f-084b-41b0-8c60-3c6b964d7ad4
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 97081cd675ebf8dbed10536bc528d7692929f288
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 584f53e98a73474aa167483a53b0bf0ac328cff1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463751"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345157"
 ---
 # <a name="sql-server-integration-services-properties-advanced-tab"></a>Eigenschaften von SQL Server Integration Services (Registerkarte Erweitert)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

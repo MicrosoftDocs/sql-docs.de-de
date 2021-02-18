@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 48728a7557edc0d2ddfa5d3e1dbf3e9acb868aa7
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 27dd9d883f7bd728e0bba751798257afb138cb81
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85726852"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342045"
 ---
 # <a name="set-trace-definition-defaults-sql-server-profiler"></a>Festlegen der Standardeinstellungen für Ablaufverfolgungsdefinitionen (SQL Server Profiler)
 
@@ -29,9 +29,9 @@ In der Standardeinstellung wird für Ablaufverfolgungsdefinitionen die Standardv
   
 1.  Klicken Sie im Menü **Datei** auf **Vorlagen**, und klicken Sie dann auf **Vorlage bearbeiten.**  
   
-2.  Wählen Sie im Dialogfeld **Eigenschaften der Ablaufverfolgungsvorlage** auf der Registerkarte **Allgemein**einen Servertyp in der Liste **Servertyp auswählen**aus.  
+2.  Wählen Sie im Dialogfeld **Eigenschaften der Ablaufverfolgungsvorlage** auf der Registerkarte **Allgemein** einen Servertyp in der Liste **Servertyp auswählen** aus.  
   
-3.  Wählen Sie im Dialogfeld **Vorlagennamen auswählen**den Namen der Vorlage aus, die Sie als Standardeinstellung für Ablaufverfolgungsdefinitionen verwenden möchten.  
+3.  Wählen Sie im Dialogfeld **Vorlagennamen auswählen** den Namen der Vorlage aus, die Sie als Standardeinstellung für Ablaufverfolgungsdefinitionen verwenden möchten.  
   
 4.  Aktivieren Sie das Kontrollkästchen **Als Standardvorlage für den ausgewählten Servertyp verwenden**.  
   

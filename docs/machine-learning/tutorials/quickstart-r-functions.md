@@ -10,12 +10,12 @@ author: garyericson
 ms.author: garye
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 0da73dd1202d4b5eab2c14077dfe54b04dfe9bd8
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 451e72262cce6befa1a0eadc149a1e0e69d6f5b2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092665"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339615"
 ---
 # <a name="quickstart-r-functions-with-sql-machine-learning"></a>Schnellstart: R-Funktionen mit SQL Machine Learning
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]

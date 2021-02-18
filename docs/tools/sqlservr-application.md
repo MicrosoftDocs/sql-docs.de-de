@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 60e8ef0a-0851-41cf-a6d8-cca1e04cbcdb
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9422651db34ab9c423a960b9d945d1c748f25d93
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: 793943c492766037adbce8c077b9a391c041c88c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99075952"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338585"
 ---
 # <a name="sqlservr-application"></a>sqlservr (Anwendung)
 

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d785cdb7-1ea0-4871-bde9-1ae7881190f5
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 269bdcc45622fdf0c422e1aae50537bbd9275d46
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: 74a6f8fb42cccc907d2c99ce795f307c1f73330c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99076062"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338558"
 ---
 # <a name="sqllocaldb-utility"></a>SqlLocalDB-Hilfsprogramm
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

@@ -10,12 +10,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||>=azuresqldb-mi-current'
-ms.openlocfilehash: 7f7b7a22376cba31a54f5682e041e225cb15760c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 22e857ae1cf84ae30e5965015df6dffcc148800a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470341"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338263"
 ---
 # <a name="python-tutorial-train-and-save-a-python-model-using-t-sql"></a>Python-Tutorial: Trainieren und Speichern eines Python-Modells mit T-SQL
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]
@@ -32,7 +32,7 @@ In diesem Artikel führen Sie Folgendes durch:
 
 In [Teil 1](python-taxi-classification-introduction.md) haben Sie die Voraussetzungen installiert und die Beispieldatenbank wiederhergestellt.
 
-In [Teil zwei](python-taxi-classification-explore-data.md) haben Sie die Beispieldaten untersucht und einige Plots generiert.
+Im [zweiten Teil](python-taxi-classification-explore-data.md) haben Sie die Beispieldaten untersucht und einige Plots generiert.
 
 In [Teil drei](python-taxi-classification-create-features.md) haben Sie gelernt, wie Sie mithilfe einer Transact-SQL-Funktion aus Rohdaten Features erstellen. Anschließend haben Sie die Funktion aus einer gespeicherten Prozedur aufgerufen, um eine Tabelle zu erstellen, die die Funktionswerte enthält.
 

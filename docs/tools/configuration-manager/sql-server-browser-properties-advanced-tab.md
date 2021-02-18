@@ -12,12 +12,12 @@ ms.assetid: ba79137a-cb72-4bf3-a650-e11d02cfce10
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: b0b7f20f3761a3e39a3899a919d400f339c8285e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: fc2075fe1875a8d74b101f79a691f5d88c26e04f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481551"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345227"
 ---
 # <a name="sql-server-browser-properties-advanced-tab"></a>Eigenschaften von SQL Server-Browser (Registerkarte Erweitert)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

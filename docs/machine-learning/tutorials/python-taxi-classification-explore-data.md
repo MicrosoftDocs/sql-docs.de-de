@@ -10,12 +10,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||>=azuresqldb-mi-current'
-ms.openlocfilehash: 0f52df34bb04a94baf14076a9ea345712166ae5a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e36b8f6f2768d4de83c9f23bd264329f6f04d381
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470321"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339678"
 ---
 # <a name="python-tutorial-explore-and-visualize-data"></a>Python-Tutorial: Untersuchen und Visualisieren von Daten
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]

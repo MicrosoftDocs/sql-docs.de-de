@@ -12,12 +12,12 @@ ms.assetid: a605417c-4ba7-4f3f-baa9-14166f97c478
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: d7f2f32a10a88fc53fa44b1027668ee46b619289
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e2761a39941626e8c146d652457c50549bd7c394
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481631"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349748"
 ---
 # <a name="nsltservice-namegt-properties-advanced-tab"></a>Eigenschaften von NS$&lt;Dienstname&gt; (Registerkarte „Erweitert“)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

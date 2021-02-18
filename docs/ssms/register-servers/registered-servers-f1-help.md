@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 59f76b28-ba78-4a1a-b5d5-8b581f30114d
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: abc9fccd9c81f26b872a991c05a2d653384ad123
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 0d4b3a2e75a00e3688ec53c5e64e6ab7727375a2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92036906"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341044"
 ---
 # <a name="registered-servers-f1-help"></a>Registrierte Server (F1-Hilfe)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -56,13 +56,13 @@ ms.locfileid: "92036906"
  Stellen Sie die Verbindung mit **Formularauthentifizierung** her, wenn die Reporting Services-Installation für die Verwendung der Formularauthentifizierung konfiguriert ist.  
   
  **Benutzername**  
- Geben Sie den Benutzernamen ein, der für die Verbindung verwendet werden soll. Diese Option ist nur verfügbar, wenn Sie **Standardauthentifizierung** oder **Formularauthentifizierung**ausgewählt haben.  
+ Geben Sie den Benutzernamen ein, der für die Verbindung verwendet werden soll. Diese Option ist nur verfügbar, wenn Sie **Standardauthentifizierung** oder **Formularauthentifizierung** ausgewählt haben.  
   
  **Kennwort**  
- Geben Sie das Kennwort für den Benutzernamen ein. Diese Option kann nur bearbeitet werden, wenn Sie **Standardauthentifizierung** oder **Formularauthentifizierung**ausgewählt haben.  
+ Geben Sie das Kennwort für den Benutzernamen ein. Diese Option kann nur bearbeitet werden, wenn Sie **Standardauthentifizierung** oder **Formularauthentifizierung** ausgewählt haben.  
   
  **Kennwort speichern**  
- Speichert das eingegebene Kennwort. Diese Option ist nur verfügbar, wenn Sie **Standardauthentifizierung** oder **Formularauthentifizierung**ausgewählt haben.  
+ Speichert das eingegebene Kennwort. Diese Option ist nur verfügbar, wenn Sie **Standardauthentifizierung** oder **Formularauthentifizierung** ausgewählt haben.  
   
 > **HINWEIS:** Wenn Sie das Kennwort gespeichert haben und für die Zukunft nicht mehr speichern möchten, deaktivieren Sie das Kontrollkästchen, und klicken Sie auf **Speichern**.  
   
@@ -73,7 +73,7 @@ ms.locfileid: "92036906"
  Geben Sie eine optionale Beschreibung des Servers ein.  
   
  **Test**  
- Klicken Sie hier, um die Verbindung mit dem unter **Servername**ausgewählten Server zu testen.  
+ Klicken Sie hier, um die Verbindung mit dem unter **Servername** ausgewählten Server zu testen.  
   
  
  ## <a name="analysis-services---multidimensional-data-new-or-edit-server-registration-general-tab"></a>Analysis Services – Mehrdimensionale Daten Neue Serverregistrierung und Serverregistrierung bearbeiten (Registerkarte Allgemein)
@@ -108,7 +108,7 @@ ms.locfileid: "92036906"
  Geben Sie eine optionale Beschreibung des Servers ein.  
   
  **Test**  
- Klicken Sie hier, um die Verbindung mit dem unter **Servername**ausgewählten Server zu testen. 
+ Klicken Sie hier, um die Verbindung mit dem unter **Servername** ausgewählten Server zu testen. 
  
  ## <a name="ssis-new-or-edit-server-registration-general-tab"></a>SSIS Neue Serverregistrierung und Serverregistrierung bearbeiten (Registerkarte Allgemein) 
  
@@ -136,13 +136,13 @@ ms.locfileid: "92036906"
  Diese Option steht in dieser Version nicht zur Verfügung.  
   
  **Name des registrierten Servers**  
- Der Name, der unter **Registrierte Server**angezeigt werden soll. Dieser Name muss mit dem Eintrag im Feld **Servername** nicht übereinstimmen.  
+ Der Name, der unter **Registrierte Server** angezeigt werden soll. Dieser Name muss mit dem Eintrag im Feld **Servername** nicht übereinstimmen.  
   
  **Beschreibung des registrierten Servers**  
  Geben Sie eine optionale Beschreibung des Servers ein.  
   
  **Test**  
- Klicken Sie hier, um die Verbindung mit dem unter **Servername**ausgewählten Server zu testen. 
+ Klicken Sie hier, um die Verbindung mit dem unter **Servername** ausgewählten Server zu testen. 
   
 
  

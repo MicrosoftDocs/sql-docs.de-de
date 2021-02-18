@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cf2e3650-5fac-4f34-b50e-d17765578a8e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3f829ca9f0acb82089251c772f80f47395fa32e3
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 111a5ad98210207fcdf55d3656953ddda6ac38c0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127687"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346185"
 ---
 # <a name="automatic-page-repair-availability-groups-database-mirroring"></a>Automatische Seitenreparatur (Verfügbarkeitsgruppen: Datenbankspiegelung)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

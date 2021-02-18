@@ -9,12 +9,12 @@ ms.topic: overview
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 98e9dd928f2639bfd1df3e6782bcc9aaed60f31e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 23206301c399449042380976e985ec3981933caa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102864"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340311"
 ---
 # <a name="what-is-sql-server-machine-learning-services-with-python-and-r"></a>Wie funktioniert SQL Server Machine Learning Services mit Python und R?
 [!INCLUDE [SQL Server 2017 SQL MI](../includes/applies-to-version/sqlserver2017-asdbmi.md)]

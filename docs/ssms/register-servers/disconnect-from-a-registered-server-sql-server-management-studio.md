@@ -16,12 +16,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 49e8ca491c8c25ac79436afc4fbf6e2f7028fe5f
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 8662b4fcb8e6fc19efe184fe12875376c3446ffc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250426"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350533"
 ---
 # <a name="disconnect-from-a-registered-server-sql-server-management-studio"></a>Trennen der Verbindung mit einem registrierten Server (SQL Server Management Studio)
 

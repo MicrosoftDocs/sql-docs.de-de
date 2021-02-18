@@ -14,12 +14,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: bef30df17ccc1bcabe471135b835450e811d2ddb
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 7798bc201bdb94a18f4c429e5ca74a04aeceea8a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85729527"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100335900"
 ---
 # <a name="xml-output-file-format-ssbdiagnose"></a>Format der XML-Ausgabedatei (ssbdiagnose)
 
@@ -31,7 +31,7 @@ Wenn Sie das Hilfsprogramm **ssbdiagnose** mit der Option **-XML** ausführen, w
   
 -   Einem Banner-Element mit Headerinformationen  
   
--   Einem Issue-Element für jedes Problem, das von **ssbdiagnose**gemeldet wird  
+-   Einem Issue-Element für jedes Problem, das von **ssbdiagnose** gemeldet wird  
   
 ## <a name="diagnosticinformation-root-element"></a>DiagnosticInformation-Stammelement  
   

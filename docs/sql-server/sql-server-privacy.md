@@ -11,12 +11,12 @@ f1_keywords: ''
 helpviewer_keywords: ''
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 87cd9ec5266002f91fea682591e82dfecd403ab5
-ms.sourcegitcommit: 4545b502e3cae7136411fd9a7c15450315665f38
+ms.openlocfilehash: 1821ebdd7c52d306a34be98f6e506de24c31539e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94550002"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341670"
 ---
 # <a name="sql-server-privacy-supplement"></a>Ergänzende Datenschutzbestimmungen zu SQL Server
 

@@ -30,12 +30,12 @@ helpviewer_keywords:
 ms.assetid: 45ba1307-33d1-431e-872c-a6e4556f5ff2
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 122aa921cb742d05c46e2d32430c857f4a723dee
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 1c9f3528ac4f377e379afd26e6583df3fe63fb2b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86920896"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353335"
 ---
 # <a name="sqldiag-utility"></a>SQLdiag (Hilfsprogramm)
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "86920896"
 > [!NOTE]  
 >  Dieses Hilfsprogramm kann weiter geändert werden, und es besteht die Möglichkeit, dass Anwendungen oder Skripts, die auf den Befehlszeilenargumenten und dem entsprechenden Verhalten dieses Hilfsprogramms aufbauen, in zukünftigen Versionen nicht ordnungsgemäß ausgeführt werden.  
   
- Mit**SQLDiag** können die folgenden Arten von Diagnoseinformationen gesammelt werden:  
+ Mit **SQLDiag** können die folgenden Arten von Diagnoseinformationen gesammelt werden:  
   
 -   Windows-Leistungsprotokolle  
   
@@ -93,7 +93,7 @@ sqldiag
  Leitet die Ausgabe von **SQLDiag** in den angegebenen Ordner um. Wenn die Option **/O** nicht angegeben wird, wird die Ausgabe von **SQLDiag** in den Unterordner SQLDIAG unterhalb des Startordners **SQLDiag** geschrieben. Wenn der Ordner SQLDIAG nicht vorhanden ist, versucht **SQLDiag** , ihn zu erstellen.  
   
 > [!NOTE]  
->  Der Speicherort des Ausgabeordners ist relativ zum Speicherort des Unterstützungsordners, der mit **/P**angegeben werden kann. Geben Sie den vollständigen Verzeichnispfad für **/O**an, um einen gänzlich anderen Speicherort für den Ausgabeordner festzulegen.  
+>  Der Speicherort des Ausgabeordners ist relativ zum Speicherort des Unterstützungsordners, der mit **/P** angegeben werden kann. Geben Sie den vollständigen Verzeichnispfad für **/O** an, um einen gänzlich anderen Speicherort für den Ausgabeordner festzulegen.  
   
  **/P** _support_folder_path_  
  Legt den Pfad für den Unterstützungsordner fest. Standardmäßig wird für **/P** der Ordner festgelegt, in dem sich die ausführbaren Dateien von **SQLDiag** befinden. Der Unterstützungsordner enthält **SQLDiag** -Unterstützungsdateien, wie die XML-Konfigurationsdatei, Transact-SQL-Skripts und andere Dateien, die das Hilfsprogramm zum Auflisten von Diagnoseinformationen verwendet. Wenn Sie mithilfe dieser Option einen anderen Pfad für die Unterstützungsdateien angeben, kopiert **SQLDiag** automatisch die erforderlichen Unterstützungsdateien in den angegebenen Ordner, sofern sie noch nicht vorhanden sind.  
@@ -130,11 +130,11 @@ sqldiag
   
  YYYYMMDD_HH:MM:SS  
   
- Die Uhrzeit wird in 24-Stunden-Notation angegeben. Beispiel: 2 Uhr nachmittags sollte für **14:00:00**angegeben werden.  
+ Die Uhrzeit wird in 24-Stunden-Notation angegeben. Beispiel: 2 Uhr nachmittags sollte für **14:00:00** angegeben werden.  
   
- Verwenden Sie **+** ohne Datumsangabe (also nur HH:MM:SS), um eine Uhrzeit relativ zum aktuellen Datum und zur aktuellen Uhrzeit anzugeben. Wenn Sie beispielsweise **/B +02:00:00**angeben, wartet **SQLDiag** 2 Stunden, bevor die Sammlung von Informationen gestartet wird.  
+ Verwenden Sie **+** ohne Datumsangabe (also nur HH:MM:SS), um eine Uhrzeit relativ zum aktuellen Datum und zur aktuellen Uhrzeit anzugeben. Wenn Sie beispielsweise **/B +02:00:00** angeben, wartet **SQLDiag** 2 Stunden, bevor die Sammlung von Informationen gestartet wird.  
   
- Fügen Sie kein Leerzeichen zwischen **+** und dem angegebenen Wert für *start_time*ein.  
+ Fügen Sie kein Leerzeichen zwischen **+** und dem angegebenen Wert für *start_time* ein.  
   
  Wenn Sie eine Startzeit angeben, die in der Vergangenheit liegt, erzwingt **SQLDiag** eine Änderung des Startdatums, sodass Startdatum und -zeit in der Zukunft liegen. Wenn Sie beispielsweise **/B 01:00:00** angeben und es schon 08:00:00 Uhr ist, ändert **SQLDiag** das Startdatum und legt den nächsten Tag als Startdatum fest.  
   
@@ -145,11 +145,11 @@ sqldiag
   
  YYYYMMDD_HH:MM:SS  
   
- Die Uhrzeit wird in 24-Stunden-Notation angegeben. Beispiel: 2 Uhr nachmittags sollte für **14:00:00**angegeben werden.  
+ Die Uhrzeit wird in 24-Stunden-Notation angegeben. Beispiel: 2 Uhr nachmittags sollte für **14:00:00** angegeben werden.  
   
- Verwenden Sie **+** ohne Datumsangabe (also nur HH:MM:SS), um eine Uhrzeit relativ zum aktuellen Datum und zur aktuellen Uhrzeit anzugeben. Wenn Sie beispielsweise **/B +02:00:00 /E +03:00:00**angeben, um eine Start- und eine Beendigungszeit festzulegen, wartet **SQLDiag** 2 Stunden, bevor die Sammlung von Informationen gestartet wird. Daraufhin werden 3 Stunden lang Informationen gesammelt, bevor der Vorgang endet und das Hilfsprogramm beendet wird. Wenn **/B** nicht angegeben wird, beginnt **SQLDiag** sofort mit dem Sammeln von Diagnoseinformationen und beendet den Vorgang an dem Datum und der Uhrzeit, das bzw. die durch **/E**angegeben wurde.  
+ Verwenden Sie **+** ohne Datumsangabe (also nur HH:MM:SS), um eine Uhrzeit relativ zum aktuellen Datum und zur aktuellen Uhrzeit anzugeben. Wenn Sie beispielsweise **/B +02:00:00 /E +03:00:00** angeben, um eine Start- und eine Beendigungszeit festzulegen, wartet **SQLDiag** 2 Stunden, bevor die Sammlung von Informationen gestartet wird. Daraufhin werden 3 Stunden lang Informationen gesammelt, bevor der Vorgang endet und das Hilfsprogramm beendet wird. Wenn **/B** nicht angegeben wird, beginnt **SQLDiag** sofort mit dem Sammeln von Diagnoseinformationen und beendet den Vorgang an dem Datum und der Uhrzeit, das bzw. die durch **/E** angegeben wurde.  
   
- Fügen Sie kein Leerzeichen zwischen **+** und dem angegebenen Wert für *start_time* oder *end_time*ein.  
+ Fügen Sie kein Leerzeichen zwischen **+** und dem angegebenen Wert für *start_time* oder *end_time* ein.  
   
  Beachten Sie, dass **SQLDiag** die lokale Zeit auf dem Computer verwendet, auf dem das Hilfsprogramm ausgeführt wird.  
   
@@ -169,7 +169,7 @@ sqldiag
  **SQLDIAG /R /A** _SQLdiag_application_name_  
   
 > [!NOTE]  
->  **SQLDiag** setzt vor den für *SQLDiag_application_name*angegebenen Instanznamen automatisch das Präfix DIAG$. Hierdurch kann beim Registrieren von **SQLDiag** als Dienst ein aussagefähiger Dienstname bereitgestellt werden.  
+>  **SQLDiag** setzt vor den für *SQLDiag_application_name* angegebenen Instanznamen automatisch das Präfix DIAG$. Hierdurch kann beim Registrieren von **SQLDiag** als Dienst ein aussagefähiger Dienstname bereitgestellt werden.  
   
  /T { tcp [ ,*port* ] | np | lpc }  
  Stellt eine Verbindung zu einer Instanz von [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] unter Verwendung des angegebenen Protokolls her.  
@@ -227,7 +227,7 @@ sqldiag
   
  **SQLDIAG START**  
   
- Nur das **/A** -Argument, das eine benannte Instanz von **SQLDiag**angibt, kann zusammen mit **START**, **STOP**oder **STOP_ABORT** verwendet werden, um eine bestimmte Instanz des **SQLDiag** -Diensts zu steuern. Beispiel:  
+ Nur das **/A** -Argument, das eine benannte Instanz von **SQLDiag** angibt, kann zusammen mit **START**, **STOP** oder **STOP_ABORT** verwendet werden, um eine bestimmte Instanz des **SQLDiag** -Diensts zu steuern. Beispiel:  
   
  **SQLDIAG START /A** _SQLdiag_application_name_  
   
@@ -246,7 +246,7 @@ sqldiag
  Beim Start liest **SQLDiag** die Konfigurationsdatei und die angegebenen Befehlszeilenargumente. In der Konfigurationsdatei geben Sie die Art der Diagnoseinformationen, die mit **SQLDiag** gesammelt werden. Standardmäßig verwendet **SQLDiag** die Konfigurationsdatei SQLDiag.Xml, die sich im Startordner des Hilfsprogramms **SQLDiag** befindet und bei jeder Ausführung des Tools extrahiert wird. Die Konfigurationsdatei verwendet das XML-Schema, SQLDiag_schema.xsd, das ebenfalls bei jedem Ausführen von **SQLDiag** aus der ausführbaren Datei in das Startverzeichnis des Hilfsprogramms extrahiert wird.  
   
 ### <a name="editing-the-configuration-files"></a>Bearbeiten der Konfigurationsdateien  
- Sie können SQLDiag.Xml kopieren und bearbeiten, um die Art der von **SQLDiag** gesammelten Diagnosedaten zu ändern. Bearbeiten Sie die Konfigurationsdatei immer mit einem XML-Editor, der die Konfigurationsdatei anhand des XML-Schemas überprüfen kann (z. B. [!INCLUDE[ssManStudio](../includes/ssmanstudio-md.md)]). SQLDiag.Xml sollte nicht direkt bearbeitet werden. Erstellen Sie stattdessen eine Kopie von SQLDiag.Xml, und weisen Sie der Datei in demselben Ordner einen neuen Namen zu. Bearbeiten Sie dann die neue Datei, und verwenden Sie das Argument **/I** , um sie an **SQLDiag**zu übergeben.  
+ Sie können SQLDiag.Xml kopieren und bearbeiten, um die Art der von **SQLDiag** gesammelten Diagnosedaten zu ändern. Bearbeiten Sie die Konfigurationsdatei immer mit einem XML-Editor, der die Konfigurationsdatei anhand des XML-Schemas überprüfen kann (z. B. [!INCLUDE[ssManStudio](../includes/ssmanstudio-md.md)]). SQLDiag.Xml sollte nicht direkt bearbeitet werden. Erstellen Sie stattdessen eine Kopie von SQLDiag.Xml, und weisen Sie der Datei in demselben Ordner einen neuen Namen zu. Bearbeiten Sie dann die neue Datei, und verwenden Sie das Argument **/I** , um sie an **SQLDiag** zu übergeben.  
   
 #### <a name="editing-the-configuration-file-when-sqldiag-runs-as-a-service"></a>Bearbeiten der Konfigurationsdatei, wenn SQLdiag als Dienst ausgeführt wird  
  Wenn Sie **SQLDiag** bereits als Dienst ausgeführt haben und die Konfigurationsdatei nun bearbeiten müssen, müssen Sie die Registrierung des SQLDIAG-Diensts aufheben, indem Sie das Befehlszeilenargument **/U** angeben und den Dienst anschließend mithilfe des Befehlszeilenarguments **/R** erneut registrieren. Durch das Aufheben der Registrierung und die erneute Registrierung des Diensts werden alle Konfigurationsinformationen entfernt, die in der Windows-Registrierung zwischengespeichert waren.  
@@ -288,7 +288,7 @@ SQLDIAG STOP /A Instance1
 ```  
   
 > [!NOTE]  
->  **/A** ist das einzige Befehlszeilenargument, das mit **START**, **STOP**oder **STOP_ABORT**verwendet werden kann. Wenn Sie eine benannte Instanz von **SQLDiag** mit einem der Dienstkontrollverben angeben müssen, müssen Sie **/A** wie im vorherigen Syntaxbeispiel nach dem Kontrollverb in der Befehlszeile angeben. Werden Kontrollverben verwendet, müssen diese als erstes Argument in der Befehlszeile angegeben werden.  
+>  **/A** ist das einzige Befehlszeilenargument, das mit **START**, **STOP** oder **STOP_ABORT** verwendet werden kann. Wenn Sie eine benannte Instanz von **SQLDiag** mit einem der Dienstkontrollverben angeben müssen, müssen Sie **/A** wie im vorherigen Syntaxbeispiel nach dem Kontrollverb in der Befehlszeile angeben. Werden Kontrollverben verwendet, müssen diese als erstes Argument in der Befehlszeile angegeben werden.  
   
  Soll der Dienst so schnell wie möglich beendet werden, führen Sie **SQLDIAG STOP_ABORT** im Startordner des Hilfsprogramms aus. Mit diesem Befehl werden alle aktuell ausgeführten Sammlungen von Diagnoseinformationen abgebrochen, ohne auf ihre Beendigung zu warten.  
   
@@ -313,7 +313,7 @@ sqldiag /B +01:00:00 /E 08:30:00
  Wenn es derzeit 08:00 Uhr, ist die Beendigungszeit schon vorbei, bevor die Sammlung der Diagnosedaten überhaupt begonnen hat. Da **SQLDiag** die Start- und Beendigungsdaten automatisch anpasst und auf den nächsten Tag verschiebt, wenn die Zeitpunkte in der Vergangenheit liegen, beginnt die Sammlung der Diagnosedaten in diesem Beispiel heute um 09:00 Uhr (mit **+** wurde eine relative Startzeit angegeben) und wird bis zum folgenden Morgen um 08:30 Uhr fortgeführt.  
   
 ### <a name="stopping-and-restarting-sqldiag-to-collect-daily-diagnostics"></a>Beenden und erneutes Starten von SQLdiag zum Sammeln täglicher Diagnoseinformationen  
- Mithilfe von **/L**können Sie jeden Tag einen angegebenen Satz von Diagnosedaten sammeln, ohne **SQLDiag** manuell starten und beenden zu müssen. Durch **/L** wird **SQLDiag** fortlaufend ausgeführt, da dieses Argument bewirkt, dass sich das Hilfsprogramm nach einem geplanten Herunterfahren automatisch neu startet. Wenn **/L** angegeben wurde und **SQLDiag** beendet wird, weil die mit **/E** angegebene Beendigungszeit erreicht wurde oder weil das Hilfsprogramm durch die Angabe von **/X** im Momentaufnahmemodus ausgeführt wird, wird **SQLDiag** nicht vollständig beendet, sondern erneut gestartet.  
+ Mithilfe von **/L** können Sie jeden Tag einen angegebenen Satz von Diagnosedaten sammeln, ohne **SQLDiag** manuell starten und beenden zu müssen. Durch **/L** wird **SQLDiag** fortlaufend ausgeführt, da dieses Argument bewirkt, dass sich das Hilfsprogramm nach einem geplanten Herunterfahren automatisch neu startet. Wenn **/L** angegeben wurde und **SQLDiag** beendet wird, weil die mit **/E** angegebene Beendigungszeit erreicht wurde oder weil das Hilfsprogramm durch die Angabe von **/X** im Momentaufnahmemodus ausgeführt wird, wird **SQLDiag** nicht vollständig beendet, sondern erneut gestartet.  
   
  Im folgenden Beispiel wird angegeben, dass **SQLDiag** im fortlaufenden Modus ausgeführt wird, damit das Hilfsprogramm automatisch neu gestartet wird, nachdem zwischen 03:00:00 und 05:00:00 Uhr die Sammlung von Diagnosedaten erfolgt ist.  
   
@@ -352,7 +352,7 @@ SQLDIAG START /A Instance1
   
  Sie können auch den Befehl **net start** verwenden, um den SQLDIAG-Dienst zu starten.  
   
- Wenn Sie **SQLDiag**neu starten, wird der Inhalt des aktuellen Ausgabeordners überschrieben. Soll dies verhindert werden, geben Sie **/N 2** in der Befehlszeile an, damit der Ausgabeordner beim Starten des Hilfsprogramms umbenannt wird.  
+ Wenn Sie **SQLDiag** neu starten, wird der Inhalt des aktuellen Ausgabeordners überschrieben. Soll dies verhindert werden, geben Sie **/N 2** in der Befehlszeile an, damit der Ausgabeordner beim Starten des Hilfsprogramms umbenannt wird.  
   
  Das Anhalten des **SQLDiag** -Diensts wird nicht unterstützt.  
   

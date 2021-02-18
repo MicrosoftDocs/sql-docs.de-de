@@ -20,12 +20,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: 59ff58aa26ee053c007c8c985bd90b5eadf452cc
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 6f04f083a8e6a1b0da3ecec77d818d9f3b7b9651
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99235822"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342706"
 ---
 # <a name="delete-an-operator"></a>Delete an Operator
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

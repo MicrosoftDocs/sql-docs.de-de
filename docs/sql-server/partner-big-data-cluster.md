@@ -9,12 +9,12 @@ ms.technology: big-data-cluster
 ms.prod_service: database-engine
 ms.author: mikeray
 author: MikeRayMSFT
-ms.openlocfilehash: 54ef7f11e15a5cb75833701420fb53d9f28ebaa9
-ms.sourcegitcommit: 442fbe1655d629ecef273b02fae1beb2455a762e
+ms.openlocfilehash: a082c087f2aa6eb529364194d73b192a02d0c403
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93235501"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342132"
 ---
 # <a name="sql-server-big-data-clusters-partners"></a>Partner für Big Data-Cluster mit SQL Server
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

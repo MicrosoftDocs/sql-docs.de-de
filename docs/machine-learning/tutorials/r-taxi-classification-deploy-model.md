@@ -10,12 +10,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||>=azuresqldb-mi-current'
-ms.openlocfilehash: 026090f3eb61e2bd2ffe2b96eb09751cc3543dbf
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a3c46e719f4889ee53c98e671bd9569193b86e2a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101863"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349058"
 ---
 # <a name="r-tutorial-run-predictions-in-sql-stored-procedures"></a>R-Tutorial: Ausführen von Vorhersagen in gespeicherten SQL-Prozeduren
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]

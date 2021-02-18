@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 96c78bc0fee624170b94b3360f75e00d876dc218
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 679b8c0b120b3cea55a2cf8621e5619bc6c282bb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85729556"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342002"
 ---
 # <a name="sql-server-profiler-templates-and-permissions"></a>Vorlagen und Berechtigungen in SQL Server Profiler
 

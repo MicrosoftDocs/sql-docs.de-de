@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: e15fd637d0debe5916c2e548613bc8a6f3c1775b
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: b7b3e510fff2411b7d0b9729a2e86b89d243b44b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774759"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354422"
 ---
 # <a name="open-a-trace-table-sql-server-profiler"></a>Öffnen einer Ablaufverfolgungstabelle (SQL Server Profiler)
 

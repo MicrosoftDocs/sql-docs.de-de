@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: f684e1564042101eece71d8a064746c6464fca52
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: fb66fffa3e7b1788a3d9b31a98440ad7898a90c3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85734146"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338609"
 ---
 # <a name="stop-a-trace-sql-server-profiler"></a>Beenden einer Ablaufverfolgung (SQL Server Profiler)
 

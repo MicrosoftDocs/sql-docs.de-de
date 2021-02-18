@@ -20,12 +20,12 @@ ms.assetid: fb4edf3c-71b6-4645-b1d1-ddfdd69f0d7b
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: 242dc262053aefe5a95e6e65d99ae98965491e55
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 9e8e6bc470b522ad27ff6e61d5383bbf6a87bd61
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92034920"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344194"
 ---
 # <a name="customize-menus-and-shortcut-keys"></a>Anpassen von Menüs und Tastenkombinationen
 
@@ -101,13 +101,13 @@ Zugriffstasten für gespeicherte Prozeduren mit der STRG-TASTE können über die
   
 1.  Drücken Sie ALT+F, um das Dialogfeld **Befehle neu anordnen** anzuzeigen.  
   
-2.  Wählen Sie im Dialogfeld **Befehle neu anordnen** mithilfe der Pfeiltasten die Option **Symbolleiste**aus.  
+2.  Wählen Sie im Dialogfeld **Befehle neu anordnen** mithilfe der Pfeiltasten die Option **Symbolleiste** aus.  
   
 3.  Wechseln Sie mit der TAB-TASTE zur Liste **Symbolleiste** , wählen Sie mit den Pfeiltasten die Symbolleiste aus, die die zu ändernde Schaltfläche enthält, und drücken Sie die **EINGABETASTE**.  
   
 4.  Wechseln Sie mit der TAB-TASTE zur Liste **Steuerelemente** , und wählen Sie mit den Pfeiltasten die zu ändernde Schaltfläche aus.  
   
-5.  Drücken Sie **ALT+A**, um die Option **Auswahl ändern**auszuwählen.  
+5.  Drücken Sie **ALT+A**, um die Option **Auswahl ändern** auszuwählen.  
   
 6.  Wechseln Sie im Kontextmenü mit der TAB-TASTE zum Feld **Name**, und geben Sie einen Namen für die Symbolleistenschaltfläche ein. Geben Sie dabei vor dem Buchstaben, den Sie als Zugriffstaste verwenden möchten, ein kaufmännisches Und-Zeichen (&) ein.  
   
@@ -125,7 +125,7 @@ Zugriffstasten für gespeicherte Prozeduren mit der STRG-TASTE können über die
   
 3.  Wechseln Sie mit der TAB-TASTE zur Liste **Steuerelemente** , und wählen Sie mit den Pfeiltasten die zu ändernde Schaltfläche aus.  
   
-4.  Drücken Sie ALT+A, um die Option **Auswahl ändern**auszuwählen.  
+4.  Drücken Sie ALT+A, um die Option **Auswahl ändern** auszuwählen.  
   
 5.  Wechseln Sie im Kontextmenü mit der TAB-TASTE zum Feld **Name**, und geben Sie einen Namen für die Symbolleistenschaltfläche ein. Geben Sie dabei vor dem Buchstaben, den Sie als Zugriffstaste verwenden möchten, ein kaufmännisches Und-Zeichen (&) ein.  
   

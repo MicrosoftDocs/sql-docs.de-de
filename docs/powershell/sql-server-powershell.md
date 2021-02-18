@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: matteot
 ms.custom: ''
 ms.date: 06/11/2020
-ms.openlocfilehash: fad1ac64dcc1024d5dad091670300b8d39fa0632
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d8b03ae1e20acfefd673717858d57c894c619437
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092689"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350148"
 ---
 # <a name="sql-server-powershell"></a>SQL Server PowerShell
 

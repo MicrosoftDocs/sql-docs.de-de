@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 13e95046-0e76-4604-b561-d1a74dd824d7
 ms.author: mikeray
 author: MikeRayMSFT
-ms.openlocfilehash: b4f0e4ed75e992095cff1f9ae315e3036ba7ef90
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: c0d0da7b2f74eb9dacdef390ede2cdd34d0356fa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766226"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336025"
 ---
 # <a name="maximum-capacity-specifications-for-sql-server"></a>Spezifikationen der maximalen Kapazität für SQL Server
 
@@ -56,7 +56,7 @@ Die maximale Größe und Anzahl verschiedener Objekte, die in [!INCLUDE[ssNoVers
 |Bytes pro Fremdschlüssel|900||
 |Bytes pro Primärschlüssel|900||
 |Bytes pro Zeile|8\.060|[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] unterstützt die Zeilenüberlaufspeicherung, sodass Spalten variabler Länge aus der Zeile verschoben werden können. Im Hauptdatensatz für Spalten variabler Länge, die aus einer Zeile verschoben wurden, wird nur ein 24-Byte-Stamm gespeichert. Dieses Feature ermöglicht eine Begrenzung, die erheblich höher ist als im vorherigen [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]-Release. Weitere Informationen finden Sie unter [Unterstützung von umfangreichen Zeilen](../relational-databases/pages-and-extents-architecture-guide.md#large-row-support).|
-|Bytes pro Zeile in speicheroptimierten Tabellen|8\.060|Ab [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] unterstützen speicheroptimierte Tabellen das Speichern außerhalb von Zeilen. Spalten mit variabler Länge werden aus der Zeile verschoben, wenn die maximale Größe aller Spalten in der Tabelle 8060 Byte überschreitet. Diese Entscheidung fällt bei der Kompilierung. Für Spalten, die außerhalb der Zeile gespeichert wurden, wird in der Zeile nur eine 8-Byte-Referenz gespeichert. Weitere Informationen finden Sie unter [Tabellen- und Zeilengröße in speicheroptimierten Tabellen](../relational-databases/in-memory-oltp/table-and-row-size-in-memory-optimized-tables.md).|
+|Bytes pro Zeile in speicheroptimierten Tabellen|8\.060|Ab [!INCLUDE[sssql15-md](../includes/sssql16-md.md)] unterstützen speicheroptimierte Tabellen das Speichern außerhalb von Zeilen. Spalten mit variabler Länge werden aus der Zeile verschoben, wenn die maximale Größe aller Spalten in der Tabelle 8060 Byte überschreitet. Diese Entscheidung fällt bei der Kompilierung. Für Spalten, die außerhalb der Zeile gespeichert wurden, wird in der Zeile nur eine 8-Byte-Referenz gespeichert. Weitere Informationen finden Sie unter [Tabellen- und Zeilengröße in speicheroptimierten Tabellen](../relational-databases/in-memory-oltp/table-and-row-size-in-memory-optimized-tables.md).|
 |Bytes im Quelltext einer gespeicherten Prozedur|Kleiner als Batchgröße oder 250 MB||
 |Bytes pro `varchar(max) `-, `varbinary(max)`-, `xml`-, `text`- oder `image`-Spalte.|2^31-1||
 |Zeichen pro `ntext`- oder `nvarchar(max)`-Spalte|2^30-1||
@@ -83,7 +83,7 @@ Die maximale Größe und Anzahl verschiedener Objekte, die in [!INCLUDE[ssNoVers
 |Verweise auf Fremdschlüsseltabellen pro Tabelle|Ausgehend = 253. Eingehend = 10.000.|Einschränkungen finden Sie unter [Create Foreign Key Relationships](../relational-databases/tables/create-foreign-key-relationships.md).|
 |Bezeichnerlänge (in Zeichen)|128||
 |Instanzen pro Computer|50 Instanzen auf einem eigenständigen Server.<br /><br />25 Failoverclusterinstanzen bei der Verwendung eines freigegebenen Clusterdatenträgers als Speicher.<br/><br/>50 Failoverclusterinstanzen mit SMB-Dateifreigaben als Speicheroption.||
-|Indizes pro speicheroptimierter Tabelle|999 ab [!INCLUDE[ssSQL17](../includes/ssSQL17-md.md)] und in [!INCLUDE[ssSDSFull](../includes/ssSDSFull-md.md)]<br/>8 in [!INCLUDE[ssSQL14](../includes/ssSQL14-md.md)] und [!INCLUDE[ssSQL15](../includes/sssql16-md.md)]||
+|Indizes pro speicheroptimierter Tabelle|999 ab [!INCLUDE[ssSQL17](../includes/ssSQL17-md.md)] und in [!INCLUDE[ssSDSFull](../includes/ssSDSFull-md.md)]<br/>8 in [!INCLUDE[ssSQL14](../includes/ssSQL14-md.md)] und [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]||
 |Länge einer Zeichenfolge, die SQL-Anweisungen enthält (Batchgröße)|65.536 (Netzwerkpaketgröße)|Die Netzwerkpaketgröße entspricht der Größe der TDS-Pakete (Tabular Data Stream), die für die Kommunikation zwischen Anwendungen und der relationalen [!INCLUDE[ssDE](../includes/ssde-md.md)] verwendet werden. Die Standardpaketgröße beträgt 4 KB und wird durch die Konfigurationsoption Netzwerkpaketgröße gesteuert.|
 |Sperren pro Verbindung|Maximale Anzahl Sperren pro Server||
 |Sperren pro Instanz von [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]|Begrenzung nur durch Arbeitsspeicher|Dieser Wert dient der statischen Sperrenzuordnung. Dynamische Sperren sind nur durch den Arbeitsspeicher beschränkt.|

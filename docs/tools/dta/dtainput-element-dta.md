@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: d954f229bae8db22abdfb034d950dd96c54bf706
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 275bd84346c334e0c92c73a7750660338c957fdf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85786010"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338727"
 ---
 # <a name="dtainput-element-dta"></a>DTAInput-Element (DTA)
 

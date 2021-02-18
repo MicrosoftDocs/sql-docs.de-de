@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 624ee18dfeb1fb73f0b7ba77eab8466ab90f6130
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 660917a46529e62a33565c75ca92501ddfb8a140
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85734194"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345744"
 ---
 # <a name="specify-events-and-data-columns-for-a-trace-file-sql-server-profiler"></a>Angeben von Ereignissen und Datenspalten für eine Ablaufverfolgungsdatei (SQL Server Profiler)
 
@@ -29,9 +29,9 @@ In diesem Thema wird beschrieben, wie Ereignisklassen und Datenspalten mithilfe 
   
 1.  Klicken Sie im Dialogfeld **Ablaufverfolgungseigenschaften** oder **Eigenschaften der Ablaufverfolgungsvorlage** auf die Registerkarte **Ereignisauswahl** .  
   
-     Die Registerkarte **Ereignisauswahl** enthält ein Rastersteuerelement. Bei dem Rastersteuerelement handelt es sich um eine Tabelle, die alle bei der Ablaufverfolgung zu berücksichtigenden Ereignisklassen enthält. Die Tabelle enthält für jede Ereignisklasse eine Zeile. Die Ereignisklassen können sich leicht voneinander unterscheiden. Dies hängt vom Typ und der Version des Servers ab, zu dem eine Verbindung besteht. Die Ereignisklassen werden in der Spalte **Events**des Rasters identifiziert und nach Ereigniskategorie gruppiert. In den übrigen Spalten sind die Datenspalten aufgeführt, die für jede Ereignisklasse zurückgegeben werden können.  
+     Die Registerkarte **Ereignisauswahl** enthält ein Rastersteuerelement. Bei dem Rastersteuerelement handelt es sich um eine Tabelle, die alle bei der Ablaufverfolgung zu berücksichtigenden Ereignisklassen enthält. Die Tabelle enthält für jede Ereignisklasse eine Zeile. Die Ereignisklassen können sich leicht voneinander unterscheiden. Dies hängt vom Typ und der Version des Servers ab, zu dem eine Verbindung besteht. Die Ereignisklassen werden in der Spalte **Events** des Rasters identifiziert und nach Ereigniskategorie gruppiert. In den übrigen Spalten sind die Datenspalten aufgeführt, die für jede Ereignisklasse zurückgegeben werden können.  
   
-2.  Klicken Sie im Dialogfeld **Ereignisauswahl**das Rastersteuerelement, um Ereignisse und Datenspalten zur Ablaufverfolgungsdatei hinzuzufügen oder aus ihr zu entfernen.  
+2.  Klicken Sie im Dialogfeld **Ereignisauswahl** das Rastersteuerelement, um Ereignisse und Datenspalten zur Ablaufverfolgungsdatei hinzuzufügen oder aus ihr zu entfernen.  
   
 3.  Um Ereignisse aus der Ablaufverfolgung zu entfernen, deaktivieren Sie das Kontrollkästchen in der **Ereignisse** -Spalte für jede Ereignisklasse.  
   

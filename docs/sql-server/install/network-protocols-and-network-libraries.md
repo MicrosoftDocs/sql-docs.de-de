@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 8cd437f6-9af1-44ce-9cb0-4d10c83da9ce
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5fafee4f77a665f9409f5b7b6d1a4359765ed3ba
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 81bf039f0a63aaad7a2214c48bb5948618e7ce7e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127512"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336158"
 ---
 # <a name="network-protocols-and-network-libraries"></a>Netzwerkprotokolle und Netzwerkbibliotheken
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

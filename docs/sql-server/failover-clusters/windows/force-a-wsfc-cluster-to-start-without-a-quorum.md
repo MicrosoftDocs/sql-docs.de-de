@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 4a121375-7424-4444-b876-baefa8fe9015
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b2723cef9d005ea1f5e2db7e9e915762a7cd6a11
-ms.sourcegitcommit: 23649428528346930d7d5b8be7da3dcf1a2b3190
+ms.openlocfilehash: dd232e6b5908ff26c47a4b7a945a68f919175418
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98241851"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353555"
 ---
 # <a name="force-a-wsfc-cluster-to-start-without-a-quorum"></a>Erzwingen des Starts eines Clusters ohne Quorum
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

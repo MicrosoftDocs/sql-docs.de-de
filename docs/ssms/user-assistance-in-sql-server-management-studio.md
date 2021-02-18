@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 3c33a474-e507-4712-86fe-ae40e8370319
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 26b2ecf32bb6c7a683f0321f342258b44ff4d214
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c1d8ad8f855a2888dc1a37fd985f2b1a3bfc0357
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88417836"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338796"
 ---
 # <a name="user-assistance-in-sql-server-management-studio"></a>Benutzerunterstützung in SQL Server Management Studio
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -32,7 +32,7 @@ Die Optionen **Inhalt** und **Index** verfügen über eine Benutzeroberfläche u
   
     Enthält eine hierarchisch strukturierte Liste verknüpfter Seiten mit hilfreichen Themen zu allgemeinen [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] -Aufgaben. Der Inhalt ist nach Komponente und Aufgabe (Beispiel: Themen zur Replikation) usw. geordnet.  
   
--   **Suche**  
+-   **Suchen**  
   
     Sucht nach Themen, mit oder ohne vordefinierte Filter. Die Suche in [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] ist eine eigene Seite im Registerformat. Der Benutzer kann die Suche anhand von vordefinierten Thementyp-, Sprach- oder Technologiefiltern verfeinern. Standardmäßig wird bei der Suche kein vordefinierter Filter verwendet, und nur Themen in den installierten Auflistungen werden durchsucht.  
   
@@ -49,7 +49,7 @@ Die Optionen **Inhalt** und **Index** verfügen über eine Benutzeroberfläche u
 Mit der Hilfe zur Hilfe ([!INCLUDE[msCoName](../includes/msconame_md.md)]-Dokument-Explorer-Hilfe) gelangen Benutzer zur Help Viewer-Dokumentation. Die Themen sind allerdings getrennt von der [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]-Onlinedokumentation aufgelistet. Wenn Sie Informationen zum Hilfeviewer benötigen, wählen Sie in der **-Onlinedokumentation im Menü ? die Option** Hilfe zur Hilfe [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] aus.  
   
 ## <a name="msdn-online-and-sql-server-communities"></a>MSDN Online- und SQL Server-Communities  
-Über die Hilfe in [!INCLUDE[ssManStudio](../includes/ssmanstudio-md.md)] können sich Benutzer auch auf verschiedene Arten an MSDN Online- und [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]-Communities im Web wenden, um Informationen zu erhalten. Sie können:  
+Über die Hilfe in [!INCLUDE[ssManStudio](../includes/ssmanstudio-md.md)] können sich Benutzer auch auf verschiedene Arten an MSDN Online- und [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]-Communities im Web wenden, um Informationen zu erhalten. Sie haben folgende Möglichkeiten:  
   
 -   Zugreifen auf [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] -Communities von der Seite Gewusst wie.  
   

@@ -12,12 +12,12 @@ ms.assetid: 785eb6fb-f67e-449d-b1c8-c38dfbb95ef6
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 564d97244e19a7520d8f9ae86804af76e480009a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d2a34ab643359f7afca304b64328638675f8a742
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481651"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349768"
 ---
 # <a name="new-alias-alias-tab"></a>Neuer Alias (Registerkarte Alias)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

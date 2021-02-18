@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 75200101105cc77a8b1dc7304c0333ab2727960d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 1acad3d3f747d46edf9c0db5a31bb89904df3e97
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85734178"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353324"
 ---
 # <a name="start-a-trace-automatically-after-connecting-to-a-server-sql-server-profiler"></a>Automatisches Starten einer Ablaufverfolgung nach dem Herstellen einer Verbindung mit einem Server (SQL Server Profiler)
 
@@ -32,7 +32,7 @@ In diesem Thema wird beschrieben, wie Sie mithilfe von [!INCLUDE[ssNoVersion](..
 2.  Aktivieren Sie das Kontrollkästchen **Ablaufverfolgung sofort nach dem Aufbau einer Verbindung starten** .  
   
 > [!NOTE]  
->  Bei der Auswahl von **Ablaufverfolgung sofort nach dem Herstellen der Verbindung starten**wird das Dialogfeld **Ablaufverfolgungseigenschaften**nicht angezeigt. Stattdessen beginnt die Ablaufverfolgung. Um Ablaufverfolgungseigenschaften zu bearbeiten, müssen Sie diese Einstellung zuerst deaktivieren.  
+>  Bei der Auswahl von **Ablaufverfolgung sofort nach dem Herstellen der Verbindung starten** wird das Dialogfeld **Ablaufverfolgungseigenschaften** nicht angezeigt. Stattdessen beginnt die Ablaufverfolgung. Um Ablaufverfolgungseigenschaften zu bearbeiten, müssen Sie diese Einstellung zuerst deaktivieren.  
   
 ## <a name="see-also"></a>Weitere Informationen  
  [SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler.md)  

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 9b136b27-4779-4284-904f-b5a1c12bdcc0
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 459a40bdd51f1762e81bf17a362d1941ee7b01be
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: eaae04850fceff3592775cd6adf827aca951e5cf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96120885"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336047"
 ---
 # <a name="what39s-new-in-sql-server-installation"></a>Neuigkeiten in der SQL Server-Installation
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

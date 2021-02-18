@@ -10,12 +10,12 @@ ms.assetid: f31d8e2c-8d59-4fee-ac2a-324668e54262
 author: markingmyname
 ms.author: maghan
 ms.reviewer: matteot, drskwier
-ms.openlocfilehash: 3f07a7bef87e6ab770c82a482c85bd9dacf9dae1
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 19e50c5c389e5fb29316358940501bf7791bd457
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081939"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350119"
 ---
 # <a name="work-with-sql-server-powershell-paths"></a>Verwenden von SQL Server PowerShell-Pfaden
 

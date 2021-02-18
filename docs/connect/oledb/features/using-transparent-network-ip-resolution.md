@@ -10,12 +10,12 @@ ms.technology: connectivity
 ms.topic: reference
 author: chris-rossi
 ms.author: v-chross
-ms.openlocfilehash: adaad0f80d6304c855af22f134d24f0d3f23d301
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 944c51fd392ffb684cf2c2fc02967b040163a9d9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88415016"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351120"
 ---
 # <a name="using-transparent-network-ip-resolution"></a>Verwenden der transparenten Netzwerk-IP-Adressauflösung
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

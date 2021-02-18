@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 20b99363-0490-4aa3-9a3d-262f827d81e8
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4731dbd80cfefbb3f151c8f749127e37e869e8a3
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: cabe727dd72136f2b4848620bdee0a02d8c915e6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96120906"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336146"
 ---
 # <a name="local-language-versions-in-sql-server"></a>Lokale Sprachversionen in SQL Server
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

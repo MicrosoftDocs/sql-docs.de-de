@@ -19,12 +19,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 01/19/2017
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: 8eb8f92d5420f55da487f9ba7f96a9a7b7a7547c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 61b6bef074842a297a46df9ba548602527924873
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472281"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339818"
 ---
 # <a name="resize-the-job-history-log"></a>Resize the Job History Log
 

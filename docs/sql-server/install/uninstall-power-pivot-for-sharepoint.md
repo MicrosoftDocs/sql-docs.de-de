@@ -11,12 +11,12 @@ ms.assetid: 3941a2f0-0d0c-4d1a-8618-7a6a7751beac
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.openlocfilehash: e07f558163cd7b028f318d3df66c4a1ae16af84b
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 375f351c1d80e957fba29f81b9d2afc423c222ad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988049"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336094"
 ---
 # <a name="uninstall-power-pivot-for-sharepoint"></a>Deinstallieren von Power Pivot für SharePoint
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "91988049"
   
 -   Überprüfen Sie, ob der SharePoint-Verwaltungsdienst ausgeführt wird.  
   
-1.  **Ausführen des Konfigurationstools:** Beachten Sie, dass die Konfigurationstools nur dann aufgeführt werden, wenn [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)] auf dem lokalen Server installiert ist. Zeigen Sie im Menü **Start** auf **Alle Programme**, klicken Sie auf [!INCLUDE[ssCurrentUI](../../includes/sscurrentui-md.md)], auf **Konfigurationstools**und dann auf eine der folgenden Optionen:  
+1.  **Ausführen des Konfigurationstools:** Beachten Sie, dass die Konfigurationstools nur dann aufgeführt werden, wenn [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)] auf dem lokalen Server installiert ist. Zeigen Sie im Menü **Start** auf **Alle Programme**, klicken Sie auf [!INCLUDE[ssCurrentUI](../../includes/sscurrentui-md.md)], auf **Konfigurationstools** und dann auf eine der folgenden Optionen:  
   
     -   **[!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] Konfiguration von Power Pivot für SharePoint 2013**  
   
@@ -83,13 +83,13 @@ ms.locfileid: "91988049"
   
 2.  Wählen Sie **Funktionen, Dienste, Anwendungen und Lösungen entfernen** aus, und klicken Sie dann auf **OK**.  
   
-3.  Erweitern Sie optional das Fenster auf Vollbildgröße. Am unteren Rand des Fensters wird eine Schaltflächenleiste angezeigt, die die Befehle **Überprüfen**, **Ausführen**und **Beenden** enthält.  
+3.  Erweitern Sie optional das Fenster auf Vollbildgröße. Am unteren Rand des Fensters wird eine Schaltflächenleiste angezeigt, die die Befehle **Überprüfen**, **Ausführen** und **Beenden** enthält.  
   
 4.  Überprüfen Sie alle Aktionen in der Taskliste, um nachzuvollziehen, was die einzelnen Aktionen bewirken.  
   
-     Unter **Entfernen [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] Service-Anwendungen entfernen**haben Sie die Option, die der Dienstanwendung zugeordneten Anwendungsdaten zu löschen. Die Anwendungsdaten bilden eine SQL Server-Datenbank, die mit der Dienstanwendung zum Speichern von Zeitplänen zur Datenaktualisierung, Informationen zur Datenbankinstanz, Verwendungsdaten und anderen von [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] für SharePoint verwendeten Daten erstellt wurde. Benutzerdateien, wie [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] -Arbeitsmappen, werden nicht gespeichert. Wenn Sie die Anwendungsdaten nicht aus einem bestimmten Grund speichern müssen (z. B. wenn auf Datenaktualisierung oder Datenzugriff bezogene Datenbeibehaltungsrichtlinien angewendet werden), können Sie die Anwendungsdatenbank löschen, ohne Dateien zu entfernen, die von SharePoint-Benutzern erstellt oder gespeichert wurden.  
+     Unter **Entfernen [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] Service-Anwendungen entfernen** haben Sie die Option, die der Dienstanwendung zugeordneten Anwendungsdaten zu löschen. Die Anwendungsdaten bilden eine SQL Server-Datenbank, die mit der Dienstanwendung zum Speichern von Zeitplänen zur Datenaktualisierung, Informationen zur Datenbankinstanz, Verwendungsdaten und anderen von [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] für SharePoint verwendeten Daten erstellt wurde. Benutzerdateien, wie [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] -Arbeitsmappen, werden nicht gespeichert. Wenn Sie die Anwendungsdaten nicht aus einem bestimmten Grund speichern müssen (z. B. wenn auf Datenaktualisierung oder Datenzugriff bezogene Datenbeibehaltungsrichtlinien angewendet werden), können Sie die Anwendungsdatenbank löschen, ohne Dateien zu entfernen, die von SharePoint-Benutzern erstellt oder gespeichert wurden.  
   
-     Wählen Sie zum Löschen der Datenbank **Entfernen [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] Service-Anwendungen entfernen** aus, und wählen Sie dann die Option **Löschen der dieser Dienstanwendung zugeordneten Anwendungsdaten**zu deinstallieren.  
+     Wählen Sie zum Löschen der Datenbank **Entfernen [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] Service-Anwendungen entfernen** aus, und wählen Sie dann die Option **Löschen der dieser Dienstanwendung zugeordneten Anwendungsdaten** zu deinstallieren.  
   
 5.  Überprüfen Sie optional ausführliche Informationen auf der Registerkarte **Ausgabe** oder auf der Registerkarte **Skript** .  
   
@@ -131,7 +131,7 @@ Get-Service | where {$_.displayname -like "*sharepoint* administration*"}
     Stsadm -o canceldeployment -id "<GUID>"  
     ```  
   
-5.  Wiederholen Sie den Task im Konfigurationstool, indem Sie auf **Überprüfen** und **Ausführen**klicken.  
+5.  Wiederholen Sie den Task im Konfigurationstool, indem Sie auf **Überprüfen** und **Ausführen** klicken.  
   
  Sie können alternativ Funktionen und Lösungen von der Farm mithilfe von PowerShell entfernen. Weitere Informationen finden Sie unter [PowerShell-Referenz für PowerPivot für SharePoint](/analysis-services/powershell/powershell-reference-for-power-pivot-for-sharepoint).  
   
@@ -153,7 +153,7 @@ Get-Service | where {$_.displayname -like "*sharepoint* administration*"}
   
 ##  <a name="step-5-verify-uninstall"></a><a name="verify"></a> Schritt 5: Überprüfen der Deinstallation  
   
-1.  Stellen Sie in der Zentraladministration unter **Dienste auf dem Server verwalten**eine Verbindung mit dem Server her, von dem aus Sie [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] für SharePoint deinstalliert haben.  
+1.  Stellen Sie in der Zentraladministration unter **Dienste auf dem Server verwalten** eine Verbindung mit dem Server her, von dem aus Sie [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] für SharePoint deinstalliert haben.  
   
 2.  -   Wenn Sie [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)] 2013 deinstalliert haben, vergewissern Sie sich, dass **SQL Server [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)]-Systemdienst** nicht mehr in der Liste aufgeführt wird.  
   
@@ -184,7 +184,7 @@ Get-Service | where {$_.displayname -like "*sharepoint* administration*"}
   
      Im Gegensatz dazu werden einzelne Zielanwendungen, die vom [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] -Systemdienst automatisch generiert wurden, bei der Deinstallation von [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] automatisch gelöscht.  
   
-4.  Klicken Sie in der Systemsteuerung auf **Programme**und dann auf **Programm deinstallieren** Deinstallieren Sie alle Analysis Services-Clientbibliotheken, die nicht mehr verwendet werden. Analysis Services-ADOMD.NET und Microsoft SQL Servers Analysis Management Objects werden bei der Deinstallation von [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] für SharePoint nicht entfernt. Da die Bibliotheken möglicherweise von anderen Programmen verwendet werden, die Analysis Services-Daten verwenden, werden diese beim SQL Server-Setup nicht automatisch deinstalliert. Sie müssen die Clientbibliotheken einzeln deinstallieren, wenn Sie sie nicht mehr benötigen.  
+4.  Klicken Sie in der Systemsteuerung auf **Programme** und dann auf **Programm deinstallieren** Deinstallieren Sie alle Analysis Services-Clientbibliotheken, die nicht mehr verwendet werden. Analysis Services-ADOMD.NET und Microsoft SQL Servers Analysis Management Objects werden bei der Deinstallation von [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] für SharePoint nicht entfernt. Da die Bibliotheken möglicherweise von anderen Programmen verwendet werden, die Analysis Services-Daten verwenden, werden diese beim SQL Server-Setup nicht automatisch deinstalliert. Sie müssen die Clientbibliotheken einzeln deinstallieren, wenn Sie sie nicht mehr benötigen.  
   
      Deinstallieren Sie das SQL Server Reporting Services SharePoint 2010-Add-In, sofern Sie keine Problembehandlungs- oder Installationsanweisungen befolgen und darin zur Deinstallation aufgefordert werden. Das Reporting Services-Add-In wird von Access Services verwendet. Es wird mit dem SharePoint Products-Produktvorbereitungstool installiert und sollte im System verbleiben, um die für SharePoint erforderlichen Funktionen zu unterstützen.  
   

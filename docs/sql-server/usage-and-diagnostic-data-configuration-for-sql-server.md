@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.custom: ''
 ms.technology: configuration
-ms.openlocfilehash: 6580e33a824807312fb7f2d37d5cab893dbab2a9
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 0fc8437d6ffb3382dbcc53edc816b00ec22b7a07
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596523"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353575"
 ---
 # <a name="configure-usage-and-diagnostic-data-collection-for-sql-server-ceip"></a>Konfigurieren der Sammlung von Nutzungs- und Diagnosedaten für SQL Server (CEIP)
 

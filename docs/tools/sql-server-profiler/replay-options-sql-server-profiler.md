@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: bbeda6af1316bacd6b0cca561a989f5e9bd966c7
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: af342941ca797d9054492e59a5004096f901bf69
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85789914"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353375"
 ---
 # <a name="replay-options-sql-server-profiler"></a>Wiedergabeoptionen (SQL Server Profiler)
 
@@ -63,7 +63,7 @@ Vor der Wiedergabe einer aufgezeichneten Ablaufverfolgung mit [!INCLUDE[ssSqlPro
  Gibt die SPID-Nummer wieder, die Sie aus der Liste auswählen.  
   
  **Wiedergabe nach Datum und Zeit beschränken**  
- Gibt die Ablaufverfolgung für die angegebene **Startzeit** und **Beendigungszeit**wieder.  
+ Gibt die Ablaufverfolgung für die angegebene **Startzeit** und **Beendigungszeit** wieder.  
   
  **Wartezeit für Systemüberwachung**  
  Legt fest, wie lange ein Prozess ausgeführt werden kann, bevor die Systemüberwachung beendet wird.  

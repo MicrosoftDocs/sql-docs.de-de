@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 9a1e746b4f418c23e22dafc6c07b211c188b8a13
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 96e420bbca08ca14af89614fa28c35e7b3f78dbb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85726868"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345757"
 ---
 # <a name="set-trace-display-defaults-sql-server-profiler"></a>Festlegen der Standardeinstellungen für die Ablaufverfolgungsanzeige (SQL Server Profiler)
 
@@ -31,7 +31,7 @@ In diesem Thema wird beschrieben, wie Sie Tooloptionen festlegen, mit denen der 
   
 2.  Klicken Sie im Dialogfeld **Allgemeine Optionen** auf **Schriftart auswählen**.  
   
-3.  Wählen Sie im Dialogfeld **Schriftart** die **Schriftart**, den **Schriftschnitt**und den **Schriftgrad** zum Anzeigen von Ablaufverfolgungen durch [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] aus.  
+3.  Wählen Sie im Dialogfeld **Schriftart** die **Schriftart**, den **Schriftschnitt** und den **Schriftgrad** zum Anzeigen von Ablaufverfolgungen durch [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] aus.  
   
 4.  Klicken Sie auf **OK**, um diese Einstellungen anzuwenden, und schließen Sie das Dialogfeld **Schriftart** .  
   

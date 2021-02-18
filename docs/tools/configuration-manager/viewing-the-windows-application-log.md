@@ -21,12 +21,12 @@ ms.assetid: f9853b74-7db7-47cc-b957-e49ed5bc0a1a
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: d077e6ccd2b6a38274d3931f9e1496411dafb5f8
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5cec58c54da985712838efeca3ee22401a420ae0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97476491"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345959"
 ---
 # <a name="viewing-the-windows-application-log"></a>Anzeigen des Windows-Anwendungsprotokolls
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

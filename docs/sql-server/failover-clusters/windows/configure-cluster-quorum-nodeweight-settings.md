@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: cb3fd9a6-39a2-4e9c-9157-619bf3db9951
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 272ac630b76e95263e0ae62765b84b24e516abae
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: a2b42e55c1d7bcbe16a56411f3f3d80123fb73d6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642787"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353981"
 ---
 # <a name="configure-cluster-quorum-nodeweight-settings"></a>Konfigurieren von Cluster-Quorum-NodeWeight-Einstellungen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: cd308bc9-9468-40cc-ad6e-1a8a69aca6c8
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: fd76f7fb9da663c5768ec9d60679a14b797655fc
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 3cec3fe4bf0dc2bd14201ab17dc2a98c61aa7117
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250374"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348593"
 ---
 # <a name="compute-capacity-limits-by-edition-of-sql-server"></a>Rechenkapazitätsgrenzen von bestimmten Editionen von SQL Server
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

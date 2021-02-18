@@ -10,12 +10,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||>=azuresqldb-mi-current'
-ms.openlocfilehash: 4e101a017197d83217a574ca6521dd60328f536a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 39717778ca2456d77b6ceff4ba72e8de06dac75f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470331"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339702"
 ---
 # <a name="python-tutorial-run-predictions-using-python-embedded-in-a-stored-procedure"></a>Python-Tutorial: Ausführen von Vorhersagen mithilfe eines eingebetteten Python-Skripts in einer gespeicherten Prozedur
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]
@@ -41,7 +41,7 @@ In [Teil 1](python-taxi-classification-introduction.md) haben Sie die Vorausset
 
 Im [zweiten Teil](python-taxi-classification-explore-data.md) haben Sie die Beispieldaten untersucht und einige Plots generiert.
 
-Im [dritten Teil](python-taxi-classification-create-features.md) haben Sie gelernt, wie Sie mithilfe einer Transact-SQL-Funktion aus Rohdaten Features erstellen. Anschließend haben Sie die Funktion aus einer gespeicherten Prozedur aufgerufen, um eine Tabelle zu erstellen, die die Funktionswerte enthält.
+In [Teil drei](python-taxi-classification-create-features.md) haben Sie gelernt, wie Sie mithilfe einer Transact-SQL-Funktion aus Rohdaten Features erstellen. Anschließend haben Sie die Funktion aus einer gespeicherten Prozedur aufgerufen, um eine Tabelle zu erstellen, die die Funktionswerte enthält.
 
 Im [vierten Teil](python-taxi-classification-train-model.md) haben Sie die Module geladen und die erforderlichen Funktionen aufgerufen, um das Modell mithilfe einer gespeicherten SQL Server-Prozedur zu erstellen und zu trainieren.
 

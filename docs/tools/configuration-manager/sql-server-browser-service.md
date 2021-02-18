@@ -20,12 +20,12 @@ ms.assetid: 3cc00d3a-487c-4cd9-a155-655f02485fa0
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 2bebb6174f1632973d669262e5422b08e4ccea8d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a4c58894434c503f92c8bcf4df4f74cf9fa2c688
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483762"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345188"
 ---
 # <a name="sql-server-browser-service"></a>SQL Server Browser Service
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

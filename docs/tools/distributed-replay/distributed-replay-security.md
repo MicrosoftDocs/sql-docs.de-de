@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 41ee66ff1a5dc6abd746a1344d03e3cabacf9cd2
-ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
+ms.openlocfilehash: d7ae823b6d5839ce4fdc966af48c0634a37b1e2a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98813084"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345938"
 ---
 # <a name="distributed-replay-security"></a>Distributed Replay-Sicherheit
 

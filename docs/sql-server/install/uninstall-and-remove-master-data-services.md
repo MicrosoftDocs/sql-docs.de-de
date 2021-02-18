@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: efc2431c-588b-42e7-b23b-c875145a33f6
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a2469302fa57073f2541c73c7fd60aff555ec81a
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 4f57ed3d099afa9f85dcc72f489bac6bbcb713fc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98594947"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336102"
 ---
 # <a name="uninstall-and-remove-master-data-services"></a>Deinstallieren und Entfernen von Master Data Services
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

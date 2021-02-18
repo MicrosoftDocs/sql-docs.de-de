@@ -9,12 +9,12 @@ ms.topic: how-to
 author: garyericson
 ms.author: garye
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: e7480b4d31685be402c98892557ddfb5f7db0ab5
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e3dd91e29d88fc2ab6f7216f0bac38632caa7b25
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470981"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352515"
 ---
 # <a name="tips-for-using-r-packages"></a>Tipps für die Verwendung von R-Paketen
 
@@ -88,7 +88,7 @@ Mithilfe der folgenden Richtlinien können Sie Fehler vom Typ „Paket nicht gef
 
 + Informieren Sie sich darüber, welche Paketbibliothek der Instanz zugeordnet ist. Weitere Informationen finden Sie unter [Abrufen von Paketinformationen für R](../package-management/r-package-information.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 ::: moniker range="<=sql-server-2017"
 + [Installieren von Paketen mit R-Tools](install-r-packages-standard-tools.md)

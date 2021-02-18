@@ -14,12 +14,12 @@ ms.assetid: a0665916-7789-4f94-9086-879275802cf3
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: f927e003673cb4397250fe532d57452ddb4e6445
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6333f571ea271420b4044f7e3cf562d2f1edcc15
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474561"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353539"
 ---
 # <a name="local-audit-for-sql-server-usage-and-diagnostic-data-collection-ceip"></a>Lokale Überwachung für SQL Server-Nutzungs- und -Diagnosedatensammlung (CEIP)
 
@@ -108,23 +108,23 @@ Erstellen Sie einen neuen Ordner (Verzeichnis für die lokale Überwachung), in 
 
 1. Navigieren Sie zu dem entsprechenden CPE-Pfad:
 
-   | Version | **_Datenbank-Engine_* – Registrierungsschlüssel |
+   | Version | ***Datenbank-Engine*** – Registrierungsschlüssel |
    | :------ | :----------------------------- |
-   | 2016    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL_ *13**.* Name-Ihrer-Instanz*\\CPE |
+   | 2016    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL **13**.*Name-Ihrer-Instanz*\\CPE |
    | 2017    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL **14**.*Name-Ihrer-Instanz*\\CPE |
    | 2019    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL **15**.*Name-Ihrer-Instanz*\\CPE |
    | &nbsp; | &nbsp; |
 
-   | Version | ***Analysis Services** – Registrierungsschlüssel |
+   | Version | ***Analysis Services*** – Registrierungsschlüssel |
    | :------ | :------------------------------- |
-   | 2016    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSAS_ *13**.* Name-Ihrer-Instanz*\\CPE |
+   | 2016    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSAS **13**.*Name-Ihrer-Instanz*\\CPE |
    | 2017    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSAS **14**.*Name-Ihrer-Instanz*\\CPE |
    | 2019    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSAS **15**.*Name-Ihrer-Instanz*\\CPE |  
    | &nbsp; | &nbsp; |
 
-   | Version | ***Integration Services** – Registrierungsschlüssel |
+   | Version | ***Integration Services*** – Registrierungsschlüssel |
    | :------ | :---------------------------------- |
-   | 2016    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\_ *130** |
+   | 2016    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\**130** |
    | 2017    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\**140** |
    | 2019    | HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\**150** |
    | &nbsp; | &nbsp; |

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.assetid: 3bbeb979-e6fc-4184-ad6e-cca62108de74
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f1b7fb37f0f72475c86bbaa256eeb3634f9ccb4b
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 63aed3815bf49dec9fbeb580d7e8f4e05ff6acf5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642720"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353936"
 ---
 # <a name="configure-healthchecktimeout-property-settings"></a>Konfigurieren der HealthCheckTimeout-Eigenschafteneinstellungen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

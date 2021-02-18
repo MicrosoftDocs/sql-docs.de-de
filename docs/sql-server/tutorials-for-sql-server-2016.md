@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: a93667ad-e856-405a-9328-065331b7ab7b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 45195437003088ea0be588f69d1c98329fb37cc9
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 97954f09eb0bb06906dbf15a8e3d2757fc8a5f63
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987316"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353594"
 ---
 # <a name="tutorials-for-sql-server"></a>Tutorials für SQL Server
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

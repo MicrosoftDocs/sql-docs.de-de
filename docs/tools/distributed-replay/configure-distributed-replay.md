@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: bfbac9d60a1cdda4d4fe1ab1628088890e35be5a
-ms.sourcegitcommit: a9f16d7819ed0e2b7ad8f4a7d4d2397437b2bbb2
+ms.openlocfilehash: ee8c7a67b1071f3b78b5fc18fb21be28f1d658c2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88713788"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345917"
 ---
 # <a name="configure-distributed-replay"></a>Konfigurieren von Distributed Replay
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 5d5b41b6-129a-40b1-af8b-7e8fbd4a84bb
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e7bc243bbcfe0f132cebe73df18d52ee769ec77e
-ms.sourcegitcommit: 1a96abbf434dfdd467d0a9b722071a1ca1aafe52
+ms.openlocfilehash: 3e14732ac763271b867482f4b127c8c69ec1673a
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81528914"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100347009"
 ---
 # <a name="step-3-proof-of-concept-connecting-to-sql-using-nodejs"></a>Schritt 3: Proof of Concept für Verbindungen mit SQL mithilfe von Node.js
 
@@ -51,7 +51,10 @@ Die **new Connection** -Funktion dient zum Herstellen einer Verbindung mit der S
     connection.on('connect', function(err) {  
         // If no error, then good to proceed.
         console.log("Connected");  
-    });  
+    });
+    
+    connection.connect();
+
 ```  
   
 ## <a name="step-2--execute-a-query"></a>Schritt 2:  Ausführen einer Abfrage  
@@ -83,6 +86,8 @@ Alle SQL-Anweisungen werden mithilfe der Funktion **new Request ()** ausgeführt
         console.log("Connected");  
         executeStatement();  
     });  
+    
+    connection.connect();
   
     var Request = require('tedious').Request;  
     var TYPES = require('tedious').TYPES;  
@@ -139,8 +144,10 @@ In diesem Beispiel sehen Sie, wie Sie eine [INSERT](../../t-sql/statements/inser
         // If no error, then good to proceed.  
         console.log("Connected");  
         executeStatement1();  
-    });  
-  
+    });
+    
+    connection.connect();
+    
     var Request = require('tedious').Request  
     var TYPES = require('tedious').TYPES;  
   

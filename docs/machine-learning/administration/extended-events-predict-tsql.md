@@ -9,12 +9,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 6376795beeeddc9ec9c6140c10a0c2831e5368c0
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 099e01e8e626b7a812ebcf2135b7d5e126a49e4e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471371"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337138"
 ---
 # <a name="monitor-predict-t-sql-statements-with-extended-events-in-sql-server-machine-learning-services"></a>Überwachen von PREDICT-T-SQL-Anweisungen mit erweiterten Ereignissen in SQL Server Machine Learning Services
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]
@@ -27,11 +27,11 @@ Die folgenden erweiterten Ereignisse sind in allen Versionen von SQL Server verf
 
 | name                       | object_type | description |
 |----------------------------|-------------|-------------|
-| predict_function_completed | Ereignis       | Integrierte Aufschlüsselung der Ausführungszeit|
-| predict_model_cache_hit    | Ereignis       | Tritt auf, wenn ein Modell aus dem Modellcache der PREDICT-Funktion abgerufen wird. Verwenden Sie dieses Ereignis zusammen mit anderen predict_model_cache_*-Ereignissen zur Behandlung von Problemen, die vom Modellcache der PREDICT-Funktion verursacht werden.|
-| predict_model_cache_insert | Ereignis       | Tritt auf, wenn ein Modell in den Modellcache der PREDICT-Funktion eingefügt wird. Verwenden Sie dieses Ereignis zusammen mit anderen predict_model_cache_*-Ereignissen zur Behandlung von Problemen, die vom Modellcache der PREDICT-Funktion verursacht werden.   |
-| predict_model_cache_miss   | Ereignis       | Tritt auf, wenn ein Modell im Modellcache der PREDICT-Funktion nicht gefunden wird. Ein häufiges Vorkommen dieses Ereignisses kann darauf hindeuten, dass die SQL Server-Instanz mehr Arbeitsspeicher benötigt. Verwenden Sie dieses Ereignis zusammen mit anderen predict_model_cache_*-Ereignissen zur Behandlung von Problemen, die vom Modellcache der PREDICT-Funktion verursacht werden.|
-| predict_model_cache_remove | Ereignis       | Tritt auf, wenn ein Modell aus dem Modellcache der PREDICT-Funktion entfernt wird. Verwenden Sie dieses Ereignis zusammen mit anderen predict_model_cache_*-Ereignissen zur Behandlung von Problemen, die vom Modellcache der PREDICT-Funktion verursacht werden.|
+| predict_function_completed | event       | Integrierte Aufschlüsselung der Ausführungszeit|
+| predict_model_cache_hit    | event       | Tritt auf, wenn ein Modell aus dem Modellcache der PREDICT-Funktion abgerufen wird. Verwenden Sie dieses Ereignis zusammen mit anderen predict_model_cache_*-Ereignissen zur Behandlung von Problemen, die vom Modellcache der PREDICT-Funktion verursacht werden.|
+| predict_model_cache_insert | event       | Tritt auf, wenn ein Modell in den Modellcache der PREDICT-Funktion eingefügt wird. Verwenden Sie dieses Ereignis zusammen mit anderen predict_model_cache_*-Ereignissen zur Behandlung von Problemen, die vom Modellcache der PREDICT-Funktion verursacht werden.   |
+| predict_model_cache_miss   | event       | Tritt auf, wenn ein Modell im Modellcache der PREDICT-Funktion nicht gefunden wird. Ein häufiges Vorkommen dieses Ereignisses kann darauf hindeuten, dass die SQL Server-Instanz mehr Arbeitsspeicher benötigt. Verwenden Sie dieses Ereignis zusammen mit anderen predict_model_cache_*-Ereignissen zur Behandlung von Problemen, die vom Modellcache der PREDICT-Funktion verursacht werden.|
+| predict_model_cache_remove | event       | Tritt auf, wenn ein Modell aus dem Modellcache der PREDICT-Funktion entfernt wird. Verwenden Sie dieses Ereignis zusammen mit anderen predict_model_cache_*-Ereignissen zur Behandlung von Problemen, die vom Modellcache der PREDICT-Funktion verursacht werden.|
 
 ## <a name="query-for-related-events"></a>Abfragen für verwandte Ereignisse
 

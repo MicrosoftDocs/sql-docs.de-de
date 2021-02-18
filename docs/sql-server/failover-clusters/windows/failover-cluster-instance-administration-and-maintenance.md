@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 2d5c63e9-8061-45c3-94db-8dd3100b8a91
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fb546ec95946e2dc534dfa16a51807b86077b322
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: e2f519ae0fec2ba6e24e5e17832d7d6a33782133
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642707"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350868"
 ---
 # <a name="failover-cluster-instance-administration-and-maintenance"></a>Verwaltung und Wartung von Failoverclusterinstanzen
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

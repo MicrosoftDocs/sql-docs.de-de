@@ -10,12 +10,12 @@ ms.assetid: 9373de68-fd43-45f2-b9a6-149c96610aeb
 author: markingmyname
 ms.author: maghan
 ms.reviewer: matteot, drskwier
-ms.openlocfilehash: ab9ceac58363c39bff11e2898821b5811c704d2c
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: f4af22c3464993f62f8b095355ec1859e03601e4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92006174"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338155"
 ---
 # <a name="specify-instances-in-the-sql-server-powershell-provider"></a>Angeben von Instanzen im SQL Server PowerShell-Anbieter
 

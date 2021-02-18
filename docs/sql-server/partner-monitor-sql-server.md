@@ -8,12 +8,12 @@ ms.prod: sql
 ms.technology: release-landing
 ms.author: mikeray
 author: MikeRayMSFT
-ms.openlocfilehash: 77795d78f755d8eec0093dcc418583d8a5086318
-ms.sourcegitcommit: 36fe62a3ccf34979bfde3e192cfa778505add465
+ms.openlocfilehash: 8a5fab228666fc3d8fdf5e539440c09407979bc6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94521197"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338808"
 ---
 # <a name="sql-server-monitoring-partners"></a>SQL Server-Überwachungspartner
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

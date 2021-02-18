@@ -9,12 +9,12 @@ author: cawrites
 ms.author: chadam
 ms.reviewer: pmasl
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 97f9707792d134f0a2b23a5deb8ff33fe9b9ca88
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c7560fbda04ef5a14c73ead8a7bbc8337e3e38ba
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472461"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352902"
 ---
 # <a name="sql-server-end-of-support-options"></a>Optionen für SQL Server bei Ende des Supports 
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

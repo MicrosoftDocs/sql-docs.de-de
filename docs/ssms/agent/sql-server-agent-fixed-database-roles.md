@@ -21,12 +21,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: dd46f133a98263a721e0dfb56a7bd5cc25c591cf
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 57de6b3b9d4282155af520ba53d8ec7aff96f194
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474361"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346109"
 ---
 # <a name="sql-server-agent-fixed-database-roles"></a>Feste Datenbankrollen des SQL Server-Agents
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -61,8 +61,8 @@ Die folgende Tabelle enthält einen Überblick über die **SQLAgentUserRole** -B
 |Liste anzeigen (aufzählen)|Ja<br /><br />Die Liste mit verfügbaren Operatoren kann zum Verwenden in **sp_notify_operator** und im Dialogfeld **Auftragseigenschaften** von Management Studio abgerufen werden.|Ja|Ja|Ja<br /><br />Die Liste der Proxys steht nur im Dialogfeld **Auftragsschritt-Eigenschaften** von Management Studio zur Verfügung.|  
 |Aktivieren/Deaktivieren|Nein|Ja|Ja|Nicht zutreffend|  
 |Eigenschaften anzeigen|Nein|Ja|Ja|Nein|  
-|Ausführen/Beenden/Starten|Nicht zutreffend|Ja|Nicht verfügbar|Nicht zutreffend|  
-|Auftragsverlauf anzeigen|Nicht zutreffend|Ja|Nicht verfügbar|Nicht zutreffend|  
+|Ausführen/Beenden/Starten|Nicht zutreffend|Ja|Nicht zutreffend|Nicht zutreffend|  
+|Auftragsverlauf anzeigen|Nicht zutreffend|Ja|Nicht zutreffend|Nicht zutreffend|  
 |Auftragsverlauf löschen|Nicht zutreffend|Nein<br /><br />Den Mitgliedern von **SQLAgentUserRole** muss die EXECUTE-Berechtigung für **sp_purge_jobhistory** zum Löschen des Auftragsverlaufs für Aufträge, deren Besitzer sie sind, ausdrücklich erteilt werden. Sie können den Auftragsverlauf für keine anderen Aufträge löschen.|Nicht verfügbar|Nicht zutreffend|  
 |Anfügen/Trennen|Nicht verfügbar|Nicht zutreffend|Ja|Nicht zutreffend|  
   
@@ -76,15 +76,15 @@ Die folgende Tabelle enthält einen Überblick über die **SQLAgentReaderRole** 
   
 |Aktion|Operatoren|Lokale Aufträge|Multiserveraufträge|Auftragszeitpläne|Proxys|  
 |----------|-------------|--------------|--------------------|-----------------|-----------|  
-|Erstellen/Ändern/Löschen|No|Ja (nur Aufträge mit Besitzer)<br /><br />Der Auftragsbesitz kann nicht geändert werden.|No|Ja (nur Zeitpläne mit Besitzer)|No|  
+|Erstellen/Ändern/Löschen|Nein|Ja (nur Aufträge mit Besitzer)<br /><br />Der Auftragsbesitz kann nicht geändert werden.|No|Ja (nur Zeitpläne mit Besitzer)|No|  
 |Liste anzeigen (aufzählen)|Ja<br /><br />Die Liste mit verfügbaren Operatoren kann zum Verwenden in **sp_notify_operator** und im Dialogfeld **Auftragseigenschaften** von Management Studio abgerufen werden.|Ja|Ja|Ja|Ja<br /><br />Die Liste der Proxys steht nur im Dialogfeld **Auftragsschritt-Eigenschaften** von Management Studio zur Verfügung.|  
-|Aktivieren/Deaktivieren|No|Ja (nur Aufträge mit Besitzer)|No|Ja (nur Zeitpläne mit Besitzer)|Nicht zutreffend|  
+|Aktivieren/Deaktivieren|Nein|Ja (nur Aufträge mit Besitzer)|No|Ja (nur Zeitpläne mit Besitzer)|Nicht zutreffend|  
 |Eigenschaften anzeigen|Nein|Ja|Ja|Ja|Nein|  
-|Eigenschaften bearbeiten|No|Ja (nur Aufträge mit Besitzer)|No|Ja (nur Zeitpläne mit Besitzer)|No|  
-|Ausführen/Beenden/Starten|Nicht zutreffend|Ja (nur Aufträge mit Besitzer)|Nein|Nicht verfügbar|Nicht zutreffend|  
-|Auftragsverlauf anzeigen|Nicht zutreffend|Ja|Ja|Nicht verfügbar|Nicht zutreffend|  
-|Auftragsverlauf löschen|Nicht zutreffend|Nein<br /><br />Den Mitgliedern von **SQLAgentReaderRole** muss die EXECUTE-Berechtigung für **sp_purge_jobhistory** zum Löschen des Auftragsverlaufs für Aufträge, deren Besitzer sie sind, ausdrücklich erteilt werden. Sie können den Auftragsverlauf für keine anderen Aufträge löschen.|Nein|Nicht verfügbar|Nicht zutreffend|  
-|Anfügen/Trennen|Nicht verfügbar|Nicht verfügbar|Nicht zutreffend|Ja (nur Zeitpläne mit Besitzer)|Nicht zutreffend|  
+|Eigenschaften bearbeiten|Nein|Ja (nur Aufträge mit Besitzer)|No|Ja (nur Zeitpläne mit Besitzer)|No|  
+|Ausführen/Beenden/Starten|Nicht zutreffend|Ja (nur Aufträge mit Besitzer)|Nein|Nicht zutreffend|Nicht zutreffend|  
+|Auftragsverlauf anzeigen|Nicht zutreffend|Ja|Ja|Nicht zutreffend|Nicht zutreffend|  
+|Auftragsverlauf löschen|Nicht zutreffend|Nein<br /><br />Den Mitgliedern von **SQLAgentReaderRole** muss die EXECUTE-Berechtigung für **sp_purge_jobhistory** zum Löschen des Auftragsverlaufs für Aufträge, deren Besitzer sie sind, ausdrücklich erteilt werden. Sie können den Auftragsverlauf für keine anderen Aufträge löschen.|Nein|Nicht zutreffend|Nicht zutreffend|  
+|Anfügen/Trennen|Nicht verfügbar|Nicht zutreffend|Nicht zutreffend|Ja (nur Zeitpläne mit Besitzer)|Nicht zutreffend|  
   
 ### <a name="sqlagentoperatorrole-permissions"></a>SQLAgentOperatorRole-Berechtigungen  
 **SQLAgentOperatorRole** ist die feste Datenbankrolle des [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Agents mit den höchsten Berechtigungen. Sie enthält alle Berechtigungen von **SQLAgentUserRole** und **SQLAgentReaderRole**. Die Mitglieder dieser Rolle können auch die Eigenschaften für Operatoren und Proxys anzeigen und die verfügbaren Proxys und Warnungen auf dem Server aufzählen.  
@@ -105,10 +105,10 @@ Die folgende Tabelle enthält einen Überblick über die **SQLAgentOperatorRole*
 |Aktivieren/Deaktivieren|Nein|Nein|Ja<br /><br />Die Mitglieder von **SQLAgentOperatorRole** können lokale Aufträge, deren Besitzer sie nicht sind, aktivieren oder deaktivieren, indem sie die gespeicherte Prozedur **sp_update_job** verwenden und Werte für die **\@enabled**- und die **\@job_id**-Parameter (oder **\@job_name**) angeben. Wenn ein Mitglied dieser Rolle einen anderen Parameter für diese gespeicherte Prozedur angibt, erzeugt die Ausführung der Prozedur einen Fehler.|Nein|Ja<br /><br />Die Mitglieder von **SQLAgentOperatorRole** können Zeitpläne, deren Besitzer sie nicht sind, aktivieren oder deaktivieren, indem sie die gespeicherte Prozedur **sp_update_schedule** verwenden und Werte für die **\@enabled**- und die **\@schedule_id**-Parameter (oder **\@name**) angeben. Wenn ein Mitglied dieser Rolle einen anderen Parameter für diese gespeicherte Prozedur angibt, erzeugt die Ausführung der Prozedur einen Fehler.|Nicht zutreffend|  
 |Eigenschaften anzeigen|Ja|Ja|Ja|Ja|Ja|Ja|  
 |Eigenschaften bearbeiten|Nein|Nein|Ja (nur Aufträge mit Besitzer)|No|Ja (nur Zeitpläne mit Besitzer)|No|  
-|Ausführen/Beenden/Starten|Nicht verfügbar|Nicht zutreffend|Ja|Nein|Nicht verfügbar|Nicht zutreffend|  
-|Auftragsverlauf anzeigen|Nicht verfügbar|Nicht zutreffend|Ja|Ja|Nicht verfügbar|Nicht zutreffend|  
-|Auftragsverlauf löschen|Nicht verfügbar|Nicht zutreffend|Ja|Nein|Nicht verfügbar|Nicht zutreffend|  
-|Anfügen/Trennen|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|Nicht zutreffend|Ja (nur Zeitpläne mit Besitzer)|Nicht zutreffend|  
+|Ausführen/Beenden/Starten|Nicht zutreffend|Nicht zutreffend|Ja|Nein|Nicht zutreffend|Nicht zutreffend|  
+|Auftragsverlauf anzeigen|Nicht zutreffend|Nicht zutreffend|Ja|Ja|Nicht zutreffend|Nicht zutreffend|  
+|Auftragsverlauf löschen|Nicht zutreffend|Nicht zutreffend|Ja|Nein|Nicht zutreffend|Nicht zutreffend|  
+|Anfügen/Trennen|Nicht verfügbar|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Ja (nur Zeitpläne mit Besitzer)|Nicht zutreffend|  
   
 ## <a name="assigning-users-multiple-roles"></a>Zuweisen von mehreren Rollen an Benutzer  
 Die Mitglieder der festen Serverrolle **sysadmin** haben Zugriff auf alle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Agent-Funktionen. Wenn ein Benutzer nicht Mitglied der **sysadmin** -Rolle ist, sondern von mehr als einer festen Datenbankrolle des [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Agents, sollten Sie das konzentrische Berechtigungsmodell dieser Rollen berücksichtigen. Da die Rollen mit höheren Berechtigungen immer alle Berechtigungen der Rollen mit niedrigeren Berechtigungen enthalten, hat ein Benutzer, der Mitglied von mehreren Rollen ist, automatisch die Berechtigungen der Rolle mit den höchsten Berechtigungen, deren Mitglied der Benutzer ist.  

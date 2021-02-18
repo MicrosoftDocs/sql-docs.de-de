@@ -29,12 +29,12 @@ ms.reviewer: v-daenge
 ms.custom: seo-lt-2019
 ms.date: 09/11/2020
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017'
-ms.openlocfilehash: 9c732f7be3a25752c16e8e09e483097c8b9cac18
-ms.sourcegitcommit: 5dcbe4abbe2339292961370c1d8ca3affa625f72
+ms.openlocfilehash: 87aa8b901c24839aa23b75a318b7a47e3d52f40e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99536411"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349975"
 ---
 # <a name="bcp-utility"></a>Hilfsprogramms bcp
 

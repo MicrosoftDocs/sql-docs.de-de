@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: mikeray
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 20315846d7cbf42e8a24f9aecf84b438bae43888
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: cc42a997abadaa72da5acf254f82c95d5f4b837b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250699"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341022"
 ---
 # <a name="remove-a-registered-server-sql-server-management-studio"></a>Entfernen eines registrierten Servers (SQL Server Management Studio)
 

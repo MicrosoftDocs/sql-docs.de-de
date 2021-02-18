@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 19964f82c79e98ecb13558dc01e62198e68efa56
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 88ce51a2a665bc127331d2c145a1a41f641881eb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85732206"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349508"
 ---
 # <a name="preprocess-option-distributed-replay-administration-tool"></a>Vorverarbeitungsoption (Verwaltungstool "Distributed Replay")
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - ISSDataClassification interface
 author: bazizi
 ms.author: v-beaziz
-ms.openlocfilehash: 6a0d7eb233df6712d84318a59c53c3dddf2d6af9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 23c575e31f151156165e09c34baf6c81b44b209b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99204006"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342479"
 ---
 # <a name="issdataclassification"></a>ISSDataClassification
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../../../includes/applies-to-version/sql-asdb-asa.md)]

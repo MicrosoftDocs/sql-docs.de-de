@@ -8,12 +8,12 @@ ms.prod: sql
 ms.technology: release-landing
 ms.author: mikeray
 author: MikeRayMSFT
-ms.openlocfilehash: d0f2bb38923f52edd8f1dae3410d29c7d4babc95
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 4b5e676b5c5cd885395cad869ddff1e6db03fb6a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86923057"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343578"
 ---
 # <a name="sql-server-development-partners"></a>SQL Server: Entwicklungspartner
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

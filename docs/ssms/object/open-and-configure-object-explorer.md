@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: a138ba3d-d00b-420c-917e-e586d590d30f
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: a2cc8f3df83bc35eb039336bf6d7c83ae5ff188d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 59785a0659ff127043a7aed79c8ec05c878895b1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491850"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346138"
 ---
 # <a name="open-and-configure-object-explorer"></a>Öffnen und Konfigurieren des Objekt-Explorers
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

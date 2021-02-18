@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.assetid: 19ff5285-fb9d-4fd1-97c4-ec72c311c384
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 1f642b375e4e3331bbac0e49fb878ceecd02cf5e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 4035d5faf74365939e2696dd83a13b1b512e84b0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85786030"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349529"
 ---
 # <a name="replay-trace-data"></a>Wiedergeben von Ablaufverfolgungsdaten
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -48,19 +48,19 @@ ms.locfileid: "85786030"
   
     1.  Öffnen Sie die Windows-Eingabeaufforderung (**CMD.exe**), und navigieren Sie zum Installationspfad des Verwaltungstools „Distributed Replay“ (**DReplay.exe**).  
   
-    2.  (Optional) Wenn der Controllerdienst und das Verwaltungstool auf unterschiedlichen Computern ausgeführt werden, geben Sie über den *controller* -Parameter **-m**den entsprechenden Controller an.  
+    2.  (Optional) Wenn der Controllerdienst und das Verwaltungstool auf unterschiedlichen Computern ausgeführt werden, geben Sie über den *controller* -Parameter **-m** den entsprechenden Controller an.  
   
-    3.  Geben Sie über den *controller_working_directory* -Parameter **-d**den Speicherort auf dem Controller an, an dem die Zwischendatei während der Vorverarbeitungsphase gespeichert wurde.  
+    3.  Geben Sie über den *controller_working_directory* -Parameter **-d** den Speicherort auf dem Controller an, an dem die Zwischendatei während der Vorverarbeitungsphase gespeichert wurde.  
   
     4.  (Optional) Verwenden Sie den Parameter **-o** , um die Wiedergabeaktivität auf jedem Client in einer Ergebnisdatei der Ablaufverfolgung aufzuzeichnen.  
   
-    5.  (Optional) Geben Sie über den *target_server* -Parameter **-s**die [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Instanz an, in der auf den Distributed Replay-Clients die Arbeitsauslastung der Ablaufverfolgung wiedergegeben werden soll. Dieser Parameter ist nicht erforderlich, wenn Sie mithilfe des `<Server>` -Elements den Zielserver im `<ReplayOptions>` -Element der Wiedergabekonfigurationsdatei angegeben haben.  
+    5.  (Optional) Geben Sie über den *target_server* -Parameter **-s** die [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Instanz an, in der auf den Distributed Replay-Clients die Arbeitsauslastung der Ablaufverfolgung wiedergegeben werden soll. Dieser Parameter ist nicht erforderlich, wenn Sie mithilfe des `<Server>` -Elements den Zielserver im `<ReplayOptions>` -Element der Wiedergabekonfigurationsdatei angegeben haben.  
   
-    6.  Geben Sie mit dem *clients* -Parameter **-w**die Distributed Replay-Clients an, die an der Wiedergabe teilnehmen sollen. Führen Sie die Namen der Clientcomputer mit Trennzeichen getrennt auf. Hinweis: IP-Adressen sind nicht zulässig.  
+    6.  Geben Sie mit dem *clients* -Parameter **-w** die Distributed Replay-Clients an, die an der Wiedergabe teilnehmen sollen. Führen Sie die Namen der Clientcomputer mit Trennzeichen getrennt auf. Hinweis: IP-Adressen sind nicht zulässig.  
   
-    7.  (Optional) Geben Sie mit dem *config_file* -Parameter **-c**den Speicherort der Wiedergabekonfigurationsdatei an. Wenn Sie eine Kopie der Standardkonfigurationsdatei für die Wiedergabe geändert haben, verwenden Sie diesen Parameter, um auf die neue Konfigurationsdatei zu zeigen.  
+    7.  (Optional) Geben Sie mit dem *config_file* -Parameter **-c** den Speicherort der Wiedergabekonfigurationsdatei an. Wenn Sie eine Kopie der Standardkonfigurationsdatei für die Wiedergabe geändert haben, verwenden Sie diesen Parameter, um auf die neue Konfigurationsdatei zu zeigen.  
   
-    8.  (Optional) Geben Sie mit dem *status_interval* -Parameter **-f**an, ob Statusmeldungen im Verwaltungstool mit einer anderen Frequenz als 30 Sekunden angezeigt werden sollen.  
+    8.  (Optional) Geben Sie mit dem *status_interval* -Parameter **-f** an, ob Statusmeldungen im Verwaltungstool mit einer anderen Frequenz als 30 Sekunden angezeigt werden sollen.  
   
      Mit der folgenden Syntax initiieren Sie beispielsweise die Wiedergabephase auf dem Computer mit dem Controllerdienst, verwenden das Controllerarbeitsverzeichnis `c:\WorkingDir`, zeichnen die Wiedergabeaktivität auf jedem teilnehmenden Client auf, verwenden die Clients `client1` und `client2` zum Ausführen der Wiedergabe und rufen die verbleibenden Konfigurationseinstellungen für die Wiedergabe der geänderten Wiedergabekonfigurationsdatei `c:\modifiedreplay.config`ab:  
   

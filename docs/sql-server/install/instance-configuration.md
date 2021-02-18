@@ -16,12 +16,12 @@ ms.assetid: 5bf822fc-6dec-4806-a153-e200af28e9a5
 author: cawrites
 ms.author: chadam
 robots: noindex,nofollow
-ms.openlocfilehash: 08b7d5d8c1680be42902fe287c14418b2732f7f9
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 7b678ac25174b75db198739e0e9bc191d29f18d9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98595440"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336162"
 ---
 # <a name="installation-wizard-help"></a>Hilfe zum Installations-Assistenten
 
@@ -365,11 +365,11 @@ Konfigurieren Sie die Einstellungen für **tempdb** entsprechend Ihrer Arbeitsau
   
 * **Anzahl von Dateien** ist die Gesamtzahl der Datendateien für **tempdb**. Der Standardwert ist der niedrigere der folgenden beiden Werte: entweder acht, oder die Anzahl der logischen Kerne, die vom Setup erkannt wurden. Folgende Faustregel gilt: Wenn die Anzahl von logischen Prozessoren kleiner oder gleich acht ist, verwenden Sie genauso viele Datendateien wie logische Prozessoren. Wenn die Anzahl der logischen Prozessoren größer als 8 ist, verwenden Sie 8 Datendateien. Falls daraufhin weiterhin ein Konflikt besteht, erhöhen Sie die Anzahl von Datendateien um ein Vielfaches von vier (bis zur Anzahl der logischen Prozessoren), bis der Konflikt auf ein akzeptables Ausmaß reduziert ist, oder ändern Sie die Arbeitsauslastung bzw. den Code.
   
-* **Anfangsgröße (MB)** ist die Anfangsgröße in Megabyte für jede **tempdb**-Datendatei. Der Standardwert ist 8 MB (oder 4 MB für [!INCLUDE[ssexpress](../../includes/ssexpress_md.md)]). [!INCLUDE[sssqlv14](../../includes/sssqlv14-md.md)]führt eine maximale anfängliche Dateigröße von 262.144 MB (256 GB) ein. [!INCLUDE[sssql15](../../includes/sssql16-md.md)] hat eine maximale anfängliche Dateigröße von 1024 MB. Alle **tempdb** -Datendateien haben die gleichen Anfangsgröße. Da **tempdb** bei jedem Start von SQL Server und bei jedem, von SQL Server durchgeführten Failover neu erstellt wird, sollten Sie eine Größe angeben, die der Größe nahekommt, die Ihre Arbeitsauslastung im Normalbetrieb erfordert. Aktivieren Sie die [Sofortige Datenbankdateiinitialisierung](../../relational-databases/databases/database-instant-file-initialization.md), um die Erstellung von **tempdb** weiter zu optimieren.  
+* **Anfangsgröße (MB)** ist die Anfangsgröße in Megabyte für jede **tempdb**-Datendatei. Der Standardwert ist 8 MB (oder 4 MB für [!INCLUDE[ssexpress](../../includes/ssexpress_md.md)]). [!INCLUDE[sssql17](../../includes/sssql17-md.md)]führt eine maximale anfängliche Dateigröße von 262.144 MB (256 GB) ein. [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] hat eine maximale anfängliche Dateigröße von 1024 MB. Alle **tempdb** -Datendateien haben die gleichen Anfangsgröße. Da **tempdb** bei jedem Start von SQL Server und bei jedem, von SQL Server durchgeführten Failover neu erstellt wird, sollten Sie eine Größe angeben, die der Größe nahekommt, die Ihre Arbeitsauslastung im Normalbetrieb erfordert. Aktivieren Sie die [Sofortige Datenbankdateiinitialisierung](../../relational-databases/databases/database-instant-file-initialization.md), um die Erstellung von **tempdb** weiter zu optimieren.  
   
 * **Gesamtanfangsgröße (MB)** ist die kumulierte Größe aller **tempdb**-Datendateien.  
   
-* **Automatische Vergrößerung (MB)** ist die Menge des Speicherplatzes in Megabyte, um die sich jede **tempdb** -Datendatei automatisch vergrößert, wenn es keinen Speicherplatz mehr gibt. In [!INCLUDE[sssql15](../../includes/sssql16-md.md)] und später vergrößern sich alle Datendateien gleichzeitig um die in dieser Einstellung angegebene Menge.  
+* **Automatische Vergrößerung (MB)** ist die Menge des Speicherplatzes in Megabyte, um die sich jede **tempdb** -Datendatei automatisch vergrößert, wenn es keinen Speicherplatz mehr gibt. In [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] und später vergrößern sich alle Datendateien gleichzeitig um die in dieser Einstellung angegebene Menge.  
   
 * **Gesamte automatische Vergrößerung (MB)** ist die kumulierte Größe der einzelnen Ereignisse der automatischen Vergrößerung.  
 * **Datenverzeichnisse** zeigen alle Verzeichnisse, die **tempdb** -Datendateien enthalten. Wenn mehrere Verzeichnisse vorhanden sind, werden die Datendateien reihum in den Verzeichnissen platziert. Falls Sie beispielsweise drei Verzeichnisse erstellen und acht Datendateien angeben, werden die Datendateien 1, 4 und 7 im ersten Verzeichnis erstellt. Die Datendateien 2, 5 und 8 werden im zweiten Verzeichnis erstellt. Die Datendateien 3 und 6 befinden sich im dritten Verzeichnis.  
@@ -380,7 +380,7 @@ Konfigurieren Sie die Einstellungen für **tempdb** entsprechend Ihrer Arbeitsau
   
 **tempdb-Protokolldatei** ist der Name der Protokolldatei. Diese Datei wird automatisch erstellt. Die folgenden Einstellungen gelten nur für **tempdb** -Protokolldateien:  
   
-* **Anfangsgröße (MB)** ist die Anfangsgröße der **tempdb** -Protokolldatei. Der Standardwert ist 8 MB (oder 4 MB für [!INCLUDE[ssexpress](../../includes/ssexpress_md.md)]). [!INCLUDE[sssqlv14](../../includes/sssqlv14-md.md)]führt eine maximale anfängliche Dateigröße von 262.144 MB (256 GB) ein. [!INCLUDE[sssql15](../../includes/sssql16-md.md)] hat eine maximale anfängliche Dateigröße von 1024 MB. Da **tempdb** bei jedem Start von SQL Server und bei jedem, von SQL Server durchgeführten Failover neu erstellt wird, sollten Sie eine Größe angeben, die der Größe nahekommt, die Ihre Arbeitsauslastung im Normalbetrieb erfordert. Aktivieren Sie die [Sofortige Datenbankdateiinitialisierung](../../relational-databases/databases/database-instant-file-initialization.md), um die Erstellung von **tempdb** weiter zu optimieren.  
+* **Anfangsgröße (MB)** ist die Anfangsgröße der **tempdb** -Protokolldatei. Der Standardwert ist 8 MB (oder 4 MB für [!INCLUDE[ssexpress](../../includes/ssexpress_md.md)]). [!INCLUDE[sssql17](../../includes/sssql17-md.md)]führt eine maximale anfängliche Dateigröße von 262.144 MB (256 GB) ein. [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] hat eine maximale anfängliche Dateigröße von 1024 MB. Da **tempdb** bei jedem Start von SQL Server und bei jedem, von SQL Server durchgeführten Failover neu erstellt wird, sollten Sie eine Größe angeben, die der Größe nahekommt, die Ihre Arbeitsauslastung im Normalbetrieb erfordert. Aktivieren Sie die [Sofortige Datenbankdateiinitialisierung](../../relational-databases/databases/database-instant-file-initialization.md), um die Erstellung von **tempdb** weiter zu optimieren.  
   
   > [!NOTE]
   > **tempdb** verwendet minimale Protokollierung. Die **tempdb**-Protokolldatei kann nicht gesichert werden. Es wird jedes Mal neu erstellt, wenn der SQL Server startet oder wenn eine Clusterinstanz einen Failover ausführt.
@@ -420,7 +420,7 @@ The MaxDOP setting applies only to SQL Server 2019 and later.
 
 ## <a name="a-namemaxdop-database-engine-configuration---maxdop-page"></a><a name="maxdop"><a/> Konfiguration der Datenbank-Engine – Seite „MaxDOP“
 
-**Der maximale Grad an Parallelität (MaxDOP)** bestimmt die maximale Anzahl von Prozessoren, die eine einzelne Anweisung verwenden kann. Ab [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] kann diese Option während der Installation konfiguriert werden. [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] erkennt außerdem basierend auf der Anzahl von Kernen automatisch die empfohlene MaxDOP-Einstellung für den Server.  
+**Der maximale Grad an Parallelität (MaxDOP)** bestimmt die maximale Anzahl von Prozessoren, die eine einzelne Anweisung verwenden kann. Ab [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] kann diese Option während der Installation konfiguriert werden. [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] erkennt außerdem basierend auf der Anzahl von Kernen automatisch die empfohlene MaxDOP-Einstellung für den Server.  
 
 Wird diese Seite während des Setups übersprungen, wird als MaxDOP-Standardwert nicht der [!INCLUDE[ssde_md](../../includes/ssde_md.md)]-Standardwert für vorherige Versionen (0), sondern der auf dieser Seite angezeigte empfohlene Wert verwendet. Sie können diese Einstellung auf dieser Seite auch manuell konfigurieren, und Sie können diese Einstellung nach der Installation ändern. 
 

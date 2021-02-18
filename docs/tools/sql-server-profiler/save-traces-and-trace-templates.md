@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 084471f17aac4d9f731facaad71c2e265a2c275d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: c75f865ed31e43f2fbdec96cfc65fcbd9619c1d1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85726912"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345769"
 ---
 # <a name="save-traces-and-trace-templates"></a>Speichern von Ablaufverfolgungen und Ablaufverfolgungsvorlagen
 
@@ -37,7 +37,7 @@ Es ist wichtig, zwischen dem Speichern von Ablaufverfolgungsdateien und dem Spei
 > [!NOTE]  
 >  Das Aufzeichnen von Ablaufverfolgungsdaten in einer Tabelle erfolgt langsamer als in einer Datei. Alternativ können Ablaufverfolgungsdaten in einer Datei aufgezeichnet werden, die Ablaufverfolgungsdatei geöffnet und die Ablaufverfolgung dann als Ablaufverfolgungstabelle gespeichert werden.  
   
- Wenn Sie eine Ablaufverfolgungsdatei verwenden, speichert [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] die aufgezeichneten Ereignisdaten (keine Ablaufverfolgungsdefinitionen) in einer [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] -Ablaufverfolgungsdatei (\*.trc). Die Erweiterung wird automatisch an das Ende der Datei angefügt, wenn die Ablaufverfolgungsdatei gespeichert wird, unabhängig von anderen angegebenen Erweiterungen. Wenn Sie z. B. eine Ablaufverfolgungsdatei namens **Trace.dat**angeben, erhält die Datei den Namen **Trace.dat.trc**.  
+ Wenn Sie eine Ablaufverfolgungsdatei verwenden, speichert [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] die aufgezeichneten Ereignisdaten (keine Ablaufverfolgungsdefinitionen) in einer [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] -Ablaufverfolgungsdatei (\*.trc). Die Erweiterung wird automatisch an das Ende der Datei angefügt, wenn die Ablaufverfolgungsdatei gespeichert wird, unabhängig von anderen angegebenen Erweiterungen. Wenn Sie z. B. eine Ablaufverfolgungsdatei namens **Trace.dat** angeben, erhält die Datei den Namen **Trace.dat.trc**.  
   
 > [!IMPORTANT]  
 >  Benutzer mit den Berechtigungen SHOWPLAN, ALTER TRACE oder VIEW SERVER STATE können Abfragen anzeigen, die in der Showplan-Ausgabe erfasst werden. Diese Abfragen enthalten möglicherweise vertrauliche Informationen wie Kennwörter. Daher wird empfohlen, diese Berechtigungen nur Benutzern zu gewähren, die zum Zugreifen auf vertrauliche Informationen berechtigt sind, z.B. Mitglieder der festen Datenbankrolle **db_owner** oder Mitglieder der festen Serverrolle **sysadmin** . Darüber hinaus wird empfohlen, Showplan-Dateien oder Ablaufverfolgungsdateien, die Ereignisse mit Bezug zu Showplan enthalten, nur an einem Speicherort zu speichern, für den das NTFS-Dateisystem verwendet wird, und den Zugriff auf Benutzer zu beschränken, die zum Zugreifen auf vertrauliche Informationen berechtigt sind.  

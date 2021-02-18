@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: d5fa4964a2ffb0d62777c25aa0d0c6ef205ee94b
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 9105e4d7c28b003c191d5a9794717496d07eb0f5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85789935"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353358"
 ---
 # <a name="replay-requirements"></a>Replay Requirements
 
@@ -116,7 +116,7 @@ Um Ablaufverfolgungsdaten mit [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofi
   
 -   Die Datenbank-IDs auf dem Ziel sollten mit denen auf der Quelle übereinstimmen. Andernfalls können Sie basierend auf **DatabaseName** einen Abgleich ausführen, sofern dieser in der Ablaufverfolgung enthalten ist.  
   
--   Die Standarddatenbank für jeden in der Ablaufverfolgung enthaltenen Benutzernamen muss (auf dem Ziel) auf die entsprechende Zieldatenbank des Benutzernamens festgelegt werden. Beispielsweise enthält die wiederzugebende Ablaufverfolgung Aktivitäten für den Benutzernamen **Fred**in der **Fred_Db** -Datenbank der Quelle. Daher muss die Standarddatenbank auf dem Ziel für den Benutzernamen **Fred**auf die Datenbank festgelegt werden, die mit **Fred_Db** übereinstimmt (selbst wenn sich der Datenbankname unterscheidet). Legen Sie mithilfe der gespeicherten Systemprozedur **sp_defaultdb** die Standarddatenbank für den Benutzernamen fest.  
+-   Die Standarddatenbank für jeden in der Ablaufverfolgung enthaltenen Benutzernamen muss (auf dem Ziel) auf die entsprechende Zieldatenbank des Benutzernamens festgelegt werden. Beispielsweise enthält die wiederzugebende Ablaufverfolgung Aktivitäten für den Benutzernamen **Fred** in der **Fred_Db** -Datenbank der Quelle. Daher muss die Standarddatenbank auf dem Ziel für den Benutzernamen **Fred** auf die Datenbank festgelegt werden, die mit **Fred_Db** übereinstimmt (selbst wenn sich der Datenbankname unterscheidet). Legen Sie mithilfe der gespeicherten Systemprozedur **sp_defaultdb** die Standarddatenbank für den Benutzernamen fest.  
   
  Beim Wiedergeben von Ereignissen, die fehlende oder fehlerhafte Benutzernamen aufweisen, können Wiedergabefehler auftreten, die Wiedergabe wird jedoch fortgesetzt.  
   

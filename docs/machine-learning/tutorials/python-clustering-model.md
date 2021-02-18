@@ -11,12 +11,12 @@ author: garyericson
 ms.author: garye
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: dc119f4afe15606dc0d97e69abf0e3f055235bd7
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: ac99e5442054161f87d67244f039224e61a58b3a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101956"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351488"
 ---
 # <a name="python-tutorial-categorizing-customers-using-k-means-clustering-with-sql-machine-learning"></a>Python-Tutorial: Kategorisieren von Kunden mithilfe von K-Means-Clustering mit SQL Machine Learning
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]
@@ -103,7 +103,7 @@ Das in diesem Tutorial verwendete Beispieldataset wurde in einer **BAK**-Datenba
 ::: moniker range="=azuresqldb-mi-current"
 1. Laden Sie die Datei [tpcxbb_1gb.bak](https://sqlchoice.blob.core.windows.net/sqlchoice/static/tpcxbb_1gb.bak) herunter.
 
-1. Befolgen Sie die Anweisungen in [Wiederherstellen einer Datenbank in einer verwalteten Instanz](/azure/sql-database/sql-database-managed-instance-get-started-restore) in SQL Server Management Studio. Verwenden Sie hierzu die folgenden Details:
+1. Befolgen Sie die Anweisungen unter [Schnellstart: Wiederherstellen einer Datenbank in Azure SQL Managed Instance mit SSMS](/azure/sql-database/sql-database-managed-instance-get-started-restore) für die Ausführung in SQL Server Management Studio. Verwenden Sie hierzu die folgenden Details:
 
    * Importieren Sie aus der heruntergeladenen Datei **tpcxbb_1gb.bak**.
    * Geben Sie der Zieldatenbank den Namen „tpcxbb_1gb“.

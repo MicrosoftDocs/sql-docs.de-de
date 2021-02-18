@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: c806d55867c63c273bd528ecafc4419d31fde7e0
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: b95380a4a99e525cc97588b2051d1812c6e2d34a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85722626"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338640"
 ---
 # <a name="view-and-analyze-traces-with-sql-server-profiler"></a>Anzeigen und Analysieren von Ablaufverfolgungen mit SQL Server Profiler
 
@@ -33,7 +33,7 @@ Verwenden Sie [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] , um
  Um die Ablaufverfolgungsanalyse zu erleichtern, können Sie das Anzeigeformat für Datum und Uhrzeit in [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] konfigurieren.  
   
 ## <a name="troubleshooting-data"></a>Problembehandlung von Daten  
- Mit [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]können Sie die Problembehandlung für Daten ausführen, indem Sie Ablaufverfolgungen oder Ablaufverfolgungsdateien nach der Datenspalte **Duration**, **CPU**, **Reads**oder **Writes** in Gruppen zusammenfassen. Zu den Daten, für die Sie eine Problembehandlung durchführen können, gehören beispielsweise Abfragen, deren Ergebnisse nicht zufrieden stellend ausfallen, oder die eine außergewöhnlich hohe Anzahl logischer Lesevorgänge aufweisen.  
+ Mit [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]können Sie die Problembehandlung für Daten ausführen, indem Sie Ablaufverfolgungen oder Ablaufverfolgungsdateien nach der Datenspalte **Duration**, **CPU**, **Reads** oder **Writes** in Gruppen zusammenfassen. Zu den Daten, für die Sie eine Problembehandlung durchführen können, gehören beispielsweise Abfragen, deren Ergebnisse nicht zufrieden stellend ausfallen, oder die eine außergewöhnlich hohe Anzahl logischer Lesevorgänge aufweisen.  
   
  Zusätzliche Informationen stehen zur Verfügung, wenn die Ablaufverfolgungen in Tabellen gespeichert werden und [!INCLUDE[tsql](../../includes/tsql-md.md)] für die Abfrage der Ereignisdaten verwendet wird. Wenn Sie z.B. feststellen möchten, welche **SQL:BatchCompleted** -Ereignisse eine überlange Wartezeit aufweisen, führen Sie Folgendes aus:  
   
@@ -50,14 +50,14 @@ AND     CPU < (Duration * 1000)
 ## <a name="displaying-object-names-when-viewing-traces"></a>Anzeigen von Objektnamen bei der Anzeige von Ablaufverfolgungen  
  Wenn Sie statt des Objektbezeichners (**ObjectID**) lieber den Namen eines Objekts anzeigen möchten, müssen Sie zusammen mit der Datenspalte **ObjectName** auch die Datenspalten **ServerName** und **DatabaseID** aufzeichnen.  
   
- Wenn auf der Grundlage der **ObjectID** -Datenspalte gruppiert werden soll, stellen Sie sicher, dass Sie zuerst nach den Datenspalten **ServerName** und **DatabaseID** und erst anschließend nach der **ObjectID** -Datenspalte gruppieren. Analog müssen Sie, wenn Sie auf der Grundlage der **IndexID** -Datenspalte gruppieren möchten, sicherstellen, dass Sie zuerst nach den Datenspalten **ServerName**, **DatabaseID**und **ObjectID** und erst anschließend nach der **IndexID** -Datenspalte gruppieren. Diese Reihenfolge muss beim Gruppieren eingehalten werden, weil die Objekt- und Index-IDs für die verschiedenen Server und Datenbanken (und die Index-IDs für die verschiedenen Objekte) nicht eindeutig erkennbar sind.  
+ Wenn auf der Grundlage der **ObjectID** -Datenspalte gruppiert werden soll, stellen Sie sicher, dass Sie zuerst nach den Datenspalten **ServerName** und **DatabaseID** und erst anschließend nach der **ObjectID** -Datenspalte gruppieren. Analog müssen Sie, wenn Sie auf der Grundlage der **IndexID** -Datenspalte gruppieren möchten, sicherstellen, dass Sie zuerst nach den Datenspalten **ServerName**, **DatabaseID** und **ObjectID** und erst anschließend nach der **IndexID** -Datenspalte gruppieren. Diese Reihenfolge muss beim Gruppieren eingehalten werden, weil die Objekt- und Index-IDs für die verschiedenen Server und Datenbanken (und die Index-IDs für die verschiedenen Objekte) nicht eindeutig erkennbar sind.  
   
 ## <a name="finding-specific-events-within-a-trace"></a>Suchen nach bestimmten Ereignissen in einer Ablaufverfolgung  
  Gehen Sie wie folgt vor, um in einer Ablaufverfolgung nach Ereignissen zu suchen und diese zu gruppieren:  
   
 1.  Erstellen Sie eine Ablaufverfolgung.  
   
-    -   Zeichnen Sie beim Definieren der Ablaufverfolgung neben allen anderen gewünschten Datenspalten auch die Datenspalten **EventClass**, **ClientProcessID**und **StartTime** auf. Weitere Informationen finden Sie unter [Erstellen einer Ablaufverfolgung &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/create-a-trace-sql-server-profiler.md).  
+    -   Zeichnen Sie beim Definieren der Ablaufverfolgung neben allen anderen gewünschten Datenspalten auch die Datenspalten **EventClass**, **ClientProcessID** und **StartTime** auf. Weitere Informationen finden Sie unter [Erstellen einer Ablaufverfolgung &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/create-a-trace-sql-server-profiler.md).  
   
     -   Gruppieren Sie die aufgezeichneten Daten nach der Datenspalte **Event Class**, und zeichnen Sie die Ablaufverfolgung in einer Datei oder Tabelle auf. Klicken Sie im Dialogfeld „Ablaufverfolgungseigenschaften“ auf der Registerkarte **Ereignisauswahl** auf **Spalten organisieren** , um die aufgezeichneten Daten zu gruppieren. Weitere Informationen finden Sie unter [Organisieren von in einer Ablaufverfolgung angezeigten Spalten &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/organize-columns-displayed-in-a-trace-sql-server-profiler.md).  
   
@@ -75,7 +75,7 @@ AND     CPU < (Duration * 1000)
   
     -   Erweitern Sie die Knoten für jede einzelne Clientprozess-ID, die Sie anzeigen möchten. Durchsuchen Sie die Ablaufverfolgung manuell oder mithilfe der Option **Suchen** , bis Sie die zuvor notierten **Start Time**-Werte der Zielereignisse finden. Die Ereignisse werden in chronologischer Reihenfolge mit den anderen Ereignissen angezeigt, die zu den einzelnen ausgewählten Client-Prozess-IDs gehören. Beispielsweise werden das **Deadlock** -Ereignis und das **Deadlock Chain**-Ereignis, die bei der Ablaufverfolgung aufgezeichnet wurden, innerhalb der erweiterten Client-Prozess-ID sofort nach den **SQL:BatchStarting**-Ereignissen angezeigt.  
   
- Diese Methode kann auch verwendet werden, um nach anderen gruppierten Ereignissen zu suchen. Sobald Sie die gesuchten Ereignisse gefunden haben, gruppieren Sie diese nach der Ereignisklasse **ClientProcessID**, **ApplicationName**oder einer anderen Ereignisklasse, um zugehörige Aktivitäten in chronologischer Reihenfolge anzuzeigen.  
+ Diese Methode kann auch verwendet werden, um nach anderen gruppierten Ereignissen zu suchen. Sobald Sie die gesuchten Ereignisse gefunden haben, gruppieren Sie diese nach der Ereignisklasse **ClientProcessID**, **ApplicationName** oder einer anderen Ereignisklasse, um zugehörige Aktivitäten in chronologischer Reihenfolge anzuzeigen.  
   
 ## <a name="see-also"></a>Weitere Informationen  
  [Anzeigen einer gespeicherten Ablaufverfolgung &#40;Transact-SQL&#41;](../../relational-databases/sql-trace/view-a-saved-trace-transact-sql.md)   

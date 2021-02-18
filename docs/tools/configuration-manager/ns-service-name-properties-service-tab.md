@@ -12,12 +12,12 @@ ms.assetid: 57c6b791-1663-4a01-9de2-cf1bdd8adb2c
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 21c71c338fa527cbff220154b94f3356f762426e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: fce2278305d207f7db9b961f42cfcabc76169fa6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463821"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349729"
 ---
 # <a name="nsltservice-namegt-properties-service-tab"></a>NS$&lt;Dienstname&gt;-Eigenschaften (Registerkarte „Dienst“)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

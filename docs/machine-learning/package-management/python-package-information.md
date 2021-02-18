@@ -9,12 +9,12 @@ ms.topic: how-to
 author: garyericson
 ms.author: garye
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: ca07166159b1d637b58f9eb7056218d1fc504a66
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 29ed535b25d364ffa552aba20b10b446e0561cf9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471021"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352521"
 ---
 # <a name="get-python-package-information"></a>Abrufen von Paketinformationen für Python
 

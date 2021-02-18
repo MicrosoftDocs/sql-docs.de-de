@@ -18,12 +18,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 01/19/2017
-ms.openlocfilehash: b1c98d1e8cdf0525da76e65ef7481def4e3feb0a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1ebf2ca3be5b92474c1f62052d1845cb3fb5b277
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491773"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349017"
 ---
 # <a name="solution-explorer"></a>Projektmappen-Explorer
 

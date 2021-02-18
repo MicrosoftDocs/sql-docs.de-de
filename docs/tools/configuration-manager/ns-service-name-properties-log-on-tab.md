@@ -12,12 +12,12 @@ ms.assetid: 5e6816ec-d4c5-4429-8033-b97427584890
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: f3354df565cda25148017a0e3e2bd7eb7a3d57e9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d24e1c207027b5f15bfc14c7fbfd92e40cccd8c4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463829"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349747"
 ---
 # <a name="nsltservice-namegt-properties-log-on-tab"></a>Eigenschaften von NS$&lt;Dienstname&gt; (Registerkarte „Anmelden“)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

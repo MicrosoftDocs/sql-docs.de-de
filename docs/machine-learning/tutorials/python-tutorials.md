@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 6e527f7ba5d9a0f97a52cf068565b1b24ee696bf
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4b8e997b6990d4d81e9667a41cf359208ca0f31e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470311"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341476"
 ---
 # <a name="python-tutorials-for-sql-machine-learning"></a>Python-Turorials für SQL Machine Learning
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]

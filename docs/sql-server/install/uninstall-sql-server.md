@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: e6255f8e-a25e-4b3d-9310-c5da2f9c9333
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fb0c63107430db5a1a7fa74276c6440e7212db2b
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 63bd88c295c08038ec70041b457601274408e65b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766346"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336066"
 ---
 # <a name="uninstall-sql-server"></a>Deinstallieren von SQL Server 
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

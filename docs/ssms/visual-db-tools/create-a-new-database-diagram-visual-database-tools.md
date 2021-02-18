@@ -14,12 +14,12 @@ ms.assetid: 843649c0-10bb-4b6a-9369-6b10733381e9
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: e8e18123233521999dba0c1d32966177f4a343ee
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c4a9ff6e366bd8f4e570bade6243bcaf53c75ca3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88480076"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338785"
 ---
 # <a name="create-a-new-database-diagram-visual-database-tools"></a>Erstellen eines neuen Datenbankdiagramms (Visual Database Tools)
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]

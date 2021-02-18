@@ -26,12 +26,12 @@ ms.assetid: e250336b-0695-44f6-a42f-23222f94e377
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 164677484f24744ac61d9d4e2da4ce93425f3a77
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 730d2761f2331c30277b79b3ddb3be0d45e4c3fc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483812"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349788"
 ---
 # <a name="monitoring-the-error-logs"></a>Überwachen der Fehlerprotokolle
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

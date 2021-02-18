@@ -11,12 +11,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 49b6aa0869ea6f6febb583024feff2b883dc9819
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 2e4012a673404e00181433afb70bbe4214c1732c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765751"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100271664"
 ---
 # <a name="view-registered-servers-in-sql-server-management-studio"></a>Anzeigen von registrierten Servern in SQL Server Management Studio
 

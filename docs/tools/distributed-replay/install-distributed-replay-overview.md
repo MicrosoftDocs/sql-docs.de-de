@@ -11,12 +11,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 3c8813f6cacb34027ab3a8ad828fd4ebb266b422
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: a1bf698a43cb744abf5ca69f41d67637c1702a4c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87243703"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349558"
 ---
 # <a name="install-distributed-replay---overview"></a>Install Distributed Replay - Overview
 

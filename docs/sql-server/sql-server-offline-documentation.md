@@ -9,12 +9,12 @@ author: markingmyname
 ms.author: maghan
 ms.date: 08/12/2020
 monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || >= sql-server-linux-2017'
-ms.openlocfilehash: 5af6eff12d81ea028247f146842d3a5eed0e2eba
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ab5ee55bf91e1a9287f22584da83ca7112dadece
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97409756"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336775"
 ---
 # <a name="install-sql-server-documentation-to-view-offline-in-ssms"></a>Installieren der SQL Server-Dokumentation für die Offlineanzeige in SSMS
 

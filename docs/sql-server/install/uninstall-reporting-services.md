@@ -11,12 +11,12 @@ ms.assetid: 5c764a00-d4bc-465d-b32e-e4efce052ce4
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.openlocfilehash: 8fe90db78e0019f06f0f2f9285f8a089b696c1fb
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 650f22c78e0913d8b92c431de65963b802232141
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988283"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336052"
 ---
 # <a name="uninstall-reporting-services"></a>Deinstallieren von Reporting Services
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "91988283"
   
 2.  Wählen Sie unter **Programme und Funktionen** die Option **Microsoft SQL Server 2016** aus.  
   
-3.  Wählen Sie im Deinstallations-Assistenten die Instanz aus, die die [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] -Instanzfunktion **RS**enthält.  
+3.  Wählen Sie im Deinstallations-Assistenten die Instanz aus, die die [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] -Instanzfunktion **RS** enthält.  
   
      ![rs_nativemode_uninstall_selectinstance](../../sql-server/install/media/rs-nativemode-uninstall-selectinstance.gif "rs_nativemode_uninstall_selectinstance")  
   

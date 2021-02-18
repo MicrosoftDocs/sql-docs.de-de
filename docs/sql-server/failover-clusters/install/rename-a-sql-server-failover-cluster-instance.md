@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2a49d417-25fb-4760-8ae5-5871bfb1e6f3
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a407ab5bc7f01a91a1b20a9627a61441e62ddcc9
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 42fd6dbb5053993d5ad6c2859460e164f476bac1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642826"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354025"
 ---
 # <a name="rename-a-sql-server-failover-cluster-instance"></a>Umbenennen einer SQL Server-Failoverclusterinstanz
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

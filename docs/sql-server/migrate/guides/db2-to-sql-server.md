@@ -13,12 +13,12 @@ helpviewer_keywords:
 - maximum number of processors supported
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 81b631c6b5810fc45ce3b14449a458544fdf6200
-ms.sourcegitcommit: 18e2f0706e03d0b2b6324845244fbafaa077a8dd
+ms.openlocfilehash: 8f07ae68309e78316ad7dc310ea5a0118e734f0c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97100356"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341643"
 ---
 # <a name="migration-guide-db2-to-sql-server"></a>Migrationsleitfaden: DB2 zu SQL Server
 [!INCLUDE[sqlserver](../../../includes/applies-to-version/sqlserver.md)]

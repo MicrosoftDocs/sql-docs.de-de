@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 491d12da17cde905ab1f9038f7a0b1e78af113a1
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: b9cd6bc990ccd82ece2e7a9b9aabb9831fbc8f5b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85731908"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345782"
 ---
 # <a name="save-trace-results-to-a-file-sql-server-profiler"></a>Speichern von Ablaufverfolgungsergebnissen in einer Datei (SQL Server Profiler)
 
@@ -29,18 +29,18 @@ In diesem Thema wird beschrieben, wie Ablaufverfolgungsergebnisse mithilfe von [
   
 1.  Klicken Sie im Menü **Datei** auf **Neue Ablaufverfolgung**, und stellen Sie dann eine Verbindung mit einer Instanz von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]her.  
   
-     Das Dialogfeld **Ablaufverfolgungseigenschaften**wird angezeigt.  
+     Das Dialogfeld **Ablaufverfolgungseigenschaften** wird angezeigt.  
   
     > [!NOTE]  
-    >  Bei der Auswahl von **Ablaufverfolgung sofort nach dem Herstellen der Verbindung starten**wird das Dialogfeld **Ablaufverfolgungseigenschaften**nicht angezeigt. Stattdessen beginnt die Ablaufverfolgung. Um diese Einstellung zu deaktivieren, klicken Sie im Menü **Extras**auf **Optionen**, und deaktivieren Sie das Kontrollkästchen **Ablaufverfolgung sofort nach dem Herstellen der Verbindung starten** .  
+    >  Bei der Auswahl von **Ablaufverfolgung sofort nach dem Herstellen der Verbindung starten** wird das Dialogfeld **Ablaufverfolgungseigenschaften** nicht angezeigt. Stattdessen beginnt die Ablaufverfolgung. Um diese Einstellung zu deaktivieren, klicken Sie im Menü **Extras** auf **Optionen**, und deaktivieren Sie das Kontrollkästchen **Ablaufverfolgung sofort nach dem Herstellen der Verbindung starten** .  
   
 2.  Geben Sie im Feld **Ablaufverfolgungsname** einen Namen für die Ablaufverfolgung ein.  
   
 3.  Aktivieren Sie das Kontrollkästchen **In Datei speichern** .  
   
-     Das Dialogfeld **Speichern unter**wird angezeigt.  
+     Das Dialogfeld **Speichern unter** wird angezeigt.  
   
-4.  Geben Sie im Dialogfeld **Speichern unter**den Pfad und den Dateinamen an. Klicken Sie auf **Speichern**.  
+4.  Geben Sie im Dialogfeld **Speichern unter** den Pfad und den Dateinamen an. Klicken Sie auf **Speichern**.  
   
     > [!NOTE]  
     >  Stellen Sie sicher, dass der SQL Server-Dienst die entsprechenden Berechtigungen hat, um in eine Datei im angegebenen Verzeichnis zu schreiben.  
@@ -54,7 +54,7 @@ In diesem Thema wird beschrieben, wie Ablaufverfolgungsergebnisse mithilfe von [
     -   Aktivieren Sie das Kontrollkästchen **Ablaufverfolgungsdaten von Serverprozessen** , um sicherzustellen, dass der Server jedes Ablaufverfolgungsereignis aufzeichnet.  
   
         > [!NOTE]  
-        >  Wenn **Ablaufverfolgungsdaten von Serverprozessen**deaktiviert ist, zeichnet der Server keine Ereignisse auf, falls dadurch die Leistung erheblich beeinträchtigt wird.  
+        >  Wenn **Ablaufverfolgungsdaten von Serverprozessen** deaktiviert ist, zeichnet der Server keine Ereignisse auf, falls dadurch die Leistung erheblich beeinträchtigt wird.  
   
 ## <a name="see-also"></a>Weitere Informationen  
  [SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler.md)  

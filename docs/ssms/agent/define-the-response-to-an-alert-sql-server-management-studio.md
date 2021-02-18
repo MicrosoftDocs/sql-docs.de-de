@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 01/19/2017
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: 653bb42c116654496bd1b51b01e3d8487bd51804
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 53787a3f08aab02d1a2fee4500570f4033b579fa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99234574"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342711"
 ---
 # <a name="define-the-response-to-an-alert"></a>Definieren der Reaktion auf eine Warnung
 

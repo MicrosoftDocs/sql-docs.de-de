@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.assetid: c0e75a7c-85c5-423c-a218-77247bf071aa
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ff4c36a139f85adc381fbf697819c743c5fde436
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 4e46540d75518b4da2a11337e35dfe22a335af60
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642866"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346644"
 ---
 # <a name="sql-server-failover-cluster-installation"></a>SQL Server-Failoverclusterinstallation
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

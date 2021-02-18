@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 07/22/2020
 monikerRange: '>= sql-server-2016'
-ms.openlocfilehash: 915ad9a9429c9200613a0bb443b42237162ea9c7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a9de728e7b50f27558e53b9b4db2fbcda1ed6e1e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97476821"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340668"
 ---
 # <a name="transact-sql-debugger---breakpoints-window"></a>Transact-SQL-Debugger – Fenster „Breakpoints“
 

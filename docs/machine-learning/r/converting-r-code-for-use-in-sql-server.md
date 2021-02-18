@@ -9,12 +9,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 56a52c3245d364bd1b111dbe5fedbda9da48e493
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0b0d3e451c3b95bfa2401f80176dbdb659f1cb86
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470951"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336288"
 ---
 # <a name="convert-r-code-for-execution-in-sql-server-in-database-instances"></a>Konvertieren von R-Code für die Ausführung in (datenbankinternen) SQL Server-Instanzen
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]

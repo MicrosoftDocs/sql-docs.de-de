@@ -10,12 +10,12 @@ author: cawrites
 ms.author: chadam
 ms.reviewer: pmasl
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: aa8d71f36b4dbb0c8ddaaac3c47571d29c3896c0
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 0f97fcf001db6fa561d54b3a9df6642f2aa148ea
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98595470"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346177"
 ---
 # <a name="what-are-extended-security-updates-for-sql-server"></a>Was sind erweiterte Sicherheitsupdates für SQL Server?
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -322,7 +322,7 @@ Azure SQL Managed Instance ist ein Dienst in Azure, der nahezu 100 %-ige Kompat
 
 Kunden können ältere [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Umgebungen zu Azure SQL Managed Instance migrieren. Dabei handelt es sich um einen vollständig verwalteten Datenplattformdienst (PaaS), der in Anbetracht möglicher Bedenken hinsichtlich des Enddatums des Supports eine „versionsfreie“ Option bietet. Sie können ältere Umgebungen aber auch zu Azure Virtual Machines migrieren, um Zugriff auf Sicherheitsupdates zu erhalten. Die migrierten Datenbanken bleiben mit dem bestehenden System kompatibel. Weitere Informationen finden Sie unter [Kompatibilitätszertifizierung](../../database-engine/install-windows/compatibility-certification.md).
 
-Erweiterte Sicherheitsupdates werden für [!INCLUDE[ssKatmai](../../includes/ssKatmai-md.md)] und [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] in Azure Virtual Machines nach dem Enddatum des Supports am 9. Juli 2019 für die nächsten drei Jahre verfügbar sein. Für Kunden, die ein Upgrade von [!INCLUDE[ssKatmai](../../includes/ssKatmai-md.md)] und [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] vornehmen möchten, werden alle nachfolgenden Versionen von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] unterstützt. Für [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] bis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] müssen Kunden das neueste unterstützte Service Pack verwenden. Ab [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] wird Kunden empfohlen, das neueste kumulative Update zu verwenden. Beachten Sie, dass Service Packs nicht ab [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] verfügbar sind, sondern nur kumulative Updates und allgemeine Vertriebsversionen (GDRs).
+Erweiterte Sicherheitsupdates werden für [!INCLUDE[ssKatmai](../../includes/ssKatmai-md.md)] und [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] in Azure Virtual Machines nach dem Enddatum des Supports am 9. Juli 2019 für die nächsten drei Jahre verfügbar sein. Für Kunden, die ein Upgrade von [!INCLUDE[ssKatmai](../../includes/ssKatmai-md.md)] und [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] vornehmen möchten, werden alle nachfolgenden Versionen von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] unterstützt. Für [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] bis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] müssen Kunden das neueste unterstützte Service Pack verwenden. Ab [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] wird Kunden empfohlen, das neueste kumulative Update zu verwenden. Beachten Sie, dass Service Packs nicht ab [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] verfügbar sind, sondern nur kumulative Updates und allgemeine Vertriebsversionen (GDRs).
 
 Azure SQL Managed Instance ist eine instanzbezogene Bereitstellungsoption in [!INCLUDE[ssSDS](../../includes/sssds-md.md)] und bietet weitreichende Kompatibilität mit der [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Engine sowie native Unterstützung für virtuelle Netzwerke (VNET). Daher können Sie [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Datenbanken ohne Änderungen von Apps zu Azure SQL Managed Instance migrieren. Sie verknüpft die umfangreiche [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Benutzeroberfläche mit den betrieblichen und finanziellen Vorteilen eines intelligenten, vollständig verwalteten Diensts. Nutzen Sie den neuen Azure Database Migration Service, um [!INCLUDE[ssKatmai](../../includes/ssKatmai-md.md)] und [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] mit wenigen (oder gar keinen) Änderungen am Anwendungscode zu Azure SQL Managed Instance zu verschieben.
 
