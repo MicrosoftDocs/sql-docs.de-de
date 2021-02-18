@@ -43,12 +43,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019, contperf-fy21q1
 ms.date: 08/28/2020
-ms.openlocfilehash: 87fd12a17b86a47e6fec1b235ae9e9a21fde6e45
-ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
+ms.openlocfilehash: 6ce879af451abb20e108e20b36fbe129024f4806
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878954"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355162"
 ---
 # <a name="sql-server-management-studio-ssms-query-editor"></a>SSMS-Abfrage-Editor (SQL Server Management Studio)
 

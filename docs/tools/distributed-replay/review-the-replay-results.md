@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 6452f60083c166ab86633655b0cfb3b92da88da6
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 5c2909a8f4c6f592781d94dbef6ab0288ff5980d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85732199"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354504"
 ---
 # <a name="review-the-replay-results"></a>Überprüfen der Wiedergabeergebnisse
 
@@ -76,7 +76,7 @@ Nachdem das [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVe
 |ConnectionID|**int**|Die ID der Aufzeichnungsverbindung für das Ereignis.|11|  
 |ReplaySPID|**int**|Die ID der Wiedergabesitzung für das Ereignis.|12|  
 |DatabaseName|**nvarchar**|Der Name der Datenbank, in der die Benutzeranweisung ausgeführt wird.|13|  
-|LoginName|**nvarchar**|Der Benutzeranmeldename. Dabei kann es sich um eine [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Sicherheitsanmeldung oder die Microsoft Windows-Anmeldeinformationen im Format *Domänenname*\\*Benutzername*handeln.|14|  
+|LoginName|**nvarchar**|Der Benutzeranmeldename. Dabei kann es sich um eine [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Sicherheitsanmeldung oder die Microsoft Windows-Anmeldeinformationen im Format *Domänenname*\\*Benutzername* handeln.|14|  
 |CaptureHostName|**nvarchar**|Der Name des Computers, auf dem der Clientdienst während der Aufzeichnung ausgeführt wird.|15|  
 |ReplayHostName|**nvarchar**|Der Name des Computers, auf dem der Client während der Wiedergabe ausgeführt wird|16|  
 |ApplicationName|**nvarchar**|Der Name der Clientanwendung, die während der Aufzeichnung die [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Verbindung hergestellt hat.|17|  

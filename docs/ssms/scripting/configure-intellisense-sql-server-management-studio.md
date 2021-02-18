@@ -16,12 +16,12 @@ ms.assetid: 3ffc9f31-4efa-4c1a-a033-ed1dc48b065f
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 98ad4f0261edbf7468403f388af155a6bc305838
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6a64f63b50414a11b01d4270b017f443f14eb8c5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474321"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354717"
 ---
 # <a name="configure-intellisense-sql-server-management-studio"></a>Konfigurieren von IntelliSense (SQL Server Management Studio)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

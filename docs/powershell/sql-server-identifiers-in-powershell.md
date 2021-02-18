@@ -19,12 +19,12 @@ ms.assetid: 651099b0-33b4-453a-a864-b067f21eb8b9
 author: markingmyname
 ms.author: maghan
 ms.reviewer: matteot, drskwier
-ms.openlocfilehash: 4f889fa93b78782a368ba36085a393f8b79fdb91
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: b448e5455b985baffbeb8eb611c3f357e083cff2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92006112"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354927"
 ---
 # <a name="sql-server-identifiers-in-powershell"></a>SQL Server-Bezeichnern in PowerShell
 

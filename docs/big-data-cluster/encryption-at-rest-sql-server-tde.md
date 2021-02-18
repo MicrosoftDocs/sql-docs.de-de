@@ -9,12 +9,12 @@ ms.date: 10/19/2020
 ms.topic: tutorial
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 0ec2ab7fa84dc3f4b4155a093794d5a4e49b56ec
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 7d249f9b70479603ad66e6b68cec784b1476324a
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100046820"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489314"
 ---
 # <a name="sql-server-big-data-clusters-transparent-data-encryption-tde-at-rest-usage-guide"></a>Leitfaden zur Verwendung von SQL Server Transparent Data Encryption(transparente Datenverschlüsselung, TDE) für Big Data-Cluster
 
@@ -26,8 +26,6 @@ Die Erfahrung ist im allgemeinen identisch mit der für SQL Server für Linux, u
 
 __Nicht unterstützte Funktionen:__
 * Datenpoolverschlüsselung
-* Rotation von Verschlüsselungsschlüsseln für Datenbanken in einer enthaltenen Verfügbarkeitsgruppe in einer [Hochverfügbarkeitsbereitstellung](deployment-high-availability.md).
-
 
 ## <a name="prerequisites"></a><a id="prereqs"></a> Voraussetzungen
 

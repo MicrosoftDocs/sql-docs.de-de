@@ -11,12 +11,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 05/01/2020
-ms.openlocfilehash: 3066ac1b16a1a294955825dc35b40f422bd79df3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 6208c880dd234a0e6a62f61e6f6ae87567213c12
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99203538"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354457"
 ---
 # <a name="sql-server-profiler"></a>SQL Server Profiler
 

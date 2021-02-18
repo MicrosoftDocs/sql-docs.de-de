@@ -15,12 +15,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: 6b12d3eaa18cbab07001088b62646f87a2d649a9
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: f7a132dc35cece55bfb18f6243bb9cdda63e8580
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99251370"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354841"
 ---
 # <a name="specify-a-target-server39s-location"></a>Angeben des Speicherorts eines Zielservers
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

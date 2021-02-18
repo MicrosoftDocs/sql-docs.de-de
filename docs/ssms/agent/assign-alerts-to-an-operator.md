@@ -19,12 +19,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: 420a7a630aa713739419e910786914b4fde033f0
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: e204b890d848cb8307c09e7fb96eb82322a52f63
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765856"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354887"
 ---
 # <a name="assign-alerts-to-an-operator"></a>Assign Alerts to an Operator
 
