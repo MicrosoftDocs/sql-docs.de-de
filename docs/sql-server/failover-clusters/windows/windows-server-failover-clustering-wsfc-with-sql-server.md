@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 79d2ea5a-edd8-4b3b-9502-96202057b01a
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 11e424ef4f32b91a7c4d65faf796335a3f7faf26
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 8e0e2e47cbcfaf9aa6719b60bbd894d103596c18
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99251215"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341631"
 ---
 # <a name="windows-server-failover-clustering-with-sql-server"></a>Windows Server-Failoverclustering mit SQL Server
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "99251215"
  Clusterressource  
  Eine physische oder logische Entität, die im Besitz eines Knotens sein, online und offline geschaltet, zwischen Knoten verschoben und als Clusterobjekt verwaltet werden kann. Eine Clusterressource kann jeweils nur im Besitz eines einzelnen Knotens sein.  
   
- Role  
+ Rolle  
  Eine Sammlung von Clusterressourcen, die als einzelnes Clusterobjekt verwaltet werden, um besondere Funktionen bereitzustellen. Für SQL Server gilt entweder die Rolle „Always On-Verfügbarkeitsgruppe“ (AG) oder die Rolle „Always On-Failoverclusterinstanz“ (FCI). Eine Rolle enthält sämtliche Clusterressourcen, die für AG und FCI benötigt werden. Failover und Failback führen Aktionen immer im Zusammenhang mit Rollen aus. Für eine FCI enthält die Rolle die Ressourcen einer IP-Adresse und eines Netzwerknamens sowie die SQL Server-Ressourcen. Eine Verfügbarkeitsgruppenrolle umfasst die Verfügbarkeitsgruppenressource und, sollte ein Listener konfiguriert sein, einen Netzwerknamen und eine IP-Ressource. 
 
  Netzwerknamenressource  
@@ -102,7 +102,7 @@ ms.locfileid: "99251215"
   
  Nur eine einzelne [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] -Instanz kann jeweils das primäre Replikat der Datenbanken einer Verfügbarkeitsgruppe hosten. Alle zugeordneten sekundären Replikate müssen sich jeweils auf separaten Instanzen und die einzelnen Instanzen müssen sich in unterschiedlichen physischen Knoten befinden.  
   
-> **HINWEIS:** Für [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] muss keine Failoverclusterinstanz bereitgestellt und kein symmetrischer gemeinsam genutzter Speicher (SAN oder SMB) verwendet werden.  
+> **HINWEIS: Für** [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] muss keine Failoverclusterinstanz bereitgestellt und kein symmetrischer gemeinsam genutzter Speicher (SAN oder SMB) verwendet werden.  
 >   
 >  Eine Failoverclusterinstanz (FCI) kann zusammen mit einer Verfügbarkeitsgruppe verwendet werden, um die Verfügbarkeit eines Verfügbarkeitsreplikats zu verbessern. Um potenzielle Racebedingungen im WSFC-Cluster zu verhindern, wird jedoch automatisches Failover der Verfügbarkeitsgruppe zu oder von einem Verfügbarkeitsreplikat, das sich auf einer FCI befindet, nicht unterstützt.  
   
@@ -173,7 +173,7 @@ ms.locfileid: "99251215"
   
 ##  <a name="related-content"></a><a name="RelatedContent"></a> Verwandte Inhalte  
   
--   [Windows Server-Technologien: Failovercluster](https://technet.microsoft.com/library/cc732488\(v=WS.10\).aspx)  
+-   [Windows Server-Technologien:  Failovercluster](https://technet.microsoft.com/library/cc732488\(v=WS.10\).aspx)  
 
 -   [Überblick über direkte Speicherplätze \(S2D\)](/windows-server/storage/storage-spaces/storage-spaces-direct-overview)
 

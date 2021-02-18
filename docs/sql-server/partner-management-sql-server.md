@@ -8,12 +8,12 @@ ms.prod: sql
 ms.technology: release-landing
 ms.author: mikeray
 author: MikeRayMSFT
-ms.openlocfilehash: 026ad974a3b743283d2d2810a2e0a4fdf8588ff2
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 0efc4dc49b04467f0caeb882e24900d7479a42cd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86923036"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338065"
 ---
 # <a name="sql-server-managing-partners"></a>SQL Server: Verwaltungspartner
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
