@@ -163,7 +163,7 @@ items:
         items:
           - name: Konfigurieren
             items:
-              - name: Überblick
+              - name: Übersicht
                 href: big-data-cluster/configure-bdc-overview.md
               - name: Upgrade auf zur Konfigurationsverwaltung fähigen Cluster (CU9+)
                 href: big-data-cluster/bdc-upgrade-configuration.md
@@ -8889,6 +8889,8 @@ items:
                 href: ssms/configure-login-auditing-sql-server-management-studio.md
               - name: Aktivieren des Kopierens aus dem Fenster „Suchen und Ersetzen“
                 href: ssms/troubleshoot/enable-copying-find-replace-window.md
+              - name: Verschieben von Registerkarten aktivieren
+                href: ssms/troubleshoot/workaround-move-tabs.md
               - name: Problembehandlung
                 items:
                   - name: Erhalten eines vollständigen Speicherabbilds
