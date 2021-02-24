@@ -4,11 +4,11 @@ ms.service: sql
 ms.topic: include
 ms.date: 06/11/2020
 ms.author: mikeray
-ms.openlocfilehash: 03dc066ed08301b7b9efeff4aa0e624f857d1bd6
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 134f6f8d42257776400c4a63a0c94193071f4e66
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96119489"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100270653"
 ---
 [!INCLUDE [Applies to](../../includes/applies-md.md)] [!INCLUDE [SQL Server 2019](_ss2019.md)] [!INCLUDE [Azure SQL Database](../../includes/applies-to-version/_asdb.md)] [!INCLUDE [SQL Managed Instance](../../includes/applies-to-version/_asdbmi.md)] [!INCLUDE [Azure Synapse Analytics](../../includes/applies-to-version/_asa.md)]

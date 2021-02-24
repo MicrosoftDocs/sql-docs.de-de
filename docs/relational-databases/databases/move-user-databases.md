@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: ad9a4e92-13fb-457d-996a-66ffc2d55b79
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: feb85bc9b14169c862447c8465ce47c4637b5c32
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 64b8416375cdc61c43e8799b33891096858a79f7
+ms.sourcegitcommit: 059722ff78a6061b801807416b312ae9f721ec7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195019"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100636715"
 ---
 # <a name="move-user-databases"></a>Verschieben von Benutzerdatenbanken
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -48,19 +48,19 @@ ms.locfileid: "92195019"
 ## <a name="planned-relocation-procedure"></a>Prozedur zur geplanten Verschiebung  
  Zum Verschieben einer Daten- oder Protokolldatei im Rahmen einer geplanten Verschiebung müssen Sie die folgenden Schritte ausführen:  
   
-1.  Führen Sie die folgende Anweisung aus.  
+1.  Führen Sie für jede zu verschiebende Datei die folgende Anweisung aus.  
+  
+    ```  
+    ALTER DATABASE database_name MODIFY FILE ( NAME = logical_name, FILENAME = 'new_path\os_file_name' );  
+    ```  
+  
+2.  Führen Sie die folgende Anweisung aus.  
   
     ```  
     ALTER DATABASE database_name SET OFFLINE;  
     ```  
   
-2.  Verschieben Sie die Datei(en) an den neuen Speicherort.  
-  
-3.  Führen Sie für jede verschobene Datei die folgende Anweisung aus.  
-  
-    ```  
-    ALTER DATABASE database_name MODIFY FILE ( NAME = logical_name, FILENAME = 'new_path\os_file_name' );  
-    ```  
+3.  Verschieben Sie die Datei(en) an den neuen Speicherort.  
   
 4.  Führen Sie die folgende Anweisung aus.  
   

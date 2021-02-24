@@ -21,16 +21,16 @@ ms.assetid: 7a34be46-15b4-4b6b-8497-cfd8f9f14234
 author: rothja
 ms.author: jroth
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b38293d4b60168028a5669a9f5dd2e01ccbde012
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9c5f6c8b611dcc86fcd514ae425edc6f45a7657f
+ms.sourcegitcommit: 8bdb5a51f87a6ff3b94360555973ca0cd0b6223f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466751"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100549396"
 ---
 # <a name="track-data-changes-sql-server"></a>Nachverfolgen von Datenänderungen (SQL Server)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-  [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] stellt zwei Funktionen bereit, mit denen Änderungen in einer Datenbank nachverfolgt werden: [Change Data Capture](#Capture) und [Änderungsnachverfolgung](#Tracking). Mit diesen Funktionen können Anwendungen die DML-Änderungen (Einfüge-, Aktualisierungs- und Löschvorgänge) ermitteln, die an Benutzertabellen in einer Datenbank vorgenommen wurden. Change Data Capture und die Änderungsnachverfolgung können auf derselben Datenbank aktiviert werden, d. h., es sind keine zusätzlichen Überlegungen erforderlich. Informationen zu den Editionen von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , die Change Data Capture und die Änderungsnachverfolgung unterstützen, finden Sie unter [Von den SQL Server 2016-Editionen unterstützte Funktionen](~/sql-server/editions-and-supported-features-for-sql-server-2016.md). Änderungsnachverfolgung wird von [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)]unterstützt. Change Data Capture wird nur in SQL Server und Azure SQL Managed Instance unterstützt.
+  [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] stellt zwei Funktionen bereit, mit denen Änderungen in einer Datenbank nachverfolgt werden: [Change Data Capture](#Capture) und [Änderungsnachverfolgung](#Tracking). Mit diesen Funktionen können Anwendungen die DML-Änderungen (Einfüge-, Aktualisierungs- und Löschvorgänge) ermitteln, die an Benutzertabellen in einer Datenbank vorgenommen wurden. Change Data Capture und die Änderungsnachverfolgung können auf derselben Datenbank aktiviert werden, d. h., es sind keine zusätzlichen Überlegungen erforderlich. Informationen zu den Editionen von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , die Change Data Capture und die Änderungsnachverfolgung unterstützen, finden Sie unter [Von den SQL Server 2016-Editionen unterstützte Funktionen](~/sql-server/editions-and-supported-features-for-sql-server-2016.md). Änderungsnachverfolgung wird von [!INCLUDE[ssazure_md](../../includes/ssazure_md.md)]unterstützt. Change Data Capture wird nur in SQL Server und Azure SQL Managed Instance unterstützt.
   
 ## <a name="benefits-of-using-change-data-capture-or-change-tracking"></a>Vorteile der Verwendung von Change Data Capture oder der Änderungsnachverfolgung  
  Damit bestimmte Anwendungen effizient ausgeführt werden können, muss eine wichtige Anforderung erfüllt sein: Die Anwendungen müssen in der Lage sein, Daten abzufragen, die in einer Datenbank geändert wurden. Zum Ermitteln von Datenänderungen mussten Anwendungsentwickler normalerweise eine benutzerdefinierte Nachverfolgungsmethode in ihren Anwendungen implementieren, wobei sie eine Kombination von Triggern, Zeitstempelspalten und zusätzlichen Tabellen verwendeten. Die Erstellung solcher Anwendungen ist normalerweise sehr arbeitsintensiv, führt zu Schemaupdates und ist häufig mit hohem Verwaltungsaufwand verbunden.  
