@@ -15,12 +15,12 @@ applies_to:
 ms.assetid: e69be67d-da1c-41ae-8c9a-6b12c8c2fb61
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 4a87a9842ac5fdf05de192d1fc562fe241441c75
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 5ed027db3b2749997a12674cb657c448a26b9732
+ms.sourcegitcommit: 6c93282cce1216dac327cb28848a3ab4d51b776e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100340039"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100646385"
 ---
 # <a name="tutorial-use-azure-blob-storage-service-with-sql-server-2016"></a>Tutorial: Verwenden des Microsoft Azure BLOB-Speicherdiensts mit SQL Server 2016
 
@@ -42,6 +42,9 @@ Um dieses Tutorial abzuschließen, müssen Sie mit den Sicherungs- und Wiederher
 - Installieren Sie [SQL Server Management Studio](../ssms/download-sql-server-management-studio-ssms.md).
 - Laden Sie die [AdventureWorks 2016-Beispieldatenbank](../samples/adventureworks-install-configure.md) herunter.
 - Weisen Sie das Benutzerkonto der Rolle des [db_backupoperator](./security/authentication-access/database-level-roles.md) zu und gewähren Sie die Berechtigung zum [Ändern beliebiger Anmeldeinformationen](../t-sql/statements/alter-credential-transact-sql.md). 
+
+> [!IMPORTANT]
+> [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] unterstützt [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction) nicht. Stellen Sie also sicher, dass der [hierarchische Namespace](/azure/storage/blobs/data-lake-storage-namespace) nicht für das in diesem Tutorial verwendete Speicherkonto aktiviert ist.
 
 ## <a name="1---create-stored-access-policy-and-shared-access-storage"></a>1: Erstellen einer gespeicherten Zugriffsrichtlinie und von Speicher mit freigegebenem Zugriff
 

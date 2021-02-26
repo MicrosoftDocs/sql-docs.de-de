@@ -1,7 +1,7 @@
 ---
-title: Leistungsindikatoren für Leistungsobjekte von MSRS 2011 im SharePoint-Modus | Microsoft-Dokumentation
-description: Hier erfahren Sie mehr über die Leistungsindikatoren für die Leistungsobjekte im MSRS 2011-Webdienst im SharePoint-Modus und den MSRS 2011-Windows-Dienst im SharePoint-Modus.
-ms.date: 06/26/2019
+title: Leistungsindikatoren für Leistungsobjekte von MSRS 2016 im SharePoint-Modus | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die Leistungsindikatoren für die Leistungsobjekte im MSRS 2016-Webdienst im SharePoint-Modus und den MSRS 2016-Windows-Dienst im SharePoint-Modus.
+ms.date: 02/17/2021
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
 ms.technology: report-server
@@ -17,35 +17,35 @@ ms.assetid: 70bf6980-7845-4ab5-8b2a-ebf526d811a6
 author: maggiesMSFT
 ms.author: maggies
 monikerRange: '>=sql-server-2016 <=sql-server-2016'
-ms.openlocfilehash: 95742efced8c5b5704863d2582c6ca80c5b227e7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: cfa6fbdf2a4f834accd2ec197a8933371a5a6501
+ms.sourcegitcommit: 6c93282cce1216dac327cb28848a3ab4d51b776e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440481"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100646342"
 ---
-# <a name="performance-counters-msrs-2011-sharepoint-mode-performance-objects"></a>Leistungsindikatoren für Leistungsobjekte des MSRS 2011-Webdiensts im SharePoint-Modus
-  In diesem Thema werden Leistungsobjekte für den **MSRS 2011-Webdienst im SharePoint Modus** und den **MSRS 2011-Windows-Dienst im SharePoint Modus** beschrieben, die Teil einer [!INCLUDE[ssRSCurrent](../../includes/ssrscurrent-md.md)] -Bereitstellung im SharePoint-Modus sind.  
+# <a name="performance-counters-msrs-2016-sharepoint-mode-performance-objects"></a>Leistungsindikatoren für Leistungsobjekte des MSRS 2016-Webdiensts im SharePoint-Modus
+  In diesem Artikel werden Leistungsobjekte für den **MSRS 2016-Webdienst im SharePoint Modus** und den **MSRS 2016-Windows-Dienst im SharePoint Modus** beschrieben, die Teil einer Bereitstellung von SQL Server 2016 Reporting Services im SharePoint-Modus sind.  
   
 > [!NOTE]  
 >  Mit diesen Leistungsobjekten werden Ereignisse auf dem lokalen Berichtsserver überwacht. Wenn Sie einen Berichtsserver in einer Bereitstellung für horizontales Skalieren ausführen, beziehen sich die Zahlen auf den aktuellen Server, nicht auf die Bereitstellung für horizontales Skalieren insgesamt.  
   
  Die Leistungsobjekte sind im Windows-Systemmonitor (**Perfmon.exe**) verfügbar. Weitere Informationen finden Sie in der Windows-Dokumentation. [Laufzeit-Profilerstellung](/dotnet/framework/debug-trace-profile/runtime-profiling) (https://msdn.microsoft.com/library/w4bz2147.aspx).  
   
- Weitere Informationen zu Leistungsindikatoren und Berichtsservern im einheitlichen Modus finden Sie unter [Leistungsindikatoren für den MSRS 2011-Webdienst und den MSRS 2011-Windows-Dienst, Leistungsobjekte (einheitlicher Modus)](../../reporting-services/report-server/performance-counters-msrs-2011-web-service-performance-objects.md) und [Leistungsindikatoren für den MSRS 2011-Webdienst im SharePoint-Modus und den MSRS 2011-Windows-Dienst im SharePoint-Modus, Leistungsobjekte (SharePoint-Modus)](../../reporting-services/report-server/performance-counters-msrs-2011-sharepoint-mode-performance-objects.md).  
+ Informationen zu Leistungsindikatoren und Berichtsservern im einheitlichen Modus finden Sie unter [Leistungsindikatoren für den MSRS 2016-Webdienst und den MSRS 2016-Windows-Dienst, Leistungsobjekte (einheitlicher Modus)](../../reporting-services/report-server/performance-counters-msrs-2011-web-service-performance-objects.md).
   
- Inhalte dieses Themas:  
+ In diesem Thema:  
   
--   [Leistungsindikatoren für den MSRS 2011-Webdienst im SharePoint Modus](#bkmk_webservice)  
+-   [Leistungsindikatoren für den MSRS 2016-Webdienst im SharePoint Modus](#bkmk_webservice)  
   
--   [Leistungsindikatoren für den MSRS 2011-Windows-Dienst im SharePoint Modus](#bkmk_windowsservice)  
+-   [Leistungsindikatoren für den MSRS 2016-Windows-Dienst im SharePoint Modus](#bkmk_windowsservice)  
   
 -   [Zurückgeben von Listen mithilfe von PowerShell-Cmdlets](#bkmk_powershell)  
   
-##  <a name="msrs-2011-web-service-sharepoint-mode-performance-counters"></a><a name="bkmk_webservice"></a> Leistungsindikatoren für den MSRS 2011-Webdienst im SharePoint Modus  
- Mit dem **MSRS 2011 Web Service SharePoint Mode** -Leistungsobjekt wird die Berichtsserverleistung überwacht. Dieses Leistungsobjekt enthält eine Reihe von Leistungsindikatoren zum Nachverfolgen der Verarbeitung auf einem Berichtsserver, die in der Regel über interaktive Vorgänge zum Anzeigen von Berichten gestartet wird. Bei der Einrichtung dieses Leistungsindikators können Sie diesen auf alle Instanzen von [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] anwenden oder spezifische Instanzen auswählen. Diese Leistungsindikatoren werden zurückgesetzt, sobald [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] den Berichtsserver-Webdienst beendet.  
+##  <a name="msrs-2016-web-service-sharepoint-mode-performance-counters"></a><a name="bkmk_webservice"></a> Leistungsindikatoren für den MSRS 2016-Webdienst im SharePoint Modus  
+ Mit dem Leistungsobjekt **MSRS 2016-Webdienst im SharePoint-Modus** wird die Berichtsserverleistung überwacht. Dieses Leistungsobjekt enthält eine Reihe von Leistungsindikatoren zum Nachverfolgen der Verarbeitung auf einem Berichtsserver, die in der Regel über interaktive Vorgänge zum Anzeigen von Berichten gestartet wird. Bei der Einrichtung dieses Leistungsindikators können Sie diesen auf alle Instanzen von [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] anwenden oder spezifische Instanzen auswählen. Diese Leistungsindikatoren werden zurückgesetzt, sobald [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] den Berichtsserver-Webdienst beendet.  
   
- In der folgenden Tabelle werden die im **MSRS 2011 Web Service SharePoint Mode** -Leistungsobjekt enthaltenen Leistungsindikatoren aufgelistet.  
+ In der folgenden Tabelle werden die im Leistungsobjekt **MSRS 2016-Webdienst im SharePoint-Modus** enthaltenen Leistungsindikatoren aufgelistet.  
   
 |Leistungsindikator|BESCHREIBUNG|  
 |-------------|-----------------|  
@@ -72,10 +72,10 @@ ms.locfileid: "97440481"
 |**Ausgeführte Berichte gesamt**|Die Gesamtzahl der erfolgreich ausgeführten Berichte, seit der Dienst gestartet wurde. Dieser Leistungsindikator wird zurückgesetzt, sobald der Berichtsserver-Webdienst von [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] beendet wird.|  
 |**Anforderungen insgesamt**|Die Gesamtzahl der Anforderungen an den Berichtsserver, seit der Dienst gestartet wurde. Dieser Leistungsindikator wird zurückgesetzt, sobald der Berichtsserver-Webdienst von [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] beendet wird.|  
   
-##  <a name="msrs-2011-windows-service-sharepoint-mode-performance-counters"></a><a name="bkmk_windowsservice"></a> Leistungsindikatoren für den MSRS 2011-Windows-Dienst im SharePoint Modus  
- Mit diesem **MSRS 2011 Windows Service SharePoint Mode** -Leistungsobjekt wird der Berichtsserver-Windows-Dienst überwacht. Das Leistungsobjekt enthält eine Reihe von Leistungsindikatoren zum Nachverfolgen der Berichtsverarbeitung, die über geplante Vorgänge gestartet wird. Zu geplanten Vorgängen zählen Abonnierung und Übermittlung, Momentaufnahmen zur Berichtsausführung und der Berichtsverlauf. Bei der Einrichtung dieses Leistungsindikators können Sie diesen auf alle Instanzen von [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] anwenden oder spezifische Instanzen auswählen.  
+##  <a name="msrs-2016-windows-service-sharepoint-mode-performance-counters"></a><a name="bkmk_windowsservice"></a> Leistungsindikatoren für den MSRS 2016-Windows-Dienst im SharePoint Modus  
+ Mit dem Leistungsobjekt **MSRS 2016-Windows-Dienst im SharePoint-Modus** wird der Berichtsserver-Windows-Dienst überwacht. Das Leistungsobjekt enthält eine Reihe von Leistungsindikatoren zum Nachverfolgen der Berichtsverarbeitung, die über geplante Vorgänge gestartet wird. Zu geplanten Vorgängen zählen Abonnierung und Übermittlung, Momentaufnahmen zur Berichtsausführung und der Berichtsverlauf. Bei der Einrichtung dieses Leistungsindikators können Sie diesen auf alle Instanzen von [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] anwenden oder spezifische Instanzen auswählen.  
   
- In der folgenden Tabelle werden die im **MSRS 2011 Windows Service SharePoint mode** -Leistungsobjekt enthaltenen Leistungsindikatoren aufgelistet.  
+ In der folgenden Tabelle werden die im Leistungsobjekt **MSRS 2016-Windows-Dienst im SharePoint-Modus** enthaltenen Leistungsindikatoren aufgelistet.  
   
 |Leistungsindikator|BESCHREIBUNG|  
 |-------------|-----------------|  
@@ -125,18 +125,18 @@ ms.locfileid: "97440481"
 ```  
 get-counter -listset msr*  
 Returns a list with the following information  
-CounterSetName     : MSRS 2011 Windows Service SharePoint Mode  
-CounterSetName     : MSRS 2011 Web Service SharePoint Mode  
+CounterSetName     : MSRS 2016 Windows Service SharePoint Mode  
+CounterSetName     : MSRS 2016 Web Service SharePoint Mode  
 ```  
   
- Das folgende Windows PowerShell-Skript gibt die Liste der Leistungsindikatoren zurück, bei denen für CounterSetName „MSRS 2011 Windows Service SharePoint Mode“ festgelegt ist.  
+ Das folgende Windows PowerShell-Skript gibt die Liste der Leistungsindikatoren zurück, bei denen für CounterSetName „MSRS 2016-Windows-Dienst im SharePoint-Modus“ festgelegt ist.  
   
 ```  
-(get-counter -listset "MSRS 2011 Windows Service SharePoint Mode").paths  
+(get-counter -listset "MSRS 2016 Windows Service SharePoint Mode").paths  
 ```  
   
 ## <a name="see-also"></a>Weitere Informationen  
  [Überwachen der Leistung des Berichtsservers](../../reporting-services/report-server/monitoring-report-server-performance.md)   
- [Leistungsindikatoren für den MSRS 2011-Webdienst und den MSRS 2011-Windows-Dienst, Leistungsobjekte (einheitlicher Modus)](../../reporting-services/report-server/performance-counters-msrs-2011-web-service-performance-objects.md)   
+ [Leistungsindikatoren für den MSRS 2016-Webdienst und den MSRS 2016-Windows-Dienst, Leistungsobjekte (einheitlicher Modus)](../../reporting-services/report-server/performance-counters-msrs-2011-web-service-performance-objects.md)   
  [Performance Counters for the ReportServer:Service  and ReportServerSharePoint:Service Performance Objects (Leistungsindikatoren für die Leistungsobjekte ReportServer:Service und ReportServerSharePoint:Service)](../../reporting-services/report-server/performance-counters-reportserver-service-performance-objects.md)  
   

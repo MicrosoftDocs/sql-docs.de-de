@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 38ffd9c2-18a5-43d2-b674-e425addec4e4
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 8e9138ff27909f9236a608fd0c66f9dca8d5addf
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: b59fc811c5bdfa122b306e9522bae97faa37e451
+ms.sourcegitcommit: 059722ff78a6061b801807416b312ae9f721ec7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100351451"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100636713"
 ---
 # <a name="sql-server-data-files-in-microsoft-azure"></a>SQL Server-Datendateien in Microsoft Azure
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -112,6 +112,8 @@ Weitere Informationen finden Sie unter [Verwalten des anonymen Lesezugriffs auf 
   
 ###  <a name="limitations"></a><a name="bkmk_Limitations"></a> Einschränkungen  
   
+- Aufgrund der Leistungsmerkmale von SQL Server-Workloads werden SQL Server-Datendateien als Seitenblobs in Azure Blob Storage implementiert. Andere Blob Storage-Typen wie Blockblobs oder [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) werden nicht unterstützt.
+
 - In der aktuellen Version dieser Funktion wird das Speichern von **FileStream** -Daten im Azure-Speicher nicht unterstützt. Sie können **FileStream**-Daten in einer Datenbank speichern, die auch in Azure Storage gespeicherte Datendateien enthält. Allerdings müssen alle FileStream-Datendateien im lokalen Speicher gespeichert werden.  Da sich FileStream-Daten im lokalen Speicher befinden müssen, können sie nicht mit Azure Storage zwischen Computern verschoben werden. Aus diesem Grund empfehlen wir, weiterhin [herkömmliche Techniken](../../relational-databases/blob/move-a-filestream-enabled-database.md) zum Verschieben von FileStream-Daten zwischen verschiedenen Computern zu verwenden.  
   
 - Bei Verwendung der neuen Erweiterung kann derzeit nur eine SQL Server-Instanz (nicht mehrere) auf dieselben Datenbankdateien im Azure-Speicher zugreifen. Wenn ServerA mit einer aktiven Datenbankdatei online ist und ServerB, der auch über eine Datenbank verfügt, die auf dieselbe Datendatei verweist, versehentlich gestartet wird, kann die Datenbank des zweiten Servers nicht gestartet werden. Es wird der Fehlercode „**5120 Die physische Datei „%.\*ls“ kann nicht geöffnet werden.“ angezeigt. Betriebssystemfehler %d: „%ls“** .  
