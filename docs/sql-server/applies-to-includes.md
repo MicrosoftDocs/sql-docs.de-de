@@ -9,12 +9,12 @@ author: MashaMSFT
 ms.author: mathoma
 ms.topic: conceptual
 monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || >= sql-server-linux-2017'
-ms.openlocfilehash: 0d0c41534759b91f8dd11ddd4b0a85bab9e2774a
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: e23fdd773cce72583f561569e106912d8b77db5c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170982"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341301"
 ---
 # <a name="sql-server-include-files-for-versioning-and-applies-to"></a>SQL Server-Includedateien für die Versionsverwaltung und „Applies-to“
 
@@ -36,8 +36,8 @@ Autoren von SQL-Inhalten müssen häufig den Produktnamen und die Version von SQ
 | SQL 2014 | sssql14-md.md | `[!INCLUDE[ssSQL14](../includes/sssql14-md.md)]` | SQL Server 2014 (12.x) |
 | SQL 2016 | sssql16-md.md | `[!INCLUDE[sssql15-md](../includes/sssql16-md.md)]` | SQL Server 2016 (13.x) |
 | SQL 2017 | sssql17-md.md | `[!INCLUDE[sssql17-md](../includes/sssql17-md.md)]` | SQL Server 2017 (14.x) |
-| SQL 2017 | sssqlv14-md.md | `[!INCLUDE[sssqlv14](../includes/sssqlv14-md.md)]` | SQL Server 2017 (14.x) |
-| SQL vNext | sssqlv15-md.md | `[!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)]` | SQL Server vNext |
+| SQL 2017 | sssql17-md.md | `[!INCLUDE[sssql14](../includes/sssql17-md.md)]` | SQL Server 2017 (14.x) |
+| SQL vNext | sssql19-md.md | `[!INCLUDE[sssql19-md](../includes/sssql19-md.md)]` | SQL Server vNext |
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; |  
 
 ## <a name="sql-server-applies-to-non-version-specific"></a>SQL Server: „applies-to“ (nicht versionsspezifisch)

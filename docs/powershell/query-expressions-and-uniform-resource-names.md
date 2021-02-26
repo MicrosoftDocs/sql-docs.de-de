@@ -14,12 +14,12 @@ ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: 839bef5d4b3aba3a9d95664c549556d6c05206e5
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: ea6bb90e43c66160463cdfa0229826b3a7013762
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081899"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "100338241"
 ---
 # <a name="query-expressions-and-uniform-resource-names"></a>Abfrageausdrücke und eindeutige Ressourcennamen
 
@@ -72,7 +72,7 @@ Gibt den Typ des Objekts an, der an diesem Knoten der Ausdruckszeichenfolge darg
 Geben Sie z.B. „Server“ für die **ServerCollection** -Klasse und „Database“ für die **DatabaseCollection** -Klasse an.  
 
 \@*PropertyName*  
-Gibt den Namen einer Eigenschaft der Klasse an, die mit dem in *Object*angegebenen Objekt verknüpft ist. Dem Namen der Eigenschaft muss das Zeichen \@ vorangestellt werden. Geben Sie z. B. \@IsAnsiNull für die **Database**-Klasseneigenschaft **IsAnsiNull** an.  
+Gibt den Namen einer Eigenschaft der Klasse an, die mit dem in *Object* angegebenen Objekt verknüpft ist. Dem Namen der Eigenschaft muss das Zeichen \@ vorangestellt werden. Geben Sie z. B. \@IsAnsiNull für die **Database**-Klasseneigenschaft **IsAnsiNull** an.  
   
 \@*BooleanPropertyName*=true()  
 Listet alle Objekte auf, bei denen die angegebene boolesche Eigenschaft auf TRUE gesetzt ist.  
@@ -105,7 +105,7 @@ Listet alle Objekte auf, bei denen der Wert der angegebenen Datumseigenschaft mi
  Listet alle Objekte auf, bei denen die angegebene Eigenschaft den Wert NULL hat.  
   
  not(\<*PropertyExpression*>)  
- Negiert den Evaluierungswert von *PropertyExpression*und listet alle Objekte auf, die nicht der in *PropertyExpression*angegebenen Bedingung entsprechen. Zum Beispiel listet „not(contains(\@Name, 'xyz'))“ alle Objekte auf, deren Name nicht die Zeichenfolge xyz aufweist.  
+ Negiert den Evaluierungswert von *PropertyExpression* und listet alle Objekte auf, die nicht der in *PropertyExpression* angegebenen Bedingung entsprechen. Zum Beispiel listet „not(contains(\@Name, 'xyz'))“ alle Objekte auf, deren Name nicht die Zeichenfolge xyz aufweist.  
   
 ## <a name="remarks"></a>Bemerkungen  
 
@@ -126,7 +126,7 @@ Server[@Name='MYCOMPUTER']/Database[@Name='AdventureWorks2012']/Table[@Name='Sal
 ## <a name="examples"></a>Beispiele  
   
 ### <a name="a-enumerating-objects-using-false"></a>A. Auflisten von Objekten mit „false()“  
- Dieser Abfrageausdruck listet alle Datenbanken auf, für die das Attribut **AutoClose** in der Standardinstanz unter **MyComputer**auf "false" gesetzt wurde.  
+ Dieser Abfrageausdruck listet alle Datenbanken auf, für die das Attribut **AutoClose** in der Standardinstanz unter **MyComputer** auf "false" gesetzt wurde.  
   
 ```  
 Server[@Name='MYCOMPUTER']/Database[@AutoClose=false()]  
@@ -169,5 +169,5 @@ Server[@Name='MYCOMPUTER']/Database[@Name='AdventureWorks2012"]/Table[Not(is_nul
   
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Invoke-PolicyEvaluation-Cmdlet](invoke-policyevaluation-cmdlet.md)
+- [Invoke-PolicyEvaluation-Cmdlet](/powershell/module/sqlserver/Invoke-PolicyEvaluation)
 - [SQL Server Audit &#40;Datenbank-Engine&#41;](../relational-databases/security/auditing/sql-server-audit-database-engine.md)

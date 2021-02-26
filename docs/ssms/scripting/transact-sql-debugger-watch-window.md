@@ -14,12 +14,12 @@ ms.custom: seo-lt-2019
 ms.reviewer: ''
 ms.date: 12/04/2019
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0c677071eb146b7d1a0335108a41f168326d0350
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 79fcf4a8f3591b0f6bde54c684bae09e32826aa4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480591"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346105"
 ---
 # <a name="transact-sql-debugger---watch-window"></a>Transact-SQL-Debugger – Überwachung (Fenster)
 

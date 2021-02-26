@@ -5,16 +5,16 @@ description: Erfahren Sie, wie Sie für einen SQL Server-Big Data-Cluster in ein
 author: cloudmelon
 ms.author: melqin
 ms.reviewer: mikeray
-ms.date: 09/30/2020
+ms.date: 02/11/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 2a79c82f2c3fd443d7237fc3b0a1f7c51102bceb
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 799afc246b106c4b49d6aba44f8d26a761d6c2cc
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100048015"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343964"
 ---
 # <a name="deploy-sql-server-big-data-cluster-in-active-directory-mode"></a>Bereitstellen eines SQL Server-Big Data-Clusters im Active Directory-Modus
 
@@ -54,8 +54,10 @@ Für die AD-Integration sind die folgenden Parameter erforderlich. Fügen Sie di
 
 - **Optionaler Parameter** `security.activeDirectory.realm`: In den meisten Fällen entspricht der Bereich dem Domänennamen. Falls sich Bereich und Domänenname unterscheiden, verwenden Sie diesen Parameter zum Definieren des Bereichs (z. B. `CONTOSO.LOCAL`). Der für diesen Parameter angegebene Wert sollte vollqualifiziert sein.
 
-  > [!IMPORTANT]
-  > Zurzeit unterstützt der BDC keine Konfiguration, bei der der Active Directory-Domänenname sich vom **NETBIOS**-Namen der Active Directory-Domäne unterscheidet.
+- `security.activeDirectory.netbiosDomainName` **Optionaler Parameter**: Dies ist der NETBIOS-Name der AD-Domäne. In den meisten Fällen ist dies die erste Bezeichnung des AD-Domänennamens. Verwenden Sie bei Abweichungen diesen Parameter, um den NetBIOS-Domänennamen zu definieren. Dieser Wert darf keine Punkte enthalten. Dieser Name wird normalerweise verwendet, um die Benutzerkonten in der Domäne zu qualifizieren. Beispiel: Bei CONTOSO\user ist CONTOSO der NETBIOS-Domänenname.
+
+  > [!NOTE]
+  > Unterstützung mithilfe von *security.activeDirectory.netbiosDomainName* für eine Konfiguration, bei der sich der Active Directory-Domänenname vom **NETBIOS**-Namen der Active Directory-Domäne unterscheidet, wurde ab SQL Server 2019 CU9 aktiviert.
 
 - `security.activeDirectory.domainDnsName`: Dies ist der Name Ihrer DNS-Domäne, die für den Cluster verwendet wird (z. B. `contoso.local`).
 

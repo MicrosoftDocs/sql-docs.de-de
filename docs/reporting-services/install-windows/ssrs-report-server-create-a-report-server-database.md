@@ -7,13 +7,13 @@ ms.prod: reporting-services
 ms.prod_service: reporting-services-native
 ms.topic: conceptual
 ms.custom: seodec18
-ms.date: 9/2/2020
-ms.openlocfilehash: 70a92bf37285e9af58dcef2e7a69abfb88b37178
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 02/16/2021
+ms.openlocfilehash: 927fafb66a9551332a0d5fcbff868ad79efa5eef
+ms.sourcegitcommit: 129c084add904fd3f7e9ab35a800c3fd8b1a8927
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100067095"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100564112"
 ---
 # <a name="create-a-report-server-database-report-server-configuration-manager"></a>Erstellen einer Berichtsserver-Datenbank, Berichtsserver-Konfigurations-Manager  
 
@@ -84,6 +84,9 @@ Die Seite **Berichtsserver-Installationsoptionen** hat nur eine Option für den 
 - [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]  
   
 - [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]  
+
+> [!NOTE] 
+> SQL unter Linux ist keine unterstützte Umgebung zum Hosten einer SQL Server Reporting Services-Datenbank.
 
 Wenn Sie die Berichtsserver-Datenbank auf einem Remotecomputer erstellen, konfigurieren Sie die Verbindung so, dass ein Domänenbenutzerkonto oder ein Dienstkonto mit Netzwerkzugriff verwendet wird. Wenn Sie eine [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Remoteinstanz verwenden, sollten Sie überlegen, welche Anmeldeinformationen der Berichtsserver für die Verbindung zur Instanz verwenden soll. Weitere Informationen finden Sie unter [Konfigurieren einer Berichtsserver-Datenbankverbindung &#40;Berichtsserver-Konfigurations-Manager&#41;](../../reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager.md).  
   

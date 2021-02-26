@@ -1,7 +1,7 @@
 ---
 description: Konfigurieren der Windows-Authentifizierung auf dem Berichtsserver
 title: Konfigurieren der Windows-Authentifizierung auf dem Berichtsserver | Microsoft-Dokumentation
-ms.date: 08/26/2016
+ms.date: 02/10/2021
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
 ms.technology: security
@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 8faf2938-b71b-4e61-a172-46da2209ff55
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 8b2b130f85b556d6fdeb2e3c0c3c4a32644a80d6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d3b875eafb10e4234df2cde35bb61bbecfebad94
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492640"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489324"
 ---
 # <a name="configure-basic-authentication-on-the-report-server"></a>Konfigurieren der Windows-Authentifizierung auf dem Berichtsserver
   Standardmäßig akzeptiert Reporting Services Anforderungen, die Negotiate- und NTLM-Authentifizierung angeben. Wenn Ihre Bereitstellung Client-Anwendungen oder Browser umfasst, die die Standardauthentifizierung verwenden, müssen Sie die Standardauthentifizierung in die Liste der unterstützten Typen aufnehmen. Zusätzlich müssen Sie den anonymen Zugriff auf die Dateien des Berichts-Generators aktivieren, wenn Sie mit dem Berichts-Generator arbeiten möchten.  
@@ -35,15 +35,17 @@ ms.locfileid: "88492640"
   
 ### <a name="to-configure-a-report-server-to-use-basic-authentication"></a>So konfigurieren Sie einen Berichtsserver für die Verwendung der Standardauthentifizierung  
   
-1.  Öffnen Sie RSReportServer.config in einem Text-Editor.  
+1. Öffnen Sie RSReportServer.config in einem Text-Editor.  
   
-     Die Datei befindet sich im Pfad *\<drive>:* \Programme\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer.  
+     Informationen zur Konfigurationsdatei finden Sie im Abschnitt [Dateispeicherort](../report-server/rsreportserver-config-configuration-file.md#bkmk_file_location) im Artikel „RsReportServer.config Configuration File“.
   
-2.  Suchen Sie \<**Authentication**>.  
+2. Suchen Sie \<**Authentication**>.  
   
-3.  Kopieren Sie die XML-Struktur, die Ihren Anforderungen am besten entspricht. Die erste XML-Struktur stellt Platzhalter bereit, über die Sie alle im nächsten Abschnitt beschriebenen Elemente angegeben können:  
-  
-    ```  
+3. Kopieren Sie die XML-Struktur, die Ihren Anforderungen am besten entspricht. Die erste XML-Struktur stellt Platzhalter bereit, über die Sie alle im nächsten Abschnitt beschriebenen Elemente angegeben können:  
+
+    [!INCLUDE [ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE [ssrs-appliesto-2016](../../includes/ssrs-appliesto-2016.md)]
+
+    ```xml
     <Authentication>  
           <AuthenticationTypes>  
                  <RSWindowsBasic>  
@@ -56,27 +58,40 @@ ms.locfileid: "88492640"
     </Authentication>  
     ```  
   
-     Wenn Sie Standardwerte verwenden, können Sie die minimale Elementstruktur kopieren:  
+    Wenn Sie Standardwerte verwenden, können Sie die minimale Elementstruktur kopieren:  
   
-    ```  
+    ```xml
           <AuthenticationTypes>  
                  <RSWindowsBasic/>  
           </AuthenticationTypes>  
     ```  
+
+    [!INCLUDE [ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE [ssrs-appliesto-2017-and-later](../../includes/ssrs-appliesto-2017-and-later.md)] [!INCLUDE [ssrs-appliesto-pbirs](../../includes/ssrs-appliesto-pbirs.md)]
+
+    ```xml
+      <Authentication>
+          <AuthenticationTypes>
+                      <RSWindowsBasic/>
+          </AuthenticationTypes>
+          <EnableAuthPersistence>true</EnableAuthPersistence>
+      <RSWindowsExtendedProtectionLevel>Off</RSWindowsExtendedProtectionLevel>
+      <RSWindowsExtendedProtectionScenario>Any</RSWindowsExtendedProtectionScenario>
+      </Authentication>
+    ```
+
+4. Ersetzen Sie damit die vorhandenen Einträge für \<**Authentication**>.  
   
-4.  Ersetzen Sie damit die vorhandenen Einträge für \<**Authentication**>.  
-  
-     Wenn Sie mehrere Authentifizierungstypen verwenden, fügen Sie lediglich das **RSWindowsBasic** -Element ein, löschen Sie jedoch die Einträge für **RSWindowsNegotiate**, **RSWindowsNTLM**oder **RSWindowsKerberos**nicht.  
+     Wenn Sie mehrere Authentifizierungstypen verwenden, fügen Sie lediglich das **RSWindowsBasic** -Element ein, löschen Sie jedoch die Einträge für **RSWindowsNegotiate**, **RSWindowsNTLM** oder **RSWindowsKerberos** nicht.  
   
      Beachten Sie, dass Sie **Custom** nicht mit anderen Authentifizierungstypen verwenden können.  
   
-5.  Ersetzen Sie leere Werte für \<**Realm**> oder \<**DefaultDomain**> durch Werte, die für Ihre Umgebung gültig sind.  
+5. Ersetzen Sie leere Werte für \<**Realm**> oder \<**DefaultDomain**> durch Werte, die für Ihre Umgebung gültig sind.  
   
-6.  Speichern Sie die Datei .  
+6. Speichern Sie die Datei .  
   
-7.  Wenn Sie eine horizontal skalierte Bereitstellung konfiguriert haben, wiederholen Sie diese Schritte für andere in der Bereitstellung vorhandene Berichtsserver.  
+7. Wenn Sie eine horizontal skalierte Bereitstellung konfiguriert haben, wiederholen Sie diese Schritte für andere in der Bereitstellung vorhandene Berichtsserver.  
   
-8.  Starten Sie den Berichtsserver neu, um alle momentan geöffneten Sitzungen zu beenden.  
+8. Starten Sie den Berichtsserver neu, um alle momentan geöffneten Sitzungen zu beenden.  
   
 ## <a name="rswindowsbasic-reference"></a>Referenz auf RSWindowsBasic  
  Beim Konfigurieren der Standardauthentifizierung können die folgenden Elemente angegeben werden.  

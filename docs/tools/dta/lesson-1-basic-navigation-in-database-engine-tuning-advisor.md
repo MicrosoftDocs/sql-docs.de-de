@@ -13,14 +13,14 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-dt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 735176a4fbb92d91d446f47492b2ddaa11098b2e
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: e8c4f32eab8fa7d7791a5f4718d8d771cb1dd6cd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489350"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354477"
 ---
-# <a name="lesson-1-basic-navigation-in-database-engine-tuning-advisor-dta"></a>Lektion 1: Grundlagen zur Navigation im DTA
+# <a name="lesson-1-basic-navigation-in-database-engine-tuning-advisor-dta"></a>Lektion 1: Grundlagen zur Navigation im Datenbankoptimierungsratgeber (DTA)
 
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
@@ -81,7 +81,7 @@ Beim ersten Öffnen der grafischen Benutzeroberfläche des Datenbankoptimierungs
   
     -   Für **Anzahl der Elemente in der Liste zuletzt verwendeter Objekte** kann ein Wert von **1** bis **10** festgelegt werden. Damit wird die maximale Anzahl von Elementen in der Liste festgelegt, die angezeigt wird, wenn Sie im Menü **Datei** auf **Zuletzt geöffnete Sitzungen** oder **Zuletzt geöffnete Dateien** klicken. Standardmäßig ist der Wert **4** festgelegt.  
   
-    -   Wenn das Kontrollkästchen **Die letzten Optimierungsoptionen speichern** aktiviert ist, verwendet der Datenbankoptimierungsratgeber standardmäßig die Optimierungsoptionen, die Sie bei der letzten Sitzung angegeben haben, auch für die nächste Optimierungssitzung. Deaktivieren Sie das Kontrollkästchen, wenn Sie die Standardeinstellungen für den Datenbankoptimierungsratgeber verwenden möchten. Standardmäßig ist diese Option ausgewählt.  
+    -   Wenn das Kontrollkästchen **Die letzten Optimierungsoptionen speichern** aktiviert ist, verwendet der Datenbankoptimierungsratgeber standardmäßig die Optimierungsoptionen, die Sie bei der letzten Sitzung angegeben haben, auch für die nächste Optimierungssitzung. Deaktivieren Sie das Kontrollkästchen, wenn Sie die Standardeinstellungen für den Datenbankoptimierungsratgeber verwenden möchten. Diese Option ist standardmäßig ausgewählt.  
   
     -   Standardmäßig ist das Kontrollkästchen **Dauerhaftes Löschen von Sitzungen bestätigen** aktiviert, um ein versehentliches Löschen von Optimierungssitzungen zu vermeiden.  
   

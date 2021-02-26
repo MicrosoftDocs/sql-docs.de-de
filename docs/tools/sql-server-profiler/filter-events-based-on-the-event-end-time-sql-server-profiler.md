@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 9e82f5820f418e65e8638ee27898a130ae6e564d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 4306910b10fe1ac014226b9013af41b235b5e628
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774816"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345829"
 ---
 # <a name="filter-events-based-on-the-event-end-time-sql-server-profiler"></a>Filtern von Ereignissen anhand der Ereignisendzeit (SQL Server Profiler)
 
@@ -28,18 +28,18 @@ ms.locfileid: "85774816"
   
 1.  Klicken Sie im Menü **Datei** auf **Neue Ablaufverfolgung**, und stellen Sie dann eine Verbindung mit einer Instanz von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]her.  
   
-     Das Dialogfeld **Ablaufverfolgungseigenschaften**wird angezeigt.  
+     Das Dialogfeld **Ablaufverfolgungseigenschaften** wird angezeigt.  
   
     > [!NOTE]  
-    >  Bei der Auswahl von **Ablaufverfolgung sofort nach dem Herstellen der Verbindung starten**wird das Dialogfeld **Ablaufverfolgungseigenschaften**nicht angezeigt. Stattdessen beginnt die Ablaufverfolgung. Um diese Einstellung zu deaktivieren, klicken Sie im Menü **Extras**auf **Optionen**, und deaktivieren Sie das Kontrollkästchen **Ablaufverfolgung sofort nach dem Herstellen der Verbindung starten** .  
+    >  Bei der Auswahl von **Ablaufverfolgung sofort nach dem Herstellen der Verbindung starten** wird das Dialogfeld **Ablaufverfolgungseigenschaften** nicht angezeigt. Stattdessen beginnt die Ablaufverfolgung. Um diese Einstellung zu deaktivieren, klicken Sie im Menü **Extras** auf **Optionen**, und deaktivieren Sie das Kontrollkästchen **Ablaufverfolgung sofort nach dem Herstellen der Verbindung starten** .  
   
 2.  Stellen Sie im Dialogfeld **Ablaufverfolgungseigenschaften** sicher, dass die Registerkarte **Allgemein** ausgewählt ist, und geben Sie in das Textfeld **Ablaufverfolgungsname** einen Namen ein.  
   
-3.  Wählen Sie in der Liste **Vorlage verwenden**eine Nachverfolgungsvorlage aus.  
+3.  Wählen Sie in der Liste **Vorlage verwenden** eine Nachverfolgungsvorlage aus.  
   
 4.  Sie können optional eine Zieldatei oder Zieltabelle angeben, in der die Ablaufverfolgungsergebnisse gespeichert werden.  
   
-5.  Klicken Sie auf der Registerkarte **Ereignisauswahl**auf die **EndTime** Datenspalte, um das Dialogfeld **Filter bearbeiten** zu öffnen. Sie können auch mit der rechten Maustaste auf die Spaltenüberschrift klicken und **Spaltenfilter bearbeiten**auswählen.  
+5.  Klicken Sie auf der Registerkarte **Ereignisauswahl** auf die **EndTime** Datenspalte, um das Dialogfeld **Filter bearbeiten** zu öffnen. Sie können auch mit der rechten Maustaste auf die Spaltenüberschrift klicken und **Spaltenfilter bearbeiten** auswählen.  
   
 6.  Erweitern Sie **Größer als** oder **Kleiner als**, und geben Sie einen **datetime**-Wert in das Feld ein, welches unterhalb des Vergleichsoperators angezeigt wird.  
   

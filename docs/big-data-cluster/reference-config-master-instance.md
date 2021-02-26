@@ -5,20 +5,22 @@ description: Referenzartikel zu den Konfigurationseigenschaften der SQL Server-
 author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: rahul.ajmera
-ms.date: 08/04/2020
+ms.date: 02/11/2021
 ms.topic: reference
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 2f251357c818577b0ecd761c4a5ca2f030eeca58
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 2d986013374e7f69111288d2d0f50b09130a2d68
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100043970"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343517"
 ---
-# <a name="sql-server-master-instance-configuration-properties"></a>Konfigurationseigenschaften der SQL Server-Masterinstanz
+# <a name="sql-server-master-instance-configuration-properties----pre-cu9-release"></a>Konfigurationseigenschaften der SQL Server-Masterinstanz (vor CU9)
 
 [!INCLUDE[SQL Server 2019](../includes/applies-to-version/sqlserver2019.md)]
+> [!NOTE]
+> Die folgenden Informationen gelten nur für Cluster vor CU9, bei denen eine Konfiguration nicht möglich ist, und bei denen für die Konfiguration der SQL Server-Masterinstanz die Datei „mssql-conf“ erforderlich ist. Bei Clustern ab CU9 wird die Funktion zur Konfigurationsverwaltung genutzt, sodass keine „mssql-conf“-Datei mehr erforderlich ist. Informationen zu verfügbaren Konfigurationen für die SQL Server-Masterinstanz und andere BDC-Komponenten finden Sie [hier](reference-config-bdc-overview.md).
 
 ## <a name="properties"></a>Eigenschaften
 

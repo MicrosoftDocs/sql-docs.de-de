@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: sstein, mikeray
 ms.custom: contperf-fy21q2
 ms.date: 12/15/2020
-ms.openlocfilehash: 519b60f63da38192e2196014e0ea7820dafd5491
-ms.sourcegitcommit: 8a8c89b0ff6d6dfb8554b92187aca1bf0f8bcc07
+ms.openlocfilehash: 92160da1da48fc107be98354250e4c580cb51155
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97619097"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350595"
 ---
 # <a name="quickstart-connect-and-query-a-sql-server-instance-using-sql-server-management-studio-ssms"></a>Schnellstart: Herstellen einer Verbindung mit und Abfragen einer SQL Server-Instanz mithilfe des SQL Server Management Studio (SSMS)
 
@@ -48,8 +48,8 @@ Dieser Artikel zeigt, wie die folgenden Schritte ausgeführt werden:
     |   Einstellung   |   Empfohlene Werte   |   BESCHREIBUNG   |
     |--------------|-----------------------|-----------------|
     | **Servertyp** | Datenbank-Engine | Wählen Sie für **Servertyp** die Option **Datenbank-Engine** (normalerweise die Standardoption) aus. |
-    | **Servername** | Der vollqualifizierte Servername | Geben Sie bei **Servername** den Namen Ihrer SQL Server-Instanz ein. Wenn Sie lokal eine Verbindung herstellen, können Sie auch *localhost* als Servernamen verwenden. Wenn Sie NICHT die Standardinstanz (***MSSQLSERVER** _) verwenden, müssen Sie den Servernamen und den Instanznamen angeben. </br> </br> Wenn Sie nicht genau wissen, wie Sie Ihren SQL Server-Instanznamen bestimmen sollen, erhalten Sie hier [zusätzliche Tipps und Tricks für die Verwendung von SSMS](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
-    | _ *Authentifizierung** | Windows-Authentifizierung </br> </br> SQL Server-Authentifizierung | Standardmäßig ist die Windows-Authentifizierung festgelegt. </br> </br> Sie können zum Herstellen einer Verbindung auch die **SQL Server-Authentifizierung** verwenden. Wenn Sie die **SQL Server-Authentifizierung** auswählen, sind jedoch ein Benutzername und ein Kennwort erforderlich. </br> </br> Weitere Informationen zu Authentifizierungstypen finden Sie unter [Verbindung mit Server herstellen (Datenbank-Engine)](../f1-help/connect-to-server-database-engine.md). |
+    | **Servername** | Der vollqualifizierte Servername | Geben Sie bei **Servername** den Namen Ihrer SQL Server-Instanz ein. Wenn Sie lokal eine Verbindung herstellen, können Sie auch *localhost* als Servernamen verwenden. Wenn Sie NICHT die Standardinstanz (***MSSQLSERVER***) verwenden, müssen Sie den Servernamen und den Instanznamen angeben. </br> </br> Wenn Sie nicht genau wissen, wie Sie Ihren SQL Server-Instanznamen bestimmen sollen, erhalten Sie hier [zusätzliche Tipps und Tricks für die Verwendung von SSMS](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
+    | **Authentifizierung** | Windows-Authentifizierung </br> </br> SQL Server-Authentifizierung | Standardmäßig ist die Windows-Authentifizierung festgelegt. </br> </br> Sie können zum Herstellen einer Verbindung auch die **SQL Server-Authentifizierung** verwenden. Wenn Sie die **SQL Server-Authentifizierung** auswählen, sind jedoch ein Benutzername und ein Kennwort erforderlich. </br> </br> Weitere Informationen zu Authentifizierungstypen finden Sie unter [Verbindung mit Server herstellen (Datenbank-Engine)](../f1-help/connect-to-server-database-engine.md). |
     | **Anmeldung** | Benutzer-ID des Serverkontos | Hier wird die Benutzer-ID des zum Anmelden beim Server verwendeten Serverkontos angegeben. Wenn die **SQL Server-Authentifizierung** verwendet wird, ist ein Anmeldename erforderlich. |
     | **Kennwort** | Kennwort für das Serverkonto | Hier wird das Kennwort für das zum Anmelden beim Server verwendete Serverkonto angegeben. Wenn die **SQL Server-Authentifizierung** verwendet wird, ist ein Kennwort erforderlich. |
 

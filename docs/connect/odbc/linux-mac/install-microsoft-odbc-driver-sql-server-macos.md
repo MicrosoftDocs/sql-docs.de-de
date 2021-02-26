@@ -1,7 +1,7 @@
 ---
 title: Installation von Microsoft ODBC Driver for SQL Server (macOS)
 description: Erfahren Sie, wie Microsoft ODBC Driver for SQL Server auf macOS-Clients installieren, um Datenbankkonnektivität zu ermöglichen.
-ms.date: 09/08/2020
+ms.date: 02/12/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: connectivity
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - driver, installing
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a07f2760503e5df9897f4a4ef065621bd5852523
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 2f07e613a6bd5ce8416c4b2c015749a1e631ea3f
+ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100042920"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525144"
 ---
 # <a name="install-the-microsoft-odbc-driver-for-sql-server-macos"></a>Installation von Microsoft ODBC Driver for SQL Server (macOS)
 
@@ -23,12 +23,15 @@ In diesem Artikel wird die Installation von Microsoft ODBC Driver for SQL Server
 
 In diesem Artikel finden Sie Befehle zum Installieren des ODBC-Treibers über die Bash-Shell. Informationen zum direkten Herunterladen der Pakete finden Sie unter [Herunterladen von ODBC Driver for SQL Server](../download-odbc-driver-for-sql-server.md).
 
+> [!Note]
+> Der Microsoft ODBC-Treiber für SQL Server unter macOS wird nur auf der x64-Architektur unterstützt. Apple M1 wird nicht unterstützt.
+
 ## <a name="microsoft-odbc-17"></a>Microsoft ODBC 17
 
 Führen Sie die folgenden Befehle aus, um Microsoft ODBC Driver 17 for SQL Server unter macOS zu installieren:
 
 ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release
 brew update
 HOMEBREW_NO_ENV_FILTERING=1 ACCEPT_EULA=Y brew install msodbcsql17 mssql-tools
@@ -46,7 +49,7 @@ In den folgenden Abschnitten finden Sie Anweisungen zum Installieren vorheriger 
 Verwenden Sie die folgenden Befehle, um Microsoft ODBC Driver 13.1 for SQL Server unter OS X 10.11 (El Capitan) und macOS 10.12 (Sierra):
 
 ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release
 brew update
 brew install msodbcsql@13.1.9.2 mssql-tools@14.0.6.0

@@ -10,12 +10,12 @@ ms.date: 10/19/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: df878f94c2ed6338ae28cbff156460ffdef87826
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 69749c0da2a5f7ef672a4673b5bc857898e9964f
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100046660"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489184"
 ---
 # <a name="encryption-at-rest-concepts-and-configuration-guide"></a>Konzepte- und Konfigurationsleitfaden für die Verschlüsselung ruhender Daten
 
@@ -29,9 +29,9 @@ In SQL Server Big Data-Clustern werden Daten an den folgenden zwei Orten gespeic
 Um Daten in SQL Server Big Data-Clustern transparent verschlüsseln zu können, gibt es zwei mögliche Ansätze:
 
 * __Volumeverschlüsselung__. Dieser Ansatz wird von der Kubernetes-Plattform unterstützt und als bewährte Methode für Big Data-Clusterbereitstellungen vorausgesetzt. Dieser Leitfaden behandelt die Volumeverschlüsselung nicht. Anleitungen zum ordnungsgemäßen Verschlüsseln von Volumes, die für SQL Server Big Data-Cluster verwendet werden sollen, finden Sie in der Dokumentation Ihrer Kubernetes-Plattform oder Appliance.
-* __Verschlüsselung auf Anwendungsebene__. Diese Architektur bezieht sich auf die Verschlüsselung von Daten durch die Anwendung, die die Daten verarbeitet, bevor sie auf den Datenträger geschrieben werden. Für den Fall, dass die Volumes verfügbar gemacht werden, wäre ein Angreifer nicht in der Lage, Datenartefakte an anderer Stelle wiederherzustellen, es sei denn, das wurde ebenfalls mit denselben Verschlüsselungsschlüsseln konfiguriert. 
+* __Verschlüsselung auf Anwendungsebene__. Diese Architektur bezieht sich auf die Verschlüsselung von Daten durch die Anwendung, die die Daten verarbeitet, bevor sie auf den Datenträger geschrieben werden. Für den Fall, dass die Volumes verfügbar gemacht werden, wäre ein Angreifer nicht in der Lage, Datenartefakte an anderer Stelle wiederherzustellen, es sei denn, das wurde ebenfalls mit denselben Verschlüsselungsschlüsseln konfiguriert.
 
-Der Verschlüsselungsfunktionssatz für ruhende Daten von SQL Server Big Data-Clustern unterstützt das Kernszenario der Verschlüsselung auf Anwendungsebene für die SQL Server- und HDFS-Komponenten.
+Die __Featuregruppe zur Verschlüsselung ruhender Daten von SQL Server Big Data-Clustern__ unterstützt das Kernszenario der __Verschlüsselung auf Anwendungsebene__ für die __SQL Server__- und __HDFS__-Komponenten.
 
 Folgende Funktionen werden bereitgestellt:
 
@@ -48,9 +48,6 @@ Ein vom Controller gehosteter Dienst, der für die Verwaltung von Schlüsseln un
 * Kompatibilität mit Hadoop KMS. Er fungiert als Schlüsselverwaltungsdienst für die HDFS-Komponente im BDC.
 * Verwaltung des SQL Server TDE-Zertifikats.
 
-Die folgende Funktion wird zurzeit nicht unterstützt:
-* *Unterstützung für Versionsverwaltung von Schlüsseln*. 
-
 Im Rest dieses Dokuments bezeichnen wir diesen Dienst als __BDC KMS__. Außerdem wird der Begriff __BDC__ verwendet, um die Computingplattform __SQL Server Big Data-Cluster__ zu bezeichnen.
 
 ### <a name="system-managed-keys-and-certificates"></a>Systemseitig verwaltete Schlüssel und Zertifikate
@@ -65,9 +62,9 @@ Benutzerseitig bereitgestellte Schlüssel und Zertifikate, die von BDC KMS verwa
 
 Externe Schlüssellösungen, die mit BDC KMS kompatibel sind, für die externe Delegierung. Diese Funktion wird derzeit nicht unterstützt.
 
-## <a name="encryption-at-rest-on-sql-server-big-data-clusters-cu8"></a>Verschlüsselung ruhender Daten auf SQL Server Big Data-Clustern CU8
+## <a name="encryption-at-rest-on-sql-server-big-data-clusters"></a>Verschlüsselung ruhender Daten auf SQL Server Big Data-Clustern
 
-SQL Server Big Data-Cluster CU8 ist die erste Version des Funktionssatzes für die Verschlüsselung ruhender Daten. Lesen Sie dieses Dokument sorgfältig durch, um Ihr Szenario vollständig zu bewerten.
+Lesen Sie dieses Dokument sorgfältig durch, um Ihr Szenario vollständig zu bewerten.
 
 Der Funktionssatz führt den __BDC KMS-Controllerdienst__ ein, um systemseitig verwaltete Schlüssel und Zertifikate für die Verschlüsselung ruhender Daten sowohl in SQL Server als auch in HDFS bereitzustellen. Diese Schlüssel und Zertifikate werden vom Dienst verwaltet, und diese Dokumentation bietet eine Betriebsanleitung für die Interaktion mit dem Dienst.
 
@@ -80,7 +77,7 @@ Der Funktionssatz führt den __BDC KMS-Controllerdienst__ ein, um systemseitig v
 * Auf der Masterinstanz des BDC bereitgestellte Datenbanken und Benutzerdatenbanken werden nicht automatisch verschlüsselt. DBAs können das installierte Zertifikat verwenden, um eine beliebige Datenbank zu verschlüsseln.
 * Der Computepool und der Speicherpool werden automatisch mithilfe des systemseitig generierten Zertifikats verschlüsselt.
 * Von der Verschlüsselung des Datenpools, wenn auch technisch möglich mithilfe von `EXECUTE AT`-T-SQL-Befehlen, wird abgeraten, außerdem wird sie auch zurzeit nicht unterstützt. Die Verwendung dieser Methode zur Verschlüsselung von Datenpool-Datenbanken ist möglicherweise nicht effektiv, und die Verschlüsselung erfolgt möglicherweise nicht im gewünschten Zustand. Ferner wird ein inkompatibler Upgradepfad zu den nächsten Releases erzeugt.
-* Zurzeit gibt es keine Zertifikatrotation. Unterstützt wird die Entschlüsselung und anschließende Verschlüsselung mit einem neuen Zertifikat mithilfe von T-SQL-Befehlen, wenn keine Hochverfügbarkeitsbereitstellung vorliegt.
+* Die SQL Server-Schlüsselrotation wird mithilfe von standardmäßigen T-SQL-Verwaltungsbefehlen erreicht. Eine umfassende Anleitung finden Sie im [Leitfaden zur Verwendung von SQL Server Transparent Data Encryption (transparente Datenverschlüsselung, TDE) für Big Data-Cluster](encryption-at-rest-sql-server-tde.md).
 * Die Überwachung der Verschlüsselung erfolgt über vorhandene SQL Server-Standard-DMVs für TDE.
 * Das Sichern und Wiederherstellen einer TDE-fähigen Datenbank im Cluster wird unterstützt.
 * Hochverfügbarkeit wird unterstützt. Wenn eine Datenbank in der primären Instanz von SQL Server verschlüsselt ist, werden alle sekundären Replikate der Datenbank ebenfalls verschlüsselt.
@@ -91,12 +88,20 @@ Der Funktionssatz führt den __BDC KMS-Controllerdienst__ ein, um systemseitig v
 * Ein systemseitig generierter Schlüssel wird in Hadoop KMS bereitgestellt. Der Schlüsselname lautet `securelakekey`. In CU8 hat der Standardschlüssel 256 Bit, und wir unterstützen die Verschlüsselung mit 256-Bit-AES.
 * Eine Standardverschlüsselungszone wird unter Verwendung des oben systemseitig generierten Schlüssels in einem Pfad namens `/securelake` bereitgestellt.
 * Benutzer können mithilfe in diesem Leitfaden bereitgestellter spezifischer Anweisungen zusätzliche Schlüssel und Verschlüsselungszonen erstellen. Benutzer können während der Schlüsselerstellung zwischen den Schlüsselgrößen 128, 192 oder 256 auswählen.
-* Die direkte Schlüsselrotation für HDFS ist in CU8 nicht möglich. Als Alternative können die Daten mithilfe von distcp aus einer Verschlüsselungszone in eine andere verschoben werden.
+* Bei HDFS-Verschlüsselungszonen wird die Schlüsselrotation mithilfe von azdata erreicht. Eine umfassende Anleitung finden Sie im [Leitfaden zur Verwendung von SQL Server HDFS-Verschlüsselungszonen für Big Data-Cluster](encryption-at-rest-hdfs-encryption-zones.md).
 * Das Einbinden von HDFS-Tiering zusätzlich zu einer Verschlüsselungszone wird nicht unterstützt.
 
-## <a name="configuration-guide"></a>Konfigurationsleitfaden
+## <a name="encryption-at-rest-administration"></a>Verwaltung der Verschlüsselung ruhender Daten
 
-Die Verschlüsselung ruhender Daten für SQL Server Big Data-Cluster ist eine dienstseitig verwaltete Funktion, die, je nach Bereitstellungspfad, noch zusätzliche Schritte erfordern kann.
+Im Folgenden sind die Verwaltungsfunktionen für die Verschlüsselung ruhender Daten aufgeführt:
+
+* [SQL Server TDE](encryption-at-rest-sql-server-tde.md) wird mit standardmäßigen T-SQL-Befehlen verwaltet.
+* [HDFS-Verschlüsselungszonen](encryption-at-rest-hdfs-encryption-zones.md) und HDFS-Schlüssel werden mithilfe von azdata-Befehlen verwaltet.
+* Die folgenden Verwaltungsfeatures werden mithilfe von [ausgeführten Notebooks](cluster-manage-notebooks.md) ausgeführt:
+    - Sicherung und Wiederherstellung von HDFS-Schlüsseln
+    - Löschen von HDFS-Schlüsseln
+
+## <a name="configuration-guide"></a>Konfigurationsleitfaden
 
 Während __neuer Bereitstellungen von SQL Server Big Data-Clustern__ (ab CU8) wird die __Verschlüsselung ruhender Daten standardmäßig aktiviert und konfiguriert__. Dies bedeutet:
 
@@ -106,14 +111,11 @@ Während __neuer Bereitstellungen von SQL Server Big Data-Clustern__ (ab CU8) wi
 
 Die im vorherigen Abschnitt beschriebenen Anforderungen und Standardverhalten sind gültig.
 
-Wenn Sie ein __Upgrade Ihres Clusters auf CU8 vornehmen__, __lesen Sie den nächsten Abschnitt sorgfältig__.
+__Bei einer neuen Bereitstellung von SQL Server BDC ab CU8 oder beim direkten Upgrade auf CU9 müssen keine weiteren Schritte durchgeführt werden__.
 
-### <a name="upgrading-to-cu8"></a>Upgrade auf CU8
+### <a name="upgrade-scenarios"></a>Upgradeszenarien
 
-   > [!CAUTION]
-   > Führen Sie vor einem Upgrade auf SQL Server Big Data-Cluster CU8 eine vollständige Sicherung Ihrer Daten aus.
-
-In vorhandenen Clustern erzwingt der Upgradeprozess keine Verschlüsselung von Benutzerdaten, und es werden auch keine HDFS-Verschlüsselungszonen konfiguriert. Dieses Verhalten ist entwurfsbedingt, und Folgendes muss pro Komponente berücksichtigt werden:
+Bei vorhandenen Clustern wird vom Upgradeprozess keine neue Verschlüsselung oder Neuverschlüsselung von noch nicht verschlüsselten Benutzerdaten erzwungen. Dieses Verhalten ist entwurfsbedingt, und Folgendes muss pro Komponente berücksichtigt werden:
 
 * __SQL Server__
 
@@ -124,17 +126,31 @@ In vorhandenen Clustern erzwingt der Upgradeprozess keine Verschlüsselung von B
 * __HDFS__
 
     1. __HDFS__. Beim Upgradeprozess werden keine HDFS-Dateien und -Ordner außerhalb von Verschlüsselungszonen angefasst.
-    1. __Verschlüsselungszonen werden nicht konfiguriert__. Die Hadoop KMS-Komponente wird nicht für die Verwendung von BDC KMS konfiguriert. Um die HDFS-Verschlüsselungszonenfunktion nach dem Upgrade zu konfigurieren und zu aktivieren, befolgen Sie den nächsten Abschnitt.
 
-### <a name="enable-hdfs-encryption-zones-after-upgrade"></a>Aktivieren von HDFS-Verschlüsselungszonen nach einem Upgrade
+### <a name="upgrading-to-cu9-from-cu8-or-earlier"></a>Upgrade von einer Version bis CU8 auf CU9
 
-Führen Sie die folgenden Aktionen aus, wenn Sie ein Upgrade Ihres Cluster auf CU8 durchgeführt haben (`azdata upgrade`) und HDFS-Verschlüsselungszonen aktivieren möchten.
+Es sind keine weiteren Schritte erforderlich.
+
+### <a name="upgrading-to-cu8-from-cu6-or-earlier"></a>Upgrade von einer Version bis CU6 auf CU8
+
+   > [!CAUTION]
+   > Führen Sie vor einem Upgrade auf SQL Server Big Data-Cluster CU8 eine vollständige Sicherung Ihrer Daten aus.
+
+
+__Verschlüsselungszonen werden nicht konfiguriert__. Die Hadoop KMS-Komponente wird nicht für die Verwendung von BDC KMS konfiguriert. Befolgen Sie die Anleitungen im nächsten Abschnitt, um das HDFS-Verschlüsselungszonenfeature nach dem Upgrade zu konfigurieren und zu aktivieren.
+
+#### <a name="enable-hdfs-encryption-zones-after-upgrade-to-cu8"></a>Aktivieren von HDFS-Verschlüsselungszonen nach einem Upgrade auf CU8
+
+Wenn Sie ein Upgrade Ihres Cluster auf CU8 durchgeführt haben (`azdata upgrade`) und HDFS-Verschlüsselungszonen aktivieren möchten, gibt es zwei Möglichkeiten:
+
+* Ausführung des [ausgeführten Notebooks](cluster-manage-notebooks.md) in Azure Data Studio mit dem Namen __SOP0128: Aktivieren von HDFS-Verschlüsselungszonen in Big Data-Clustern__ zum Durchführen der Konfiguration.
+* Skriptausführung wie weiter unten beschrieben.
 
 Anforderungen:
 
 - Integrierter [Active Directory](active-directory-prerequisites.md)-Cluster.
 
-- Im AD-Modus in den Cluster konfigurierte und protokollierte [!INCLUDE [azure-data-cli-azdata](../includes/azure-data-cli-azdata.md)].
+- Im AD-Modus in den Cluster konfigurierte und protokollierte [!INCLUDE[azdata](../includes/azure-data-cli-azdata.md)].
 
 Führen Sie das folgende Verfahren aus, um den Cluster mit Unterstützung für Verschlüsselungszonen neu zu konfigurieren.
 

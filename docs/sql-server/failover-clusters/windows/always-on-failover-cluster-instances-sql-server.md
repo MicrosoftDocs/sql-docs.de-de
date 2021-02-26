@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 86a15b33-4d03-4549-8ea2-b45e4f1baad7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 722371558fe5d6f1a9a8a363322a28e7f89243f2
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 2f87ae98424eef3f6aeadca1f11da6d9d1f2b403
+ms.sourcegitcommit: 8bdb5a51f87a6ff3b94360555973ca0cd0b6223f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250386"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100549386"
 ---
 # <a name="always-on-failover-cluster-instances-sql-server"></a>AlwaysOn-Failoverclusterinstanzen (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -157,6 +157,6 @@ ms.locfileid: "99250386"
 |----------------------------|---------------|  
 |Beschreibt die Installation eines neuen [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] -FCIs.|[Erstellen eines neuen SQL Server-Failoverclusters &#40;Setup&#41;](../../../sql-server/failover-clusters/install/create-a-new-sql-server-failover-cluster-setup.md)|  
 |Beschreibt die Aktualisierung eines [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] -Failoverclusters.|[Upgrade einer SQL Server-Failoverclusterinstanz](../../../sql-server/failover-clusters/windows/upgrade-a-sql-server-failover-cluster-instance.md).|  
-|Beschreibt Konzepte des Windows-Failoverclustering und stellt Links zu Tasks für Windows-Failoverclustering bereit.|[!INCLUDE[nextref_longhorn](../../../includes/nextref-longhorn-md.md)]: [Übersicht über Failovercluster](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730692(v=ws.10))<br /><br /> [!INCLUDE[nextref_longhorn](../../../includes/nextref-longhorn-md.md)] R2: [Übersicht über Failovercluster](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754482(v=ws.11))|  
+|Beschreibt Konzepte des Windows-Failoverclustering und stellt Links zu Tasks für Windows-Failoverclustering bereit.|[Windows Server-Failovercluster mit SQL Server](windows-server-failover-clustering-wsfc-with-sql-server.md)|
 |Beschreibt die Unterschiede der Konzepte zwischen Knoten in einer FCI und Replikaten innerhalb einer Verfügbarkeitsgruppe. Zudem werden Überlegungen zum Hosten mithilfe einer FCI für eine Verfügbarkeitsgruppe eines Replikats dargelegt.|[Failoverclustering und Verfügbarkeitsgruppen &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server.md)|  
   

@@ -1,5 +1,5 @@
 ---
-title: 'R-Tutorial: Featureentwicklung'
+title: 'R-Tutorial: Feature Engineering'
 description: In diesem Tutorial wird erklärt, wie Sie Datenfeatures mithilfe von SQL Server-Funktionen für datenbankinterne Analysen erstellen.
 ms.prod: sql
 ms.technology: machine-learning-services
@@ -9,12 +9,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 38920a0d7dda05b2dbd853035c4ce0c17ffd74f2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 502600980a3cb1f80eaeca64284f0a189cfcb405
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470031"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272981"
 ---
 # <a name="create-data-features-using-r-and-sql-server-walkthrough"></a>Erstellen von Datenfeatures mithilfe von R und SQL Server (Vorgehensweise)
 [!INCLUDE [SQL Server 2016](../../includes/applies-to-version/sqlserver2016.md)]
@@ -109,7 +109,7 @@ Zunächst gehen wir auf die für R-Benutzer bekannte Weise vor: Wir rufen die Da
     print(paste("It takes CPU Time=", round(used.time[1]+used.time[2],2)," seconds, Elapsed Time=", round(used.time[3],2), " seconds to generate features.", sep=""));
     ```
 
-    + Die „rxDataStep“-Funktion unterstützt verschiedene Methoden zum Ändern von Daten an Ort und Stelle. Weitere Informationen finden Sie in diesem Artikel:  [Transformieren und Unterteilen von Daten in Microsoft R](/r-server/r/how-to-revoscaler-data-transform)
+    + Die „rxDataStep“-Funktion unterstützt verschiedene Methoden zum Ändern von Daten an Ort und Stelle. Weitere Informationen finden Sie im Artikel [Transformieren und Unterteilen von Daten in Microsft R](/r-server/r/how-to-revoscaler-data-transform)
     
     Hinsichtlich „rxDataStep“ sollten Sie jedoch einige Punkte beachten: 
     
@@ -129,7 +129,7 @@ In dieser Übung lernen Sie, wie Sie dieselbe Aufgabe mithilfe von SQL-Funktione
 
 Wechseln Sie zu [SQL Server Management Studio](../../ssms/download-sql-server-management-studio-ssms.md) oder zu einem anderen Abfrage-Editor, um das T-SQL-Skript auszuführen.
 
-1. Verwenden Sie eine SQL-Funktion mit dem Namen *fnCalculateDistance*. Die Funktion sollte bereits in der Datenbank „NYCTaxi_Sample“ vorhanden sein. Stellen Sie im Objekt-Explorer über folgenden Pfad sicher, dass die Funktion vorhanden ist: Datenbanken > NYCTaxi_Sample > Programmierung > Funktionen > Skalarwertfunktionen >  dbo.fnCalculateDistance.
+1. Verwenden Sie eine SQL-Funktion mit dem Namen *fnCalculateDistance*. Die Funktion sollte bereits in der Datenbank „NYCTaxi_Sample“ vorhanden sein. Überprüfen Sie im Objekt-Explorer, ob die Funktion vorhanden ist, indem Sie zum folgenden Pfad navigieren: Datenbanken > NYCTaxi_Sample > Programmierbarkeit > Funktionen > Skalarwertfunktionen > dbo.fnCalculateDistance.
 
     Falls die Funktion nicht vorhanden ist, generieren Sie diese mithilfe von SQL Server Management Studio in der Datenbank „NYCTaxi_Sample“.
 

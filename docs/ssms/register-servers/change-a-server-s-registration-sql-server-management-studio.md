@@ -11,12 +11,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 877373506564d3e3d5d847fbcf5b4afb6c1e52cf
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 30c84dd43612410468e8f3f32171d4d693d50dcf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250459"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350579"
 ---
 # <a name="change-a-server39s-registration-sql-server-management-studio"></a>Ändern der Registrierung eines Servers (SQL Server Management Studio)
 

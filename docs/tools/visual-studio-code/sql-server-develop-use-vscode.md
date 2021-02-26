@@ -8,12 +8,12 @@ ms.assetid: 9766ee75-32d3-4045-82a6-4c7968bdbaa6
 author: markingmyname
 ms.author: maghan
 ms.date: 10/28/2019
-ms.openlocfilehash: d0726366cab5728038c5b1fd2bbe6681115337d4
-ms.sourcegitcommit: a9f16d7819ed0e2b7ad8f4a7d4d2397437b2bbb2
+ms.openlocfilehash: fdb3d5e695824117def89347da883a0a7a5d7a9c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88714108"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340544"
 ---
 # <a name="use-visual-studio-code-to-create-and-run-transact-sql-scripts"></a>Verwenden von Visual Studio Code zum Erstellen und Ausführen von Transact-SQL-Skripts
 
@@ -38,7 +38,7 @@ Die [mssql-Erweiterung für Visual Studio Code](https://aka.ms/mssql-marketplace
 
 1. Klicken Sie in Visual Studio Code auf **Ansicht** > **Befehlspalette**, oder drücken Sie **STRG**+**UMSCHALT**+**P** oder **F1**, um die **Befehlspalette** zu öffnen.
 
-2. Wählen Sie in der **Befehlspalette** die Option **Extensions: Install Extensions** (Erweiterungen: Erweiterungen installieren) aus der Dropdownliste aus.
+2. Wählen Sie in der **Befehlspalette** im Dropdownmenü **Erweiterungen: Erweiterungen installieren** aus.
 
 3. Geben Sie *mssql* im Bereich **Erweiterungen** ein.
 
@@ -69,14 +69,14 @@ Führen Sue die folgenden Schritte aus, um ein Verbindungsprofil zu erstellen un
 
 1. Drücken Sie **STRG**+**UMSCHALT**+**P** oder **F1**, um die **Befehlspalette** zu öffnen. 
 
-2. Geben Sie *sql* ein, um die mssql-Befehle anzuzeigen, oder geben Sie *sqlcon* ein und wählen dann **MS SQL: Connect** (MS SQL: Verbinden) aus der Dropdownliste aus.
+2. Geben Sie *sql* ein, um die mssql-Befehle anzuzeigen, oder geben Sie *sqlcon* ein, und wählen Sie dann im Dropdownmenü **MS SQL: Connect** aus.
 
    ![mssql-Befehle](./media/sql-server-develop-use-vscode/vscode-commands.png)
 
    >[!NOTE]
    >Eine SQL-Datei wie die leere SQL-Datei, die Sie erstellt haben, muss im Code-Editor über den Fokus verfügen, bevor Sie die mssql-Befehle ausführen können.
 
-3. Wählen Sie den Befehl **MS SQL: Manage Connection Profiles** (MS SQL: Verbindungsprofile verwalten) aus.
+3. Wählen Sie den Befehl **MS SQL: Manage Connection Profiles** aus.
 
 4. Klicken Sie anschließend auf **Erstellen**, um ein neues Verbindungsprofil für Ihre SQL Server-Instanz zu erstellen.
 
@@ -140,7 +140,7 @@ Alternativ zu den vorherigen Schritten können Sie Verbindungsprofile auch in de
 
 2. Drücken Sie **STRG**+**UMSCHALT**+**P** oder **F1**, um die **Befehlspalette** zu öffnen.
 
-3. Geben Sie *sql* ein, um die mssql-Befehle anzuzeigen, oder geben Sie *sqluse* ein und wählen dann **MS SQL: Use Database** (MS SQL: Datenbank verwenden) aus.
+3. Geben Sie *sql* ein, um die mssql-Befehle anzuzeigen, oder geben Sie *sqluse* ein, und wählen Sie dann den Befehl **MS SQL: Use Database** aus.
 
 4. Wählen Sie die neue Datenbank **TutorialDB** aus.
 
@@ -231,7 +231,7 @@ Wenn Sie SQL-Skripts für die Verwaltung oder für ein größeres Entwicklungspr
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn T-SQL für Sie neu ist, finden Sie weitere Informationen unter [Tutorial: Schreiben von Transact-SQL-Anweisungen](../../t-sql/tutorial-writing-transact-sql-statements.md) und in der [Transact-SQL-Referenz (Datenbank-Engine)](../../t-sql/language-reference.md).
+Unter [Tutorial: Schreiben von Transact-SQL-Anweisungen](../../t-sql/tutorial-writing-transact-sql-statements.md) und [Transact-SQL-Referenz (Datenbank-Engine)](../../t-sql/language-reference.md) finden Sie weitere Informationen, wenn Sie noch nicht mit T-SQL vertraut sind.
 
 Weitere Informationen zum Verwenden oder Mitwirken an der mssql-Erweiterung finden Sie im [Wiki des mssql-Erweiterungsprojekts](https://github.com/Microsoft/vscode-mssql/wiki).
 

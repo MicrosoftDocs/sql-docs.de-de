@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 12/04/2019
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ae3ee2fe3e8219229d3975cfb59819f4fa8e1513
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 7856ce9244f1a8767a4ce46b889fd39ca6a720f7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466221"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353911"
 ---
 # <a name="specify-a-hit-count"></a>Angeben einer Trefferanzahl
 

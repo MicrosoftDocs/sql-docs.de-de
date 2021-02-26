@@ -10,12 +10,12 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 34592d9a6cb3db8bde5a2a25098314fd9ace1208
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 3af391b2fe6a2c104a4854afdb57b4dc5eb95029
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100039480"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489174"
 ---
 # <a name="manage-big-data-clusters-bdc-the-cluster-with-notebooks"></a>Verwalten von Big Data-Clustern (BDC) mit Notebooks
 
@@ -31,7 +31,7 @@ Wenn alle Abhängigkeiten installiert wurden, **run all cells** aber fehlschläg
 Dieser Abschnitt umfasst eine Gruppe von Notebooks zum Installieren und Deinstallieren von Befehlszeilentools und Paketen, die zum Verwalten von Big-Data-Clustern für SQL Server benötigt werden.
 
 |Name |Beschreibung |
-|---|---|---|---|
+|---|---|
 |SOP010: Upgrade eines Big-Data-Clusters|Verwenden Sie dieses Notebook für ein Upgrade eines Big Data-Clusters mithilfe von azdata. |
 |SOP012: unixodbc für Mac installieren|Verwenden Sie dieses Notebook, wenn beim Verwenden von brew Fehler auftreten, um die odbc für SQL Server zu installieren.|
 |SOP036: kubectl-CLI installieren|Verwenden Sie dieses Notebook, um die kubectl-Befehlszeilenschnittstelle unabhängig von Ihrem Betriebssystem zu installieren.|
@@ -49,13 +49,24 @@ Dieser Abschnitt umfasst eine Gruppe von Notebooks zum Installieren und Deinstal
 |SOP064: azdata-CLI deinstallieren (mithilfe des Paket-Managers)|Verwenden Sie dieses Notebook zum Deinstallieren der azdata-CLI (mithilfe des Paket-Managers).|
 |SOP069: ODBC für SQL Server installieren|Verwenden Sie dieses Notebook, um den ODBC-Treiber zu installieren, da einige Unterbefehle in azdata den SQL Server ODBC-Treiber benötigen.|
 
+## <a name="encryption-at-rest-utilities-on-big-data-cluster-bdc"></a>Hilfsprogramme zur Verschlüsselung ruhender Daten im Big Data-Cluster (BDC)
+
+In diesem Abschnitt werden verschiedene Notebooks zum Verwalten von Features zur Verschlüsselung ruhender Daten im BDC beschrieben.
+
+|Name |Beschreibung |
+|---|---|
+|SOP0124: Auflisten von Schlüsseln für die Verschlüsselung ruhender Daten|Verwenden Sie dieses Notebook, um alle HDFS-Schlüssel aufzulisten.|
+|SOP0128: Aktivieren von HDFS-Verschlüsselungszonen in Big Data-Clustern|Verwenden Sie dieses Notebook, um HDFS-Verschlüsselungszonen beim Upgrade von CU6 oder früheren Versionen auf CU8 zu aktivieren. Nicht erforderlich bei neuen Bereitstellungen von CU8 und höher oder beim Upgrade auf CU9.|
+|SOP0125: Löschen des Schlüssels für die Verschlüsselung ruhender Daten|Verwenden Sie dieses Notebook, um die Schlüssel der HDFS-Verschlüsselungszone zu löschen. __Vorsicht!__|
+|SOP0126: Sichern Sie die Schlüssel für die Verschlüsselung ruhender Daten|Verwenden Sie dieses Notebook, um die Schlüssel der HDFS-Verschlüsselungszone zu sichern.|
+|SOP0127: Wiederherstellen der Schlüssel für die Verschlüsselung ruhender Daten|Verwenden Sie dieses Notebook, um die Schlüssel der HDFS-Verschlüsselungszone wiederherzustellen.|
 
 ## <a name="managing-certificates-on-big-data-clusters-bdc"></a>Verwalten von Zertifikaten in Big Data-Clustern (BDC)
 
 Eine Gruppe von Notebooks zum Ausführen eines Notebooks für die Verwaltung von Zertifikaten in Big Data-Clustern.
 
 |Name |Beschreibung |
-|---|---|---|---|
+|---|---|
 |CER001: Ein Zertifikat der Stammzertifizierungsstelle generieren|Generieren Sie ein Zertifikat der Stammzertifizierungsstelle. Erwägen Sie, ein einziges Zertifikat der Stammzertifizierungsstelle für alle Nicht-Produktionscluster in jeder Umgebung zu verwenden, da durch diese Methode die Anzahl von Stammzertifikaten der Zertifizierungsstelle verringert wird, die auf Clients hochgeladen werden müssen, die eine Verbindung mit diesen Clustern herstellen. |
 |CER002: Vorhandenes Zertifikat der Stammzertifizierungsstelle herunterladen|Verwenden Sie dieses Notebook, um ein generiertes Zertifikat der Stammzertifizierungsstelle von einem Cluster herunterzuladen.|
 |CER003: Vorhandenes Zertifikat der Stammzertifizierungsstelle hochladen|CER003: Vorhandenes Zertifikat der Stammzertifizierungsstelle hochladen.|

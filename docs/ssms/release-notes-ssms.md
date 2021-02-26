@@ -11,12 +11,12 @@ ms.author: drskwier
 ms.reviewer: maghan
 ms.custom: seo-lt-2019
 ms.date: 12/17/2020
-ms.openlocfilehash: 2e1d3faf6d17417ea1f4a134778ddd9342441231
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 050447d6f1f9f13f04b01dec82e1b50ca6efbc69
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596864"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354811"
 ---
 # <a name="release-notes-for-sql-server-management-studio-ssms"></a>Versionshinweise zu SQL Server Management Studio (SSMS)
 
@@ -722,7 +722,7 @@ Bei anderen Problemen können Sie auf [SQL Server-Benutzerfeedback](https://feed
 |Datenklassifizierung|In SMO wurde die neue Funktion „Datenklassifizierung“ hinzugefügt. Spaltenobjekt macht neue Eigenschaften verfügbar: SensitivityLabelName, SensitivityLabelId, SensitivityInformationTypeName, SensitivityInformationTypeId und IsClassified (schreibgeschützt). Weitere Informationen finden Sie unter [ADD SENSITIVITY CLASSIFICATION (Transact-SQL)](../t-sql/statements/add-sensitivity-classification-transact-sql.md).|
 |Datenklassifizierung|Das neue Menüelement „Klassifizierungsbericht“ wurde dem Flyout „Datenklassifizierung“ hinzugefügt.|
 |Datenklassifizierung| Empfehlungen wurden aktualisiert.|
-|Upgrade des Datenbank-Kompatibilitätsgrads|Eine neue Option wurde unter **_Datenbankname_ *_ > _* _Tasks_ *_ > _* _Datenbankupgrade_ *_ hinzugefügt. Mit ihr wird der neue _* Abfrageoptimierungs-Assistent** gestartet, der den Benutzer durch folgende Prozesse führt: Sammeln einer Leistungsbaseline, bevor ein Upgrade des Datenbank-Kompatibilitätsgrads durchgeführt wird Durchführen eines Upgrades auf den gewünschten Datenbank-Kompatibilitätsgrad  Sammeln eines zweiten Durchlaufs von Leistungsdaten der gesamten Arbeitsauslastung Ermitteln von Regressionen der Arbeitsauslastung und Bereitstellen getesteter Empfehlungen zur Verbesserung der Arbeitsauslastungsleistung  Dies ähnelt dem unter [Verwendungsszenarios für den Abfragespeicher](../relational-databases/performance/query-store-usage-scenarios.md#CEUpgrade) beschriebenen Datenbankupgrade mit Ausnahme des letzten Schritts, bei dem der Abfrageoptimierungs-Assistent sich nicht auf den letzten als funktionierend bekannten Zustand beruft, um Empfehlungen zu generieren.|
+|Upgrade des Datenbank-Kompatibilitätsgrads|Eine neue Option wurde unter ***Datenbankname** _ > _*_Tasks_*_ > _*_Datenbankupgrade_*_ hinzugefügt. Mit ihr wird der neue _ *Abfrageoptimierungs-Assistent** gestartet, der den Benutzer durch folgende Prozesse führt: Sammeln einer Leistungsbaseline, bevor ein Upgrade des Datenbank-Kompatibilitätsgrads durchgeführt wird Durchführen eines Upgrades auf den gewünschten Datenbank-Kompatibilitätsgrad  Sammeln eines zweiten Durchlaufs von Leistungsdaten der gesamten Arbeitsauslastung Ermitteln von Regressionen der Arbeitsauslastung und Bereitstellen getesteter Empfehlungen zur Verbesserung der Arbeitsauslastungsleistung  Dies ähnelt dem unter [Verwendungsszenarios für den Abfragespeicher](../relational-databases/performance/query-store-usage-scenarios.md#CEUpgrade) beschriebenen Datenbankupgrade mit Ausnahme des letzten Schritts, bei dem der Abfrageoptimierungs-Assistent sich nicht auf den letzten als funktionierend bekannten Zustand beruft, um Empfehlungen zu generieren.|
 |Datenschichtanwendungs-Assistent|Unterstützung für das Importieren und Exportieren von Datenschichtanwendungen mit Graphtabellen wurde hinzugefügt.|
 |Assistent zum Importieren von Flatfiles|Logik zum Benachrichtigen des Benutzers, dass der Import möglicherweise zu einer Umbenennung der Spalten geführt hat, wurde hinzugefügt.|
 |Integration Services (SSIS)|Unterstützung wurde hinzugefügt, durch die Kunden SSIS-Pakete für Azure-SSIS Integration Runtime planen können, die sich in einer Azure Government-Cloud befinden.|
