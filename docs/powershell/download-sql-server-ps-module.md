@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: 892c92ff1415aa2c7e76aa8b49ba1c57286f0716
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: af56a516a526e2363846b199b29f4dd3783cde73
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100346248"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101835368"
 ---
 # <a name="install-the-sql-server-powershell-module"></a>Installieren des SQL Server PowerShell-Moduls
 

@@ -10,13 +10,13 @@ ms.technology: connectivity
 ms.topic: conceptual
 author: johnnypham
 ms.author: v-jopha
-ms.reviewer: ''
-ms.openlocfilehash: 32c4968c4e734abf7bcb4addfde69bbdc5294d1c
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.reviewer: v-daenge
+ms.openlocfilehash: bac8c09b862e43549ade3a6d98e34fdc97596131
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96123869"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101835767"
 ---
 # <a name="data-discovery-and-classification-in-sqlclient"></a>Datenermittlung und -klassifizierung in SqlClient
 

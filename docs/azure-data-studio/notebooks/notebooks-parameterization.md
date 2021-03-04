@@ -5,16 +5,16 @@ ms.topic: how-to
 ms.prod: azure-data-studio
 ms.technology: azure-data-studio
 author: vasubhog
-ms.author: vasubhog
+ms.author: vabhog
 ms.reviewer: mikeray, alayu, maghan
 ms.custom: ''
 ms.date: 01/25/2021
-ms.openlocfilehash: dc0558d660143de35340010735c74e9abc0cdd56
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.openlocfilehash: 25e8ea8c4f10ccdb7ee2901dced68f4a66d57000
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100343452"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836077"
 ---
 # <a name="create-a-parameterized-notebook"></a>Erstellen eines parametrisierten Notebooks
 

@@ -4,20 +4,19 @@ titleSuffix: SQL Server Distributed Replay
 description: Bevor Sie mit dem Distributed Replay-Tool von SQL Server eine verteilte Wiedergabe starten können, bereiten Sie die Eingabedaten der Ablaufverfolgung vor, indem Sie die Vorverarbeitungsphase initiieren.
 ms.prod: sql
 ms.prod_service: sql-tools
-ms.reviewer: ''
 ms.technology: tools-other
 ms.topic: conceptual
-ms.assetid: c14fd3d2-5770-47c2-a851-cc13ddbc9bf5
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 658680481c8f77bf528e5db98ae0d9bd317b8eaf
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: e885abb184979156cfc029c1d9116d9ae66b4356
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100354497"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836908"
 ---
 # <a name="prepare-the-input-trace-data"></a>Vorbereiten der Eingabedaten für die Ablaufverfolgung
 

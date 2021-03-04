@@ -3,7 +3,7 @@ description: Beispiel zur Veranschaulichung der Verwendung von Always Encrypted 
 title: Beispiel zur Veranschaulichung der Verwendung von Always Encrypted mit einem Azure Key Vault-Anbieter | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/17/2020
-ms.reviewer: v-kaywon
+ms.reviewer: v-daenge
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: connectivity
@@ -11,12 +11,12 @@ ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: karinazhou
 ms.author: v-jizho2
-ms.openlocfilehash: 0cb62f9c1e32c71e982d74eb5fc868fb64020b76
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 3ac1790e6e41d4024ef7d092378f6d548ed41c4f
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100042810"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101835647"
 ---
 # <a name="example-demonstrating-use-of-azure-key-vault-provider-with-always-encrypted"></a>Beispiel zur Veranschaulichung der Verwendung von Always Encrypted mit einem Azure Key Vault-Anbieter
 
@@ -33,7 +33,7 @@ Dieses Beispiel veranschaulicht die Verwendung eines Azure Key Vault-Anbieters b
 >
 > - Um das Feature Always Encrypted unter Linux und macOS zu verwenden, ist mindestens Version 2.1.0 von **Microsoft.Data.SqlClient** erforderlich.
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 
 - [Beispiel zur Veranschaulichung der Verwendung von Always Encrypted mit Secure Enclaves mit einem Azure Key Vault-Anbieter](azure-key-vault-enclave-example.md)
 - [Tutorial: Entwickeln einer .NET-Anwendung mithilfe von Always Encrypted mit Secure Enclaves](tutorial-always-encrypted-enclaves-develop-net-apps.md)

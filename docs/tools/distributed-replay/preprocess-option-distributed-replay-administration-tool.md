@@ -4,20 +4,19 @@ titleSuffix: SQL Server Distributed Replay
 description: Das Distributed Replay-Tool („DReplay.exe“) von Microsoft SQL Server ist ein Befehlszeilentool, über das Sie mit dem Distributed Replay-Controller kommunizieren können.
 ms.prod: sql
 ms.prod_service: sql-tools
-ms.reviewer: ''
 ms.technology: tools-other
 ms.topic: conceptual
-ms.assetid: 9b5012fd-233e-4a25-a2e1-585c63b70502
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 88ce51a2a665bc127331d2c145a1a41f641881eb
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 34c4b1432fa9373e4952bb6b11264f5cec6e452a
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100349508"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836856"
 ---
 # <a name="preprocess-option-distributed-replay-administration-tool"></a>Vorverarbeitungsoption (Verwaltungstool "Distributed Replay")
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

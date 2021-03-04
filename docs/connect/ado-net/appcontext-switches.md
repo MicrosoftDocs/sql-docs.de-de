@@ -10,13 +10,13 @@ ms.technology: connectivity
 ms.topic: conceptual
 author: johnnypham
 ms.author: v-jopha
-ms.reviewer: ''
-ms.openlocfilehash: 8704cb5bf6492fc90f90344103359abdd7a32e2e
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.reviewer: v-daenge
+ms.openlocfilehash: aa6de0ff33b0d6a70ef14a42f5def3f3c6a20482
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081509"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836005"
 ---
 # <a name="appcontext-switches-in-sqlclient"></a>AppContext-Optionen in SqlClient
 
