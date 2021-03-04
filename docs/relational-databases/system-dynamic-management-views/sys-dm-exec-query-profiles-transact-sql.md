@@ -21,12 +21,12 @@ ms.assetid: 54efc6cb-eea8-4f6d-a4d0-aa05eeb54081
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ac678e88eaa21a8bb0f074e1bd899108b390bd49
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.openlocfilehash: 313603678820b1f28c7854507befc69520653fc7
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100342959"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839319"
 ---
 # <a name="sysdm_exec_query_profiles-transact-sql"></a>sys.dm_exec_query_profiles (Transact-SQL)
 [!INCLUDE[sql-asdb-asdbmi](../../includes/applies-to-version/sql-asdb-asdbmi.md)]
@@ -91,7 +91,7 @@ Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1 ist die *Standard In
 
 ## <a name="permissions"></a>Berechtigungen  
 Unter [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] und Azure SQL verwaltete Instanz sind `VIEW DATABASE STATE` Berechtigungen und die Mitgliedschaft in der `db_owner` Daten Bank Rolle erforderlich.   
-Bei [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] Premium-Tarifen ist die- `VIEW DATABASE STATE` Berechtigung in der Datenbank erforderlich. Unter für [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] die Dienst Ziele "Basic", "S0" und "S1" in SQL-Datenbank und für Datenbanken in Pools für elastische Datenbanken ist das [Server Administrator](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
+Bei [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] Premium-Tarifen ist die- `VIEW DATABASE STATE` Berechtigung in der Datenbank erforderlich. Unter für [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] die Dienst Ziele "Basic", "S0" und "S1" in SQL-Datenbank und für Datenbanken in Pools für elastische Datenbanken ist das [Server Administrator](/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
    
 ## <a name="examples"></a>Beispiele  
  Schritt 1: Melden Sie sich bei einer Sitzung an, in der Sie die Abfrage ausführen möchten, die Sie analysieren möchten `sys.dm_exec_query_profiles` . So konfigurieren Sie die Abfrage für die Profilerstellung `SET STATISTICS PROFILE ON` Führen Sie Ihre Abfrage in derselben Sitzung aus.  
@@ -127,4 +127,3 @@ ORDER BY node_id;
 ## <a name="see-also"></a>Weitere Informationen  
  [Dynamische Verwaltungssichten und -funktionen &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
  [Execution Related Dynamic Management Views and Functions &#40;Transact-SQL&#41; (Dynamische Verwaltungssichten und Funktionen im Zusammenhang mit der Ausführung (Transact-SQL))](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)  
- 

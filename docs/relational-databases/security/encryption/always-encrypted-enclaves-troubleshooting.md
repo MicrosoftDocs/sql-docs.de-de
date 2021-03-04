@@ -11,12 +11,12 @@ ms.topic: how-to
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15 || = sqlallproducts-allversions'
-ms.openlocfilehash: ee15152be634c08cb04ec6a01716604fae720471
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: dc50006d17228bf3b5ec03c2a672ed113260bf3b
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100069725"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839260"
 ---
 # <a name="troubleshoot-common-issues-for-always-encrypted-with-secure-enclaves"></a>Behandeln von häufig auftretenden Problemen bei Always Encrypted mit Secure Enclaves
 
@@ -28,7 +28,7 @@ Informationen zum Ausführen von Abfragen mit Secure Enclaves finden Sie unter [
 
 Zum Ausführen von Anweisungen mit Secure Enclaves müssen Sie Always Encrypted aktivieren und eine Nachweis-URL für die Datenbankverbindung angeben wie unter [Voraussetzungen für das Ausführen von Anweisungen mit Secure Enclaves](always-encrypted-enclaves-query-columns.md#prerequisites-for-running-statements-using-secure-enclaves) erläutert. Bei der Verbindung tritt jedoch ein Fehler auf, wenn Sie eine Nachweis-URL angeben, aber die Datenbank in [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] oder die [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)]-Zielinstanz unterstützt Secure Enclaves nicht oder ist falsch konfiguriert.
 
-- Wenn Sie [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] verwenden, überprüfen Sie, ob die Datenbank die Hardwarekonfiguration der [DC-Serie](https://docs.microsoft.com/azure/azure-sql/database/service-tiers-vcore?tabs=azure-portal#dc-series) verwendet. Weitere Informationen finden Sie unter [Aktivieren von Intel SGX für die Azure SQL-Datenbank](/azure/azure-sql/database/always-encrypted-enclaves-enable-sgx).
+- Wenn Sie [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] verwenden, überprüfen Sie, ob die Datenbank die Hardwarekonfiguration der [DC-Serie](/azure/azure-sql/database/service-tiers-vcore?tabs=azure-portal#dc-series) verwendet. Weitere Informationen finden Sie unter [Aktivieren von Intel SGX für die Azure SQL-Datenbank](/azure/azure-sql/database/always-encrypted-enclaves-enable-sgx).
 - Wenn Sie [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)] verwenden, überprüfen Sie, ob Secure Enclaves für die Instanz richtig konfiguriert ist. Weitere Informationen finden Sie unter [Konfigurieren von Secure Enclaves in SQL Server](always-encrypted-enclaves-configure-enclave-type.md).
 
 ## <a name="attestation-errors-when-using-microsoft-azure-attestation"></a>Nachweisfehler bei der Verwendung von Microsoft Azure Attestation
@@ -56,7 +56,7 @@ Aufgrund von Fehlkonfigurationen können in verschiedenen Schritten des obigen W
   - Eine falsche Nachweisrichtlinie ist wahrscheinlich die Grundursache. Stellen Sie sicher, dass Sie die von Microsoft empfohlene Richtlinie verwenden. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren eines Nachweisanbieters](/azure/azure-sql/database/always-encrypted-enclaves-configure-attestation#create-and-configure-an-attestation-provider).
   - Die Überprüfung der Richtlinie kann auch aufgrund einer Sicherheitsverletzung, die die serverseitige Enclave kompromittiert, fehlschlagen.
 - Die Clientanwendung kann sich nicht mit dem Nachweisanbieter verbinden und den öffentlichen Signaturschlüssel abrufen (in Schritt 5). Mögliche Ursachen sind:
-  - Die Konfiguration von Firewalls zwischen der Anwendung und dem Nachweisanbieter kann die Verbindungen blockieren. Vergewissern Sie sich, dass Sie eine Verbindung mit dem OpenID-Endpunkt Ihres Nachweisanbieters herstellen können, um Probleme mit der blockierten Verbindung zu beheben. Verwenden Sie beispielsweise einen Webbrowser auf dem Computer, der Ihre Anwendung hostet, um zu überprüfen, ob Sie eine Verbindung mit dem OpenID-Endpunkt herstellen können. Weitere Informationen finden Sie unter [Metadatenkonfiguration – Get](https://docs.microsoft.com/rest/api/attestation/metadataconfiguration/get).
+  - Die Konfiguration von Firewalls zwischen der Anwendung und dem Nachweisanbieter kann die Verbindungen blockieren. Vergewissern Sie sich, dass Sie eine Verbindung mit dem OpenID-Endpunkt Ihres Nachweisanbieters herstellen können, um Probleme mit der blockierten Verbindung zu beheben. Verwenden Sie beispielsweise einen Webbrowser auf dem Computer, der Ihre Anwendung hostet, um zu überprüfen, ob Sie eine Verbindung mit dem OpenID-Endpunkt herstellen können. Weitere Informationen finden Sie unter [Metadatenkonfiguration – Get](/rest/api/attestation/metadataconfiguration/get).
 
 ## <a name="attestation-errors-when-using-host-guardian-service"></a>Nachweisfehler bei der Verwendung des Host-Überwachungsdienstes
 

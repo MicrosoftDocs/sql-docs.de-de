@@ -6,16 +6,15 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.technology: sql-server-powershell
 ms.topic: conceptual
-ms.assetid: 9373de68-fd43-45f2-b9a6-149c96610aeb
 author: markingmyname
 ms.author: maghan
 ms.reviewer: matteot, drskwier
-ms.openlocfilehash: f4af22c3464993f62f8b095355ec1859e03601e4
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 4e99faa32b1dfa071a29e3e5b37ee513fa326b5e
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100338155"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839446"
 ---
 # <a name="specify-instances-in-the-sql-server-powershell-provider"></a>Angeben von Instanzen im SQL Server PowerShell-Anbieter
 

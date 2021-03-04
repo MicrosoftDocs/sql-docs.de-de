@@ -1,5 +1,5 @@
 ---
-title: Abfrageausdrücke und eindeutige Ressourcennamen | Microsoft-Dokumentation
+title: Abfrageausdrücke und eindeutige Ressourcennamen
 description: In diesem Artikel erfahren Sie mehr über Abfrageausdrücke, die mindestens ein Objekt in einer Objektmodellhierarchie auflisten, sowie über Uniform Resource Names (URNs), die einzelne Objekte eindeutig kennzeichnen.
 ms.prod: sql
 ms.technology: sql-server-powershell
@@ -8,22 +8,21 @@ helpviewer_keywords:
 - query expressions
 - unique resource names
 - URN
-ms.assetid: e0d30dbe-7daf-47eb-8412-1b96792b6fb9
 author: markingmyname
 ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: ea6bb90e43c66160463cdfa0229826b3a7013762
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: e1955201f60f58c6513928c7185dbbdad16cf445
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "100338241"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839476"
 ---
 # <a name="query-expressions-and-uniform-resource-names"></a>Abfrageausdrücke und eindeutige Ressourcennamen
 
-[!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
+[!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
 Die SMO-Modelle ( [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Management Object) und [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] PowerShell-Snap-Ins verwenden zwei Typen von Ausdruckszeichenfolgen, die XPath-Ausdrücken ähneln. Bei Abfrageausdrücken handelt es sich um Zeichenfolgen, die eine Gruppe von Kriterien angeben, mit der ein oder mehrere Objekte in einer Objektmodellhierarchie aufgezählt werden. Ein eindeutiger Ressourcenname (Uniform Resource Name, URN) ist ein spezieller Typ einer Abfrageausdrucks-Zeichenfolge, der ein einzelnes Objekt eindeutig kennzeichnet.  
 
