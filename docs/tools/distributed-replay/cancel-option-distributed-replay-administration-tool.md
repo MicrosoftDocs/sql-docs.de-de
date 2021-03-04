@@ -2,22 +2,21 @@
 title: Option „Abbrechen“ (Verwaltungstool)
 titleSuffix: SQL Server Distributed Replay
 description: Dieser Artikel beschreibt die Befehlszeilenoption „cancel“ und die entsprechende Syntax des Distributed Replay-Verwaltungstools von SQL Server.
-ms.custom: seo-lt-2019
-ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: sql-tools
-ms.reviewer: ''
 ms.technology: tools-other
 ms.topic: conceptual
-ms.assetid: fea376de-307a-4b45-b7e2-37df88f3681a
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: aa67b10652f381091f8415311480ee005f4cdc02
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.reviewer: ''
+ms.custom: seo-lt-2019
+ms.date: 03/14/2017
+ms.openlocfilehash: 21d1d74439b41a6e36287fef957c6c2df24aa1c1
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100345935"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836924"
 ---
 # <a name="cancel-option-distributed-replay-administration-tool"></a>Option Abbrechen (Verwaltungstool Distributed Replay)
 
@@ -36,7 +35,7 @@ Das [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](.
 dreplay cancel [-m controller] [-q]   
 ```  
   
-#### <a name="parameters"></a>Parameter  
+#### <a name="parameters"></a>Parameter
  **-m** *Controller*  
  Der Computername des Controllers. Sie können mit "`localhost`" oder "`.`" auf den lokalen Computer verweisen.  
   

@@ -5,17 +5,17 @@ ms.custom: ''
 ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 author: lilgreenbird
 ms.author: v-susanh
-ms.openlocfilehash: e65e98393d2601796c828f7e35b526e3fdb85bc2
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: caba4b7efb21aa2930564ec9a1d51147dd4d9dfb
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99180623"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836977"
 ---
 # <a name="azure-key-vault-sample"></a>Beispiel für Azure Key Vault
 
@@ -79,7 +79,7 @@ public class AKV {
              * This constructor is recommended to replace the above deprecated constructor */
             SQLServerColumnEncryptionAzureKeyVaultProvider akvProvider2 = new SQLServerColumnEncryptionAzureKeyVaultProvider(
                     tryAuthenticationCallback());
-        setupKeyStoreProviders(akvProvider2.getName(), akvProvider2);
+            setupKeyStoreProviders(akvProvider2.getName(), akvProvider2);
             testAKV(akvProvider2.getName(), akvProvider2, connection, statement);
 
             statement.execute("DBCC FREEPROCCACHE");
@@ -87,21 +87,21 @@ public class AKV {
             /* Constructor added in 6.2.2 driver version [Continued Support] */
             SQLServerColumnEncryptionAzureKeyVaultProvider akvProvider3 = new SQLServerColumnEncryptionAzureKeyVaultProvider(
                     applicationClientID, applicationKey);
-        setupKeyStoreProviders(akvProvider3.getName(), akvProvider3);
+            setupKeyStoreProviders(akvProvider3.getName(), akvProvider3);
             testAKV(akvProvider3.getName(), akvProvider3, connection, statement);
-    
-        statement.execute("DBCC FREEPROCCACHE");
+
+            statement.execute("DBCC FREEPROCCACHE");
             System.out.println("Create SQLServerColumnEncryptionAzureKeyVaultProvider with 'token credential'");
-        /* see Azure Identity client library for Java 
-         * https://docs.microsoft.com/java/api/overview/azure/identity-readme?view=azure-java-stable */
-        ClientSecretCredential tokenCredential = new ClientSecretCredentialBuilder().tenantId(tenantID)
+            /* see Azure Identity client library for Java 
+             * https://docs.microsoft.com/java/api/overview/azure/identity-readme?view=azure-java-stable */
+            ClientSecretCredential tokenCredential = new ClientSecretCredentialBuilder().tenantId(tenantID)
                 .clientId(applicationClientID).clientSecret(applicationKey).build();
-        /* Constructor added in 9.2.0 driver version */
+            /* Constructor added in 9.2.0 driver version */
             SQLServerColumnEncryptionAzureKeyVaultProvider akvProvider4 = new SQLServerColumnEncryptionAzureKeyVaultProvider(
                     tokenCredential);
-        setupKeyStoreProviders(akvProvider4.getName(), akvProvider4);
+            setupKeyStoreProviders(akvProvider4.getName(), akvProvider4);
             testAKV(akvProvider4.getName(), akvProvider4, connection, statement);
-        
+
             System.exit(0);
         }
     }
@@ -156,8 +156,8 @@ public class AKV {
     private static void setupKeyStoreProviders(String CUSTOM_AKV_PROVIDER_NAME,
             SQLServerColumnEncryptionKeyStoreProvider akvProvider)
             throws SQLServerException {
-    /* unregister all previously registered providers if any */
-    SQLServerConnection.unregisterColumnEncryptionKeyStoreProviders();
+        /* unregister all previously registered providers if any */
+        SQLServerConnection.unregisterColumnEncryptionKeyStoreProviders();
         Map<String, SQLServerColumnEncryptionKeyStoreProvider> map1 = new HashMap<String, SQLServerColumnEncryptionKeyStoreProvider>();
         map1.put(CUSTOM_AKV_PROVIDER_NAME, akvProvider);
         SQLServerConnection.registerColumnEncryptionKeyStoreProviders(map1);

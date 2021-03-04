@@ -5,17 +5,17 @@ ms.custom: ''
 ms.date: 09/30/2020
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 author: bazizi
 ms.author: v-beaziz
-ms.openlocfilehash: 83f87b1643517a34de24708abd15b5bbc3a52fa2
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f75cfc74616a58975bedf2dc7b2de342c0c57066
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99160037"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837365"
 ---
 # <a name="using-azure-active-directory"></a>Verwenden von Azure Active Directory
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

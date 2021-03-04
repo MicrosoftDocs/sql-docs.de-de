@@ -4,20 +4,19 @@ titleSuffix: SQL Server Distributed Replay
 description: Nachdem das Distributed Replay-Feature von SQL Server eine verteilte Wiedergabe abgeschlossen hat, kann die Wiedergabeaktivität für jeden Client in Ablaufverfolgungsdateien auf jedem Client gespeichert werden.
 ms.prod: sql
 ms.prod_service: sql-tools
-ms.reviewer: ''
 ms.technology: tools-other
 ms.topic: conceptual
-ms.assetid: da999781-f0ff-47eb-ba7a-09c0ed8f61ad
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 5c2909a8f4c6f592781d94dbef6ab0288ff5980d
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: e2d240a5fbd0b2828fbccd03494048805914fc16
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100354504"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838726"
 ---
 # <a name="review-the-replay-results"></a>Überprüfen der Wiedergabeergebnisse
 

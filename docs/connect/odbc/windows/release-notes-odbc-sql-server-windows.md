@@ -8,16 +8,16 @@ ms.prod_service: connectivity
 ms.technology: connectivity
 ms.topic: conceptual
 ms.assetid: b8459ed8-625e-4d8b-891c-e7e78c9977cc
-ms.reviewer: v-chojas
-author: v-makouz
+ms.reviewer: v-daenge
+author: v-chojas
 ms.author: v-chojas
 manager: kenvh
-ms.openlocfilehash: 902e954265155db26c46f2106c6477e4783eafd5
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 23af1879610f55cfccb7c6e8a9f8071752a2a35c
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100038620"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837297"
 ---
 # <a name="release-notes-for-microsoft-odbc-driver-for-sql-server-on-windows"></a>Versionshinweise für Microsoft ODBC Driver for SQL Server für Windows
 

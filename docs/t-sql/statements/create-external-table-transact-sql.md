@@ -1,8 +1,8 @@
 ---
 description: CREATE EXTERNAL TABLE (Transact-SQL)
-title: CREATE EXTERNAL TABLE (Transact-SQL) | Microsoft-Dokumentation
+title: CREATE EXTERNAL TABLE (Transact-SQL)
 ms.custom: ''
-ms.date: 01/27/2020
+ms.date: 02/12/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
@@ -18,16 +18,15 @@ helpviewer_keywords:
 - External
 - External, table create
 - PolyBase, external table
-ms.assetid: 6a6fd8fe-73f5-4639-9908-2279031abdec
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 5348c8af5912cbabcc0d094a0f727c5f2d1a7c39
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ed9508c4c5e518cb7d0b27694be8fa290f25be88
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99190998"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837557"
 ---
 # <a name="create-external-table-transact-sql"></a>CREATE EXTERNAL TABLE (Transact-SQL)
 

@@ -4,20 +4,19 @@ titleSuffix: SQL Server Distributed Replay
 description: In diesem Artikel werden die Produktanforderungen beschrieben, die Sie berücksichtigen müssen, bevor Sie das Distributed Replay-Feature von SQL Server verwenden.
 ms.prod: sql
 ms.prod_service: sql-tools
-ms.reviewer: ''
 ms.technology: tools-other
 ms.topic: conceptual
-ms.assetid: aee11dde-daad-439b-b594-9f4aeac94335
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: ee8c7a67b1071f3b78b5fc18fb21be28f1d658c2
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: c036ba7fc3332420d0a8faff23c3972b15385c55
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100345917"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837159"
 ---
 # <a name="configure-distributed-replay"></a>Konfigurieren von Distributed Replay
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

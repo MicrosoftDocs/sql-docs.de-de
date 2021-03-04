@@ -6,17 +6,16 @@ ms.prod: sql
 ms.reviewer: ''
 ms.technology: tools-other
 ms.topic: conceptual
-ms.assetid: ea89386e-1598-4412-8b37-680d14b2a5b6
 author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: a8b9ddc9b67fc1838aa1de7cc2aa523a99ecea25
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: cd8d700b30db16e2438621ee6ad59d260bb01b1f
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100338748"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837767"
 ---
 # <a name="status-option-distributed-replay-administration-tool"></a>Option Status (Verwaltungstool Distributed Replay)
 

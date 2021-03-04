@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c1bc13d4-8297-4daf-bb19-4c1e5ba292a6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: deae632ce9305b58b72e24e1a57507f9f4c5ee89
-ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
+ms.openlocfilehash: f24b3bb19150271532561d691a1ed1f4c89dfbc5
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489434"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838086"
 ---
 # <a name="monitoring-report-server-performance"></a>Überwachen der Leistung des Berichtsservers
 
@@ -68,13 +68,13 @@ SQL Server 2016 Reporting Services umfasst die folgenden Leistungsobjekte:
   
 -   **ReportServer:Service** und **ReportServerSharePoint:Service** , HTTP-bezogene Ereignisse und die Verwaltung des Arbeitsspeichers zu überwachen. Diese Leistungsindikatoren sind spezifisch für [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], und sie verfolgen HTTP-bezogene Ereignisse für den Berichtsserver nach, wie z. B. Anforderungen, Verbindungen und Anmeldeversuche. Darüber hinaus schließt dieses Leistungsobjekt Leistungsindikatoren in Bezug auf die Speicherverwaltung ein.  
   
- Falls auf einem Computer mehrere Berichtsserverinstanzen vorhanden sind, können die Instanzen gemeinsam oder separat überwacht werden. Wählen Sie beim Hinzufügen eines Leistungsindikators die zu überwachenden Instanzen aus. Weitere Informationen zum Verwenden des Leistungsmonitors (perfmon.msc) und zum Hinzufügen von Leistungsindikatoren finden Sie in der Produktdokumentation zum [!INCLUDE[msCoName](../../includes/msconame-md.md)] [Windows-Leistungsmonitor](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
+ Falls auf einem Computer mehrere Berichtsserverinstanzen vorhanden sind, können die Instanzen gemeinsam oder separat überwacht werden. Wählen Sie beim Hinzufügen eines Leistungsindikators die zu überwachenden Instanzen aus. Weitere Informationen zum Verwenden des Leistungsmonitors (perfmon.msc) und zum Hinzufügen von Leistungsindikatoren finden Sie in der Produktdokumentation zum [!INCLUDE[msCoName](../../includes/msconame-md.md)] [Windows-Leistungsmonitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
   
 ## <a name="other-performance-counters"></a>Weitere Leistungsindikatoren  
  Benutzerdefinierte [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]-Leistungsindikatoren werden nur für die weiter oben aufgeführten Reporting Services-Leistungsobjekte bereitgestellt. Die folgenden .NET Framework-Leistungsobjekte stellen zusätzliche Leistungsüberwachungsdaten für den Berichtsserver bereit.
  
  > [!NOTE]
- > In Power BI-Berichtsserver und SQL Server Reporting Services 2017 und höher sind keine Reporting Services-Leistungsobjekte enthalten. Zur Leistungsüberwachung für den Berichtsserver stehen [.NET Framework-Leistungsindikatoren](https://docs.microsoft.com/dotnet/framework/debug-trace-profile/performance-counters) zur Verfügung. 
+ > In Power BI-Berichtsserver und SQL Server Reporting Services 2017 und höher sind keine Reporting Services-Leistungsobjekte enthalten. Zur Leistungsüberwachung für den Berichtsserver stehen [.NET Framework-Leistungsindikatoren](/dotnet/framework/debug-trace-profile/performance-counters) zur Verfügung. 
  
 |Leistungsobjekt|Notizen|  
 |------------------------|-----------|  
@@ -98,4 +98,3 @@ SQL Server 2016 Reporting Services umfasst die folgenden Leistungsobjekte:
  [Konfigurieren von verfügbarem Speicher für Berichtsserveranwendungen](../../reporting-services/report-server/configure-available-memory-for-report-server-applications.md)   
  [Reporting Services-Berichtsserver &#40;einheitlicher Modus&#41;](../../reporting-services/report-server/reporting-services-report-server-native-mode.md)   
  [Reporting Services-Tools](../../reporting-services/tools/reporting-services-tools.md)  
-  

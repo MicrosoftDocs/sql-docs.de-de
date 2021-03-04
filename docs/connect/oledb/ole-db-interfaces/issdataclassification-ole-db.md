@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 09/30/2020
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: reference
 apiname:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - ISSDataClassification interface
 author: bazizi
 ms.author: v-beaziz
-ms.openlocfilehash: 23c575e31f151156165e09c34baf6c81b44b209b
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: e799a27babfe8e7b920b7dcb1c1d8a9be8f4fb27
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100342479"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837347"
 ---
 # <a name="issdataclassification"></a>ISSDataClassification
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../../../includes/applies-to-version/sql-asdb-asa.md)]

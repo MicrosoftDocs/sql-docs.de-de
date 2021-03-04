@@ -4,18 +4,17 @@ description: Erfahren Sie, wie Sie TCP-Protokolle mithilfe von SQLPS aktivieren.
 ms.prod: sql
 ms.technology: sql-server-powershell
 ms.topic: conceptual
-ms.assetid: 89b70725-bbe7-4ffe-a27d-2a40005a97e7
 author: markingmyname
 ms.author: maghan
 ms.reviewer: matteot
 ms.custom: ''
 ms.date: 08/06/2020
-ms.openlocfilehash: 158b15f6d7e7471fccab43400def4609f55a13c6
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 6aad2599996294679d5bd20d3a0e1a71a099b00b
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100062350"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837957"
 ---
 # <a name="how-to-enable-the-tcp-protocol"></a>Aktivieren des TCP-Protokolls
 

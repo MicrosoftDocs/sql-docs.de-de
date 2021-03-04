@@ -11,12 +11,12 @@ ms.topic: reference
 ms.assetid: 9d5481d5-13bc-4388-b3aa-78676c0fc709
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 46b57275d92f4eb6acb64c276e3b34ea67efb429
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 62ad5c26342ce03d3098d5a835776d193df4b88c
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99202024"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837231"
 ---
 # <a name="pdoerrorinfo"></a>PDO::errorInfo
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -130,14 +130,14 @@ pdo_sqlsrv.report_additional_errors = 0
 
 ## <a name="warnings-and-errors"></a>Warnungen und Fehler
 
-Seit Release 5.9.0 werden ODBC-Warnungen nicht mehr als Fehler protokolliert. Das heißt, das [Fehlercodes](https://docs.microsoft.com/sql/odbc/reference/appendixes/appendix-a-odbc-error-codes) mit dem Präfix „01“ als Warnungen protokolliert werden. Anders ausgedrückt: Wenn der Benutzer ausschließlich Fehler protokollieren möchte, aktualisieren Sie die Datei „php.ini“ wie folgt:
+Seit Release 5.9.0 werden ODBC-Warnungen nicht mehr als Fehler protokolliert. Das heißt, das [Fehlercodes](../../odbc/reference/appendixes/appendix-a-odbc-error-codes.md) mit dem Präfix „01“ als Warnungen protokolliert werden. Anders ausgedrückt: Wenn der Benutzer ausschließlich Fehler protokollieren möchte, aktualisieren Sie die Datei „php.ini“ wie folgt:
 
 ```
 [pdo_sqlsrv]  
 pdo_sqlsrv.log_severity = 1
 ```
 
-In diesem Fall enthält die Protokolldatei keine Warnmeldung(en). Überprüfen Sie, wie die [Protokollierung](https://docs.microsoft.com/sql/connect/php/logging-activity#logging-activity-using-the-pdo_sqlsrv-driver) für pdo_sqlsrv-Benutzer funktioniert.
+In diesem Fall enthält die Protokolldatei keine Warnmeldung(en). Überprüfen Sie, wie die [Protokollierung](./logging-activity.md#logging-activity-using-the-pdo_sqlsrv-driver) für pdo_sqlsrv-Benutzer funktioniert.
 
 ## <a name="see-also"></a>Weitere Informationen  
 [PDO-Klasse](../../connect/php/pdo-class.md)

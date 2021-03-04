@@ -7,16 +7,16 @@ ms.prod_service: connectivity
 ms.custom: ''
 ms.technology: connectivity
 ms.topic: conceptual
-ms.reviewer: v-kaywon
+ms.reviewer: ''
 ms.author: v-daenge
 author: David-Engel
 manager: v-mabarw
-ms.openlocfilehash: faa8974dd8ab7201158592c50288c31e7656e5f0
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 4c16930d75d191c83f3f6eead028bc9913556e3c
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100058165"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837137"
 ---
 # <a name="using-always-encrypted-with-the-php-drivers-for-sql-server"></a>Verwenden von Always Encrypted mit den PHP-Treibern für SQL Server
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

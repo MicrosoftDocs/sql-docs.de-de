@@ -6,14 +6,14 @@ ms.prod: sql
 ms.technology: connectivity
 ms.topic: conceptual
 ms.reviewer: genemi
-author: mateusz-kmiecik
-ms.author: v-makmie
-ms.openlocfilehash: e66856d7eac47bca5fe7093cbec02d9414c585ef
-ms.sourcegitcommit: eeb30d9ac19d3ede8d07bfdb5d47f33c6c80a28f
+author: David-Engel
+ms.author: v-daenge
+ms.openlocfilehash: dfc66e7c1f1aa787ccc366c7dc50613741724a1f
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96523077"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837441"
 ---
 # <a name="release-notes-for-the-microsoft-ole-db-driver-for-sql-server"></a>Anmerkungen zu dieser Version vom OLE DB-Treiber für SQL Server
 

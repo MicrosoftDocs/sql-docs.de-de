@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15 || = sqlallproducts-allversions'
-ms.openlocfilehash: bc92b0af972236b588369869afc5b023735ae699
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 130d2a9f2d92a77ab2d2e033f8e5f4fb9f88ef9f
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237131"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837661"
 ---
 # <a name="run-transact-sql-statements-using-secure-enclaves"></a>Ausführen von Transact-SQL-Anweisungen mit Secure Enclaves
 
@@ -67,7 +67,7 @@ Ihre Umgebung muss die folgenden Anforderungen erfüllen, damit das Ausführen v
 - Sie benötigen eine Nachweis-URL aus Ihrer Umgebung vom Dienstadministrator, der für Nachweise zuständig ist.
 
   - Wenn Sie [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] und den Host-Überwachungsdienst (Host Guardian Service, HGS) verwenden, finden Sie weitere Informationen unter [Ermitteln und Teilen der Nachweis-URL für HGS](always-encrypted-enclaves-host-guardian-service-deploy.md#step-6-determine-and-share-the-hgs-attestation-url).
-  - Wenn Sie [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] und Microsoft Azure Attestation verwenden, finden Sie weitere Informationen unter [Ermitteln der Nachweis-URL für Ihre Nachweisrichtlinie](/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver15#secure-enclave-attestation).
+  - Wenn Sie [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] und Microsoft Azure Attestation verwenden, finden Sie weitere Informationen unter [Ermitteln der Nachweis-URL für Ihre Nachweisrichtlinie](./always-encrypted-enclaves.md?view=sql-server-ver15#secure-enclave-attestation).
 
 - Wenn Sie über Ihre Anwendung eine Verbindung mit der Datenbank herstellen, muss diese einen Clienttreiber verwenden, der Always Encrypted mit Secure Enclaves unterstützt. Die Anwendung muss eine Verbindung mit der Datenbank herstellen. Hierbei muss Always Encrypted für die Datenbankverbindung aktiviert, und das Nachweisprotokoll und die Nachweis-URL müssen ordnungsgemäß konfiguriert sein. Ausführliche Informationen finden Sie unter [Entwickeln von Anwendungen mithilfe von Always Encrypted mit Secure Enclaves](always-encrypted-enclaves-client-development.md).
 - Wenn Sie SQL Server Management Studio (SSMS) oder Azure SQL Data Studio verwenden, müssen Sie Always Encrypted aktivieren und das Nachweisprotokoll und die Nachweis-URL konfigurieren, wenn Sie eine Verbindung mit der Datenbank herstellen. Weitere Informationen hierzu finden Sie in den nachfolgenden Abschnitten.

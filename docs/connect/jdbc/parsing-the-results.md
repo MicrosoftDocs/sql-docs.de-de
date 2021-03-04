@@ -5,19 +5,19 @@ ms.custom: ''
 ms.date: 08/12/2019
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 ms.assetid: ''
 author: rene-ye
 ms.author: v-reye
 manager: kenvh
-ms.openlocfilehash: 93e494ceeac791368a0017f919a9676bbc193966
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7b56223594d1126c373b4fd8b24dabc1e81dab67
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438332"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837080"
 ---
 # <a name="parsing-the-results"></a>Analysieren der Ergebnisse
 

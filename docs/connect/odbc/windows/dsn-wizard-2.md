@@ -5,18 +5,18 @@ ms.custom: ''
 ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 ms.assetid: 76326eeb-1144-4b9f-85db-50524c655d30
 author: David-Engel
-ms.author: v-jizho2
-ms.openlocfilehash: 749ba8963234955e4893a2c5197bcfd4c26f2584
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.author: v-daenge
+ms.openlocfilehash: 74e061e4ac66da2dfdc165e66338f3ffb70387ea
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99159553"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837287"
 ---
 # <a name="data-source-wizard-screen-2"></a>Datenquellen-Assistent (Bildschirm 2)
 

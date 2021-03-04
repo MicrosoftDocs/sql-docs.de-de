@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15'
-ms.openlocfilehash: e84635c1f32396e033841c546dafc1796624d5ab
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: cbec7eb15ed8acad746e3fcb2013ee8100bcdd26
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237092"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837699"
 ---
 # <a name="always-encrypted-with-secure-enclaves"></a>Always Encrypted mit Secure Enclaves
 
@@ -46,7 +46,7 @@ Während der Verarbeitung der Anweisung werden weder die Daten noch die Spaltenv
 
 In [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)] verwendet Always Encrypted über [Virtualisierungsbasierte Sicherheit (VBS)](https://www.microsoft.com/security/blog/2018/06/05/virtualization-based-security-vbs-memory-enclaves-data-protection-through-isolation/) abgesicherte Secure Enclaves (auch als VSM-Enclaves bezeichnet) im Windows-Arbeitsspeicher.
 
-In [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] verwendet Always Encrypted mit Secure Enclaves [Intel Software Guard Extensions-Enclaves (Intel SGX)](https://itpeernetwork.intel.com/microsoft-azure-confidential-computing/). Intel SGX ist eine hardwarebasierte Trusted Execution Environment-Technologie, die in Datenbanken mit der Hardwarekonfiguration [DC-series](https://docs.microsoft.com/azure/azure-sql/database/service-tiers-vcore?tabs=azure-portal#dc-series) unterstützt wird.
+In [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] verwendet Always Encrypted mit Secure Enclaves [Intel Software Guard Extensions-Enclaves (Intel SGX)](https://itpeernetwork.intel.com/microsoft-azure-confidential-computing/). Intel SGX ist eine hardwarebasierte Trusted Execution Environment-Technologie, die in Datenbanken mit der Hardwarekonfiguration [DC-series](/azure/azure-sql/database/service-tiers-vcore?tabs=azure-portal#dc-series) unterstützt wird.
 
 ## <a name="secure-enclave-attestation"></a>Nachweis von Secure Enclaves
 
@@ -56,7 +56,7 @@ Der Prozess der Überprüfung der Enclave wird als **Enclavenachweis** bezeichne
 
 Der Nachweisprozess für Secure Enclaves vom Typ VBS in [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)] ist der [Runtimenachweis für die Windows Defender-Systemüberwachung](https://www.microsoft.com/security/blog/2018/06/05/virtualization-based-security-vbs-memory-enclaves-data-protection-through-isolation/), bei dem der Host-Überwachungsdienst als Nachweisdienst verwendet wird. 
 
-Für die Durchführung des Nachweises für Intel SGX-Enclaves in [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] benötigen Sie [Microsoft Azure Attestation](https://docs.microsoft.com/azure/attestation/overview).
+Für die Durchführung des Nachweises für Intel SGX-Enclaves in [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] benötigen Sie [Microsoft Azure Attestation](/azure/attestation/overview).
 
 > [!NOTE]
 > [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)] unterstützt Microsoft Azure Attestation nicht. Der Host-Überwachungsdienst ist die einzige Nachweislösung, die für VBS-Enclaves in [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)] unterstützt wird.
@@ -167,7 +167,7 @@ Folgendes sollten Sie berücksichtigen:
   - Wenn Ihre Datenbank Indizes für Enclave-fähige Spalten mit zufälliger Verschlüsselung enthält, stellen Sie sicher, dass Sie die [ADR](../../backup-restore/restore-and-recovery-overview-sql-server.md#adr) in der Datenbank aktivieren, bevor Sie eine Datenbanksicherung erstellen. Mit ADR wird sichergestellt, dass die Datenbank, einschließlich der Indizes, sofort nach der Wiederherstellung der Datenbank verfügbar ist. Weitere Informationen finden Sie unter [Datenbankwiederherstellung](#database-recovery).
   
 - **Azure SQL-Datenbank**
-  - Wenn Sie die [aktive Georeplikation](https://docs.microsoft.com/azure/azure-sql/database/active-geo-replication-overview) konfigurieren, stellen Sie sicher, dass die sekundäre Datenbank Secure Enclaves unterstützt, wenn auch die primäre Datenbank dies tut.
+  - Wenn Sie die [aktive Georeplikation](/azure/azure-sql/database/active-geo-replication-overview) konfigurieren, stellen Sie sicher, dass die sekundäre Datenbank Secure Enclaves unterstützt, wenn auch die primäre Datenbank dies tut.
 
 Wenn Sie in SQL Server oder Azure SQL-Datenbank Ihre Datenbank mithilfe einer BACPAC-Datei migrieren, müssen Sie sicherstellen, dass Sie alle Indizes für Enclave-fähige Spalten mit zufälliger Verschlüsselung löschen, bevor Sie die BACPAC-Datei erstellen.
 

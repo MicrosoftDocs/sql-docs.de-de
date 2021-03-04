@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 07/26/2018
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.assetid: f78b81ed-5214-43ec-a600-9bfe51c5745a
 author: v-makouz
 ms.author: v-makouz
 manager: kenvh
-ms.openlocfilehash: a4c7664c35d4c98ebcf8f8ae4a57d2948a83624c
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 3b97e6407f541657acee2b15097d3fbb877854a9
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081519"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837414"
 ---
 # <a name="data-classification"></a>Datenklassifizierung
 [!INCLUDE[Driver_ODBC_Download](../../includes/driver_odbc_download.md)]

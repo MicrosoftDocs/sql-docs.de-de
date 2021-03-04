@@ -20,12 +20,12 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: cc082ece27db2fdfd43216b8bea4e8ab4001754b
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.openlocfilehash: 86b3be2a5a1dad9c27f9b55b90d4a079ec6ee1e4
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100347634"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837257"
 ---
 # <a name="sysdm_os_wait_stats-transact-sql"></a>sys.dm_os_wait_stats (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -35,7 +35,7 @@ Gibt Informationen zu allen Wartevorgängen in den Threads zurück, die ausgefü
 > [!NOTE] 
 > Um dies von **[!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] oder** aus aufzurufen, verwenden Sie den Namen **sys.dm_pdw_nodes_os_wait_stats**.  
   
-|Spaltenname|Datentyp|Beschreibung|  
+|Spaltenname|Datentyp|BESCHREIBUNG|  
 |-----------------|---------------|-----------------|  
 |wait_type|**nvarchar(60)**|Der Name des Wartetyps. Weitere Informationen finden Sie unter [Wartetypen](#WaitTypes) weiter unten in diesem Thema.|  
 |waiting_tasks_count|**bigint**|Anzahl von Wartevorgängen für diesen Wartetyp. Dieser Leistungsindikator wird beim Starten eines Wartevorgangs inkrementiert.|  
@@ -47,7 +47,7 @@ Gibt Informationen zu allen Wartevorgängen in den Threads zurück, die ausgefü
 ## <a name="permissions"></a>Berechtigungen
 
 In [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] ist die- `VIEW SERVER STATE` Berechtigung erforderlich.   
-Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken das [Server Administrator](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
+Bei den Dienst Zielen "Basic", "S0" und "S1" in SQL-Datenbank ist für Datenbanken in Pools für elastische Datenbanken das [Server Administrator](/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) Konto oder das [Azure Active Directory Administrator](/azure/azure-sql/database/authentication-aad-overview#administrator-structure) Konto erforderlich. Für alle anderen SQL-Datenbank-Dienst Ziele `VIEW DATABASE STATE` ist die Berechtigung in der Datenbank erforderlich.   
 
 ##  <a name="types-of-waits"></a><a name="WaitTypes"></a> Warte Typen  
  **Ressourcen warte** Vorgänge treten auf, wenn ein Arbeits Thread den Zugriff auf eine Ressource anfordert, die nicht verfügbar ist, weil die Ressource von einem anderen Arbeits Thread verwendet wird oder noch nicht verfügbar ist. Beispiele für Ressourcen warte Vorgänge sind sperren, Latches, Netzwerk-und Datenträger-e/a-warte Vorgänge. Sperren und Latchwartevorgänge sind Vorgänge, die auf Synchronisierungsobjekte warten.  
@@ -86,7 +86,7 @@ Dieser Befehl setzt alle Leistungsindikatoren auf 0 zurück.
   
  In der folgenden Tabelle werden die Wartetypen für Tasks in einer Liste aufgeführt.  
 
-|Typ |Beschreibung| 
+|Type |BESCHREIBUNG| 
 |-------------------------- |--------------------------| 
 |ABR |Nur für Informationszwecke identifiziert. Wird nicht unterstützt. Zukünftige Kompatibilität wird nicht sichergestellt.| | 
 |AM_INDBUILD_ALLOCATION |Nur zur internen Verwendung. <br /><br /> **Gilt für**:  [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] und höher.| 
@@ -1029,4 +1029,4 @@ Dieser Befehl setzt alle Leistungsindikatoren auf 0 zurück.
     
  [SQL Server dynamischen Verwaltungs Sichten im Zusammenhang mit dem Betriebs System &#40;Transact-SQL-&#41;](../../relational-databases/system-dynamic-management-views/sql-server-operating-system-related-dynamic-management-views-transact-sql.md)   
  [sys.dm_exec_session_wait_stats &#40;Transact-SQL-&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-session-wait-stats-transact-sql.md)   
- [sys.dm_db_wait_stats &#40;Azure SQL-Datenbank&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-wait-stats-azure-sql-database.md)  
+ [sys.dm_db_wait_stats &#40;Azure SQL-Datenbank&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-wait-stats-azure-sql-database.md)

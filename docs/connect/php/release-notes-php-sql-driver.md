@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 91cca3d2-ba99-4a6d-b0de-beb9699cb3f8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8d53811bef7cb4c570d2aa60638474f815548a17
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 0df2acfa00507f42d3ee03a0a65ff2ae25aafbd1
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100058335"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837184"
 ---
 # <a name="release-notes-for-the-microsoft-drivers-for-php-for-sql-server"></a>Versionshinweise für die Microsoft-Treiber für PHP für SQL Server
 
@@ -68,7 +68,7 @@ Thanks a lot.  2019-03-28  (DevO= 1467988)
 | Festlegen des Abfragetimeouts ohne LOCK TIMEOUT, wodurch ein zusätzlicher Trip zum Server gespart wird | &nbsp; |
 | &nbsp; | &nbsp; |
 
-<sup>1</sup> Dieses Release erfordert den ODBC-Treiber 17.4.2 oder höher. Andernfalls wird eine Warnung mit dem Hinweis angezeigt, dass ein Attribut nicht festgelegt werden kann. Diese Warnung kann unterdrückt werden, wenn ein älterer ODBC-Treiber verwendet wird. Wenn Sie SQLSRV verwenden, lesen Sie [Vorgehensweise: Konfigurieren der Behandlung von Fehlern und Warnungen unter Verwendung des SQLSRV-Treibers](https://docs.microsoft.com/sql/connect/php/how-to-configure-error-and-warning-handling-using-the-sqlsrv-driver). Wenn Sie PDO_SQLSRV verwenden, werden Warnungen standardmäßig unterdrückt. Sie können jedoch protokolliert werden. Weitere Informationen finden Sie unter [Protokollieraktivität](https://docs.microsoft.com/sql/connect/php/logging-activity).
+<sup>1</sup> Dieses Release erfordert den ODBC-Treiber 17.4.2 oder höher. Andernfalls wird eine Warnung mit dem Hinweis angezeigt, dass ein Attribut nicht festgelegt werden kann. Diese Warnung kann unterdrückt werden, wenn ein älterer ODBC-Treiber verwendet wird. Wenn Sie SQLSRV verwenden, lesen Sie [Vorgehensweise: Konfigurieren der Behandlung von Fehlern und Warnungen unter Verwendung des SQLSRV-Treibers](./how-to-configure-error-and-warning-handling-using-the-sqlsrv-driver.md). Wenn Sie PDO_SQLSRV verwenden, werden Warnungen standardmäßig unterdrückt. Sie können jedoch protokolliert werden. Weitere Informationen finden Sie unter [Protokollieraktivität](./logging-activity.md).
 
 ## <a name="581"></a>5.8.1
 

@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 08/12/2019
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.suite: sql
 ms.technology: connectivity
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.assetid: ''
 author: lilgreenbird
 ms.author: v-susanh
 manager: kenvh
-ms.openlocfilehash: 31510c4fbe4291168753809c227650951592e1e6
-ms.sourcegitcommit: 644223c40af7168f9d618526e9f4cd24e115d1db
+ms.openlocfilehash: a0d58875603781f4959ee8d10cb683c98bd884c1
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328040"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837469"
 ---
 # <a name="using-ntlm-authentication-to-connect-to-sql-server"></a>Herstellen von Verbindungen mit SQL Server mit NTLM-Authentifizierung
 

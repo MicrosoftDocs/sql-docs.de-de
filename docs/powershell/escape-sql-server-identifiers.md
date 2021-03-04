@@ -4,18 +4,17 @@ description: Einige Zeichen können in den Begrenzungsbezeichnern von SQL Server
 ms.prod: sql
 ms.technology: sql-server-powershell
 ms.topic: conceptual
-ms.assetid: 8a73e945-daa6-4e5d-93da-10f000f1f3a2
 author: markingmyname
 ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: 25d6badaab16caef587afc9843ccc220f392acb4
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 105acf1e3e67d558ccbb0ae450afba9468de3a5f
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100354301"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838029"
 ---
 # <a name="escape-sql-server-identifiers"></a>Escape-Bezeichner für SQL Server
 

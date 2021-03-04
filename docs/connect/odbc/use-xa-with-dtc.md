@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 05/06/2020
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: karinazhou
 ms.author: v-jizho2
 manager: kenvh
-ms.openlocfilehash: 3b5b8444058f0078b56ab5e4500b86a4c35a1897
-ms.sourcegitcommit: fb1430aedbb91b55b92f07934e9b9bdfbbd2b0c5
+ms.openlocfilehash: 5de34ddb29a94051cd55fb8d1f66bc1cb0ee0292
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82886327"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837319"
 ---
 # <a name="using-xa-transactions"></a>Verwenden von XA-Transaktionen
 [!INCLUDE[Driver_ODBC_Download](../../includes/driver_odbc_download.md)]

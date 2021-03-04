@@ -3,20 +3,19 @@ title: Installieren von Distributed Replay
 titleSuffix: SQL Server Distributed Replay
 description: 'In diesem Artikel werden die verschiedenen Möglichkeiten zum Installieren des Distributed Replays beschrieben: mit dem Installations-Assistenten, dem Eingabeaufforderungsfenster oder einer Konfigurationsdatei.'
 ms.prod: sql
-ms.reviewer: ''
 ms.technology: tools-other
 ms.topic: conceptual
-ms.assetid: ea1171da-f50e-4f16-bedc-5e468a46477f
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: fc4c971d62ac4a54a786b426ea8f7855882fa0c2
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 1dfe3a196af914c8cbba177256b41b9da454025b
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100345921"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838085"
 ---
 # <a name="install-distributed-replay"></a>Installieren von Distributed Replay
 
@@ -24,35 +23,36 @@ ms.locfileid: "100345921"
 
 Sie können Distributed Replay auf eine von drei Weisen installieren:  
   
--   [Installieren von Distributed Replay über den Installations-Assistenten](#bkmk_wizard)  
+- [Installieren von Distributed Replay über den Installations-Assistenten](#bkmk_wizard)  
   
--   [Installieren von Distributed Replay von der Eingabeaufforderung](#bkmk_command_prompt)  
+- [Installieren von Distributed Replay von der Eingabeaufforderung](#bkmk_command_prompt)  
   
--   [Installieren von Distributed Replay mithilfe einer Konfigurationsdatei](#bkmk_configuration_file)  
+- [Installieren von Distributed Replay mithilfe einer Konfigurationsdatei](#bkmk_configuration_file)  
   
 ##  <a name="install-distributed-replay-from-the-installation-wizard"></a><a name="bkmk_wizard"></a> Installieren von Distributed Replay über den Installations-Assistenten  
- Installieren Sie die [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Distributed Replay-Features mit dem [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] -Installations-Assistenten. Beachten Sie Folgendes, bevor Sie sich für ein Verzeichnis für die Installation der Funktionen entscheiden:  
+
+Installieren Sie die [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Distributed Replay-Features mit dem [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] -Installations-Assistenten. Beachten Sie Folgendes, bevor Sie sich für ein Verzeichnis für die Installation der Funktionen entscheiden:  
   
--   Sie können das Verwaltungstool auf demselben Computer wie den Distributed Replay-Controller oder auf anderen Computern installieren.  
+- Sie können das Verwaltungstool auf demselben Computer wie den Distributed Replay-Controller oder auf anderen Computern installieren.  
   
--   Es kann in jeder Distributed Replay-Umgebung jeweils nur einen Controller geben.  
+- Es kann in jeder Distributed Replay-Umgebung jeweils nur einen Controller geben.  
   
--   Sie können den Clientdienst auf bis zu 16 (physischen oder virtuellen) Computern installieren.  
+- Sie können den Clientdienst auf bis zu 16 (physischen oder virtuellen) Computern installieren.  
   
--   Nur eine Instanz des Clientdiensts kann auf dem Distributed Replay Controller-Computer installiert werden. Wenn die Distributed Replay-Umgebung mehr als einen Client umfasst, wird davon abgeraten, den Clientdienst auf demselben Computer wie den Controller zu installieren. Dadurch könnte sich die Gesamtgeschwindigkeit der verteilten Wiedergabe verringern.  
+- Nur eine Instanz des Clientdiensts kann auf dem Distributed Replay Controller-Computer installiert werden. Wenn die Distributed Replay-Umgebung mehr als einen Client umfasst, wird davon abgeraten, den Clientdienst auf demselben Computer wie den Controller zu installieren. Dadurch könnte sich die Gesamtgeschwindigkeit der verteilten Wiedergabe verringern.  
   
--   Für Leistungstestszenarien sollten das Verwaltungstool, der Distributed Replay Controller-Dienst oder Client-Dienst auf der Zielinstanz von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]nicht installiert werden. Das Installieren aller dieser Features auf dem Zielserver sollte auf Funktionstests für die Anwendungskompatibilität beschränkt werden.  
+- Für Leistungstestszenarien sollten das Verwaltungstool, der Distributed Replay Controller-Dienst oder Client-Dienst auf der Zielinstanz von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]nicht installiert werden. Das Installieren aller dieser Features auf dem Zielserver sollte auf Funktionstests für die Anwendungskompatibilität beschränkt werden.  
   
--   Nach der Installation muss der Controllerdienst, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Distributed Replay Controller, ausgeführt werden, bevor Sie den Distributed Replay Client-Dienst auf den Clients starten.  
+- Nach der Installation muss der Controllerdienst, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Distributed Replay Controller, ausgeführt werden, bevor Sie den Distributed Replay Client-Dienst auf den Clients starten.  
   
 > [!NOTE]  
 >  Um die Distributed Replay-Funktionen zu entfernen oder zu ändern, verwenden Sie das Fenster **Programme und Funktionen** in der **Systemsteuerung**. Wählen Sie im **Programm deinstallieren oder ändern**[!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] aus, und klicken Sie anschließend auf **Entfernen** , um den [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] -Installations-Assistenten zu öffnen. Kontrollieren Sie auf der Seite **Funktionen auswählen** die Distributed Replay-Funktionen, die Sie entfernen möchten.  
   
  **Voraussetzungen:**  
   
--   Stellen Sie sicher, dass die Computer, die Sie verwenden möchten, die im Thema [Distributed Replay Requirements](../../tools/distributed-replay/distributed-replay-requirements.md)beschriebenen Anforderungen erfüllen.  
+- Stellen Sie sicher, dass die Computer, die Sie verwenden möchten, die im Thema [Distributed Replay Requirements](../../tools/distributed-replay/distributed-replay-requirements.md)beschriebenen Anforderungen erfüllen.  
   
--   Erstellen Sie zuvor die Domänenbenutzerkonten, unter denen die Controller- und Clientdienste ausgeführt werden. Diese Konten sollten keine Mitglieder der Windows-Gruppe "Administratoren" sein. Weitere Informationen finden Sie im Abschnitt "Benutzer- und Dienstkonten" im Thema [Distributed Replay Security](../../tools/distributed-replay/distributed-replay-security.md) .  
+- Erstellen Sie zuvor die Domänenbenutzerkonten, unter denen die Controller- und Clientdienste ausgeführt werden. Diese Konten sollten keine Mitglieder der Windows-Gruppe "Administratoren" sein. Weitere Informationen finden Sie im Abschnitt "Benutzer- und Dienstkonten" im Thema [Distributed Replay Security](../../tools/distributed-replay/distributed-replay-security.md) .  
   
     > [!NOTE]  
     >  Sie können lokale Benutzerkonten verwenden, wenn Sie das Verwaltungstool, den Controllerdienst und den Clientdienst auf dem gleichen Computer ausführen.  
@@ -61,7 +61,7 @@ Sie können Distributed Replay auf eine von drei Weisen installieren:
   
  Angenommen, Sie verwenden die Standardorte und eine Standardinstallation, dann befindet sich das Basisverzeichnis in "C:\Programme\Microsoft SQL Server". Innerhalb des Verzeichnisses werden die Binärdateien und Assemblys in folgenden Unterverzeichnissen installiert:  
   
--   Auf einem 32-Bit-System:  
+- Auf einem 32-Bit-System:  
   
      [!INCLUDE[ssInstallPath](../../includes/ssinstallpath-md.md)]Tools  
   
@@ -69,7 +69,7 @@ Sie können Distributed Replay auf eine von drei Weisen installieren:
   
      \<Share Feature Directory>\Tools\\(alternatives freigegebenes Featureverzeichnis, das vom Benutzer angegeben wird)  
   
--   Auf einem 64-Bit-System:  
+- Auf einem 64-Bit-System:  
   
      C:\Programme\\[!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (x86)\130\Tools  
   
@@ -93,23 +93,23 @@ Sie können Distributed Replay auf eine von drei Weisen installieren:
   
 7.  Konfigurieren Sie auf der Seite **Funktionsauswahl** , welche Funktionen Sie installieren möchten.  
   
-    -   Wählen Sie zum Installieren des Verwaltungstools **Verwaltungstools - Einfach** aus.  
+    - Wählen Sie zum Installieren des Verwaltungstools **Verwaltungstools - Einfach** aus.  
   
-    -   Wählen Sie **Distributed Replay Controller** aus, um den Controllerdienst zu installieren.  
+    - Wählen Sie **Distributed Replay Controller** aus, um den Controllerdienst zu installieren.  
   
-    -   Wählen Sie **Distributed Replay Client** aus, um den Clientdienst zu installieren.  
+    - Wählen Sie **Distributed Replay Client** aus, um den Clientdienst zu installieren.  
   
      **Wichtig**: Wenn Sie den Distributed Replay-Controller konfigurieren, können Sie mindestens ein Benutzerkonto angeben, das zum Ausführen der Distributed Replay-Clientdienste verwendet wird. Die folgenden Kontotypen werden unterstützt:  
   
-    -   Domänenbenutzerkonto  
+    - Domänenbenutzerkonto  
   
-    -   Vom Benutzer erstelltes lokales Benutzerkonto  
+    - Vom Benutzer erstelltes lokales Benutzerkonto  
   
-    -   Administrator  
+    - Administrator  
   
-    -   Virtuelles Konto und verwaltetes Dienstkonto (Managed Service Account, MSA)  
+    - Virtuelles Konto und verwaltetes Dienstkonto (Managed Service Account, MSA)  
   
-    -   Netzwerkdienste, lokale Dienste und System  
+    - Netzwerkdienste, lokale Dienste und System  
   
      Gruppenkonten (lokales oder Domänenbenutzerkonto) und andere integrierte Konten (wie "Jeder") werden nicht akzeptiert.  
   
@@ -188,9 +188,9 @@ setup /q /ACTION=Install /FEATURES=DREPLAY_CLT /IAcceptSQLServerLicenseTerms /CL
   
  Setup unterstützt die Verwendung der Konfigurationsdatei nur in der Befehlszeile. Die Verarbeitungsreihenfolge der Parameter während der Verwendung der Konfigurationsdatei wird im Folgenden erläutert:  
   
--   Die Konfigurationsdatei überschreibt die Standards in einem Paket  
+- Die Konfigurationsdatei überschreibt die Standards in einem Paket  
   
--   Befehlszeilenwerte überschreiben die Werte in der Konfigurationsdatei  
+- Befehlszeilenwerte überschreiben die Werte in der Konfigurationsdatei  
   
  Weitere Informationen zum Verwenden einer Konfigurationsdatei finden Sie unter [Installieren von SQL Server 2016 mithilfe einer Konfigurationsdatei](../../database-engine/install-windows/install-sql-server-using-a-configuration-file.md).  
   
@@ -205,7 +205,7 @@ setup /q /ACTION=Install /FEATURES=DREPLAY_CLT /IAcceptSQLServerLicenseTerms /CL
   
 #### <a name="to-install-distributed-replay-using-the-configuration-file"></a>So installieren Sie Distributed Replay mithilfe der Konfigurationsdatei  
   
--   Führen Sie die Installation an der Eingabeaufforderung aus, und geben Sie die Datei ConfigurationFile.ini mit dem ConfigurationFile-Parameter an.  
+- Führen Sie die Installation an der Eingabeaufforderung aus, und geben Sie die Datei ConfigurationFile.ini mit dem ConfigurationFile-Parameter an.  
   
  **Beispielsyntax**  
   

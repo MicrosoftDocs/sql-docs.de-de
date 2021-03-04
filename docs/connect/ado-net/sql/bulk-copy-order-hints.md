@@ -10,13 +10,13 @@ ms.technology: connectivity
 ms.topic: conceptual
 author: johnnypham
 ms.author: v-jopha
-ms.reviewer: ''
-ms.openlocfilehash: c7365bdc6da75e04d019ca1a6a87b90dd8d4ec3c
-ms.sourcegitcommit: 6b3569977b034554883a94d73d1c4df6e2f74fe2
+ms.reviewer: v-daenge
+ms.openlocfilehash: ba652ab9eb1cbe6564a8f1b2aa5d7309cba86ac4
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85110141"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837107"
 ---
 # <a name="order-hints-for-bulk-copy-operations"></a>Hinweise zur Reihenfolge bei Massenkopiervorgängen
 

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c02f6942-0484-4567-a78e-fe8aa2053536
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 45b617e91f2f296aa9749f7f8f2f25b640ddf546
-ms.sourcegitcommit: c52a6aeb6fa6d7c3a86b3e84449361f4a0949ad0
+ms.openlocfilehash: 82e1ad1147867abd9308dc89517855df830a38e6
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99623770"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837153"
 ---
 # <a name="sqlsrv_field_metadata"></a>sqlsrv_field_metadata
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -240,7 +240,7 @@ Wie in der folgenden JSON-Darstellung veranschaulicht, werden die gezeigten Date
 
 ## <a name="sensitivity-rank-using-a-predefined-set-of-values"></a>Vertraulichkeitsbewertung mithilfe vordefinierter Werte
 
-Ab 5.9.0 können PHP-Treiber bei Verwendung von ODBC-Treibern mit Version 17.4.2 und höher Klassifizierungsbewertungen abrufen. Mithilfe von [ADD SENSITIVITY CLASSIFICATION](/sql/t-sql/statements/add-sensitivity-classification-transact-sql) können Benutzer eine Bewertung definieren, um Datenspalten zu klassifizieren. 
+Ab 5.9.0 können PHP-Treiber bei Verwendung von ODBC-Treibern mit Version 17.4.2 und höher Klassifizierungsbewertungen abrufen. Mithilfe von [ADD SENSITIVITY CLASSIFICATION](../../t-sql/statements/add-sensitivity-classification-transact-sql.md) können Benutzer eine Bewertung definieren, um Datenspalten zu klassifizieren. 
 
 Wenn ein Benutzer beispielsweise `NONE` und `LOW` jeweils BirthDate und SSN zuweist, sieht die JSON-Darstellung folgendermaßen aus:
 
@@ -249,7 +249,7 @@ Wenn ein Benutzer beispielsweise `NONE` und `LOW` jeweils BirthDate und SSN zuwe
 {"0":{"Label":{"name":"Highly Confidential - secure privacy","id":""},"Information Type":{"name":"Credentials","id":""},"rank":10},"rank":10}
 ```
 
-Wie bei der [Vertraulichkeitsklassifizierung](/sql/relational-databases/system-catalog-views/sys-sensitivity-classifications-transact-sql) ersichtlich wird, lauten die numerischen Werte für die Bewertungen wie folgt:
+Wie bei der [Vertraulichkeitsklassifizierung](../../relational-databases/system-catalog-views/sys-sensitivity-classifications-transact-sql.md) ersichtlich wird, lauten die numerischen Werte für die Bewertungen wie folgt:
 
 ```
 0 for NONE
@@ -313,4 +313,4 @@ Unten sehen Sie die aktualisierte JSON-Darstellung:
 
 [Konstanten &#40;Microsoft-Treiber für PHP für SQL Server&#41;](../../connect/php/constants-microsoft-drivers-for-php-for-sql-server.md)  
 
-[Informationen zu den Codebeispielen in der Dokumentation](../../connect/php/about-code-examples-in-the-documentation.md)  
+[Informationen zu den Codebeispielen in der Dokumentation](../../connect/php/about-code-examples-in-the-documentation.md)

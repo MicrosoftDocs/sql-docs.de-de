@@ -5,18 +5,18 @@ ms.custom: ''
 ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: v-jizho2
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 author: v-chojas
-ms.author: v-jizho2
+ms.author: v-chojas
 manager: kenvh
-ms.openlocfilehash: 43f6be9103f000150d8069888b6129b36ccf29e9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2c178b7afd7bf46003b689ef56af67f12609e0a9
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99194606"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837339"
 ---
 # <a name="release-notes-for-the-microsoft-odbc-driver-for-sql-server-on-linux-and-macos"></a>Versionshinweise zu Microsoft ODBC Driver for SQL Server unter Linux und macOS
 

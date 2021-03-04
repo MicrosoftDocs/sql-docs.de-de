@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 09/30/2020
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: reference
 apiname:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - GetSensitivityClassification method
 author: bazizi
 ms.author: v-beaziz
-ms.openlocfilehash: 93c630b2164015c9efedc3a00e51a67ff7fdce25
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 232bcf6187967e9dab7b09414626785d7808e18f
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100342472"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837307"
 ---
 # <a name="issdataclassificationgetsensitivityclassification"></a>ISSDataClassification::GetSensitivityClassification
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../../../includes/applies-to-version/sql-asdb-asa.md)]

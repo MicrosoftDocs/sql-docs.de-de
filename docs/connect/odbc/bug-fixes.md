@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.assetid: f78b81ed-5214-43ec-a600-9bfe51c5745a
 author: v-chojas
 ms.author: v-jizho2
 manager: kenvh
-ms.openlocfilehash: 21766a0abcdd0fff1e1e3973436732caacdf8189
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 6f1072f51349952be373a69a04ac556b38e3f25f
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100038650"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837487"
 ---
 # <a name="list-of-bugs-fixed"></a>Liste der behobenen Fehler
 

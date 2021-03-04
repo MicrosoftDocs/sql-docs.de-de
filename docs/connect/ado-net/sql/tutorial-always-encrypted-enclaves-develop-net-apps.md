@@ -3,7 +3,7 @@ description: 'Tutorial: Entwickeln einer .NET-Anwendung mithilfe von Always Encr
 title: 'Tutorial: Entwickeln einer .NET-Anwendung mithilfe von Always Encrypted mit Secure Enclaves | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/15/2021
-ms.reviewer: v-kaywon
+ms.reviewer: v-daenge
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: connectivity
@@ -11,12 +11,12 @@ ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: karinazhou
 ms.author: v-jizho2
-ms.openlocfilehash: 177737bd2927583bdfda1c9b36904faf4ed6023d
-ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
+ms.openlocfilehash: 735d0b552843a95ea388b91e2ed1da3fcfec2790
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98534699"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837017"
 ---
 # <a name="tutorial-develop-a-net-application-using-always-encrypted-with-secure-enclaves"></a>Tutorial: Entwickeln einer .NET-Anwendung mithilfe von Always Encrypted mit Secure Enclaves
 

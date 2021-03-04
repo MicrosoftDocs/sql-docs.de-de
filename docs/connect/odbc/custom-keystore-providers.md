@@ -5,18 +5,18 @@ ms.custom: ''
 ms.date: 07/12/2017
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 ms.assetid: a6166d7d-ef34-4f87-bd1b-838d3ca59ae7
-ms.author: v-chojas
+ms.author: v-daenge
 author: David-Engel
-ms.openlocfilehash: c814fa5e755c46d09d3c02a6ef17e3d4ab562db7
-ms.sourcegitcommit: 8ffc23126609b1cbe2f6820f9a823c5850205372
+ms.openlocfilehash: f1f075c7ea2e80ec1760012c33ed9f719837c036
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81633194"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837429"
 ---
 # <a name="custom-keystore-providers"></a>Benutzerdefinierte Keystore-Anbieter
 [!INCLUDE[Driver_ODBC_Download](../../includes/driver_odbc_download.md)]

@@ -2,7 +2,7 @@
 title: 'Schritt 3: Herstellen der Verbindung mit SQL mithilfe von pyodbc'
 description: Schritt 3 ist ein Proof of Concept, der zeigt, wie Sie mithilfe von Python and pyODBC eine Verbindung mit SQL Server herstellen können. Die grundlegenden Beispiele veranschaulichen das Auswählen und Einfügen von Daten.
 ms.custom: ''
-ms.date: 03/01/2020
+ms.date: 03/02/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.assetid: 4bfd6e52-817d-4f0a-a33d-11466e3f0484
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 26cbdea53547f30a59dc6953d7bf68bddc712164
-ms.sourcegitcommit: 33e774fbf48a432485c601541840905c21f613a0
+ms.openlocfilehash: 808cb17d29362e76fdcc69171b21c9ffffd5c1ed
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88807038"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837127"
 ---
 # <a name="step-3-proof-of-concept-connecting-to-sql-using-pyodbc"></a>Schritt 3: Proof of Concept für Verbindungen mit SQL mithilfe von pyodbc
 
 Dieses Beispiel ist ein Proof of Concept. Es wurde zur Verdeutlichung vereinfacht und entspricht nicht zwangsläufig den von Microsoft empfohlenen Best Practices.  
 
-Führen Sie als Erstes das folgende Beispielskript aus. Erstellen Sie eine Datei namens „test.py“, und fügen Sie nach und nach alle Codeausschnitte ein. 
+Führen Sie als Erstes das folgende Beispielskript aus. Erstellen Sie eine Datei namens „test.py“, und fügen Sie nach und nach alle Codeausschnitte ein.
 
 ```
 > python test.py
@@ -43,13 +43,11 @@ cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';
 cursor = cnxn.cursor()
 
 ```  
-  
-  
+
 ## <a name="run-query"></a>Abfrage ausführen  
   
 Mit der Funktion „cursor.execute“ können Sie ein Resultset aus einer Abfrage einer SQL-Datenbank abrufen. Diese Funktion akzeptiert eine Abfrage und gibt ein Resultset zurück, das mithilfe von „cursor.fetchone()“ durchlaufen werden kann.
-  
-  
+
 ```python
 #Sample select query
 cursor.execute("SELECT @@version;") 
@@ -62,28 +60,23 @@ while row:
   
 ## <a name="insert-a-row"></a>Einfügen einer Zeile  
   
-In diesem Beispiel sehen Sie, wie Sie eine [INSERT](../../../t-sql/statements/insert-transact-sql.md)-Anweisung sicher ausführen und Parameter übergeben. Diese Parameter schützen Ihre Anwendung vor einer [Einschleusung von SQL-Befehlen](../../../relational-databases/tables/primary-and-foreign-key-constraints.md).    
-  
-  
+In diesem Beispiel sehen Sie, wie Sie eine [INSERT](../../../t-sql/statements/insert-transact-sql.md)-Anweisung sicher ausführen und Parameter übergeben. Diese Parameter schützen Ihre Anwendung vor einer [Einschleusung von SQL-Befehlen](../../../relational-databases/tables/primary-and-foreign-key-constraints.md).
+
 ```python
 #Sample insert query
-cursor.execute("""
+count = cursor.execute("""
 INSERT INTO SalesLT.Product (Name, ProductNumber, StandardCost, ListPrice, SellStartDate) 
 VALUES (?,?,?,?,?)""",
-'SQL Server Express New 20', 'SQLEXPRESS New 20', 0, 0, CURRENT_TIMESTAMP) 
+'SQL Server Express New 20', 'SQLEXPRESS New 20', 0, 0, CURRENT_TIMESTAMP).rowcount
 cnxn.commit()
-row = cursor.fetchone()
-
-while row: 
-    print('Inserted Product key is ' + str(row[0]))
-    row = cursor.fetchone()
+print('Rows inserted: ' + str(count))
 ```  
 
 ## <a name="azure-active-directory-and-the-connection-string"></a>Azure Active Directory und die Verbindungszeichenfolge
 
 pyODBC verwendet den Microsoft ODBC Driver for SQL Server.
 Wenn Sie die ODBC Driver-Version 17.1 oder höher verwenden, können Sie über pyODBC den interaktiven AAD-Modus des Treibers verwenden.
-Diese interaktive Option funktioniert, wenn Python und pyODBC dem ODBC Driver gestatten, das Dialogfeld anzuzeigen. Diese Option ist nur unter Windows-Betriebssystemen verfügbar. 
+Diese interaktive Option funktioniert, wenn Python und pyODBC dem ODBC Driver gestatten, das Dialogfeld anzuzeigen. Diese Option ist nur unter Windows-Betriebssystemen verfügbar.
 
 ### <a name="example-connection-string-for-azure-active-directory-interactive-authentication"></a>Beispiel für eine Verbindungszeichenfolge für die interaktive Azure Active Directory-Authentifizierung
 

@@ -13,12 +13,12 @@ ms.assetid: 5b13b5ac-1e4c-45e7-bda7-ebebe2784551
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 83985f8cb34b9efa8485f9827dd9692a38f91a65
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: c8379a2e1c18ea5da82abda5ad25dee47679a742
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "100344792"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837777"
 ---
 # <a name="best-practices-with-query-store"></a>Bewährte Methoden für den Abfragespeicher
 
@@ -441,7 +441,7 @@ Die globalen Ablaufverfolgungsflags 7745 und 7752 können verwendet werden, um d
 
 Beim Abfragespeicher für ein sekundäres aktives Georeplikat von Azure SQL-Datenbank handelt es sich um eine schreibgeschützte Kopie der Aktivität für das primäre Replikat. 
 
-Vermeiden Sie, dass nicht übereinstimmende Ebenen von Azure SQL-Datenbank-Instanzen an der Georeplikation beteiligt sind. Eine sekundäre Datenbank sollte dieselbe oder eine ähnliche Computegröße wie die primäre Datenbank aufweisen und dieselbe Dienstebene wie die primäre Datenbank verwenden. Suchen Sie nach dem Wartetyp HADR_THROTTLE_LOG_RATE_MISMATCHED_SLO in [sys.dm_db_wait_stats](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-wait-stats-azure-sql-database), der auf eine Drosselung der Transaktionsprotokollrate für das primäre Replikat aufgrund einer sekundären Verzögerung hinweist.
+Vermeiden Sie, dass nicht übereinstimmende Ebenen von Azure SQL-Datenbank-Instanzen an der Georeplikation beteiligt sind. Eine sekundäre Datenbank sollte dieselbe oder eine ähnliche Computegröße wie die primäre Datenbank aufweisen und dieselbe Dienstebene wie die primäre Datenbank verwenden. Suchen Sie nach dem Wartetyp HADR_THROTTLE_LOG_RATE_MISMATCHED_SLO in [sys.dm_db_wait_stats](../system-dynamic-management-views/sys-dm-db-wait-stats-azure-sql-database.md), der auf eine Drosselung der Transaktionsprotokollrate für das primäre Replikat aufgrund einer sekundären Verzögerung hinweist.
 
 Weitere Informationen zum Abschätzen und Konfigurieren der Größe der sekundären Azure SQL-Datenbank-Instanz der aktiven Georeplikation finden Sie unter [Konfigurieren einer sekundären Datenbank](/azure/azure-sql/database/active-geo-replication-overview#configuring-secondary-database).
 

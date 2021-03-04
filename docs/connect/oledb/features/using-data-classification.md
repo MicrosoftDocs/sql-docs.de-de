@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 09/30/2020
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: bazizi
 ms.author: v-beaziz
 manager: kenvh
-ms.openlocfilehash: f289b12800c7ce88607c587e31c3f99887c8d9bb
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 8f8a431fa10a1a2db853276deb7c5098beb67ad6
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100347897"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837440"
 ---
 # <a name="using-data-classification"></a>Verwenden der Datenklassifizierung
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../../../includes/applies-to-version/sql-asdb-asa.md)]

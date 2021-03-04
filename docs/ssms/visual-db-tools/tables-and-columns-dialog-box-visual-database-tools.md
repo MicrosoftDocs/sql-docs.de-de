@@ -13,12 +13,12 @@ ms.assetid: 8cf27be1-e66d-4735-a428-9ab4b33af4f5
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: 444691b0ec7196c2dcb09426b7e7cb3063445826
-ms.sourcegitcommit: 0bee2b4392d50151c3839a937371588cc2ce2d3e
+ms.openlocfilehash: ce49303d14dc92811b383349c7fa8d74202ab8ea
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98667737"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836937"
 ---
 # <a name="tables-and-columns-dialog-box-visual-database-tools"></a>Tabellen und Spalten (Dialogfeld) (Visual Database Tools)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -47,5 +47,4 @@ Listet die Spalten der in der Liste **Fremdschlüsseltabelle** ausgewählten Tab
 > Die Spalten, die Sie für den Fremdschlüssel auswählen, müssen denselben Datentyp wie die entsprechenden Primärspalten aufweisen. Die Anzahl der Spalten muss in den jeweiligen Schlüsseln gleich sein. Wenn beispielsweise der Primärschlüssel der Tabelle auf der Primärseite der Beziehung aus zwei Spalten besteht, müssen Sie für jede Spalte eine entsprechende Spalte in der Tabelle für die Fremdschlüsselseite der Beziehung auswählen.  
   
 ## <a name="see-also"></a>Weitere Informationen  
-[Vorgehensweise: Erstellen von Fremdschlüssel-Beziehungen](https://msdn.microsoft.com/867a54b8-5be4-46e6-9702-49ae6dabf67c).  
-  
+[Vorgehensweise: Erstellen von Fremdschlüssel-Beziehungen](../../relational-databases/tables/create-foreign-key-relationships.md).  
