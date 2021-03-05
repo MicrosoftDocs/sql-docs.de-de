@@ -10,16 +10,24 @@ ms.technology: ssma
 ms.topic: conceptual
 ms.assetid: 1cc38f85-3caa-42d0-8c76-a380c1d15c67
 ms.author: alexiva
-ms.openlocfilehash: a047a1528bafe0f04fca72661d4e32cc8b15fc89
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: a12bb61546ed042a98a3cae521572ef55723cfdf
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100069295"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186507"
 ---
 # <a name="whats-new-in-ssma-for-db2-db2tosql"></a>Neues in SSMA für DB2 (DB2ToSQL)
 
 In diesem Artikel wird SQL Server Migration Assistant (SSMA) für DB2-Änderungen in jeder Version aufgeführt.
+
+## <a name="ssma-v817"></a>SSMA v 8.17
+
+Die v 8.17-Version von SSMA für DB2 enthält die folgenden Änderungen:
+
+* Verbessern der Konvertierung von Translation-Funktionen
+* Korrigieren der Datenmigration für Tabellen mit berechneten Spalten
+* HTML-Bewertungsberichte aktualisieren, um den SQL-Text mit dem modernen Editor anzuzeigen
 
 ## <a name="ssma-v816"></a>SSMA v 8.16
 

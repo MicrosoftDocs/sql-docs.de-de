@@ -2,7 +2,7 @@
 description: CHANGETABLE (Transact-SQL)
 title: CHANGETABLE (Transact-SQL) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 08/08/2016
+ms.date: 02/12/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
@@ -20,64 +20,63 @@ ms.assetid: d405fb8d-3b02-4327-8d45-f643df7f501a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: d3d4e72681f16689c6241c8f9d7b35119d898722
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2de815ad24a41604f18d0083a800df3a56feb021
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99196139"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186626"
 ---
 # <a name="changetable-transact-sql"></a>CHANGETABLE (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-  Gibt Änderungsnachverfolgungsinformationen für eine Tabelle zurück. Sie können diese Anweisung verwenden, um alle Änderungen für eine Tabelle oder die Änderungsnachverfolgungsinformationen für eine bestimmte Zeile abzurufen.  
+  Gibt Überarbeitungsinformationen für eine Tabelle zurück. Sie können diese Anweisung verwenden, um alle Änderungen für eine Tabelle oder die Überarbeitungsinformationen für eine bestimmte Zeile abzurufen.  
   
  ![Symbol für Themenlink](../../database-engine/configure-windows/media/topic-link.gif "Symbol für Themenlink") [Transact-SQL-Syntaxkonventionen](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntax  
   
-```sql
+```syntaxsql
 CHANGETABLE (  
-    { CHANGES table , last_sync_version  
-    | VERSION table , <primary_key_values> } )  
-[AS] table_alias [ ( column_alias [ ,...n ] )  
+    { CHANGES <table_name> , <last_sync_version> 
+    | VERSION <table_name> , <primary_key_values> } 
+    , [ FORCESEEK ] 
+    )  
+[AS] <table_alias> [ ( <column_alias> [ ,...n ] )  
   
 <primary_key_values> ::=  
-( column_name [ , ...n ] ) , ( value [ , ...n ] )  
+( <column_name> [ , ...n ] ) , ( <value> [ , ...n ] )  
 ```  
   
 ## <a name="arguments"></a>Argumente  
- Änderungs *Tabelle* , *last_sync_version*  
+ Änderungen *table_name* *last_sync_version*  
  Gibt nach Verfolgungs Informationen für alle Änderungen an einer Tabelle zurück, die seit der durch *last_sync_version* angegebenen Version aufgetreten sind.  
   
- *Tabelle*  
+ *table_name*  
  Die benutzerdefinierte Tabelle, von der nachverfolgte Änderungen abgerufen werden sollen. Die Änderungsnachverfolgung muss für die Tabelle aktiviert sein. Es kann ein Tabellenname verwendet werden, der aus ein, zwei, drei oder vier Teilen besteht. Der Tabellenname kann synonym mit der Tabelle sein.  
   
  *last_sync_version*  
- Wenn Änderungen abgeufen werden, muss die aufrufende Anwendung den Punkt angeben, ab dem Änderungen erforderlich sind. Die last_sync_version gibt diesen Punkt an. Die Funktion gibt Informationen für alle Zeilen zurück, die ab dieser Version geändert worden sind. Die Anwendung fragt Änderungen mit einer größeren Versionsnummer als last_sync_version ab.  
-  
- Bevor Änderungen abgerufen werden, ruft die Anwendung in der Regel **CHANGE_TRACKING_CURRENT_VERSION ()** auf, um die Version zu erhalten, die bei der nächsten Änderung der Änderungen verwendet wird. Deshalb muss die Anwendung den tatsächlichen Wert nicht interpretieren oder verstehen.  
-  
- Da last_sync_version von der aufrufenden Anwendung abgerufen wird, muss die Anwendung den Wert persistent speichern. Wenn die Anwendung diesen Wert verliert, müssen Daten erneut initialisiert werden.  
-  
- *last_sync_version* ist **bigint**. Der Wert muss skalar sein. Ein Ausdruck verursacht einen Syntaxfehler.  
-  
- Wenn der Wert NULL ist, werden alle nachverfolgten Änderungen zurückgegeben.  
-  
+ Ein **bigint** -Skalarwert, der NULL-Werte zulässt. Ein [Ausdruck](../../t-sql/language-elements/expressions-transact-sql.md) verursacht einen Syntax Fehler. Wenn der Wert NULL ist, werden alle nachverfolgten Änderungen zurückgegeben.
+Wenn Änderungen abgeufen werden, muss die aufrufende Anwendung den Punkt angeben, ab dem Änderungen erforderlich sind. Der *last_sync_version* der diesen Punkt angibt. Die Funktion gibt Informationen für alle Zeilen zurück, die ab dieser Version geändert worden sind. Die Anwendung fragt Änderungen mit einer Version ab, die größer als *last_sync_version* ist. Bevor Änderungen abgerufen werden, ruft die Anwendung in der Regel `CHANGE_TRACKING_CURRENT_VERSION()` auf, um die Version zu erhalten, die bei der nächsten Änderung der Änderungen verwendet wird. Deshalb muss die Anwendung den tatsächlichen Wert nicht interpretieren oder verstehen. Da *last_sync_version* von der aufrufenden Anwendung abgerufen wird, muss die Anwendung den Wert persistent speichern. Wenn die Anwendung diesen Wert verliert, müssen Daten erneut initialisiert werden. 
  *last_sync_version* sollten überprüft werden, um sicherzustellen, dass es nicht zu alt ist, da einige oder alle Änderungs Informationen möglicherweise entsprechend der für die Datenbank konfigurierten Beibehaltungs Dauer bereinigt wurden. Weitere Informationen finden Sie unter [CHANGE_TRACKING_MIN_VALID_VERSION &#40;Transact-SQL-&#41;](../../relational-databases/system-functions/change-tracking-min-valid-version-transact-sql.md) und [ALTER DATABASE SET-Optionen &#40;Transact-SQL-&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md).  
   
- Versions *Tabelle*, {<primary_key_values>}  
- Gibt die letzten Änderungsnachverfolgungsinformationen für eine angegebene Zeile zurück. Primärschlüsselwerte müssen die Zeile identifizieren. <primary_key_values> identifiziert die Primärschlüssel Spalten und gibt die Werte an. Die Namen der Primärschlüsselspalten können in beliebiger Reihenfolge angegeben werden.  
+ Versions *table_name*, { *primary_key_values* }  
+ Gibt die letzten Änderungsnachverfolgungsinformationen für eine angegebene Zeile zurück. Primärschlüsselwerte müssen die Zeile identifizieren. *primary_key_values* identifiziert die Primärschlüssel Spalten und gibt die Werte an. Die Namen der Primärschlüsselspalten können in beliebiger Reihenfolge angegeben werden.  
   
- *Tabelle*  
+ *table_name*  
  Die benutzerdefinierte Tabelle, von der Änderungsnachverfolgungsinformationen abgerufen werden sollen. Die Änderungsnachverfolgung muss für die Tabelle aktiviert sein. Es kann ein Tabellenname verwendet werden, der aus ein, zwei, drei oder vier Teilen besteht. Der Tabellenname kann synonym mit der Tabelle sein.  
   
  *column_name*  
  Gibt den Namen der Primärschlüsselspalte oder der Spalten an. Es können mehrere Spaltennamen in beliebiger Reihenfolge angegeben werden.  
   
- *Wert*  
+ *value*  
  Der Wert des Primärschlüssels. Wenn mehrere Primärschlüssel Spalten vorhanden sind, müssen die Werte in derselben Reihenfolge angegeben werden, in der die Spalten in der *column_name* Liste angezeigt werden.  
-  
+
+ FORCESEEK   
+ **Gilt für:** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (Beginnend mit [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU16 und [!INCLUDE[sssql19-md](../../includes/sssql19-md.md)] ), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] und [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)]    
+ 
+ Ein optionaler Parameter, der erzwingt, dass ein Suchvorgang für den Zugriff auf die *table_name* verwendet wird. In einigen Fällen, in denen sich nur wenige Zeilen geändert haben, kann ein Überprüfungs Vorgang für den Zugriff auf die *table_name* weiterhin verwendet werden. Wenn bei einem Scanvorgang ein Leistungsproblem auftritt, verwenden Sie den- `FORCESEEK` Parameter.
+
  Möglichst *table_alias* [(*column_alias* [,... *n* ])]  
  Stellt Namen für die Ergebnisse bereit, die von CHANGETABLE zurückgegeben werden.  
   
@@ -86,7 +85,7 @@ CHANGETABLE (
   
  *column_alias*  
  Ein optionaler Spaltenalias oder eine Liste von Spaltenaliasnamen für die Spalten, die von CHANGETABLE zurückgegeben werden. Hierdurch können Spaltennamen angepasst werden, falls die Ergebnisse doppelte Namen aufweisen.  
-  
+
 ## <a name="return-types"></a>Rückgabetypen  
  **Tabelle**  
   
@@ -123,31 +122,23 @@ CHANGETABLE (
   
  Wenn Sie eine Zeile löschen und dann eine Zeile mit dem alten Primärschlüssel einfügen, wir die Änderung als Aktualisierung aller Spalten in der Zeile betrachtet.  
   
- Die Werte, die für die Spalten SYS_CHANGE_OPERATION und SYS_CHANGE_COLUMNS zurückgegeben werden, sind relativ zur angegebenen Baseline (last_sync_version). Wenn z. b. ein Einfügevorgang bei Version 10 und ein Update Vorgang bei Version 15 erfolgt ist, und wenn die Baseline *last_sync_version* 12 ist, wird ein Update gemeldet. Wenn der *last_sync_version* Wert 8 ist, wird eine Einfügung gemeldet. SYS_CHANGE_COLUMNS meldet berechnete Spalten nie als aktualisiert.  
+ Die Werte, die für die Spalten und zurückgegeben werden, `SYS_CHANGE_OPERATION` `SYS_CHANGE_COLUMNS` sind relativ zur angegebenen Baseline (last_sync_version). Wenn z. b. ein Einfügevorgang bei `10` der Version und ein Aktualisierungs Vorgang bei der Version erfolgt `15` ist und die Baseline *last_sync_version* ist `12` , wird ein Update gemeldet. Wenn der *last_sync_version* Wert ist `8` , wird eine Einfügung gemeldet. `SYS_CHANGE_COLUMNS` meldet berechnete Spalten nie als aktualisiert.  
   
  Im Allgemeinen werden alle Vorgänge, bei denen Daten in Benutzertabellen eingefügt, aktualisiert oder gelöscht werden, nachverfolgt, einschließlich der MERGE-Anweisung.  
   
  Die folgenden Vorgänge, die sich auf Benutzertabellendaten auswirken, werden nicht nachverfolgt:  
   
--   Ausführen der UPDATETEXT-Anweisung  
+-   Ausführen der `UPDATETEXT` Anweisung. Diese Anweisung ist veraltet und wird in einer zukünftigen Version von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] entfernt. Änderungen, die mithilfe der-Klausel der Update-Anweisung vorgenommen werden, werden jedoch nach `.WRITE` verfolgt.  
   
-     Diese Anweisung ist veraltet und wird in einer zukünftigen Version von [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] entfernt. Es werden jedoch Änderungen nachverfolgt, die durch die Verwendung der .WRITE-Klausel der UPDATE-Anweisung vorgenommen werden.  
-  
--   Löschen von Zeilen mit TRUNCATE TABLE  
-  
-     Wenn eine Tabelle abgeschnitten ist, werden die mit der Tabelle verknüpften Versionsinformationen der Änderungsnachverfolgung zurückgesetzt, als ob die Änderungsnachverfolgung gerade erst für die Tabelle aktiviert wurde. Eine Clientanwendung sollte immer die zuletzt synchronisierte Version überprüfen. Die Überprüfung schlägt fehl, wenn die Tabelle abgeschnitten wurde.  
+-   Löschen von Zeilen mithilfe von `TRUNCATE TABLE` . Wenn eine Tabelle abgeschnitten ist, werden die mit der Tabelle verknüpften Versionsinformationen der Änderungsnachverfolgung zurückgesetzt, als ob die Änderungsnachverfolgung gerade erst für die Tabelle aktiviert wurde. Eine Clientanwendung sollte immer die zuletzt synchronisierte Version überprüfen. Die Überprüfung schlägt fehl, wenn die Tabelle abgeschnitten wurde.  
   
 ## <a name="changetableversion"></a>CHANGETABLE(VERSION...)  
  Ein leeres Resultset wird zurückgegeben, wenn ein nicht vorhandener Primärschlüssel angegeben wird.  
   
- Der Wert von SYS_CHANGE_VERSION kann NULL sein, wenn für einen längeren Zeitraum als der Beibehaltungsdauer keine Änderung vorgenommen wurde (z. B. wenn die Änderungsinformationen durch ein Cleanup entfernt wurden) oder wenn die Zeile seit Aktivierung der Änderungsnachverfolgung für die Tabelle nicht geändert wurde.  
+ Der Wert von `SYS_CHANGE_VERSION` kann NULL sein, wenn eine Änderung nicht länger als die Beibehaltungs Dauer vorgenommen wurde (z. b. wenn die Änderungs Informationen von der Bereinigung entfernt wurden) oder die Zeile seit der Aktivierung der Änderungs Nachverfolgung für die Tabelle nicht geändert wurde.  
   
 ## <a name="permissions"></a>Berechtigungen  
- Erfordert die folgenden Berechtigungen für die Tabelle, die durch den *Tabellen* Wert angegeben wird, um Änderungs nach Verfolgungs Informationen abzurufen:  
-  
--   SELECT-Berechtigung für die Primärschlüsselspalten  
-  
--   VIEW CHANGE TRACKING  
+ Erfordert die `SELECT` -Berechtigung für die Primärschlüssel Spalten und die- `VIEW CHANGE TRACKING` Berechtigung für die Tabelle, die durch den *<table_name>* -Wert angegeben wird, um Änderungs nach Verfolgungs Informationen zu erhalten.
   
 ## <a name="examples"></a>Beispiele  
   
@@ -210,11 +201,10 @@ WHERE
         0);  
 ```  
   
-## <a name="see-also"></a>Weitere Informationen  
+## <a name="see-also"></a>Siehe auch  
  [Änderungsnachverfolgungsfunktionen &#40;Transact-SQL&#41;](../../relational-databases/system-functions/change-tracking-functions-transact-sql.md)   
  [Nachverfolgen von Datenänderungen &#40;SQL Server&#41;](../../relational-databases/track-changes/track-data-changes-sql-server.md)   
  [CHANGE_TRACKING_IS_COLUMN_IN_MASK &#40;Transact-SQL-&#41;](../../relational-databases/system-functions/change-tracking-is-column-in-mask-transact-sql.md)   
  [CHANGE_TRACKING_CURRENT_VERSION &#40;Transact-SQL&#41;](../../relational-databases/system-functions/change-tracking-current-version-transact-sql.md)   
  [CHANGE_TRACKING_MIN_VALID_VERSION &#40;Transact-SQL&#41;](../../relational-databases/system-functions/change-tracking-min-valid-version-transact-sql.md)  
-  
   

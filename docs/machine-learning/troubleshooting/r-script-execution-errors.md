@@ -9,12 +9,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 28dcbe177f5bc91ea73170978e2da9022154976f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0f9f086ec09830e65f85ca2df5232e8b401cb9eb
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470661"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186414"
 ---
 # <a name="common-r-scripting-errors-in-sql-server"></a>Häufige R-Skripterstellungsfehler in SQL Server
 [!INCLUDE [SQL Server 2016 and later](../../includes/applies-to-version/sqlserver2016.md)]
@@ -39,7 +39,7 @@ Außerdem wird empfohlen, das Skript zu überprüfen und leicht umzuschreiben, u
 
 Darüber hinaus können Sie das sqlrutils-Paket verwenden, um Ihr R-Skript in einem Format zu bündeln, das einfacher als gespeicherte Prozedur verwendet werden kann. Weitere Informationen finden Sie unter
 * [sqlrutils-Paket](../r/ref-r-sqlrutils.md)
-* [Erstellen einer gespeicherten Prozedur mithilfe von sqlrutils](../r/how-to-create-a-stored-procedure-using-sqlrutils.md)
+* [Erstellen einer gespeicherten Prozedur mithilfe von sqlrutils](/machine-learning-server/r-reference/sqlrutils/how-to-create-a-stored-procedure-from-r)
 
 ## <a name="script-returns-inconsistent-results"></a>Skript gibt inkonsistente Ergebnisse zurück
 

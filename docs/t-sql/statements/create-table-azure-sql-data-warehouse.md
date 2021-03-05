@@ -12,12 +12,12 @@ ms.assetid: ea21c73c-40e8-4c54-83d4-46ca36b2cf73
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
-ms.openlocfilehash: 336073c272094bb7ef5549aafd9f6e3b09211561
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3358f3d7393b1afa250cfc5f0a953c1ef178f820
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99156739"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186567"
 ---
 # <a name="create-table-azure-synapse-analytics"></a>CREATE TABLE (Azure Synapse Analytics)
 
@@ -29,6 +29,8 @@ Informationen zu Tabellen und deren Verwendung finden Sie unter [Tabellen in[!IN
 
 > [!NOTE]
 >  Die Erläuterungen zu [!INCLUDE[ssSDW](../../includes/sssdwfull-md.md)] in diesem Artikel gelten sowohl für [!INCLUDE[ssSDW](../../includes/sssdwfull-md.md)] als auch für [!INCLUDE[ssPDW](../../includes/sspdw-md.md)], sofern nicht anders angegeben.
+
+[!INCLUDE[synapse-analytics-od-supported-tables](../../includes/synapse-analytics-od-supported-tables.md)]
 
  ![Artikellinksymbol](../../database-engine/configure-windows/media/topic-link.gif "Artikellinksymbol") [Transact-SQL-Syntaxkonventionen](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
 

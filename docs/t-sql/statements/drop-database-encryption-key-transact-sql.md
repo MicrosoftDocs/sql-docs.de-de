@@ -20,12 +20,12 @@ ms.assetid: 9231bd89-75e1-45c4-b4c8-13f08695af68
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 9c10b3f1f3d32379532799f4f96f56329cb26eb4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 36e0c4d453c646b7fe3136d33337a604efe89bcc
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99206224"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186617"
 ---
 # <a name="drop-database-encryption-key-transact-sql"></a>DROP DATABASE ENCRYPTION KEY (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]
@@ -42,7 +42,9 @@ ms.locfileid: "99206224"
 ```syntaxsql  
 DROP DATABASE ENCRYPTION KEY  
 ```  
-  
+
+[!INCLUDE[synapse-analytics-od-unsupported-syntax](../../includes/synapse-analytics-od-unsupported-syntax.md)]
+
 [!INCLUDE[sql-server-tsql-previous-offline-documentation](../../includes/sql-server-tsql-previous-offline-documentation.md)]
 
 ## <a name="remarks"></a>Bemerkungen

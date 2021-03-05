@@ -37,12 +37,12 @@ ms.author: vanto
 ms.custom: ''
 ms.date: 06/01/2019
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: c13c477c5042658edd47f5f9be53a707e47628d2
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 03bd9ad046be57d9fedea50ae310956b26a32581
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99235964"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186484"
 ---
 # <a name="from-clause-plus-join-apply-pivot-transact-sql"></a>FROM-Klausel mit JOIN, APPLY, PIVOT (Transact-SQL)
 
@@ -153,7 +153,7 @@ FROM { <table_source> [ ,...n ] }
 }  
   
 <tablesample_clause> ::=
-    TABLESAMPLE ( sample_number [ PERCENT ] ) -- Azure Synapse Analytics only  
+    TABLESAMPLE ( sample_number [ PERCENT ] ) -- Azure Synapse Analytics Dedicated SQL pool only  
  
 <joined_table> ::=   
 {  

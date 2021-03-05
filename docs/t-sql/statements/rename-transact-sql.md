@@ -10,12 +10,12 @@ ms.assetid: 0907cfd9-33a6-4fa6-91da-7d6679fee878
 author: ronortloff
 ms.author: rortloff
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
-ms.openlocfilehash: aeada08423c63de760c3153cd100241c7a32280f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 70c72d0d9b884431a314290de4c4514c720e85ee
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164983"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186480"
 ---
 # <a name="rename-transact-sql"></a>RENAME (Transact-SQL)
 [!INCLUDE[applies-to-version/asa-pdw](../../includes/applies-to-version/asa-pdw.md)]
@@ -50,6 +50,8 @@ RENAME DATABASE [::] database_name TO new_database_name
 -- Rename a column 
 RENAME OBJECT [::] [ [ database_name . [schema_name ] ] . ] | [schema_name . ] ] table_name COLUMN column_name TO new_column_name [;]
 ```
+
+[!INCLUDE[synapse-analytics-od-unsupported-syntax](../../includes/synapse-analytics-od-unsupported-syntax.md)]
 
 ## <a name="arguments"></a>Argumente
 

@@ -1,7 +1,7 @@
 ---
 description: Volltextsuche
 title: Volltextsuche | Microsoft-Dokumentation
-ms.date: 04/10/2018
+ms.date: 12/29/2020
 ms.prod: sql
 ms.prod_service: search, sql-database
 ms.technology: search
@@ -13,15 +13,15 @@ author: pmasl
 ms.author: pelopes
 ms.reviewer: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 54b05c64727697c263c55572da9707c95c516a11
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: d54ee59b6c3c94968ade02196945a8cd626a19f0
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100348598"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186066"
 ---
 # <a name="full-text-search"></a>Volltextsuche
-[!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
+[!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx_md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
 Mit der Volltextsuche in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] und [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)] können Benutzer und Anwendungen Volltextabfragen für zeichenbasierte Daten in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -Tabellen ausführen.
   
@@ -254,4 +254,4 @@ Nur ein Volltextindex pro Tabelle ist zulässig. Damit ein Volltextindex für ei
   
  Wörtertrennung (und Wortstammerkennung) sowie Filter werden im Filterdaemon-Hostprozess (fdhost.exe) ausgeführt.  
 
-[!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx_md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
+

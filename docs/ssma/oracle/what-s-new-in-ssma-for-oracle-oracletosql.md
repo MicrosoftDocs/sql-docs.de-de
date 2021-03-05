@@ -10,16 +10,24 @@ ms.technology: ssma
 ms.topic: conceptual
 ms.assetid: f305ebb6-7393-4a43-abb3-6332b739d690
 ms.author: alexiva
-ms.openlocfilehash: 4dc76c57f7194c1ee96bd091d674b793dad29faa
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: ef5f8fd634958c75cc67002615e3c4a72dcf3a51
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100081877"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186561"
 ---
 # <a name="whats-new-in-ssma-for-oracle-oracletosql"></a>Neues in SSMA für Oracle (oracleto SQL)
 
 In diesem Artikel wird SQL Server Migration Assistant (SSMA) für Oracle-Änderungen in jeder Version aufgeführt.
+
+## <a name="ssma-v817"></a>SSMA v 8.17
+
+Die v 8.17-Version von SSMA für Oracle enthält die folgenden Änderungen:
+
+* Unterstützung für berechnete Spalten hinzufügen
+* Beheben von parserproblemen, wenn kulturspezifische Operator Zeichen in Ausdrücken verwendet werden
+* HTML-Bewertungsberichte aktualisieren, um den SQL-Text mit dem modernen Editor anzuzeigen
 
 ## <a name="ssma-v816"></a>SSMA v 8.16
 

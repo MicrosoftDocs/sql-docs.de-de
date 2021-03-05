@@ -8,12 +8,12 @@ author: yualan
 ms.author: alayu
 ms.reviewer: maghan
 ms.custom: ''
-ms.date: 03/03/21
-ms.openlocfilehash: c714dec9c200186291683f68de88db13bc2b2763
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.date: 3/3/2021
+ms.openlocfilehash: eb98c593443d34ec639a9ff345bd18c3ffe62a4e
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101872981"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102185737"
 ---
 # <a name="welcome-to-azure-data-studio"></a>Willkommen bei Azure Data Studio!
