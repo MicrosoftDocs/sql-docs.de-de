@@ -6,17 +6,17 @@ ms.author: anrampal
 ms.topic: overview
 ms.date: 03/02/2021
 ms.prod: sql
-ms.technology: Azure Synapse Pathway
+ms.technology: tools-other
 monikerRange: =azure-sqldw-latest
 ms.custom: template-overview
-ms.openlocfilehash: 345346d2161800810ba3d07667b831107f70b215
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 8352fb6a70c54ede61d544a147f970237404c9f5
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101873076"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186322"
 ---
-# <a name="azure-synapse-pathway-preview"></a>Vorschauversion von Azure Synapse Pathway
+# <a name="azure-synapse-pathway-preview-faq"></a>FAQ zur Vorschauversion von Azure Synapse Pathway
 [!INCLUDE [Azure Synapse Analytics](../../includes/applies-to-version/asa.md)]
 
 Dieser Leitfaden enthält die am häufigsten gestellten Fragen zur Vorschauversion von Azure Synapse Pathway.
@@ -58,7 +58,9 @@ A. Da Sie Synapse Pathway in Ihrer lokalen Umgebung ausführen können, werden a
 
 A. Azure Synapse Pathway ist aktuell in der **Vorschauversion** verfügbar.   Support für Synapse Pathway erhalten Sie über den Microsoft-Supportkanal. Sie können das Ticket entweder im Azure-Portal erstellen oder in den Standardportalen (in der Regel lokaler Support).
 
-> [!NOTE] Wie bei anderen Azure-Diensten wird für alle Vorschauversionen von Diensten Support bereitgestellt, es gelten allerdings keine SLAs.
+
+> [!NOTE] 
+> Wie bei anderen Azure-Diensten wird für alle Vorschauversionen von Diensten Support bereitgestellt, es gelten allerdings keine SLAs.
 
 <!-- ### Troubleshooting and optimization
 

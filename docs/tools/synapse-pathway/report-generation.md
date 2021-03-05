@@ -5,16 +5,16 @@ author: anshul82-ms
 ms.author: anrampal
 ms.topic: tutorial
 ms.prod: sql
-ms.technology: Azure Synapse Pathway
+ms.technology: tools-other
 ms.date: 03/02/2021
 monikerRange: =azure-sqldw-latest
 ms.custom: template-tutorial
-ms.openlocfilehash: 69f7e4578585d1fde0040df4671c411f01537afd
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 26701c33f713a1b82e3bab604a03e7dca054a36b
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101873118"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186341"
 ---
 # <a name="report-generation-for-azure-synapse-pathway-preview"></a>Berichterstellung für die Azure Synapse Pathway-Vorschauversion
 [!INCLUDE [Azure Synapse Analytics](../../includes/applies-to-version/asa.md)]

@@ -3,19 +3,20 @@ title: Herunterladen der Vorschauversion von Azure Synapse Pathway
 description: In diesem Artikel erfahren Sie, wie Sie Azure Synapse Pathway herunterladen.
 ms.date: 03/02/2021
 ms.prod: sql
-ms.technology: Azure Synapse Pathway
+ms.technology: tools-other
+ms.topic: conceptual
 keywords: ''
 helpviewer_keywords:
 - Azure Synapse Pathway, download
 author: anshul82-ms
 monikerRange: =azure-sqldw-latest
 ms.author: anrampal
-ms.openlocfilehash: 82daf4f6920675d3009776a11aee3706c87c74e7
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: b0296f88bbb1c7eb1e64206323bc1dc9122c7f5b
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101873073"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186206"
 ---
 # <a name="azure-synapse-pathway-preview-download"></a>Herunterladen der Vorschauversion von Azure Synapse Pathway
 [!INCLUDE [Azure Synapse Analytics](../../includes/applies-to-version/asa.md)]
