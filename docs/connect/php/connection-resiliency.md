@@ -1,7 +1,7 @@
 ---
 title: Resilienz von Verbindungen im Leerlauf
 description: Erfahren Sie, was Resilienz von Verbindungen im Leerlauf ist, und wie sie sich in den Microsoft-Treibern für PHP für SQL Server verhält.
-ms.date: 07/13/2017
+ms.date: 03/04/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.custom: ''
@@ -9,12 +9,12 @@ ms.technology: connectivity
 ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4008dd4f023170b50bdf28f1f026da9ee892f970
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 07223e87c82a64fe17cd1b2969b5c93227c70af2
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91726861"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247486"
 ---
 # <a name="idle-connection-resiliency"></a>Resilienz von Verbindungen im Leerlauf
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -26,7 +26,7 @@ Die Verbindungsresilienz ist mit zwei Verbindungsschlüsselwörtern implementier
 |Schlüsselwort|Werte|Standard|BESCHREIBUNG|
 |-|-|-|-|
 |**ConnectRetryCount**| Ganze Zahl von 0 bis 255|1|Die maximale Anzahl von Versuchen zum Wiederherstellen einer unterbrochenen Verbindung, bevor aufgegeben wird. Standardmäßig wird nur ein Versuch unternommen, eine Verbindung nach einer Unterbrechung wiederherzustellen. Der Wert 0 bedeutet, dass kein Wiederherstellungsversuch unternommen wird.|
-|**ConnectRetryInterval**| Ganze Zahl von 1 bis 60|1| Die Zeit in Sekunden zwischen den Versuchen zum Wiederherstellen einer Verbindung. Die Anwendung versucht sofort nach dem Erkennen einer unterbrochenen Verbindung, diese wiederherzustellen, und wartet dann die mit **ConnectRetryInterval** angegebene Anzahl von Sekunden, bevor sie es erneut versucht. Dieses Schlüsselwort wird ignoriert, wenn **ConnectRetryCount** gleich 0 ist.
+|**ConnectRetryInterval**| Ganze Zahl von 1 bis 60|10| Die Zeit in Sekunden zwischen den Versuchen zum Wiederherstellen einer Verbindung. Die Anwendung versucht sofort nach dem Erkennen einer unterbrochenen Verbindung, diese wiederherzustellen, und wartet dann die mit **ConnectRetryInterval** angegebene Anzahl von Sekunden, bevor sie es erneut versucht. Dieses Schlüsselwort wird ignoriert, wenn **ConnectRetryCount** gleich 0 ist.
 
 Wenn das Produkt aus **ConnectRetryCount** und **ConnectRetryInterval** größer ist als **LoginTimeout**, versucht der Client nach dem Erreichen von **LoginTimeout** nicht mehr, die Verbindung wiederherzustellen. Andernfalls wird die erneute Verbindung weiter versucht, bis **ConnectRetryCount** erreicht ist.
 

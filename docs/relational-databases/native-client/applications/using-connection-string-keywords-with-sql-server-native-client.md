@@ -1,8 +1,8 @@
 ---
-title: Verwenden von Schlüsselwörtern für Verbindungszeichenfolgen
+title: Schlüsselwörter für Verbindungs Zeichenfolgen
 description: Einige SQL Server Native Client-APIs verwenden Verbindungs Zeichenfolgen zum Angeben von Verbindungs Attributen. Verbindungs Zeichenfolgen sind Schlüsselwort-Wert-Paare.
 ms.custom: ''
-ms.date: 08/01/2016
+ms.date: 03/05/2021
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: native-client
@@ -18,12 +18,12 @@ ms.assetid: 16008eec-eddf-4d10-ae99-29db26ed6372
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: dbe28b09c88f63e6e0a9a764fea3da17feb3d1f0
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8abbefef4c13cf0006b80f24771a06cc067a6324
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463421"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247454"
 ---
 # <a name="using-connection-string-keywords-with-sql-server-native-client"></a>Verwenden von Schlüsselwörtern für Verbindungszeichenfolgen mit SQL Server Native Client
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -71,7 +71,7 @@ ms.locfileid: "97463421"
 |**Treiber**|Der Name des Treibers, der von [SQLDrivers](../../../relational-databases/native-client-odbc-api/sqldrivers.md)zurückgegeben wurde. Der Schlüsselwortwert für den ODBC-Treiber von [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client lautet "{SQL Server Native Client 11.0}". Das **Server** Schlüsselwort ist erforderlich, wenn der **Treiber** angegeben und **DriverCompletion** auf SQL_DRIVER_NOPROMPT festgelegt ist.<br /><br /> Weitere Informationen zu Treiber Namen finden Sie unter [Verwenden der SQL Server Native Client-Header-und Bibliotheksdateien](../../../relational-databases/native-client/applications/using-the-sql-server-native-client-header-and-library-files.md).|  
 |**DSN**|Der Name einer vorhandenen ODBC-Benutzer- oder Systemdatenquelle. Dieses Schlüsselwort überschreibt alle Werte, die in den Schlüsselwörtern **Server**, **Netzwerk** und **Adresse** angegeben werden können.|  
 |**Encrypt**|Gibt an, ob Daten vor dem Senden über das Netzwerk verschlüsselt werden sollen. Mögliche Werte sind "yes" und "no". Der Standardwert lautet "no".|  
-|**Fallback**|Dieses Schlüsselwort ist veraltet, und seine Einstellung wird vom ODBC-Treiber von [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client ignoriert.|  
+|**Fall Back**|Dieses Schlüsselwort ist veraltet, und seine Einstellung wird vom ODBC-Treiber von [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client ignoriert.|  
 |**Failover_Partner**|Name des Failoverpartnerservers, der verwendet werden soll, wenn keine Verbindung mit dem primären Server hergestellt werden kann.|  
 |**FailoverPartnerSPN**|Der SPN für den Failoverpartner. Der Standardwert ist eine leere Zeichenfolge. Die Angabe einer leeren Zeichenfolge bewirkt, dass [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client den vorgegebenen, vom Treiber generierten SPN verwendet.|  
 |**FileDSN**|Der Name einer vorhandenen ODBC-Dateidatenquelle.|  

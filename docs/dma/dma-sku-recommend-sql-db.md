@@ -1,6 +1,6 @@
 ---
 title: Ermitteln der richtigen Azure SQL-Datenbank-SKU für Ihre lokale Datenbank (Datenmigrations-Assistent) | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie Datenmigrations-Assistent verwenden können, um die richtige Azure SQL-Datenbank-SKU für Ihre lokale Datenbank zu identifizieren.
+description: Erfahren Sie, wie Sie Datenmigrations-Assistent verwenden können, um die richtige Azure SQL-Datenbank oder Azure SQL verwaltete Instanz SKU für Ihre lokale Datenbank zu identifizieren.
 ms.custom: ''
 ms.date: 05/06/2019
 ms.prod: sql
@@ -14,29 +14,23 @@ helpviewer_keywords:
 ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
-ms.openlocfilehash: ffb47ee457a03315821fee863816d725f9691ac3
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: b29815876d804f387ce31754c960e80f9db99434
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100062585"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247169"
 ---
-# <a name="identify-the-right-azure-sql-databasemanaged-instance-sku-for-your-on-premises-database"></a>Ermitteln der richtigen Azure SQL-Datenbank/verwaltete Instanz-SKU für Ihre lokale Datenbank
+# <a name="identify-the-right-azure-sql-database-or-sql-managed-instance-sku-for-your-on-premises-database"></a>Identifizieren der richtigen Azure SQL-Datenbank-oder SQL verwaltete Instanz-SKU für Ihre lokale Datenbank
 
-Das Migrieren von Datenbanken in die Cloud kann kompliziert sein, insbesondere beim Versuch, das beste Azure-Daten Bank Ziel und die SKU für Ihre Datenbank auszuwählen. Das Ziel des Daten Bank Migration Assistant (DMA) ist es, diese Fragen zu beantworten und die Daten Bank Migration zu vereinfachen, indem Sie diese SKU-Empfehlungen in einer benutzerfreundlichen Ausgabe bereitstellen.
+Das Migrieren von Datenbanken in die Cloud kann kompliziert sein, insbesondere bei der Auswahl der besten Azure SQL-Datenbank oder des SQL verwaltete Instanz-Ziels und der SKU für Ihre Datenbank. Das Ziel des Daten Bank Migration Assistant (DMA) ist es, diese Fragen zu beantworten und die Daten Bank Migration zu vereinfachen, indem Sie diese SKU-Empfehlungen in einer benutzerfreundlichen Ausgabe bereitstellen.
 
-Dieser Artikel konzentriert sich auf das Azure SQL-Datenbank-Empfehlungs Feature von DMA. Azure SQL-Datenbank und Azure SQL verwaltete Instanz verfügen über mehrere Bereitstellungs Optionen, einschließlich:
 
-- Einzeldatenbank
-- Pools für elastische Datenbanken
-- SQL-Datenbank-Instanz
-
-Mit der SKU-Empfehlungs Funktion können Sie sowohl die empfohlene Mindestanzahl von Azure SQL-Datenbank-als auch Azure SQL verwaltete Instanz-SKU basierend auf Leistungsindikatoren identifizieren, die von den Computern gesammelt werden, auf denen Ihre Datenbanken gehostet werden. Die-Funktion bietet Empfehlungen im Zusammenhang mit Tarif, computeebene und maximaler Datengröße sowie geschätzten Kosten pro Monat. Außerdem bietet es die Möglichkeit, für alle empfohlenen Datenbanken eine Massen Bereitstellung einzelner Datenbanken und verwalteter Instanzen durchzusetzen.
-
-> [!NOTE]
-> Diese Funktion ist zurzeit nur über die Befehlszeilenschnittstelle (CLI) verfügbar.
+Mit der SKU-Empfehlungs Funktion können Sie die empfohlene Mindestanzahl von Azure SQL-Datenbank oder Azure SQL verwaltete Instanz-SKU basierend auf Leistungsindikatoren ermitteln, die auf den Computern gesammelt werden, auf denen die Datenbanken gehostet werden. Die-Funktion bietet Empfehlungen im Zusammenhang mit Tarif, computeebene und maximaler Datengröße sowie geschätzten Kosten pro Monat. Außerdem bietet es die Möglichkeit, für alle empfohlenen Datenbanken eine Massen Bereitstellung einzelner Datenbanken und verwalteter Instanzen durchzusetzen. Diese Funktion ist zurzeit nur über die Befehlszeilenschnittstelle (CLI) verfügbar.
 
 Im folgenden finden Sie Anweisungen zum Bestimmen der SKU-Empfehlungen und zum Bereitstellen der entsprechenden Einzel Datenbanken oder verwalteten Instanzen in Azure mithilfe von DMA.
+
+[!INCLUDE [online-offline](../includes/azure-migrate-to-assess-sql-data-estate.md)]
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

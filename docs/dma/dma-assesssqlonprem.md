@@ -15,21 +15,22 @@ ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
 ms.custom: seo-lt-2019
-ms.openlocfilehash: c88a289e21e7cd70980763474e82b7dd6cbd49c2
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 300d88b66c2105235ab04ff616d9fcf81b24e944
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489517"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247332"
 ---
 # <a name="perform-a-sql-server-migration-assessment-with-data-migration-assistant"></a>Durchführen einer SQL Server-Migrationsbewertung mit dem Datenmigrations-Assistenten
 
 Die folgenden schrittweisen Anweisungen unterstützen Sie bei der ersten Bewertung der Migration zu lokalen SQL Server, SQL Server, die auf einer Azure-VM ausgeführt werden, oder Azure SQL-Datenbank mithilfe von Datenmigrations-Assistent.
 
-   > [!NOTE]
-   > Datenmigrations-Assistent v 5.0 führt die Unterstützung für die Analyse von Datenbankverbindungen und eingebetteten SQL-Abfragen im Anwendungscode ein. Weitere Informationen finden Sie im Blogbeitrag [using Datenmigrations-Assistent, um die Datenzugriffs Ebene einer Anwendung zu bewerten](https://techcommunity.microsoft.com/t5/Microsoft-Data-Migration/Using-Data-Migration-Assistant-to-assess-an-application-s-data/ba-p/990430).
+Datenmigrations-Assistent v 5.0 führt die Unterstützung für die Analyse von Datenbankverbindungen und eingebetteten SQL-Abfragen im Anwendungscode ein. Weitere Informationen finden Sie im Blogbeitrag [using Datenmigrations-Assistent, um die Datenzugriffs Ebene einer Anwendung zu bewerten](https://techcommunity.microsoft.com/t5/Microsoft-Data-Migration/Using-Data-Migration-Assistant-to-assess-an-application-s-data/ba-p/990430).
 
-## <a name="create-an-assessment"></a>Erstellen einer Beurteilung
+[!INCLUDE [online-offline](../includes/azure-migrate-to-assess-sql-data-estate.md)]
+
+## <a name="create-an-assessment"></a>Erstellen einer Bewertung
 
 1. Wählen Sie das Symbol **neu** (+) aus, und wählen Sie dann den Projekttyp **Bewertung** aus.
 
@@ -39,7 +40,7 @@ Die folgenden schrittweisen Anweisungen unterstützen Sie bei der ersten Bewertu
 
 3. Klicken Sie auf **Erstellen**.
 
-   ![Erstellen einer Beurteilung](../dma/media/dma-assesssqlonprem/new-assessment.png)
+   ![Erstellen einer Bewertung](../dma/media/dma-assesssqlonprem/new-assessment.png)
 
 ## <a name="choose-assessment-options"></a>Bewertungs Optionen auswählen
 
@@ -119,7 +120,7 @@ Die folgenden schrittweisen Anweisungen unterstützen Sie bei der ersten Bewertu
 
 ## <a name="view-results"></a>Anzeigen der Ergebnisse
 
-Die Dauer der Bewertung hängt von der Anzahl der hinzugefügten Datenbanken und der Schema Größe der einzelnen Datenbanken ab. Die Ergebnisse werden für jede Datenbank angezeigt, sobald Sie verfügbar sind.
+Die Dauer der Bewertung hängt von der Anzahl der hinzugefügten Datenbanken und der Größe der Schemas der einzelnen Datenbanken ab. Die Ergebnisse für die einzelnen Datenbanken werden angezeigt, sobald sie verfügbar sind.
 
 1. Wählen Sie die Datenbank aus, die die Bewertung abgeschlossen hat, und wechseln Sie dann mit dem Switcher zwischen **Kompatibilitätsproblemen** und **Funktions Empfehlungen** .
 
