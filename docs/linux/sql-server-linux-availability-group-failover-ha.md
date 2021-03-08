@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: ''
-ms.openlocfilehash: 52fbeee33dd992f4916f33a1545b59265a8b47f9
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 863278eacebc4b405a4a44e72c4318e950d0cc1d
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100345653"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837669"
 ---
 # <a name="always-on-availability-group-failover-on-linux"></a>Failover der Always On-Verfügbarkeitsgruppe unter Linux
 
@@ -50,17 +50,18 @@ Führen Sie den entsprechenden Befehl für Ihre Verteilung aus, um ein Failover 
 - **RHEL-/Ubuntu-Beispiel**
 
    ```bash
-   sudo pcs resource move ag_cluster-master nodeName2 --master
+   sudo pcs resource move ag_cluster-master nodeName2 --master --lifetime=30S
    ```
 
 - **SLES-Beispiel**
 
    ```bash
-   crm resource migrate ag_cluster nodeName2
+   crm resource migrate ag_cluster nodeName2 --lifetime=30S
    ```
 
 >[!IMPORTANT]
->Nachdem Sie ein manuelles Failover einer Ressource ausgeführt haben, müssen Sie eine Speicherorteinschränkung entfernen, die automatisch hinzugefügt wird.
+>Wenn Sie die Option „--lifetime“ verwenden, ist die zum Verschieben der Ressource erstellte Speicherorteinschränkung nur temporär und gilt im vorherigen Beispiel 30 Sekunden.
+>Beachten Sie, dass die temporäre Einschränkung nicht automatisch aufgehoben wird und möglicherweise in der Einschränkungsliste auftaucht, allerdings als abgelaufene Einschränkung. Abgelaufene Einschränkungen haben keinen Einfluss auf das Failoververhalten des Pacemaker-Clusters. Wenn Sie beim Verschieben der Ressource nicht die Option „--lifetime“ verwenden, sollten Sie eine Speicherorteinschränkung entfernen, die wie unten beschrieben automatisch hinzugefügt wird.
 
 #### <a name="step-2-remove-the-location-constraint"></a><a name="removeLocConstraint"> </a> Schritt 2: Entfernen der Speicherorteinschränkung
 

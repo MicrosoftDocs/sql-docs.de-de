@@ -2,7 +2,7 @@
 title: Replikation, Änderungsnachverfolgung, Change Data Capture und Verfügbarkeitsgruppen
 description: Erfahren Sie mehr über die Interoperabilität von Replikation, Änderungsnachverfolgung und Change Data Capture bei der Verwendung mit Always On-Verfügbarkeitsgruppen von SQL Server.
 ms.custom: seo-lt-2019
-ms.date: 08/21/2018
+ms.date: 02/23/2021
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: availability-groups
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e17a9ca9-dd96-4f84-a85d-60f590da96ad
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f82db97e9b818ecca6682cf6778850dab8a238c1
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 1ee6a097a60930064ee23389d1d54e965336e3d7
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100344548"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837691"
 ---
 # <a name="replication-change-tracking--change-data-capture---always-on-availability-groups"></a>Replikation, Änderungsnachverfolgung und Change Data Capture (Always On-Verfügbarkeitsgruppen)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "100344548"
 ###  <a name="general-changes-to-replication-agents-to-support-availability-groups"></a><a name="Changes"></a> Allgemeine Änderungen an Replikations-Agents zur Unterstützung von Verfügbarkeitsgruppen  
  Drei Replikations-Agents wurden geändert, um [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)]zu unterstützen. Die Protokolllese-, Momentaufnahme- und Merge-Agents wurden geändert, um die Verteilungsdatenbank für den umgeleiteten Verleger abzufragen und den zurückgegebenen Verfügbarkeitsgruppenlistener-Namen zu verwenden, wenn ein umgeleiteter Verleger deklariert wurde, um eine Verbindung mit dem Datenbankverleger herzustellen.  
   
- Wenn die Agents den Verteiler abfragen, um zu bestimmen, ob der ursprüngliche Verleger umgeleitet wurde, wird die Eignung des aktuellen Ziels oder der Umleitung standardmäßig überprüft, bevor der umgeleitete Host an den Agent zurückgegeben wird. Dabei handelt es sich um ein empfohlenes Verhalten. Wenn der Agent jedoch sehr häufig gestartet wird, könnte der mit der gespeicherten Überprüfungsprozedur verbundene Arbeitsaufwand als zu kostenintensiv angesehen werden. Der neue Befehlszeilenschalter *BypassPublisherValidation* wurde sowohl dem Protokollleser als auch der Momentaufnahme und den Merge-Agents hinzugefügt. Wenn der Schalter verwendet wird, wird der umgeleitete Verleger sofort an den Agent zurückgegeben, und die Ausführung der überprüfungsgespeicherten Prozedur wird umgangen.  
+ Wenn die Agents den Verteiler abfragen, um zu bestimmen, ob der ursprüngliche Verleger umgeleitet wurde, wird die Eignung des aktuellen Ziels oder der Umleitung standardmäßig überprüft, bevor der umgeleitete Host an den Agent zurückgegeben wird. Dabei handelt es sich um ein empfohlenes Verhalten. Wenn der Agent jedoch sehr häufig gestartet wird, könnte der mit der gespeicherten Überprüfungsprozedur verbundene Arbeitsaufwand als zu kostenintensiv angesehen werden. Der neue Befehlszeilenschalter *BypassPublisherValidation* wurde den Protokolllese-, Momentaufnahmen- und Merge-Agents hinzugefügt. Wenn der Schalter verwendet wird, wird der umgeleitete Verleger sofort an den Agent zurückgegeben, und die Ausführung der überprüfungsgespeicherten Prozedur wird umgangen.  
   
  In der überprüfungsgespeicherten Prozedur zurückgegebene Fehler werden in den Agentverlaufsprotokollen protokolliert. Fehler mit einem Schweregrad größer oder gleich 16 beenden den Agent. Einige Wiederholungsfunktionen wurden in die Agents integriert, um das erwartete Trennen einer Verbindung von einer veröffentlichten Datenbank bei einem Failover auf eine neu primäres Element zu verarbeiten.  
   
@@ -109,7 +109,7 @@ ms.locfileid: "100344548"
     ```  
   
     > [!NOTE]  
-    >  Sie sollten die Aufträge im Vorfeld für alle möglichen Failoverziele erstellen und sie als deaktiviert kennzeichnen, bis das Verfügbarkeitsreplikat auf einem Host zum neuen primären Replikat wird. Die CDC-Aufträge, die auf der alten primären Datenbank ausgeführt werden, sollten auch deaktiviert werden, wenn die lokale Datenbank zur sekundären Datenbank wird. Verwenden Sie zum Deaktivieren und Aktivieren von Aufträgen die *\@enabled*-Option von [sp_update_job &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sp-update-job-transact-sql.md). Weitere Informationen zum Erstellen von CDC-Aufträgen finden Sie unter [sys.sp_cdc_add_job &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sys-sp-cdc-add-job-transact-sql.md)unterstützt.  
+    >  Sie müssen die Aufträge nach dem Failover im neuen primären Replikat erstellen. Die CDC-Aufträge, die in der alten primären Datenbank ausgeführt werden, müssen deaktiviert werden, wenn die lokale Datenbank zur sekundären Datenbank wird. Wenn das Replikat danach wieder zum primären Replikat wird, müssen Sie die CDC-Aufträge wieder für das Replikat aktivieren. Verwenden Sie zum Deaktivieren und Aktivieren von Aufträgen die *\@enabled*-Option von [sp_update_job &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sp-update-job-transact-sql.md). Weitere Informationen zum Erstellen von CDC-Aufträgen finden Sie unter [sys.sp_cdc_add_job &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sys-sp-cdc-add-job-transact-sql.md)unterstützt.  
   
 -   **Hinzufügen von CDC-Rollen zu einem primären Always On-Datenbankreplikat**  
   

@@ -2,7 +2,7 @@
 title: Verwenden des JDBC-Treibers | Microsoft-Dokumentation
 description: Dieser Abschnitt bietet eine Schnellstartanleitung, um unter Verwendung des Microsoft JDBC-Treibers für SQL Server eine einfache Verbindung mit einer SQL Server-Datenbank herzustellen.
 ms.custom: ''
-ms.date: 01/29/2021
+ms.date: 02/26/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 6faaf05b-8b70-4ed2-9b44-eee5897f1cd0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 6b3550536a3512315d511efc831adc27b35ec974
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e74135523d2ba4cbde27e588eee999b3450def37
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99195253"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837517"
 ---
 # <a name="using-the-jdbc-driver"></a>Verwenden des JDBC-Treibers
 
@@ -28,7 +28,7 @@ Dieser Abschnitt enthält Anleitungen, um in kurzer Zeit mit [!INCLUDE[jdbcNoVer
 
 Der Microsoft JDBC-Treiber bietet verschiedene JAR-Dateien, die in Verbindung mit Ihren bevorzugten Einstellungen für die Java Runtime Environment (JRE) verwendet werden können:
 
-Der Microsoft JDBC-Treiber 9.2 für SQL Server stellt die Klassenbibliotheksdateien **mssql-jdbc-9.2.0.jre8.jar**, **mssql-jdbc-9.2.0.jre11.jar** und **mssql-jdbc-9.2.0.jre15.jar** bereit.
+Der Microsoft JDBC-Treiber 9.2 für SQL Server stellt die Klassenbibliotheksdateien **mssql-jdbc-9.2.1.jre8.jar**, **mssql-jdbc-9.2.1.jre11.jar** und **mssql-jdbc-9.2.1.jre15.jar** bereit.
 
 Der Microsoft JDBC-Treiber 8.4 für SQL Server stellt die Klassenbibliotheksdateien **mssql-jdbc-8.4.1.jre8.jar**, **mssql-jdbc-8.4.1.jre11.jar** und **mssql-jdbc-8.4.1.jre14.jar** bereit.
 
@@ -70,31 +70,31 @@ Wenn Sie den JDBC-Treiber 8.2 verwenden, legen Sie fest, dass der Klassenpfad d
 
 Wenn Sie den JDBC-Treiber 8.4 verwenden, legen Sie fest, dass der Klassenpfad die Datei **mssql-jdbc-8.4.1.jre8.jar**, **mssql-jdbc-8.4.1.jre11.jar** oder **mssql-jdbc-8.4.1.jre14.jar** enthält.
 
-Wenn Sie den JDBC-Treiber 9.2 verwenden, nehmen Sie die Datei **mssql-jdbc-9.2.0.jre8.jar**, **mssql-jdbc-9.2.0.jre11.jar** oder **mssql-jdbc-9.2.0.jre15.jar** in den Klassenpfad auf.
+Wenn Sie den JDBC-Treiber 9.2 verwenden, nehmen Sie die Datei **mssql-jdbc-9.2.1.jre8.jar**, **mssql-jdbc-9.2.1.jre11.jar** oder **mssql-jdbc-9.2.1.jre15.jar** in den Klassenpfad auf.
 
 Wenn im Klassenpfad kein Eintrag für die richtige JAR-Datei vorhanden ist, löst eine Anwendung die allgemeine Ausnahme `Class not found` aus.  
 
 ### <a name="for-microsoft-jdbc-driver-92"></a>Für den Microsoft JDBC-Treiber 9.2
 
-Die Dateien **mssql-jdbc-9.2.0.jre8.jar**, **mssql-jdbc-9.2.0.jre11.jar** oder **mssql-jdbc-9.2.0.jre15.jar** werden an den folgenden Speicherorten installiert:
+Die Dateien **mssql-jdbc-9.2.1.jre8.jar**, **mssql-jdbc-9.2.1.jre11.jar** oder **mssql-jdbc-9.2.1.jre15.jar** werden an den folgenden Speicherorten installiert:
 
 ```bash
-\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.0.jre8.jar
+\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.1.jre8.jar
 
-\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.0.jre11.jar
+\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.1.jre11.jar
 
-\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.0.jre15.jar
+\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.1.jre15.jar
 ```
 
 Der folgende Codeausschnitt stellt ein Beispiel für die CLASSPATH-Anweisung dar, die für eine Windows-Anwendung verwendet wird:
 
-`CLASSPATH =.;C:\Program Files\Microsoft JDBC Driver 9.2 for SQL Server\sqljdbc_9.2\enu\mssql-jdbc-9.2.0.jre11.jar`
+`CLASSPATH =.;C:\Program Files\Microsoft JDBC Driver 9.2 for SQL Server\sqljdbc_9.2\enu\mssql-jdbc-9.2.1.jre11.jar`
 
 Der folgende Codeausschnitt stellt ein Beispiel für die CLASSPATH-Anweisung dar, die für eine Linux/Unix-Anwendung verwendet wird:
 
-`CLASSPATH =.:/home/usr1/mssqlserverjdbc/Driver/sqljdbc_9.2/enu/mssql-jdbc-9.2.0.jre11.jar`
+`CLASSPATH =.:/home/usr1/mssqlserverjdbc/Driver/sqljdbc_9.2/enu/mssql-jdbc-9.2.1.jre11.jar`
 
-Stellen Sie sicher, dass die CLASSPATH-Anweisung nur eine [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)]-Datei enthält, also entweder **mssql-jdbc-9.2.0.jre8.jar**, **mssql-jdbc-9.2.0.jre11.jar** oder **mssql-jdbc-9.2.0.jre15.jar**.
+Stellen Sie sicher, dass die CLASSPATH-Anweisung nur eine [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)]-Datei enthält, also entweder **mssql-jdbc-9.2.1.jre8.jar**, **mssql-jdbc-9.2.1.jre11.jar** oder **mssql-jdbc-9.2.1.jre15.jar**.
 
 
 ### <a name="for-microsoft-jdbc-driver-84"></a>Für Microsoft JDBC-Treiber 8.4
@@ -287,7 +287,7 @@ Servlets und JSPs werden in einer Servlet-/JSP-Engine wie Tomcat ausgeführt. De
   
 ### <a name="enterprise-java-beans"></a>Enterprise Java Beans  
 
-Enterprise Java Beans (EJB) werden in einem EJB-Container ausgeführt. EJB-Container sind von verschiedenen Herstellern erhältlich. Java-Applets werden in einem Browser ausgeführt, aber von einem Webserver heruntergeladen. Kopieren Sie „sqljdbc.jar“ „sqljdbc4.jar“ oder „sqljdbc41.jar“ in das Stammverzeichnis des Webservers, und geben Sie den Namen der JAR-Datei auf der HTML-Archiv-Registerkarte des Applets an, z.B. `<applet ... archive=mssql-jdbc-**_.jar>`.  
+Enterprise Java Beans (EJB) werden in einem EJB-Container ausgeführt. EJB-Container sind von verschiedenen Herstellern erhältlich. Java-Applets werden in einem Browser ausgeführt, aber von einem Webserver heruntergeladen. Kopieren Sie „sqljdbc.jar“ „sqljdbc4.jar“ oder „sqljdbc41.jar“ in das Stammverzeichnis des Webservers, und geben Sie den Namen der JAR-Datei auf der HTML-Archiv-Registerkarte des Applets an, z.B. `<applet ... archive=mssql-jdbc-***.jar>`.  
   
 ## <a name="making-a-simple-connection-to-a-database"></a>Herstellen einer einfachen Verbindung mit einer Datenbank
 
@@ -299,7 +299,7 @@ Nachdem der Treiber geladen wurde, können Sie über eine Verbindungs-URL und di
 
 ```java
 String connectionUrl = "jdbc:sqlserver://localhost:1433;" +  
-   "databaseName=AdventureWorks;user=MyUserName;password=_****;";  
+   "databaseName=AdventureWorks;user=MyUserName;password=*****;";  
 Connection con = DriverManager.getConnection(connectionUrl);  
 ```
 

@@ -2,7 +2,7 @@
 title: Versionshinweise für den JDBC-Treiber
 description: In diesem Artikel werden die Releases des Microsoft JDBC-Treibers für SQL Server aufgeführt. Für jede Version werden die Änderungen benannt und beschrieben.
 ms.custom: ''
-ms.date: 01/29/2021
+ms.date: 03/02/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 074f211e-984a-4b76-bb15-ee36f5946f12
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0ffc7d8e4090673f3fc8feb96aa3650d35361281
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: c394eaeb6ec8361dd429b944b128d19a0cf33319
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99234854"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837527"
 ---
 # <a name="release-notes-for-the-microsoft-jdbc-driver-for-sql-server"></a>Versionshinweise zum Microsoft JDBC-Treiber für SQL Server
 
@@ -24,27 +24,42 @@ In diesem Artikel werden die Versionen des _Microsoft JDBC-Treibers für SQL Ser
 
 ## <a name="92"></a><a id="92"></a> 9.2
 
-**[![Download](../../ssms/media/download-icon.png) Microsoft JDBC-Treiber 9.2 für SQL Server herunterladen (zip)](https://go.microsoft.com/fwlink/?linkid=2153622)**  
-**[![Download](../../ssms/media/download-icon.png) Microsoft JDBC-Treiber 9.2 für SQL Server herunterladen (tar.gz)](https://go.microsoft.com/fwlink/?linkid=2153521)**  
+**[![Herunterladen](../../ssms/media/download-icon.png) Microsoft JDBC-Treiber 9.2.1 für SQL Server (ZIP-Datei) herunterladen](https://go.microsoft.com/fwlink/?linkid=2155948)**  
+**[![Herunterladen](../../ssms/media/download-icon.png) Microsoft JDBC-Treiber 9.2.1 für SQL Server (tar.gz) herunterladen](https://go.microsoft.com/fwlink/?linkid=2155949)**  
 
-Versionsnummer: 9.2.0. veröffentlicht: 29. Januar 2021
+Versionsnummer: 9.2.1  
+Veröffentlichung: 02.03.2021
 
 Wenn Sie den Treiber in einer anderen Sprache als der für Sie erkannten herunterladen möchten, können Sie hierfür einen der folgenden direkten Links verwenden.  
-Treiber in einer ZIP-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x40a)  
-Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x40a)  
+Treiber in einer ZIP-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x40a)  
+Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x40a)  
 
 ### <a name="compliance"></a>Kompatibilität
 
 | Kompatibilitäts-/Konformitätsänderung | Details |
 | :---------------- | :------ |
-| Download der neuesten Updates für den JDBC-Treiber 9.2 | &bull; &nbsp; [GitHub, 9.2.0](https://github.com/Microsoft/mssql-jdbc/releases/tag/v9.2.0)<br/>&bull; &nbsp; [Maven Central](https://search.maven.org/search?q=g:com.microsoft.sqlserver) |
-| Vollständig konform mit JDBC-API-Spezifikation 4.2. | Die JAR-Dateien im 9.2-Paket sind der Java-Versionskompatibilität entsprechend benannt.<br/><br/>Beispielsweise sollte die Datei „mssql-jdbc-9.2.0.jre15.jar“ aus dem 9.2-Paket mit Java 15 verwendet werden. |
+| Download der neuesten Updates für den JDBC-Treiber 9.2 | &bull; &nbsp; [GitHub, 9.2.1](https://github.com/Microsoft/mssql-jdbc/releases/tag/v9.2.1)<br/>&bull; &nbsp; [Maven Central](https://search.maven.org/search?q=g:com.microsoft.sqlserver) |
+| Vollständig konform mit JDBC-API-Spezifikation 4.2. | Die JAR-Dateien im 9.2-Paket sind der Java-Versionskompatibilität entsprechend benannt.<br/><br/>Beispielsweise muss mit Java 15 die Datei „mssql-jdbc-9.2.1.jre15.jar“ aus dem Paket „9.2“ verwendet werden. |
 | Kompatibel mit dem Java Development Kit (JDK) der Versionen 15.0, 11.0 und 1.8 | Der Microsoft JDBC-Treiber 9.2 für SQL Server ist jetzt nicht nur mit JDK 11.0 und 1.8, sondern auch mit Version 15.0 kompatibel. |
 | &nbsp; | &nbsp; |
 
 ### <a name="releases"></a>Releases
 
-Versionsnummer: 9.2.0. veröffentlicht: 29. Januar 2021
+Versionsnummer: 9.2.1  
+Veröffentlichung: 02.03.2021
+
+Behobene Probleme in 9.2.1:
+
+Problem mit einem leeren Clientgeheimnis während der ActiveDirectoryServicePrincipal-Authentifizierung in der Azure-Umgebung behoben.
+
+Versionsnummer: 9.2.0  
+Veröffentlichung: 29. Januar 2021
+
+**[![Herunterladen](../../ssms/media/download-icon.png) Microsoft JDBC-Treiber 9.2.0 für SQL Server (ZIP-Datei) herunterladen](https://go.microsoft.com/fwlink/?linkid=2153622)**  
+**[![Herunterladen](../../ssms/media/download-icon.png) Microsoft JDBC-Treiber 9.2.0 für SQL Server (tar.gz) herunterladen](https://go.microsoft.com/fwlink/?linkid=2153521)**  
+
+ZIP-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x40a)  
+Tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x40a)  
 
 ### <a name="support-for-jdk-15"></a>Unterstützung für JDK 15
 

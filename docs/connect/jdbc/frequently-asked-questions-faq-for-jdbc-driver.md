@@ -2,7 +2,7 @@
 title: Häufig gestellte Fragen (FAQ) zum JDBC-Treiber
 description: Dieser Artikel enthält Antworten auf häufig gestellte Fragen zum Microsoft JDBC-Treiber für SQL Server.
 ms.custom: ''
-ms.date: 01/29/2021
+ms.date: 02/26/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: cbc0e397-ecf2-4494-87b2-a492609bceae
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 634bbd66e2ad00ccda3b60f6f2fccfea976d09b0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 71c5e88db1bbc0c1b8d6698930c503a1134bac7d
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163619"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837100"
 ---
 # <a name="frequently-asked-questions-faq-for-jdbc-driver"></a>Häufig gestellte Fragen (FAQ) zum JDBC-Treiber
 
@@ -40,9 +40,9 @@ Der Microsoft JDBC-Treiber 9.2 unterstützt die JDBC-Spezifikationen 4.2 und 4
 
 | JAR                        | JDBC-Spezifikation            | JDK-Version |
 | -------------------------- | ----------------------------- | ----------- |
-| mssql-jdbc-9.2.0.jre15.jar | JDBC 4.3 (teilweise) und 4.2 | JDK 15.0    |
-| mssql-jdbc-9.2.0.jre11.jar | JDBC 4.3 (teilweise) und 4.2 | JDK 11.0    |
-| mssql-jdbc-9.2.0.jre8.jar  | JDBC 4.2                      | JDK 8.0     |
+| mssql-jdbc-9.2.1.jre15.jar | JDBC 4.3 (teilweise) und 4.2 | JDK 15.0    |
+| mssql-jdbc-9.2.1.jre11.jar | JDBC 4.3 (teilweise) und 4.2 | JDK 11.0    |
+| mssql-jdbc-9.2.1.jre8.jar  | JDBC 4.2                      | JDK 8.0     |
 | &nbsp;                     | &nbsp;                        | &nbsp;      |
 
 Der Microsoft JDBC-Treiber 8.4 unterstützt die JDBC-Spezifikationen 4.2 sowie 4.3 (teilweise), und das Installationspaket enthält die folgenden drei JAR-Klassenbibliotheken:

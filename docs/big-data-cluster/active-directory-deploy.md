@@ -5,16 +5,16 @@ description: Erfahren Sie, wie Sie für einen SQL Server-Big Data-Cluster in ein
 author: cloudmelon
 ms.author: melqin
 ms.reviewer: mikeray
-ms.date: 02/11/2021
+ms.date: 02/19/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 799afc246b106c4b49d6aba44f8d26a761d6c2cc
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.openlocfilehash: 9417444a1c9d28181529ace79b6dcff6162b7f2d
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100343964"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837031"
 ---
 # <a name="deploy-sql-server-big-data-cluster-in-active-directory-mode"></a>Bereitstellen eines SQL Server-Big Data-Clusters im Active Directory-Modus
 
@@ -27,6 +27,21 @@ Um einen BDC mit AD-Integration bereitzustellen, müssen einige zusätzliche Inf
 Durch Verwendung des Profils `kubeadm-prod` (oder `openshift-prod` ab dem CU5-Release) verfügen Sie automatisch über Platzhalter für die sicherheits- und endpunktbezogenen Informationen, die für die AD-Integration benötigt werden.
 
 Darüber hinaus müssen Sie Anmeldeinformationen angeben, die [!INCLUDE[big-data-clusters](../includes/ssbigdataclusters-nover.md)] zum Erstellen der erforderlichen Objekte in AD verwendet. Diese Anmeldeinformationen werden als Umgebungsvariablen angegeben.
+
+### <a name="traffic-and-ports"></a>Datenverkehr und Ports
+
+Stellen Sie sicher, dass alle Firewalls oder Anwendungen von Drittanbietern die für die Kommunikation mit Active Directory benötigten Ports zulassen. 
+
+![Diagramm des Datenverkehrs zwischen Big Data-Cluster und Active Directory. Controller, Sicherheitssupportdienst und andere Clusterdienste kommunizieren über LDAP/Kerberos mit Domänencontrollern. Der BDC-DNS-Proxydienst kommuniziert über DNS mit den DNS-Servern.](media/big-data-cluster-overview/big-data-cluster-active-directory-dns-traffic-ports.png)
+
+Anforderungen werden über diese Protokolle an und von den Kubernetes-Clusterdiensten an die Active Directory-Domäne gestellt und müssen daher in jeder Firewall oder Anwendung eines Drittanbieters, die an den für TCP und UDP benötigten Ports lauscht, eingehend und ausgehend zugelassen werden. Die von Active Directory verwendeten Standardportnummern:
+
+| Dienst | Port |
+|:---|:---|
+| DNS | 53 |
+| LDAP <BR> LDAPS | 389<BR> 636 |
+| Kerberos | 88 |
+| Port für den globalen Katalog <BR>über LDAP<BR>über LDAPS |<BR> 3268 <BR> 3269 |
 
 ## <a name="set-security-environment-variables"></a>Festlegen von sicherheitsbezogenen Umgebungsvariablen
 
@@ -54,12 +69,12 @@ Für die AD-Integration sind die folgenden Parameter erforderlich. Fügen Sie di
 
 - **Optionaler Parameter** `security.activeDirectory.realm`: In den meisten Fällen entspricht der Bereich dem Domänennamen. Falls sich Bereich und Domänenname unterscheiden, verwenden Sie diesen Parameter zum Definieren des Bereichs (z. B. `CONTOSO.LOCAL`). Der für diesen Parameter angegebene Wert sollte vollqualifiziert sein.
 
-- `security.activeDirectory.netbiosDomainName` **Optionaler Parameter**: Dies ist der NETBIOS-Name der AD-Domäne. In den meisten Fällen ist dies die erste Bezeichnung des AD-Domänennamens. Verwenden Sie bei Abweichungen diesen Parameter, um den NetBIOS-Domänennamen zu definieren. Dieser Wert darf keine Punkte enthalten. Dieser Name wird normalerweise verwendet, um die Benutzerkonten in der Domäne zu qualifizieren. Beispiel: Bei CONTOSO\user ist CONTOSO der NETBIOS-Domänenname.
+- `security.activeDirectory.netbiosDomainName` **Optionaler Parameter**: Dies ist der NETBIOS-Name der AD-Domäne. In den meisten Fällen ist dies die erste Bezeichnung des AD-Domänennamens. Verwenden Sie bei Abweichungen diesen Parameter, um den NetBIOS-Domänennamen zu definieren. Dieser Wert darf keine Punkte enthalten. Dieser Name wird normalerweise verwendet, um die Benutzerkonten in der Domäne zu qualifizieren. Beispiel: Bei „CONTOSO\user“ ist CONTOSO der NETBIOS-Domänenname.
 
   > [!NOTE]
   > Unterstützung mithilfe von *security.activeDirectory.netbiosDomainName* für eine Konfiguration, bei der sich der Active Directory-Domänenname vom **NETBIOS**-Namen der Active Directory-Domäne unterscheidet, wurde ab SQL Server 2019 CU9 aktiviert.
 
-- `security.activeDirectory.domainDnsName`: Dies ist der Name Ihrer DNS-Domäne, die für den Cluster verwendet wird (z. B. `contoso.local`).
+- `security.activeDirectory.domainDnsName`:Der Name Ihrer DNS-Domäne, die für den Cluster verwendet wird (z. B. `contoso.local`).
 
 - `security.activeDirectory.clusterAdmins`: Dieser Parameter akzeptiert eine AD-Gruppe. Der AD-Gruppenbereich muss universell oder global sein. Mitglieder dieser Gruppe verfügen über die Clusterrolle `bdcAdmin`, über die sie die Administratorberechtigungen im Cluster erhalten. Das bedeutet, dass sie über [`sysadmin`-Berechtigungen in SQL Server](../relational-databases/security/authentication-access/server-level-roles.md#fixed-server-level-roles), [`superuser`-Berechtigungen in HDFS](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsPermissionsGuide.html#The_Super-User) und Administratorberechtigungen bei bestehender Verbindung mit dem Controllerendpunkt verfügen.
 
@@ -223,7 +238,7 @@ azdata bdc config replace -c custom-prod-kubeadm/control.json -j "$.security.act
 
 Sie sollten jetzt alle erforderlichen Parameter für eine BDC-Bereitstellung mit Active Directory-Integration festgelegt haben.
 
-Sie können nun den mit Azure Directory integrierten BDC-Cluster mithilfe des [!INCLUDE [azure-data-cli-azdata](../includes/azure-data-cli-azdata.md)]-Befehls und des kubeadm-prod-Bereitstellungsprofils bereitstellen. Eine vollständige Dokumentation, wie Sie [!INCLUDE[big-data-clusters](../includes/ssbigdataclusters-nover.md)] bereitstellen, finden Sie unter [Bereitstellen von Big Data-Cluster für SQL Server in Kubernetes](deployment-guidance.md).
+Sie können nun den mit Azure Directory integrierten BDC-Cluster mithilfe des [!INCLUDE [azure-data-cli-azdata](../includes/azure-data-cli-azdata.md)]-Befehls und des kubeadm-prod-Bereitstellungsprofils bereitstellen. Die vollständige Dokumentation der Bereitstellung von [!INCLUDE[big-data-clusters](../includes/ssbigdataclusters-nover.md)] finden Sie unter [Bereitstellen von Big Data-Clustern für SQL Server in Kubernetes](deployment-guidance.md).
 
 ## <a name="verify-reverse-dns-entry-for-domain-controller"></a>Überprüfen der Reverse-DNS-Einträge für den Domänencontroller
 

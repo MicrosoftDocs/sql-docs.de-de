@@ -5,17 +5,17 @@ ms.custom: ''
 ms.date: 09/30/2020
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 ms.author: v-beaziz
 author: bazizi
-ms.openlocfilehash: 52089c92af76611fe8ab60b53dc7cf2848fb31c5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e3a7367daa776da3641c1b9a506f8f8335ce05d9
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99195306"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837465"
 ---
 # <a name="universal-data-link-udl-configuration"></a>Universal Data Link (UDL)-Konfiguration
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -32,7 +32,7 @@ Diese Registerkarte „Verbindung“ ist anbieterspezifisch und zeigt nur die Ve
 |Option|BESCHREIBUNG|
 |---   |---        |
 |Wählen Sie einen Servernamen aus, oder geben Sie ihn ein.|Wählen Sie den Namen eines Servers aus der Dropdownliste, oder geben Sie den Speicherort des Servers ein, auf dem sich die gewünschte Datenbank befindet. Das Auswählen der Datenbank auf dem Server ist eine separate Aktion. Aktualisieren Sie die Liste, indem Sie auf „Aktualisieren“ klicken.
-|Geben Sie Informationen zum Anmelden am Server ein|Sie können in der Dropdownliste die folgenden Authentifizierungsoptionen auswählen: <ul><li>`Windows Authentication:` Authentifizierung gegenüber SQL Server über die Anmeldeinformationen des Windows-Kontos, das aktuell angemeldet ist.</li><li>`SQL Server Authentication:` Authentifizierung über eine Anmelde-ID und ein Kennwort.</li><li>`Active Directory - Integrated:` Integrierte Authentifizierung mit einer Azure Active Directory-Identität. Dieser Modus kann auch für die Windows-Authentifizierung gegenüber SQL Server verwendet werden.</li><li>`Active Directory - Password:` Authentifizierung mit Benutzer-ID und Kennwort über eine Azure Active Directory-Identität.</li><li>`Active Directory - Universal with MFA support:` Interaktive Authentifizierung mit einer Azure Active Directory-Identität. Dieser Modus unterstützt die Azure Multi-Factor Authentication (MFA).</li><li>`Active Directory - Service Principal:` Authentifizierung mit einem Azure Active Directory-Dienstprinzipal. Als **Benutzername** sollte die ID der Anwendung (des Clients) festgelegt werden. Als **Kennwort** sollte das Geheimnis der Anwendung (des Clients) festgelegt werden.</li></ul>|
+|Geben Sie Informationen zum Anmelden am Server ein|Sie können in der Dropdownliste die folgenden Authentifizierungsoptionen auswählen: <ul><li>`Windows Authentication:` Authentifizierung gegenüber SQL Server über die Anmeldeinformationen des Windows-Kontos, das aktuell angemeldet ist.</li><li>`SQL Server Authentication:` Authentifizierung über eine Anmelde-ID und ein Kennwort.</li><li>`Active Directory - Integrated:` Integrierte Authentifizierung mit einer Azure Active Directory-Identität. Dieser Modus kann auch für die Windows-Authentifizierung gegenüber SQL Server verwendet werden.</li><li>`Active Directory - Password:` Authentifizierung mit Benutzer-ID und Kennwort über eine Azure Active Directory-Identität.</li><li>`Active Directory - Universal with MFA support:` Interaktive Authentifizierung mit einer Azure Active Directory-Identität. Dieser Modus unterstützt die mehrstufige Authentifizierung (MFA) von Azure Active Directory.</li><li>`Active Directory - Service Principal:` Authentifizierung mit einem Azure Active Directory-Dienstprinzipal. Als **Benutzername** sollte die ID der Anwendung (des Clients) festgelegt werden. Als **Kennwort** sollte das Geheimnis der Anwendung (des Clients) festgelegt werden.</li></ul>|
 |Server-SPN|Wenn Sie eine vertrauenswürdige Verbindung verwenden, können Sie einen Dienstprinzipalnamen (SPN) für den Server angeben.|
 |Benutzername|Geben Sie die Benutzer-ID ein, die bei der Anmeldung bei der Datenquelle für die Authentifizierung verwendet werden soll.|
 |Kennwort|Geben Sie das Kennwort ein, das bei der Anmeldung bei der Datenquelle für die Authentifizierung verwendet werden soll.|

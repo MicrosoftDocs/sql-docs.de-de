@@ -5,18 +5,18 @@ ms.custom: ''
 ms.date: 07/31/2020
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 ms.assetid: ''
 author: peterbae
 ms.author: v-hyba
-ms.openlocfilehash: bfc8816c30020669918b3632f94e289524097537
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 168034034e5f2abe53bd47029b99fa78c250336b
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438442"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836967"
 ---
 # <a name="client-certificate-authentication-for-loopback-scenarios"></a>Clientzertifikatauthentifizierung für Loopbackszenarios
 
@@ -44,7 +44,7 @@ clientKey=<file_location>
 ```
 Diese Zeichenfolge gibt den Speicherort der Datei mit dem privaten Schlüssel an. Wenn die Datei mit privatem Schlüssel kennwortgeschützt ist, wird das Schlüsselwort „password“ benötigt. Der Dateispeicherort kann entweder relativ oder absolut sein.
 
-* clientKeyPassword: Eine optionale Kennwortzeichenfolge für den Zugriff auf den privaten Schlüssel der clientKey-Datei.
+* clientKeyPassword: eine optionale Kennwortzeichenfolge für den Zugriff auf den privaten Schlüssel der Datei „clientKey“.
 
 Diese Funktion wird offiziell nur für Loopback-Authentifizierungsszenarios ab Linux SQL Server 2019 unterstützt.
 

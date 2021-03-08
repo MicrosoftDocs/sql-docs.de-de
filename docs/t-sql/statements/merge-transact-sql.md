@@ -2,7 +2,7 @@
 description: MERGE (Transact-SQL)
 title: MERGE (Transact-SQL) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 08/20/2019
+ms.date: 02/27/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse
 ms.reviewer: ''
@@ -26,12 +26,12 @@ ms.assetid: c17996d6-56a6-482f-80d8-086a3423eecc
 author: XiaoyuMSFT
 ms.author: XiaoyuL
 monikerRange: = azuresqldb-current || = azuresqldb-mi-current || >= sql-server-2016 || >= sql-server-linux-2017 ||  azure-sqldw-latest
-ms.openlocfilehash: 6bb1014c22353826b6e4429726d4d28549cc274a
-ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
+ms.openlocfilehash: c7b388649cf7ca535d5d81eb2d05cf4f0a27d373
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489334"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838961"
 ---
 # <a name="merge-transact-sql"></a>MERGE (Transact-SQL)
 
@@ -238,16 +238,84 @@ Gibt das Graph-Vergleichsmuster an. Weitere Informationen zu den Argumenten für
 >[!NOTE]
 > In Azure Synapse Analytics weist der MERGE-Befehl (Vorschau) die folgenden Unterschiede im Vergleich mit SQL-Server und Azure SQL-Datenbank auf.  
 > - Ein MERGE-Update ist als Paar aus Delete und Insert implementiert. Die betroffene Zeilenanzahl für ein MERGE-Update schließt die gelöschten und eingefügten Zeilen ein. 
-
 > - Während der Vorschau wird MERGE…WHEN NOT MATCHED INSERT nicht für Tabellen mit IDENTITY-Spalten unterstützt.  
-
 > - Die Unterstützung für Tabellen mit verschiedenen Verteilungstypen ist in dieser Tabelle beschrieben:
-
+>
 >|MERGE-KLAUSEL in Azure Synapse Analytics|Unterstützte ZIEL-Verteilungstabelle| Unterstützte QUELL-Verteilungstabelle|Comment|  
 >|-----------------|---------------|-----------------|-----------|  
 >|**WHEN MATCHED**| Alle Verteilungstypen |Alle Verteilungstypen||  
 >|**NOT MATCHED BY TARGET**|HASH |Alle Verteilungstypen|Verwenden Sie UPDATE/DELETE FROM…JOIN, um zwei Tabellen zu synchronisieren. |
 >|**NOT MATCHED BY SOURCE**|Alle Verteilungstypen|Alle Verteilungstypen|||  
+
+>[!IMPORTANT]
+> In Azure Synapse Analytics kann der Befehl MERGE, der sich derzeit in der Vorschauphase befindet, unter bestimmten Bedingungen die Zieltabelle in einem inkonsistenten Zustand zurücklassen, wobei Zeilen in der falschen Verteilung platziert werden, wodurch spätere Abfragen in einigen Fällen falsche Ergebnisse liefern. Dieses Problem kann auftreten, wenn diese beiden Bedingungen erfüllt sind:
+>
+> - Die T-SQL-Anweisung MERGE (Zusammenführen) wurde auf eine HASH-verteilte TARGET-Tabelle in der Azure Synapse SQL-Datenbank angewendet.
+> - Die TARGET-Tabelle der Zusammenführung weist sekundäre Indizierungen oder die Einschränkung UNIQUE auf.
+>
+> Vermeiden Sie die Verwendung des Befehls MERGE für HASH-verteilte TARGET-Tabellen, die sekundäre Indizierungen oder UNIQUE-Einschränkungen aufweisen, bis der Fix verfügbar ist.  Die Unterstützung des Features MERGE kann auch in Datenbanken mit verteilten HASH-Tabellen mit UNIQUE-Einschränkungen oder sekundären Indizes vorübergehend deaktiviert sein.      
+>
+> Eine wichtige Erinnerung: Previewfunktionen sind nur für Tests gedacht und sollten nicht für Produktionsinstanzen oder Produktionsdaten verwendet werden. Bewahren Sie außerdem eine Kopie Ihrer Testdaten auf, wenn die Daten wichtig sind.
+> 
+> Um zu prüfen, welche hashverteilten Tabellen in einer Datenbank aufgrund dieses Problems nicht mit MERGE funktionieren, führen Sie diese Anweisung aus.
+>```sql
+> select a.name, c.distribution_policy_desc, b.type from sys.tables a join sys.indexes b
+> on a.object_id = b.object_id
+> join
+> sys.pdw_table_distribution_properties c
+> on a.object_id = c.object_id
+> where b.type = 2 and c.distribution_policy_desc = 'HASH'
+> ```
+> 
+> Um zu prüfen, ob eine hashverteilte TARGET-Tabelle für MERGE von diesem Problem betroffen ist, führen Sie die folgenden Schritte aus, um zu untersuchen, ob die Tabellen falsch verteilte Zeilen aufweisen.  Wenn „keine Reparatur erforderlich“ zurückgegeben wird, ist diese Tabelle nicht betroffen.  
+>
+>```sql
+> if object_id('[check_table_1]', 'U') is not null
+> drop table [check_table_1]
+> go
+> if object_id('[check_table_2]', 'U') is not null
+> drop table [check_table_2]
+> go
+>
+> create table [check_table_1] with(distribution = round_robin) as
+> select <DISTRIBUTION_COLUMN> as x from <MERGE_TARGET_TABLE> group by <DISTRIBUTION_COLUMN>;
+> go
+>
+> create table [check_table_2] with(distribution = hash(x)) as
+> select x from [check_table_1];
+>go
+>
+> if not exists(select top 1 * from (select <DISTRIBUTION_COLUMN> as x from <MERGE_TARGET_TABLE> except select x from 
+> [check_table_2]) as tmp)
+> select 'no need for repair' as result
+> else select 'needs repair' as result
+> go
+>
+> if object_id('[check_table_1]', 'U') is not null
+> drop table [check_table_1]
+> go
+> if object_id('[check_table_2]', 'U') is not null
+> drop table [check_table_2]
+> go
+>```
+>Um betroffene Tabellen zu reparieren, führen Sie diese Anweisungen aus, um alle Zeilen aus der alten Tabelle in eine neue Tabelle zu kopieren.
+>```sql
+> if object_id('[repair_table_temp]', 'U') is not null
+> drop table [repair_table_temp];
+> go
+> if object_id('[repair_table]', 'U') is not null
+> drop table [repair_table];
+> go
+> create table [repair_table_temp] with(distribution = round_robin) as select * from <MERGE_TARGET_TABLE>;
+> go
+>
+> -- [repair_table] will hold the repaired table generated from <MERGE_TARGET_TABLE>
+> create table [repair_table] with(distribution = hash(<DISTRIBUTION_COLUMN>)) as select * from [repair_table_temp];
+> go
+>if object_id('[repair_table_temp]', 'U') is not null
+> drop table [repair_table_temp];
+> go
+> ```   
 
 Mindestens eine der drei MATCHED-Klauseln muss angegeben werden, dies kann jedoch in beliebiger Reihenfolge erfolgen. Eine Variable in derselben MATCHED-Klausel kann nicht mehr als einmal aktualisiert werden.  
   

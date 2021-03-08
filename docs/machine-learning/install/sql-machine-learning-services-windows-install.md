@@ -3,18 +3,18 @@ title: Installieren unter Windows
 description: Erfahren Sie, wie Sie SQL Server-Machine Learning Services unter Windows installieren. Sie können Machine Learning Services verwenden, um Python- und R-Skripts in einer Datenbank auszuführen.
 ms.prod: sql
 ms.technology: machine-learning-services
-ms.date: 02/29/2020
+ms.date: 02/17/2021
 ms.topic: how-to
 author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2017'
-ms.openlocfilehash: 592a365024edbbe4ee2743a156ee480b76849ba9
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 44993ae527e99d615a9be620e3d930aa520c8980
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096845"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839507"
 ---
 # <a name="install-sql-server-machine-learning-services-python-and-r-on-windows"></a>Installieren von SQL Server Machine Learning Services (Python und R) unter Windows
 
@@ -272,22 +272,45 @@ Gehen Sie folgendermaßen vor, um zu überprüfen, ob alle zum Starten eines ext
 >
 > Sie können beispielsweise die folgende Zeile hinzufügen, um einen beliebigen Spaltennamen zu generieren: `WITH RESULT SETS ((Col1 AS int))`
 
-::: moniker range="=sql-server-2017"
-<!-- There are no updates yet available for 2019, and there's no 2019 update list site. When updates become available, add 2019 information to this section. -->
+::: moniker range=">=sql-server-2017"
 
 <a name="apply-cu"></a>
 
 ## <a name="apply-updates"></a>Anwenden von Updates
 
-Es wird empfohlen, dass Sie das neueste kumulative Update sowohl auf die Datenbank-Engine als auch auf die Machine Learning-Komponenten anwenden.
+### <a name="existing-installation"></a>Vorhandene Installation
+
+Wenn Sie Machine Learning Services zu einer vorhandenen SQL Server-Instanz hinzugefügt haben und zuvor ein kumulatives Update (CU) angewendet haben, können die Versionen Ihrer Datenbank-Engine und des Features Machine Learning Services unterschiedlich sein. Dies kann zu unerwartetem Verhalten oder Fehlern führen. 
+
+Führen Sie die folgenden Schritte aus, um die Machine Learning Services auf die gleiche Version wie Ihre Datenbank-Engine umzustellen.
+
+1. Ermitteln Sie das kumulative Update (CU), das Sie für die Datenbank-Engine haben. Führen Sie diese T-SQL-Anweisung aus:
+
+   ```sql
+   SELECT @@VERSION
+   ```
+ 
+   Hier ist eine Beispielausgabe für SQL Server 2019, kumulatives Update (CU) 8:
+ 
+   *Microsoft SQL Server 2019 (RTM-CU8-GDR) (KB4583459) - 15.0.4083.2 (X64)   Nov  2 2020 18:35:09   Copyright (C) 2019 Microsoft Corporation  Developer Edition (64-bit) on Windows 10 Enterprise 10.0 <X64> (Build 19042: ) (Hypervisor)*
+
+   Weitere Informationen finden Sie unter [Bestimmen der Version, Edition und Updateebene von SQL Server und zugehöriger Komponenten](https://docs.microsoft.com/troubleshoot/sql/general/determine-version-edition-update-level#machine-learning-services).
+
+1. Laden Sie das [kumulative Update (CU)](../../database-engine/install-windows/latest-updates-for-microsoft-sql-server.md) herunter, das Sie für die Datenbank-Engine installiert haben.
+
+1. Führen Sie die Installation des kumulativen Updates (CU) aus, und folgen Sie den Anweisungen zur Installation des CU für Machine Learning Services.
+
+### <a name="new-installation"></a>Neue Installation
+
+Wenn Sie Machine Learning Services mit einer neuen Installation der SQL Server-Datenbank-Engine installieren, empfehlen wir, das neueste kumulative Update sowohl für die Datenbank-Engine als auch für die Komponenten für maschinelles Lernen anzuwenden.
 
 Auf Geräten, die mit dem Internet verbunden sind, werden kumulative Updates in der Regel über Windows Update angewendet. Sie können jedoch auch die nachfolgenden Schritte für kontrollierte Updates verwenden. Wenn Sie das Update für die Datenbank-Engine anwenden, ruft das Setup kumulative Updates für alle R- oder Python-Funktionen ab, die Sie auf derselben Instanz installiert haben. 
 
 Getrennte Server erfordern zusätzliche Schritte. Weitere Informationen finden Sie unter [Installieren auf Computern ohne Internetzugriff > Kumulative Updates anwenden](sql-ml-component-install-without-internet-access.md#apply-cu).
 
-1. Beginnen Sie mit einer bereits installierten Baseline-Instanz: SQL Server 2017 (erste Version)
+1. Beginnen Sie mit einer bereits installierten Baseline-Instanz: SQL Server (erste Version).
 
-2. Navigieren Sie zur kumulativen Updateliste: [Neueste Updates für Microsoft SQL Server](../../database-engine/install-windows/latest-updates-for-microsoft-sql-server.md)
+2. Navigieren Sie zur Liste der kumulativen Updates: [Neueste Updates für Microsoft SQL Server](../../database-engine/install-windows/latest-updates-for-microsoft-sql-server.md).
 
 3. Wählen Sie das neueste kumulative Update aus. Eine ausführbare Datei wird automatisch heruntergeladen und extrahiert.
 
@@ -332,6 +355,7 @@ Für die Datenbank benötigen Sie möglicherweise die folgenden Konfigurationsup
 Da nun alles funktioniert, möchten Sie möglicherweise auch den Server für die Unterstützung von Machine Learning optimieren oder vorab trainierte Modelle für maschinelles Lernen installieren.
 
 ::: moniker range="=sql-server-2017"
+
 ### <a name="add-more-worker-accounts"></a>Hinzufügen weiterer Geschäftskonten
 
 Wenn Sie erwarten, dass viele Benutzer gleichzeitig Skripts ausführen werden, können Sie die Anzahl der Workerkonten erhöhen, die dem Launchpad-Dienst zugewiesen sind. Weitere Informationen finden Sie unter [Skalieren der gleichzeitige Ausführung externer Skripts in SQL Server-Machine Learning Services](../administration/scale-concurrent-execution-external-scripts.md).

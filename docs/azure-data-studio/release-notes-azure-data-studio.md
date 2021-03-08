@@ -8,17 +8,30 @@ author: yualan
 ms.author: alayu
 ms.reviewer: maghan
 ms.custom: seodec18
-ms.date: 2/10/2021
-ms.openlocfilehash: 17cc8ef3252ad39c344de7a7c51a9af80c1f6030
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.date: 2/18/2021
+ms.openlocfilehash: c666ae644200c1b2beefb7f73c8a819294831985
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100343399"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836027"
 ---
 # <a name="release-notes-for-azure-data-studio"></a>Versionshinweise für Azure Data Studio
 
 **[Neuestes Release herunterladen und installieren](./download-azure-data-studio.md)**
+
+## <a name="february-2021"></a>Februar 2021
+
+18. Februar 2021 &nbsp; / &nbsp; Version: 1.26.0
+
+&nbsp;
+
+| Change | Details |
+| ------ | ------- |
+| Fehlerbehebungen | Eine vollständige [Liste der Fehlerbehebungen und Issues finden Sie auf GitHub](https://github.com/microsoft/azuredatastudio/issues?q=is%3Aissue+milestone%3A%22February+2021+Release%22+is%3Aclosed). |
+| Update für Erweiterung(en) | [Dacpac](extensions/sql-server-dacpac-extension.md) <br/> [Kusto (KQL)](extensions/kusto-extension.md) </br> [MachineLearning](extensions/machine-learning-extension.md) </br> [Profiler](extensions/sql-server-profiler-extension.md) </br> [SchemaCompare](extensions/schema-compare-extension.md) </br> [SQLDatabaseProjects](extensions/sql-database-project-extension.md) |
+| Neue Azure Arc-Features | Mehrere Datencontroller werden jetzt unterstützt <br/> Neue Verbindungsdialogoptionen wie Kube-Konfigurationsdatei <br/> Verbesserungen am Postgres-Dashboard |
+| Neue Notebookfeatures | Um 50 % verbesserte Startzeit des Jupyter-Servers unter Windows <br/> Unterstützung der Bearbeitung von Jupyter Books durch Klicken mit der rechten Maustaste hinzugefügt <br/> Unterstützung für die Parametrisierung von URI-Notebooks und [Dokumentation zur Parametrisierung von Notebooks hinzugefügt](https://docs.microsoft.com/sql/azure-data-studio/notebooks/notebooks-parameterization) |
 
 ## <a name="december-2020-hotfix"></a>Dezember 2020 (Hotfix)
 

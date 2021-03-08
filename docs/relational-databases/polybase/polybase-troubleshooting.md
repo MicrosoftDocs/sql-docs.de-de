@@ -1,26 +1,28 @@
 ---
-title: Überwachung und Problembehandlung für PolyBase | Microsoft-Dokumentation
+title: Überwachung und Problembehandlung für PolyBase
 description: Troubleshooting von PolyBase, Verwenden dieser Sichten und DMVs. Aufrufen eines PolyBase-Abfrageplans, Überwachen von Knoten in einer PolyBase-Gruppe und Einrichten der Hochverfügbarkeit für Hadoop-Namenknoten.
-ms.date: 04/23/2019
+ms.date: 02/17/2021
 ms.prod: sql
 ms.technology: polybase
 ms.topic: conceptual
+dev_langs:
+- TSQL
+- XML
 f1_keywords:
 - PolyBase, monitoring
 - PolyBase, performance monitoring
 helpviewer_keywords:
 - PolyBase, troubleshooting
-ms.assetid: f119e819-c3ae-4e0b-a955-3948388a9cfe
 author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: ''
 monikerRange: '>= sql-server-linux-ver15 || >= sql-server-2016'
-ms.openlocfilehash: 5945f88320f01f6ce431bea79483528bf8dbeb64
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 5306f392623bebdb08d17b704e12b06c5ce9e8fa
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100351748"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101835283"
 ---
 # <a name="monitor-and-troubleshoot-polybase"></a>Überwachung und Problembehandlung für PolyBase
 
@@ -171,7 +173,7 @@ Sie können PolyBase-Abfragen mithilfe der folgenden DMVs überwachen und eine P
    ORDER BY total_elapsed_time DESC;  
    ```  
 
-## <a name="to-view-the--polybase-query-plan-to-be-changed"></a>Anzeigen des PolyBase-Abfrageplans (Änderung vorbehalten) 
+## <a name="to-view-the-polybase-query-plan-to-be-changed"></a>So zeigen Sie den PolyBase-Abfrageplan an (Änderung vorbehalten) 
 
 1. Aktivieren Sie in SSMS **Tatsächlichen Ausführungsplan einschließen** (STRG+M), und führen Sie die Abfrage aus.
 
@@ -256,12 +258,37 @@ Nachdem Sie eine Gruppe von Computern als Teil einer PolyBase-Erweiterungsgruppe
 
 PolyBase ist heute nicht mehr mit Hochverfügbarkeitsdiensten für Namenknoten wie Zookeeper oder KNOX verbunden. Es gibt jedoch eine bewährte Problemumgehung, die verwendet werden kann, um die Funktionalität bereitzustellen.
 
-Problemumgehung: Verwenden Sie den DNS-Namen, um Verbindungen zum aktiven Namensknoten umzuleiten. Dafür müssen Sie sicherstellen, dass die externe Datenquelle einen DNS-Namen verwendet, um mit dem Namenknoten zu kommunizieren. Wenn ein Failover des Namenknotens auftritt, müssen Sie die IP-Adresse ändern, die dem DNS-Namen zugeordnet ist, der in der Definition der externen Datenquelle verwendet wird. Dadurch werden alle neuen Verbindungen zum richtigen Namenknoten umgeleitet. Vorhandene Verbindungen schlagen fehl, wenn ein Failover auftritt. Ein „Takt“ kann den aktiven Namenknoten pingen, um diesen Prozess zu automatisieren. Wenn der Takt fehlschlägt, ist anzunehmen, dass ein Failover aufgetreten ist, und ein automatischer Wechsel zur sekundären IP-Adresse kann vorgenommen werden.
+Problemumgehung: Verwenden Sie den DNS-Namen, um Verbindungen zum aktiven Namenknoten umzuleiten. Dafür müssen Sie sicherstellen, dass die externe Datenquelle einen DNS-Namen verwendet, um mit dem Namenknoten zu kommunizieren. Wenn ein Failover des Namenknotens auftritt, müssen Sie die IP-Adresse ändern, die dem DNS-Namen zugeordnet ist, der in der Definition der externen Datenquelle verwendet wird. Dadurch werden alle neuen Verbindungen zum richtigen Namenknoten umgeleitet. Vorhandene Verbindungen schlagen fehl, wenn ein Failover auftritt. Ein „Takt“ kann den aktiven Namenknoten pingen, um diesen Prozess zu automatisieren. Wenn der Takt fehlschlägt, ist anzunehmen, dass ein Failover aufgetreten ist, und ein automatischer Wechsel zur sekundären IP-Adresse kann vorgenommen werden.
+
+## <a name="log-file-locations"></a>Protokolldateispeicherorte
+
+Auf Windows-Servern befinden sich die Protokolle standardmäßig im Installationsverzeichnispfad: c:\Program Files\Microsoft SQL Server\MSSQLnn.InstanceName\MSSQL\Log\Polybase\.
+
+Auf Linux-Servern befinden sich die Protokolle standardmäßig in /var/opt/mssql/log/polybase.
+
+Protokolldateien der PolyBase-Datenverschiebung:  
+- <INSTANCENAME>_<SERVERNAME>_Dms_errors.log 
+- <INSTANCENAME>_<SERVERNAME>_Dms_movement.log 
+
+Protokolldateien des PolyBase-Engine-Diensts:  
+- <INSTANCENAME>_<SERVERNAME>_DWEngine_errors.log 
+- <INSTANCENAME>_<SERVERNAME>_DWEngine_movement.log 
+- <INSTANCENAME>_<SERVERNAME>_DWEngine_server.log 
+
+Unter Windows PolyBase-Java-Protokolldateien:
+- <SERVERNAME> Dms polybase.log
+- <SERVERNAME>_DWEngine_polybase.log
+ 
+Unter Linux PolyBase-Java-Protokolldateien:
+- /var/opt/mssql-extensibility/hdfs_bridge/log/hdfs_bridge_pdw.log
+- /var/opt/mssql-extensibility/hdfs_bridge/log/hdfs_bridge_dms.log
+
 
 ## <a name="error-messages-and-possible-solutions"></a>Fehlermeldungen und mögliche Lösungen
 
-Informationen zur Problembehandlung bei Fehlern externer Tabellen finden Sie im Blog [https://blogs.msdn.microsoft.com/sqlcat/2016/06/21/polybase-setup-errors-and-possible-solutions/](/archive/blogs/sqlcat/polybase-setup-errors-and-possible-solutions "PolyBase-Setupfehler und mögliche Lösungen") von Murshed Zaman.
+Informationen zu gängigen Szenarien zur Problembehandlung finden Sie unter [Polybase-Fehler und mögliche Lösungen](polybase-errors-and-possible-solutions.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 
-[Troubleshoot PolyBase Kerberos connectivity (Problembehandlung: PolyBase-Kerberos-Konnektivität)](polybase-troubleshoot-connectivity.md)
+[Problembehandlung: PolyBase-Kerberos-Konnektivität](polybase-troubleshoot-connectivity.md)   
+[PolyBase-Fehler und mögliche Lösungen](polybase-errors-and-possible-solutions.md)   

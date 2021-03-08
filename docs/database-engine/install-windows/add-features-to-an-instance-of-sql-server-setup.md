@@ -8,19 +8,18 @@ helpviewer_keywords:
 - feature adding [SQL Server]
 - " SQL Server, features"
 - adding features to  SQL Server
-ms.assetid: 97931fdc-d943-48dd-81b9-ae8b8d2c6dad
 author: cawrites
 ms.author: chadam
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 09/07/2019
+ms.date: 02/05/2021
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 2f756136657d20a694cbaa2263500624eeaf8c27
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: b8b520e3c5f44342970881e3e67b3dbf95ce9853
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100347869"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837572"
 ---
 # <a name="add-features-to-an-instance-of-sql-server-setup"></a>Hinzufügen von Funktionen zu einer Instanz von SQL Server (Setup)
 
@@ -29,6 +28,9 @@ ms.locfileid: "100347869"
 Dieser Artikel bietet eine Schrittanleitung zum Hinzufügen von Funktionen zu einer Instanz von [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Einige Komponenten oder Dienste von SQL Server sind spezifisch für eine SQL Server-Instanz. Sie werden auch als instanzabhängig bezeichnet. Sie nutzen die gleiche Version wie ihre Hostinstanz und werden ausschließlich für diese Instanz verwendet. Sie können einer SQL Server-Instanz die instanzabhängigen Komponenten zusammen mit den gemeinsam genutzten Komponenten hinzufügen, wenn sie nicht bereits installiert sind. Eine Liste der Features, die von den verschiedenen SQL Server-Editionen unterstützt werden, finden Sie unter [Editionen und unterstütze Features für SQL Server 2017](../../sql-server/editions-and-components-of-sql-server-2017.md) oder [SQL Server 2019](../../sql-server/editions-and-components-of-sql-server-version-15.md).
 
 Informationen zum Hinzufügen von Funktionen zu einer Instanz von SQL Server über die Eingabeaufforderung finden Sie unter [Installieren von SQL Server über die Eingabeaufforderung](./install-sql-server-from-the-command-prompt.md).
+
+> [!CAUTION]
+> Durch Hinzufügen von Features zu einer vorhandenen Installation von SQL Server werden die Features auf der Versionsebene des Installationsmediums installiert, die hinter der Versionsebene anderer Features von SQL Server liegen kann. Dies kann zu unerwartetem Verhalten oder Fehlern führen. Stellen Sie stets im Anschluss an das erfolgreiche Setup von SQL Server das neue Feature auf die gleiche Versionsebene um. Installieren Sie bei Bedarf Service Packs (SPs), kumulative Updates (CUs) und/oder allgemeine Vertriebsversionen (General Distribution Releases, GDRs). Informationen zum Ermitteln der Version von Features, die einer Installation von SQL Server hinzugefügt wurden, finden Sie unter [Bestimmen der Version, Edition und Updateebene von SQL Server und zugehöriger Komponenten](https://docs.microsoft.com/troubleshoot/sql/general/determine-version-edition-update-level).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -156,3 +158,4 @@ Konfigurieren der SQL Server-Installation
 - [Reparieren von Fehlern bei einer SQL Server 2016-Installation](../../database-engine/install-windows/repair-a-failed-sql-server-installation.md)
 - [Upgrade SQL Server Using the Installation Wizard (Setup) (Upgrade von SQL Server mithilfe des Installations-Assistenten (Setup))](../../database-engine/install-windows/upgrade-sql-server-using-the-installation-wizard-setup.md)
 - [Installieren von SQL Server von der Eingabeaufforderung](./install-sql-server-from-the-command-prompt.md)
+- [Neueste Updates für SQL Server](latest-updates-for-microsoft-sql-server.md)

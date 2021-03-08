@@ -8,12 +8,12 @@ ms.date: 06/06/2018
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: 0c95b3a843cbec0e703efea846b9c80f99b9dc41
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: ce07fb02a81b4e44375d80f643713b9a0b62d80d
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100346228"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838996"
 ---
 # <a name="limitations-and-known-issues-for-ssis-on-linux"></a>Einschränkungen und bekannte Probleme bei SSIS unter Linux
 
@@ -94,7 +94,7 @@ Die folgenden Wartungsplantasks werden unter Linux unterstützt:
 | Komponente | Einschränkungen |
 |------------|---|
 | ADO.NET-Quelle und -Ziel | Unterstützt nur den SQLClient-Datenanbieter. |
-| Flatfilequelle und -ziel | Unterstützt nur Dateipfade im Windows-Stil, auf die die Standardpfad-Zuordnungsregel angewendet wird. `D:\home\ssis\travel.csv` wird z.B. zu `/home/ssis/travel.csv`. |
+| Flatfilequelle und -ziel | 1. Unterstützt nur Dateipfade im Windows-Stil, auf die die Standardpfad-Zuordnungsregel angewendet wird. `D:\home\ssis\travel.csv` wird z.B. zu `/home/ssis/travel.csv`. 2. Die unter Red Hat 7 bereitgestellte Azure-Dateifreigabe wird nicht unterstützt. |
 | OData-Quelle | Unterstützt nur die Standardauthentifizierung. |
 | ODBC-Quelle und -Ziel | Unterstützt 64-Bit-Unicode-ODBC-Treiber unter Linux. Hängt vom UnixODBC-Treiber-Manager unter Linux ab. |
 | OLE DB-Quelle und -Ziel | Unterstützt nur SQL Server Native Client 11.0 und Microsoft OLE DB-Anbieter für SQL Server. |

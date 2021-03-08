@@ -10,18 +10,21 @@ ms.topic: conceptual
 ms.assetid: 53b09784-bb9d-4fd4-99d3-0492b3308ac4
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 29f67c57bb6609d037d6e7077a91e5c7229e93fb
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 778d8f2f53ba56436047eee53d17dd827c58f3eb
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99195315"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837571"
 ---
 # <a name="download-odbc-driver-for-sql-server"></a>Herunterladen des ODBC-Treibers für SQL Server
 
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
 Microsoft ODBC Driver for SQL Server ist eine einzelne Dynamic-Link Library (DLL), die Laufzeitunterstützung für Anwendungen bietet, die APIs mit nativem Code verwenden, um eine Verbindung zu SQL Server herzustellen. Microsoft ODBC Driver 17 for SQL Server sollte für die Erstellung neuer Anwendungen oder zur Verbesserung vorhandener Anwendungen eingesetzt werden, die die neueren SQL Server-Features nutzen.
+
+> [!Important]
+> Wenn Sie die Azure Active Directory-Authentifizierung mit verwalteter Identität (`authentication=ActiveDirectoryMSI`) mit dem Microsoft ODBC-Treiber für SQL Server verwenden, führen Sie kein Upgrade auf Version 17.7 durch. In 17.7 gibt es ein Problem, das bei Verwendung dieses Authentifizierungsmodus zu einem Fehler führt.
 
 ## <a name="download-for-windows"></a>Herunterladen für Windows
 

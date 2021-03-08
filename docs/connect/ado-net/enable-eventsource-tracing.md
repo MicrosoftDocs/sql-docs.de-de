@@ -10,13 +10,13 @@ ms.technology: connectivity
 ms.topic: conceptual
 author: johnnypham
 ms.author: v-jopha
-ms.reviewer: ''
-ms.openlocfilehash: 1bcf11727a5ccd640846788b936ff5fefe9c63a3
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.reviewer: v-daenge
+ms.openlocfilehash: c13942dc5633deec4759ebd4c8a5661654c0952b
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98595685"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837087"
 ---
 # <a name="enable-event-tracing-in-sqlclient"></a>Aktivieren der Ereignisablaufverfolgung in SqlClient
 
@@ -50,6 +50,7 @@ Die aktuelle Implementierung unterstützt die folgenden Schlüsselwörter für E
 |||
 
 ## <a name="example"></a>Beispiel
+
 Im folgenden Beispiel wird die Ereignisablaufverfolgung für einen Datenvorgang für die **AdventureWorks**-Beispieldatenbank aktiviert, und die Ereignisse werden im Konsolenfenster angezeigt.
 
 [!code-csharp [SqlClientEventSource#1](~/../sqlclient/doc/samples/SqlClientEventSource.cs#1)]
@@ -112,7 +113,7 @@ class Program
    ```
    xperf -start trace -f myTrace.etl -on *Microsoft.Data.SqlClient.EventSource
    ```
-   
+
 2. Führen Sie das Beispiel der nativen SNI-Ablaufverfolgung aus, um eine Verbindung mit SQL Server herzustellen.
 
 3. Beenden Sie die Ablaufverfolgung über die folgende Befehlszeile.
@@ -120,8 +121,8 @@ class Program
    ```
    xperf -stop trace
    ```
-   
-4. Öffnen Sie mithilfe von PerfView die in Schritt 1 angegebene Datei „myTrace.etl“. Das SNI-Ablaufverfolgungsprotokoll kann anhand der Ereignisnamen `Microsoft.Data.SqlClient.EventSource/SNIScope` und `Microsoft.Data.SqlClient.EventSource/SNITrace` gefunden werden. 
+
+4. Öffnen Sie mithilfe von PerfView die in Schritt 1 angegebene Datei „myTrace.etl“. Das SNI-Ablaufverfolgungsprotokoll kann anhand der Ereignisnamen `Microsoft.Data.SqlClient.EventSource/SNIScope` und `Microsoft.Data.SqlClient.EventSource/SNITrace` gefunden werden.
 
    ![Anzeigen der SNI-Ablaufverfolgungsdatei mit PerfView](media/view-event-trace-native-sni.png)
 
@@ -133,20 +134,20 @@ class Program
 2. Konfigurieren Sie den Namen der Ablaufverfolgungsdatei, Ausgabepfad und Anbieternamen.
 
    ![Konfigurieren von PerfView vor der Sammlung](media/collect-event-trace-native-sni.png)
-   
+
 3. Starten Sie die Sammlung.
 
 4. Führen Sie das Beispiel der nativen SNI-Ablaufverfolgung aus, um eine Verbindung mit SQL Server herzustellen.
 
 5. Beenden Sie die Sammlung in PerfView. Das Generieren der Datei „PerfViewData.etl“ wird je nach Konfiguration in Schritt 2 eine Weile dauern.
 
-6. Öffnen Sie die ETL-Datei in PerfView. Das SNI-Ablaufverfolgungsprotokoll kann anhand der Ereignisnamen `Microsoft.Data.SqlClient.EventSource/SNIScope` und `Microsoft.Data.SqlClient.EventSource/SNITrace` gefunden werden. 
-
+6. Öffnen Sie die `etl`-Datei in PerfView. Das SNI-Ablaufverfolgungsprotokoll kann anhand der Ereignisnamen `Microsoft.Data.SqlClient.EventSource/SNIScope` und `Microsoft.Data.SqlClient.EventSource/SNITrace` gefunden werden.
 
 ## <a name="external-resources"></a>Externe Ressourcen  
+
 Weitere Informationen finden Sie in den folgenden Ressourcen.  
   
 |Resource|BESCHREIBUNG|  
 |--------------|-----------------|  
-|[EventSource-Klasse](/dotnet/api/system.diagnostics.tracing.eventsource)|Diese Klasse ermöglicht das Erstellen von ETW-Ereignissen.| 
+|[EventSource-Klasse](/dotnet/api/system.diagnostics.tracing.eventsource)|Dient zum Erstellen von ETW-Ereignissen.|
 |[EventListener-Klasse](/dotnet/api/system.diagnostics.tracing.eventlistener)|Diese Klasse stellt Methoden zum Aktivieren und Deaktivieren von Ereignissen aus Ereignisquellen bereit.|

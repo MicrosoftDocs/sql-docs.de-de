@@ -11,12 +11,12 @@ ms.date: 10/02/2019
 ms.prod: sql
 ms.prod_service: polybase, sql-data-warehouse, pdw
 monikerRange: '>= sql-server-2016'
-ms.openlocfilehash: 0734f0a8163486ab46ef8143966a24adee35194d
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: c1957724f028283c2e3aa6377604726f0c307add
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100079421"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838045"
 ---
 # <a name="troubleshoot-polybase-kerberos-connectivity"></a>Problembehandlung: PolyBase-Kerberos-Konnektivität
 
@@ -207,7 +207,7 @@ Wenn das Tool ausgeführt wurde und die Eigenschaften den Zielpfads *nicht* ausg
 | javax.security.auth.login.LoginException<br> Prüfsumme fehlgeschlagen |Der Administratordienstprinzipal existiert, aber das Kennwort ist ungültig. |
 | Native config name: C:\Windows\krb5.ini<br>Loaded from native config (Nativer Konfigurationsname: C:\Windows\krb5.ini Aus nativer Konfiguration geladen) | Diese Meldung weist darauf hin, dass „krb5LoginModule“ von Java benutzerdefinierte Clientkonfigurationen auf Ihrem Computer erkannt hat. Überprüfen Sie Ihre benutzerdefinierten Clienteinstellungen, da diese möglicherweise dieses Problem verursachen. |
 | javax.security.auth.login.LoginException<br>java.lang.IllegalArgumentException<br>Illegal principal name admin_user@CONTOSO.COM: org.apache.hadoop.security.authentication.util.KerberosName$NoMatchingRule: No rules applied to admin_user@CONTOSO.COM (Unzulässiger Prinzipalname admin_user@CONTOSO.COM: org.apache.hadoop.security.authentication.util.KerberosName$NoMatchingRule: Es gibt keine Regel für admin_user@CONTOSO.COM) | Fügen Sie die Eigenschaft „hadoop.security.auth_to_local“ der Datei „core-site.xml“ mit den entsprechenden Regeln für die Hadoop-Cluster hinzu. |
-| java.net.ConnectException<br>Attempting to access external filesystem at URI: hdfs://10.193.27.230:8020<br>Call From IAAS16981207/10.107.0.245 to 10.193.27.230:8020 failed on connection exception (Zugriff auf das externe Dateisystem auf dem URI: hdfs://10.193.27.230:8020 Der Aufruf von IAAS16981207/10.107.0.245 an 10.193.27.230:8020 ist wegen einer Verbindungsausnahme fehlgeschlagen) | Die Authentifizierung im KDC war erfolgreich, aber der Zugriff auf den Namenknoten von Hadoop ist fehlgeschlagen. Überprüfen Sie die IP-Adresse und den Port des Namenknoten. Überprüfen Sie, dass die Firewall in Hadoop deaktiviert ist. |
+| java.net.ConnectException<br>Attempting to access external filesystem at URI: hdfs://10.193.27.230:8020<br>Call From IAAS16981207/10.107.0.245 to 10.193.27.230:8020 failed on connection exception (Zugriff auf das externe Dateisystem auf dem URI: hdfs://10.193.27.230:8020 Der Aufruf von IAAS16981207/10.107.0.245 an 10.193.27.230:8020 ist wegen einer Verbindungsausnahme fehlgeschlagen) |    Die Authentifizierung im KDC war erfolgreich, aber der Zugriff auf den Namenknoten von Hadoop ist fehlgeschlagen. Überprüfen Sie die IP-Adresse und den Port des Namenknoten. Überprüfen Sie, dass die Firewall in Hadoop deaktiviert ist. |
 | java.io.FileNotFoundException<br>File does not exist: /test/data.csv (Die Datei existiert nicht: /test/data.csv) |    Die Authentifizierung war erfolgreich, aber der angegebene Speicherort existiert nicht. Überprüfen Sie den Pfad oder prüfen Sie zunächst mit dem Stamm „/“. |
 
 ## <a name="debugging-tips"></a>Tipps zum Debuggen
@@ -256,4 +256,5 @@ Sollten Sie dennoch Probleme mit dem Zugriff auf Kerberos haben, führen Sie zum
 [Integrating PolyBase with Cloudera using Active Directory Authentication (Integration von PolyBase in Cloudera mit der Active Directory-Authentifizierung)](/archive/blogs/microsoftrservertigerteam/integrating-polybase-with-cloudera-using-active-directory-authentication)  
 [Cloudera’s Guide to setting up Kerberos for CDH (Cloudera-Leitfaden: Einrichten von Kerberos für CDH)](https://www.cloudera.com/documentation/enterprise/5-6-x/topics/cm_sg_principal_keytab.html)  
 [Hortonworks’ Guide to Setting up Kerberos for HDP (Hortonworks-Leitfaden: Einrichten von Kerberos für HDP)](https://docs.hortonworks.com/HDPDocuments/Ambari-2.2.0.0/bk_Ambari_Security_Guide/content/ch_configuring_amb_hdp_for_kerberos.html)  
-[Problembehandlung in PolyBase](polybase-troubleshooting.md)
+[Problembehandlung für PolyBase](polybase-troubleshooting.md)   
+[PolyBase-Fehler und mögliche Lösungen](polybase-errors-and-possible-solutions.md)   

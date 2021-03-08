@@ -33,12 +33,12 @@ ms.assetid: 1054c76e-0fd5-4131-8c07-a6c5d024af50
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: b5a6fd7131b63741a82c120e1e0b222405865a9d
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 505cda4f226945cd8788e777b8ac1ea35a3aa47e
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237178"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837723"
 ---
 # <a name="insert-transact-sql"></a>INSERT (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -210,7 +210,10 @@ OUTPUT-Klausel
  Wenn die Reihenfolge der Werte in der Werteliste nicht mit der Reihenfolge der Spalten in der Tabelle übereinstimmt oder wenn nicht für jede Spalte in der Tabelle ein Wert vorhanden ist, muss mithilfe von *column_list* explizit die Spalte angegeben werden, in der ein eingehender Wert gespeichert werden soll.  
   
  Mit dem [!INCLUDE[tsql](../../includes/tsql-md.md)]-Zeilenkonstruktor (auch Tabellenwertkonstruktor genannt) können mehrere Zeilen in einer einzelnen INSERT-Anweisung angegeben werden. Der Zeilenkonstruktor besteht aus einer einzelnen VALUES-Klausel mit mehreren Wertelisten, die in Klammern eingeschlossen und durch ein Komma getrennt sind. Weitere Informationen finden Sie unter [Tabellenwertkonstruktor &#40;Transact-SQL&#41;](../../t-sql/queries/table-value-constructor-transact-sql.md).  
-  
+
+> [!NOTE]  
+> In Azure Synapse Analytics können Einfügewerte nur konstante Literalwerte oder Verweise auf Variablen sein. Um ein Nichtliteral einzufügen, legen Sie eine Variable auf einen nicht konstanten Wert fest, und fügen Sie die Variable ein.
+
  DEFAULT  
  Erzwingt, dass [!INCLUDE[ssDE](../../includes/ssde-md.md)] den für eine Spalte definierten Standardwert lädt. Wenn für die Spalte kein Standardwert vorhanden ist und die Spalte NULL-Werte zulässt, wird NULL eingefügt. Für eine Spalte, die mit dem Datentyp **timestamp** definiert ist, wird der nächste Zeitstempelwert eingefügt. DEFAULT ist für eine Identitätsspalte nicht zulässig.  
   

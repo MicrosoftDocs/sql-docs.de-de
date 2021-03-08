@@ -6,17 +6,17 @@ ms.date: 12/13/2017
 ms.prod: sql
 ms.technology: integration-services
 ms.topic: conceptual
-author: haoqian
+author: HaoQian-MS
 ms.author: haoqian
 ms.reviewer: maghan
 f1_keywords:
 - sql13.ssis.ssms.ispackageexecuteinscaleout.f1
-ms.openlocfilehash: 13f9a386b6ab60280edf2d8b494721dd233b042a
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 25f550f711364760de9cc07608b46532cfa34219
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100347417"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839004"
 ---
 # <a name="run-packages-in-integration-services-ssis-scale-out"></a>Ausführen von Paketen in SSIS Scale Out (SQL Server Integration Services)
 
@@ -125,6 +125,9 @@ Um den Standardausführungsmodus wieder auf den Modus ohne Scale Out zurückzuse
 
 ## <a name="run-package-in-sql-server-agent-job"></a><a name="sql_agent"></a> Ausführen eines Pakets in einem SQL Server-Agent-Auftrag
 In einem SQL Server-Agent-Auftrag können Sie im Rahmen des Auftrags ein SSIS-Paket ausführen. Legen Sie den Standardausführungsmodus auf **Scale Out** fest, um das Paket in Scale Out auszuführen. Nachdem der Standardausführungsmodus auf **Scale Out** festgelegt wurde, werden Pakete in SQL-Agent-Aufträgen in Scale Out ausgeführt.
+
+> [!NOTE]
+> Sie können die Ausführung von Scale Out-Paketen beenden, indem Sie den SQL Server-Agent-Auftrag abbrechen. Um die Ausführung von Scale Out zu beenden, empfehlen wir, die gespeicherte Prozedur catalog.stop_operation oder den Bereich **Aktive Vorgänge** zu verwenden. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 -   [Problembehandlung in Scale Out](troubleshooting-scale-out.md)

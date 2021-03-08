@@ -26,14 +26,14 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
-ms.date: 09/11/2020
+ms.date: 02/24/2021
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017'
-ms.openlocfilehash: be528466cb44e5c72413b0494dfe5416dd29783e
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 1b7d902064ef7a083b706af08730e91319be312f
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100338594"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836835"
 ---
 # <a name="sqlcmd-utility"></a>SQLCMD-Hilfsprogramm
 
@@ -179,8 +179,8 @@ Legt „Column Encryption Setting“ auf `Enabled`fest. Weitere Informationen hi
 Diese Option wird vom Client beim Herstellen einer Verbindung mit SQL-Datenbank oder Azure Synapse Analytics verwendet, um anzugeben, dass der Benutzer mithilfe der Azure Active Directory-Authentifizierung authentifiziert werden soll. Durch diese Option wird die **sqlcmd** -Skriptvariable „SQLCMDUSEAAD = true“ festgelegt. Der Schalter -G erfordert mindestens **sqlcmd** Version [13.1](https://go.microsoft.com/fwlink/?LinkID=825643). Um die Version zu bestimmen, führen Sie `sqlcmd -?`aus. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit SQL-Datenbank oder Azure Synapse Analytics unter Verwendung der Azure Active Directory-Authentifizierung](/azure/azure-sql/database/authentication-aad-overview). Die Option „-A“ wird mit der Option „-G“ nicht unterstützt.
 
 > [!IMPORTANT]
-> Die `-G`-Option gilt nur für Azure SQL-Datenbank und Azure Data Warehouse.
-> Die interaktive AAD-Authentifizierung wird unter Linux oder macOS derzeit nicht unterstützt. Die integrierte AAD-Authentifizierung erfordert [Microsoft ODBC-Treiber 17 für SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) Version 17.6.1 oder höher und eine ordnungsgemäß konfigurierte Kerberos-Umgebung.
+> Die Option `-G` gilt nur für Azure SQL-Datenbank und Azure Synapse Analytics.
+> Die interaktive AAD-Authentifizierung wird unter Linux oder macOS derzeit nicht unterstützt. Die integrierte AAD-Authentifizierung erfordert [Microsoft ODBC-Treiber 17 für SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) ab Version 17.6.1 oder höher und eine ordnungsgemäß [konfigurierte Kerberos-Umgebung](../connect/odbc/linux-mac/using-integrated-authentication#configure-kerberos).
 
 - **Azure Active Directory-Benutzername und -Kennwort:** 
 
@@ -199,7 +199,7 @@ Diese Option wird vom Client beim Herstellen einer Verbindung mit SQL-Datenbank 
 - **Integrierte Azure Active Directory-Authentifizierung**
 
    Wenn Sie die integrierte Azure Active Directory-Authentifizierung verwenden möchten, geben Sie die Option **-G** ohne Benutzername und Kennwort an.
-   *Die in AAD integrierte Authentifizierung wird unter Linux und macOS derzeit nicht unterstützt.*
+   *Die integrierte AAD-Authentifizierung erfordert[ Microsoft ODBC-Treiber 17 für SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) ab Version 17.6.1 und eine[ ordnungsgemäß](../connect/odbc/linux-mac/using-integrated-authentication.md#configure-kerberos)konfigurierte Kerberos-Umgebung*.
 
     ```cmd
     Sqlcmd -S Target_DB_or_DW.testsrv.database.windows.net -G

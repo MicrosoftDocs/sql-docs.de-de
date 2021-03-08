@@ -9,12 +9,12 @@ ms.date: 02/11/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 1f3e1e0ed29121f0fb0ffcac54885ca80de3e63c
-ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
+ms.openlocfilehash: c4cb10ac3ba1e0fd8b437e7f0509dc16cc72d854
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489304"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837067"
 ---
 # <a name="sql-server-2019-big-data-clusters-release-notes"></a>Versionshinweise zu Big Data-Clustern für SQL Server 2019
 
@@ -98,7 +98,7 @@ SQL Server 2019 CU9 für SQL Server Big Data-Cluster umfasst wichtige Funktione
    Für Cluster, bei denen `mssql-conf` für SQL Server-Masterinstanz-Konfigurationen verwendet wird, sind nach dem Upgrade auf CU9 zusätzliche Schritte erforderlich. Befolgen Sie [diese](bdc-upgrade-configuration.md) Anweisungen.
 
 - Verbesserte [!INCLUDE[azdata](../includes/azure-data-cli-azdata.md)]-Umgebung bei der Verschlüsselung ruhender Daten.
-- Möglichkeit, Python Spark-Pakete über virtuelle Umgebungen dynamisch zu installieren.
+- Möglichkeit, [Python Spark-Pakete über virtuelle Umgebungen dynamisch zu installieren](spark-install-packages.md).
 - Aktualisierte Softwareversionen für die meisten unserer OSS-Komponenten (Grafana, Kibana, FluentBit usw.), um sicherzustellen, dass BDC-Images mit den neuesten Verbesserungen und Korrekturen aktualisiert wurden. Weitere Informationen finden Sie unter [Referenz zu Open-Source-Software](reference-open-source-software.md).
 - Verschiedene weitere Verbesserungen und Fehlerbehebungen.
 
@@ -145,7 +145,7 @@ Diese Version enthält kleinere Fehlerkorrekturen und Verbesserungen. In den fol
 - [Bereitstellen von Big Data-Clustern in einem privaten Azure Kubernetes Service-Cluster (AKS-Cluster)](private-deploy.md)
 - [Einschränken des ausgehenden Datenverkehrs von Big Data-Clustern (BDC) in einem privaten Azure Kubernetes Service-Cluster (AKS-Cluster)](private-restrict-egress-traffic.md)
 - [Bereitstellen von Big Data-Clustern in SQL Server mit Hochverfügbarkeit](deployment-high-availability.md)
-- [Konfigurieren eines Big Data-Clusters in SQL Server](configure-cluster.md)
+- [Konfigurieren eines Big Data-Clusters in SQL Server](./configure-bdc-overview.md)
 - [Konfigurieren von Apache Spark und Apache Hadoop in Big Data-Clustern](configure-spark-hdfs.md)
 - [Konfigurationseigenschaften der SQL Server-Masterinstanz](reference-config-master-instance.md)
 - [Konfigurationseigenschaften von Apache Spark und Apache Hadoop (HDFS)](reference-config-spark-hadoop.md)

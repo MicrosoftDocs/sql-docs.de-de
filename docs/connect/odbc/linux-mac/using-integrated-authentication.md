@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 9499ffdf-e0ee-4d3c-8bca-605371eb52d9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4f53290d9b9a1ecd161ef02161f29c172297a93f
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 4e918602b3793d95d6192a832f110500454ee8a5
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91727415"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837373"
 ---
 # <a name="using-integrated-authentication"></a>Nutzung der Integrierten Authentifizierung
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
@@ -29,7 +29,7 @@ Ab Version 17.6 unterstützt der Treiber auch die integrierte Authentifizierung
 
 ## <a name="using-integrated-authentication-to-connect-to-ssnoversion-from-an-odbc-application"></a>Herstellen einer Verbindung zu [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] über eine ODBC-Anwendung mithilfe der integrierten Authentifizierung  
 
-Sie können eine integrierte Kerberos-Authentifizierung aktivieren, indem Sie **Trusted_Connection=yes** in der Verbindungszeichenfolge von **SQLDriverConnect** oder **SQLConnect**angeben. Beispiel:  
+Sie können eine integrierte Kerberos-Authentifizierung aktivieren, indem Sie **Trusted_Connection=yes** in der Verbindungszeichenfolge von **SQLDriverConnect** oder **SQLConnect** angeben. Beispiel:  
 
 ```
 Driver='ODBC Driver 17 for SQL Server';Server=your_server;Trusted_Connection=yes  
@@ -107,7 +107,7 @@ Die Syntax, die SPNs in den Attributen für Verbindungszeichenfolgen und Verbind
   
 ## <a name="authenticating-a-linux-or-macos-computer-with-active-directory"></a>Authentifizieren eines Linux- oder macOS-Computers mit Active Directory
 
-Geben Sie Daten in die `krb5.conf`-Datei ein, um Kerberos zu konfigurieren. `krb5.conf` befindet sich in `/etc/`, mithilfe der Syntax `export KRB5_CONFIG=/home/dbapp/etc/krb5.conf` können Sie jedoch auf eine andere Datei verweisen. Im Folgenden finden Sie eine `krb5.conf`-Beispieldatei:  
+<a name="configure-kerberos"></a>Geben Sie zum Konfigurieren von Kerberos Daten in die Datei `krb5.conf` ein. `krb5.conf` befindet sich in `/etc/`, mithilfe der Syntax `export KRB5_CONFIG=/home/dbapp/etc/krb5.conf` können Sie jedoch auf eine andere Datei verweisen. Im Folgenden finden Sie eine `krb5.conf`-Beispieldatei:  
   
 ```  
 [libdefaults]  

@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 86a15b33-4d03-4549-8ea2-b45e4f1baad7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2f87ae98424eef3f6aeadca1f11da6d9d1f2b403
-ms.sourcegitcommit: 8bdb5a51f87a6ff3b94360555973ca0cd0b6223f
+ms.openlocfilehash: acbe6e9241f003f100bedc3fd01d297fb91e8141
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100549386"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836669"
 ---
 # <a name="always-on-failover-cluster-instances-sql-server"></a>AlwaysOn-Failoverclusterinstanzen (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -129,7 +129,7 @@ ms.locfileid: "100549386"
  Eine FCI besteht aus einem Satz physischer Server (Knoten), die über eine ähnliche Hardwarekonfiguration sowie über eine identische Softwarekonfiguration verfügen, einschließlich Betriebssystemversion und Patchebene sowie [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] -Version, -Patchebene, -Komponenten und -Instanzname. Identische Softwarekonfiguration ist notwendig, um sicherzustellen, dass die FCI vollständig funktional sein kann, da es zwischen den Knoten Failover ausführt.  
   
  WSFC-Ressourcengruppe  
- Eine [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] -FCI wird in einer WSFC-Ressourcengruppe ausgeführt. Jeder Knoten in der Ressourcengruppe behält eine synchronisierte Kopie der Konfigurationseinstellungen und Prüfpunkt-Registrierungsschlüssel bei, um die vollständige Funktionalität der FCI nach einem Failover sicherzustellen. Zudem besitzt nur einer der Knoten im Cluster die Ressourcengruppe zu einer bestimmten Zeit (der aktive Knoten). Der WSFC-Dienst verwaltet den Servercluster, Quorumkonfiguration, Failoverrichtlinie und Failovervorgänge sowie die VNN und virtuelle IP-Adressen für die FCI. Bei einem Fehler (Hardwarefehler, Betriebssystemfehler, Anwendungs- oder Dienstfehler) oder einem geplanten Upgrade wird der Ressourcengruppenbesitz zu einem anderen Knoten in der FCI verschoben. Die Anzahl der in der WSFC-Ressourcengruppe unterstützten Knoten hängt von der [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] -Edition ab. Der gleiche WSFC-Cluster kann abhängig von der Hardwarekapazität, z. B. CPUs, Arbeitsspeicher und Anzahl von Datenträgern, zudem mehrere FCIs (mehrere Ressourcengruppen) ausführen.  
+ Eine [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] -FCI wird in einer WSFC-Ressourcengruppe ausgeführt. Jeder Knoten in der Ressourcengruppe behält eine synchronisierte Kopie der Konfigurationseinstellungen und Prüfpunkt-Registrierungsschlüssel bei, um die vollständige Funktionalität der FCI nach einem Failover sicherzustellen. Zudem besitzt nur einer der Knoten im Cluster die Ressourcengruppe zu einer bestimmten Zeit (der aktive Knoten). Der WSFC-Dienst verwaltet den Servercluster, Quorumkonfiguration, Failoverrichtlinie und Failovervorgänge sowie die VNN und virtuelle IP-Adressen für die FCI. Bei einem Ausfall (von Hardware, Betriebssystem, Anwendun oder Dienst) oder einem geplanten Upgrade wird der Ressourcengruppenbesitz zu einem anderen Knoten in der FCI verschoben. Die Anzahl der Knoten, die in einer WSFC-Ressourcengruppe unterstützt werden, hängt von Ihrer [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]-Edition ab. Der gleiche WSFC-Cluster kann abhängig von der Hardwarekapazität, z. B. CPUs, Arbeitsspeicher und Anzahl von Datenträgern, zudem mehrere FCIs (mehrere Ressourcengruppen) ausführen.  
   
  SQL Server-Binärdateien  
  Die Produktbinärdateien werden lokal auf jedem Knoten der FCI installiert. Dieser Prozess ähnelt eigenständigen Installationen von [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Während des Starts werden die Dienste jedoch nicht automatisch gestartet, sondern durch den WSFC verwaltet.  

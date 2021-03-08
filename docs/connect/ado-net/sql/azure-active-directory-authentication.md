@@ -10,13 +10,13 @@ ms.technology: connectivity
 ms.topic: conceptual
 author: karinazhou
 ms.author: v-jizho2
-ms.reviewer: ''
-ms.openlocfilehash: 0f8aaffc1f87b33a5c685b55d724fe96c44258af
-ms.sourcegitcommit: ece151df14dc2610d96cd0d40b370a4653796d74
+ms.reviewer: v-daenge
+ms.openlocfilehash: c57c2d10854ed902a6230eafc3a912cd0508c989
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96297947"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101835997"
 ---
 # <a name="using-azure-active-directory-authentication-with-sqlclient"></a>Verwenden der Azure Active Directory-Authentifizierung mit SqlClient
 
@@ -26,7 +26,7 @@ ms.locfileid: "96297947"
 
 In diesem Artikel wird beschrieben, wie eine Verbindung mit Azure SQL-Datenquellen hergestellt werden kann, indem die Azure Active Directory-Authentifizierung (Azure AD) von einer .NET-Anwendung mit SqlClient verwendet wird.
 
-Die Azure AD-Authentifizierung nutzt Identitäten in Azure AD für den Zugriff auf Azure SQL-Datenquellen wie Azure SQL Database, Azure SQL Managed Instance und Azure Synapse Analytics. Der Namespace **Microsoft.Data.SqlClient** ermöglicht es Clientanwendungen, Azure AD-Anmeldeinformationen in verschiedenen Authentifizierungsmodi anzugeben, wenn sie eine Verbindung mit Azure SQL-Datenbank herstellen. 
+Die Azure AD-Authentifizierung nutzt Identitäten in Azure AD für den Zugriff auf Azure SQL-Datenquellen wie Azure SQL Database, Azure SQL Managed Instance und Azure Synapse Analytics. Der Namespace **Microsoft.Data.SqlClient** ermöglicht es Clientanwendungen, Azure AD-Anmeldeinformationen in verschiedenen Authentifizierungsmodi anzugeben, wenn sie eine Verbindung mit Azure SQL-Datenbank herstellen.
 
 Wenn Sie die Verbindungseigenschaft `Authentication` in der Verbindungszeichenfolge festlegen, kann der Client entsprechend dem angegebenen Wert einen bevorzugten Azure AD-Authentifizierungsmodus wählen:
 
@@ -39,7 +39,6 @@ Wenn Sie die Verbindungseigenschaft `Authentication` in der Verbindungszeichenfo
 - **Microsoft.Data.SqlClient** 2.1.0 bietet weitere Authentifizierungsmodi, einschließlich `Active Directory Device Code Flow` und `Active Directory Managed Identity` (auch `Active Directory MSI` genannt). Diese neuen Modi ermöglichen der Anwendung das Abrufen eines Zugriffstokens, um eine Verbindung mit dem Server herzustellen. 
 
 Informationen zur Azure AD-Authentifizierung, die über das hinausgehen, was in den folgenden Abschnitten beschrieben wird, finden Sie unter [Herstellen einer Verbindung mit SQL-Datenbank unter Verwendung der Azure Active Directory-Authentifizierung](/azure/azure-sql/database/authentication-aad-overview).
-
 
 ## <a name="setting-azure-active-directory-authentication"></a>Festlegen der Azure Active Directory-Authentifizierung
 
@@ -54,8 +53,7 @@ Wenn die Anwendung eine Verbindung mit Azure SQL-Datenquellen unter Verwendung d
 | Active Directory Device Code Flow | Authentifizierung mit einer Azure AD-Identität unter Verwendung des Modus „Gerätecodeflow“ | Ab .NET Framework 4.6, NET Core 2.1, .NET Standard 2.0 | Ab 2.1.0 |
 | Active Directory Managed Identity, <br>Active Directory MSI | Authentifizieren mit einer Azure AD-Identität unter Verwendung einer vom System oder Benutzer zugewiesenen verwalteten Identität | Ab .NET Framework 4.6, NET Core 2.1, .NET Standard 2.0 | Ab 2.1.0 |
 
-<sup>1</sup> Vor **Microsoft.Data.SqlClient** 2.0.0 wurden die Authentifizierungstypen `Active Directory Integrated` und `Active Directory Interactive` nur ab .NET Framework 4.6 unterstützt. 
-
+<sup>1</sup> Vor **Microsoft.Data.SqlClient** 2.0.0 wurden die Authentifizierungsmodi `Active Directory Integrated` und `Active Directory Interactive` nur ab .NET Framework 4.6 unterstützt.
 
 ## <a name="using-active-directory-password-authentication"></a>Verwenden der Authentifizierung „Active Directory Password“
 
@@ -63,7 +61,7 @@ Der Authentifizierungsmodus `Active Directory Password` unterstützt die Authent
 
 ```c#
 // Use your own server, database, user ID, and password.
-string ConnectionString = @"Server=demo.database.windows.net; Authentication=Active Directory Password; Database=testdb; User Id=user@domain.com; Password=**_";
+string ConnectionString = @"Server=demo.database.windows.net; Authentication=Active Directory Password; Database=testdb; User Id=user@domain.com; Password=***";
 
 using (SqlConnection conn = new SqlConnection(ConnectionString)) {
     conn.Open();
@@ -100,7 +98,7 @@ using (SqlConnection conn = new SqlConnection(ConnectionString2)) {
 
 Der Authentifizierungsmodus `Active Directory Interactive` unterstützt zum Herstellen einer Verbindung mit Azure SQL-Datenquellen eine mehrstufige Authentifizierungstechnologie. Wenn Sie diesen Authentifizierungsmodus in der Verbindungszeichenfolge angeben, wird ein Bildschirm zur Authentifizierung bei Azure angezeigt, auf dem der Benutzer zur Eingabe gültiger Anmeldeinformationen aufgefordert wird. Sie können das Kennwort nicht in der Verbindungszeichenfolge eingeben. 
 
-Die `Credential`-Eigenschaft von SqlConnection kann in diesem Modus nicht festgelegt werden. Ab *Microsoft.Daten.SqlClient* 2.0.0 ist der Benutzername in der Verbindungszeichenfolge zulässig, sofern Sie sich im interaktiven Modus befinden. 
+Die `Credential`-Eigenschaft von SqlConnection kann in diesem Modus nicht festgelegt werden. Ab **Microsoft.Daten.SqlClient** 2.0.0 ist der Benutzername in der Verbindungszeichenfolge zulässig, sofern Sie sich im interaktiven Modus befinden. 
 
 Das folgende Beispiel zeigt, wie die Authentifizierung `Active Directory Interactive` verwendet wird.
 
@@ -161,9 +159,9 @@ using (SqlConnection conn = new SqlConnection(ConnectionString)) {
 
 ## <a name="using-active-directory-managed-identity-authentication"></a>Verwenden der Authentifizierung „Active Directory Managed Identity“
 
-*Verwaltete Identitäten* für Azure-Ressourcen ist der neue Name des Diensts, der zuvor als „Verwaltete Dienstidentität“ (Managed Service Identity, MSI) bezeichnet wurde. Wenn eine Clientanwendung mithilfe einer Azure-Ressource auf einen Azure-Dienst mit Unterstützung der Azure AD-Authentifizierung zugreift, können Sie verwaltete Identitäten zur Authentifizierung verwenden, indem Sie eine Identität für die Azure-Ressource in Azure AD bereitstellen. Anschließend können Sie mithilfe dieser Identität Zugriffstoken abrufen. Dadurch müssen keine Anmeldeinformationen und Geheimnisse mehr verwaltet werden. 
+*Verwaltete Identitäten* für Azure-Ressourcen ist der neue Name des Diensts, der zuvor als „Verwaltete Dienstidentität“ (Managed Service Identity, MSI) bezeichnet wurde. Wenn eine Clientanwendung mithilfe einer Azure-Ressource auf einen Azure-Dienst mit Unterstützung der Azure AD-Authentifizierung zugreift, können Sie verwaltete Identitäten zur Authentifizierung verwenden, indem Sie eine Identität für die Azure-Ressource in Azure AD bereitstellen. Anschließend können Sie mithilfe dieser Identität Zugriffstoken abrufen. Dank dieser Authentifizierungsmethode müssen keine Anmeldeinformationen und Geheimnisse mehr verwaltet werden.
 
-Es gibt zwei Arten von verwalteten Identitäten: 
+Es gibt zwei Arten von verwalteten Identitäten:
 
 - Eine _systemseitig zugewiesene verwaltete Identität_ wird für eine Dienstinstanz in Azure AD erstellt, die mit dem Lebenszyklus dieser Dienstinstanz verknüpft ist. 
 - Eine _benutzerseitig zugewiesene verwaltete Identität_ wird als eigenständige Azure-Ressource erstellt und kann einer oder mehreren Instanzen eines Azure-Diensts zugewiesen werden. 
