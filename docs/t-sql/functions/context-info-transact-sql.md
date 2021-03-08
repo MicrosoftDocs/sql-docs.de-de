@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 571320f5-7228-4b0e-9d01-ab732d2d1eab
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f0ca8fcf210e58537afabbbb225a593e5b537332
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 6539ff370b5a229156c504e9203f23f63d1d1228
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101835312"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186285"
 ---
 # <a name="context_info--transact-sql"></a>CONTEXT_INFO (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -73,5 +73,6 @@ GO
 ## <a name="see-also"></a>Weitere Informationen
 [SET CONTEXT_INFO &#40;Transact-SQL&#41;](../../t-sql/statements/set-context-info-transact-sql.md)
 [SESSION_CONTEXT  &#40;Transact-SQL&#41;](../../t-sql/functions/session-context-transact-sql.md)  
-[sp_set_session_context &#40;Transact-SQL&#41;](../../sql/relational-databases/system-stored-procedures/sp-set-session-context-transact-sql.md)  
+[sp_set_session_context &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-set-session-context-transact-sql.md)  
   
+
