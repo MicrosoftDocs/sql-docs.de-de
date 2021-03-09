@@ -9,12 +9,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 5bcff7203d3bf9e224d6557c4c2af6a47fb0af12
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 92cca7d688f954fc8e832f4bc0e68f105c024202
+ms.sourcegitcommit: ece104654ac14e10d32e59f45916fa944665f4df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100047270"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102474884"
 ---
 # <a name="deploy-big-data-clusters-2019-on-openshift-on-premises-and-azure-red-hat-openshift"></a>Bereitstellen von [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] lokal auf OpenShift und Azure Red Hat OpenShift
 
@@ -73,7 +73,7 @@ In diesem Artikel werden die Bereitstellungsschritte beschrieben, die für die O
 4. Weisen Sie die benutzerdefinierte SCC den Dienstkonten für Benutzer innerhalb des Namespace zu, in dem BDC bereitgestellt wird:
 
    ```console
-   oc adm policy add-scc-to-group bdc-scc system:serviceaccounts:<namespaceName>
+  oc create rolebinding bdc-rbac --clusterrole=system:scc:bdc-scc --group=system:serviceaccounts:<namespace>
    ```
 
 5. Weisen Sie den Benutzern, die BDC bereitstellen, die entsprechende Berechtigung zu. Führen Sie einen der folgenden Schritte aus: 
