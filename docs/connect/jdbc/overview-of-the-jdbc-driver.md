@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 939a8773-2583-49a4-bf00-6b892fbe39dc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5455169782503939330c32829a89bf0701aac25a
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 531dca0f328f5f587d2da545bcae182f228bdee5
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87943625"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464755"
 ---
 # <a name="overview-of-the-jdbc-driver"></a>Übersicht über den JDBC-Treiber
 
@@ -44,7 +44,7 @@ Die Themen in diesem Abschnitt enthalten eine allgemeine Übersicht über den JD
 |[Bereitstellen des JDBC-Treibers](../../connect/jdbc/deploying-the-jdbc-driver.md)|Beschreibt die Weiterverteilung und Bereitstellung des Microsoft JDBC-Treibers auf Windows- und Unix-Betriebssystemen.|  
 |[Suchen von zusätzlichen Informationen zum JDBC-Treiber](../../connect/jdbc/finding-additional-jdbc-driver-information.md)|Enthält Informationen zu weiteren Ressourcen zum Microsoft JDBC-Treiber, wie z. B. Links zu externen Ressourcen.|  
 |[Supportmatrix für den Microsoft JDBC-Treiber für SQL](../../connect/jdbc/microsoft-jdbc-driver-for-sql-server-support-matrix.md) Server|Unterstützungsmatrix und Support Lifecycle-Richtlinie für den Microsoft JDBC-Treiber für SQL Server|  
-|[Häufig gestellte Fragen &#40;FAQ&#41; zum JDBC-Treiber](../../connect/jdbc/frequently-asked-questions-faq-for-jdbc-driver.md)|Häufig gestellte Fragen zu Microsofts JDBC-Treiber|  
+|[Häufig gestellte Fragen &#40;FAQ&#41; zum JDBC-Treiber](../../connect/jdbc/frequently-asked-questions-faq-for-jdbc-driver.yml)|Häufig gestellte Fragen zu Microsofts JDBC-Treiber|  
 |[Featureabhängigkeiten des Microsoft JDBC-Treibers für SQL Server](../../connect/jdbc/feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md)|Featureabhängigkeiten des Microsoft JDBC-Treibers für SQL Server|
 | &nbsp; | &nbsp; |
 

@@ -155,7 +155,7 @@
 - name: Ressourcen
   items:
     - name: Häufig gestellte Fragen
-      href: faq.md
+      href: faq.yml
     - name: Problembehandlung
       href: troubleshooting.md
     - name: GitHub-Repository für Azure Data Studio >

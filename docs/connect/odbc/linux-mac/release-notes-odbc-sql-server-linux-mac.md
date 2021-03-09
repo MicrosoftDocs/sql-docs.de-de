@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: v-chojas
 ms.author: v-chojas
 manager: kenvh
-ms.openlocfilehash: 2c178b7afd7bf46003b689ef56af67f12609e0a9
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 83f8dbb834af379e02635130e23c0f5fd7299f3b
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101837339"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464285"
 ---
 # <a name="release-notes-for-the-microsoft-odbc-driver-for-sql-server-on-linux-and-macos"></a>Versionshinweise zu Microsoft ODBC Driver for SQL Server unter Linux und macOS
 
@@ -101,7 +101,7 @@ Bei Verwendung von Always Encrypted mit Secure Enclaves und Azure Key Vault kön
 
 | Neues Feature | Details |
 | :------------ | :------ |
-| Always Encrypted mit Secure Enclaves. | Siehe [Verwenden von Always Encrypted mit dem ODBC-Treiber](../using-always-encrypted-with-the-odbc-driver.md). |
+| Always Encrypted mit Secure Enclaves | Siehe [Verwenden von Always Encrypted mit dem ODBC-Treiber](../using-always-encrypted-with-the-odbc-driver.md). |
 | Dynamisches Laden von OpenSSL | Siehe [Programmierrichtlinien](programming-guidelines.md#bkmk-openssl). |
 | Konfigurierbare TCP-Keep-Alive-Einstellungen. | Siehe [Herstellen einer Verbindung mit SQL Server](connection-string-keywords-and-data-source-names-dsns.md). |
 | Fehlerbehebungen. | Siehe [Fehlerbehebungen](../bug-fixes.md) |
@@ -141,7 +141,7 @@ Bei Verwendung von Always Encrypted mit Secure Enclaves und Azure Key Vault kön
 
 ## <a name="17"></a>17
 
-**Neue unterstützte Verteilungen:** macOS High Sierra und Ubuntu 17.10 
+**Neue unterstützte Verteilungen:** macOS High Sierra und Ubuntu 17.10
 
 **Leistungsverbesserungen**: Die Leistung bei der Konvertierung von und in UTF-8/16 wurde um das Zehnfache verbessert.
 
@@ -151,19 +151,21 @@ Always Encrypted-Unterstützung für die BCP-API
 
 Das neue Verbindungszeichenfolgenattribut „UseFMTOnly“ bewirkt, dass der Treiber in besonderen Fällen ältere Metadaten verwendet, die temporäre Tabellen erfordern.
 
-Unterstützung verwalteter Azure SQL-Datenbank-Instanzen 
+Unterstützung verwalteter Azure SQL-Datenbank-Instanzen
+
 > [!NOTE]
 > Bei der Verwendung verwalteter Instanzen gibt es einige Unterschiede:
-> -   FILESTREAM wird nicht unterstützt 
-> -   Der Zugriff auf das lokale Dateisystem wird nicht unterstützt, ist jedoch für Dinge wie Ablaufverfolgungsdateien erforderlich 
-> -   Das Erstellen von benutzerdefinierten Typen aus lokalen Pfaden wird nicht unterstützt 
-> -   Die integrierte Windows-Authentifizierung wird nicht unterstützt 
-> -   DTC wird nicht unterstützt. 
-> -   Das Konto „sa“ ist nicht vorhanden (das Standardkonto heißt „cloudSA“)
-> -   Fehler beim TDS-Token (0xAA) gibt einen falschen Servernamen zurück
-> -   Sonderzeichen werden im Datenbanknamen nicht unterstützt 
-> -   ALTER DATABASE [dbname1] MODIFY NAME = [dbname2] wird nicht unterstützt
-> -   Fehlermeldungen werden unabhängig von Ihren Spracheinstellungen immer in englischer Sprache angezeigt (wie bei Azure) 
+>
+> - FILESTREAM wird nicht unterstützt
+> - Der Zugriff auf das lokale Dateisystem wird nicht unterstützt, ist jedoch für Dinge wie Ablaufverfolgungsdateien erforderlich
+> - Das Erstellen von benutzerdefinierten Typen aus lokalen Pfaden wird nicht unterstützt
+> - Die integrierte Windows-Authentifizierung wird nicht unterstützt
+> - DTC wird nicht unterstützt.
+> - Das Konto „sa“ ist nicht vorhanden (das Standardkonto heißt „cloudSA“)
+> - Fehler beim TDS-Token (0xAA) gibt einen falschen Servernamen zurück
+> - Sonderzeichen werden im Datenbanknamen nicht unterstützt
+> - ALTER DATABASE [dbname1] MODIFY NAME = [dbname2] wird nicht unterstützt
+> - Fehlermeldungen werden unabhängig von Ihren Spracheinstellungen immer in englischer Sprache angezeigt (wie bei Azure)
 
 ## <a name="131-for-ssnoversion-on-linux-and-macos-may-2017"></a>Mai 2017: Version 13.1 für [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] unter Linux und macOS
 

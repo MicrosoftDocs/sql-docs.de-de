@@ -10,12 +10,12 @@ ms.technology: connectivity
 ms.topic: conceptual
 author: v-makouz
 ms.author: v-daenge
-ms.openlocfilehash: 8843bf303f20a7d8aa0baac5be3d9da4e7c54e01
-ms.sourcegitcommit: fb1430aedbb91b55b92f07934e9b9bdfbbd2b0c5
+ms.openlocfilehash: 6d602db9c189b6e7fce8b767b60204253ccb7f67
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82886365"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464393"
 ---
 # <a name="programming-guidelines"></a>Programmierrichtlinien
 
@@ -134,7 +134,7 @@ Zum Zeitpunkt der Erstellung dieser Dokumentation beträgt die Standardstapelgr�
 
 ## <a name="additional-notes"></a>Weitere Hinweise  
 
-1.  Sie können eine dedizierte Administratorverbindung (DAC) herstellen, indem Sie die [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]-Authentifizierung und **host,port**verwenden. Ein Mitglied der Sysadmin-Rolle muss zunächst den DAC-Port ermitteln. Weitere Informationen dazu finden Sie unter [Diagnoseverbindung für Datenbankadministratoren](../../../database-engine/configure-windows/diagnostic-connection-for-database-administrators.md#dac-port). Wenn beispielsweise der DAC-Port „33000“ ist, können Sie mit `sqlcmd` wie folgt eine Verbindung herstellen:  
+1.  Sie können eine dedizierte Administratorverbindung (DAC) herstellen, indem Sie die [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]-Authentifizierung und **host,port** verwenden. Ein Mitglied der Sysadmin-Rolle muss zunächst den DAC-Port ermitteln. Weitere Informationen dazu finden Sie unter [Diagnoseverbindung für Datenbankadministratoren](../../../database-engine/configure-windows/diagnostic-connection-for-database-administrators.md#dac-port). Wenn beispielsweise der DAC-Port „33000“ ist, können Sie mit `sqlcmd` wie folgt eine Verbindung herstellen:  
 
     ```
     sqlcmd -U <user> -P <pwd> -S <host>,33000
@@ -148,7 +148,7 @@ Zum Zeitpunkt der Erstellung dieser Dokumentation beträgt die Standardstapelgr�
 3.  Bei Verwendung des Treibers mit Anwendungen mit sehr vielen Threads kann die Handlevalidierung von unixODBC zu einem Leistungsengpass führen. In solchen Szenarien lässt sich durch Kompilieren von unixODBC mit der Option `--enable-fastvalidate` eine wesentlich bessere Leistung erzielen. Beachten Sie jedoch, dass dies bei Anwendungen, die ungültige Handles an ODBC-APIs übergeben, dazu führen kann, dass diese Anwendungen abstürzen, anstatt `SQL_INVALID_HANDLE`-Fehler zurückzugeben.
 
 ## <a name="see-also"></a>Weitere Informationen  
-[Häufig gestellte Fragen](frequently-asked-questions-faq-for-odbc-linux.md)
+[Häufig gestellte Fragen](frequently-asked-questions-faq-for-odbc-linux.yml)
 
 [Bekannte Probleme in dieser Version des Treibers](known-issues-in-this-version-of-the-driver.md)
 

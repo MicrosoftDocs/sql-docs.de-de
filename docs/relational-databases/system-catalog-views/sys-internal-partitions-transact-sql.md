@@ -14,12 +14,12 @@ ms.assetid: 0262df2b-5ba7-4715-b17b-3d9ce470a38e
 author: ronortloff
 ms.author: rortloff
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 46eb4bf2855cf6f5f8121d1480776c83703a5fcc
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: c5d43d8923a7e12a8389a9b3bd8a0801b989a560
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100341357"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464833"
 ---
 # <a name="sysinternal_partitions-transact-sql"></a>sys.internal_partitions (Transact-SQL)
 
@@ -27,7 +27,7 @@ ms.locfileid: "100341357"
 
   Gibt eine Zeile für jedes Rowset zurück, das interne Daten für columnstore--Indizes für Datenträger basierte Tabellen nachverfolgt. Diese Rowsets sind für columnstore--Indizes intern und Nachverfolgen gelöschter Zeilen, Zeilen Gruppen Zuordnungen und Delta Speicher-Zeilen Gruppen. Sie verfolgen Daten für jede Tabellen Partition nach. jede Tabelle verfügt über mindestens eine Partition. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] erstellt jedes Mal, wenn der columnstore--Index neu erstellt wird, die Rowsets neu.   
   
-|Spaltenname|Datentyp|Beschreibung|  
+|Spaltenname|Datentyp|BESCHREIBUNG|  
 |-----------------|---------------|-----------------|  
 |partition_id|**bigint**|Partitions-ID für diese Partition. Sie ist innerhalb einer Datenbank eindeutig.|  
 |object_id|**int**|Objekt-ID für die Tabelle, die die Partition enthält.|  
@@ -64,6 +64,6 @@ WHERE p.object_id = OBJECT_ID ( '<table name' ) ;
 ## <a name="see-also"></a>Weitere Informationen  
  [Katalogsichten für Objekte &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
  [Katalogsichten &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
- [FAQ: Abfragen des SQL Server-Systemkatalogs](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md)  
+ [FAQ: Abfragen des SQL Server-Systemkatalogs](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.yml)  
   
   

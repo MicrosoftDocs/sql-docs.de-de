@@ -20,12 +20,12 @@ ms.assetid: ''
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 6cb33d3efd0d1e69ec64a179ed54fcb79b273bf3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 62f3e422e65595de3b3d8a0b61c744c033ff4488
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99193806"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465004"
 ---
 # <a name="sysindex_resumable_operations-transact-sql"></a>sys.index_resumable_operations (Transact-SQL)
 
@@ -74,4 +74,4 @@ SELECT * FROM  sys.index_resumable_operations WHERE STATE = 1;
 - [sys.key_constraints](sys-key-constraints-transact-sql.md)
 - [sys.filegroups](sys-filegroups-transact-sql.md)
 - [sys.partition_schemes](sys-partition-schemes-transact-sql.md)
-- [FAQ: Abfragen des SQL Server-Systemkatalogs](querying-the-sql-server-system-catalog-faq.md)
+- [FAQ: Abfragen des SQL Server-Systemkatalogs](querying-the-sql-server-system-catalog-faq.yml)
