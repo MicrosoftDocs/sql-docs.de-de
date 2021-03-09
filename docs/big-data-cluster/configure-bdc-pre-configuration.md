@@ -9,12 +9,12 @@ ms.date: 02/11/2021
 ms.topic: reference
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: b00ed57288d19f08555a00eec8c9e62edc0f8cf6
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.openlocfilehash: f2adf48a0aef465f4c013b5adaf97a75be4abf77
+ms.sourcegitcommit: 765262cdc6352a5325148afc22fa4f1499fe1aa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100343968"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514867"
 ---
 # <a name="configure-a-sql-server-big-data-cluster---pre-cu9-release"></a>Konfigurieren eines SQL Server Big Data-Clusters vor CU9
 
@@ -102,7 +102,7 @@ Ein Big Data-Cluster verfügt über vier Konfigurationskategorien:
 
 Sämtliche Konfigurationen im Dienst `hdfs` zählen beispielsweise zu Kategorie `hdfs`. Beachten Sie, dass alle Konfigurationen für Hadoop (core-site), HDFS und Zookeeper zur Kategorie `hdfs` zählen und alle Konfigurationen für Livy, Spark, Yarn und Hive Metastore zur Kategorie `spark`. 
 
-Unter [Unterstützte Konfigurationen](reference-config-spark-hadoop.md#supported-configurations) sind die Eigenschaften von Apache Spark und Apache Hadoop aufgeführt, die Sie beim Bereitstellen eines Big Data-Clusters in SQL Server konfigurieren können.
+Unter [Unterstützte Konfigurationen](reference-config-spark-hadoop.md) sind die Eigenschaften von Apache Spark und Apache Hadoop aufgeführt, die Sie beim Bereitstellen eines Big Data-Clusters in SQL Server konfigurieren können.
 
 In den folgenden Abschnitten sind die Eigenschaften aufgeführt, die Sie in einem Cluster **nicht** ändern können:
 
