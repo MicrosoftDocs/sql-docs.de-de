@@ -135,7 +135,7 @@ Weitere Installationsszenarios finden Sie in den folgenden Ressourcen:
 * [Offlineinstallation:](../linux/sql-server-linux-setup.md#offline) Erfahren Sie, wie Sie die Pakete für die Offlineinstallation manuell herunterladen können.
 
 > [!TIP]
-> Antworten auf häufig gestellte Fragen finden Sie unter [Häufig gestellte Fragen zu SQL Server für Linux](../linux/sql-server-linux-faq.md).
+> Antworten auf häufig gestellte Fragen finden Sie unter [Häufig gestellte Fragen zu SQL Server für Linux](../linux/sql-server-linux-faq.yml).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
