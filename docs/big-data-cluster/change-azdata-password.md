@@ -4,16 +4,16 @@ description: '`AZDATA_PASSWORD` manuell aktualisieren'
 author: NelGson
 ms.author: negust
 ms.reviewer: mikeray
-ms.date: 03/01/2021
+ms.date: 03/05/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 062e574772c2a44b78772da4a979c81ed3deb959
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 71fe901915b533c4af25e98c3573aaaa00b82d53
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101836247"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247386"
 ---
 # <a name="manually-update-azdata_password"></a>Manuelles Aktualisieren von `AZDATA_PASSWORD`
 
@@ -34,7 +34,7 @@ Wenn der Cluster nicht im Active Directory-Modus betrieben wird, aktualisieren S
    ```
 
    b. Decodieren Sie das Geheimnis mit Base64:
-   
+
    ```bash
    echo <password from kubectl command>  | base64 --decode && echo
    ```
@@ -95,18 +95,18 @@ Nachdem Sie die Schritte zum Aktualisieren von AZDATA_PASSWORD ausgeführt haben
 Befolgen Sie diese Optionen, um das Kennwort für [Grafana](app-monitor.md) manuell zu aktualisieren.
 
 1. Das Hilfsprogramm „htpasswd“ ist erforderlich. Sie können es auf einem beliebigen Clientcomputer installieren.
-    
-    #### <a name="for-ubuntu"></a>[Für Ubuntu](#tab/ubuntu): 
-    ```bash
-    sudo apt install apache2-utils
-    ```
-    
-    #### <a name="for-rhel"></a>[Für RHEL](#tab/rhel): 
-    ```bash
-    sudo yum install httpd-tools
-    ```
-    
-    ---
+  
+### <a name="for-ubuntu"></a>[Für Ubuntu](#tab/for-ubuntu)
+Auf Linux können Sie Folgendes verwenden:
+```bash
+sudo apt install apache2-utils
+```
+### <a name="for-rhel"></a>[Für RHEL](#tab/for-rhel)
+Auf Red Hat Enterprise Linux können Sie Folgendes verwenden:
+```bash
+sudo yum install httpd-tools
+```
+---
 
 2. Generieren Sie das neue Kennwort. 
     
@@ -154,23 +154,19 @@ Befolgen Sie diese Optionen, um das Kennwort für [Grafana](app-monitor.md) manu
      
     Ermitteln Sie ggf. den Namen Ihres Pods „mgmtproxy“.
     
-    #### <a name="for-windows"></a>[Für Windows:](#tab/windows) 
-    Auf einem Windows-Server können Sie Folgendes verwenden:
-    
-    ```bash 
+    ### <a name="for-windows"></a>[Für Windows](#tab/for-windows)
+     Auf einem Windows-Server können Sie Folgendes verwenden:
+    ```bash
     kubectl get pods -n <namespace> -l app=mgmtproxy
     ```
-    
-    #### <a name="for-linux"></a>[Für Linux](#tab/linux): 
-    Unter Linux können Sie Folgendes verwenden:
-    
+    ### <a name="for-linux"></a>[Für Linux](#tab/for-linux)
+     Unter Linux können Sie Folgendes verwenden:
     ```bash
     kubectl get pods -n <namespace> | grep 'mgmtproxy'
     ```
-    
     ---
-    
-    Entfernen Sie den Pod „mgmtproxy“:
+
+     Entfernen Sie den Pod „mgmtproxy“:
     ```bash
     kubectl delete pod mgmtproxy-xxxxx -n mssql-clutser
     ```
@@ -178,13 +174,15 @@ Befolgen Sie diese Optionen, um das Kennwort für [Grafana](app-monitor.md) manu
 7. Warten Sie darauf, dass der Pod mgmtproxy online geht und das Grafana-Dashboard gestartet wird.  
  
     Die Wartezeit ist nicht signifikant, sodass der Pod binnen weniger Sekunden online sein sollte. Um den Status des Pods zu überprüfen, können Sie denselben Befehl `get pods` wie im vorherigen Schritt verwenden. 
-    Wenn Sie sehen, dass der Pod „mgmtproxy“ nicht sofort in den Status „Bereit“ zurückkehrt, verwenden Sie kubectl, um den Pod zu beschreiben:
-    
+
+    Wenn Sie sehen, dass der Pod „mgmtproxy“ nicht sofort in den Status „Bereit“ zurückkehrt, verwenden Sie kubectl, um den Pod zu beschreiben: 
+
     ```bash
     kubectl describe pods mgmtproxy-xxxxx  -n <namespace>
-    ```
+    ```   
     
-    Nutzen Sie zur Problembehandlung und weiteren Protokollerfassung den Azure Data CLI-Befehl `[azdata bdc debug copy-logs](../azdata/reference/reference-azdata-bdc-debug.md)`.
+    Nutzen Sie zur Problembehandlung und weiteren Protokollerfassung den Azure Data-CLI-Befehl [azdata bdc debug copy-logs](../azdata/reference/reference-azdata-bdc-debug.md).   
+
     
 8. Melden Sie sich nun mit dem neuen Kennwort bei Grafana an. 
 
@@ -198,7 +196,7 @@ Befolgen Sie diese Optionen, um das Kennwort für [Kibana](cluster-logging-kiban
 
 1. Öffnen Sie die Kibana-URL.
     
-    Sie können die Endpunkt-URL des Kibana-Diensts in [Azure Data Studio](manage-with-controller-dashboard#controller-dashboard) finden oder den folgenden **azdata**-Befehl verwenden:
+    Sie können die Endpunkt-URL des Kibana-Diensts in [Azure Data Studio](manage-with-controller-dashboard.md#controller-dashboard) finden oder den folgenden **azdata**-Befehl verwenden:
     
     ```azurecli
     azdata login
@@ -230,6 +228,6 @@ Befolgen Sie diese Optionen, um das Kennwort für [Kibana](cluster-logging-kiban
 
 ## <a name="see-also"></a>Weitere Informationen
 
-* [azdata bdc (Azure Data CLI)](../../sql/azdata/reference/reference-azdata-bdc.md) 
-* [Überwachen von Anwendungen mit azdata und einem Grafana-Dashboard](app-monitor.md)  
-* [Auswerten von Clusterprotokollen mit einem Kibana-Dashboard](cluster-logging-kibana.md)  
+* [azdata bdc (Azure Data CLI)](../azdata/reference/reference-azdata-bdc.md)  
+* [Überwachen von Anwendungen mit azdata und einem Grafana-Dashboard](app-monitor.md)   
+* [Auswerten von Clusterprotokollen mit einem Kibana-Dashboard](cluster-logging-kibana.md)   

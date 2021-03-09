@@ -22,12 +22,12 @@ ms.assetid: f47e2f3f-9302-4711-9d66-16b1a2a7ffe3
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: da4c8380b4370e8194da299b498d1934b29d6917
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 559b9572d95347d4ef14dfe9664cbaf6fb39bbed
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99207690"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186577"
 ---
 # <a name="option-clause-transact-sql"></a>OPTION-Klausel (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -40,14 +40,16 @@ ms.locfileid: "99207690"
   
 ## <a name="syntax"></a>Syntax  
   
+### <a name="syntax-for-ssnoversion-mdmd-and-ssazure_mdmd"></a>Syntax für [!INCLUDE[ssnoversion-md.md](../../includes/ssnoversion-md.md)] und [!INCLUDE[ssazure_md.md](../../includes/ssazure_md.md)]
+
 ```syntaxsql
--- Syntax for SQL Server and Azure SQL Database  
-  
+
 [ OPTION ( <query_hint> [ ,...n ] ) ]   
 ```  
   
+### <a name="syntax-for-sssdw-mdmd-and-sspdw-mdmd"></a>Syntax für [!INCLUDE[sssdw-md.md](../../includes/sssdw-md.md)] und [!INCLUDE[sspdw-md.md](../../includes/sspdw-md.md)]
+
 ```syntaxsql
--- Syntax for Azure Synapse Analytics and Parallel Data Warehouse  
   
 OPTION ( <query_option> [ ,...n ] )  
   
@@ -63,6 +65,16 @@ OPTION ( <query_option> [ ,...n ] )
     | { FORCE | DISABLE } EXTERNALPUSHDOWN  
 ```  
   
+### <a name="syntax-for-sssodfull-mdmd"></a>Syntax für [!INCLUDE[sssodfull-md.md](../../includes/sssodfull-md.md)]
+
+```syntaxsql
+
+OPTION ( <query_option> [ ,...n ] )
+
+<query_option> ::=
+    LABEL = label_name
+```  
+
 [!INCLUDE[sql-server-tsql-previous-offline-documentation](../../includes/sql-server-tsql-previous-offline-documentation.md)]
 
 ## <a name="arguments"></a>Argumente

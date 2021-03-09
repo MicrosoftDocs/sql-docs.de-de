@@ -15,12 +15,12 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: b6a8b2edf94d74720836e02589ec8e1270f38dac
-ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
+ms.openlocfilehash: 4e322ff478e9ccdc031882e7c3b5b18fd8506e42
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525163"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186467"
 ---
 # <a name="deprecated-database-engine-features-in-sql-server-2019-15x"></a>Als veraltet markierte Features der Datenbank-Engine in SQL Server 2019 (15.x)
 
@@ -35,9 +35,9 @@ Von [!INCLUDE [sssql19-md](../includes/sssql19-md.md)] werden keine Features au�
 
 Wenn eine Funktion als veraltet markiert ist, bedeutet dies:
 
-- Die Funktion ist ausschließlich im Wartungsmodus. Es werden keine weiteren Änderungen vorgenommen, auch solche nicht, die mit der Interoperabilität mit neuen Funktionen zu tun haben.
-- Wir bemühen uns, veraltete Funktionen in zukünftigen Versionen zu belassen, um Upgrades zu vereinfachen. In seltenen Fällen kann es jedoch vorkommen, dass eine veraltete Funktion aus [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] entfernt wird, weil sie zukünftige Innovationen beschränkt.
-- Für neue Entwicklungen wird empfohlen, in diesen keine veralteten Funktionen zu verwenden.      
+- Die Funktion ist ausschließlich im Wartungsmodus. Es werden keine weiteren Änderungen vorgenommen, auch solche nicht, die mit der Interoperabilität mit neuen Features zu tun haben.
+- Wir bemühen uns, veraltete Funktionen in zukünftigen Versionen zu belassen, um Upgrades zu vereinfachen. In seltenen Fällen kann es jedoch vorkommen, dass ein veraltetes Feature für [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] eingestellt (entfernt) wird, weil es zukünftige Innovationen beschränkt.
+- Verwenden Sie für neue Entwicklungsarbeiten keine veralteten Features. Planen Sie für vorhandene Anwendung so früh wie möglich die Änderung von Anwendungen, die derzeit diese Features verwenden.     
 
 Sie können die Nutzung als veraltet markierter Features mithilfe des [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] -Objektleistungsindikators „Als veraltet markierte Funktion“ oder mit den erweiterten Ereignissen `deprecation_announcement` und `deprecation_final_support` überwachen. Weitere Informationen finden Sie unter [Verwenden von SQL Server-Objekten](../relational-databases/performance-monitor/use-sql-server-objects.md).  
 

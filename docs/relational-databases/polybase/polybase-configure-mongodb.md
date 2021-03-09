@@ -1,7 +1,7 @@
 ---
 title: 'Zugreifen auf externe Daten: MongoDB: PolyBase'
 description: In diesem Artikel wird erläutert, wie Sie PolyBase in einer SQL Server-Instanz verwenden, um externe Daten in MongoDB abzufragen. Erstellen Sie externe Tabellen, um auf die externen Daten zu verweisen.
-ms.date: 12/13/2019
+ms.date: 03/05/2021
 ms.metadata: seo-lt-2019
 ms.prod: sql
 ms.technology: polybase
@@ -10,12 +10,12 @@ author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: mikeray
 monikerRange: '>= sql-server-linux-ver15 || >= sql-server-ver15'
-ms.openlocfilehash: 306feebece733cf382f486dc686117016800f4d1
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: a9d975bf5a65ec8ece1aa2f3b1e957007046f4c8
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100351794"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247516"
 ---
 # <a name="configure-polybase-to-access-external-data-in-mongodb"></a>Konfigurieren von PolyBase für den Zugriff auf externe Daten in MongoDB
 
@@ -42,29 +42,32 @@ In diesem Abschnitt werden die folgenden Transact-SQL-Befehle verwendet:
 
 1. Erstellen Sie datenbankweit gültige Anmeldeinformationen für den Zugriff auf die MongoDB-Quelle.
 
-    ```sql
-    /*  specify credentials to external data source
-    *  IDENTITY: user name for external source. 
-    *  SECRET: password for external source.
-    */
-    CREATE DATABASE SCOPED CREDENTIAL credential_name WITH IDENTITY = 'username', Secret = 'password';
-    ```
-    
-   > [!IMPORTANT] 
-   > Der MongoDB ODBC-Connector für PolyBase unterstützt nur die einfache Authentifizierung, nicht die Kerberos-Authentifizierung.    
-    
-1. Erstellen Sie mit [CREATE EXTERNAL DATA SOURCE](../../t-sql/statements/create-external-data-source-transact-sql.md) eine externe Datenquelle.
+   Das folgende Skript erstellt eine datenbankweite Anmeldeinformation. Bevor Sie das Skript ausführen, müssen Sie es für Ihre Umgebung aktualisieren:
+
+    - Ersetzen Sie `<credential_name>` mit einem Namen für die Anmeldeinformation.
+    - Ersetzen Sie `<username>` mit dem Benutzernamen für die externe Quelle.
+    - Ersetzen Sie `<password>` mit dem entsprechenden Kennwort. 
 
     ```sql
-    /*  LOCATION: Location string should be of format '<type>://<server>[:<port>]'.
-    *  PUSHDOWN: specify whether computation should be pushed down to the source. ON by default.
-    *CONNECTION_OPTIONS: Specify driver location
-    *  CREDENTIAL: the database scoped credential, created above.
-    */
+    CREATE DATABASE SCOPED CREDENTIAL <credential_name> WITH IDENTITY = '<username>', Secret = '<password>';
+    ```
+
+   > [!IMPORTANT]
+   > Der MongoDB ODBC-Connector für PolyBase unterstützt nur die einfache Authentifizierung, nicht die Kerberos-Authentifizierung.
+
+1. Einer externe Datenquelle erstellen
+
+    Mit dem folgenden Skript wird die externe Datenquelle erstellt. Weitere Informationen finden Sie unter [CREATE EXTERNAL DATA SOURCE](../../t-sql/statements/create-external-data-source-transact-sql.md). Bevor Sie das Skript ausführen, müssen Sie es für Ihre Umgebung aktualisieren:
+
+    - Aktualisieren Sie den Speicherort. Legen Sie `<server>` und `<port>` für Ihre Umgebung fest.
+    - Ersetzen Sie `<credential_name>` durch den Namen der im vorherigen Schritt erstellten Anmeldeinformation.
+    - Sie können optional auch `PUSHDOWN = ON` oder `PUSHDOWN = OFF` angeben, wenn Sie eine Pushdownberechnung für die externe Quelle angeben möchten.
+
+    ```sql
     CREATE EXTERNAL DATA SOURCE external_data_source_name
-    WITH (LOCATION = 'mongodb://<server>[:<port>]',
+    WITH (LOCATION = '<mongodb://<server>[:<port>]>',
     -- PUSHDOWN = ON | OFF,
-    CREDENTIAL = credential_name);
+    CREDENTIAL = <credential_name>);
     ```
 
 1. **Optional:** Erstellen Sie Statistiken für eine externe Tabelle.
@@ -75,12 +78,17 @@ In diesem Abschnitt werden die folgenden Transact-SQL-Befehle verwendet:
     CREATE STATISTICS statistics_name ON customer (C_CUSTKEY) WITH FULLSCAN; 
     ```
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 >Sobald Sie eine externe Datenquelle erstellt haben, können Sie über den Befehl [CREATE EXTERNAL TABLE](../../t-sql/statements/create-external-table-transact-sql.md) eine abfragbare Tabelle für diese Quelle erstellen.
 >
 >Ein Beispiel finden Sie unter [Erstellen einer externen Tabelle für MongoDB](../../t-sql/statements/create-external-table-transact-sql.md#k-create-an-external-table-for-mongodb).
 
+## <a name="mongodb-connection-options"></a>Verbindungsoptionen für MongoDB
+
+Informationen zu den Verbindungsoptionen für MongoDB finden Sie in der [MongoDB-Dokumentation zum URI-Format der Verbindungszeichenfolge](https://docs.mongodb.com/manual/reference/connection-string/#connection-string-options).
+
 ## <a name="flattening"></a>Vereinfachen
+
 Die Vereinfachung (Flattening) ist für geschachtelte und wiederholte Daten aus MongoDB-Dokumentsammlungen aktiviert. Der Benutzer muss `create an external table` aktivieren und ein relationales Schema über MongoDB-Dokumentsammlungen explizit angeben, die möglicherweise geschachtelte und/oder wiederholte Daten besitzen. Geschachtelte/wiederholte JSON-Datentypen werden wie folgt vereinfacht
 
 * Objekt: unsortierte Schlüssel-/Wertsammlung, die in geschweiften Klammern eingeschlossen wird (geschachtelt)
@@ -111,10 +119,10 @@ Beispielsweise wertet SQL Server die Auflistung der im nicht relationalen JSON-F
 
 Die Objektadresse wird wie unten dargestellt vereinfacht:
 
-* Das geschachtelte Feld „restaurant.address.building“ wird zu „restaurant.address_building“.
-* Das geschachtelte Feld „restaurant.address.coord“ wird zu „restaurant.address_coord“.
-* Das geschachtelte Feld „restaurant.address.street“ wird zu „restaurant.address_street“.
-* Das geschachtelte Feld „restaurant.address.zipcode“ wird zu „restaurant.address_zipcode“.
+- Das geschachtelte Feld `restaurant.address.building` wird zu `restaurant.address_building`.
+- Das geschachtelte Feld `restaurant.address.coord` wird zu `restaurant.address_coord`.
+- Das geschachtelte Feld `restaurant.address.street` wird zu `restaurant.address_street`.
+- Das geschachtelte Feld `restaurant.address.zipcode` wird zu `restaurant.address_zipcode`.
 
 Die Arraynoten werden wie unten dargestellt vereinfacht:
 
@@ -128,7 +136,28 @@ Die Arraynoten werden wie unten dargestellt vereinfacht:
 
 ## <a name="cosmos-db-connection"></a>Cosmos DB-Verbindung
 
-Mithilfe der Cosmos DB-API und des PolyBase-Connectors für MongoDB können Sie eine externe Tabelle einer **Cosmos DB-Instanz** erstellen. Führen Sie dazu die oben genannten Schritte aus. Stellen Sie sicher, dass die datenbankweit gültigen Anmeldeinformationen, die Serveradresse, der Port und die Standortzeichenabfolge die des Cosmos DB-Servers widerspiegeln. 
+Mithilfe der Cosmos DB-API und des PolyBase-Connectors für MongoDB können Sie eine externe Tabelle einer **Cosmos DB-Instanz** erstellen. Führen Sie dazu die oben genannten Schritte aus. Stellen Sie sicher, dass die datenbankweit gültigen Anmeldeinformationen, die Serveradresse, der Port und die Standortzeichenabfolge die des Cosmos DB-Servers widerspiegeln.
+
+## <a name="examples"></a>Beispiele
+
+Im folgenden Beispiel wird eine externe Datenquelle mit den folgenden Parametern erstellt:
+
+| Parameter | Wert|
+|---|---|
+| Name | `external_data_source_name`|
+| Dienst | `mongodb0.example.com`|
+| Instanz | `27017`|
+| Replikatgruppe | `myRepl`|
+| TLS | `true`|
+| Pushdownberechnung | `On`|
+
+```sql
+CREATE EXTERNAL DATA SOURCE external_data_source_name
+    WITH (LOCATION = 'mongodb://mongodb0.example.com:27017',
+    CONNECTION_OPTION = 'replicaSet=myRepl','tls=true',
+    PUSHDOWN = ON ,
+    CREDENTIAL = credential_name);
+```
 
 ## <a name="next-steps"></a>Nächste Schritte
 

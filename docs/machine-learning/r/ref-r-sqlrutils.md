@@ -8,12 +8,12 @@ ms.topic: how-to
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 874c3175b830cbcdb5805c5bdb06a747015ff889
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 67e14f965889cbbeecf2a9800d49b70622b88502
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100273011"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186387"
 ---
 # <a name="sqlrutils-r-package-in-sql-server-machine-learning-services"></a>sqlrutils (R-Paket in SQL Server Machine Learning Services)
 [!INCLUDE [SQL Server 2016 and later](../../includes/applies-to-version/sqlserver2016.md)]
@@ -35,7 +35,7 @@ Sie können die gespeicherte Prozedur auch aus einer R-Umgebung ausführen, inde
   
 ## <a name="full-reference-documentation"></a>Vollständige Referenzdokumentation
 
-Das **sqlrutils**-Paket wird in mehreren Microsoft-Produkten bereitgestellt. Die Verwendung ist jedoch immer identisch, unabhängig davon, ob Sie das Paket in SQL Server oder einem anderen Produkt abrufen. Aus diesem Grund wird die [Dokumentation für einzelne sqlrutils-Funktionen](/machine-learning-server/r-reference/revoscaler/revoscaler) nur an einer Stelle in der [R-Referenz](/machine-learning-server/r-reference/introducing-r-server-r-package-reference) für Microsoft Machine Learning Server veröffentlicht. Abweichungen durch produktspezifisches Verhalten finden Sie ggf. auf der Hilfeseite der Funktion.
+Das **sqlrutils**-Paket wird in mehreren Microsoft-Produkten bereitgestellt. Die Verwendung ist jedoch immer identisch, unabhängig davon, ob Sie das Paket in SQL Server oder einem anderen Produkt abrufen. Aus diesem Grund wird die Dokumentation für einzelne sqlrutils-Funktionen nur an einer Stelle in der [sqlrutils-Paketreferenz](/machine-learning-server/r-reference/sqlrutils/sqlrutils) für Microsoft Machine Learning Server veröffentlicht. Abweichungen durch produktspezifisches Verhalten finden Sie ggf. auf der Hilfeseite der Funktion.
 
 ## <a name="functions-list"></a>Funktionsliste
 
@@ -106,4 +106,4 @@ Dem Objekt für die gespeicherte Prozedur sind üblicherweise weder Daten noch W
 
 ## <a name="see-also"></a>Weitere Informationen
 
-[Erstellen einer gespeicherten Prozedur mithilfe von sqlrutils](how-to-create-a-stored-procedure-using-sqlrutils.md)
+[Erstellen einer gespeicherten Prozedur mithilfe von sqlrutils](/machine-learning-server/r-reference/sqlrutils/how-to-create-a-stored-procedure-from-r)

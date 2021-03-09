@@ -6146,7 +6146,7 @@ items:
             href: dma/dma-assess-ssis.md
           - name: Speichern und Laden von Bewertungen
             href: dma/dma-save-load-assessments.md
-          - name: Identifizieren der korrekten Azure SQL-Datenbank-SKU
+          - name: Identifizieren der Azure SQL-SKU für das Ziel
             href: dma/dma-sku-recommend-sql-db.md
           - name: Durchführen eines Upgrades von SQL Server auf eine höhere Version
             href: dma/dma-migrateonpremsql.md
@@ -7213,7 +7213,7 @@ items:
                   - name: Kerberos-Konnektivität
                     href: relational-databases/polybase/polybase-troubleshoot-connectivity.md
                   - name: PolyBase – häufig gestellte Fragen
-                    href: relational-databases/polybase/polybase-faq.md
+                    href: relational-databases/polybase/polybase-faq.yml
                   - name: PolyBase-Fehler und mögliche Lösungen
                     href: relational-databases/polybase/polybase-errors-and-possible-solutions.md
           - name: Verweis
@@ -10037,7 +10037,7 @@ items:
               - name: SQL Server 2017
                 href: linux/sql-server-linux-editions-and-components-2017.md
           - name: Häufig gestellte Fragen
-            href: linux/sql-server-linux-faq.md
+            href: linux/sql-server-linux-faq.yml
       - name: Schnellstarts
         items:
           - name: Installieren und Verbinden – Red Hat
@@ -11513,7 +11513,7 @@ items:
         href: relational-databases/system-catalog-views/catalog-views-transact-sql.md
         items:
           - name: 'FAQ: Abfragen des SQL Server-Systemkatalogs'
-            href: relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md
+            href: relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.yml
           - name: Schemas – sys.schemas
             href: relational-databases/system-catalog-views/schemas-catalog-views-sys-schemas.md
           - name: Meldungen (für Fehler) – sys.messages

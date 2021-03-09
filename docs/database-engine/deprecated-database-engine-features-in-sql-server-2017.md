@@ -3,7 +3,7 @@ title: Als veraltet markierte Features der Datenbank-Engine in SQL Server 2017 |
 titleSuffix: SQL Server 2019
 description: Erfahren Sie mehr über die veralteten Features der Datenbank-Engine, die weiterhin in SQL Server 2017 (14.x) verfügbar sind, aber nicht in neuen Anwendungen verwendet werden sollten.
 ms.custom: seo-lt-2019
-ms.date: 12/13/2019
+ms.date: 03/03/2021
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
@@ -17,24 +17,23 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017'
-ms.openlocfilehash: e14f354812c99b9ed3e8be86734e3cb8e07db751
-ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
+ms.openlocfilehash: e3b27292b817d0ec0bf22afcc1e8eaab61864e82
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489474"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186442"
 ---
 # <a name="deprecated-database-engine-features-in-sql-server-2017"></a>Als veraltet markierte Funktionen der Datenbank-Engine in SQL Server 2017
 
 [!INCLUDE[SQL Server 2017](../includes/applies-to-version/sqlserver2017.md)]
 
-  In diesem Thema werden die als veraltet markierten Funktionen von [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] beschrieben, die in [!INCLUDE[sssql17-md](../includes/sssql17-md.md)]noch verfügbar sind. Als veraltet markierte Funktionen sollten in neuen Anwendungen nicht verwendet werden.  
+  In diesem Artikel werden die als veraltet markierten Features von [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] beschrieben, die in [!INCLUDE[sssql17-md](../includes/sssql17-md.md)]noch verfügbar sind. Als veraltet markierte Funktionen sollten in neuen Anwendungen nicht verwendet werden.  
   
 Wenn eine Funktion als veraltet markiert ist, bedeutet dies:
-
-- Die Funktion ist ausschließlich im Wartungsmodus. Es werden keine weiteren Änderungen vorgenommen, auch solche nicht, die mit der Interoperabilität mit neuen Funktionen zu tun haben.
-- Wir bemühen uns, veraltete Funktionen in zukünftigen Versionen zu belassen, um Upgrades zu vereinfachen. In seltenen Fällen kann es jedoch vorkommen, dass eine veraltete Funktion aus [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] entfernt wird, weil sie zukünftige Innovationen beschränkt.
-- Für neue Entwicklungen wird empfohlen, in diesen keine veralteten Funktionen zu verwenden.      
+- Die Funktion ist ausschließlich im Wartungsmodus. Es werden keine weiteren Änderungen vorgenommen, auch solche nicht, die mit der Interoperabilität mit neuen Features zu tun haben.
+- Wir bemühen uns, veraltete Funktionen in zukünftigen Versionen zu belassen, um Upgrades zu vereinfachen. In seltenen Fällen kann es jedoch vorkommen, dass ein veraltetes Feature für [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] eingestellt (entfernt) wird, weil es zukünftige Innovationen beschränkt.
+- Verwenden Sie für neue Entwicklungsarbeiten keine veralteten Features. Planen Sie für vorhandene Anwendung so früh wie möglich die Änderung von Anwendungen, die derzeit diese Features verwenden.     
 
 Sie können die Nutzung als veraltet markierter Funktionen mithilfe des [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] -Objektleistungsindikators "Als veraltet markierte Funktion" und Ablaufverfolgungsereignissen überwachen. Weitere Informationen finden Sie unter [Verwenden von SQL Server-Objekten](../relational-databases/performance-monitor/use-sql-server-objects.md).  
 
@@ -49,8 +48,7 @@ WHERE object_name = 'SQLServer:Deprecated Features';
 > Diese Liste ist identisch mit der [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]-Liste. Es gibt keine Datenbank-Engine-Funktionen, die neu für [!INCLUDE[sssql17-md](../includes/sssql17-md.md)] als veraltet markiert oder eingestellt wurden.
 
 ## <a name="features-deprecated-in-the-next-version-of-sql-server"></a>Funktionen, die ab der nächsten Version von SQL Server veraltet sind
-
-Die folgenden Features von SQL Server-Datenbank-Engine werden in der nächsten Version von SQL Server als veraltet eingestuft. Verwenden Sie diese Funktionen nicht zum Entwickeln neuer Anwendungen, und ändern Sie so bald wie möglich die Anwendungen, in denen diese Funktionen zurzeit verwendet werden. Der **Featurename**-Wert wird in Ablaufverfolgungsereignissen als Objektname und in Leistungsindikatoren sowie `sys.dm_os_performance_counters` als Instanzname angezeigt. Der **Feature ID** -Wert wird in Ablaufverfolgungsereignissen als ObjectId angezeigt.
+Die folgenden [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]-Features werden in einer zukünftigen Version von [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] nicht mehr unterstützt. Verwenden Sie diese Funktionen nicht zum Entwickeln neuer Anwendungen, und ändern Sie so bald wie möglich die Anwendungen, in denen diese Funktionen zurzeit verwendet werden. Der **Featurename**-Wert wird in Ablaufverfolgungsereignissen als Objektname und in Leistungsindikatoren sowie `sys.dm_os_performance_counters` als Instanzname angezeigt. Der **Feature ID** -Wert wird in Ablaufverfolgungsereignissen als ObjectId angezeigt.
 
 ### <a name="back-up-and-restore"></a>Sichern und Wiederherstellen
 
@@ -62,7 +60,7 @@ Die folgenden Features von SQL Server-Datenbank-Engine werden in der nächsten V
 
 | Als veraltet markierte Funktion | Ersatz | Feature name | Feature ID |
 |--------------------|-------------|--------------|------------|
-Upgrade von Version 100 (SQL Server 2008 und SQL Server 2008 R2) | Wenn die [Unterstützung](/lifecycle/products/?products=sql-server) für eine SQL Server-Version eingestellt wird, wird der zugehörige Datenbank-Kompatibilitätsgrad als veraltet markiert. Anwendungen, die für einen der unterstützten Datenbank-Kompatibilitätsgrade zertifiziert sind, werden jedoch so lange wie möglich unterstützt, um die Upgrades zu vereinfachen. Weitere Informationen zu den Kompatibilitätsgraden finden Sie unter [ALTER DATABASE-Kompatibilitätsgrad &#40;Transact-SQL&#41;](../t-sql/statements/alter-database-transact-sql-compatibility-level.md). | Datenbank-Kompatibilitätsgrad 100 | 108 |
+Upgrade von Version 100 ([!INCLUDE[ssKatmai](../includes/ssKatmai-md.md)] und [!INCLUDE[ssKilimanjaro](../includes/ssKilimanjaro-md.md)]). | Wenn eine [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]-Version aus der [Unterstützung](/lifecycle/products/?products=sql-server) herausfällt, wird der zugehörige Datenbankkompatibilitätsgrad als veraltet markiert. Anwendungen, die für einen der unterstützten Datenbank-Kompatibilitätsgrade zertifiziert sind, werden jedoch so lange wie möglich unterstützt, um die Upgrades zu vereinfachen. Weitere Informationen zu den Kompatibilitätsgraden finden Sie unter [ALTER DATABASE-Kompatibilitätsgrad &#40;Transact-SQL&#41;](../t-sql/statements/alter-database-transact-sql-compatibility-level.md). | Datenbank-Kompatibilitätsgrad 100 | 108 |
 
 ### <a name="database-objects"></a>Datenbankobjekte
 

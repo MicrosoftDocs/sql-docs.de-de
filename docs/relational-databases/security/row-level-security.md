@@ -17,12 +17,12 @@ helpviewer_keywords:
 author: VanMSFT
 ms.author: vanto
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: a842f6ed226fe6b298dc9063f5d6c64f287fc82e
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 3f54ca9be0a75912c716f12b56c8b3848b151358
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100340159"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247538"
 ---
 # <a name="row-level-security"></a>Sicherheit auf Zeilenebene
 
@@ -159,7 +159,7 @@ Es ist möglich, die Offenlegung von Informationen durch die Verwendung von sorg
   
 - **Filestream:** RLS ist nicht mit Filestream kompatibel.  
   
-- **PolyBase:** RLS wird nur bei externen Polybase-Tabellen für Azure Synapse unterstützt.
+- **PolyBase:** RLS wird mit externen Tabellen in Azure Synapse und SQL Server 2019 CU1 oder höher unterstützt. 
 
 - **Speicheroptimierte Tabellen:** Die Inline-Tabellenwertfunktion, die als Sicherheitsprädikat für eine speicheroptimierte Tabelle verwendet wird, muss mit der Option `WITH NATIVE_COMPILATION` definiert werden. Bei dieser Option werden von speicheroptimierten Tabellen nicht unterstützte Sprachfeatures gesperrt, und zur Erstellungszeit wird der entsprechende Fehler ausgelöst. Weitere Informationen finden Sie im Abschnitt **Sicherheit auf Zeilenebene** in [Einführung in speicheroptimierte Tabellen](../../relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables.md).  
   

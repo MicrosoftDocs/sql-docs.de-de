@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 6fabeea3-7a42-4769-a0f3-7e04daada314
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 68228106bcd2620cb684bd61efec353fdb49585c
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: abdd25c6166b40436584a1260d4b1b09d40900c4
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85884838"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186061"
 ---
 # <a name="write-sql-server-audit-events-to-the-security-log"></a>Schreiben von SQL-Serverüberwachungsereignissen in das Sicherheitsprotokoll  
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
 
 In einer Umgebung mit hoher Sicherheit ist das Windows-Sicherheitsprotokoll der geeignete Speicherort für Ereignisse, die Objektzugriffe aufzeichnen. Andere Überwachungsspeicherorte werden unterstützt, können aber leichter manipuliert werden.  
   
- Es gibt zwei Hauptanforderungen für das Schreiben von [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] -Serverüberwachungen in das Windows-Sicherheitsprotokoll:  
+ Es gibt drei Hauptanforderungen für das Schreiben von [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]-Serverüberwachungen in das Windows-Sicherheitsprotokoll:  
   
 -   Die Einstellungen für die Überwachung von Objektzugriffsversuchen müssen so konfiguriert sein, dass die Ereignisse aufgezeichnet werden. Das Tool für Überwachungsrichtlinien (`auditpol.exe`) macht eine Vielzahl von Einstellungen für Unterrichtlinien in der Kategorie **Überwachung von Objektzugriffsversuchen** verfügbar. Um [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] die Überwachung des Objektzugriffs zu ermöglichen, konfigurieren Sie die Einstellung **automatisch generiert** .  
 -   Das Konto, unter dem der [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] -Dienst ausgeführt wird, muss über die Berechtigung zum **Generieren von Sicherheitsüberwachungen** verfügen, um in das Windows-Sicherheitsprotokoll schreiben zu können. Standardmäßig verfügen die Konten LOCAL SERVICE und NETWORK SERVICE über diese Berechtigung. Dieser Schritt ist nicht erforderlich, wenn [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] unter einem dieser Konten ausgeführt wird.  
@@ -98,7 +98,7 @@ Die Windows-Überwachungsrichtlinie kann sich auf die [!INCLUDE[ssNoVersion](../
   
 4.  Doppelklicken Sie im Ergebnisbereich auf **Objektzugriffsversuche überwachen**.  
   
-5.  Wählen Sie im Bereich **Diese Versuche überwachen** auf der Registerkarte **Lokale Sicherheitseinstellung** sowohl **Erfolg** als auch **Fehler**aus.  
+5.  Wählen Sie im Bereich **Diese Versuche überwachen** auf der Registerkarte **Lokale Sicherheitseinstellung** sowohl **Erfolg** als auch **Fehler** aus.  
   
 6.  [!INCLUDE[clickOK](../../../includes/clickok-md.md)]  
   

@@ -28,12 +28,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 02/24/2021
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017'
-ms.openlocfilehash: 1b7d902064ef7a083b706af08730e91319be312f
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 928936a4b4ad6524e4d0817b94696353cb8427e9
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101836835"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186597"
 ---
 # <a name="sqlcmd-utility"></a>SQLCMD-Hilfsprogramm
 
@@ -180,7 +180,8 @@ Diese Option wird vom Client beim Herstellen einer Verbindung mit SQL-Datenbank 
 
 > [!IMPORTANT]
 > Die Option `-G` gilt nur für Azure SQL-Datenbank und Azure Synapse Analytics.
-> Die interaktive AAD-Authentifizierung wird unter Linux oder macOS derzeit nicht unterstützt. Die integrierte AAD-Authentifizierung erfordert [Microsoft ODBC-Treiber 17 für SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) ab Version 17.6.1 oder höher und eine ordnungsgemäß [konfigurierte Kerberos-Umgebung](../connect/odbc/linux-mac/using-integrated-authentication#configure-kerberos).
+> Die interaktive AAD-Authentifizierung wird unter Linux oder macOS derzeit nicht unterstützt. Die integrierte AAD-Authentifizierung erfordert [Microsoft ODBC-Treiber 17 für SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) ab Version 17.6.1 und eine ordnungsgemäß [konfigurierte Kerberos-Umgebung](../connect/odbc/linux-mac/using-integrated-authentication.md).
+
 
 - **Azure Active Directory-Benutzername und -Kennwort:** 
 
@@ -199,7 +200,7 @@ Diese Option wird vom Client beim Herstellen einer Verbindung mit SQL-Datenbank 
 - **Integrierte Azure Active Directory-Authentifizierung**
 
    Wenn Sie die integrierte Azure Active Directory-Authentifizierung verwenden möchten, geben Sie die Option **-G** ohne Benutzername und Kennwort an.
-   *Die integrierte AAD-Authentifizierung erfordert[ Microsoft ODBC-Treiber 17 für SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) ab Version 17.6.1 und eine[ ordnungsgemäß](../connect/odbc/linux-mac/using-integrated-authentication.md#configure-kerberos)konfigurierte Kerberos-Umgebung*.
+   *Die integrierte AAD-Authentifizierung erfordert[ Microsoft ODBC-Treiber 17 für SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) ab Version 17.6.1 und eine[ ordnungsgemäß](../connect/odbc/linux-mac/using-integrated-authentication.md)konfigurierte Kerberos-Umgebung*.
 
     ```cmd
     Sqlcmd -S Target_DB_or_DW.testsrv.database.windows.net -G
@@ -467,11 +468,10 @@ Es wird empfohlen, ein sicheres Kennwort zu verwenden.
   
 - **image**  
   
-> [!NOTE]  
->  UDTs können je nach Implementierung eine feste Länge aufweisen. Wenn die Länge eines UDT mit fester Länge den Wert für *Anzeigebreite* unterschreitet, hat dies keinen Einfluss auf den Wert des zurückgegebenen UDT. Wenn die Länge den Wert für *Anzeigebreite* jedoch überschreitet, wird die Ausgabe abgeschnitten.  
-   
+> [!NOTE]
+> UDTs können je nach Implementierung eine feste Länge aufweisen. Wenn die Länge eines UDT mit fester Länge den Wert für *Anzeigebreite* unterschreitet, hat dies keinen Einfluss auf den Wert des zurückgegebenen UDT. Wenn die Länge den Wert für *Anzeigebreite* jedoch überschreitet, wird die Ausgabe abgeschnitten.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  Verwenden Sie die Option **-y 0** mit äußerster Sorgfalt, da sie je nach Größe der zurückgegebenen Daten zu ernsthaften Leistungsproblemen auf dem Server und im Netzwerk führen kann.  
   
  **-Y** _Anzeigebreite_bei_Typen_mit_fester_Länge_  
@@ -514,7 +514,7 @@ Es wird empfohlen, ein sicheres Kennwort zu verwenden.
  Listet die lokal konfigurierten Servercomputer sowie die Namen der Servercomputer auf, die Broadcastnachrichten über das Netzwerk senden. Dieser Parameter kann nicht in Verbindung mit anderen Parametern verwendet werden. Es können maximal 3.000 Servercomputer aufgelistet werden. Wenn die Serverliste aufgrund der Puffergröße abgeschnitten wurde, wird eine Warnmeldung angezeigt.  
   
 > [!NOTE]  
->  Aufgrund der Beschaffenheit des Broadcastings in Netzwerken ist es möglich, dass **sqlcmd** nicht von allen Servern rechtzeitig eine Antwort empfängt. Daher kann die Liste der zurückgegebenen Server mit jedem Aufruf dieser Option variieren.  
+> Aufgrund der Beschaffenheit des Broadcastings in Netzwerken ist es möglich, dass **sqlcmd** nicht von allen Servern rechtzeitig eine Antwort empfängt. Daher kann die Liste der zurückgegebenen Server mit jedem Aufruf dieser Option variieren.  
   
  Wenn der optionale Parameter **c** angegeben ist, wird die Ausgabe ohne die Kopfzeile **Server:** angezeigt. Jede Serverzeile wird ohne führende Leerzeichen ausgegeben. Diese Darstellung wird als bereinigte Ausgabe bezeichnet. Durch die einfache Ausgabe wird die Verarbeitungsleistung von Skriptsprachen verbessert.  
   

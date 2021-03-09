@@ -1,10 +1,8 @@
 ---
-title: Anzeigen oder Ändern von Servereigenschaften (SQL Server) | Microsoft-Dokumentation
+title: Anzeigen oder Ändern von Servereigenschaften (SQL Server)
 description: Erfahren Sie, wie Sie SQL Server Management Studio, Transact-SQL oder den SQL Server-Konfigurations-Manager verwenden, um die Eigenschaften einer SQL Server-Instanz anzuzeigen oder zu ändern.
-ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
-ms.reviewer: ''
 ms.technology: configuration
 ms.topic: conceptual
 f1_keywords:
@@ -18,13 +16,15 @@ helpviewer_keywords:
 ms.assetid: 55f3ac04-5626-4ad2-96bd-a1f1b079659d
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: contperf-fy20q4
-ms.openlocfilehash: f6bf2a5d86faba024d58ae6b6f9c539e8bd17003
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 03/14/2017
+ms.openlocfilehash: 80d52c19e5fde8116f7f6fed638e1120064038d3
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100350342"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186054"
 ---
 # <a name="view-or-change-server-properties-sql-server"></a>Anzeigen oder Ändern von Servereigenschaften (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -96,13 +96,13 @@ Die Ausführungsberechtigungen für **sp_configure** ohne Parameter oder nur mit
   
 2.  Klicken Sie in der Standardleiste auf **Neue Abfrage**.  
   
-3.  Kopieren Sie das folgende Beispiel, fügen Sie es in das Abfragefenster ein, und klicken Sie auf **Ausführen**. In diesem Beispiel wird die [sys.configurations](../../relational-databases/system-catalog-views/sys-configurations-transact-sql.md) -Katalogsicht abgefragt, um Informationen zu jeder Serverkonfigurationsoption des aktuellen Servers zurückzugeben. Im Beispiel werden der Name (`name`) und die Beschreibung (`description`) der Option zurückgegeben sowie ein Hinweis dazu, ob die Option eine erweiterte Option ist (`is_advanced`).  
+3.  Kopieren Sie das folgende Beispiel in das Abfragefenster, und klicken Sie dann auf **Ausführen**. In diesem Beispiel wird die [sys.configurations](../../relational-databases/system-catalog-views/sys-configurations-transact-sql.md) -Katalogsicht abgefragt, um Informationen zu jeder Serverkonfigurationsoption des aktuellen Servers zurückzugeben. Im Beispiel werden der Name (`name`), die Beschreibung (`description`) und der Wert (`value`) der Option zurückgegeben sowie ein Hinweis dazu, ob die Option eine erweiterte Option ist (`is_advanced`).  
   
     ```wmimof  
     USE AdventureWorks2012;   
     GO  
-    SELECT name, description, is_advanced  
-    FROM sys.configurations ;   
+    SELECT name, description, value, is_advanced  
+    FROM sys.configurations;   
     GO  
   
     ```  
@@ -113,7 +113,7 @@ Die Ausführungsberechtigungen für **sp_configure** ohne Parameter oder nur mit
   
 2.  Klicken Sie in der Standardleiste auf **Neue Abfrage**.  
   
-3.  Kopieren Sie das folgende Beispiel, fügen Sie es in das Abfragefenster ein, und klicken Sie auf **Ausführen**. In diesem Beispiel wird gezeigt, wie Sie eine Servereigenschaft mithilfe von [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md) ändern. Im Beispiel wird der Wert der `fill factor` -Option in `100`geändert. Der Server muss neu gestartet werden, bevor die Änderung wirksam werden kann.  
+3.  Kopieren Sie das folgende Beispiel in das Abfragefenster, und klicken Sie dann auf **Ausführen**. In diesem Beispiel wird gezeigt, wie Sie eine Servereigenschaft mithilfe von [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md) ändern. Im Beispiel wird der Wert der `fill factor` -Option in `100`geändert. Der Server muss neu gestartet werden, bevor die Änderung wirksam werden kann.  
   
 ```sql  
 Use AdventureWorks2012;  
@@ -137,7 +137,7 @@ GO
   
 1.  Zeigen Sie im Menü **Start** auf **Alle Programme**, zeigen Sie auf [!INCLUDE[ssCurrentUI](../../includes/sscurrentui-md.md)], zeigen Sie auf **Konfigurationstools**, und klicken Sie dann auf **SQL Server-Konfigurations-Manager**.  
   
-2.  Klicken Sie im **SQL Server-Konfigurations-Manager** auf **SQL Server-Dienste**.  
+2.  Wählen Sie in **SQL Server-Konfigurations-Manager** die Option **SQL Server-Dienste** aus.  
   
 3.  Klicken Sie im Detailbereich mit der rechten Maustaste auf **SQL Server (\<**_instancename_**>)** , und klicken Sie dann auf **Eigenschaften**.  
   

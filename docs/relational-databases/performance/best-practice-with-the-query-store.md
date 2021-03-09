@@ -13,12 +13,12 @@ ms.assetid: 5b13b5ac-1e4c-45e7-bda7-ebebe2784551
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c8379a2e1c18ea5da82abda5ad25dee47679a742
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 85c9a992660b63f70d2193acd114e7b07d3c1092
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101837777"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186497"
 ---
 # <a name="best-practices-with-query-store"></a>Bewährte Methoden für den Abfragespeicher
 
@@ -434,7 +434,7 @@ Die globalen Ablaufverfolgungsflags 7745 und 7752 können verwendet werden, um d
 > Wenn Sie den Abfragespeicher für Erkenntnisse zu Just-In-Time-Arbeitsauslastungen in [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] verwenden, planen Sie baldmöglichst die Installation der Verbesserungen zur Leistungsskalierbarkeit in [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU2 ([KB 4340759](https://support.microsoft.com/help/4340759)) ein. Ohne diese Verbesserungen kann es bei hohen Workloads der Datenbank zu Spinlock-Konflikten kommen und die Serverleistung beeinträchtigt werden. Insbesondere beim `QUERY_STORE_ASYNC_PERSIST`- oder `SPL_QUERY_STORE_STATS_COOKIE_CACHE`-Spinlock kann es zu heftigen Konflikten kommen. Nachdem diese Verbesserungen angewendet wurden, führt der Abfragespeicher nicht mehr zu Spinlock-Konflikten.
 
 > [!IMPORTANT]
-> Wenn Sie den Abfragespeicher für Erkenntnisse zu Just-In-Time-Arbeitsauslastungen in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] bis [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]) verwenden, planen Sie baldmöglichst die Installation der Verbesserung zur Leistungsskalierbarkeit in [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU15, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU22 und [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU8. Ohne diese Verbesserung kann bei hoher Ad-hoc-Workload der Datenbank der Abfragespeicher einen großen Teil des Speichers in Anspruch nehmen und die Serverleistung kann beeinträchtigt werden. Nachdem diese Verbesserung angewendet wurde, legt der Abfragespeicher interne Grenzwerte für die Menge an Arbeitsspeicher fest, die von seinen verschiedenen Komponenten verwendet werden kann. Zudem kann der Betriebsmodus automatisch in „schreibgeschützt“ geändert werden, bis genügend Arbeitsspeicher an den [!INCLUDE[ssde_md](../../includes/ssde_md.md)] zurückgegeben wurde. Beachten Sie, dass die internen Grenzwerte für den Arbeitsspeicher des Abfragespeichers nicht dokumentiert sind, da sie sich ändern können.  
+> Wenn Sie den Abfragespeicher für Erkenntnisse zu Just-In-Time-Arbeitsauslastungen in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] bis [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]) verwenden, planen Sie baldmöglichst die Installation der Verbesserung zur Leistungsskalierbarkeit in [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU15, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU23 und [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU9. Ohne diese Verbesserung kann bei hoher Ad-hoc-Workload der Datenbank der Abfragespeicher einen großen Teil des Speichers in Anspruch nehmen und die Serverleistung kann beeinträchtigt werden. Nachdem diese Verbesserung angewendet wurde, legt der Abfragespeicher interne Grenzwerte für die Menge an Arbeitsspeicher fest, die von seinen verschiedenen Komponenten verwendet werden kann. Zudem kann der Betriebsmodus automatisch in „schreibgeschützt“ geändert werden, bis genügend Arbeitsspeicher an den [!INCLUDE[ssde_md](../../includes/ssde_md.md)] zurückgegeben wurde. Beachten Sie, dass die internen Grenzwerte für den Arbeitsspeicher des Abfragespeichers nicht dokumentiert sind, da sie sich ändern können.  
 
 
 ## <a name="using-query-store-in-azure-sql-database-active-geo-replication"></a><a name="geosyncreplicas"></a> Verwenden des Abfragespeichers bei der aktiven Georeplikation in Azure SQL-Datenbank

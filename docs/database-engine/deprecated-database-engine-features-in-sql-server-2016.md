@@ -15,12 +15,12 @@ helpviewer_keywords:
 - deprecation [SQL Server], feature list
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 518b29507e7992b267922e09c97bf98b1657205d
-ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
+ms.openlocfilehash: e4227e17c9b8f3319e771d7de9d93fefddbaa487
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525159"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186117"
 ---
 # <a name="deprecated-database-engine-features-in-sql-server-2016"></a>Als veraltet markierte Funktionen der Datenbank-Engine in SQL Server 2016
 [!INCLUDE [SQL Server 2016](../includes/applies-to-version/sqlserver2016.md)]  
@@ -28,9 +28,9 @@ ms.locfileid: "100525159"
 In diesem Artikel werden die als veraltet markierten Features von [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] beschrieben, die in [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]noch verfügbar sind. Als veraltet markierte Funktionen sollten in neuen Anwendungen nicht verwendet werden.  
   
 Wenn eine Funktion als veraltet markiert ist, bedeutet dies:
--  Die Funktion ist ausschließlich im Wartungsmodus. Es werden keine weiteren Änderungen vorgenommen, auch solche nicht, die mit der Interoperabilität mit neuen Funktionen zu tun haben.
--  Wir bemühen uns, veraltete Funktionen in zukünftigen Versionen zu belassen, um Upgrades zu vereinfachen. In seltenen Fällen kann es jedoch vorkommen, dass eine veraltete Funktion aus [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] entfernt wird, weil sie zukünftige Innovationen beschränkt.
--  Für neue Entwicklungen wird empfohlen, in diesen keine veralteten Funktionen zu verwenden.      
+- Die Funktion ist ausschließlich im Wartungsmodus. Es werden keine weiteren Änderungen vorgenommen, auch solche nicht, die mit der Interoperabilität mit neuen Features zu tun haben.
+- Wir bemühen uns, veraltete Funktionen in zukünftigen Versionen zu belassen, um Upgrades zu vereinfachen. In seltenen Fällen kann es jedoch vorkommen, dass ein veraltetes Feature für [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] eingestellt (entfernt) wird, weil es zukünftige Innovationen beschränkt.
+- Verwenden Sie für neue Entwicklungsarbeiten keine veralteten Features. Planen Sie für vorhandene Anwendung so früh wie möglich die Änderung von Anwendungen, die derzeit diese Features verwenden.     
 
 Sehen Sie sich für [!INCLUDE[sssql17-md](../includes/sssql17-md.md)] die [Als veraltet markierte Funktionen der Datenbank-Engine in SQL Server 2017](../database-engine/deprecated-database-engine-features-in-sql-server-2017.md) an.
 
@@ -44,7 +44,7 @@ WHERE object_name = 'SQLServer:Deprecated Features';
 ```  
   
 ## <a name="features-deprecated-in-the-next-version-of-sql-server"></a>Funktionen, die ab der nächsten Version von SQL Server veraltet sind
- Die folgenden [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] -Funktionen werden in der nächsten Version von [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]nicht mehr unterstützt. Verwenden Sie diese Funktionen nicht zum Entwickeln neuer Anwendungen, und ändern Sie so bald wie möglich die Anwendungen, in denen diese Funktionen zurzeit verwendet werden. Der **Featurename**-Wert wird in Ablaufverfolgungsereignissen als Objektname und in Leistungsindikatoren sowie `sys.dm_os_performance_counters` als Instanzname angezeigt. Der **Feature ID** -Wert wird in Ablaufverfolgungsereignissen als ObjectId angezeigt.  
+ Die folgenden [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]-Features werden in einer zukünftigen Version von [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] nicht mehr unterstützt. Verwenden Sie diese Funktionen nicht zum Entwickeln neuer Anwendungen, und ändern Sie so bald wie möglich die Anwendungen, in denen diese Funktionen zurzeit verwendet werden. Der **Featurename**-Wert wird in Ablaufverfolgungsereignissen als Objektname und in Leistungsindikatoren sowie `sys.dm_os_performance_counters` als Instanzname angezeigt. Der **Feature ID** -Wert wird in Ablaufverfolgungsereignissen als ObjectId angezeigt.  
   
 |Category|Als veraltet markierte Funktion|Ersatz|Feature name|Feature ID|  
 |--------------|------------------------|-----------------|------------------|----------------|  

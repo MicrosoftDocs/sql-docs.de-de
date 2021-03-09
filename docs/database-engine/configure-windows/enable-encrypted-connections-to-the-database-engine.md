@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: e1e55519-97ec-4404-81ef-881da3b42006
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 87ac1c0759264b00567d5edc2cd9f22727fdd0fa
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 4139b8b53a50aa58329f6a5a5c490d99ee9f0524
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "100353865"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186254"
 ---
 # <a name="enable-encrypted-connections-to-the-database-engine"></a>Aktivieren von verschlüsselten Verbindungen zur Datenbank-Engine
 
@@ -71,7 +71,7 @@ Das Aktivieren der TLS-Verschlüsselung erhöht die Sicherheit von Daten, die ne
  Der Client muss in der Lage sein, den Besitzer des vom Server verwendeten Zertifikats zu überprüfen. Wenn der Client über das Zertifikat für öffentliche Schlüssel der Zertifizierungsstelle verfügt, die das Serverzertifikat signiert hat, sind keine weiteren Konfigurationsschritte erforderlich. [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows enthält die Zertifikate für öffentliche Schlüssel von vielen Zertifizierungsstellen. Wenn das Serverzertifikat von einer öffentlichen oder privaten Zertifizierungsstelle signiert wurde, für die der Client kein öffentliches Schlüsselzertifikat besitzt, müssen Sie das Zertifikat für öffentliche Schlüssel der Zertifizierungsstelle installieren, die das Serverzertifikat signiert hat.  
   
 > [!NOTE]  
-> Wenn Sie die Verschlüsselung bei einem Failovercluster verwenden möchten, müssen Sie das Serverzertifikat mit dem vollqualifizierten DNS-Namen des virtuellen Servers auf allen Knoten im Failovercluster installieren. Wenn Sie z. B. über einen Cluster mit zwei Knoten (mit den Namen **_test1.\_\<your company>\*.com*** und **_test2.\_\<your company>\*.com***) und einen virtuellen Server mit dem Namen **_virtsql_*_ verfügen, müssen Sie auf beiden Knoten ein Zertifikat für _ *_virtsql.\_\<your company>\*.com*** installieren. Sie können den Wert der Option **ForceEncryption** im Eigenschaftsfeld **Protokolle für virtsql** von **SQL Server-Netzwerkkonfiguration** auf **Ja** setzen.
+> Wenn Sie die Verschlüsselung bei einem Failovercluster verwenden möchten, müssen Sie das Serverzertifikat mit dem vollqualifizierten DNS-Namen des virtuellen Servers auf allen Knoten im Failovercluster installieren. Wenn Sie z. B. über einen Cluster mit zwei Knoten (mit den Namen ***test1.\*\<your company>\*.com*** und **_test2.\_\<your company>\*.com***) und einen virtuellen Server mit dem Namen **_virtsql_*_ verfügen, müssen Sie auf beiden Knoten ein Zertifikat für _ *_virtsql.\_\<your company>\*.com*** installieren. Sie können den Wert der Option **ForceEncryption** im Eigenschaftsfeld **Protokolle für virtsql** von **SQL Server-Netzwerkkonfiguration** auf **Ja** setzen.
 
 > [!NOTE]
 > Wenn Sie eine verschlüsselte Verbindung für einen Azure Search-Indexer zu [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] auf einer Azure-VM erstellen wollen, finden Sie weitere Informationen unter [Konfigurieren einer Verbindung eines Azure Search-Indexers mit SQL Server auf einer Azure-VM](/azure/search/search-howto-connecting-azure-sql-iaas-to-azure-search-using-indexers). 
@@ -85,6 +85,9 @@ Damit in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ein TLS-Zerti
 - Das [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]-Dienstkonto muss über die erforderliche Berechtigung für den Zugriff auf das TLS-Zertifikat verfügen.
 
 - Die aktuelle Systemzeit muss nach der Eigenschaft **Gültig ab** und vor der Eigenschaft **Gültig bis** des Zertifikats liegen.
+
+> [!NOTE]  
+> Die Gültigkeit des Zertifikats wird beim Herstellen einer Verbindung zu [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] mit den Clientverbindungen ausgewertet, die initiiert werden und die Verschlüsselungsoption auf „true“ festlegen, es sei denn, sie werden von der Einstellung „Vertrauenswürdiges Serverzertifikat“ außer Kraft gesetzt. 
 
 - Das Zertifikat muss für die Serverauthentifizierung vorgesehen sein. Dazu muss für die **Enhanced Key Usage**-Eigenschaft des Zertifikats **Server Authentification (1.3.6.1.5.5.7.3.1)** angegeben sein.
 

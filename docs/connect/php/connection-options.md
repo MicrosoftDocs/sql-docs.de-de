@@ -2,7 +2,7 @@
 title: Verbindungsoptionen
 description: In diesem Thema werden die Optionen aufgelistet, die im assoziativen Array sqlsrv_connect im SQLSRV-Treiber, oder die Schlüsselwörter, die im Datenquellennamen des PDO_SQLSRV-Treibers zulässig sind.
 ms.custom: ''
-ms.date: 01/29/2021
+ms.date: 03/05/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,14 +11,15 @@ ms.topic: conceptual
 ms.assetid: 6d1ea295-8e34-438e-8468-4bbc0f76192c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a8718cc04972e74ffc39b1528ed73eb00664eda8
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: f9677beb347978ed4016c94cd19612e8ec82c1ed
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99076252"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247322"
 ---
 # <a name="connection-options"></a>Verbindungsoptionen
+
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
 
 In diesem Thema werden die Optionen aufgelistet, die im assoziativen Array zulässig sind (bei Verwendung von [sqlsrv_connect](sqlsrv-connect.md) im SQLSRV-Treiber), oder die Schlüsselwörter, die im Datenquellennamen DSN zulässig sind (bei Verwendung von [PDO::__construct](pdo-construct.md) im PDO_SQLSRV-Treiber).  
@@ -36,16 +37,16 @@ In diesem Thema werden die Optionen aufgelistet, die im assoziativen Array zulä
 |ColumnEncryption|Eine der folgenden Zeichenfolgen:<br /><br />**Aktiviert**<br /><br />**Disabled**<br /><br />Eine Zeichenfolge, die das Nachweisprotokoll und die URL zum Nachweis der Enclave identifiziert|Gibt an, ob das Always Encrypted-Feature aktiviert ist. Wenn ein Nachweisprotokoll und eine URL angegeben werden, wird Always Encrypted mit Secure Enclaves aktiviert, sofern die anderen Anforderungen wie [hier](always-encrypted-secure-enclaves.md) beschrieben erfüllt sind.|Disabled|  
 |ConnectionPooling|1 oder **true** , um Verbindungspooling zu aktivieren.<br /><br />0 oder **false** , um Verbindungspooling zu deaktivieren.|Gibt an, ob die Verbindung aus einem Verbindungspool zugewiesen wird (1 oder **TRUE**) oder nicht (0 oder **FALSE**).<sup>1</sup>|**TRUE** (1)|  
 |ConnectRetryCount|Ganze Zahl von 0 bis 255|Die maximale Anzahl von Versuchen zum Wiederherstellen einer unterbrochenen Verbindung, bevor aufgegeben wird. Standardmäßig wird nur ein Versuch unternommen, eine Verbindung nach einer Unterbrechung wiederherzustellen. Der Wert 0 bedeutet, dass kein Wiederherstellungsversuch unternommen wird.|1|  
-|ConnectRetryInterval|Ganze Zahl von 1 bis 60|Die Zeit in Sekunden zwischen den Versuchen zum Wiederherstellen einer Verbindung. Die Anwendung versucht sofort nach dem Erkennen einer unterbrochenen Verbindung, diese wiederherzustellen, und wartet dann die mit `ConnectRetryInterval` angegebene Anzahl von Sekunden, bevor sie es erneut versucht. Dieses Schlüsselwort wird ignoriert, wenn `ConnectRetryCount` gleich 0 ist.|1|  
+|ConnectRetryInterval|Ganze Zahl von 1 bis 60|Die Zeit in Sekunden zwischen den Versuchen zum Wiederherstellen einer Verbindung. Die Anwendung versucht sofort nach dem Erkennen einer unterbrochenen Verbindung, diese wiederherzustellen, und wartet dann die mit `ConnectRetryInterval` angegebene Anzahl von Sekunden, bevor sie es erneut versucht. Dieses Schlüsselwort wird ignoriert, wenn `ConnectRetryCount` gleich 0 ist.|10|  
 |Datenbank|String|Gibt den Namen der Datenbank an, mit der die Verbindung aufgebaut werden soll<sup>2</sup>.|Die Standarddatenbank, die für die Anmeldung verwendet wird.|  
 |Dezimalstellenanzeige<br /><br />(vom PDO_SQLSRV-Treiber nicht unterstützt)|Ganze Zahl zwischen 0 und (einschließlich) 4|Gibt die Dezimalstellen beim Formatieren abgerufener Geldwerte (Werte des Datentyps „money“) an.<br /><br />Diese Option funktioniert nur, wenn `FormatDecimals` auf „true“ festgelegt ist. Negative ganze Zahlen oder Werte größer als 4 werden ignoriert.|Standardgenauigkeit und -skalierung|
-|Treiber|String|Gibt den Microsoft ODBC-Treiber an, der für die Kommunikation mit SQL Server verwendet wird.<br /><br />Mögliche Werte:<br />ODBC Driver 17 for SQL Server<br />ODBC Driver 13 for SQL Server<br />ODBC Driver 11 for SQL Server (nur Windows).|Wenn das DRIVER-Schlüsselwort nicht angegeben ist, versuchen die Microsoft-Treiber für PHP für SQL Server, unterstützte Microsoft ODBC-Treiber im System zu finden, beginnend mit der neuesten Version von ODBC usw.| 
+|Treiber|String|Gibt den Microsoft ODBC-Treiber an, der für die Kommunikation mit SQL Server verwendet wird.<br /><br />Mögliche Werte:<br />ODBC Driver 17 for SQL Server<br />ODBC Driver 13 for SQL Server<br />ODBC Driver 11 for SQL Server (nur Windows).|Wenn das DRIVER-Schlüsselwort nicht angegeben ist, versuchen die Microsoft-Treiber für PHP für SQL Server, unterstützte Microsoft ODBC-Treiber im System zu finden, beginnend mit der neuesten Version von ODBC usw.|
 |Verschlüsseln|1 oder **true** , um Verschlüsselung zu aktivieren.<br /><br />0 oder **false** , um Verschlüsselung zu deaktivieren.|Gibt an, ob die Kommunikation mit SQL Server verschlüsselt (1 oder **TRUE**) oder unverschlüsselt (0 oder **FALSE**)<sup>3</sup> ist.|**FALSE** (0)|  
 |Failover_Partner|String|Gibt den Server und die Instanz der Spiegelung der Datenbank an (sofern aktiviert und konfiguriert), die verwendet werden soll, wenn der primäre Server nicht verfügbar ist.<br /><br />Es gibt Einschränkungen für die Verwendung von `Failover_Partner` mit `MultiSubnetFailover`. Weitere Informationen finden Sie unter [Unterstützung für hohe Verfügbarkeit, Notfallwiederherstellung](php-driver-for-sql-server-support-for-high-availability-disaster-recovery.md).<br /><br />Diese Option wird unter Linux oder macOS nicht unterstützt, da die Datenbankspiegelung vom ODBC-Treiber unter Linux oder macOS nicht unterstützt wird. Verwenden Sie stattdessen Always On-Verfügbarkeitsgruppen, und legen Sie die Optionen `MultiSubnetFailover` und `TransparentNetworkIPResolution` fest.|Nicht festgelegt.|
 |FormatDecimals<br /><br />(vom PDO_SQLSRV-Treiber nicht unterstützt)|1 oder **true** zum Formatieren abgerufener Dezimalzeichenfolgen.<br /><br />0 oder **false** für das standardmäßige Dezimalformatierungsverhalten.|Gibt an, ob Dezimalzeichenfolgen gegebenenfalls führende Nullen hinzugefügt werden sollen, und aktiviert die Option `DecimalPlaces` zum Formatieren von Datentypen der Kategorie „money“. Bei FALSE wird als Standardverhalten die Rückgabe absoluter Genauigkeit und das Auslassen führender Nullen für Werte kleiner 1 verwendet.<br /><br />Weitere Informationen finden Sie unter [Formatieren von Dezimalzeichenfolgen und Geldwerten](formatting-decimals-sqlsrv-driver.md).|**FALSE** (0)|
 |KeyStoreAuthentication|**KeyVaultPassword**<br /><br />**KeyVaultClientSecret**|Authentifizierungsmethode für den Zugriff auf Azure Key Vault. Steuert, welche Art von Anmeldeinformationen mit `KeyStorePrincipalId` und `KeyStoreSecret` verwendet wird. Weitere Informationen finden Sie unter [Verwenden von Azure Key Vault](using-always-encrypted-php-drivers.md#using-azure-key-vault).|Nicht festgelegt.|
-|KeyStorePrincipalId|String|Der Bezeichner für das Konto, das auf Azure Key Vault zugreifen möchte. <br /><br />Wenn `KeyStoreAuthentication` **KeyVaultPassword** ist, muss dies ein Azure Active Directory-Benutzername sein. <br /><br />Wenn `KeyStoreAuthentication` **KeyVaultClientSecret** ist, muss es sich um eine Anwendungsclient-ID handeln.|Nicht festgelegt.|
-|KeyStoreSecret|String|Das Anmeldeinformationengeheimnis für das Konto, das auf Azure Key Vault zugreifen möchte. <br /><br />Wenn `KeyStoreAuthentication` **KeyVaultPassword** ist, muss dies ein Azure Active Directory-Kennwort sein. <br /><br />Wenn `KeyStoreAuthentication` **KeyVaultClientSecret** ist, muss es sich um ein Anwendungsclientgeheimnis handeln.|Nicht festgelegt.|
+|KeyStorePrincipalId|String|Der Bezeichner für das Konto, das auf Azure Key Vault zugreifen möchte. <br /><br />Wenn `KeyStoreAuthentication` **KeyVaultPassword** ist, muss dieser Wert ein Azure Active Directory-Benutzername sein. <br /><br />Wenn `KeyStoreAuthentication` **KeyVaultClientSecret** ist, muss es sich bei diesem Wert um eine Anwendungsclient-ID handeln.|Nicht festgelegt.|
+|KeyStoreSecret|String|Das Anmeldeinformationengeheimnis für das Konto, das auf Azure Key Vault zugreifen möchte. <br /><br />Wenn `KeyStoreAuthentication` **KeyVaultPassword** ist, muss dieser Wert ein Azure Active Directory-Kennwort sein. <br /><br />Wenn `KeyStoreAuthentication` **KeyVaultClientSecret** ist, muss es sich bei diesem Wert um ein Anwendungsclientgeheimnis handeln.|Nicht festgelegt.|
 |Sprache|String|Gibt die Sprache der Nachrichten an, die vom Server zurückgegeben werden. Die verfügbaren Sprachen werden in der `sys.syslanguages`-Tabelle aufgeführt. <br /><br />Diese Option wirkt sich nicht auf die Sprache aus, die von den Treibern selbst verwendet wird, da sie zurzeit nur in englischer Sprache verfügbar sind, und sie wirkt sich nicht auf die Sprache des zugrunde liegenden ODBC-Treibers aus, dessen Sprache durch die auf dem Clientsystem installierte lokalisierte Version bestimmt wird. Daher kann das Ändern dieser Einstellung dazu führen, dass Nachrichten in verschiedenen Sprachen zurückgegeben werden, abhängig davon, ob sie vom PHP-Treiber, vom ODBC-Treiber oder SQL Server stammen.|Der Standard ist die in SQL Server festgelegte Sprache.|
 |LoginTimeout|Integer (SQLSRV-Treiber)<br /><br />Zeichenfolge (PDO_SQLSRV-Treiber)|Legt die Wartezeit in Sekunden fest, bevor der Verbindungsversuch fehlschlägt.|Kein Timeout.|  
 |MultipleActiveResultSets|1 oder **true** zum Verwenden von mehreren aktiven Resultsets.<br /><br />0 oder **false** zum Deaktivieren von mehreren aktiven Resultsets.|Deaktiviert oder aktiviert explizit die Unterstützung für mehrere aktive Resultsets (MARS).<br /><br />Weitere Informationen finden Sie unter [Vorgehensweise: Deaktivieren von mehreren aktiven Resultsets &#40;MARS&#41;](how-to-disable-multiple-active-resultsets-mars.md).|true (1)|  
@@ -75,4 +76,5 @@ In diesem Thema werden die Optionen aufgelistet, die im assoziativen Array zulä
 Viele der unterstützten Schlüssel sind ODBC-Verbindungszeichenfolgen-Attribute. Informationen zu ODBC-Verbindungszeichenfolgen finden Sie unter [Using Connection String Keywords with SQL Native Client (Verwenden von Schlüsselwörter für Verbindungszeichenfolgen mit SQL Native Client)](../../relational-databases/native-client/applications/using-connection-string-keywords-with-sql-server-native-client.md).
 
 ## <a name="see-also"></a>Weitere Informationen  
+
 [Verbinden mit dem Server](connecting-to-the-server.md)  
