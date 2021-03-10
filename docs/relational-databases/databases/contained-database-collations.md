@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 4b44f6b9-2359-452f-8bb1-5520f2528483
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: a1da6b96aea93feaacdb5384716ef6cd0ab82a06
-ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
+ms.openlocfilehash: 260c4afa90b28aa8efc22a15fbda13cfa7f35417
+ms.sourcegitcommit: 98acedd435aecfda1b3c4c23d3f0c3c1a12682a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489404"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102532322"
 ---
 # <a name="contained-database-collations"></a>Enthaltene Datenbanksortierungen
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
