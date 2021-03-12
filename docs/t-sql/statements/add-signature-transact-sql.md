@@ -18,12 +18,12 @@ ms.author: vanto
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/10/2020
-ms.openlocfilehash: 95bfeb321f43fb860bbbeecb32ac18ec221e5067
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 86513345502531da670b870b5ecf70de9270f18f
+ms.sourcegitcommit: ece104654ac14e10d32e59f45916fa944665f4df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99194691"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102474904"
 ---
 # <a name="add-signature-transact-sql"></a>ADD SIGNATURE (Transact-SQL)
 
@@ -83,7 +83,7 @@ Das Modul, das signiert oder gegensigniert wird, und das Zertifikat oder der asy
 > [!CAUTION]
 > Module dürfen nur beim Erteilen von Berechtigungen signiert werden, nie beim Verweigern oder Aufheben von Berechtigungen.  
   
- Datendefinitionssprachen-Trigger (DDL, Data Definition Language) und Inlinetabellenwert-Funktionen können nicht signiert werden.  
+ DDL-Trigger (Data Definition Language, Datendefinitionssprache) und Inline-Tabellenwertfunktionen können nicht signiert werden.  
   
  Informationen zu Signaturen werden in der sys.crypt_properties-Katalogsicht angezeigt.  
   
@@ -93,15 +93,15 @@ Das Modul, das signiert oder gegensigniert wird, und das Zertifikat oder der asy
 ## <a name="countersignatures"></a>Gegensignaturen  
  Beim Ausführen eines signierten Moduls werden die Signaturen dem SQL-Token vorübergehend hinzugefügt. Sie gehen jedoch verloren, wenn das Modul ein weiteres Modul ausführt oder die Ausführung beendet. Eine Gegensignatur ist eine besondere Form der Signatur. Eine Gegensignatur gewährt selbst keine Berechtigungen, sie lässt jedoch zu, dass Signaturen, die vom selben Zertifikat oder asymmetrischen Schlüssel erstellt wurden, über die Dauer des Aufrufs des gegensignierten Objekts beibehalten werden.  
   
- Beispiel: Die Benutzerin Alice ruft die Prozedur ProcSelectT1ForAlice auf, die wiederum die Prozedur procSelectT1 aufruft, von der eine Auswahl in Tabelle T1 getroffen wird. Alice verfügt über die EXECUTE-Berechtigung für ProcSelectT1ForAlice und procSelectT1, aber sie verfügt nicht über die SELECT-Berechtigung für T1. Außerdem weist die gesamte Kette keine Besitzverkettung auf. Alice kann weder direkt noch über ProcSelectT1ForAlice und procSelectT1 auf die Tabelle T1 zugreifen. Alice soll für den Zugriff immer ProcSelectT1ForAlice verwenden und erhält deshalb keine Berechtigung zur Ausführung von proSelectT1. Welche Vorgehensweise empfiehlt sich?  
+ Beispiel: Die Benutzerin Alice ruft die Prozedur ProcForAlice auf, die wiederum die Prozedur ProcSelectT1 aufruft, die in Tabelle T1 eine Auswahl vornimmt. Alice verfügt über die EXECUTE-Berechtigung für ProcForAlice und ProcSelectT1, aber nicht über die SELECT-Berechtigung für T1. Außerdem weist die gesamte Kette keine Besitzverkettung auf. Alice kann weder direkt noch über ProcForAlice oder ProcSelectT1 auf die Tabelle T1 zugreifen. Alice soll für den Zugriff immer ProcForAlice verwenden und erhält deshalb keine Berechtigung zum Ausführen von ProcSelectT1. Welche Vorgehensweise empfiehlt sich?  
   
--   Wenn procSelectT1 signiert wird, sodass procSelectT1 auf T1 zugreifen kann, ist Alice in der Lage, procSelectT1 direkt aufzurufen, ohne ProcSelectT1ForAlice aufzurufen.  
+-   Wenn wird ProcSelectT1 signieren, sodass ProcSelectT1 auf T1 zugreifen kann, kann Alice ProcSelectT1 direkt aufrufen, ohne ProcForAlice aufzurufen.  
   
--   Die EXECUTE-Berechtigung für procSelectT1 könnte Alice verweigert werden, allerdings wäre sie dann auch nicht in der Lage, procSelectT1 über ProcSelectT1ForAlice aufzurufen.
+-   Wir könnten Alice die EXECUTE-Berechtigung für ProcSelectT1 nicht verweigern, allerdings wäre sie dann auch nicht in der Lage, ProcSelectT1 über ProcForAlice aufzurufen.
   
--   Das Signieren von ProcSelectT1ForAlice funktioniert alleine nicht, weil die Signatur im Aufruf von procSelectT1 verloren gehen würde.  
+-   Das Signieren von ProcSelectT1 funktioniert alleine nicht, da die Signatur beim Aufruf von ProcSelectT1 verloren geht.  
   
-Wenn procSelectT1 jedoch anhand desselben Zertifikats, mit dem ProcSelectT1ForAlice signiert wurde, gegensigniert wird, behält [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] die Signatur während der gesamten Aufrufkette bei und ermöglicht den Zugriff auf T1. Wenn Alice versucht, procSelectT1 direkt aufzurufen, ist kein Zugriff auf T1 möglich, weil durch die Gegensignatur keine Rechte gewährt werden. In Beispiel C unten wird [!INCLUDE[tsql](../../includes/tsql-md.md)] für dieses Beispiel veranschaulicht.  
+Wenn ProcSelectT1 jedoch mit demselben Zertifikat, mit dem ProcForAlice signiert wurde, gegensigniert wird, behält [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] die Signatur während der gesamten Aufrufkette bei und ermöglicht den Zugriff auf T1. Wenn Alice versucht, ProcSelectT1 direkt aufzurufen, ist kein Zugriff auf T1 möglich, weil durch die Gegensignatur keine Rechte gewährt werden. In Beispiel C unten wird [!INCLUDE[tsql](../../includes/tsql-md.md)] für dieses Beispiel veranschaulicht.  
   
 ## <a name="permissions"></a>Berechtigungen  
 
@@ -211,42 +211,42 @@ BEGIN
     SELECT * FROM T1;  
 END;  
 GO  
-GRANT EXECUTE ON procSelectT1 to public;  
+GRANT EXECUTE ON ProcSelectT1 to public;  
   
 -- Create special procedure for accessing T1  
-CREATE PROCEDURE  procSelectT1ForAlice AS  
+CREATE PROCEDURE  ProcForAlice AS  
 BEGIN  
    IF USER_ID() <> USER_ID('Alice')  
     BEGIN  
         PRINT 'Only Alice can use this.';  
         RETURN  
     END  
-   EXEC procSelectT1;  
+   EXEC ProcSelectT1;  
 END;  
 GO;  
-GRANT EXECUTE ON procSelectT1ForAlice TO PUBLIC;  
+GRANT EXECUTE ON ProcForAlice TO PUBLIC;  
   
 -- Verify procedure works for a sysadmin user  
-EXEC procSelectT1ForAlice;  
+EXEC ProcForAlice;  
   
 -- Alice still can't use the procedure yet  
 EXECUTE AS LOGIN = 'Alice';  
-    EXEC procSelectT1ForAlice;  
+    EXEC ProcForAlice;  
 REVERT;  
   
 -- Sign procedure to grant it SELECT permission  
-ADD SIGNATURE TO procSelectT1ForAlice BY CERTIFICATE csSelectT   
+ADD SIGNATURE TO ProcForAlice BY CERTIFICATE csSelectT   
 WITH PASSWORD = 'SimplePwd01';  
   
--- Counter sign proc_select_t, to make this work  
-ADD COUNTER SIGNATURE TO procSelectT1 BY CERTIFICATE csSelectT   
+-- Counter sign ProcSelectT1, to make this work  
+ADD COUNTER SIGNATURE TO ProcSelectT1 BY CERTIFICATE csSelectT   
 WITH PASSWORD = 'SimplePwd01';  
   
 -- Now the proc works.   
--- Note that calling procSelectT1 directly still doesn't work  
+-- Note that calling ProcSelectT1 directly still doesn't work  
 EXECUTE AS LOGIN = 'Alice';  
-    EXEC procSelectT1ForAlice;  
-    EXEC procSelectT1;  
+    EXEC ProcForAlice;  
+    EXEC ProcSelectT1;  
 REVERT;  
   
 -- Cleanup  

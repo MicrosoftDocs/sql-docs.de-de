@@ -10,14 +10,15 @@ ms.assetid: 02e306b8-9dde-4846-8d64-c528e2ffe479
 ms.reviewer: v-daenge
 ms.author: v-chojas
 author: v-chojas
-ms.openlocfilehash: 3a9505ab98f039fb77cd8493b20b0024775e296f
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 7da6c0d9864f514d757d0872fd32ce1e0219f01d
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101837313"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464778"
 ---
 # <a name="using-always-encrypted-with-the-odbc-driver-for-sql-server"></a>Verwenden von Always Encrypted mit ODBC Driver for SQL Server
+
 [!INCLUDE[Driver_ODBC_Download](../../includes/driver_odbc_download.md)]
 
 ### <a name="applicable-to"></a>Anwendbar auf
@@ -29,37 +30,37 @@ ms.locfileid: "101837313"
 
 Dieser Artikel bietet Informationen zum Entwickeln von ODBC-Anwendungen mithilfe von [Always Encrypted (Datenbank-Engine)](../../relational-databases/security/encryption/always-encrypted-database-engine.md) oder [Always Encrypted mit Secure Enclaves](../../relational-databases/security/encryption/always-encrypted-enclaves.md) und dem [ODBC-Treiber für SQL Server](microsoft-odbc-driver-for-sql-server.md).
 
-Always Encrypted ermöglicht Clientanwendungen das Verschlüsseln von vertraulichen Daten in einer Weise, dass weder die Daten noch die Verschlüsselungsschlüssel zu irgendeinem Zeitpunkt gegenüber SQL Server oder Azure SQL-Datenbank offengelegt werden. Ein Treiber, bei dem Always Encrypted aktiviert ist, z.B. ODBC Driver for SQL Server, erreicht dies durch die transparente Ver- und Entschlüsselung von sensiblen Daten in der Clientanwendung. Der Treiber ermittelt automatisch, welche Abfrageparameter vertraulichen Datenbankspalten (mit Always Encrypted geschützt) entsprechen. Die Werte dieser Parameter werden dann vor der Übergabe an SQL Server oder Azure SQL-Datenbank verschlüsselt. Auf ähnliche Weise entschlüsselt der Treiber die Daten transparent, die von verschlüsselten Datenbankspalten in Abfrageergebnissen empfangen werden. *Always Encrypted mit Secure Enclaves* erweitert dieses Feature um umfangreichere Funktionen für vertrauliche Daten und sorgt gleichzeitig dafür, dass diese Daten vertraulich bleiben.
+Always Encrypted ermöglicht Clientanwendungen das Verschlüsseln von vertraulichen Daten in einer Weise, dass weder die Daten noch die Verschlüsselungsschlüssel zu irgendeinem Zeitpunkt gegenüber SQL Server oder Azure SQL-Datenbank offengelegt werden. Bei einem Treiber, bei dem Always Encrypted aktiviert ist, z. B. ODBC-Treiber für SQL Server, wird dies durch die transparente Ver- und Entschlüsselung sensibler Daten in der Clientanwendung erreicht. Der Treiber ermittelt automatisch, welche Abfrageparameter vertraulichen Datenbankspalten (mit Always Encrypted geschützt) entsprechen. Die Werte dieser Parameter werden dann vor der Übergabe an SQL Server oder Azure SQL-Datenbank verschlüsselt. Auf ähnliche Weise entschlüsselt der Treiber die Daten transparent, die von verschlüsselten Datenbankspalten in Abfrageergebnissen empfangen werden. *Always Encrypted mit Secure Enclaves* erweitert dieses Feature um umfangreichere Funktionen für vertrauliche Daten und sorgt gleichzeitig dafür, dass diese Daten vertraulich bleiben.
 
 Weitere Informationen finden Sie unter [Always Encrypted (Datenbank-Engine)](../../relational-databases/security/encryption/always-encrypted-database-engine.md) und [Always Encrypted mit Secure Enclaves](../../relational-databases/security/encryption/always-encrypted-enclaves.md).
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
-Konfigurieren Sie Always Encrypted in Ihrer Datenbank. Dies umfasst die Bereitstellung von Always Encrypted-Schlüsseln und die Einrichtung der Verschlüsselung für ausgewählte Datenbankspalten. Wenn Sie nicht bereits über eine Datenbank verfügen, für die Always Encrypted konfiguriert ist, befolgen Sie die Anweisungen in [Erste Schritte mit Always Encrypted](../../relational-databases/security/encryption/always-encrypted-database-engine.md#getting-started-with-always-encrypted). Insbesondere sollte Ihre Datenbank die Metadatendefinitionen für einen Spaltenhauptschlüssel (Column Master Key, CMK), einen Spaltenverschlüsselungsschlüssel (Column Encryption Key, CEK) und eine Tabelle mit mindestens einer Spalte enthalten, die mit diesem CEK verschlüsselt ist.
+Konfigurieren Sie Always Encrypted in Ihrer Datenbank. Dieser Vorgang beinhaltet die Bereitstellung von Always Encrypted-Schlüsseln und die Einrichtung der Verschlüsselung für ausgewählte Datenbankspalten. Wenn Sie nicht bereits über eine Datenbank verfügen, für die Always Encrypted konfiguriert ist, befolgen Sie die Anweisungen in [Erste Schritte mit Always Encrypted](../../relational-databases/security/encryption/always-encrypted-database-engine.md#getting-started-with-always-encrypted). Insbesondere sollte Ihre Datenbank die Metadatendefinitionen für einen Spaltenhauptschlüssel (Column Master Key, CMK), einen Spaltenverschlüsselungsschlüssel (Column Encryption Key, CEK) und eine Tabelle mit mindestens einer Spalte enthalten, die mit diesem CEK verschlüsselt ist.
 
 Wenn Sie Always Encrypted mit Secure Enclaves verwenden, finden Sie weitere Voraussetzungen unter [Entwickeln von Anwendungen mithilfe von Always Encrypted mit Secure Enclaves](../../relational-databases/security/encryption/always-encrypted-enclaves-client-development.md).
 
 ### <a name="enabling-always-encrypted-in-an-odbc-application"></a>Aktivieren von Always Encrypted in einer ODBC-Anwendung
 
-Die einfachste Möglichkeit zum Aktivieren von sowohl Parameterverschlüsselung als auch Spaltenentschlüsselung in verschlüsselten Resultsets besteht darin, den Wert für das Schlüsselwort der Verbindungszeichenfolge `ColumnEncryption` auf **Aktiviert** festzulegen. Im Folgenden finden Sie ein Beispiel für eine Verbindungszeichenfolge, mit der Always Encrypted aktiviert wird:
+Die einfachste Möglichkeit zum Aktivieren von sowohl Parameterverschlüsselung als auch Spaltenentschlüsselung in verschlüsselten Resultsets besteht darin, den Wert für das Schlüsselwort der Verbindungszeichenfolge `ColumnEncryption` auf **Aktiviert** festzulegen. Im Folgenden finden Sie ein Beispiel für eine Verbindungszeichenfolge, die „Always Encrypted“ aktiviert:
 
-```
+```cpp
 SQLWCHAR *connString = L"Driver={ODBC Driver 17 for SQL Server};Server={myServer};Trusted_Connection=yes;ColumnEncryption=Enabled;";
 ```
 
 Always Encrypted kann auch in der DSN-Konfiguration mit demselben Schlüssel und demselben Wert (die durch die Einstellung der Verbindungszeichenfolge, falls vorhanden, überschrieben werden) oder programmgesteuert über das Attribut `SQL_COPT_SS_COLUMN_ENCRYPTION` zur Verbindungsherstellung aktiviert werden. Wird es auf diese Weise festgelegt, wird der in der Verbindungszeichenfolge oder im DSN festgelegte Wert überschrieben:
 
-```
+```cpp
  SQLSetConnectAttr(hdbc, SQL_COPT_SS_COLUMN_ENCRYPTION, (SQLPOINTER)SQL_COLUMN_ENCRYPTION_ENABLE, 0);
 ```
 
 Nachdem Always Encrypted für die Verbindung aktiviert wurde, kann das Verhalten für einzelne Abfragen angepasst werden. Weitere Informationen finden Sie weiter unten im Abschnitt [Kontrollieren der Auswirkungen von Always Encrypted auf die Leistung](#controlling-the-performance-impact-of-always-encrypted).
 
-Beachten Sie, dass das Aktivieren von Always Encrypted für eine erfolgreiche Verschlüsselung oder Entschlüsselung nicht ausreichend ist. Stellen Sie außerdem Folgendes sicher:
+Das Aktivieren von Always Encrypted für eine erfolgreiche Verschlüsselung oder Entschlüsselung ist nicht ausreichend. Sie müssen außerdem Folgendes sicherstellen:
 
 - Die Anwendung verfügt über die Datenbankberechtigungen *VIEW ANY COLUMN MASTER KEY DEFINITION* und *VIEW ANY COLUMN ENCRYPTION KEY DEFINITION* , die für den Zugriff auf die Metadaten in der Datenbank über Always Encrypted-Schlüssel erforderlich sind. Einzelheiten hierzu finden Sie unter [Datenbankberechtigungen](../../relational-databases/security/encryption/always-encrypted-database-engine.md#database-permissions).
 
-- Die Anwendung muss auf den CMK zugreifen können, der die CEKs für die abgefragten verschlüsselten Spalten schützt. Dies hängt vom Schlüsselspeicheranbieter ab, bei dem der CMK gespeichert wird. Weitere Informationen finden Sie im Abschnitt [Arbeiten mit Spaltenhauptschlüsselspeichern](#working-with-column-master-key-stores).
+- Die Anwendung muss auf den CMK zugreifen können, der die CEKs für die abgefragten verschlüsselten Spalten schützt. Dieses Verhalten hängt von dem Keystore-Anbieter ab, der den CMK speichert. Weitere Informationen finden Sie im Abschnitt [Arbeiten mit Spaltenhauptschlüsselspeichern](#working-with-column-master-key-stores).
 
 ### <a name="enabling-always-encrypted-with-secure-enclaves"></a>Aktivieren von Always Encrypted mit Secure Enclaves
 
@@ -75,8 +76,7 @@ Ab Version 17.4 unterstützt der Treiber Always Encrypted mit Secure Enclaves. U
 - `<attestation URL>`: gibt eine Nachweis-URL (einen Endpunkt für den Nachweisdienst) an. Sie benötigen für Ihre Umgebung eine Nachweis-URL von dem Dienstadministrator, der für Nachweise zuständig ist.
 
   - Wenn Sie [!INCLUDE[ssnoversion-md](../../includes/ssnoversion-md.md)] und den Host-Überwachungsdienst verwenden, finden Sie weitere Informationen unter [Ermitteln und Freigeben der HGS-Nachweis-URL](../../relational-databases/security/encryption/always-encrypted-enclaves-host-guardian-service-deploy.md#step-6-determine-and-share-the-hgs-attestation-url).
-  - Wenn Sie [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] und Microsoft Azure Attestation verwenden, finden Sie weitere Informationen unter [Ermitteln der Nachweis-URL für Ihre Nachweisrichtlinie](../../relational-databases/security/encryption/always-encrypted-enclaves.md?view=sql-server-ver15#secure-enclave-attestation).
-
+  - Wenn Sie [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] und Microsoft Azure Attestation verwenden, finden Sie weitere Informationen unter [Ermitteln der Nachweis-URL für Ihre Nachweisrichtlinie](../../relational-databases/security/encryption/always-encrypted-enclaves.md#secure-enclave-attestation).
 
 Beispiele für Verbindungszeichenfolgen, die Enclaveberechnungen für eine Datenbankverbindung ermöglichen:
 
@@ -86,7 +86,7 @@ Beispiele für Verbindungszeichenfolgen, die Enclaveberechnungen für eine Daten
    Driver=ODBC Driver 17 for SQL Server;Server=myServer.myDomain;Database=myDataBase;Trusted_Connection=Yes;ColumnEncryption=VBS-HGS,http://myHGSServer.myDomain/Attestation
    ```
 
-- [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] :
+- [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]:
   
    ```
    Driver=ODBC Driver 17 for SQL Server;Server=myServer.database.windows.net;Database=myDataBase;Uid=myUsername;Pwd=myPassword;Encrypt=yes;ColumnEncryption=SGX-AAS,https://myAttestationProvider.uks.attest.azure.net/attest/SgxEnclave
@@ -94,10 +94,9 @@ Beispiele für Verbindungszeichenfolgen, die Enclaveberechnungen für eine Daten
 
 Wenn der Server und der Nachweisdienst sowie die für Enclaves aktivierten CMKs und CEKs für die gewünschten Spalten ordnungsgemäß konfiguriert sind, sollten Sie jetzt in der Lage sein, zusätzlich zur vorhandenen Always Encrypted-Funktionalität Abfragen mit Enclave-Verwendung auszuführen. Hierzu gehören beispielsweise die direkte Verschlüsselung und umfangreiche Berechnungen. Weitere Informationen finden Sie unter [Konfigurieren von Always Encrypted mit Secure Enclaves](../../relational-databases/security/encryption/configure-always-encrypted-enclaves.md).
 
-
 ### <a name="retrieving-and-modifying-data-in-encrypted-columns"></a>Abrufen und Ändern von Daten in verschlüsselten Spalten
 
-Sobald Sie Always Encrypted für eine Verbindung aktiviert haben, können Sie standardmäßige ODBC-APIs verwenden. Die ODBC-APIs können Daten in verschlüsselten Datenbankspalten abrufen oder ändern. Die folgenden Dokumentationsmaterialien können Sie dabei unterstützen:
+Sobald Sie Always Encrypted für eine Verbindung aktiviert haben, können Sie standardmäßige ODBC-APIs verwenden. Die ODBC-APIs können Daten in verschlüsselten Datenbankspalten abrufen oder ändern. Die folgenden Dokumentationsmaterialien sind möglicherweise hilfreich:
 
 - [ODBC-Beispielcode](cpp-code-example-app-connect-access-sql-db.md)
 - [ODBC-Programmierreferenz](../../odbc/reference/odbc-programmer-s-reference.md)
@@ -113,9 +112,9 @@ In der folgenden Tabelle wird das Verhalten von Abfragen in Abhängigkeit davon 
 | Parameter für verschlüsselte Spalten | Parameterwerte werden transparent verschlüsselt. | Fehler | Fehler|
 | Daten von verschlüsselten Spalten ohne Parameter abrufen, die auf verschlüsselte Spalten ausgerichtet sind.| Ergebnisse von verschlüsselten Spalten werden transparent entschlüsselt. Die Anwendung erhält Klartextspaltenwerte. | Fehler | Ergebnisse von verschlüsselten Spalten werden nicht entschlüsselt. Die Anwendung erhält verschlüsselte Werte als Bytearrays.
 
-Die folgenden Beispiele veranschaulichen das Abrufen und Ändern von Daten in verschlüsselten Spalten. Dabei wird eine Tabelle mit dem folgenden Schema angenommen: Beachten Sie, dass die Spalten „SSN“ und „BirthDate“ verschlüsselt werden.
+Die folgenden Beispiele veranschaulichen das Abrufen und Ändern von Daten in verschlüsselten Spalten. Dabei wird eine Tabelle mit dem folgenden Schema angenommen: Die Spalten „SSN“ und „BirthDate“ werden verschlüsselt.
 
-```
+```tsql
 CREATE TABLE [dbo].[Patients](
  [PatientId] [int] IDENTITY(1,1),
  [SSN] [char](11) COLLATE Latin1_General_BIN2
@@ -136,13 +135,13 @@ CREATE TABLE [dbo].[Patients](
 
 In diesem Beispiel wird eine Zeile in die Tabelle „Patients“ eingefügt. Beachten Sie Folgendes:
 
-- Es erfolgt keine spezielle Verschlüsselung im Beispielcode. Der Treiber erkennt und verschlüsselt automatisch die Werte der SSN- und Datumsparameter für verschlüsselte Spalten. Dadurch wird die Verschlüsselung für die Anwendung transparent.
+- Es erfolgt keine spezielle Verschlüsselung im Beispielcode. Der Treiber erkennt und verschlüsselt automatisch die Werte der SSN- und Datumsparameter für verschlüsselte Spalten. Durch dieses Verhalten wird die Verschlüsselung für die Anwendung transparent.
 
 - Die in die Datenbankspalten eingefügten Werte, einschließlich der verschlüsselten Spalten, werden als gebundene Parameter übergeben (siehe [SQLBindParameter-Funktion](../../odbc/reference/syntax/sqlbindparameter-function.md)). Während die Verwendung von Parametern optional ist, wenn Werte an nicht verschlüsselte Spalten gesendet werden (obwohl es dringend empfohlen wird, da es dabei hilft, eine Einschleusung von SQL-Befehlen zu verhindern), ist sie für Werte erforderlich, die auf verschlüsselte Spalten ausgerichtet sind. Werden die in die Spalten „SSN“ oder „BirthDate“ eingefügten Werte als Literale übergeben, die in die Abfrageanweisung eingebettet sind, tritt ein Fehler auf, da der Treiber nicht versucht, Literale in Abfragen zu verschlüsseln oder anderweitig zu verarbeiten. Daher würde der Server sie zurückweisen, da sie mit den verschlüsselten Spalten inkompatibel sind.
 
 - Der in die SSN-Spalte eingefügte SQL-Typ des Parameters wird auf „SQL_CHAR“ festgelegt, der dem SQL Server-Datentyp **char** zugeordnet wird (`rc = SQLBindParameter(hstmt, 1, SQL_PARAM_INPUT, SQL_C_CHAR, SQL_CHAR, 11, 0, (SQLPOINTER)SSN, 0, &cbSSN);`). Wird der Typ des Parameters auf „SQL_WCHAR“ festgelegt, der **nchar** zugeordnet wird, tritt bei der Abfrage ein Fehler auf, da Always Encrypted keine serverseitigen Konvertierungen von verschlüsselten nchar-Werten in verschlüsselte char-Werte unterstützt. Unter [ODBC-Programmierreferenz – Anhang D: Datentypen](../../odbc/reference/appendixes/appendix-d-data-types.md) finden Sie weitere Informationen zu den Datentypzuordnungen.
 
-```
+```cpp
     SQL_DATE_STRUCT date;
     SQLLEN cbdate;   // size of date structure  
 
@@ -190,7 +189,7 @@ Im folgenden Beispiel wird das Filtern von Daten auf Basis verschlüsselter Wert
 > [!NOTE]
 > Abfragen können Übereinstimmungsvergleiche für verschlüsselte Spalten nur dann ausführen, wenn die Verschlüsselung deterministisch erfolgt oder Secure Enclave aktiviert ist. Weitere Informationen finden Sie im Abschnitt [Auswählen der deterministischen oder zufälligen Verschlüsselung](../../relational-databases/security/encryption/always-encrypted-database-engine.md#selecting--deterministic-or-randomized-encryption).
 
-```
+```cpp
 SQLCHAR SSN[12];
 strcpy_s((char*)SSN, _countof(SSN), "795-73-9838");
 
@@ -239,8 +238,7 @@ In den folgenden Beispielen wird das Abrufen von binär verschlüsselten Daten a
 - Da Always Encrypted in der Verbindungszeichenfolge nicht aktiviert ist, gibt die Abfrage verschlüsselte Werte von „SSN“ und „BirthDate“ als Bytearrays zurück (das Programm konvertiert die Werte in Zeichenfolgen).
 - Eine Abfrage, die Daten aus verschlüsselten Spalten mit deaktiviertem Always Encrypted abruft, kann Parameter aufweisen, so lange keiner der Parameter auf eine verschlüsselte Spalte ausgerichtet ist. Die obige Abfrage filtert nach der Spalte „LastName“, die in der Datenbank nicht verschlüsselt ist. Wenn die Abfrage nach „SSN“ oder „BirthDate“ filtert, würde ein Fehler auftreten.
 
-
-```
+```cpp
 SQLCHAR SSN[12];
 strcpy_s((char*)SSN, _countof(SSN), "795-73-9838");
 
@@ -282,9 +280,10 @@ while (SQL_SUCCEEDED(SQLFetch(hstmt)))
 
 #### <a name="moneysmallmoney-encryption"></a>Money-/SmallMoney-Verschlüsselung
 
-Ab der Treiberversion 17.7 ist es möglich, Always Encrypted mit MONEY und SMALLMONEY zu verwenden. Es sind jedoch einige zusätzliche Schritte erforderlich.
+Ab der Treiberversion 17.7 ist es möglich, Always Encrypted mit MONEY und SMALLMONEY zu verwenden. Es sind jedoch noch einige zusätzliche Schritte erforderlich.
 Bei Einfügevorgängen in verschlüsselte MONEY- oder SMALLMONEY-Spalten sollten Sie einen der folgenden C-Typen verwenden:
-```
+
+```cpp
 SQL_C_CHAR
 SQL_C_WCHAR
 SQL_C_SHORT
@@ -303,7 +302,7 @@ Außerdem sollten Sie den SQL-Typ `SQL_NUMERIC` oder `SQL_DOUBLE` (Genauigkeit k
 
 Bei jedem Binden einer MONEY-/SMALLMONEY-Variablen in einer verschlüsselten Spalte müssen die folgenden Deskriptorfelder festgelegt werden:
 
-```
+```cpp
 // n is the descriptor record of the MONEY/SMALLMONEY parameter
 // the type is assumed to be SMALLMONEY if isSmallMoney is true and MONEY otherwise
 
@@ -311,8 +310,7 @@ SQLHANDLE ipd = 0;
 SQLGetStmtAttr(hStmt, SQL_ATTR_IMP_PARAM_DESC, (SQLPOINTER)&ipd, SQL_IS_POINTER, NULL);
 SQLSetDescField(ipd, n, SQL_CA_SS_SERVER_TYPE, isSmallMoney ? (SQLPOINTER)SQL_SS_TYPE_SMALLMONEY :
                                                               (SQLPOINTER)SQL_SS_TYPE_MONEY, SQL_IS_INTEGER);
-                                                              
-                                                              
+
 // If the variable is bound as SQL_NUMERIC, additional descriptor fields have to be set
 // var is SQL_NUMERIC_STRUCT containing the value to be inserted
 
@@ -322,7 +320,6 @@ SQLSetDescField(hdesc, n, SQL_DESC_PRECISION, (SQLPOINTER)(var.precision), 0);
 SQLSetDescField(hdesc, n, SQL_DESC_SCALE, (SQLPOINTER)(var.scale), 0);
 SQLSetDescField(hdesc, n, SQL_DESC_DATA_PTR, &var, 0);
 ```
-
 
 #### <a name="avoiding-common-problems-when-querying-encrypted-columns"></a>Vermeiden allgemeiner Probleme beim Abfragen von verschlüsselter Spalten
 
@@ -346,7 +343,7 @@ Jeder Wert für verschlüsselte Spalten muss vor dem Senden an den Server versch
 
 - Sie verwenden „SQLBindParameter“ zum Senden von Daten, die auf verschlüsselte Spalten ausgerichtet sind. Das folgende Beispiel zeigt eine Abfrage, in der auf falsche Weise nach einem Literal bzw. einer Konstante einer verschlüsselten Spalte (SSN) gefiltert wird, anstatt das Literal als Argument an SQLBindParameter zu übergeben.
 
-```
+```cpp
 string queryText = "SELECT [SSN], [FirstName], [LastName], [BirthDate] FROM [dbo].[Patients] WHERE SSN='795-73-9838'";
 ```
 
@@ -374,33 +371,33 @@ In diesem Abschnitt werden die integrierten Leistungsoptimierungen in ODBC Drive
 
 ### <a name="controlling-round-trips-to-retrieve-metadata-for-query-parameters"></a>Kontrollieren von Roundtrips zum Abrufen von Metadaten für Abfrageparameter
 
-Wenn Always Encrypted für eine Verbindung aktiviert ist, ruft der Treiber standardmäßig [sys.sp_describe_parameter_encryption](../../relational-databases/system-stored-procedures/sp-describe-parameter-encryption-transact-sql.md) für jede parametrisierte Abfrage auf, wobei die Abfrageanweisung (ohne Parameterwerte) an SQL Server übergeben wird. Die Abfrageanweisung wird von dieser gespeicherten Prozedur analysiert, um zu ermitteln, ob Parameter verschlüsselt werden müssen. In diesem Fall werden verschlüsselungsbezogene Informationen für jeden Parameter zurückgegeben, die der Treiber dann verschlüsseln kann. Das oben beschriebene Verhalten stellt einen hohen Grad an Transparenz für die Clientanwendung sicher: Die Anwendung (und der Anwendungsentwickler) muss nicht beachten, welche Abfragen Zugriff auf verschlüsselte Spalten haben, so lange die auf verschlüsselte Spalten ausgerichteten Werte in Parametern an den Treiber übergeben werden.
+Wenn Always Encrypted für eine Verbindung aktiviert ist, ruft der Treiber standardmäßig [sys.sp_describe_parameter_encryption](../../relational-databases/system-stored-procedures/sp-describe-parameter-encryption-transact-sql.md) für jede parametrisierte Abfrage auf, wobei die Abfrageanweisung (ohne Parameterwerte) an SQL Server übergeben wird. Die Abfrageanweisung wird von dieser gespeicherten Prozedur analysiert, um zu ermitteln, ob Parameter verschlüsselt werden müssen. In diesem Fall werden verschlüsselungsbezogene Informationen für jeden Parameter zurückgegeben, die der Treiber dann verschlüsseln kann. Das oben beschriebene Verhalten stellt einen hohen Grad an Transparenz für die Clientanwendung sicher: Die Anwendung (und der Anwendungsentwickler) muss nicht beachten, welche Abfragen auf verschlüsselte Spalten zugreifen, so lange die Werte für verschlüsselte Spalten in Parametern an den Treiber übergeben werden.
 
 Ab Version 17.6 werden vom Treiber auch die Verschlüsselungsmetadaten für vorbereitete Anweisungen zwischengespeichert. So wird die Leistung verbessert, da nachfolgende Aufrufe von `SQLExecute` keinen zusätzlichen Roundtrip zum Abrufen der Verschlüsselungsmetadaten erfordern.
 
 ### <a name="per-statement-always-encrypted-behavior"></a>Verhalten von Always Encrypted für einzelne Anweisungen
 
-Sie können das Verhalten von Always Encrypted für einzelne Abfragen ändern, wenn Sie es für die Verbindung aktiviert haben, um beim Abrufen von Verschlüsselungsmetadaten für parametrisierte Abfragen die Auswirkungen auf die Leistung zu steuern. Auf diese Weise können Sie sicherstellen, dass `sys.sp_describe_parameter_encryption` nur für Abfragen aufgerufen wird, bei denen Ihnen bekannt ist, dass sie über Parameter für verschlüsselte Spalten verfügen. Beachten Sie jedoch, dass Sie auf diese Weise die Transparenz der Verschlüsselung reduzieren: Wenn Sie zusätzliche Spalten in Ihrer Datenbank verschlüsseln, müssen Sie möglicherweise den Code der Anwendung ändern, um ihn auf die Schemaänderungen auszurichten.
+Sie können das Verhalten von Always Encrypted für einzelne Abfragen ändern, wenn Sie es für die Verbindung aktiviert haben, um beim Abrufen von Verschlüsselungsmetadaten für parametrisierte Abfragen die Auswirkungen auf die Leistung zu steuern. Auf diese Weise können Sie sicherstellen, dass `sys.sp_describe_parameter_encryption` nur für Abfragen aufgerufen wird, bei denen Ihnen bekannt ist, dass sie über Parameter für verschlüsselte Spalten verfügen. Beachten Sie jedoch, dass Sie auf diese Weise die Transparenz der Verschlüsselung reduzieren: Wenn Sie zusätzliche Spalten in Ihrer Datenbank verschlüsseln, müssen Sie möglicherweise den Code der Anwendung ändern, um ihn an die Schemaänderungen anzupassen.
 
 Rufen Sie zum Steuern des Verhaltens von Always Encrypted für eine Anweisung „SQLSetStmtAttr“ auf, um das Anweisungsattribut `SQL_SOPT_SS_COLUMN_ENCRYPTION` auf einen der folgenden Werte festzulegen:
 
 |Wert|BESCHREIBUNG|
 |-|-|
 |`SQL_CE_DISABLED` (0)|Always Encrypted ist für die Anweisung deaktiviert.|
-|`SQL_CE_RESULTSETONLY` (1)|Nur Entschlüsselung. Resultsets und Rückgabewerte werden entschlüsselt, und Parameter werden nicht verschlüsselt.|
+|`SQL_CE_RESULTSETONLY` (1)|Nur Entschlüsselung. Resultsets und Rückgabewerte werden entschlüsselt, Parameter werden nicht verschlüsselt.|
 |`SQL_CE_ENABLED` (3) | Always Encrypted ist aktiviert und wird für Parameter und Ergebnisse verwendet.|
 
-Neue Anweisungshandles, die über eine Verbindung mit aktiviertem Always Encrypted erstellt wurden, sind standardmäßig auf „SQL_CE_ENABLED“ festgelegt. Wurden die Handles über eine Verbindung mit deaktivierter Always Encrypted-Option erstellt, ist die Standardeinstellung „SQL_CE_DISABLED“ (und es ist nicht möglich, Always Encrypted zu aktivieren).
+Neue Anweisungshandles, die über eine Verbindung mit aktiviertem Always Encrypted erstellt wurden, sind standardmäßig auf „SQL_CE_ENABLED“ festgelegt. Wurden die Handles über eine Verbindung mit deaktivierter Always Encrypted-Option erstellt, ist „SQL_CE_DISABLED“ die Standardeinstellung (und Always Encrypted kann nicht aktiviert werden).
 
-Greifen die meisten Abfragen einer Clientanwendung auf verschlüsselte Spalten zu, wird folgende Vorgehensweise empfohlen:
+Greifen die meisten Abfragen einer Clientanwendung auf verschlüsselte Spalten zu, wird die Beachtung folgender Punkte empfohlen:
 
 - Legen Sie das Schlüsselwort für die `ColumnEncryption`-Verbindungszeichenfolge auf `Enabled` fest.
 
-- Legen Sie für Anweisungen, die nicht auf verschlüsselte Spalten zugreifen, das Attribut `SQL_SOPT_SS_COLUMN_ENCRYPTION` auf `SQL_CE_DISABLED` fest. Dadurch wird der Aufruf von `sys.sp_describe_parameter_encryption` deaktiviert, und es werden auch keine Werte im Resultset entschlüsselt.
-    
-- Legen Sie für Anweisungen ohne Parameter, für die eine Verschlüsselung erforderlich wäre, und die Daten aus verschlüsselten Spalten abrufen, das Attribut `SQL_SOPT_SS_COLUMN_ENCRYPTION` auf `SQL_CE_RESULTSETONLY` fest. Dadurch werden der Aufruf von `sys.sp_describe_parameter_encryption` und die Parameterverschlüsselung deaktiviert. Ergebnisse mit verschlüsselten Spalten werden weiterhin entschlüsselt.
+- Legen Sie für Anweisungen, die nicht auf verschlüsselte Spalten zugreifen, das Attribut `SQL_SOPT_SS_COLUMN_ENCRYPTION` auf `SQL_CE_DISABLED` fest. Durch diese Einstellung wird der Aufruf von `sys.sp_describe_parameter_encryption` deaktiviert, und es werden auch keine Werte im Resultset entschlüsselt.
 
-- Verwenden Sie vorbereitete Anweisungen für Abfragen, die mehrmals ausgeführt werden. Bereiten Sie die Abfrage mit `SQLPrepare` vor, speichern Sie das Anweisungshandle, und verwenden Sie es bei jeder Ausführung mit `SQLExecute` erneut. Dies ist der bevorzugte leistungsorientierte Ansatz, auch wenn keine verschlüsselten Spalten vorhanden sind. Außerdem profitiert der Treiber von zwischengespeicherten Metadaten.
+- Legen Sie für Anweisungen ohne Parameter, für die eine Verschlüsselung erforderlich wäre, und die Daten aus verschlüsselten Spalten abrufen, das Attribut `SQL_SOPT_SS_COLUMN_ENCRYPTION` auf `SQL_CE_RESULTSETONLY` fest. Durch diese Einstellung werden der Aufruf von `sys.sp_describe_parameter_encryption` und die Parameterverschlüsselung deaktiviert. Ergebnisse mit verschlüsselten Spalten werden weiterhin entschlüsselt.
+
+- Verwenden Sie vorbereitete Anweisungen für Abfragen, die mehrmals ausgeführt werden. Bereiten Sie die Abfrage mit `SQLPrepare` vor, speichern Sie das Anweisungshandle, und verwenden Sie es bei jeder Ausführung mit `SQLExecute` erneut. Diese Methode ist der bevorzugte leistungsorientierte Ansatz, auch wenn keine verschlüsselten Spalten vorhanden sind. Außerdem profitiert der Treiber von zwischengespeicherten Metadaten.
 
 ## <a name="always-encrypted-security-settings"></a>Always Encrypted-Sicherheitseinstellungen
 
@@ -408,30 +405,30 @@ Greifen die meisten Abfragen einer Clientanwendung auf verschlüsselte Spalten z
 
 Wenn Sie die Verschlüsselung eines Parameters erzwingen möchten, legen Sie das IPD-Feld `SQL_CA_SS_FORCE_ENCRYPT` (Implementierungsparameterdeskriptor) fest, indem Sie die Funktion „SQLSetDescField“ aufrufen. Bei einem Wert ungleich 0 (null) wird ein Fehler zurückgegeben, wenn für den zugeordneten Parameter keine Verschlüsselungsmetadaten zurückgegeben werden.
 
-```
+```cpp
 SQLHDESC ipd;
 SQLGetStmtAttr(hStmt, SQL_ATTR_IMP_PARAM_DESC, &ipd, 0, 0);
 SQLSetDescField(ipd, paramNum, SQL_CA_SS_FORCE_ENCRYPT, (SQLPOINTER)TRUE, SQL_IS_SMALLINT);   
 ```
 
-Wenn SQL Server den Treiber informiert, dass der Parameter nicht verschlüsselt werden muss, tritt bei Abfragen, die diesen Parameter verwenden, ein Fehler auf. Dies bietet zusätzlichen Schutz vor Angriffen, bei denen ein kompromittierter SQL Server falsche Verschlüsselungsmetadaten für den Client bereitstellt, was zur Offenlegung von Daten führen kann.
+Wenn SQL Server den Treiber informiert, dass der Parameter nicht verschlüsselt werden muss, tritt bei Abfragen, die diesen Parameter verwenden, ein Fehler auf. Dieses Verhalten bietet zusätzlichen Schutz vor Angriffen, bei denen ein kompromittierter SQL Server falsche Verschlüsselungsmetadaten für den Client bereitstellt, was zur Offenlegung von Daten führen kann.
 
 ### <a name="column-encryption-key-caching"></a>Zwischenspeicherung von Spaltenverschlüsselungsschlüsseln
 
 Der Treiber speichert die Spaltenverschlüsselungsschlüssel (CEKs) im Klartext im Zwischenspeicher, um die Anzahl der Aufrufe an einen Spaltenhauptschlüsselspeicher zum Entschlüsseln von CEKs zu verringern. Der CEK-Cache ist für den Treiber global und keiner Verbindung zugeordnet. Nach dem Erhalt des verschlüsselten CEK (ECEK) aus den Datenbankmetadaten versucht der Treiber zunächst, den CEK im Klartext zu finden, der dem verschlüsselten Schlüsselwert im Cache entspricht. Der Treiber ruft den Schlüsselspeicher, der den CMK enthält, nur auf, wenn der entsprechende CEK im Klartext im Cache nicht gefunden werden kann.
 
 > [!NOTE]
-> Bei ODBC Driver for SQL Server werden die Einträge im Cache nach einem Zeitlimit von zwei Stunden entfernt. Dies bedeutet, dass der Treiber den Schlüsselspeicher für einen bestimmten ECEK während der Lebensdauer der Anwendung oder alle zwei Stunden (je nachdem, welches Intervall kürzer ist) nur einmal kontaktiert.
+> Bei ODBC Driver for SQL Server werden die Einträge im Cache nach einem Zeitlimit von zwei Stunden entfernt. Dieses Verhalten bedeutet, dass der Treiber den Schlüsselspeicher für einen bestimmten ECEK während der Lebensdauer der Anwendung oder alle zwei Stunden (je nachdem, welches Intervall kürzer ist) nur einmal kontaktiert.
 
 Ab ODBC Driver 17.1 for SQL Server kann das Zeitlimit für den CEK-Cache mithilfe des Verbindungsattributs `SQL_COPT_SS_CEKCACHETTL` angepasst werden. Dabei wird die Anzahl der Sekunden angegeben, die ein CEK im Cache bleiben soll. Da der Cache global ist, kann das Attribut von jedem für den Treiber gültigen Verbindungshandle angepasst werden. Wird die Gültigkeitsdauer des Caches verringert, werden auch vorhandene CEKs, die die neue Gültigkeitsdauer überschreiten würden, entfernt. Bei einer Gültigkeitsdauer von 0 (null) werden keine CEKs zwischengespeichert.
 
 ### <a name="trusted-key-paths"></a>Vertrauenswürdige Schlüsselpfade
 
-Ab ODBC Driver 17.1 for SQL Server ist es mithilfe des Verbindungsattributs `SQL_COPT_SS_TRUSTEDCMKPATHS` zulässig, dass eine Anwendung für Always Encrypted-Vorgänge die ausschließliche Verwendung einer angegebenen Liste mit CMKs anfordert, die anhand ihrer Schlüsselpfade identifiziert werden. Die Standardeinstellung für dieses Attribut ist NULL, d. h. der Treiber akzeptiert jeden beliebigen Schlüsselpfad. Wenn Sie diese Funktion verwenden möchten, legen Sie `SQL_COPT_SS_TRUSTEDCMKPATHS` so fest, dass auf eine durch NULL getrennte und mit NULL endende Zeichenfolge für breite Zeichen gezeigt wird, die den bzw. die zulässigen Schlüsselpfad/e auflistet. Der Speicher, auf den das Attribut zeigt, muss mithilfe des Verbindungshandles, für das es festgelegt wurde, während der Verschlüsselungs- oder Entschlüsselungsvorgänge gültig bleiben. Auf diesem Weg überprüft der Treiber ohne Beachtung von Groß-/Kleinschreibung, ob der CMK-Pfad wie in den Servermetadaten angegeben in dieser Liste zu finden ist. Befindet sich der CMK-Pfad nicht in der Liste, tritt ein Fehler auf. Der Inhalt des Speichers, auf den das Attribut zeigt, kann durch die Anwendung geändert werden. So kann die Liste der vertrauenswürdigen CMKs geändert werden, ohne das Attribut erneut festzulegen.
+Ab ODBC Driver 17.1 for SQL Server ist es mithilfe des Verbindungsattributs `SQL_COPT_SS_TRUSTEDCMKPATHS` zulässig, dass eine Anwendung für Always Encrypted-Vorgänge die ausschließliche Verwendung einer angegebenen Liste mit CMKs anfordert, die anhand ihrer Schlüsselpfade identifiziert werden. Die Standardeinstellung für dieses Attribut ist NULL, d. h. der Treiber akzeptiert jeden beliebigen Schlüsselpfad. Wenn Sie diese Funktion verwenden möchten, legen Sie `SQL_COPT_SS_TRUSTEDCMKPATHS` so fest, dass auf eine durch NULL getrennte und mit NULL endende Zeichenfolge mit Breitzeichen verwiesen wird, die den bzw. die zulässigen Schlüsselpfad(e) auflistet. Der Speicher, auf den das Attribut zeigt, muss mithilfe des Verbindungshandles, für das es festgelegt wurde, während der Verschlüsselungs- oder Entschlüsselungsvorgänge gültig bleiben. Auf diesem Weg überprüft der Treiber ohne Beachtung von Groß-/Kleinschreibung, ob der CMK-Pfad wie in den Servermetadaten angegeben in dieser Liste zu finden ist. Befindet sich der CMK-Pfad nicht in der Liste, tritt ein Fehler auf. Der Inhalt des Speichers, auf den das Attribut zeigt, kann durch die Anwendung geändert werden. So kann die Liste der vertrauenswürdigen CMKs geändert werden, ohne das Attribut erneut festzulegen.
 
 ## <a name="working-with-column-master-key-stores"></a>Arbeiten mit Spaltenhauptschlüsselspeichern
 
-Der Treiber benötigt zum Verschlüsseln oder Entschlüsseln von Daten einen CEK, der für die Zielspalte konfiguriert ist. CEKs werden in verschlüsselter Form (als ECEKs) in den Datenbankmetadaten gespeichert. Jeder CEK besitzt einen entsprechenden CMK, mit dem er verschlüsselt wurde. In den [Datenbankmetadaten](../../t-sql/statements/create-column-master-key-transact-sql.md) wird nicht der CMK selbst gespeichert, sondern nur der Name des Schlüsselspeichers sowie Informationen zur Suche nach dem CMK.
+Der Treiber benötigt zum Verschlüsseln oder Entschlüsseln von Daten einen CEK, der für die Zielspalte konfiguriert ist. CEKs werden in verschlüsselter Form (als ECEKs) in den Datenbankmetadaten gespeichert. Jeder CEK besitzt einen entsprechenden CMK, mit dem er verschlüsselt wurde. In den [Datenbankmetadaten](../../t-sql/statements/create-column-master-key-transact-sql.md) wird nicht der CMK selbst gespeichert, sondern nur der Name des Schlüsselspeichers sowie Informationen für die Suche nach dem CMK.
 
 Wenn der Treiber den Klartextwert eines ECEK abrufen möchten, benötigt er zunächst die Metadaten für den CEK und den entsprechenden CMK. Mit diesen Informationen kontaktiert er den Schlüsselspeicher, der den CMK enthält, und fordert die Entschlüsselung des ECEK an. Die Kommunikation zwischen Treiber und Schlüsselspeicher erfolgt über einen Schlüsselspeicheranbieter.
 
@@ -446,11 +443,11 @@ ODBC Driver for SQL Server verfügt über die folgenden integrierten Schlüssels
 
 - Sie (oder der Datenbankadministrator) müssen sicherstellen, dass der in den Metadaten des Spaltenhauptschlüssels konfigurierte Anbietername richtig ist und der Pfad des Spaltenhauptschlüssels dem Schlüsselpfadformat für den angegebenen Anbieter entspricht. Es wird empfohlen, dass Sie die Schlüssel mithilfe von Tools wie SQL Server Management Studio konfigurieren, die die gültigen Anbieternamen und Schlüsselpfade automatisch generieren, wenn die Anweisung [CREATE COLUMN MASTER KEY (Transact-SQL)](../../t-sql/statements/create-column-master-key-transact-sql.md) ausgegeben wird.
 
-- Sie müssen sicherstellen, dass die Anwendung auf den Schlüssel im Schlüsselspeicher zugreifen kann. Dies kann das Gewähren des Zugriffs auf den Schlüssel und/oder Schlüsselspeicher für die Anwendung (abhängig vom Schlüsselspeicher) oder das Ausführen anderer wichtiger speicherspezifischer Konfigurationsschritte beinhalten. Zum Zugreifen auf den Azure Key Vault müssen Sie beispielsweise im Keystore die korrekten Anmeldeinformationen angeben.
+- Stellen Sie sicher, dass die Anwendung auf den Schlüssel im Schlüsselspeicher zugreifen kann. Dieser Vorgang kann das Gewähren des Zugriffs auf den Schlüssel und/oder Schlüsselspeicher für die Anwendung (abhängig vom Schlüsselspeicher) oder das Ausführen anderer wichtiger schlüsselspeicherspezifischer Konfigurationsschritte beinhalten. Zum Zugreifen auf Azure Key Vault müssen Sie beispielsweise im Keystore die korrekten Anmeldeinformationen angeben.
 
 ### <a name="using-the-azure-key-vault-provider"></a>Verwenden des Azure Key Vault-Anbieters
 
-Azure Key Vault (AKV) ist eine praktische Möglichkeit zum Speichern und Verwalten von Spaltenhauptschlüsseln für Always Encrypted (insbesondere, wenn Ihre Anwendungen in Azure gehostet werden). Unter Linux, macOS und Windows enthält ODBC Driver for SQL Server einen integrierten CMK-Speicheranbieter für den Azure Key Vault. Weitere Informationen zum Konfigurieren von Azure Key Vault für Always Encrypted finden Sie unter [Azure Key Vault – Step by Step (Ausführliche Anleitung zu Azure Key Vault)](/archive/blogs/kv/azure-key-vault-step-by-step), [Getting Started with Key Vault (Erste Schritte mit dem Azure Key Vault)](/azure/key-vault/general/overview) und [Erstellen und Speichern von Spaltenhauptschlüsseln (Always Encrypted)](../../relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted.md#creating-column-master-keys-in-azure-key-vault).
+Azure Key Vault (AKV) ist eine praktische Möglichkeit zum Speichern und Verwalten von Spaltenhauptschlüsseln für Always Encrypted (insbesondere, wenn Ihre Anwendungen in Azure gehostet werden). Unter Linux, macOS und Windows enthält ODBC Driver for SQL Server einen integrierten CMK-Speicheranbieter für den Azure Key Vault. Weitere Informationen zum Konfigurieren von Azure Key Vault für Always Encrypted finden Sie unter [Ausführliche Anleitung zu Azure Key Vault](/archive/blogs/kv/azure-key-vault-step-by-step), [Erste Schritte mit Azure Key Vault](/azure/key-vault/general/overview) und [Erstellen und Speichern von Spaltenhauptschlüsseln in Azure Key Vault](../../relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted.md#creating-column-master-keys-in-azure-key-vault).
 
 > [!NOTE]
 > Der ODBC-Treiber unterstützt die Azure Key Vault-Authentifizierung nur direkt für Azure Active Directory. Wenn Sie die Azure Active Directory-Authentifizierung bei Azure Key Vault verwenden und Ihre Active Directory-Konfiguration die Authentifizierung für einen Active Directory-Verbunddienstendpunkt erfordert, kann bei der Authentifizierung ein Fehler auftreten.
@@ -462,7 +459,7 @@ Der Treiber unterstützt die Authentifizierung beim Azure Key Vault mithilfe der
 
 - Client-ID/Geheimnis: Bei dieser Methode bestehen die Anmeldeinformationen aus einer Anwendungsclient-ID und einem Anwendungsgeheimnis.
 
-- Verwaltete Identität (17.5.2+): entweder system- oder benutzerseitig zugewiesen; unter [Verwaltete Azure AD-Identitäten für Azure-Ressourcen: Dokumentation](/azure/active-directory/managed-identities-azure-resources/) finden Sie weitere Informationen.
+- Verwaltete Identität (17.5.2 und höher): entweder vom System oder Benutzer zugewiesen (siehe[Verwaltete Identitäten für Azure-Ressourcen](/azure/active-directory/managed-identities-azure-resources/)).
 
 - Interaktive Azure Key Vault-Authentifizierung (Windows-Treiber mit Version 17.7 und höher): Bei dieser Methode werden die Anmeldeinformationen über Azure Active Directory mit der Anmelde-ID authentifiziert.
 
@@ -514,14 +511,13 @@ Zum Speichern von CMKs im Azure Key Vault sind keine weiteren Änderungen der OD
 > [!NOTE]
 > Der Treiber enthält eine Liste von Azure Key Vault-Endpunkten, denen der Treiber vertraut. Ab der Treiberversion 17.5.2 kann diese Liste konfiguriert werden: Legen Sie die `AKVTrustedEndpoints`-Eigenschaft im Treiber oder im DSN-Registrierungsschlüssel ODBCINST.INI oder ODBC.INI (Windows) oder in den Dateiabschnitten `odbcinst.ini` oder `odbc.ini` (Linux/macOS) auf eine durch Semikolons getrennte Liste fest. Wenn Sie die Eigenschaft im DSN festlegen, hat diese Einstellung Vorrang vor einer Einstellung im Treiber. Wenn der Wert mit einem Semikolon beginnt, wird die Standardliste erweitert. Andernfalls wird die Standardliste ersetzt. Die Standardliste (ab 17.5) ist `vault.azure.net;vault.azure.cn;vault.usgovcloudapi.net;vault.microsoftazure.de`. Ab Version 17.7 enthält die Liste auch `managedhsm.azure.net;managedhsm.azure.cn;managedhsm.usgovcloudapi.net;managedhsm.microsoftazure.de`.
 
-
 ### <a name="using-the-windows-certificate-store-provider"></a>Verwenden des Windows-Zertifikatspeicheranbieters
 
-Unter Windows enthält ODBC Driver for SQL Server einen integrierten CMK-Speicheranbieter für den Windows-Zertifikatspeicher namens `MSSQL_CERTIFICATE_STORE`. (Dieser Anbieter ist nicht unter macOS oder Linux verfügbar.) Mit diesem Anbieter wird der CMK lokal auf dem Clientcomputer gespeichert, und es ist keine weitere Konfiguration durch die Anwendung erforderlich, um ihn mit dem Treiber zu verwenden. Die Anwendung muss jedoch auf das Zertifikat und den privaten Schlüssel im Speicher zugreifen können. Weitere Informationen finden Sie unter [Erstellen und Speichern von Spaltenhauptschlüsseln (Always Encrypted)](../../relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted.md).
+Unter Windows enthält ODBC Driver for SQL Server einen integrierten CMK-Speicheranbieter für den Windows-Zertifikatspeicher namens `MSSQL_CERTIFICATE_STORE`. (Dieser Anbieter ist nicht unter macOS oder Linux verfügbar.) Mit diesem Anbieter wird der CMK lokal auf dem Clientcomputer gespeichert. Für dessen Verwendung mit dem Treiber ist keine weitere Konfiguration durch die Anwendung erforderlich. Die Anwendung muss jedoch auf das Zertifikat und den privaten Schlüssel im Speicher zugreifen können. Weitere Informationen finden Sie unter [Create and Store Column Master Keys (Always Encrypted)](../../relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted.md)(Erstellen und Speichern von Spaltenhauptschlüsseln (Always Encrypted)).
 
 ### <a name="using-custom-keystore-providers"></a>Verwenden benutzerdefinierter Keystore-Anbieter
 
-Über die CEKeystoreProvider-Oberfläche unterstützt ODBC Driver for SQL Server auch benutzerdefinierte Schlüsselspeicheranbieter von Drittanbietern. Dadurch kann eine Anwendung Schlüsselspeicheranbieter laden, abfragen und konfigurieren, damit sie vom Treiber zum Zugreifen auf verschlüsselte Spalten verwendet werden können. Anwendungen können auch direkt mit einem Schlüsselspeicheranbieter interagieren, um CEKs für die Speicherung in SQL Server zu verschlüsseln und weitere Aufgaben auszuführen, die über das Zugreifen auf verschlüsselte Spalten mit ODBC hinausgehen. Weitere Informationen finden Sie unter [Custom Keystore Providers (Benutzerdefinierte Schlüsselspeicheranbieter)](custom-keystore-providers.md).
+Über die CEKeystoreProvider-Oberfläche unterstützt ODBC Driver for SQL Server auch benutzerdefinierte Schlüsselspeicheranbieter von Drittanbietern. Mit dieser Funktion kann eine Anwendung Schlüsselspeicheranbieter laden, abfragen und konfigurieren, damit sie vom Treiber zum Zugreifen auf verschlüsselte Spalten verwendet werden können. Anwendungen können auch direkt mit einem Schlüsselspeicheranbieter interagieren, um CEKs für die Speicherung in SQL Server zu verschlüsseln und weitere Aufgaben auszuführen, die über das Zugreifen auf verschlüsselte Spalten mit ODBC hinausgehen. Weitere Informationen finden Sie unter [Custom Keystore Providers (Benutzerdefinierte Schlüsselspeicheranbieter)](custom-keystore-providers.md).
 
 Zur Interaktion mit benutzerdefinierten Schlüsselspeicheranbietern werden zwei Verbindungsattribute verwendet. Sie lauten wie folgt:
 
@@ -535,7 +531,7 @@ Das erste Attribut wird zum Laden und Aufzählen geladener Schlüsselspeicheranb
 
 Durch das Festlegen des Verbindungsattributs `SQL_COPT_SS_CEKEYSTOREPROVIDER` kann eine Clientanwendung eine Anbieterbibliothek laden und die darin enthaltenen Schlüsselspeicheranbieter bereitstellen.
 
-```
+```cpp
 SQLRETURN SQLSetConnectAttr( SQLHDBC ConnectionHandle, SQLINTEGER Attribute, SQLPOINTER ValuePtr, SQLINTEGER StringLength);
 ```
 
@@ -543,7 +539,7 @@ SQLRETURN SQLSetConnectAttr( SQLHDBC ConnectionHandle, SQLINTEGER Attribute, SQL
 |:---|:---|
 |`ConnectionHandle`|[Eingabe] Verbindungshandle. Es muss sich um ein gültiges Verbindungshandle handeln, jedoch kann auf Anbieter, die über ein Verbindungshandle geladen werden, von jedem anderen Handle im selben Vorgang aus zugegriffen werden.|
 |`Attribute`|[Eingabe] Festzulegendes Attribut: die Konstante `SQL_COPT_SS_CEKEYSTOREPROVIDER`.|
-|`ValuePtr`|[Eingabe] Zeiger auf eine Zeichenfolge, die mit NULL endet und den Dateinamen der Anbieterbibliothek angibt. Für „SQLSetConnectAttrA“ handelt es sich dabei um eine ANSI-(Multibyte-)Zeichenfolge. Für „SQLSetConnectAttrW“ handelt es sich um eine Unicode-Zeichenfolge (vom Typ „wchar_t“).|
+|`ValuePtr`|[Eingabe] Zeiger auf eine Zeichenfolge, die mit NULL endet und den Dateinamen der Anbieterbibliothek angibt. Bei „SQLSetConnectAttrA“ ist dieser Wert eine ANSI (Multibyte)-Zeichenfolge. Bei „SQLSetConnectAttrW“ ist dieser Wert eine Unicode-Zeichenfolge (vom Typ „wchar_t“).|
 |`StringLength`|[Eingabe] Länge der Zeichenfolge „ValuePtr“ oder von „SQL_NTS“.|
 
 Der Treiber versucht, mithilfe des von der Plattform definierten Lademechanismus für dynamische Bibliotheken (`dlopen()` unter Linux und macOS, `LoadLibrary()` unter Windows) die vom ValuePtr-Parameter identifizierte Bibliothek zu laden. Anschließend werden alle darin definierten Anbieter der Liste mit Anbietern hinzugefügt, die dem Treiber bekannt sind. Die folgenden Fehler können auftreten:
@@ -554,7 +550,7 @@ Der Treiber versucht, mithilfe des von der Plattform definierten Lademechanismus
 |`CE203`|Das exportierte Symbol „CEKeyStoreProvider“ wurde in der Bibliothek nicht gefunden.|
 |`CE203`|Ein oder mehrere Anbieter in der Bibliothek wurden bereits geladen.|
 
-`SQLSetConnectAttr` gibt die üblichen Fehler- oder Erfolgswerte zurück. Weitere Informationen sind zu allen Fehlern verfügbar, die über den ODBC-Standarddiagnosemechanismus aufgetreten sind.
+`SQLSetConnectAttr` gibt die üblichen Fehler- oder Erfolgswerte zurück. Weitere Informationen sind zu allen aufgetretenen Fehlern sind über den ODBC-Standarddiagnosemechanismus verfügbar.
 
 > [!NOTE]
 > Der Programmierer der Anwendung muss sicherstellen, dass alle benutzerdefinierten Anbieter geladen werden, bevor über eine beliebige Verbindung eine Abfrage gesendet wird, mit der die Anbieter angefordert werden. Andernfalls wird folgender Fehler ausgelöst:
@@ -568,9 +564,9 @@ Der Treiber versucht, mithilfe des von der Plattform definierten Lademechanismus
 
 #### <a name="getting-the-list-of-loaded-providers"></a>Abrufen der Liste mit geladenen Anbietern
 
-Durch Abrufen des Verbindungsattributs kann eine Clientanwendung die aktuell im Treiber geladenen Schlüsselspeicheranbieter (einschließlich der integrierten) bestimmen. Dies ist erst nach dem Herstellen einer Verbindung möglich.
+Durch Abrufen des Verbindungsattributs kann eine Clientanwendung die aktuell im Treiber geladenen Schlüsselspeicheranbieter (einschließlich der integrierten Anbieter) bestimmen. Dieser Vorgang ist erst nach dem Herstellen einer Verbindung möglich.
 
-```
+```cpp
 SQLRETURN SQLGetConnectAttr( SQLHDBC ConnectionHandle, SQLINTEGER Attribute, SQLPOINTER ValuePtr, SQLINTEGER BufferLength, SQLINTEGER * StringLengthPtr);
 ```
 
@@ -586,14 +582,14 @@ Damit die gesamte Liste abgerufen werden kann, wird bei jedem GET-Vorgang der Na
 
 ### <a name="communicating-with-keystore-providers"></a>Kommunizieren mit Schlüsselspeicheranbietern
 
-Mit dem Verbindungsattribut `SQL_COPT_SS_CEKEYSTOREDATA` ist es einer Clientanwendung möglich, mit geladenen Schlüsselspeicheranbietern zur Konfiguration von zusätzlichen Parametern, Schlüsselerstellungsmaterial usw. zu kommunizieren. Die Kommunikation zwischen einer Clientanwendung und einem Anbieter folgt einem einfachen Protokoll aus Anforderung und Antwort basierend auf GET- und SET-Anforderungen, die dieses Verbindungsattribut verwenden. Die Kommunikation geht immer von der Clientanwendung aus.
+Mit dem Verbindungsattribut `SQL_COPT_SS_CEKEYSTOREDATA` kann eine Clientanwendung mit geladenen Schlüsselspeicheranbietern bezüglich der Konfiguration von zusätzlichen Parametern, Schlüsselerstellungsmaterial usw. kommunizieren. Die Kommunikation zwischen einer Clientanwendung und einem Anbieter folgt einem einfachen Protokoll aus Anforderung und Antwort basierend auf GET- und SET-Anforderungen, die dieses Verbindungsattribut verwenden. Die Kommunikation geht immer von der Clientanwendung aus.
 
 > [!NOTE]
 > Aufgrund der Art der Antwort von ODBC-Aufrufen über „CEKeyStoreProvider“ auf (SQLGet/SetConnectAttr) unterstützt die ODBC-Oberfläche nur das Festlegen von Daten bei der Auflösung des Verbindungskontexts.
 
 Die Kommunikation zwischen Anwendung und Schlüsselspeicheranbietern erfolgt über den Treiber mithilfe der CEKeystoreData-Struktur:
 
-```
+```cpp
 typedef struct CEKeystoreData {
 wchar_t *name;
 unsigned int dataSize;
@@ -610,7 +606,8 @@ char data[];
 #### <a name="writing-data-to-a-provider"></a>Schreiben von Daten an einen Anbieter
 
 Bei einem mithilfe des Attributs `SQL_COPT_SS_CEKEYSTOREDATA` ausgeführten Aufrufs von `SQLSetConnectAttr` wird ein Datenpaket an den angegebenen Schlüsselspeicheranbieter geschrieben.
-```
+
+```cpp
 SQLRETURN SQLSetConnectAttr( SQLHDBC ConnectionHandle, SQLINTEGER Attribute, SQLPOINTER ValuePtr, SQLINTEGER StringLength);
 ```
 
@@ -621,16 +618,16 @@ SQLRETURN SQLSetConnectAttr( SQLHDBC ConnectionHandle, SQLINTEGER Attribute, SQL
 |`ValuePtr`|[Eingabe] Zeiger auf eine CEKeystoreData-Struktur. Der Anbieter, für den die Daten vorgesehen sind, wird vom Namensfeld der Struktur identifiziert.|
 |`StringLength`|[Eingabe] Konstante „SQL_IS_POINTER“.|
 
-Zusätzliche detaillierte Fehlerinformationen können über [SQLGetDiacRec](../../odbc/reference/syntax/sqlgetdescrec-function.md) abgerufen werden.
+Weitere detaillierte Fehlerinformationen können über [SQLGetDiacRec](../../odbc/reference/syntax/sqlgetdescrec-function.md) abgerufen werden.
 
 > [!NOTE]
-> Der Anbieter kann mithilfe des Verbindungshandles, sofern gewünscht, die geschriebenen Daten einer bestimmten Verbindung zuordnen. Dies ist beim Implementieren von Konfigurationen für einzelne Verbindungen nützlich. Außerdem kann er den Verbindungskontext ignorieren und alle Daten identisch verarbeiten, unabhängig davon, welche Verbindung zum Senden der Daten verwendet wurde. Weitere Informationen finden Sie unter [Context Association (Kontextzuordnung)](custom-keystore-providers.md#context-association).
+> Der Anbieter kann mithilfe des Verbindungshandles, sofern gewünscht, die geschriebenen Daten einer bestimmten Verbindung zuordnen. Diese Funktion ist beim Implementieren von Konfigurationen für einzelne Verbindungen nützlich. Außerdem kann er den Verbindungskontext ignorieren und alle Daten identisch verarbeiten, unabhängig davon, welche Verbindung zum Senden der Daten verwendet wurde. Weitere Informationen finden Sie unter [Kontextzuordnung](custom-keystore-providers.md#context-association).
 
 #### <a name="reading-data-from-a-provider"></a>Lesen von Daten von einem Anbieter
 
 Bei einem mithilfe des Attributs `SQL_COPT_SS_CEKEYSTOREDATA` ausgeführten Aufrufs von `SQLGetConnectAttr` wird ein Datenpaket vom Anbieter gelesen, *an den zuletzt geschrieben wurde*. Ist kein solcher Anbieter vorhanden, tritt ein Fehler in der Funktionsreihenfolge auf. Für Ausführende des Schlüsselspeicheranbieters ist es sinnvoll, Pseudoschreibvorgänge mit 0 Bytes zu unterstützen. Damit kann der Anbieter ohne weitere Auswirkungen für Schreibvorgänge ausgewählt werden.
 
-```
+```cpp
 SQLRETURN SQLGetConnectAttr( SQLHDBC ConnectionHandle, SQLINTEGER Attribute, SQLPOINTER ValuePtr, SQLINTEGER BufferLength, SQLINTEGER * StringLengthPtr);
 ```
 
@@ -642,7 +639,7 @@ SQLRETURN SQLGetConnectAttr( SQLHDBC ConnectionHandle, SQLINTEGER Attribute, SQL
 |`BufferLength`|[Eingabe] Konstante „SQL_IS_POINTER“.|
 |`StringLengthPtr`|[Ausgabe] Zeiger auf einen Puffer, an den die Pufferlänge zurückgegeben werden soll. Handelt es sich bei *ValuePtr um einen NULL-Zeiger, wird keine Länge zurückgegeben.|
 
-Der Aufrufer muss sicherstellen, dass dem Anbieter zum Schreiben der Daten ein Puffer mit ausreichender Länge gemäß der CEKEYSTOREDATA-Struktur zur Verfügung steht. Bei der Rückgabe wird das Feld „dataSize“ mit der tatsächlichen Länge der vom Anbieter gelesenen Daten aktualisiert. Zusätzliche detaillierte Fehlerinformationen können über [SQLGetDiacRec](../../odbc/reference/syntax/sqlgetdescrec-function.md) abgerufen werden.
+Der Aufrufer muss sicherstellen, dass dem Anbieter zum Schreiben der Daten ein Puffer mit ausreichender Länge gemäß der CEKEYSTOREDATA-Struktur zur Verfügung steht. Bei der Rückgabe wird das Feld „dataSize“ mit der tatsächlichen Länge der vom Anbieter gelesenen Daten aktualisiert. Weitere detaillierte Fehlerinformationen können über [SQLGetDiacRec](../../odbc/reference/syntax/sqlgetdescrec-function.md) abgerufen werden.
 
 Die Oberfläche stellt keine weiteren Anforderungen an das Format der zwischen Anwendung und Schlüsselspeicheranbieter übertragenen Daten. Jeder Anbieter kann je nach Anforderungen ein eigenes Protokoll bzw. Datenformat definieren.
 
@@ -651,16 +648,20 @@ Ein Beispiel für das Implementieren eines eigenen Schlüsselspeicheranbieters f
 ## <a name="limitations-of-the-odbc-driver-when-using-always-encrypted"></a>Einschränkungen des ODBC-Treibers bei Verwendung von Always Encrypted
 
 ### <a name="asynchronous-operations"></a>Asynchrone Vorgänge
+
 Zwar lässt der Treiber die Verwendung von [asynchronen Vorgängen](../../relational-databases/native-client/odbc/creating-a-driver-application-asynchronous-mode-and-sqlcancel.md) mit Always Encrypted zu, doch kommt es zu Leistungsauswirkungen auf die Vorgänge, wenn Always Encrypted aktiviert ist. Der Aufruf von `sys.sp_describe_parameter_encryption` zum Bestimmen von Verschlüsselungsmetadaten für die Anweisung blockiert, weshalb der Treiber auf die Rückgabe der Metadaten vom Server warten muss, bevor er `SQL_STILL_EXECUTING` zurückgibt.
 
 ### <a name="retrieve-data-in-parts-with-sqlgetdata"></a>Abrufen von Teildaten mit „SQLGetData“
+
 Vor ODBC Driver 17 for SQL Server konnten verschlüsselte Zeichen und Binärspalten mit „SQLGetData“ nicht in Teilen abgerufen werden. Es kann nur ein Aufruf von „SQLGetData“ vorgenommen werden, der einen Puffer mit ausreichender Länge für die gesamten Daten der Spalte enthält.
 
 ### <a name="send-data-in-parts-with-sqlputdata"></a>Senden von Teildaten mit „SQLPutData“
+
 Vor ODBC Driver 17.3 for SQL Server war es nicht möglich, Teildaten mit „SQLPutData“ zum Einfügen oder Vergleichen zu senden. Es kann nur ein Aufruf von „SQLPutData“ vorgenommen werden, der einen Puffer mit allen Daten enthält. Wenn Sie Long-Daten in verschlüsselte Spalten einfügen möchten, verwenden Sie die API für das Massenkopieren mit einer Eingabedatendatei, die im nächsten Abschnitt beschrieben wird.
 
 ### <a name="encrypted-money-and-smallmoney"></a>Verschlüsselte Daten vom Typ „money“ und „smallmoney“
-Parameter können nicht auf verschlüsselte Spalten vom Typ **money** oder **smallmoney** ausgerichtet sein, da es keinen bestimmten ODBC-Datentyp gibt, der diesen Typen zugeordnet wird. Daher tritt in diesem Fall ein Fehler vom Typ „Operandentypkollision“ auf.
+
+Parameter können nicht auf verschlüsselte Spalten vom Typ **money** oder **smallmoney** ausgerichtet sein, da es keinen bestimmten ODBC-Datentyp gibt, der diesen Typen zugeordnet ist. Daher treten in diesem Fall Fehler vom Typ „Operandentypkollision“ auf.
 
 ## <a name="bulk-copy-of-encrypted-columns"></a>Massenkopieren von verschlüsselten Spalten
 
@@ -680,7 +681,7 @@ In der folgenden Tabelle werden die Aktionen beim Verarbeiten einer verschlüsse
 |----------------|-------------|-----------|
 |`Disabled`|OUT (zum Client)|Ruft Chiffretext ab. Der observierte Datentyp lautet **varbinary(max)** .|
 |`Enabled`|OUT (zum Client)|Ruft Klartext ab. Die Spaltendaten werden vom Treiber entschlüsselt.|
-|`Disabled`|IN (zum Server)|Fügt Chiffretext ein. Wird für sichtbar verschobene verschlüsselte Daten verwendet, die nicht entschlüsselt werden müssen. Es tritt dabei ein Fehler auf, wenn die Option `ALLOW_ENCRYPTED_VALUE_MODIFICATIONS` beim Benutzer nicht festgelegt ist oder „BCPMODIFYENCRYPTED“ beim Verbindungshandle nicht festgelegt ist. Weitere Informationen finden Sie weiter unten.|
+|`Disabled`|IN (zum Server)|Fügt Chiffretext ein. Diese Einstellung wird für sichtbar verschobene verschlüsselte Daten verwendet, die nicht entschlüsselt werden müssen. Es tritt dabei ein Fehler auf, wenn die Option `ALLOW_ENCRYPTED_VALUE_MODIFICATIONS` beim Benutzer nicht festgelegt ist oder „BCPMODIFYENCRYPTED“ beim Verbindungshandle nicht festgelegt ist. Weitere Informationen finden Sie unten.|
 |`Enabled`|IN (zum Server)|Fügt Klartext ein. Die Spaltendaten werden vom Treiber verschlüsselt.|
 
 ### <a name="the-bcpmodifyencrypted-option"></a>Option „BCPMODIFYENCRYPTED“
@@ -695,27 +696,26 @@ Weitere Informationen finden Sie unter [Migrieren von durch Always Encrypted ges
 
 |Name|BESCHREIBUNG|  
 |----------|-----------------|  
-|`ColumnEncryption`|Zulässige Werte sind `Enabled`/`Disabled`.<br>`Enabled`: aktiviert Always Encrypted-Funktionen für die Verbindung.<br>`Disabled`: deaktiviert Always Encrypted-Funktionen für die Verbindung.<br>*Nachweisprotokoll*,*Nachweis-URL* (Version 17.4 und höher) aktiviert Always Encrypted mit Secure Enclave unter Verwendung des angegebenen Nachweisprotokolls und der Nachweis-URL. <br><br>Der Standardwert lautet `Disabled`.|
+|`ColumnEncryption`|Zulässige Werte sind `Enabled`/`Disabled`.<br>`Enabled`: aktiviert Always Encrypted-Funktionen für die Verbindung.<br>`Disabled`: deaktiviert Always Encrypted-Funktionen für die Verbindung.<br>*Nachweisprotokoll*,*Nachweis-URL* (Version 17.4 und höher): bietet Always Encrypted mit Secure Enclave die Möglichkeit, das angegebene Nachweisprotokoll und die Nachweis-URL zu verwenden. <br><br>Der Standardwert lautet `Disabled`.|
 |`KeyStoreAuthentication` | Gültige Werte:`KeyVaultPassword`, `KeyVaultClientSecret`, `KeyVaultInteractive` |
 |`KeyStorePrincipalId` | Wenn `KeyStoreAuthentication` = `KeyVaultPassword`, legen Sie diesen Wert auf einen gültigen Benutzerprinzipalnamen in Azure Active Directory fest. <br>Wenn `KeyStoreAuthetication` = `KeyVaultClientSecret`, legen Sie diesen Wert auf eine gültige Anwendungsclient-ID in Azure Active Directory fest. |
 |`KeyStoreSecret` | Wenn `KeyStoreAuthentication` = `KeyVaultPassword`, legen Sie diesen Wert auf das Kennwort für den entsprechenden Benutzernamen fest. <br>Wenn `KeyStoreAuthentication` = `KeyVaultClientSecret`, legen Sie diesen Wert auf das Anwendungsgeheimnis fest, das einer gültigen Anwendungsclient-ID in Azure Active Directory zugeordnet wird. |
 
-
 ### <a name="connection-attributes"></a>Verbindungsattribute
 
-|Name|type|BESCHREIBUNG|  
+|Name|Typ|BESCHREIBUNG|  
 |----------|-------|----------|  
 |`SQL_COPT_SS_COLUMN_ENCRYPTION`|Vor dem Herstellen einer Verbindung|`SQL_COLUMN_ENCRYPTION_DISABLE` (0): Always Encrypted wird deaktiviert. <br>`SQL_COLUMN_ENCRYPTION_ENABLE` (1): Always Encrypted wird aktiviert.<br> Zeiger auf die Zeichenfolge *Nachweisprotokoll*,*Nachweis-URL* (Version 17.4 und höher) aktiviert die Verwendung mit Secure Enclave|
-|`SQL_COPT_SS_CEKEYSTOREPROVIDER`|Nach dem Herstellen einer Verbindung|[SET] Es wird versucht, „CEKeystoreProvider“ zu laden.<br>[GET] Ein CEKeystoreProvider-Name wird zurückgegeben.|
-|`SQL_COPT_SS_CEKEYSTOREDATA`|Nach dem Herstellen einer Verbindung|[SET] Daten werden in „CEKeystoreProvider“ geschrieben.<br>[GET] Daten werden aus „CEKeystoreProvider“ gelesen.|
-|`SQL_COPT_SS_CEKCACHETTL`|Nach dem Herstellen einer Verbindung|[SET] Gültigkeitsdauer des CEK-Caches wird festgelegt.<br>[GET] Gültigkeitsdauer des aktuellen CEK-Caches wird abgerufen.|
-|`SQL_COPT_SS_TRUSTEDCMKPATHS`|Nach dem Herstellen einer Verbindung|[SET] Zeiger auf vertrauenswürdige CMK-Pfade wird festgelegt.<br>[GET] Zeiger auf aktuelle vertrauenswürdige CMK-Pfade wird abgerufen.|
+|`SQL_COPT_SS_CEKEYSTOREPROVIDER`|Nach dem Herstellen einer Verbindung|[SET]: Es wird versucht, „CEKeystoreProvider“ zu laden.<br>[GET]: Ein CEKeystoreProvider-Name wird zurückgegeben.|
+|`SQL_COPT_SS_CEKEYSTOREDATA`|Nach dem Herstellen einer Verbindung|[SET]: Daten werden in „CEKeystoreProvider“ geschrieben.<br>[GET]: Daten werden aus „CEKeystoreProvider“ gelesen.|
+|`SQL_COPT_SS_CEKCACHETTL`|Nach dem Herstellen einer Verbindung|[SET]: Gültigkeitsdauer des CEK-Caches wird festgelegt.<br>[GET]: Gültigkeitsdauer des aktuellen CEK-Caches wird abgerufen.|
+|`SQL_COPT_SS_TRUSTEDCMKPATHS`|Nach dem Herstellen einer Verbindung|[SET]: Zeiger auf vertrauenswürdige CMK-Pfade wird festgelegt.<br>[GET]: Zeiger auf aktuelle vertrauenswürdige CMK-Pfade wird abgerufen.|
 
 ### <a name="statement-attributes"></a>Anweisungsattribute
 
 |Name|BESCHREIBUNG|  
 |----------|-----------------|  
-|`SQL_SOPT_SS_COLUMN_ENCRYPTION`|`SQL_CE_DISABLED` (0): Always Encrypted ist für die Anweisung deaktiviert. <br>`SQL_CE_RESULTSETONLY` (1): Nur Entschlüsselung. Resultsets und Rückgabewerte werden entschlüsselt, und Parameter werden nicht verschlüsselt. <br>`SQL_CE_ENABLED` (3): Always Encrypted ist aktiviert und wird für Parameter und Ergebnisse verwendet.|
+|`SQL_SOPT_SS_COLUMN_ENCRYPTION`|`SQL_CE_DISABLED` (0): Always Encrypted ist für die Anweisung deaktiviert. <br>`SQL_CE_RESULTSETONLY` (1): Nur Entschlüsselung. Resultsets und Rückgabewerte werden entschlüsselt, Parameter werden nicht verschlüsselt. <br>`SQL_CE_ENABLED` (3): Always Encrypted ist aktiviert und wird für Parameter und Ergebnisse verwendet.|
 
 ### <a name="descriptor-fields"></a>Deskriptorfelder
 

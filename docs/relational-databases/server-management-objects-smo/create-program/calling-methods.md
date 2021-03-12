@@ -17,12 +17,12 @@ ms.assetid: c88d5c5f-9ff0-4f84-b2b6-24c6b90fa15e
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b07761711e38e1a8446550408a73e4b1f239b3d7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ef9906590a509f05a6ef23153e273a98ff687d89
+ms.sourcegitcommit: f10f0d604be1dce6c600a92aec4c095e7b52e19c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97416673"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770558"
 ---
 # <a name="calling-methods"></a>Aufrufen von Methoden
 [!INCLUDE [SQL Server ASDB, ASDBMI, ASDW ](../../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
@@ -64,9 +64,8 @@ Database db;
 db = new Database(srv, "Test_SMO_Database");   
 //Call the Create method to create the database on the instance of SQL Server.   
 db.Create();   
+}
 ```  
-  
- }  
   
 ## <a name="using-an-smo-method-with-a-parameter-in-visual-basic"></a>Verwenden einer SMO-Methode mit einem Parameter in Visual Basic  
  Das <xref:Microsoft.SqlServer.Management.Smo.Table>-Objekt verfügt über eine Methode mit dem Namen <xref:Microsoft.SqlServer.Management.Smo.Table.RebuildIndexes%2A>. Diese Methode benötigt einen numerischen Parameter, der **FillFactor** angibt.  

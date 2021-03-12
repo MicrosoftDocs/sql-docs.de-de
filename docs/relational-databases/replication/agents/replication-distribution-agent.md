@@ -17,12 +17,12 @@ ms.assetid: 7b4fd480-9eaf-40dd-9a07-77301e44e2ac
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-current||>=sql-server-2016
-ms.openlocfilehash: 71782c95201c224bdd40624e23f529b01d892f22
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 729fcb2bdd1feccfb80d7b591fe96eeb38c23933
+ms.sourcegitcommit: 98acedd435aecfda1b3c4c23d3f0c3c1a12682a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475941"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102532352"
 ---
 # <a name="replication-distribution-agent"></a>Replikationsverteilungs-Agent
 [!INCLUDE[sql-asdb](../../../includes/applies-to-version/sql-asdb.md)]
@@ -208,7 +208,9 @@ distrib [-?]
   
  Wenn an der Quelle keine replizierte Transaktion vorhanden ist, sendet der Agent eine entsprechende Meldung an den Verteiler. Mit dieser Option wird angegeben, wie lange der Agent wartet, bevor eine weitere Meldung gesendet wird, dass keine Transaktion vorhanden ist. Agents melden immer, dass keine Transaktion vorhanden ist, wenn sie feststellen, dass an der Quelle keine Transaktionen verfügbar sind, nachdem zuvor replizierte Transaktionen verarbeitet wurden. Der Standardwert ist 60 Sekunden.  
 
-**-MultiSubnetFailover** gibt an, ob die MultiSubnetFailover-Eigenschaft aktiviert ist. Wenn Ihre Anwendung eine Verbindung mit einer Always On-Verfügbarkeitsgruppe in unterschiedlichen Subnetzen herstellt, ermöglicht die Festlegung von „MultiSubnetFailover“ auf TRUE eine schnellere Erkennung des (derzeit) aktiven Servers und eine schnellere Verbindung mit diesem.
+**-MultiSubnetFailover** gibt an, ob die MultiSubnetFailover-Eigenschaft aktiviert ist. Wenn Ihre Anwendung eine Verbindung mit einer Always On-Verfügbarkeitsgruppe in unterschiedlichen Subnetzen herstellt, ermöglicht die Festlegung von „MultiSubnetFailover“ auf TRUE eine schnellere Erkennung des (derzeit) aktiven Servers und eine schnellere Verbindung mit diesem.   
+  **Gilt für**: [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] (ab [!INCLUDE [sssql19-md](../../../includes/sssql19-md.md)]).  
+
   
  **-OledbStreamThreshold** _oledb_stream_threshold_  
  Gibt die Mindestgröße in Bytes für BLOB-Daten (Binary Large Object) an, ab der die Daten als Datenstrom gebunden werden. Zur Verwendung dieses Parameters müssen Sie **-UseOledbStreaming** angeben. Die Werte können zwischen 400 und1048576 Bytes liegen. Der Standardwert beträgt 16384 Bytes.  

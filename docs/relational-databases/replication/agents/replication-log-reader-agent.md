@@ -17,12 +17,12 @@ ms.assetid: 5487b645-d99b-454c-8bd2-aff470709a0e
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: f5e716be586d7fb152a3c229cc016e349d57c99b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 58e9ed82d9518d423001342fa288e2c7aba1f5bf
+ms.sourcegitcommit: 98acedd435aecfda1b3c4c23d3f0c3c1a12682a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97467351"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102532342"
 ---
 # <a name="replication-log-reader-agent"></a>Replikationsprotokolllese-Agent
 [!INCLUDE[sql-asdbmi](../../../includes/applies-to-version/sql-asdbmi.md)]
@@ -142,7 +142,8 @@ logread [-?]
   
  Wenn an der Quelle keine replizierte Transaktion vorhanden ist, sendet der Agent eine entsprechende Meldung an den Verteiler. Mit dieser Option wird angegeben, wie lange der Agent wartet, bevor eine weitere Meldung gesendet wird, dass keine Transaktion vorhanden ist. Agents melden immer, dass keine Transaktion vorhanden ist, wenn sie feststellen, dass an der Quelle keine Transaktionen verfügbar sind, nachdem zuvor replizierte Transaktionen verarbeitet wurden. Der Standardwert ist 60 Sekunden.  
  
- **-MultiSubnetFailover** [**0**\|**1**] gibt an, ob die MultiSubnetFailover-Eigenschaft aktiviert ist. Wenn Ihre Anwendung eine Verbindung mit einer Always On-Verfügbarkeitsgruppe in unterschiedlichen Subnetzen herstellt, ermöglicht die Festlegung von „MultiSubnetFailover“ auf 1 (TRUE) eine schnellere Erkennung des (derzeit) aktiven Servers und eine schnellere Verbindung mit diesem.
+ **-MultiSubnetFailover** [**0**\|**1**] gibt an, ob die MultiSubnetFailover-Eigenschaft aktiviert ist. Wenn Ihre Anwendung eine Verbindung mit einer Always On-Verfügbarkeitsgruppe in unterschiedlichen Subnetzen herstellt, ermöglicht die Festlegung von „MultiSubnetFailover“ auf 1 (TRUE) eine schnellere Erkennung des (derzeit) aktiven Servers und eine schnellere Verbindung mit diesem.   
+   **Gilt für**: [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] (ab [!INCLUDE [sssql19-md](../../../includes/sssql19-md.md)]).  
   
  **-Output** _output_path_and_file_name_  
  Der Pfad der Agentausgabedatei. Wenn kein Dateiname angegeben ist, wird die Ausgabe an die Konsole gesendet. Wenn eine Datei mit dem angegebenen Namen vorhanden ist, wird die Ausgabe an diese Datei angefügt.  

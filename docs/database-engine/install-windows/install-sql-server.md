@@ -2,7 +2,7 @@
 title: Installationsleitfaden für SQL Server
 description: Hier finden Sie einen Index der Inhalte, die Sie beim Installieren von SQL Server und zugehörigen Komponenten mit Optionen wie dem Installations-Assistenten, der Eingabeaufforderung oder Sysprep unterstützen.
 ms.custom: ''
-ms.date: 11/14/2019
+ms.date: 03/05/2021
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: install
@@ -15,12 +15,12 @@ ms.assetid: 0300e777-d56b-4d10-9c33-c9ebd2489ee5
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 8f123235f263abd05878e7be422c13fcf84825e8
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 4e433c16ba070d59c963589c8bceec371238ca38
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100353088"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464272"
 ---
 # <a name="sql-server-installation-guide"></a>Installationsleitfaden für SQL Server
 
@@ -58,11 +58,11 @@ Ab [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] ist [!INCLUDE[ssnoversio
 Der Downloadspeicherort für [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] ist abhängig von der Edition.
 
 * **SQL Server Enterprise-, Standard- und Express-Editionen** werden für die Verwendung in einer Produktionsumgebung lizenziert. Wenden Sie sich für die Installation von Medien für die Enterprise- und Standard-Editionen an Ihren Softwareanbieter. Informationen zum Kauf und ein Verzeichnis mit Microsoft-Partner finden Sie auf der [Seite für Microsoft-Lizenzierungen](https://www.microsoft.com/licensing/product-licensing/sql-server).
+* Wenn Sie über einen Volumenlizenzvertrag verfügen (z. B. [Enterprise Agreement](https://www.microsoft.com/en-us/licensing/licensing-programs/enterprise)) können Sie Software aus dem [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx)herunterladen.
 * [Aktuelle kostenlose Version](https://www.microsoft.com/sql-server/sql-server-downloads)
 * [Andere kostenlose Versionen](https://www.microsoft.com/evalcenter/evaluate-sql-server)
 
-
-Weitere SQL Server-Komponenten finden Sie hier: 
+Weitere SQL Server-Komponenten finden Sie hier:
 
 * [Alle kumulativen Updates](https://sqlserverbuilds.blogspot.com/)
 * [SQL Server Reporting Services](https://www.microsoft.com/download/details.aspx?id=100122). 

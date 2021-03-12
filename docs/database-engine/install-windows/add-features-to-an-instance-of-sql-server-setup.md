@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 02/05/2021
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: b8b520e3c5f44342970881e3e67b3dbf95ce9853
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 40f6618c8564f0d264076316038274b401fb650a
+ms.sourcegitcommit: 765262cdc6352a5325148afc22fa4f1499fe1aa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101837572"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514897"
 ---
 # <a name="add-features-to-an-instance-of-sql-server-setup"></a>Hinzufügen von Funktionen zu einer Instanz von SQL Server (Setup)
 
@@ -145,6 +145,11 @@ Bevor Sie den Vorgang fortsetzen, lesen Sie die Artikel unter [Planen einer SQL 
 25. Nach der Installation bietet die Seite Abgeschlossen einen Link zur zusammenfassenden Protokolldatei für die Installation und andere wichtige Hinweise. Klicken Sie auf **Schließen**, um die Installation von SQL Server abzuschließen.
 
 26. Starten Sie den Computer neu, falls Sie dazu aufgefordert werden. Nachdem das Setup abgeschlossen ist, sollten Sie unbedingt die vom Installations-Assistenten ausgegebene Meldung lesen. Weitere Informationen finden Sie unter [Lesen und Anzeigen der Setupprotokolldateien von SQL Server](../../database-engine/install-windows/view-and-read-sql-server-setup-log-files.md).
+
+> [!CAUTION]
+> Anwenden von Wartungsupdates
+>
+> Wenn Sie einer vorhandenen Installation von SQL Server Features hinzufügen, wird das jeweilige Feature auf der Versionsebene des Installationsmediums installiert, die jedoch hinter der Versionsebene anderer Features von SQL Server liegen kann. Dies kann zu unerwartetem Verhalten oder Fehlern führen. Nach der Installation des neuen Features muss dieses stets auf dieselbe Versionsebene aktualisiert werden. Installieren Sie bei Bedarf Service Packs (SPs), kumulative Updates (CUs) und/oder allgemeine Vertriebsversionen (General Distribution Releases, GDRs). Informationen zum Ermitteln der Version des Servers und der neuen Features finden Sie unter [Ermitteln von Version, Edition und Updateebene von SQL Server und zugehöriger Komponenten](/troubleshoot/sql/general/determine-version-edition-update-level).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

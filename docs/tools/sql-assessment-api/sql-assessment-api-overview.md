@@ -8,15 +8,17 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 3/3/2021
-ms.openlocfilehash: 7e55abe0d02a9f9deffffdaa7639d911faad1fa3
-ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
+ms.date: 3/10/2021
+ms.openlocfilehash: 34a7ff8c9380a88bb285a6d2e51e57e652f0310d
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102185747"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622825"
 ---
 # <a name="sql-assessment-api"></a>SQL-Bewertungs-API
+
+[!INCLUDE [SQL Server 2012, ASMI, SQL Server on Azure VM, SQL on Linux](../../includes/applies-to-version/sql-asmi-sqlavm-sql-linux.md)]
 
 Die API für die SQL-Bewertung bietet einen Mechanismus, um die Konfiguration Ihrer SQL Server-Instanz nach Best Practices zu bewerten. Die API umfasst einen vordefinierten Regelsatz, der vom SQL Server Team vorgeschlagene Best Practice-Regeln enthält. Dieser Regelsatz wird mit der Veröffentlichung neuer Versionen erweitert, aber gleichzeitig wurde die API mit der Absicht konzipiert, eine hochgradig anpassbare und erweiterbare Lösung bereitzustellen. Benutzer können deshalb die Standardregeln optimieren und eigene Regeln erstellen.
 
@@ -34,11 +36,14 @@ Die API kann verwendet werden, um folgende Systeme zu bewerten:
 
 Die API wird auch von der SQL Server-Bewertungserweiterung für Azure Data Studio (ADS) verwendet.
 
+>[!NOTE]
+>Die API für die SQL-Bewertung bietet eine Bewertungsgrundlage für eine Vielzahl von Bereichen, aber sie wird nicht tief in die Sicherheit integriert. Es wird empfohlen, die [SQL-Sicherheitsrisikobewertung](https://docs.microsoft.com/sql/relational-databases/security/sql-vulnerability-assessment) zu verwenden, um Ihre Datenbanksicherheit proaktiv zu verwenden.
+
 ## <a name="rules"></a>Regeln
 
 Regeln, die gelegentlich auch als Überprüfungen bezeichnet werden, werden in JSON-formatierten Dateien definiert. Das Regelsatzformat erfordert, dass ein Regelsatzname und eine Version angegeben werden. Wenn Sie benutzerdefinierte Regelsätze verwenden, können Sie so leicht erkennen, welche Empfehlungen aus welchem Regelsatz stammen.
 
-Der von Microsoft bereitgestellte Regelsatz ist auf GitHub verfügbar. Weitere Informationen finden Sie im [Repository mit Beispielen](https://aka.ms/sql-assessment-api).
+Der von Microsoft bereitgestellte Regelsatz ist auf GitHub verfügbar. Sie können den [gesamten Regelsatz](https://github.com/microsoft/sql-server-samples/blob/567d49a42d4cf10e4942b19290ab80828b451b77/samples/manage/sql-assessment-api/DefaultRuleset.csv) im [Beispielrepository](https://aka.ms/sql-assessment-api) anzeigen.
 
 ## <a name="sql-assessment-cmdlets-and-associated-extensions"></a>Cmdlets für SQL-Bewertung und zugehörige Erweiterungen
 
@@ -156,10 +161,11 @@ Bestimmte Regeln verfügen über Schwellenwerte, die mit dem aktuellen Wert eine
 
 Sie können Regelsätze bündeln, indem Sie dem Aufruf der API für die SQL-Bewertung mindestens eine JSON-Datei als Parameter hinzufügen. Ihre Organisation kann solche Dateien schreiben oder von einem Drittanbieter erwerben. So können Sie beispielsweise Ihre JSON-Datei, die bestimmte Regeln aus dem Microsoft-Regelsatz deaktiviert, eine weitere JSON-Datei mit nützlichen Regeln für Ihre Umgebung von einem Branchenexperten und danach eine weitere JSON-Datei verwenden, die einige Schwellenwerte in dieser JSON-Datei ändert.
 
-> [!IMPORTANT]  
-> Es wird dringend davon abgeraten, Regelsätze aus nicht vertrauenswürdigen Quellen zu verwenden. Setzen Sie diese erst ein, wenn Sie sie gründlich untersucht und sich davon überzeugt haben, dass ihre Verwendung sicher ist.
+>[!IMPORTANT]
+>Es wird dringend davon abgeraten, Regelsätze aus nicht vertrauenswürdigen Quellen zu verwenden. Setzen Sie diese erst ein, wenn Sie sie gründlich untersucht und sich davon überzeugt haben, dass ihre Verwendung sicher ist.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 * [SQL Server Management Objects (SMO)](../../relational-databases/server-management-objects-smo/overview-smo.md)
-* [PowerShell](../../powershell/download-sql-server-ps-module.md):
+* [PowerShell](../../powershell/download-sql-server-ps-module.md)
+* [Sicherheitsrisikobewertung mit der SQL](https://docs.microsoft.com/sql/relational-databases/security/sql-vulnerability-assessment)

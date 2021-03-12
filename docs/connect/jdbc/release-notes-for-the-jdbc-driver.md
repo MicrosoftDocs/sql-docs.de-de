@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 074f211e-984a-4b76-bb15-ee36f5946f12
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c394eaeb6ec8361dd429b944b128d19a0cf33319
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: b308bd441b063592a39dae710c782aaf826c3071
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101837527"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464788"
 ---
 # <a name="release-notes-for-the-microsoft-jdbc-driver-for-sql-server"></a>Versionshinweise zum Microsoft JDBC-Treiber für SQL Server
 
@@ -34,7 +34,7 @@ Wenn Sie den Treiber in einer anderen Sprache als der für Sie erkannten herunte
 Treiber in einer ZIP-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x40a)  
 Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x40a)  
 
-### <a name="compliance"></a>Kompatibilität
+### <a name="92-compliance"></a>Konformität: 9.2
 
 | Kompatibilitäts-/Konformitätsänderung | Details |
 | :---------------- | :------ |
@@ -43,7 +43,7 @@ Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.c
 | Kompatibel mit dem Java Development Kit (JDK) der Versionen 15.0, 11.0 und 1.8 | Der Microsoft JDBC-Treiber 9.2 für SQL Server ist jetzt nicht nur mit JDK 11.0 und 1.8, sondern auch mit Version 15.0 kompatibel. |
 | &nbsp; | &nbsp; |
 
-### <a name="releases"></a>Releases
+### <a name="92-releases"></a>Releases 9.2
 
 Versionsnummer: 9.2.1  
 Veröffentlichung: 02.03.2021
@@ -66,29 +66,32 @@ Tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid
 Der Microsoft JDBC-Treiber 9.2 für SQL Server ist jetzt nicht nur mit JDK 11.0 und 1.8, sondern auch mit Version 15.0 kompatibel.
 
 ### <a name="added-support-for-azure-active-directory-interactive-authentication"></a>Unterstützung für die interaktive Azure Active Directory-Authentifizierung hinzugefügt
+
 | Zusätzlicher Authentifizierungstyp | Details |
 | :---------- | :------ |
 | Der Microsoft JDBC-Treiber 9.2 für SQL Server unterstützt jetzt die Authentifizierung bei Azure Key Vault über die interaktive Authentifizierung. | Weitere Informationen finden Sie unter [Herstellen einer Verbindung mithilfe der Azure Active Directory-Authentifizierung](../../connect/jdbc/connecting-using-azure-active-directory-authentication.md). |
 | &nbsp; | &nbsp; |
 
 ### <a name="added-support-for-azure-active-directory-service-principal-authentication"></a>Unterstützung der Azure Active Directory-Authentifizierung mit einem Dienstprinzipal hinzugefügt
+
 | Zusätzlicher Authentifizierungstyp | Details |
 | :---------- | :------ |
 | Der Microsoft JDBC-Treiber 9.2 für SQL Server unterstützt jetzt die Authentifizierung bei Azure Key Vault mit der Client-ID und dem Geheimnis einer Dienstprinzipalidentität. | Weitere Informationen finden Sie unter [Herstellen einer Verbindung mithilfe der Azure Active Directory-Authentifizierung](../../connect/jdbc/connecting-using-azure-active-directory-authentication.md). |
 | &nbsp; | &nbsp; |
 
 ### <a name="updated-azure-key-vault-library-to-use-modern-azure-key-vault-library"></a>Update auf die Verwendung einer moderneren Azure Key Vault-Bibliothek
+
 | Bibliotheksänderungen für Azure Key Vault | Details |
 | :------------------- | :------ |
 | Der Microsoft JDBC-Treiber 9.2 wurde von der Azure Key Vault-Bibliothek der früheren Generation und von ADAL-Bibliotheken auf die moderneren Varianten von Azure Key Vault und der Azure-Identität migriert. | **ABHÄNGIGKEITSÄNDERUNG:** Achten Sie darauf, Ihre Anwendungsabhängigkeiten zu aktualisieren, wenn Sie die Azure Active Directory-Authentifizierung oder Azure Key Vault nutzen. Weitere Informationen finden Sie in den Abhängigkeitsanforderungen beim [Arbeiten mit dem Azure Key Vault-Anbieter](feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md#working-with-the-azure-key-vault-provider) oder der [Azure Active Directory-Authentifizierung](feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md#working-with-azure-active-directory-authentication) |
 | &nbsp; | &nbsp; |
 
 ### <a name="enabled-usebulkcopyforbatchinsert-for-non-azure-synapse-analytics-servers"></a>useBulkCopyForBatchInsert für Server außerhalb von Azure Synapse Analytics aktiviert
+
 | Änderungen an useBulkCopyForBatchInsert für Server außerhalb von Azure Synapse Analytics | Details |
 | :------------------- | :------ |
 | Der Microsoft JDBC-Treiber 9.2 erlaubt jetzt die API für das Massenkopieren bei Batcheinfügungsvorgängen für Server, die nicht in Azure Synapse Analytics gehostet werden. | Weitere Informationen finden Sie unter [Verwenden der API für das Massenkopieren für Batcheinfügungsvorgänge](../../connect/jdbc/use-bulk-copy-api-batch-insert-operation.md). |
 | &nbsp; | &nbsp; |
-
 
 ## <a name="previous-releases"></a>Vorgängerversionen
 
@@ -104,7 +107,7 @@ Wenn Sie den Treiber in einer anderen Sprache als der für Sie erkannten herunte
 Treiber in einer ZIP-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x40a)  
 Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x40a)  
 
-### <a name="compliance"></a>Kompatibilität
+### <a name="84-compliance"></a>Konformität: 8.4
 
 | Kompatibilitäts-/Konformitätsänderung | Details |
 | :---------------- | :------ |
@@ -113,7 +116,7 @@ Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.c
 | Kompatibel mit dem Java Development Kit (JDK), Version 14.0, 11.0 und 1.8 | Der Microsoft JDBC-Treiber 8.4 für SQL Server ist jetzt zusätzlich zum JDK 11.0 (Java Development Kit) und 1.8 mit der JDK-Version 14.0 kompatibel. |
 | &nbsp; | &nbsp; |
 
-### <a name="releases"></a>Releases
+### <a name="84-releases"></a>Releases 8.4
 
 Versionsnummer: 8.4.1  
 Veröffentlichung: 27. August 2020  
@@ -175,7 +178,7 @@ Wenn Sie den Treiber in einer anderen Sprache als der für Sie erkannten herunte
 Treiber in einer ZIP-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x40a)  
 Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x40a)  
 
-### <a name="compliance"></a>Kompatibilität
+### <a name="82-compliance"></a>Konformität: 8.2
 
 | Kompatibilitäts-/Konformitätsänderung | Details |
 | :---------------- | :------ |
@@ -184,7 +187,7 @@ Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.c
 | Kompatibel mit dem Java Development Kit (JDK), Version 13.0, 11.0 und 1.8 | Der Microsoft JDBC-Treiber 8.2 für SQL Server ist jetzt zusätzlich zu JDK 11.0 und 1.8 mit der JDK-Version 13.0 (Java Development Kit) kompatibel. |
 | &nbsp; | &nbsp; |
 
-### <a name="releases"></a>Releases
+### <a name="82-releases"></a>Releases 8.2
 
 Versionsnummer: 8.2.2  
 Veröffentlichung: 24. März 2020  
@@ -231,7 +234,7 @@ Der Microsoft JDBC-Treiber 8.2 für SQL Server ist jetzt zusätzlich zu JDK 11
 | Die DLL-Datei wurde auch in das Maven-Repository hochgeladen, um den Zugriff zu vereinfachen. | Öffnen Sie [diese Seite](https://search.maven.org/artifact/com.microsoft.sqlserver/mssql-jdbc_auth). |
 | &nbsp; | &nbsp; |
 
-### <a name="known-issues"></a>Bekannte Probleme
+### <a name="82-known-issues"></a>Bekannte Probleme: 8.2
 
 | Bekannte Probleme | Details |
 | :----------- | :------ |
@@ -250,7 +253,7 @@ Wenn Sie den Treiber in einer anderen Sprache als der für Sie erkannten herunte
 Treiber in einer selbstextrahierenden Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x40a)  
 Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x40a)  
 
-### <a name="compliance"></a>Kompatibilität
+### <a name="74-compliance"></a>Konformität: 7.4
 
 | Kompatibilitäts-/Konformitätsänderung | Details |
 | :---------------- | :------ |
@@ -259,7 +262,7 @@ Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.c
 | Kompatibel mit dem Java Development Kit (JDK), Version 12.0, 11.0 und 1.8. | Der Microsoft JDBC-Treiber 7.4 für SQL Server ist jetzt zusätzlich zu JDK 11.0 und 1.8 mit der JDK-Version 12.0 (Java Development Kit) kompatibel. |
 | &nbsp; | &nbsp; |
 
-### <a name="releases"></a>Releases
+### <a name="74-releases"></a>Releases 7.4
 
 Versionsnummer: 7.4.1  
 Veröffentlichung: 2. August 2019  
@@ -299,7 +302,7 @@ Der Microsoft JDBC-Treiber 7.4 für SQL Server ist jetzt zusätzlich zu JDK 11.0
 | Zusätzliche Details. | Informationen hierzu finden Sie unter [Featureabhängigkeiten des Microsoft JDBC-Treibers für SQL Server](feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md). |
 | &nbsp; | &nbsp; |
 
-### <a name="known-issues"></a>Bekannte Probleme
+### <a name="74-known-issues"></a>Bekannte Probleme: 7.4
 
 | Bekannte Probleme | Details |
 | :----------- | :------ |
@@ -319,7 +322,7 @@ Wenn Sie den Treiber in einer anderen Sprache als der für Sie erkannten herunte
 Treiber in einer selbstextrahierenden Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x40a)  
 Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x804) | [Chinesisch (traditionell)](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x404) | [Englisch (Vereinigte Staaten)](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x409) | [Französisch](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x40c) | [Deutsch](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x407) | [Italienisch](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x410) | [Japanisch](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x411) | [Koreanisch](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x412) | [Portugiesisch (Brasilien)](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x416) | [Russisch](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x419) | [Spanisch](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x40a)  
 
-### <a name="compliance"></a>Kompatibilität
+### <a name="72-compliance"></a>Konformität: 7.2
 
 | Kompatibilitäts-/Konformitätsänderung | Details |
 | :---------------- | :------ |
@@ -328,7 +331,7 @@ Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.c
 | Kompatibel mit Java Development Kit (JDK), Version 11.0, zusätzlich zu JDK 1.8. | Der Microsoft JDBC-Treiber 7.2 für SQL Server ist jetzt mit Java Development Kit (JDK) Version 11.0 zusätzlich zu JDK 1.8 kompatibel. |
 | &nbsp; | &nbsp; |
 
-### <a name="releases"></a>Releases
+### <a name="72-releases"></a>Releases 7.2
 
 Versionsnummer: 7.2.2  
 Veröffentlichung: 16. April 2019  
@@ -387,7 +390,7 @@ Veröffentlichung: 31. Januar 2019
 | Zusätzliche Details. | Informationen hierzu finden Sie unter [Featureabhängigkeiten des Microsoft JDBC-Treibers für SQL Server](feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md). |
 | &nbsp; | &nbsp; |
 
-### <a name="known-issues"></a>Bekannte Probleme
+### <a name="72-known-issues"></a>Bekannte Probleme: 7.2
 
 | Bekannte Probleme | Details |
 | :----------- | :------ |
@@ -504,7 +507,7 @@ Der Treiber unterstützt jetzt die Datentypen `datetime` und `smallDatetime` bei
 
 Der JDBC-Treiber unterstützt jetzt `sql_variant`-Datentypen für die Verwendung mit SQL Server. Der Datentyp `sql_variant` wird auch in Verbindung mit Features wie TVPs und Massenkopieren mit folgenden Einschränkungen unterstützt:
 
-* **Für Datumswerte**:
+- **Für Datumswerte**:
 
   Wenn Sie einen TVP zum Auffüllen einer Tabelle verwenden, die gespeicherte `datetime`-, `smalldatetime`- oder `date`-Werte in einer `sql_variant`-Spalte enthält, funktioniert das Aufrufen der `getDateTime()`-, `getSmallDateTime()`- oder `getDate()`-Methode für das Resultset nicht, und es wird die folgende Ausnahme ausgelöst:
 
@@ -512,7 +515,7 @@ Der JDBC-Treiber unterstützt jetzt `sql_variant`-Datentypen für die Verwendung
 
   Verwenden Sie als Problemumgehung stattdessen die `getString()`- oder `getObject()`-Methode.
 
-* **Verwenden von TVP mit sql_variant für Nullwerte**:
+- **Verwenden von TVP mit sql_variant für Nullwerte**:
   
   Wenn Sie einen TVP zum Auffüllen einer Tabelle verwenden und einen NULL-Wert an den Spaltentyp `sql_variant` senden, tritt eine Ausnahme auf. Das Einfügen eines NULL-Werts mit dem Spaltentyp `sql_variant` in TVPs wird derzeit nicht unterstützt.
 
@@ -542,7 +545,7 @@ Treiber in einer tar.gz-Datei: [Chinesisch (vereinfacht)](https://go.microsoft.c
 
 Microsoft JDBC-Treiber 6.2 für SQL Server ist mit den JDBC-Spezifikationen 4.1 und 4.2 vollständig konform. Die JAR-Dateien im 6.2-Paket sind gemäß der Java-Versionskompatibilität benannt. Beispielsweise sollte die Datei „mssql-jdbc-6.2.2.jre8.jar“ aus dem 6.2-Paket mit Java 8 verwendet werden.
 
-### <a name="releases"></a>Releases
+### <a name="62-releases"></a>Releases 6.2
 
 Versionsnummer: 6.2.2  
 Veröffentlichung: 3. Oktober 2017  
@@ -578,16 +581,16 @@ Der JDBC-Treiber kann jetzt auf JVMs verwendet werden, die im Federal Informatio
 
 Der JDBC-Treiber bietet jetzt Unterstützung für Folgendes:
 
-* Prinzipal/Kennwort-Methode für Anwendungen, bei denen die Kerberos-Konfiguration nicht geändert werden kann oder kein neues Token oder keine Schlüsseltabelle abgerufen werden kann. Diese Methode kann für die Authentifizierung bei einer SQL Server-Instanz verwendet werden, die nur die Kerberos-Authentifizierung zulässt.
-* Bereichsübergreifende Authentifizierung mit integrierter Kerberos-Authentifizierung ohne explizites Festlegen des Server-SPNs. Der Treiber berechnet jetzt automatisch den Bereich, auch wenn er nicht angegeben ist.
-* Eingeschränkte Kerberos-Delegierung durch das Akzeptieren von Benutzeranmeldeinformationen mit Identitätswechsel als Objekt mit GSS-Anmeldeinformationen über die Datenquelle. Diese Anmeldeinformationen mit Identitätswechsel werden dann zum Herstellen einer Kerberos-Verbindung verwendet.
+- Prinzipal/Kennwort-Methode für Anwendungen, bei denen die Kerberos-Konfiguration nicht geändert werden kann oder kein neues Token oder keine Schlüsseltabelle abgerufen werden kann. Diese Methode kann für die Authentifizierung bei einer SQL Server-Instanz verwendet werden, die nur die Kerberos-Authentifizierung zulässt.
+- Bereichsübergreifende Authentifizierung mit integrierter Kerberos-Authentifizierung ohne explizites Festlegen des Server-SPNs. Der Treiber berechnet jetzt automatisch den Bereich, auch wenn er nicht angegeben ist.
+- Eingeschränkte Kerberos-Delegierung durch das Akzeptieren von Benutzeranmeldeinformationen mit Identitätswechsel als Objekt mit GSS-Anmeldeinformationen über die Datenquelle. Diese Anmeldeinformationen mit Identitätswechsel werden dann zum Herstellen einer Kerberos-Verbindung verwendet.
 
 ### <a name="added-timeouts"></a>Zusätzliche Timeouts
 
 Der JDBC-Treiber unterstützt jetzt die folgenden konfigurierbare Timeouts. Sie können sie basierend auf den Anforderungen Ihrer Anwendung ändern.
 
-* Abfragetimeout zum Steuern der Anzahl von Sekunden, die beim Ausführen einer Abfrage verstreichen sollen, bevor ein Timeout auftritt.
-* Sockettimeout zum Angeben der Anzahl von Millisekunden, die verstreichen sollen, bevor ein Timeout für einen Socketlesevorgang oder eine Socketannahme auftritt.
+- Abfragetimeout zum Steuern der Anzahl von Sekunden, die beim Ausführen einer Abfrage verstreichen sollen, bevor ein Timeout auftritt.
+- Sockettimeout zum Angeben der Anzahl von Millisekunden, die verstreichen sollen, bevor ein Timeout für einen Socketlesevorgang oder eine Socketannahme auftritt.
 
 ## <a name="61"></a>6.1
 

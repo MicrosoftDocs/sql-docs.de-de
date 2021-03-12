@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 00179314-f23e-47cb-a35c-da6f180f86d3
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: fdf81fde342a3c7f0e250d467e7b486d753a8588
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: c6ed1f27444b86ba79fd6c3178bc0029624b05d2
+ms.sourcegitcommit: ece104654ac14e10d32e59f45916fa944665f4df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85630819"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102474894"
 ---
 # <a name="database-snapshots-sql-server"></a>Datenbank-Momentaufnahmen (SQL Server)
 
@@ -52,7 +52,7 @@ Eine Datenbankmomentaufnahme ist eine schreibgeschützte statische Sicht einer [
 ##  <a name="feature-overview"></a><a name="FeatureOverview"></a> Übersicht über die Funktionen  
  Datenbankmomentaufnahmen arbeiten auf der Ebene der Datenseiten. Bevor eine Seite der Quellendatenbank zum ersten Mal geändert wird, wird die Originalseite der Quellendatenbank auf die Momentaufnahme kopiert. In der Momentaufnahme wird die Originalseite gespeichert, wodurch die Datensätze in dem Zustand erhalten werden, wie sie zum Zeitpunkt der Momentaufnahmeerstellung vorhanden waren. Der gleiche Vorgang wird für jede Seite wiederholt, die zum ersten Mal geändert wird. Für den Benutzer scheint sich eine Datenbankmomentaufnahme niemals zu ändern, weil von Lesevorgängen auf einer Datenbankmomentaufnahme immer auf die Originaldatenseiten zugegriffen wird, unabhängig von deren Speicherort.  
   
- Um die kopierten Originalseiten zu speichern, wird von der Momentaufnahme mindestens eine *Sparsedatei*verwendet. Ursprünglich ist eine Sparsedatei im Wesentlichen eine leere Datei, die keine Benutzerdaten enthält und für die noch kein Speicherplatz für Benutzerdaten auf einem Speichermedium zugeordnet worden ist. Je mehr Seiten in der Quellendatenbank aktualisiert werden, desto größer wird die Datei. Die folgende Abbildung veranschaulicht die Auswirkungen zweier unterschiedlicher Updatemuster auf die Größe einer Momentaufnahme. Das Updatemuster A spiegelt eine Umgebung wider, in der nur 30 Prozent der Originalseiten während der Lebensspanne der Momentaufnahme aktualisiert werden. Das Updatemuster B spiegelt eine Umgebung wider, in der 80 Prozent der Originalseiten während der Lebensspanne der Momentaufnahme aktualisiert werden.  
+ Um die kopierten Originalseiten zu speichern, wird von der Momentaufnahme mindestens eine *Sparsedatei* verwendet. Ursprünglich ist eine Sparsedatei im Wesentlichen eine leere Datei, die keine Benutzerdaten enthält und für die noch kein Speicherplatz für Benutzerdaten auf einem Speichermedium zugeordnet worden ist. Je mehr Seiten in der Quellendatenbank aktualisiert werden, desto größer wird die Datei. Die folgende Abbildung veranschaulicht die Auswirkungen zweier unterschiedlicher Updatemuster auf die Größe einer Momentaufnahme. Das Updatemuster A spiegelt eine Umgebung wider, in der nur 30 Prozent der Originalseiten während der Lebensspanne der Momentaufnahme aktualisiert werden. Das Updatemuster B spiegelt eine Umgebung wider, in der 80 Prozent der Originalseiten während der Lebensspanne der Momentaufnahme aktualisiert werden.  
   
  ![Alternative Updatemuster und Momentaufnahmegrößen](../../relational-databases/databases/media/dbview-04.gif "Alternative Updatemuster und Momentaufnahmegrößen")  
   
@@ -137,7 +137,7 @@ Eine Datenbankmomentaufnahme ist eine schreibgeschützte statische Sicht einer [
   
 -   Die Quelldatenbank kann nicht als skalierbare freigegebene Datenbank konfiguriert werden.  
 
--   Die Quelldatenbank darf keine MEMORY_OPTIMIZED_DATA-Dateigruppe enthalten.  Weitere Informationen finden Sie unter [Nicht unterstützte SQL Server-Features für In-Memory OLTP](../../relational-databases/in-memory-oltp/unsupported-sql-server-features-for-in-memory-oltp.md).
+-   Vor SQL Server 2019 konnte die Quelldatenbank keine MEMORY_OPTIMIZED_DATA-Dateigruppe enthalten. Die Unterstützung für In-Memory Database-Momentaufnahmen wurde in SQL Server 2019 hinzugefügt.
   
 > [!NOTE]  
 >  Alle Wiederherstellungsmodelle unterstützen Datenbankmomentaufnahmen.  
@@ -167,7 +167,7 @@ Eine Datenbankmomentaufnahme ist eine schreibgeschützte statische Sicht einer [
   
 -   Momentaufnahmen sind schreibgeschützt. Da sie schreibgeschützt sind, können sie nicht aktualisiert werden. Deshalb sind Datenbankmomentaufnahmen nach einer Aktualisierung nicht mehr gültig.  
   
--   Momentaufnahmen der Datenbanken **model**, **master**und **tempdb** sind nicht zulässig.  
+-   Momentaufnahmen der Datenbanken **model**, **master** und **tempdb** sind nicht zulässig.  
   
 -   Sie können die Spezifikationen der Datenbankmomentaufnahmedateien nicht ändern.  
   

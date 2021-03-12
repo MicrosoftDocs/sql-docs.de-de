@@ -10,32 +10,35 @@ ms.topic: conceptual
 ms.reviewer: ''
 ms.author: v-daenge
 author: David-Engel
-ms.openlocfilehash: f407cae7fe7d53a7522e64f0bb26961ebeb4276f
-ms.sourcegitcommit: 8ffc23126609b1cbe2f6820f9a823c5850205372
+ms.openlocfilehash: c49d81783f82c41cd95e25b137807b006e5b2ad1
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81632090"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464706"
 ---
 # <a name="using-always-encrypted-with-secure-enclaves-with-the-php-drivers-for-sql-server"></a>Verwenden von Always Encrypted mit Secure Enclaves mit den PHP-Treibern für SQL Server
+
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
 
 ## <a name="applicable-to"></a>Anwendbar auf
- -   Microsoft-Treiber 5.8.0 für PHP für SQL Server
- 
+
+- Microsoft-Treiber 5.8.0 für PHP für SQL Server
+
 ## <a name="introduction"></a>Einführung
 
-[Always Encrypted mit Secure Enclaves](../../relational-databases/security/encryption/always-encrypted-enclaves.md) ist die zweite Iteration des Features Always Encrypted für SQL Server. Always Encrypted mit Secure Enclaves ermöglicht es Benutzern, umfangreiche Berechnungen mit verschlüsselten Daten durchzuführen, indem eine Secure Enclave erstellt wird. Dabei handelt es sich um einen Bereich des Speichers auf dem Server, in dem verschlüsselte Daten in einer Datenbank entschlüsselt werden, sodass Berechnungen erfolgen können. Die unterstützten Vorgänge umfassen den Vergleich und Musterabgleich mit der `LIKE`-Klausel.
+[Always Encrypted mit Secure Enclaves](../../relational-databases/security/encryption/always-encrypted-enclaves.md) ist die zweite Iteration des Always Encrypted-Features für SQL Server. Always Encrypted mit Secure Enclaves ermöglicht es Benutzern, umfangreiche Berechnungen mit verschlüsselten Daten durchzuführen, indem sie eine Secure Enclave erstellen. Dabei handelt es sich um einen Bereich des Speichers auf dem Server, in dem verschlüsselte Daten in einer Datenbank entschlüsselt werden, sodass Berechnungen erfolgen können. Die unterstützten Vorgänge umfassen den Vergleich und Musterabgleich mit der `LIKE`-Klausel.
 
 ## <a name="enabling-always-encrypted-with-secure-enclaves"></a>Aktivieren von Always Encrypted mit Secure Enclaves
 
-Unterstützung für Always Encrypted mit Secure Enclaves ist in den PHP-Treibern für SQL Server ab 5.8.0 verfügbar. Always Encrypted mit Secure Enclaves erfordert SQL Server 2019 oder höher und mindestens Version 17.4 des ODBC-Treibers. Weitere Einzelheiten zu den allgemeinen Anforderungen für Always Encrypted mit den PHP-Treibern für SQL Server finden Sie [hier](using-always-encrypted-php-drivers.md).
+Unterstützung für Always Encrypted mit Secure Enclaves ist mit den PHP-Treibern für SQL Server ab 5.8.0 verfügbar. Always Encrypted mit Secure Enclaves erfordert SQL Server 2019 oder höher und mindestens Version 17.4 des ODBC-Treibers. Weitere Einzelheiten zu den allgemeinen Anforderungen für Always Encrypted mit den PHP-Treibern für SQL Server finden Sie [hier](using-always-encrypted-php-drivers.md).
 
-Always Encrypted mit Secure Enclaves gewährleistet die Sicherheit verschlüsselter Daten durch den Nachweis der Enclave, d. h. die Bestätigung der Enclave durch einen externen Nachweisdienst. Um Secure Enclaves verwenden zu können, muss das Schlüsselwort `ColumnEncryption` den Nachweistyp und das Protokoll zusammen mit den zugehörigen Nachweisdaten, getrennt durch ein Komma, identifizieren. Version 17.4 des ODBC-Treibers unterstützt nur virtualisierungsbasierte Sicherheit (VBS) und das Protokoll „Host-Überwachungsdienst“ (Host Guardian Service, HGS) für den Enclave-Typ und das Protokoll. Die zugehörigen Nachweisdaten sind die URL des Nachweisservers. Daher wird Folgendes der Verbindungszeichenfolge hinzugefügt:
+Always Encrypted mit Secure Enclaves gewährleistet die Sicherheit verschlüsselter Daten durch den Nachweis der Enclave, d. h. die Bestätigung der Enclave durch einen externen Nachweisdienst. Um Secure Enclaves verwenden zu können, muss das Schlüsselwort `ColumnEncryption` den Nachweistyp und das Protokoll zusammen mit den zugehörigen Nachweisdaten, getrennt durch ein Komma, identifizieren. Version 17.4 des ODBC-Treibers unterstützt nur virtualisierungsbasierte Sicherheit (VBS) und das Protokoll „Host-Überwachungsdienst“ (Host Guardian Service, HGS) für den Enclave-Typ und das Protokoll. Die zugehörigen Nachweisdaten sind die URL des Nachweisservers. Daher wird die folgende Einstellung der Verbindungszeichenfolge hinzugefügt:
 
 ```
 ColumnEncryption=VBS-HGS,http://attestationserver.mydomain/Attestation
 ```
+
 Wenn das Protokoll nicht stimmt, erkennt der Treiber dies nicht. Die Verbindung schlägt fehl, ohne dass ein Fehler zurückgegeben wird. Wenn nur die Nachweis-URL nicht stimmt, wird die Verbindung erfolgreich hergestellt und ein Fehler ausgelöst, sobald eine Enclave-fähige Berechnung versucht wird. Andernfalls ist das Verhalten jedoch identisch mit dem ursprünglichen Always Encrypted-Verhalten. Durch Festlegen von `ColumnEncryption` auf `enabled` wird die normale Always Encrypted-Funktionalität bereitgestellt. Der Versuch eines Enclave-fähigen Vorgangs führt jedoch zu einem Fehler.
 
 Vollständige Einzelheiten zur Konfiguration Ihrer Umgebung zur Unterstützung von Always Encrypted mit Secure Enclaves, einschließlich Einrichtung des Host-Überwachungsdiensts und der Erstellung der erforderlichen Verschlüsselungsschlüssel, finden Sie [hier](../../relational-databases/security/encryption/configure-always-encrypted-enclaves.md).
@@ -50,9 +53,10 @@ In den folgenden Beispielen, eines für SQLSRV und eines für PDO_SQLSRV, wird e
 - Wenn die Musterabgleichzeichenfolge als Parameter für den Abgleich der Typen char und nchar übergeben wird, muss der an `sqlsrv_query` oder `sqlsrv_prepare` übergebene `SQLSRV_SQLTYPE_*` die Länge der abzugleichenden Zeichenfolge und nicht die Größe der Spalte angeben. Der Grund ist, dass die Typen char und nchar am Ende der Zeichenfolge Leerzeichen auffüllen. Wenn Sie z. B. die Zeichenfolge `%abc%` mit einer char(10)-Spalte abgleichen, geben Sie `SQLSRV_SQLTYPE_CHAR(5)` an. Wenn Sie stattdessen `SQLSRV_SQLTYPE_CHAR(10)` angeben, gleicht die Abfrage `%abc%     ` (mit fünf angefügten Leerzeichen) ab. Alle Daten in der Spalte mit weniger als fünf angefügten Leerzeichen stimmen nicht überein (daher würde `abcdef` nicht mit `%abc%` übereinstimmen, da vier vorhanden sind). Verwenden Sie bei Unicode-Zeichenfolgen die Funktionen `mb_strlen` oder `iconv_strlen`, um die Anzahl der Zeichen abzurufen.
 - Die PDO-Schnittstelle erlaubt nicht die Angabe der Länge eines Parameters. Geben Sie stattdessen in `PDOStatement::bindParam` die Länge 0 oder `null` an. Wenn die Länge explizit auf einen anderen Wert festgelegt wird, wird der Parameter als Ausgabeparameter behandelt.
 - Der Musterabgleich funktioniert in Always Encrypted nicht für Typen, die keine Zeichenfolgen sind.
-- Auf eine Fehlerüberprüfung wird aus Gründen der Übersichtlichkeit verzichtet. 
+- Auf eine Fehlerüberprüfung wird aus Gründen der Übersichtlichkeit verzichtet.
 
-Es folgen allgemeine Daten für beide Beispiele:
+Die folgenden Daten gelten für beide Beispiele:
+
 ```php
 <?php
 // Data for testing - integer, datetime2, char, nchar, varchar, and nvarchar
@@ -101,7 +105,9 @@ $encryptQuery = " ALTER TABLE $myTable
                   ALTER DATABASE SCOPED CONFIGURATION CLEAR PROCEDURE_CACHE;";
 ?>
 ```
+
 ### <a name="sqlsrv"></a>SQLSRV
+
 ```php
 <?php
 // Specify Azure Key Vault credentials using the KeyStoreAuthentication, KeyStorePrincipalId, and KeyStoreSecret keywords
@@ -235,6 +241,7 @@ function getResults($stmt)
 ```
 
 ### <a name="pdo_sqlsrv"></a>PDO_SQLSRV
+
 ```php
 <?php
 // Specify Azure Key Vault credentials using the KeyStoreAuthentication, KeyStorePrincipalId, and KeyStoreSecret keywords
@@ -361,7 +368,9 @@ function getResults($stmt)
 }
 ?>
 ```
+
 Ausgabe:
+
 ```
 Test comparisons:
 1
@@ -390,9 +399,10 @@ zyxwv
 㬚㔈♠既
 㛜ꆶ㕸㔈♠既ꁺꖁ㓫ޘ갧ᛄ
 ```
-## <a name="see-also"></a>Weitere Informationen  
+
+## <a name="see-also"></a>Weitere Informationen
+
 [Programmierhandbuch für den PHP-SQL-Treiber](programming-guide-for-php-sql-driver.md)  
 [API-Referenz für den SQLSRV-Treiber](sqlsrv-driver-api-reference.md)  
 [API-Referenz für den PDO_SQLSRV-Treiber](pdo-sqlsrv-driver-reference.md)  
 [Verwendung von Always Encrypted mit den PHP-Treibern für SQL Server](using-always-encrypted-php-drivers.md)
-  

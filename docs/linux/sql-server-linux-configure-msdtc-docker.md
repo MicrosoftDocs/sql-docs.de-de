@@ -8,12 +8,12 @@ ms.date: 11/04/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: e0d007379d7213e1d455a7bac675c4df7cf3c343
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: f6cc1ad3c66ae7f4ec1817af3bcaa3934a1858ef
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100349130"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622894"
 ---
 # <a name="how-to-use-distributed-transactions-with-sql-server-on-docker"></a>Vorgehensweise: Verwenden verteilter Transaktionen mit SQL Server unter Docker
 
@@ -100,8 +100,8 @@ sudo ufw allow from any to any port 135 proto tcp
 Im folgenden Beispiel wird gezeigt, wie dies unter Red Hat Enterprise Linux (RHEL) durchgeführt werden kann:
 
 ```bash
-sudo firewall-cmd --zone=public --add-port=51999/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=51433/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=51000/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=135/tcp --permanent
 sudo firewall-cmd --reload
 ```

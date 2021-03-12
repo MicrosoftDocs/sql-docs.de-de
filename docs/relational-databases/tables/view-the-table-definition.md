@@ -1,8 +1,8 @@
 ---
 description: Anzeigen der Tabellendefinition
-title: Anzeigen der Tabellendefinition | Microsoft-Dokumentation
+title: Anzeigen der Tabellendefinition
 ms.custom: ''
-ms.date: 03/14/2017
+ms.date: 03/09/2021
 ms.prod: sql
 ms.prod_service: table-view-index, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
@@ -13,16 +13,15 @@ helpviewer_keywords:
 - displaying table properties
 - tables [SQL Server], properties
 - viewing table properties
-ms.assetid: 1865fb7c-f480-4100-9007-df5364cd002a
 author: stevestein
 ms.author: sstein
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 8eca47edc4d9f7e5a755d271f1d9306ff646ddf5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 49a0a836cb2e61bef9b4edb280685392f62544ec
+ms.sourcegitcommit: 98acedd435aecfda1b3c4c23d3f0c3c1a12682a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99195777"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102532334"
 ---
 # <a name="view-the-table-definition"></a>Anzeigen der Tabellendefinition
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa-pdw.md)]
@@ -64,14 +63,26 @@ ms.locfileid: "99195777"
   
 2.  Klicken Sie in der Standardleiste auf **Neue Abfrage**.  
   
-3.  Kopieren Sie das folgende Beispiel, fügen Sie es in das Abfragefenster ein, und klicken Sie auf **Ausführen**. In diesem Beispiel werden alle Spalten der `sys.tables` -Katalogsicht für das angegebene Objekt zurückgegeben.  
+3.  Kopieren Sie das folgende Beispiel, fügen Sie es in das Abfragefenster ein, und klicken Sie auf **Ausführen**. Im Beispiel wird die gespeicherte Systemprozedur „sp_help“ ausgeführt, um alle Spalteninformationen für das angegebene Objekt zurückzugeben.  
   
-    ```  
-    SELECT * FROM sys.tables  
-    WHERE object_id = 1973582069;  
+```sql  
+EXEC sp_help 'dbo.mytable';
+```  
+    
+ Weitere Informationen finden Sie unter [sp_help (Transact-SQL)](../../relational-databases/system-stored-procedures/sp-help-transact-sql.md).
+
+ Alternativ dazu können Sie die Systemkatalogsichten auch direkt abfragen, um Objektmetadateninformationen zu Tabellen, Schemas und Spalten zu erhalten. Beispiel:  
   
-    ```  
-  
- Weitere Informationen finden Sie unter [sys.tables &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-tables-transact-sql.md).  
-  
-###  <a name="TsqlExample"></a>  
+```sql
+SELECT s.name, t.name, c.* FROM sys.columns AS c
+INNER JOIN sys.tables AS t ON t.object_id = c.object_id
+INNER JOIN sys.schemas AS s ON s.schema_id = t.schema_id
+WHERE t.object_id = object_id('mytable') AND s.name = 'dbo';
+```
+    
+ Weitere Informationen finden Sie unter 
+
+* [sys.columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-columns-transact-sql.md)    
+* [sys.tables &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-tables-transact-sql.md)    
+* [sys.schemas &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/schemas-catalog-views-sys-schemas.md)     
+

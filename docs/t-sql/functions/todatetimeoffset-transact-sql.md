@@ -25,12 +25,12 @@ ms.assetid: b5fafc08-efd4-4a3b-a0b3-068981a0a685
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 1e9c5827193f80ca6967a2611a288b04bf6783c0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 66b3b48adf60f4898a72e3476aa66530728c9a24
+ms.sourcegitcommit: 98acedd435aecfda1b3c4c23d3f0c3c1a12682a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99158718"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102532362"
 ---
 # <a name="todatetimeoffset-transact-sql"></a>TODATETIMEOFFSET (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -42,20 +42,21 @@ ms.locfileid: "99158718"
 ## <a name="syntax"></a>Syntax  
   
 ```syntaxsql
-TODATETIMEOFFSET ( expression , time_zone )  
+TODATETIMEOFFSET ( datetime_expression , timezoneoffset_expression )  
 ```  
   
 [!INCLUDE[sql-server-tsql-previous-offline-documentation](../../includes/sql-server-tsql-previous-offline-documentation.md)]
 
 ## <a name="arguments"></a>Argumente
- *expression*  
+ *datetime_expression*  
  Ein [Ausdruck](../../t-sql/language-elements/expressions-transact-sql.md), der zu einem [datetime2](../../t-sql/data-types/datetime2-transact-sql.md)-Wert aufgelöst wird.  
   
 > [!NOTE]  
 >  Ein Ausdruck kann nicht vom Typ **text**, **ntext** oder **image** sein, da diese Typen nicht implizit in **varchar** oder **nvarchar** konvertiert werden können.  
   
- *time_zone*  
- Ein Ausdruck, der den Zeitzonenoffset in Minuten (bei einer ganzen Zahl), z.B. -120, oder in Stunden und Minuten (bei einer Zeichenfolge), z.B. „+13:00“ darstellt. Der Bereich liegt zwischen +14 und -14 (in Stunden). Der Ausdruck wird in Ortszeit für die angegebene time_zone interpretiert.  
+ *timezoneoffset_expression*  
+ Ein Ausdruck, der den Zeitzonenoffset in Minuten (bei einer ganzen Zahl), z.B. -120, oder in Stunden und Minuten (bei einer Zeichenfolge), z.B. „+13:00“ darstellt. Der Bereich liegt zwischen +14 und -14 (in Stunden). Für die timezoneoffset_expression-Angabe wird der Ausdruck in Ortszeit interpretiert.  
+
   
 > [!NOTE]  
 >  Wenn der Ausdruck eine Zeichenfolge ist, muss er folgendes Format aufweisen: {+ | -} TZH:THM.  

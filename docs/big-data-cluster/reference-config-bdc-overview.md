@@ -9,12 +9,12 @@ ms.date: 02/11/2021
 ms.topic: reference
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: ecaba704d9c08619f42c5cdf8d726917ccc61b9c
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.openlocfilehash: c7cfe84e9b301ee75d1a031231824e50b0de6b9c
+ms.sourcegitcommit: 765262cdc6352a5325148afc22fa4f1499fe1aa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100343539"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514877"
 ---
 # <a name="sql-server-big-data-clusters-configuration-properties"></a>Konfigurationseigenschaften für SQL Server Big Data-Cluster
 
@@ -25,17 +25,16 @@ Die Konfigurationseinstellungen für Big Data-Cluster können auf den folgenden 
 ## <a name="bdc-cluster-scope-settings"></a>BDC-Einstellungen auf Clusterebene
 Folgende Einstellungen können auf Clusterebene konfiguriert werden.
 
-|Eigenschaft|Optionen|
-| --- | --- |
-|`mssql.telemetry`|`customerfeedback = { true | false }` |
-|`mssql.traceflag`|`traceflag<#> = <####>` |
+| Einstellungsname                                             | Beschreibung                                                                                                                                                                                                                                                                                                             | Typ   | Standardwert          | Nur Bereitstellungszeit | 
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------- | --------- | 
+| bdc.telemetry.customerFeedback                              | Steuert, ob dieser Cluster am Programm zur Verbesserung der Benutzerfreundlichkeit (CEIP) teilnimmt. In diesem Fall werden Daten zur Produktnutzung und Diagnose an Microsoft gesendet. | boolean | true                    |           | 
 
 ## <a name="sql-service-scope-settings"></a>Einstellungen auf der Dienstebene von SQL
 Folgende Einstellungen können auf der Dienstebene von SQL konfiguriert werden.
 
-|Eigenschaft|Optionen|
-| --- | --- |
-|`mssql.language`|`lcid = <language_identifier>` |
+| Einstellungsname                                             | Beschreibung                                                                                                                                                                                                                                                                                                             | Typ   | Standardwert          | Nur Bereitstellungszeit | 
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------- | --------- | 
+| mssql.language.lcid                              | Ändert das SQL Server-Gebietsschema in einen unterstützten Gebietsschemabezeichner (LCID).                                                                                                                                                                                                                                              | INT    | 1033                         |           | 
 
 ## <a name="spark-service-scope-settings"></a>Einstellungen auf der Dienstebene von Spark
 Im Artikel [Konfigurationseigenschaften von Apache Spark und Apache Hadoop (HDFS)](reference-config-spark-hadoop.md) sind alle unterstützten und nicht unterstützten Einstellungen aufgeführt.
@@ -50,75 +49,73 @@ Auf der Dienstebene des Gateways sind keine Einstellungen konfigurierbar. Konfig
 Keine verfügbar
 
 ## <a name="master-pool-resource-scope-settings"></a>Einstellungen auf der Ressourcenebene des Masterpools
-|Eigenschaft|Optionen|
-| --- | --- |
-|`mssql.sqlagent`|`enabled = { true | false }` |
-|`mssql.licensing`|`pid = { Enterprise | Developer }` |
-<!-- |`mssql.collation`|`x = <language_identifier>` | -->
-
-> [!NOTE]
-> Die Änderung der Standardsortierung für eine Instanz von SQL Server ist ein komplexer Vorgang. Dabei muss nicht nur die `mssql.collation`-Einstellung geändert werden. Möglicherweise müssen auch die Benutzerdatenbanken und alle darin enthaltenen Objekte neu erstellt werden. Eine Anleitung hierzu finden Sie unter [Festlegen oder Ändern der Serversortierung](../relational-databases/collations/set-or-change-the-server-collation.md#changing-the-server-collation-in-sql-server)
+| Einstellungsname                                             | Beschreibung                                                                                                                                                                                                                                                                                                             | Typ   | Standardwert          | Nur Bereitstellungszeit | 
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------- | --------- | 
+| mssql.licensing.pid                              | SQL Server-Edition.                                                                                                                                                                                                                                                                                                     | Zeichenfolge | Entwickler                    |           | 
+| mssql.sqlagent.enabled                           | Aktiviert den SQL Server-Agent.                                                                                                                                                                                                                                                                                               | bool   | false                        |           | 
+| mssql.collation                                  | Ändert die SQL Server-Sortierung in eine unterstützte Sortierung.                                                                                                                                                                                                                                                    | Zeichenfolge | SQL_Latin1_General_CP1_CI_AS | true      | 
+| hadr.enabled                                     | Boolescher Wert zum Aktivieren von Verfügbarkeitsgruppen für den SQL Server-Masterpool.                                                                                                                                                                                                                                                    | bool   | false                        | true      | 
+| hadr.leaseDurationInSeconds                      | Zeitlimit für den Leaseablauf für den Hochverfügbarkeits-Agent.                                                                                                                                                                                                                                                                                  | INT    | 30                           |           | 
+| hadr.externalLeasePollingEnabled                 | Boolescher Wert zum Aktivieren der externen Lease-Abruf-API.                                                                                                                                                                                                                                                                        | bool   | true                         | true      | 
+| mssql.telemetry.userRequestedLocalAuditDirectory | Aktiviert die lokale SQL Server-Überwachung. Zusätzlich können Benutzer das Verzeichnis festlegen, in dem die Protokolle für lokale Überwachungen erstellt werden. Das Verzeichnis muss unter „/var/opt/mssql/audit“ liegen.                                                                                                                                                            | Zeichenfolge |                              |           | 
 
 ## <a name="storage-pool-resource-scope-settings"></a>Einstellungen auf der Ressourcenebene des Speicherpools
 Der Speicherpool besteht aus SQL-, Spark- und HDFS-Komponenten.
 
 ### <a name="available-sql-configurations"></a>Verfügbare SQL-Konfigurationen
-|Eigenschaft|Optionen|
-| --- | --- |
-|`mssql.degreeOfParallelism`| |
-|`mssql.minServerMemory`| |
-|`mssql.maxServerMemory`| |
-|`mssql.network.tlscert`| |
-|`mssql.network.tlskey`| |
-|`mssql.numberOfCpus`| |
-|`mssql.storagePoolCacheSize`| |
-|`mssql.storagePoolMaxCacheSize`| |
-|`mssql.storagePoolCacheAutogrowth`| |
-|`mssql.tempdb.autogrowthPerDataFile`| |
-|`mssql.tempdb.autogrowthPerLogFile`| |
-|`mssql.tempdb.dataFileSize`| |
-|`mssql.tempdb.dataFileMaxSize`| |
-|`mssql.tempdb.logFileMaxSize`| |
-|`mssql.tempdb.numberOfDataFiles`| |
-|`mssql.traceflag`|`traceflag<#> = <####>` |
+| Einstellungsname                                             | Beschreibung                                                                                                                                                                                                                                                                                                             | Typ   | Standardwert          | Nur Bereitstellungszeit | 
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------- | --------- | 
+| mssql.degreeOfParallelism                        | Die Anzahl von Prozessoren pro SQL-Instanz, die zur Ausführung einer einzelnen Anweisung für jede Ausführung paralleler Pläne verwendet werden.                                                                                                                                                                                                        | INT    | 0                            |           | 
+| mssql.maxServerMemory                            | Die von einer SQL Server-Instanz verwendete maximale Arbeitsspeichermenge (in Megabyte) für einen SQL Server-Prozess.                                                                                                                                                                                                                 | INT    | 2147483647                   |           | 
+| mssql.minServerMemory                            | Die von einer SQL Server-Instanz verwendete Mindestmenge an Arbeitsspeicher (in Megabyte) für einen SQL Server-Prozess.                                                                                                                                                                                                                 | INT    | 0                            |           | 
+| mssql.numberOfCpus                    | Verteilt SQL Server-Arbeitsthreads auf alle im angegebenen Bereich enthaltenen CPUs. CPUs außerhalb des angegebenen Bereichs werden keine Threads zugewiesen. Geben Sie für AUTO den Wert 0 an. | Zeichenfolge | AUTO                         |           | 
+| mssql.storagePoolCacheSize                       | Größe des Cache (in Megabyte) für jede SQL-Instanz im Speicherpool.                                                                                                                                                                                                                                             | INT    | 8                            |           | 
+| mssql.storagePoolMaxCacheSize                    | Maximale Größe des Cache (in Megabyte) für jede SQL-Instanz im Speicherpool.                                                                                                                                                                                                                                     | INT    | 16384                        |           | 
+| mssql.storagePoolCacheAutogrowth                 | Faktor für die automatische Vergrößerung (in MB) für den Speicherpoolcache.                                                                                                                                                                                                                                                                  | INT    | 256                          |           | 
+| mssql.tempdb.autogrowthPerDataFile               | Automatische Vergrößerung (in MB) für jede tempdb-Datendatei.                                                                                                                                                                                                                                                                          | INT    | 64                           |           | 
+| mssql.tempdb.autogrowthPerLogFile                | Automatische Vergrößerung (in MB) für jede tempdb-Protokolldatei.                                                                                                                                                                                                                                                                           | INT    | 64                           |           | 
+| mssql.tempdb.dataFileSize                        | Dateigröße (in MB) für jede tempdb-Datendatei.                                                                                                                                                                                                                                                                           | INT    | 8                            |           | 
+| mssql.tempdb.dataFileMaxSize                     | Maximale Dateigröße (in MB) für jede tempdb-Datendatei.                                                                                                                                                                                                                                                                   | INT    | 16777215                     |           | 
+| mssql.tempdb.logFileSize                         | Dateigröße (in MB) für jede tempdb-Protokolldatei.                                                                                                                                                                                                                                                                            | INT    | 8                            |           | 
+| mssql.tempdb.logFileMaxSize                      | Maximale Dateigröße (in MB) für jede tempdb-Protokolldatei.                                                                                                                                                                                                                                                                    | INT    | 2097151                      |           | 
+| mssql.tempdb.numberOfDataFiles                   | Anzahl von Datendateien für tempdb.                                                                                                                                                                                                                                                                                        | INT    | 8                            |           | 
+| mssql.traceflags                                 | Aktiviert oder deaktiviert Ablaufverfolgungsflags für den Start des SQL Server-Diensts. Geben Sie eine durch Leerzeichen getrennte Liste anzuwendender Ablaufverfolgungsflags an.                                                                                                                                                                                        | Zeichenfolge | 3614                         |           | 
 
 
 ### <a name="available-apache-spark-and-hadoop-configurations"></a>Verfügbare Apache Spark- und Hadoop-Konfigurationen
 Im Artikel [Konfigurationseigenschaften von Apache Spark und Apache Hadoop (HDFS)](reference-config-spark-hadoop.md) sind alle unterstützten und nicht unterstützten Einstellungen aufgeführt.
 
 ## <a name="data-pool-resource-scope-settings"></a>Einstellungen auf der Ressourcenebene des Datenpools
-|Eigenschaft|Optionen|
-| --- | --- |
-|`mssql.degreeOfParallelism`| |
-|`mssql.minServerMemory`| |
-|`mssql.maxServerMemory`| |
-|`mssql.network.tlscert`| |
-|`mssql.network.tlskey`| |
-|`mssql.numberOfCpus`| |
-|`mssql.tempdb.autogrowthPerDataFile`| |
-|`mssql.tempdb.autogrowthPerLogFile`| |
-|`mssql.tempdb.dataFileSize`| |
-|`mssql.tempdb.dataFileMaxSize`| |
-|`mssql.tempdb.logFileMaxSize`| |
-|`mssql.tempdb.numberOfDataFiles`| |
-|`mssql.traceflag`|`traceflag<#> = <####>` |
+| Einstellungsname                                             | Beschreibung                                                                                                                                                                                                                                                                                                             | Typ   | Standardwert          | Nur Bereitstellungszeit | 
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------- | --------- | 
+| mssql.degreeOfParallelism                        | Die Anzahl von Prozessoren pro SQL-Instanz, die zur Ausführung einer einzelnen Anweisung für jede Ausführung paralleler Pläne verwendet werden.                                                                                                                                                                                                        | INT    | 0                            |           | 
+| mssql.maxServerMemory                            | Die von einer SQL Server-Instanz verwendete maximale Arbeitsspeichermenge (in Megabyte) für einen SQL Server-Prozess.                                                                                                                                                                                                                 | INT    | 2147483647                   |           | 
+| mssql.minServerMemory                            | Die von einer SQL Server-Instanz verwendete Mindestmenge an Arbeitsspeicher (in Megabyte) für einen SQL Server-Prozess.                                                                                                                                                                                                                 | INT    | 0                            |           | 
+| mssql.numberOfCpus                    | Verteilt SQL Server-Arbeitsthreads auf alle im angegebenen Bereich enthaltenen CPUs. CPUs außerhalb des angegebenen Bereichs werden keine Threads zugewiesen. Geben Sie für AUTO den Wert 0 an. | Zeichenfolge | AUTO                         |           | 
+| mssql.tempdb.autogrowthPerDataFile               | Automatische Vergrößerung (in MB) für jede tempdb-Datendatei.                                                                                                                                                                                                                                                                          | INT    | 64                           |           | 
+| mssql.tempdb.autogrowthPerLogFile                | Automatische Vergrößerung (in MB) für jede tempdb-Protokolldatei.                                                                                                                                                                                                                                                                           | INT    | 64                           |           | 
+| mssql.tempdb.dataFileSize                        | Dateigröße (in MB) für jede tempdb-Datendatei.                                                                                                                                                                                                                                                                           | INT    | 8                            |           | 
+| mssql.tempdb.dataFileMaxSize                     | Maximale Dateigröße (in MB) für jede tempdb-Datendatei.                                                                                                                                                                                                                                                                   | INT    | 16777215                     |           | 
+| mssql.tempdb.logFileSize                         | Dateigröße (in MB) für jede tempdb-Protokolldatei.                                                                                                                                                                                                                                                                            | INT    | 8                            |           | 
+| mssql.tempdb.logFileMaxSize                      | Maximale Dateigröße (in MB) für jede tempdb-Protokolldatei.                                                                                                                                                                                                                                                                    | INT    | 2097151                      |           | 
+| mssql.tempdb.numberOfDataFiles                   | Anzahl von Datendateien für tempdb.                                                                                                                                                                                                                                                                                        | INT    | 8                            |           | 
+| mssql.traceflags                                 | Aktiviert oder deaktiviert Ablaufverfolgungsflags für den Start des SQL Server-Diensts. Geben Sie eine durch Leerzeichen getrennte Liste anzuwendender Ablaufverfolgungsflags an.                                                                                                                                                                                        | Zeichenfolge | 3614                         |           | 
 
 ## <a name="compute-pool-resource-scope-settings"></a>Einstellungen auf der Ressourcenebene des Computepools
-|Eigenschaft|Optionen|
-| --- | --- |
-|`mssql.degreeOfParallelism`| |
-|`mssql.minServerMemory`| |
-|`mssql.maxServerMemory`| |
-|`mssql.network.tlscert`| |
-|`mssql.network.tlskey`| |
-|`mssql.numberOfCpus`| |
-|`mssql.tempdb.autogrowthPerDataFile`| |
-|`mssql.tempdb.autogrowthPerLogFile`| |
-|`mssql.tempdb.dataFileSize`| |
-|`mssql.tempdb.dataFileMaxSize`| |
-|`mssql.tempdb.logFileMaxSize`| |
-|`mssql.tempdb.numberOfDataFiles`| |
-|`mssql.traceflag`|`traceflag<#> = <####>` |
+| Einstellungsname                                             | Beschreibung                                                                                                                                                                                                                                                                                                             | Typ   | Standardwert          | Nur Bereitstellungszeit | 
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------- | --------- | 
+| mssql.degreeOfParallelism                        | Die Anzahl von Prozessoren pro SQL-Instanz, die zur Ausführung einer einzelnen Anweisung für jede Ausführung paralleler Pläne verwendet werden.                                                                                                                                                                                                        | INT    | 0                            |           | 
+| mssql.maxServerMemory                            | Die von einer SQL Server-Instanz verwendete maximale Arbeitsspeichermenge (in Megabyte) für einen SQL Server-Prozess.                                                                                                                                                                                                                 | INT    | 2147483647                   |           | 
+| mssql.minServerMemory                            | Die von einer SQL Server-Instanz verwendete Mindestmenge an Arbeitsspeicher (in Megabyte) für einen SQL Server-Prozess.                                                                                                                                                                                                                 | INT    | 0                            |           | 
+| mssql.numberOfCpus                    | Verteilt SQL Server-Arbeitsthreads auf alle im angegebenen Bereich enthaltenen CPUs. CPUs außerhalb des angegebenen Bereichs werden keine Threads zugewiesen. Geben Sie für AUTO den Wert 0 an. | Zeichenfolge | AUTO                         |           | 
+| mssql.tempdb.autogrowthPerDataFile               | Automatische Vergrößerung (in MB) für jede tempdb-Datendatei.                                                                                                                                                                                                                                                                          | INT    | 64                           |           | 
+| mssql.tempdb.autogrowthPerLogFile                | Automatische Vergrößerung (in MB) für jede tempdb-Protokolldatei.                                                                                                                                                                                                                                                                           | INT    | 64                           |           | 
+| mssql.tempdb.dataFileSize                        | Dateigröße (in MB) für jede tempdb-Datendatei.                                                                                                                                                                                                                                                                           | INT    | 8                            |           | 
+| mssql.tempdb.dataFileMaxSize                     | Maximale Dateigröße (in MB) für jede tempdb-Datendatei.                                                                                                                                                                                                                                                                   | INT    | 16777215                     |           | 
+| mssql.tempdb.logFileSize                         | Dateigröße (in MB) für jede tempdb-Protokolldatei.                                                                                                                                                                                                                                                                            | INT    | 8                            |           | 
+| mssql.tempdb.logFileMaxSize                      | Maximale Dateigröße (in MB) für jede tempdb-Protokolldatei.                                                                                                                                                                                                                                                                    | INT    | 2097151                      |           | 
+| mssql.tempdb.numberOfDataFiles                   | Anzahl von Datendateien für tempdb.                                                                                                                                                                                                                                                                                        | INT    | 8                            |           | 
+| mssql.traceflags                                 | Aktiviert oder deaktiviert Ablaufverfolgungsflags für den Start des SQL Server-Diensts. Geben Sie eine durch Leerzeichen getrennte Liste anzuwendender Ablaufverfolgungsflags an.                                                                                                                                                                                        | Zeichenfolge | 3614                         |           | 
 
 ## <a name="spark-pool-resource-scope-settings"></a>Einstellungen auf der Ressourcenebene des Spark-Pools
 Im Artikel [Konfigurationseigenschaften von Apache Spark und Apache Hadoop (HDFS)](reference-config-spark-hadoop.md) sind alle unterstützten und nicht unterstützten Einstellungen aufgeführt.

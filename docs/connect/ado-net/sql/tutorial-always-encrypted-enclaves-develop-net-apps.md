@@ -11,12 +11,12 @@ ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: karinazhou
 ms.author: v-jizho2
-ms.openlocfilehash: 735d0b552843a95ea388b91e2ed1da3fcfec2790
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: b2dd15961615ef4bff9c7e5e99f91844956b1895
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101837017"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464923"
 ---
 # <a name="tutorial-develop-a-net-application-using-always-encrypted-with-secure-enclaves"></a>Tutorial: Entwickeln einer .NET-Anwendung mithilfe von Always Encrypted mit Secure Enclaves
 
@@ -67,7 +67,7 @@ Wenn Sie Ihren Spaltenhauptschlüssel im Azure Key Vault speichern, müssen Sie 
 
 Ihre Anwendung stellt eine Verbindung mit der **ContosoHR**-Datenbank aus dem [Tutorial: Erste Schritte mit Always Encrypted mit Secure Enclaves mithilfe von SSMS](../../../relational-databases/security/tutorial-getting-started-with-always-encrypted-enclaves.md) oder dem [Tutorial: Erste Schritte mit Always Encrypted mit Secure Enclaves in Azure SQL-Datenbank](/azure/azure-sql/database/always-encrypted-enclaves-getting-started) her und führt eine Abfrage aus, die das `LIKE`-Prädikat in der Spalte **SSN** sowie einen Bereichsvergleich in der Spalte **Salary** enthält.
 
-1. Ersetzen Sie den Inhalt der (von Visual Studio generierten) Datei „Program.cs“ durch folgenden Code. 
+1. Ersetzen Sie den Inhalt der (von Visual Studio generierten) Datei „Program.cs“ durch folgenden Code.
 
     ```cs
     using System;
