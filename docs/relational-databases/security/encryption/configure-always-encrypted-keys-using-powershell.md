@@ -11,12 +11,12 @@ ms.assetid: 3bdf8629-738c-489f-959b-2f5afdaf7d61
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 536b6f0acb0c8f3668b24e7bc5f0ad66ba352b03
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 4bb1e019f6f14d0a8525bb669cfa2502f870d254
+ms.sourcegitcommit: 62c7b972db0ac28e3ae457ce44a4566ebd3bbdee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100345432"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103231528"
 ---
 # <a name="provision-always-encrypted-keys-using-powershell"></a>Bereitstellen von Always Encrypted-Schlüsseln mithilfe von PowerShell
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]
@@ -96,7 +96,7 @@ $azureCtx = Set-AzConteXt -SubscriptionId $SubscriptionId # Sets the context for
 New-AzResourceGroup -Name $resourceGroup -Location $azureLocation # Creates a new resource group - skip, if your desired group already exists.
 New-AzKeyVault -VaultName $akvName -ResourceGroupName $resourceGroup -Location $azureLocation # Creates a new key vault - skip if your vault already exists.
 Set-AzKeyVaultAccessPolicy -VaultName $akvName -ResourceGroupName $resourceGroup -PermissionsToKeys get, create, delete, list, wrapKey,unwrapKey, sign, verify -UserPrincipalName $azureCtx.Account
-$akvKey = Add-AzureKeyVaultKey -VaultName $akvName -Name $akvKeyName -Destination "Software"
+$akvKey = Add-AzKeyVaultKey -VaultName $akvName -Name $akvKeyName -Destination "Software"
 
 # Connect to your database (Azure SQL database).
 Import-Module "SqlServer"
