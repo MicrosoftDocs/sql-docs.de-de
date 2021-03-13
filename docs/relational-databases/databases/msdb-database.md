@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5032cb2d-65a0-40dd-b569-4dcecdd58ceb
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: 02632ce64dbd7b10571e559daf8fde4475a4e37b
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 80ada8fcce7fe1480dca5e22d4a5b8be3e73b617
+ms.sourcegitcommit: be74dc0966930f28b03d0429aed22b1f0a296d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88471192"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103421985"
 ---
 # <a name="msdb-database"></a>msdb-Datenbank
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -86,34 +86,21 @@ ms.locfileid: "88471192"
  Die folgenden Operationen können an der **msdb** -Datenbank nicht ausgeführt werden:  
   
 -   Ändern der Sortierung. Die Standardsortierung entspricht der Serversortierung.  
-  
 -   Löschen der Datenbank.  
-  
 -   Löschen des **guest** -Benutzers aus der Datenbank.  
-  
 -   Aktivieren von Change Data Capture  
-  
 -   Teilnehmen an der Datenbankspiegelung.  
-  
 -   Entfernen der primären Dateigruppe, der primären Datendatei oder der Protokolldatei.  
-  
 -   Umbenennen der Datenbank oder der primären Dateigruppe.  
-  
 -   Versetzen der Datenbank in den OFFLINE-Modus.  
-  
 -   Versetzen der primären Dateigruppe in den READ_ONLY-Modus.  
   
 ## <a name="related-content"></a>Verwandte Inhalte  
- [Systemdatenbanken](../../relational-databases/databases/system-databases.md)  
-  
- [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)  
-  
- [sys.master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)  
-  
- [Verschieben von Datenbankdateien](../../relational-databases/databases/move-database-files.md)  
-  
- [Datenbank-E-Mail](../../relational-databases/database-mail/database-mail.md)  
-  
- [SQL Server Service Broker](../../database-engine/configure-windows/sql-server-service-broker.md)  
+- [Systemdatenbanken](../../relational-databases/databases/system-databases.md)  
+- [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)  
+- [sys.master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)  
+- [Verschieben von Datenbankdateien](../../relational-databases/databases/move-database-files.md)  
+- [Datenbank-E-Mail](../../relational-databases/database-mail/database-mail.md)  
+- [SQL Server Service Broker](../../database-engine/configure-windows/sql-server-service-broker.md)  
   
   

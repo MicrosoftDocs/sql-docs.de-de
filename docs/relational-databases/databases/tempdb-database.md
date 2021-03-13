@@ -16,12 +16,12 @@ ms.assetid: ce4053fb-e37a-4851-b711-8e504059a780
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0fa90cc172c07b7642ca937271fe8c6709b65ede
-ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
+ms.openlocfilehash: 5dc33d8bd3abf6e204c0ab602bc25105d78dced9
+ms.sourcegitcommit: be74dc0966930f28b03d0429aed22b1f0a296d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489374"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103421962"
 ---
 # <a name="tempdb-database"></a>tempdb-Datenbank
 
@@ -353,8 +353,8 @@ GROUP BY R2.session_id, R1.internal_objects_alloc_page_count,
 ```
 
 ## <a name="related-content"></a>Verwandte Inhalte
-[SORT_IN_TEMPDB-Option für Indizes](../../relational-databases/indexes/sort-in-TempDB-option-for-indexes.md)    
-[Systemdatenbanken](../../relational-databases/databases/system-databases.md)    
-[sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)    
-[sys.master_files](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)    
-[Verschieben von Datenbankdateien](../../relational-databases/databases/move-database-files.md)    
+- [SORT_IN_TEMPDB-Option für Indizes](../../relational-databases/indexes/sort-in-TempDB-option-for-indexes.md)    
+- [Systemdatenbanken](../../relational-databases/databases/system-databases.md)    
+- [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)    
+- [sys.master_files](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)    
+- [Verschieben von Datenbankdateien](../../relational-databases/databases/move-database-files.md)    

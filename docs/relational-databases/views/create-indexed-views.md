@@ -19,12 +19,12 @@ ms.assetid: f86dd29f-52dd-44a9-91ac-1eb305c1ca8d
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 5c074add532e55209c8fc304a98da686cec60aab
-ms.sourcegitcommit: 059722ff78a6061b801807416b312ae9f721ec7d
+ms.openlocfilehash: 8c4b69dd5f196cf44f7fedfefbe45df6714aba20
+ms.sourcegitcommit: be74dc0966930f28b03d0429aed22b1f0a296d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100636729"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103421988"
 ---
 # <a name="create-indexed-views"></a>Erstellen von indizierten Sichten
 
@@ -126,7 +126,7 @@ Zusätzlich zu den Anforderungen bzgl. SET-Optionen und deterministischen Funkti
    |`MIN`, `MAX`|`UNION`-, `EXCEPT`- oder `INTERSECT`-Operatoren|`TABLESAMPLE`|
    |Tabellenvariablen|`OUTER APPLY` oder `CROSS APPLY`|`PIVOT`, `UNPIVOT`|
    |Spaltensätze mit geringer Dichte|Inline-Tabellenwertfunktionen (TVF) oder Tabellenwertfunktionen mit mehreren Anweisungen (MSTVF)|`OFFSET`|
-   |`CHECKSUM_AGG`|||
+   |`CHECKSUM_AGG`|`STRING_AGG`|||
 
    <sup>1</sup> Die indizierte Sicht kann Spalten mit dem Datentyp **float** enthalten. Allerdings dürfen solche Spalten nicht im Schlüssel des gruppierten Indexes enthalten sein.
 

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4e4f739b-fd27-4dce-8be6-3d808040d8d7
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: 01d5e44a93776560b5e89c0dc03a36b780f7ab8d
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 9ef6744fa152bfb5c66cc82ba71de62bc5bfb1a9
+ms.sourcegitcommit: be74dc0966930f28b03d0429aed22b1f0a296d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637822"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103421972"
 ---
 # <a name="model-database"></a>model-Datenbank
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -90,37 +90,23 @@ Die Standardwerte für die Dateivergrößerung für SQL Server 2014 finden Sie u
 ## <a name="restrictions"></a>Beschränkungen  
  Die folgenden Operationen können an der **model** -Datenbank nicht ausgeführt werden:  
   
--   Hinzufügen von Dateien oder Dateigruppen.  
-  
--   Ändern der Sortierung. Die Standardsortierung entspricht der Serversortierung.  
-  
--   Ändern des Datenbankbesitzers Der Besitzer von **model** ist **sa**.  
-  
--   Löschen der Datenbank.  
-  
--   Löschen des **guest** -Benutzers aus der Datenbank.  
-  
--   Aktivieren von Change Data Capture  
-  
--   Teilnehmen an der Datenbankspiegelung.  
-  
--   Entfernen der primären Dateigruppe, der primären Datendatei oder der Protokolldatei.  
-  
--   Umbenennen der Datenbank oder der primären Dateigruppe.  
-  
--   Versetzen der Datenbank in den OFFLINE-Modus.  
-  
--   Versetzen der primären Dateigruppe in den READ_ONLY-Modus.  
-  
--   Erstellen von Prozeduren, Sichten oder Triggern mit der Option WITH ENCRYPTION. Der Verschlüsselungsschlüssel ist an die Datenbank gebunden, in der das Objekt erstellt wird. In der **model** -Datenbank erstellte verschlüsselte Objekte können nur in **model** verwendet werden.  
+- Hinzufügen von Dateien oder Dateigruppen.  
+- Ändern der Sortierung. Die Standardsortierung entspricht der Serversortierung.  
+- Ändern des Datenbankbesitzers Der Besitzer von **model** ist **sa**.  
+- Löschen der Datenbank.  
+- Löschen des **guest** -Benutzers aus der Datenbank.  
+- Aktivieren von Change Data Capture  
+- Teilnehmen an der Datenbankspiegelung.  
+- Entfernen der primären Dateigruppe, der primären Datendatei oder der Protokolldatei.  
+- Umbenennen der Datenbank oder der primären Dateigruppe.  
+- Versetzen der Datenbank in den OFFLINE-Modus.  
+- Versetzen der primären Dateigruppe in den READ_ONLY-Modus.  
+- Erstellen von Prozeduren, Sichten oder Triggern mit der Option WITH ENCRYPTION. Der Verschlüsselungsschlüssel ist an die Datenbank gebunden, in der das Objekt erstellt wird. In der **model** -Datenbank erstellte verschlüsselte Objekte können nur in **model** verwendet werden.  
   
 ## <a name="related-content"></a>Verwandte Inhalte  
- [Systemdatenbanken](../../relational-databases/databases/system-databases.md)  
-  
- [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)  
-  
- [sys.master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)  
-  
- [Verschieben von Datenbankdateien](../../relational-databases/databases/move-database-files.md)  
+- [Systemdatenbanken](../../relational-databases/databases/system-databases.md)  
+- [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)  
+- [sys.master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)  
+- [Verschieben von Datenbankdateien](../../relational-databases/databases/move-database-files.md)  
   
   
